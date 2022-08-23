@@ -1,10 +1,17 @@
-import csv
+import csv, urllib.parse
 
+GENSHIN_WIKI = "https://genshin-impact.fandom.com/wiki/"
 WEAPONS = ["Bow", "Catalyst", "Claymore", "Polearm", "Sword"]
-ELEMENTS = ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo"];
+ELEMENTS = ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo"]
+
 
 def generate_image(key: str, ext = "svg") -> str:
     return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\">"
+
+def get_wiki_link_to_char(char: str) -> str:
+    link = GENSHIN_WIKI + urllib.parse.quote(char.replace(" ", "_"))
+    return f"<a href=\"{link}\">{char}</a>"
+
 
 # Create 2D dict
 data = {}
@@ -19,7 +26,7 @@ with open('chars.csv', newline='') as f:
         w = row['weapon']
         e = row['element']
         if w and e:
-            data[w][e].append(row['name'])
+            data[w][e].append(get_wiki_link_to_char(row['name']))
 
 # Build output
 output = """
