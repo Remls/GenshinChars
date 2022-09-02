@@ -37,16 +37,18 @@ output = """
 </tr>
 [TABLE]
 </table>
+
+\* Does not include the Traveler.
 """
 
 headers = []
 for w in WEAPONS:
-    headers.append(f"<th align=\"center\">{generate_image(w, 'webp')}</th>")
+    headers.append(f"<th align=\"center\">{generate_image(w, 'webp')}<br>{w}</th>")
 output = output.replace("[HEADERS]", "\n".join(headers))
 
-table = []
+table = []``
 for e in ELEMENTS:
-    line = f"<tr><td align=\"center\">{generate_image(e)}</td>"
+    line = f"<tr><td align=\"center\">{generate_image(e)}<br>{e}</td>"
     for w in WEAPONS:
         line += f"<td>{',<br>'.join(data[w][e])}</td>"
     line += "</tr>"
