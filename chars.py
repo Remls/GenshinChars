@@ -11,9 +11,11 @@ def get_title_with_image(key: str, ext = "svg") -> str:
     else:
         return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\"><br><b>{key}</b>"
 
-def get_wiki_link_to_char(char: str) -> str:
-    link = GENSHIN_WIKI + urllib.parse.quote(char.replace(" ", "_"))
-    return f"<a href=\"{link}\">{char}</a>"
+def get_wiki_link_to_char(char_name: str, display_name: str) -> str:
+    if not display_name:
+        display_name = char_name
+    link = GENSHIN_WIKI + urllib.parse.quote(char_name.replace(" ", "_"))
+    return f"<a href=\"{link}\">{display_name}</a>"
 
 
 # Create 2D dict
@@ -32,7 +34,7 @@ with open('chars.csv', newline='') as f:
             w = "Unknown"
         if not e:
             e = "Unknown"
-        data[w][e].append(get_wiki_link_to_char(row['name']))
+        data[w][e].append(get_wiki_link_to_char(row['name'], row['display_name']))
 
 # Build output
 output = """
