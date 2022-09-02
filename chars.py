@@ -1,12 +1,15 @@
 import csv, urllib.parse
 
 GENSHIN_WIKI = "https://genshin-impact.fandom.com/wiki/"
-WEAPONS = ["Bow", "Catalyst", "Claymore", "Polearm", "Sword"]
-ELEMENTS = ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo"]
+WEAPONS = ["Bow", "Catalyst", "Claymore", "Polearm", "Sword", "Unknown"]
+ELEMENTS = ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo", "Unknown"]
 
 
 def generate_image(key: str, ext = "svg") -> str:
-    return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\">"
+    if key == "Unknown":
+        return ""
+    else:
+        return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\">"
 
 def get_wiki_link_to_char(char: str) -> str:
     link = GENSHIN_WIKI + urllib.parse.quote(char.replace(" ", "_"))
@@ -25,8 +28,11 @@ with open('chars.csv', newline='') as f:
     for row in reader:
         w = row['weapon']
         e = row['element']
-        if w and e:
-            data[w][e].append(get_wiki_link_to_char(row['name']))
+        if not w:
+            w = "Unknown"
+        if not e:
+            e = "Unknown"
+        data[w][e].append(get_wiki_link_to_char(row['name']))
 
 # Build output
 output = """

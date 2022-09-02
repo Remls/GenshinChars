@@ -1,5 +1,6 @@
 name,rarity,element,weapon,region
 Albedo,5,Geo,Sword,Mondstadt
+Alhaitham,,Dendro,Sword,Sumeru
 Aloy,5,Cryo,Bow,
 Amber,4,Pyro,Bow,Mondstadt
 Arataki Itto,5,Geo,Claymore,Inazuma
@@ -11,6 +12,7 @@ Chongyun,4,Cryo,Claymore,Liyue
 Collei,4,Dendro,Bow,Sumeru
 Cyno,5,Electro,Polearm,Sumeru
 Dainsleif,,,,Khaenri'ah
+Dehya,,Pyro,Claymore,Sumeru
 Diluc,5,Pyro,Claymore,Mondstadt
 Diona,4,Cryo,Bow,Mondstadt
 Dori,4,Electro,Claymore,Sumeru
@@ -30,6 +32,7 @@ Kujou Sara,4,Electro,Bow,Inazuma
 Kuki Shinobu,4,Electro,Sword,Inazuma
 Lisa,4,Electro,Catalyst,Mondstadt
 Mona,5,Hydro,Catalyst,Mondstadt
+Nahida,5,Dendro,,Sumeru
 Nilou,5,Hydro,Sword,Sumeru
 Ningguang,4,Geo,Catalyst,Liyue
 Noelle,4,Geo,Claymore,Mondstadt
