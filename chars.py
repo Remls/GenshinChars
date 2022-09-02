@@ -5,11 +5,11 @@ WEAPONS = ["Bow", "Catalyst", "Claymore", "Polearm", "Sword", "Unknown"]
 ELEMENTS = ["Anemo", "Geo", "Electro", "Dendro", "Hydro", "Pyro", "Cryo", "Unknown"]
 
 
-def generate_image(key: str, ext = "svg") -> str:
+def get_title_with_image(key: str, ext = "svg") -> str:
     if key == "Unknown":
-        return ""
+        return f"<b>{key}</b>"
     else:
-        return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\">"
+        return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\"><br><b>{key}</b>"
 
 def get_wiki_link_to_char(char: str) -> str:
     link = GENSHIN_WIKI + urllib.parse.quote(char.replace(" ", "_"))
@@ -49,12 +49,12 @@ output = """
 
 headers = []
 for w in WEAPONS:
-    headers.append(f"<th align=\"center\">{generate_image(w, 'webp')}<br>{w}</th>")
+    headers.append(f"<th align=\"center\">{get_title_with_image(w, 'webp')}</th>")
 output = output.replace("[HEADERS]", "\n".join(headers))
 
 table = []
 for e in ELEMENTS:
-    line = f"<tr><td align=\"center\">{generate_image(e)}<br>{e}</td>"
+    line = f"<tr><td align=\"center\">{get_title_with_image(e)}</td>"
     for w in WEAPONS:
         line += f"<td>{',<br>'.join(data[w][e])}</td>"
     line += "</tr>"
