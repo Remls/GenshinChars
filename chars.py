@@ -1,4 +1,5 @@
 import csv, urllib.parse
+from datetime import datetime
 
 # CONSTANTS
 GENSHIN_WIKI = "https://genshin-impact.fandom.com/wiki/"
@@ -56,6 +57,17 @@ for rg in REGIONS:
         region_data[rg][e] = 0
     region_data[rg]["Total"] = 0
 
+version_data = {}
+with open('versions.csv', newline='') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        version_data[row["version"]] = {
+            "version": row["version"],
+            "name": row["name"],
+            "release_date": row["release_date"],
+        }
+character_version_data = []
+
 
 # FUNCTIONS
 def get_title_with_image(key: str, ext = "svg") -> str:
@@ -85,15 +97,33 @@ def get_gender_data(key: str) -> str:
 def get_region_data(key: str) -> str:
     return get_counter_data(region_data, REGIONS, REGION_ICONS, key)
 
+def get_version(version: str) -> dict:
+    return version_data[version] if version else None
+
+def get_character_release_date(version: str, character_release_date: str) -> str:
+    if character_release_date:
+        if character_release_date == "?":
+            return "Unknown"
+        return character_release_date
+    elif version:
+        return version_data[version]["release_date"]
+    else:
+        return "Unknown"
+
+def parse_and_reformat_date(date: str) -> str:
+    date = datetime.strptime(date, "%Y-%m-%d")
+    return date.strftime("%-d %B %Y")
+
 
 
 
 with open('chars.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
+        char = get_wiki_link_to_char(row['name'], row['display_name'], row['rarity'])
         w = row['weapon']  or "Unknown Weapon"
         e = row['element'] or "Unknown Element"
-        table_data[w][e].append(get_wiki_link_to_char(row['name'], row['display_name'], row['rarity']))
+        table_data[w][e].append(char)
         r = row['rarity']  or "Unknown Rarity"
         rarity_data[r][w] += 1
         rarity_data[r][e] += 1
@@ -106,9 +136,17 @@ with open('chars.csv', newline='') as f:
         region_data[rg][w] += 1
         region_data[rg][e] += 1
         region_data[rg]["Total"] += 1
+        character_version_data.append({
+            "character": char,
+            "release_version": get_version(row['release_version']),
+            # Can't be NoneType or else it doesn't sort
+            "release_date": get_character_release_date(row['release_version'], row['release_date'])
+        })
+    character_version_data = sorted(character_version_data, key=lambda c: c['release_date'], reverse=True)
 
 # Build output
 output = """
+## Characters by weapon/element
 <table>
 <tr>
 <th></th>
@@ -118,6 +156,16 @@ output = """
 </table>
 
 \* Does not include the Traveler.
+
+## Characters in order of release
+<table>
+<tr>
+<th>Character</th>
+<th>Release Version</th>
+<th>Release Date</th>
+</tr>
+[VERSION_TABLE]
+</table>
 """
 
 headers = []
@@ -166,6 +214,25 @@ line += f"<td></td><td></td><td align=\"center\">{get_region_data('Total')}</td>
 table.append(line)
 
 output = output.replace("[TABLE]", "\n".join(table))
+
+character_version_table = []
+for row in character_version_data:
+    line = "<tr>"
+    line += f"<td>{row['character']}</td>"
+    if row["release_version"]:
+        if row["release_version"]["name"]:
+            line += f"<td>v{row['release_version']['version']}: {row['release_version']['name']}</td>"
+        else:
+            line += f"<td>v{row['release_version']['version']}</td>"
+    else:
+        line += f"<td>Unknown</td>"
+    date = row["release_date"]
+    if date != "Unknown":
+        date = parse_and_reformat_date(date)
+    line += f"<td>{date}</td>"
+    line += "</tr>"
+    character_version_table.append(line)
+output = output.replace("[VERSION_TABLE]", "\n".join(character_version_table))
 
 with open("README.md", "w") as f:
     f.write(output)
