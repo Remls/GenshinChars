@@ -58,7 +58,7 @@ for rg in REGIONS:
     region_data[rg]["Total"] = 0
 
 version_data = {}
-with open('versions.csv', newline='') as f:
+with open('data/versions.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
         version_data[row["version"]] = {
@@ -117,7 +117,7 @@ def parse_and_reformat_date(date: str) -> str:
 
 
 
-with open('chars.csv', newline='') as f:
+with open('data/chars.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
         char = get_wiki_link_to_char(row['name'], row['display_name'], row['rarity'])
