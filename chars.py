@@ -68,7 +68,7 @@ def get_wiki_link_to_char(char_name: str, display_name: str, rarity: str) -> str
     display_name = display_name or char_name
     rarity = RARITY_ICONS[rarity] if rarity else RARITY_ICONS["Unknown Rarity"]
     link = GENSHIN_WIKI + urllib.parse.quote(char_name.replace(" ", "_"))
-    return f"<a href=\"{link}\">{rarity} {display_name}</a>"
+    return f"<a href=\"{link}\">{rarity}&nbsp;{display_name}</a>"
 
 def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str) -> str:
     display = []
