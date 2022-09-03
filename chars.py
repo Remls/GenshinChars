@@ -71,8 +71,8 @@ for e in ELEMENTS:
         line += f"<td>{',<br>'.join(table_data[w][e])}</td>"
     rarity_display = []
     for r in RARITIES:
-        r = f"{r}✭" if r != "Unknown" else r
-        rarity_display.append(f"{r} {rarity_data[r][e]}")
+        r_display = f"{r}✭" if r != "Unknown" else r
+        rarity_display.append(f"{r_display} {rarity_data[r][e]}")
     line += f"<td>{'<br>'.join(rarity_display)}</td>"
     line += "</tr>"
     table.append(line)
