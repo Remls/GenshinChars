@@ -70,17 +70,24 @@ character_version_data = []
 
 
 # FUNCTIONS
+def load_template() -> str:
+    file_contents = ""
+    with open('data/template.html') as f:
+        file_contents = f.read()
+    return file_contents
+
 def get_title_with_image(key: str, ext = "svg") -> str:
     if key.startswith("Unknown"):
-        return f"<b>Unknown</b>"
+        return "Unknown"
     else:
-        return f"<img width=\"50\" height=\"50\" src=\"assets/{key}.{ext}\"><br><b>{key}</b>"
+        return f"<img width=\"50\" height=\"50\" src=\"assets/images/{key}.{ext}\"><br>{key}"
 
-def get_wiki_link_to_char(char_name: str, display_name: str, rarity: str) -> str:
+def get_wiki_link_to_char(char_name: str, display_name: str, rarity: str, element: str) -> str:
     display_name = display_name or char_name
     rarity = RARITY_ICONS[rarity] if rarity else RARITY_ICONS["Unknown Rarity"]
+    element = element.lower() if element else "unknown"    
     link = GENSHIN_WIKI + urllib.parse.quote(char_name.replace(" ", "_"))
-    return f"<a href=\"{link}\">{rarity}&nbsp;{display_name}</a>"
+    return f"<a class=\"el-{element}\" href=\"{link}\">{rarity} <span class=\"gi-font\">{display_name}</span></a>"
 
 def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str) -> str:
     display = []
@@ -112,7 +119,7 @@ def get_character_release_date(version: str, character_release_date: str) -> str
 
 def parse_and_reformat_date(date: str) -> str:
     date = datetime.strptime(date, "%Y-%m-%d")
-    return date.strftime("%-d %B %Y")
+    return date.strftime("%Y %B %-d")
 
 
 
@@ -120,7 +127,7 @@ def parse_and_reformat_date(date: str) -> str:
 with open('data/chars.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        char = get_wiki_link_to_char(row['name'], row['display_name'], row['rarity'])
+        char = get_wiki_link_to_char(row['name'], row['display_name'], row['rarity'], row['element'])
         w = row['weapon']  or "Unknown Weapon"
         e = row['element'] or "Unknown Element"
         table_data[w][e].append(char)
@@ -145,72 +152,51 @@ with open('data/chars.csv', newline='') as f:
     character_version_data = sorted(character_version_data, key=lambda c: c['release_date'], reverse=True)
 
 # Build output
-output = """
-## Characters by weapon/element
-<table>
-<tr>
-<th></th>
-[HEADERS]
-</tr>
-[TABLE]
-</table>
-
-\* Does not include the Traveler.
-
-## Characters in order of release
-<table>
-<tr>
-<th>Character</th>
-<th>Release Version</th>
-<th>Release Date</th>
-</tr>
-[VERSION_TABLE]
-</table>
-"""
+output = load_template()
 
 headers = []
 for w in WEAPONS:
-    headers.append(f"<th align=\"center\">{get_title_with_image(w, 'webp')}</th>")
-headers.append(f"<th align=\"center\"><b>RARITY</b></th>")
-headers.append(f"<th align=\"center\"><b>GENDER</b></th>")
-headers.append(f"<th align=\"center\"><b>REGION</b></th>")
+    headers.append(f"<th width=\"12%\">{get_title_with_image(w, 'webp')}</th>")
+headers.append(f"<th>RARITY</th>")
+headers.append(f"<th>GENDER</th>")
+headers.append(f"<th>REGION</th>")
 output = output.replace("[HEADERS]", "\n".join(headers))
 
 table = []
 for e in ELEMENTS:
-    line = f"<tr><td align=\"center\">{get_title_with_image(e)}</td>"
+    line = f"<tr><td class=\"label-column\">{get_title_with_image(e)}</td>"
     for w in WEAPONS:
         line += f"<td>{'<br>'.join(table_data[w][e])}</td>"
 
     # Rarity data for this element
-    line += f"<td align=\"center\">{get_rarity_data(e)}</td>"
+    line += f"<td class=\"center\">{get_rarity_data(e)}</td>"
     # Gender data for this element
-    line += f"<td align=\"center\">{get_gender_data(e)}</td>"
+    line += f"<td class=\"center\">{get_gender_data(e)}</td>"
     # Region data for this element
-    line += f"<td align=\"center\">{get_region_data(e)}</td>"
+    line += f"<td class=\"center\">{get_region_data(e)}</td>"
 
     line += "</tr>"
     table.append(line)
 
-line = f"<tr><td align=\"center\"><b>RARITY</b></td>"
+line = f"<tr><td class=\"label-column\"><b>RARITY</b></td>"
 for w in WEAPONS:
     # Rarity data for this weapon type
-    line += f"<td align=\"center\">{get_rarity_data(w)}</td>"
-line += f"<td align=\"center\">{get_rarity_data('Total')}</td><td></td><td></td></tr>"
+    line += f"<td class=\"center\">{get_rarity_data(w)}</td>"
+line += f"<td class=\"center\">{get_rarity_data('Total')}</td><td></td><td></td></tr>"
 table.append(line)
 
-line = f"<tr><td align=\"center\"><b>GENDER</b></td>"
+line = f"<tr><td class=\"label-column\"><b>GENDER</b></td>"
 for w in WEAPONS:
     # Gender data for this weapon type
-    line += f"<td align=\"center\">{get_gender_data(w)}</td>"
-line += f"<td></td><td align=\"center\">{get_gender_data('Total')}</td><td></td></tr>"
+    line += f"<td class=\"center\">{get_gender_data(w)}</td>"
+line += f"<td></td><td class=\"center\">{get_gender_data('Total')}</td><td></td></tr>"
 table.append(line)
 
-line = f"<tr><td align=\"center\"><b>REGION</b></td>"
+line = f"<tr><td class=\"label-column\"><b>REGION</b></td>"
 for w in WEAPONS:
     # Region data for this weapon type
-    line += f"<td align=\"center\">{get_region_data(w)}</td>"
-line += f"<td></td><td></td><td align=\"center\">{get_region_data('Total')}</td></tr>"
+    line += f"<td class=\"center\">{get_region_data(w)}</td>"
+line += f"<td></td><td></td><td class=\"center\">{get_region_data('Total')}</td></tr>"
 table.append(line)
 
 output = output.replace("[TABLE]", "\n".join(table))
@@ -234,5 +220,5 @@ for row in character_version_data:
     character_version_table.append(line)
 output = output.replace("[VERSION_TABLE]", "\n".join(character_version_table))
 
-with open("README.md", "w") as f:
+with open("index.html", "w") as f:
     f.write(output)

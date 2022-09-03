@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem 5rem;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+@font-face {
+    font-family: Genshin;
+    src: url(genshin.ttf);
+}
+.gi-font {
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+}
+
+h2, th, .label-column {
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+th, .label-column {
+    background-color: #30363d;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+tfoot td {
+    border-color: transparent;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+a.el-anemo     { color: #74c2a8; }
+a.el-geo       { color: #fab632; }
+a.el-electro   { color: #af8ec1; }
+a.el-dendro    { color: #a5c83b; }
+a.el-hydro     { color: #4cc2f1; }
+a.el-pyro      { color: #ef7938; }
+a.el-cryo      { color: #9fd6e3; }
+a.el-unknown   { color: grey; }
