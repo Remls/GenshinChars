@@ -220,5 +220,7 @@ for row in character_version_data:
     character_version_table.append(line)
 output = output.replace("[VERSION_TABLE]", "\n".join(character_version_table))
 
+output = output.replace("[LAST_UPDATED]", str(datetime.utcnow()))
+
 with open("dist/index.html", "w") as f:
     f.write(output)
