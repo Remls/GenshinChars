@@ -13,8 +13,11 @@ body {
     font-family: Genshin, Arial, Helvetica, sans-serif;
 }
 
-h2, th, .label-column {
+h2, th, td, .label-column {
     font-family: Genshin, Arial, Helvetica, sans-serif;
+}
+
+h2, th, .label-column {
     text-align: center;
 }
 
