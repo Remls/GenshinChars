@@ -52,6 +52,9 @@ tfoot td {
 .center {
     text-align: center;
 }
+.text-unknown {
+    color: grey;
+}
 
 a {
     text-decoration: none;

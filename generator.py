@@ -110,12 +110,12 @@ def get_version(version: str) -> dict:
 def get_character_release_date(version: str, character_release_date: str) -> str:
     if character_release_date:
         if character_release_date == "?":
-            return "Unknown"
+            return "Unknown-1"  # Unknown, but must be sorted higher
         return character_release_date
     elif version:
         return version_data[version]["release_date"]
     else:
-        return "Unknown"
+        return "Unknown-2"      # Unknown, but must be sorted lower
 
 def parse_and_reformat_date(date: str) -> str:
     date = datetime.strptime(date, "%Y-%m-%d")
@@ -210,12 +210,14 @@ for row in character_version_data:
             line += f"<td>v{row['release_version']['version']}: {row['release_version']['name']}</td>"
         else:
             line += f"<td>v{row['release_version']['version']}</td>"
+        date = row["release_date"]
+        if not date.startswith("Unknown"):
+            date = parse_and_reformat_date(date)
+            line += f"<td>{date}</td>"
+        else:
+            line += f"<td class=\"center\"><span class=\"text-unknown\">Unknown</span></td>"
     else:
-        line += f"<td>Unknown</td>"
-    date = row["release_date"]
-    if date != "Unknown":
-        date = parse_and_reformat_date(date)
-    line += f"<td>{date}</td>"
+        line += f"<td class=\"center\" colspan=\"2\"><span class=\"text-unknown\">Unknown</span></td>"
     line += "</tr>"
     character_version_table.append(line)
 output = output.replace("[VERSION_TABLE]", "\n".join(character_version_table))
