@@ -169,11 +169,11 @@ for e in ELEMENTS:
         line += f"<td>{'<br>'.join(table_data[w][e])}</td>"
 
     # Rarity data for this element
-    line += f"<td class=\"center\">{get_rarity_data(e)}</td>"
+    line += f"<td class=\"totals-cells center\">{get_rarity_data(e)}</td>"
     # Gender data for this element
-    line += f"<td class=\"center\">{get_gender_data(e)}</td>"
+    line += f"<td class=\"totals-cells center\">{get_gender_data(e)}</td>"
     # Region data for this element
-    line += f"<td class=\"center\">{get_region_data(e)}</td>"
+    line += f"<td class=\"totals-cells center\">{get_region_data(e)}</td>"
 
     line += "</tr>"
     table.append(line)
@@ -181,22 +181,28 @@ for e in ELEMENTS:
 line = f"<tr><td class=\"label-column\"><b>RARITY</b></td>"
 for w in WEAPONS:
     # Rarity data for this weapon type
-    line += f"<td class=\"center\">{get_rarity_data(w)}</td>"
-line += f"<td class=\"center\">{get_rarity_data('Total')}</td><td></td><td></td></tr>"
+    line += f"<td class=\"totals-cells center\">{get_rarity_data(w)}</td>"
+line += f"<td class=\"transparent-rb totals-cells center\">{get_rarity_data('Total')}</td>"
+line += "<td class=\"transparent-rb totals-cells\"></td>"
+line += "<td class=\"transparent-b totals-cells\"></td></tr>"
 table.append(line)
 
 line = f"<tr><td class=\"label-column\"><b>GENDER</b></td>"
 for w in WEAPONS:
     # Gender data for this weapon type
-    line += f"<td class=\"center\">{get_gender_data(w)}</td>"
-line += f"<td></td><td class=\"center\">{get_gender_data('Total')}</td><td></td></tr>"
+    line += f"<td class=\"totals-cells center\">{get_gender_data(w)}</td>"
+line += "<td class=\"transparent-rb totals-cells\"></td>"
+line += f"<td class=\"transparent-rb totals-cells center\">{get_gender_data('Total')}</td>"
+line += "<td class=\"transparent-b totals-cells\"></td></tr>"
 table.append(line)
 
 line = f"<tr><td class=\"label-column\"><b>REGION</b></td>"
 for w in WEAPONS:
     # Region data for this weapon type
-    line += f"<td class=\"center\">{get_region_data(w)}</td>"
-line += f"<td></td><td></td><td class=\"center\">{get_region_data('Total')}</td></tr>"
+    line += f"<td class=\"totals-cells center\">{get_region_data(w)}</td>"
+line += "<td class=\"transparent-r totals-cells\"></td>"
+line += "<td class=\"transparent-r totals-cells\"></td>"
+line += f"<td class=\"totals-cells center\">{get_region_data('Total')}</td></tr>"
 table.append(line)
 
 output = output.replace("[TABLE]", "\n".join(table))

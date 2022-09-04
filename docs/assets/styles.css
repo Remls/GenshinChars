@@ -24,6 +24,9 @@ h2, th, .label-column {
 th, .label-column {
     background-color: #30363d;
 }
+.totals-cells {
+    background-color: #30363d80;
+}
 
 section {
     margin: 5rem 0 1rem 0;
@@ -52,6 +55,7 @@ tfoot td {
 .center {
     text-align: center;
 }
+
 .text-unknown {
     color: grey;
 }
@@ -67,6 +71,18 @@ a.el-hydro     { color: #4cc2f1; }
 a.el-pyro      { color: #ef7938; }
 a.el-cryo      { color: #9fd6e3; }
 a.el-unknown   { color: grey; }
+
+/* Remove borders for the "totals" cells */
+.transparent-r {
+    border-right: 1px solid transparent;
+}
+.transparent-rb {
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.transparent-b {
+    border-bottom: 1px solid transparent;
+}
 
 .page-footer {
     width: 95%;
