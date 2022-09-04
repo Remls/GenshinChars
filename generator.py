@@ -220,5 +220,5 @@ for row in character_version_data:
     character_version_table.append(line)
 output = output.replace("[VERSION_TABLE]", "\n".join(character_version_table))
 
-with open("index.html", "w") as f:
+with open("dist/index.html", "w") as f:
     f.write(output)
