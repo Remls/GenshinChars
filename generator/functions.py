@@ -16,13 +16,13 @@ def get_title_with_image(key: str, ext: str = "svg") -> str:
     else:
         return f"<img width=\"50\" height=\"50\" src=\"assets/images/{key}.{ext}\"><br>{key}"
 
-def get_wiki_link_to_char(char: dict) -> str:
+def get_formatted_char_name(char: dict) -> str:
     char_name = char['name']
     display_name = char['display_name'] or char_name
     rarity = RARITY_ICONS[char['rarity']] if char['rarity'] else RARITY_ICONS["Unknown Rarity"]
     element = char['element'].lower() if char['element'] else "unknown"
     link = GENSHIN_WIKI + urllib.parse.quote(char_name.replace(" ", "_"))
-    return f"<a class=\"el-{element}\" href=\"{link}\">{rarity} <span class=\"gi-font\">{display_name}</span></a>"
+    return f"<span @click=\"showCharSheet('{char_name}')\" class=\"el-{element}\">{rarity} <span class=\"gi-font\">{display_name}</span></span>"
 
 def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str) -> str:
     display = []

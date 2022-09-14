@@ -63,14 +63,14 @@ tfoot td {
 a {
     text-decoration: none;
 }
-a.el-anemo     { color: #74c2a8; }
-a.el-geo       { color: #fab632; }
-a.el-electro   { color: #af8ec1; }
-a.el-dendro    { color: #a5c83b; }
-a.el-hydro     { color: #4cc2f1; }
-a.el-pyro      { color: #ef7938; }
-a.el-cryo      { color: #9fd6e3; }
-a.el-unknown   { color: grey; }
+.el-anemo     { color: #74c2a8; }
+.el-geo       { color: #fab632; }
+.el-electro   { color: #af8ec1; }
+.el-dendro    { color: #a5c83b; }
+.el-hydro     { color: #4cc2f1; }
+.el-pyro      { color: #ef7938; }
+.el-cryo      { color: #9fd6e3; }
+.el-unknown   { color: grey; }
 
 /* Remove borders for the "totals" cells */
 .transparent-r {

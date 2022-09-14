@@ -13,11 +13,12 @@
     <meta name="msapplication-config" content="icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/date-formatter.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+    <script src="assets/scripts.js"></script>
 </head>
 
 <body>
-    <section>
+    <section x-data="charSheet">
         <h2>Characters by weapon/element</h2>
         <div class="table-wrapper">
             <table>
@@ -41,7 +42,7 @@
         </div>
     </section>
     
-    <section>
+    <section x-data="charSheet">
         <h2>Characters in order of release</h2>
         <div class="table-wrapper">
             <table>
@@ -59,8 +60,8 @@
         </div>
     </section>
 
-    <div class="page-footer">
-        Last updated <span id="last-updated">[LAST_UPDATED] UTC</span>
+    <div x-data="lastUpdated" class="page-footer">
+        Last updated <span x-text="lastUpdatedFormatted()"></span>
     </div>
 </body>
 

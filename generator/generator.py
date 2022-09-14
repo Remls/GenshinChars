@@ -1,6 +1,6 @@
 from classes import Character
 from constants import WEAPONS, ELEMENTS, RARITIES, GENDERS, REGIONS, RARITY_ICONS, GENDER_ICONS, REGION_ICONS
-from functions import load_template, get_title_with_image, get_wiki_link_to_char, get_counter_data
+from functions import load_template, get_title_with_image, get_formatted_char_name, get_counter_data
 from datetime import datetime
 import csv
 
@@ -56,7 +56,7 @@ def get_region_data(key: str) -> str:
 with open('data/chars.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        char = get_wiki_link_to_char(row)
+        char = get_formatted_char_name(row)
         w = row['weapon']  or "Unknown Weapon"
         e = row['element'] or "Unknown Element"
         table_data[w][e].append(char)
@@ -134,7 +134,7 @@ output = output.replace("[TABLE]", "\n".join(table))
 character_version_table = []
 for cv in character_version_data:
     line = "<tr>"
-    line += f"<td>{get_wiki_link_to_char(cv.input_row)}</td>"
+    line += f"<td>{get_formatted_char_name(cv.input_row)}</td>"
     if cv.release_version:
         ver = cv.get_version_data()
         if ver.version_name:
