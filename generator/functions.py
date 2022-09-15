@@ -19,7 +19,7 @@ def get_formatted_char_name(char: dict) -> str:
     display_name = char['display_name'] or char_name
     rarity = RARITY_ICONS[char['rarity']] if char['rarity'] else RARITY_ICONS["Unknown Rarity"]
     element = char['element'].lower() if char['element'] else "unknown"
-    return f"<span @click=\"showCharSheet('{char_name}')\" class=\"el-{element}\">{rarity} <span class=\"gi-font\">{display_name}</span></span>"
+    return f"<span @click=\"showCharSheet('{char_name}')\" class=\"el-{element} clickable\">{rarity} <span class=\"gi-font\">{display_name}</span></span>"
 
 def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str) -> str:
     display = []

@@ -1,6 +1,16 @@
+@media screen and (min-width : 1024px){
+    body {
+        padding: 2rem 5rem;
+    }
+}
+@media screen and (max-width : 1023px){
+    body {
+        padding: 2rem;
+    }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 2rem 5rem;
     background-color: #0d1117;
     color: #c9d1d9;
 }
@@ -60,8 +70,10 @@ tfoot td {
     color: grey;
 }
 
-a {
-    text-decoration: none;
+.clickable:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
 }
 .el-anemo     { color: #74c2a8; }
 .el-geo       { color: #fab632; }
@@ -106,7 +118,7 @@ a {
     position: fixed;
     bottom: 0;
     background-color: #1d1f21;
-    padding: 20px 0;
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -117,7 +129,8 @@ a {
 .modal-footer {
     font-family: Genshin, Arial, Helvetica, sans-serif;
     text-align: right;
-    padding-top: 10px;
+    font-size: 24px;
+    padding-top: 20px;
     padding-right: 2.5%;
 }
 
@@ -125,7 +138,7 @@ a:link, a:visited {
     color: #c9d1d9;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
