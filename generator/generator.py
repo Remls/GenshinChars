@@ -161,6 +161,6 @@ with open("docs/assets/chars.json", "w") as f:
     for el in character_version_data:
         char_data = el.input_row
         char_data["release_version"] = el.get_version_data()
-        char_data["release_date"] = el.release_date
+        char_data["release_date"] = el.get_formatted_release_date()
         chars[el.input_row["name"]] = char_data
     f.write(json.dumps(chars, default=vars, separators=(',', ':')))

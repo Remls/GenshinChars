@@ -90,3 +90,42 @@ a {
     font-size: 10px;
     font-style: italic;
 }
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #1d1f21;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.modal-content .label-column {
+    width: 20%;
+}
+
+.modal-footer {
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 2.5%;
+}
+
+a:link, a:visited {
+    color: #c9d1d9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
