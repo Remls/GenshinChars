@@ -18,7 +18,6 @@ with open('data/versions.csv', newline='') as f:
 class Character:
     def __init__(self, row: dict):
         self.input_row = row
-        self.character_name = row['name']
         self.release_version = row['release_version'] or None
 
         if row['release_date']:

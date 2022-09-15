@@ -2,7 +2,7 @@ from classes import Character
 from constants import WEAPONS, ELEMENTS, RARITIES, GENDERS, REGIONS, RARITY_ICONS, GENDER_ICONS, REGION_ICONS
 from functions import load_template, get_title_with_image, get_formatted_char_name, get_counter_data
 from datetime import datetime
-import csv
+import csv, json
 
 
 # DATA STORES
@@ -155,3 +155,12 @@ output = output.replace("[LAST_UPDATED]", str(datetime.utcnow()))
 
 with open("docs/index.html", "w") as f:
     f.write(output)
+
+with open("docs/assets/chars.json", "w") as f:
+    chars = {}
+    for el in character_version_data:
+        char_data = el.input_row
+        char_data["release_version"] = el.get_version_data()
+        char_data["release_date"] = el.release_date
+        chars[el.input_row["name"]] = char_data
+    f.write(json.dumps(chars, default=vars, separators=(',', ':')))
