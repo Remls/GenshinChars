@@ -1,6 +1,7 @@
 name,display_name,rarity,element,weapon,region,gender,release_version,release_date
 Albedo,,5,Geo,Sword,Mondstadt,Male,1.2,
 Alhaitham,,,Dendro,Sword,Sumeru,Male,,
+Alice,,,,,Mondstadt,Female,,
 Aloy,,5,Cryo,Bow,,Female,2.1,
 Amber,,4,Pyro,Bow,Mondstadt,Female,1.0,
 Arataki Itto,Itto,5,Geo,Claymore,Inazuma,Male,2.3,2021-12-14
