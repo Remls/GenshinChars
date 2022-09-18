@@ -45,6 +45,7 @@ document.addEventListener('alpine:init', () => {
         weapon: null,
         releaseVersion: null,
         releaseDate: null,
+        photo: null,
 
         showCharSheet(char) {
             const selectedChar = characterData[char]
@@ -56,6 +57,7 @@ document.addEventListener('alpine:init', () => {
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
             this.releaseDate = selectedChar.release_date || 'Unknown'
+            this.photo = selectedChar.photo
             this.modalOpen = true
         },
 

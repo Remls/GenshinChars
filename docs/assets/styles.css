@@ -70,6 +70,15 @@ tfoot td {
     color: grey;
 }
 
+.character-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.character-links > span {
+    padding-left: 5px;
+}
+
 .clickable:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -97,6 +106,10 @@ tfoot td {
 }
 
 .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 95%;
     margin: 0 auto;
     font-size: 10px;
@@ -120,6 +133,13 @@ tfoot td {
     background-color: #1d1f21;
     padding: 2rem 0;
     width: 100%;
+}
+.modal-content-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .modal-content .label-column {

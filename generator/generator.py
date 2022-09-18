@@ -1,6 +1,6 @@
 from classes import Character
 from constants import WEAPONS, ELEMENTS, RARITIES, GENDERS, REGIONS, RARITY_ICONS, GENDER_ICONS, REGION_ICONS
-from functions import load_template, get_title_with_image, get_formatted_char_name, get_counter_data
+from functions import load_template, get_title_with_image, get_counter_data
 from datetime import datetime
 import csv, json
 
@@ -56,10 +56,10 @@ def get_region_data(key: str) -> str:
 with open('data/chars.csv', newline='') as f:
     reader = csv.DictReader(f)
     for row in reader:
-        char = get_formatted_char_name(row)
+        char = Character(row)
         w = row['weapon']  or "Unknown Weapon"
         e = row['element'] or "Unknown Element"
-        table_data[w][e].append(char)
+        table_data[w][e].append(char.get_formatted_char_name())
         r = row['rarity']  or "Unknown Rarity"
         rarity_data[r][w] += 1
         rarity_data[r][e] += 1
@@ -72,7 +72,7 @@ with open('data/chars.csv', newline='') as f:
         region_data[rg][w] += 1
         region_data[rg][e] += 1
         region_data[rg]["Total"] += 1
-        character_version_data.append(Character(row))
+        character_version_data.append(char)
     character_version_data.sort(reverse=True)
 
 # Build output
@@ -90,7 +90,7 @@ table = []
 for e in ELEMENTS:
     line = f"<tr><td class=\"label-column\">{get_title_with_image(e)}</td>"
     for w in WEAPONS:
-        line += f"<td>{'<br>'.join(table_data[w][e])}</td>"
+        line += f"<td>{'\n'.join(table_data[w][e])}</td>"
 
     # Rarity data for this element
     line += f"<td class=\"totals-cells center\">{get_rarity_data(e)}</td>"
@@ -134,7 +134,7 @@ output = output.replace("[TABLE]", "\n".join(table))
 character_version_table = []
 for cv in character_version_data:
     line = "<tr>"
-    line += f"<td>{get_formatted_char_name(cv.input_row)}</td>"
+    line += f"<td>{cv.get_formatted_char_name()}</td>"
     if cv.release_version:
         ver = cv.get_version_data()
         if ver.version_name:
@@ -162,5 +162,6 @@ with open("docs/assets/chars.json", "w") as f:
         char_data = el.input_row
         char_data["release_version"] = el.get_version_data()
         char_data["release_date"] = el.get_formatted_release_date()
+        char_data["photo"] = el.get_link_to_full_character_image()
         chars[el.input_row["name"]] = char_data
     f.write(json.dumps(chars, default=vars, separators=(',', ':')))
