@@ -90,7 +90,8 @@ table = []
 for e in ELEMENTS:
     line = f"<tr><td class=\"label-column\">{get_title_with_image(e)}</td>"
     for w in WEAPONS:
-        line += f"<td>{'\n'.join(table_data[w][e])}</td>"
+        td_data = '\n'.join(table_data[w][e])
+        line += f"<td>{td_data}</td>"
 
     # Rarity data for this element
     line += f"<td class=\"totals-cells center\">{get_rarity_data(e)}</td>"
