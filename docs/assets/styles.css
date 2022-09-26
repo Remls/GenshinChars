@@ -17,7 +17,11 @@ body {
 
 @font-face {
     font-family: Genshin;
-    src: url(genshin.ttf);
+    src: url('fonts/genshin.woff2') format('woff2'),
+        url('fonts/genshin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 .gi-font {
     font-family: Genshin, Arial, Helvetica, sans-serif;
