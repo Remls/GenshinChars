@@ -1,15 +1,21 @@
 from datetime import datetime
 from functools import cache
+from functions import load_photo_cache_from_file, add_to_photo_cache_file
 import csv
 import requests
 
 FALLBACK_PHOTO = "assets/images/Fallback.png"
 
+photo_cache = load_photo_cache_from_file()
 @cache
 def has_photo(char_name: str) -> bool:
     print(f"Loading {char_name} ...")
+    if char_name in photo_cache:
+        return True
     url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
     r = requests.get(url)
+    if r.ok:
+        add_to_photo_cache_file(char_name)
     return r.ok
 
 class Version:
