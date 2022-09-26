@@ -454,7 +454,7 @@
 
     <div x-data="lastUpdated" class="page-footer">
         <div>
-            <span x-show="false" id="lastUpdatedTimestamp">2022-09-25 09:03:01.014251 UTC</span>
+            <span x-show="false" id="lastUpdatedTimestamp">2022-09-26 17:34:17.340682 UTC</span>
             Last updated <span x-text="lastUpdatedFormatted()"></span>
             <br>
             Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a>
@@ -480,6 +480,12 @@
                                 <td class="label-column">Name</td>
                                 <td>
                                     <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Birthday</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
                                 </td>
                             </tr>
                             <tr>
