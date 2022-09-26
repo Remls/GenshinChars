@@ -163,6 +163,6 @@ with open("docs/assets/chars.json", "w") as f:
         char_data = el.input_row
         char_data["release_version"] = el.get_version_data()
         char_data["release_date"] = el.get_formatted_release_date()
-        char_data["photo"] = el.get_link_to_full_character_image()
+        char_data["photo"] = el.get_character_image_filename()
         chars[el.input_row["name"]] = char_data
     f.write(json.dumps(chars, default=vars, separators=(',', ':')))

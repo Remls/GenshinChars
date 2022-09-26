@@ -1,11 +1,16 @@
 from datetime import datetime
+from functools import cache
 import csv
 import requests
 
 FALLBACK_PHOTO = "assets/images/Fallback.png"
-# Cache is shared between full photo and profile photo
-# (It assumes that if one exists, the other will as well)
-photo_results_cache = {}
+
+@cache
+def has_photo(char_name: str) -> bool:
+    print(f"Loading {char_name} ...")
+    url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
+    r = requests.get(url)
+    return r.ok
 
 class Version:
     def __init__(self, row: dict):
@@ -51,31 +56,18 @@ class Character:
 
     def get_character_image(self) -> str:
         char_name = self.input_row['name'].replace(" ", "_").lower()
-        url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
-        if char_name in photo_results_cache:
-            if photo_results_cache[char_name] == False:
-                url = FALLBACK_PHOTO
+        if has_photo(char_name):
+            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
         else:
-            print(f"Loading {char_name} ...")
-            r = requests.get(url)
-            photo_results_cache[char_name] = r.ok
-            if not r.ok:
-                url = FALLBACK_PHOTO
+            url = FALLBACK_PHOTO
         return f"<img width=\"20\" height=\"20\" src=\"{url}\">"
 
-    def get_link_to_full_character_image(self) -> str:
+    def get_character_image_filename(self) -> str:
         char_name = self.input_row['name'].replace(" ", "_").lower()
-        url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_name}.png"
-        if char_name in photo_results_cache:
-            if photo_results_cache[char_name] == False:
-                url = None
+        if has_photo(char_name):
+            return f"{char_name}.png"
         else:
-            print(f"Loading {char_name} ...")
-            r = requests.get(url)
-            photo_results_cache[char_name] = r.ok
-            if not r.ok:
-                url = None
-        return url
+            return None
 
     def get_formatted_release_date(self) -> str:
         if self.release_date:
