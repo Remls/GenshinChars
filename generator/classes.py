@@ -81,6 +81,16 @@ class Character:
             return date.strftime("%Y %B %-d")
         return None
 
+    def get_formatted_birthday(self) -> str:
+        birthday = self.input_row['birthday']
+        if birthday:
+            if birthday == "02-29":
+                # Fuck you, Bennett
+                return "February 29"
+            date = datetime.strptime(birthday, "%m-%d")
+            return date.strftime("%B %-d")
+        return None
+
     def __eq__(self, other) -> bool:
         return (self.release_version == other.release_version and
             self.release_date == other.release_date)

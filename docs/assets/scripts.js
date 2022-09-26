@@ -40,6 +40,7 @@ document.addEventListener('alpine:init', () => {
         modalOpen: false,
 
         name: null,
+        birthday: null,
         element: null,
         gender: null,
         rarity: null,
@@ -52,6 +53,7 @@ document.addEventListener('alpine:init', () => {
         showCharSheet(char) {
             const selectedChar = characterData[char]
             this.name = selectedChar.name
+            this.birthday = selectedChar.birthday || 'Unknown'
             this.element = selectedChar.element || 'Unknown'
             this.gender = selectedChar.gender || 'Unknown'
             this.rarity = selectedChar.rarity ? `${selectedChar.rarity}-star` : 'Unknown'

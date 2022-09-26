@@ -161,6 +161,7 @@ with open("docs/assets/chars.json", "w") as f:
     chars = {}
     for el in character_version_data:
         char_data = el.input_row
+        char_data["birthday"] = el.get_formatted_birthday()
         char_data["release_version"] = el.get_version_data()
         char_data["release_date"] = el.get_formatted_release_date()
         char_data["photo"] = el.get_character_image_filename()

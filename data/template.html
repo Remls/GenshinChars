@@ -92,6 +92,12 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td class="label-column">Birthday</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td class="label-column">Element</td>
                                 <td>
                                     <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element"></span>
