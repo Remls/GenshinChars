@@ -9,10 +9,18 @@
     }
 }
 
+:root {
+    --bg-color: #0d1117;
+    --secondary-color: #30363d;
+    --secondary-color-muted: #30363d80;
+    --modal-bg-color: #1d1f21;
+    --txt-color: #c9d1d9;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0d1117;
-    color: #c9d1d9;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 
 @font-face {
@@ -36,10 +44,10 @@ h2, th, .label-column {
 }
 
 th, .label-column {
-    background-color: #30363d;
+    background-color: var(--secondary-color);
 }
 .totals-cells {
-    background-color: #30363d80;
+    background-color: var(--secondary-color-muted);
 }
 
 section {
@@ -62,8 +70,39 @@ table, th, td {
     white-space: nowrap;
 }
 
-tfoot td {
-    border-color: transparent;
+.tooltip {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 3px 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.tooltip .tooltip-text {
+    /* Position */
+    top: 105%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+    /* Appearance */
+    width: 120px;
+    background-color: var(--secondary-color);
+    color: var(--txt-color);
+    text-align: center;
+    border: 1px solid var(--txt-color);
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Transition */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text,
+.tooltip:active .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
 
 .center {
@@ -134,7 +173,7 @@ tfoot td {
 .modal-content {
     position: fixed;
     bottom: 0;
-    background-color: #1d1f21;
+    background-color: var(--modal-bg-color);
     padding: 2rem 0;
     width: 100%;
 }
@@ -159,7 +198,7 @@ tfoot td {
 }
 
 a:link, a:visited {
-    color: #c9d1d9;
+    color: var(--txt-color);
     text-decoration: none;
 }
 a:hover {

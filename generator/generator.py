@@ -48,7 +48,7 @@ def get_rarity_data(key: str) -> str:
 def get_gender_data(key: str) -> str:
     return get_counter_data(gender_data, GENDERS, GENDER_ICONS, key)
 def get_region_data(key: str) -> str:
-    return get_counter_data(region_data, REGIONS, REGION_ICONS, key)
+    return get_counter_data(region_data, REGIONS, REGION_ICONS, key, True)
 
 
 

@@ -23,11 +23,15 @@ def get_title_with_image(key: str, ext: str = "svg") -> str:
     else:
         return f"<img width=\"50\" height=\"50\" src=\"assets/images/{key}.{ext}\"><br>{key}"
 
-def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str) -> str:
+def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: str, include_tooltips = False) -> str:
     display = []
-    for k in possible_keys:
-        count = data[k][input]
-        icon = key_icons[k]
+    for key in possible_keys:
+        count = data[key][input]
+        icon = key_icons[key]
         if count > 0:
-            display.append(f"<b>{icon}</b> {count}")
+            if include_tooltips and not "Unknown" in key:
+                display.append(f"<b class=\"tooltip\">{icon}<span class=\"tooltip-text\">{key}</span></b> {count}")
+            else:
+                display.append(f"<b>{icon}</b> {count}")
+
     return '<br>'.join(display)
