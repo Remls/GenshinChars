@@ -76,7 +76,7 @@ table, th, td {
     position: relative;
     display: inline-block;
     padding: 3px 0;
-    text-decoration: underline;
+    text-decoration: underline dotted;
     text-underline-offset: 3px;
 }
 .tooltip .tooltip-text {
@@ -104,6 +104,10 @@ table, th, td {
 .tooltip:active .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+.prevent-selection {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
 }
 
 .center {

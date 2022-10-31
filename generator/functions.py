@@ -30,7 +30,7 @@ def get_counter_data(data: dict, possible_keys: list, key_icons: dict, input: st
         icon = key_icons[key]
         if count > 0:
             if include_tooltips and not "Unknown" in key:
-                display.append(f"<b class=\"tooltip\">{icon}<span class=\"tooltip-text\">{key}</span></b> {count}")
+                display.append(f"<b class=\"tooltip prevent-selection\">{icon}<span class=\"tooltip-text prevent-selection\">{key}</span></b> {count}")
             else:
                 display.append(f"<b>{icon}</b> {count}")
 
