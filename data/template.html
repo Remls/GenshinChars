@@ -172,7 +172,7 @@
                             <td>
                                 <div @click="showCharSheet(char.name)" class="character-links">
                                     <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-                                    <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
                                         x-text="char.display_name || char.name">
                                     </span>
                                 </div>
