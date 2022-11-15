@@ -109,7 +109,7 @@ document.addEventListener('alpine:init', () => {
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
             this.releaseDate = selectedChar.release_date || 'Unknown'
-            this.photo = selectedChar.photo ? `${PHOTO_BASE}${selectedChar.photo}` : null
+            this.photo = selectedChar.photo ? `${FULL_PHOTO_BASE}${selectedChar.photo}` : null
             this.modalOpen = true
         },
 

@@ -228,6 +228,77 @@
             </a>
         </div>
     </div>
+
+    <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
+        <div class="modal-content" @click.outside="modalOpen = false">
+            <div class="modal-content-flex">
+                <img x-show="photo" height="250" :src="photo">
+                <div class="table-wrapper">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="label-column">Name</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Birthday</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Element</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Gender</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': gender === 'Unknown' }" x-text="gender"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Rarity</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': rarity === 'Unknown' }" x-text="rarity"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Region</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': region === 'Unknown' }" x-text="region"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Weapon</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': weapon === 'Unknown' }" x-text="weapon"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Release Version</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': releaseVersion === 'Unknown' }" x-text="releaseVersion"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label-column">Release Date</td>
+                                <td>
+                                    <span :class="{ 'text-unknown': releaseDate === 'Unknown' }" x-text="releaseDate"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a :href="getWikiLink()">More info ></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
