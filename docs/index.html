@@ -3,7 +3,7 @@
 
 <head>
     <title>Genshin Impact Characters</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
     <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -18,7 +18,7 @@
     <script src="assets/scripts.js"></script>
 </head>
 
-<body x-data="charSheet">
+<body x-data="charSheet" x-init="fetchAllData">
     <section>
         <h2>Characters by weapon/element</h2>
         <div class="table-wrapper">
@@ -29,437 +29,428 @@
                             <!-- Empty first header -->
                         </th>
                         <th width="12%"><img width="50" height="50" src="assets/images/Bow.webp"><br>Bow</th>
-<th width="12%"><img width="50" height="50" src="assets/images/Catalyst.webp"><br>Catalyst</th>
-<th width="12%"><img width="50" height="50" src="assets/images/Claymore.webp"><br>Claymore</th>
-<th width="12%"><img width="50" height="50" src="assets/images/Polearm.webp"><br>Polearm</th>
-<th width="12%"><img width="50" height="50" src="assets/images/Sword.webp"><br>Sword</th>
-<th width="12%">Unknown</th>
-<th>RARITY</th>
-<th>GENDER</th>
-<th>REGION</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Catalyst.webp"><br>Catalyst</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Claymore.webp"><br>Claymore</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Polearm.webp"><br>Polearm</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Sword.webp"><br>Sword</th>
+                        <th width="12%">Unknown</th>
+                        <th>RARITY</th>
+                        <th>GENDER</th>
+                        <th>REGION</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td class="label-column"><img width="50" height="50" src="assets/images/Anemo.svg"><br>Anemo</td><td><div @click="showCharSheet('Faruzan')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-anemo clickable">Faruzan</span>
-            </div>
-<div @click="showCharSheet('Venti')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/venti.png"> <span class="gi-font el-anemo clickable">Venti</span>
-            </div></td><td><div @click="showCharSheet('Shikanoin Heizou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shikanoin_heizou.png"> <span class="gi-font el-anemo clickable">Heizou</span>
-            </div>
-<div @click="showCharSheet('Sucrose')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sucrose.png"> <span class="gi-font el-anemo clickable">Sucrose</span>
-            </div>
-<div @click="showCharSheet('Wanderer')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-anemo clickable">Wanderer</span>
-            </div></td><td><div @click="showCharSheet('Sayu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png"> <span class="gi-font el-anemo clickable">Sayu</span>
-            </div></td><td><div @click="showCharSheet('Xiao')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiao.png"> <span class="gi-font el-anemo clickable">Xiao</span>
-            </div></td><td><div @click="showCharSheet('Jean')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jean.png"> <span class="gi-font el-anemo clickable">Jean</span>
-            </div>
-<div @click="showCharSheet('Kaedehara Kazuha')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaedehara_kazuha.png"> <span class="gi-font el-anemo clickable">Kazuha</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 5<br><b>④</b> 4</td><td class="totals-cells center"><b>♂</b> 5<br><b>♀</b> 4</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 3<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 1<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 3<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 2</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Geo.svg"><br>Geo</td><td><div @click="showCharSheet('Gorou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gorou.png"> <span class="gi-font el-geo clickable">Gorou</span>
-            </div></td><td><div @click="showCharSheet('Ningguang')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png"> <span class="gi-font el-geo clickable">Ningguang</span>
-            </div></td><td><div @click="showCharSheet('Arataki Itto')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arataki_itto.png"> <span class="gi-font el-geo clickable">Itto</span>
-            </div>
-<div @click="showCharSheet('Noelle')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png"> <span class="gi-font el-geo clickable">Noelle</span>
-            </div></td><td><div @click="showCharSheet('Yun Jin')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yun_jin.png"> <span class="gi-font el-geo clickable">Yun Jin</span>
-            </div>
-<div @click="showCharSheet('Zhongli')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zhongli.png"> <span class="gi-font el-geo clickable">Zhongli</span>
-            </div></td><td><div @click="showCharSheet('Albedo')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/albedo.png"> <span class="gi-font el-geo clickable">Albedo</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 3<br><b>④</b> 4</td><td class="totals-cells center"><b>♂</b> 4<br><b>♀</b> 3</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 2<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 3<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 2</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Electro.svg"><br>Electro</td><td><div @click="showCharSheet('Fischl')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/fischl.png"> <span class="gi-font el-electro clickable">Fischl</span>
-            </div>
-<div @click="showCharSheet('Kujou Sara')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png"> <span class="gi-font el-electro clickable">Sara</span>
-            </div></td><td><div @click="showCharSheet('Lisa')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lisa.png"> <span class="gi-font el-electro clickable">Lisa</span>
-            </div>
-<div @click="showCharSheet('Yae Miko')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png"> <span class="gi-font el-electro clickable">Miko</span>
-            </div></td><td><div @click="showCharSheet('Beidou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/beidou.png"> <span class="gi-font el-electro clickable">Beidou</span>
-            </div>
-<div @click="showCharSheet('Dori')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dori.png"> <span class="gi-font el-electro clickable">Dori</span>
-            </div>
-<div @click="showCharSheet('Razor')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/razor.png"> <span class="gi-font el-electro clickable">Razor</span>
-            </div></td><td><div @click="showCharSheet('Cyno')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/cyno.png"> <span class="gi-font el-electro clickable">Cyno</span>
-            </div>
-<div @click="showCharSheet('Raiden Shogun')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/raiden_shogun.png"> <span class="gi-font el-electro clickable">Ei</span>
-            </div></td><td><div @click="showCharSheet('Keqing')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/keqing.png"> <span class="gi-font el-electro clickable">Keqing</span>
-            </div>
-<div @click="showCharSheet('Kuki Shinobu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kuki_shinobu.png"> <span class="gi-font el-electro clickable">Shinobu</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 4<br><b>④</b> 7</td><td class="totals-cells center"><b>♂</b> 2<br><b>♀</b> 9</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 3<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 2<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 4<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 2</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Dendro.svg"><br>Dendro</td><td><div @click="showCharSheet('Collei')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/collei.png"> <span class="gi-font el-dendro clickable">Collei</span>
-            </div>
-<div @click="showCharSheet('Tighnari')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png"> <span class="gi-font el-dendro clickable">Tighnari</span>
-            </div></td><td><div @click="showCharSheet('Baizhu')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Baizhu</span>
-            </div>
-<div @click="showCharSheet('Nahida')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nahida.png"> <span class="gi-font el-dendro clickable">Nahida</span>
-            </div></td><td><div @click="showCharSheet('Kaveh')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Kaveh</span>
-            </div></td><td><div @click="showCharSheet('Yaoyao')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Yaoyao</span>
-            </div></td><td><div @click="showCharSheet('Alhaitham')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Alhaitham</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 3<br><b>④</b> 2<br><b>◯</b> 2</td><td class="totals-cells center"><b>♂</b> 4<br><b>♀</b> 3</td><td class="totals-cells center"><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 2<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 5</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Hydro.svg"><br>Hydro</td><td><div @click="showCharSheet('Tartaglia')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tartaglia.png"> <span class="gi-font el-hydro clickable">Childe</span>
-            </div>
-<div @click="showCharSheet('Yelan')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yelan.png"> <span class="gi-font el-hydro clickable">Yelan</span>
-            </div></td><td><div @click="showCharSheet('Barbara')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/barbara.png"> <span class="gi-font el-hydro clickable">Barbara</span>
-            </div>
-<div @click="showCharSheet('Mona')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mona.png"> <span class="gi-font el-hydro clickable">Mona</span>
-            </div>
-<div @click="showCharSheet('Sangonomiya Kokomi')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sangonomiya_kokomi.png"> <span class="gi-font el-hydro clickable">Kokomi</span>
-            </div></td><td><div @click="showCharSheet('Soutine')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-hydro clickable">Soutine</span>
-            </div></td><td><div @click="showCharSheet('Candace')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/candace.png"> <span class="gi-font el-hydro clickable">Candace</span>
-            </div></td><td><div @click="showCharSheet('Kamisato Ayato')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png"> <span class="gi-font el-hydro clickable">Ayato</span>
-            </div>
-<div @click="showCharSheet('Nilou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nilou.png"> <span class="gi-font el-hydro clickable">Nilou</span>
-            </div>
-<div @click="showCharSheet('Xingqiu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xingqiu.png"> <span class="gi-font el-hydro clickable">Xingqiu</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 6<br><b>④</b> 3<br><b>◯</b> 1</td><td class="totals-cells center"><b>♂</b> 3<br><b>♀</b> 6<br><b>?</b> 1</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 2<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 2<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 2<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 2<br><b class="tooltip prevent-selection">Fn<span class="tooltip-text prevent-selection">Fontaine</span></b> 1<br><b class="tooltip prevent-selection">Sz<span class="tooltip-text prevent-selection">Snezhnaya</span></b> 1</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Pyro.svg"><br>Pyro</td><td><div @click="showCharSheet('Amber')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/amber.png"> <span class="gi-font el-pyro clickable">Amber</span>
-            </div>
-<div @click="showCharSheet('Yoimiya')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yoimiya.png"> <span class="gi-font el-pyro clickable">Yoimiya</span>
-            </div></td><td><div @click="showCharSheet('Klee')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/klee.png"> <span class="gi-font el-pyro clickable">Klee</span>
-            </div>
-<div @click="showCharSheet('Yanfei')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png"> <span class="gi-font el-pyro clickable">Yanfei</span>
-            </div></td><td><div @click="showCharSheet('Dehya')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-pyro clickable">Dehya</span>
-            </div>
-<div @click="showCharSheet('Diluc')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diluc.png"> <span class="gi-font el-pyro clickable">Diluc</span>
-            </div>
-<div @click="showCharSheet('Xinyan')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png"> <span class="gi-font el-pyro clickable">Xinyan</span>
-            </div></td><td><div @click="showCharSheet('Hu Tao')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/hu_tao.png"> <span class="gi-font el-pyro clickable">Hu Tao</span>
-            </div>
-<div @click="showCharSheet('Thoma')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/thoma.png"> <span class="gi-font el-pyro clickable">Thoma</span>
-            </div>
-<div @click="showCharSheet('Xiangling')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiangling.png"> <span class="gi-font el-pyro clickable">Xiangling</span>
-            </div></td><td><div @click="showCharSheet('Bennett')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/bennett.png"> <span class="gi-font el-pyro clickable">Bennett</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 5<br><b>④</b> 6</td><td class="totals-cells center"><b>♂</b> 3<br><b>♀</b> 8</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 4<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 4<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 2<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 1</td></tr>
-<tr><td class="label-column"><img width="50" height="50" src="assets/images/Cryo.svg"><br>Cryo</td><td><div @click="showCharSheet('Aloy')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aloy.png"> <span class="gi-font el-cryo clickable">Aloy</span>
-            </div>
-<div @click="showCharSheet('Diona')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diona.png"> <span class="gi-font el-cryo clickable">Diona</span>
-            </div>
-<div @click="showCharSheet('Ganyu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ganyu.png"> <span class="gi-font el-cryo clickable">Ganyu</span>
-            </div></td><td></td><td><div @click="showCharSheet('Chongyun')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chongyun.png"> <span class="gi-font el-cryo clickable">Chongyun</span>
-            </div>
-<div @click="showCharSheet('Eula')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/eula.png"> <span class="gi-font el-cryo clickable">Eula</span>
-            </div></td><td><div @click="showCharSheet('Mika')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-cryo clickable">Mika</span>
-            </div>
-<div @click="showCharSheet('Rosaria')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/rosaria.png"> <span class="gi-font el-cryo clickable">Rosaria</span>
-            </div>
-<div @click="showCharSheet('Shenhe')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shenhe.png"> <span class="gi-font el-cryo clickable">Shenhe</span>
-            </div></td><td><div @click="showCharSheet('Kaeya')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaeya.png"> <span class="gi-font el-cryo clickable">Kaeya</span>
-            </div>
-<div @click="showCharSheet('Kamisato Ayaka')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayaka.png"> <span class="gi-font el-cryo clickable">Ayaka</span>
-            </div>
-<div @click="showCharSheet('Layla')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-cryo clickable">Layla</span>
-            </div>
-<div @click="showCharSheet('Qiqi')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/qiqi.png"> <span class="gi-font el-cryo clickable">Qiqi</span>
-            </div></td><td></td><td class="totals-cells center"><b>⑤</b> 6<br><b>④</b> 6</td><td class="totals-cells center"><b>♂</b> 3<br><b>♀</b> 9</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 5<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 4<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 1<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 1<br><b>?</b> 1</td></tr>
-<tr><td class="label-column">Unknown</td><td></td><td></td><td><div @click="showCharSheet('Il Dottore')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Dottore</span>
-            </div></td><td></td><td></td><td><div @click="showCharSheet('Alice')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Alice</span>
-            </div>
-<div @click="showCharSheet('Dainsleif')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Dainsleif</span>
-            </div></td><td class="totals-cells center"><b>◯</b> 3</td><td class="totals-cells center"><b>♂</b> 2<br><b>♀</b> 1</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 1<br><b class="tooltip prevent-selection">Sz<span class="tooltip-text prevent-selection">Snezhnaya</span></b> 1<br><b class="tooltip prevent-selection">Kh<span class="tooltip-text prevent-selection">Khaenri'ah</span></b> 1</td></tr>
-<tr><td class="label-column"><b>RARITY</b></td><td class="totals-cells center"><b>⑤</b> 7<br><b>④</b> 7</td><td class="totals-cells center"><b>⑤</b> 6<br><b>④</b> 6<br><b>◯</b> 1</td><td class="totals-cells center"><b>⑤</b> 4<br><b>④</b> 7<br><b>◯</b> 3</td><td class="totals-cells center"><b>⑤</b> 6<br><b>④</b> 7</td><td class="totals-cells center"><b>⑤</b> 9<br><b>④</b> 5</td><td class="totals-cells center"><b>◯</b> 2</td><td class="transparent-rb totals-cells center"><b>⑤</b> 32<br><b>④</b> 32<br><b>◯</b> 6</td><td class="transparent-rb totals-cells"></td><td class="transparent-b totals-cells"></td></tr>
-<tr><td class="label-column"><b>GENDER</b></td><td class="totals-cells center"><b>♂</b> 4<br><b>♀</b> 10</td><td class="totals-cells center"><b>♂</b> 3<br><b>♀</b> 10</td><td class="totals-cells center"><b>♂</b> 6<br><b>♀</b> 7<br><b>?</b> 1</td><td class="totals-cells center"><b>♂</b> 5<br><b>♀</b> 8</td><td class="totals-cells center"><b>♂</b> 7<br><b>♀</b> 7</td><td class="totals-cells center"><b>♂</b> 1<br><b>♀</b> 1</td><td class="transparent-rb totals-cells"></td><td class="transparent-rb totals-cells center"><b>♂</b> 26<br><b>♀</b> 43<br><b>?</b> 1</td><td class="transparent-b totals-cells"></td></tr>
-<tr><td class="label-column"><b>REGION</b></td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 4<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 2<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 3<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 3<br><b class="tooltip prevent-selection">Sz<span class="tooltip-text prevent-selection">Snezhnaya</span></b> 1<br><b>?</b> 1</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 5<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 3<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 3<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 2</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 4<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 3<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 2<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 3<br><b class="tooltip prevent-selection">Fn<span class="tooltip-text prevent-selection">Fontaine</span></b> 1<br><b class="tooltip prevent-selection">Sz<span class="tooltip-text prevent-selection">Snezhnaya</span></b> 1</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 2<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 7<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 2<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 2</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 4<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 3<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 4<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 3</td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 1<br><b class="tooltip prevent-selection">Kh<span class="tooltip-text prevent-selection">Khaenri'ah</span></b> 1</td><td class="transparent-r totals-cells"></td><td class="transparent-r totals-cells"></td><td class="totals-cells center"><b class="tooltip prevent-selection">Md<span class="tooltip-text prevent-selection">Mondstadt</span></b> 20<br><b class="tooltip prevent-selection">Ly<span class="tooltip-text prevent-selection">Liyue</span></b> 18<br><b class="tooltip prevent-selection">In<span class="tooltip-text prevent-selection">Inazuma</span></b> 14<br><b class="tooltip prevent-selection">Su<span class="tooltip-text prevent-selection">Sumeru</span></b> 13<br><b class="tooltip prevent-selection">Fn<span class="tooltip-text prevent-selection">Fontaine</span></b> 1<br><b class="tooltip prevent-selection">Sz<span class="tooltip-text prevent-selection">Snezhnaya</span></b> 2<br><b class="tooltip prevent-selection">Kh<span class="tooltip-text prevent-selection">Khaenri'ah</span></b> 1<br><b>?</b> 1</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    
-    <section>
-        <h2>Characters in order of release</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
                     <tr>
-                        <th>Character</th>
-                        <th>Release Version</th>
-                        <th>Release Date</th>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Anemo.svg">
+                            <br>
+                            Anemo
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Anemo rarity</td>
+                        <td class="totals-cells center">Anemo gender</td>
+                        <td class="totals-cells center">Anemo region</td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr><td><div @click="showCharSheet('Alice')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Alice</span>
-            </div></td><td class="center" colspan="2"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Dainsleif')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Dainsleif</span>
-            </div></td><td class="center" colspan="2"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Il Dottore')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-unknown clickable">Dottore</span>
-            </div></td><td class="center" colspan="2"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Kaveh')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Kaveh</span>
-            </div></td><td class="center" colspan="2"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Soutine')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-hydro clickable">Soutine</span>
-            </div></td><td>v3.8</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Baizhu')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Baizhu</span>
-            </div></td><td>v3.6</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Dehya')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-pyro clickable">Dehya</span>
-            </div></td><td>v3.5</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Mika')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-cryo clickable">Mika</span>
-            </div></td><td>v3.5</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Alhaitham')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Alhaitham</span>
-            </div></td><td>v3.4</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Yaoyao')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-dendro clickable">Yaoyao</span>
-            </div></td><td>v3.4</td><td class="center"><span class="text-unknown">Unknown</span></td></tr>
-<tr><td><div @click="showCharSheet('Faruzan')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-anemo clickable">Faruzan</span>
-            </div></td><td>v3.3</td><td>2022 December 7</td></tr>
-<tr><td><div @click="showCharSheet('Wanderer')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-anemo clickable">Wanderer</span>
-            </div></td><td>v3.3</td><td>2022 December 7</td></tr>
-<tr><td><div @click="showCharSheet('Layla')" class="character-links">
-                <img width="20" height="20" src="assets/images/Fallback.png"> <span class="gi-font el-cryo clickable">Layla</span>
-            </div></td><td>v3.2: Akasha Pulses, the Kalpa Flame Rises</td><td>2022 November 18</td></tr>
-<tr><td><div @click="showCharSheet('Nahida')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nahida.png"> <span class="gi-font el-dendro clickable">Nahida</span>
-            </div></td><td>v3.2: Akasha Pulses, the Kalpa Flame Rises</td><td>2022 November 2</td></tr>
-<tr><td><div @click="showCharSheet('Nilou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nilou.png"> <span class="gi-font el-hydro clickable">Nilou</span>
-            </div></td><td>v3.1: King Deshret and the Three Magi</td><td>2022 October 14</td></tr>
-<tr><td><div @click="showCharSheet('Candace')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/candace.png"> <span class="gi-font el-hydro clickable">Candace</span>
-            </div></td><td>v3.1: King Deshret and the Three Magi</td><td>2022 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Cyno')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/cyno.png"> <span class="gi-font el-electro clickable">Cyno</span>
-            </div></td><td>v3.1: King Deshret and the Three Magi</td><td>2022 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Dori')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dori.png"> <span class="gi-font el-electro clickable">Dori</span>
-            </div></td><td>v3.0: The Morn a Thousand Roses Brings</td><td>2022 September 9</td></tr>
-<tr><td><div @click="showCharSheet('Collei')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/collei.png"> <span class="gi-font el-dendro clickable">Collei</span>
-            </div></td><td>v3.0: The Morn a Thousand Roses Brings</td><td>2022 August 24</td></tr>
-<tr><td><div @click="showCharSheet('Tighnari')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png"> <span class="gi-font el-dendro clickable">Tighnari</span>
-            </div></td><td>v3.0: The Morn a Thousand Roses Brings</td><td>2022 August 24</td></tr>
-<tr><td><div @click="showCharSheet('Shikanoin Heizou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shikanoin_heizou.png"> <span class="gi-font el-anemo clickable">Heizou</span>
-            </div></td><td>v2.8: Summer Fantasia</td><td>2022 July 13</td></tr>
-<tr><td><div @click="showCharSheet('Kuki Shinobu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kuki_shinobu.png"> <span class="gi-font el-electro clickable">Shinobu</span>
-            </div></td><td>v2.7: Hidden Dreams in the Depths</td><td>2022 June 21</td></tr>
-<tr><td><div @click="showCharSheet('Yelan')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yelan.png"> <span class="gi-font el-hydro clickable">Yelan</span>
-            </div></td><td>v2.7: Hidden Dreams in the Depths</td><td>2022 May 31</td></tr>
-<tr><td><div @click="showCharSheet('Kamisato Ayato')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png"> <span class="gi-font el-hydro clickable">Ayato</span>
-            </div></td><td>v2.6: Zephyr of the Violet Garden</td><td>2022 March 30</td></tr>
-<tr><td><div @click="showCharSheet('Yae Miko')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png"> <span class="gi-font el-electro clickable">Miko</span>
-            </div></td><td>v2.5: When the Sakura Bloom</td><td>2022 February 16</td></tr>
-<tr><td><div @click="showCharSheet('Shenhe')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shenhe.png"> <span class="gi-font el-cryo clickable">Shenhe</span>
-            </div></td><td>v2.4: Fleeting Colors in Flight</td><td>2022 January 5</td></tr>
-<tr><td><div @click="showCharSheet('Yun Jin')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yun_jin.png"> <span class="gi-font el-geo clickable">Yun Jin</span>
-            </div></td><td>v2.4: Fleeting Colors in Flight</td><td>2022 January 5</td></tr>
-<tr><td><div @click="showCharSheet('Arataki Itto')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arataki_itto.png"> <span class="gi-font el-geo clickable">Itto</span>
-            </div></td><td>v2.3: Shadows Amidst Snowstorms</td><td>2021 December 14</td></tr>
-<tr><td><div @click="showCharSheet('Gorou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gorou.png"> <span class="gi-font el-geo clickable">Gorou</span>
-            </div></td><td>v2.3: Shadows Amidst Snowstorms</td><td>2021 December 14</td></tr>
-<tr><td><div @click="showCharSheet('Thoma')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/thoma.png"> <span class="gi-font el-pyro clickable">Thoma</span>
-            </div></td><td>v2.2: Into the Perilous Labyrinth of Fog</td><td>2021 November 2</td></tr>
-<tr><td><div @click="showCharSheet('Sangonomiya Kokomi')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sangonomiya_kokomi.png"> <span class="gi-font el-hydro clickable">Kokomi</span>
-            </div></td><td>v2.1: Floating World Under the Moonlight</td><td>2021 September 21</td></tr>
-<tr><td><div @click="showCharSheet('Aloy')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aloy.png"> <span class="gi-font el-cryo clickable">Aloy</span>
-            </div></td><td>v2.1: Floating World Under the Moonlight</td><td>2021 September 1</td></tr>
-<tr><td><div @click="showCharSheet('Kujou Sara')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png"> <span class="gi-font el-electro clickable">Sara</span>
-            </div></td><td>v2.1: Floating World Under the Moonlight</td><td>2021 September 1</td></tr>
-<tr><td><div @click="showCharSheet('Raiden Shogun')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/raiden_shogun.png"> <span class="gi-font el-electro clickable">Ei</span>
-            </div></td><td>v2.1: Floating World Under the Moonlight</td><td>2021 September 1</td></tr>
-<tr><td><div @click="showCharSheet('Sayu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png"> <span class="gi-font el-anemo clickable">Sayu</span>
-            </div></td><td>v2.0: The Immovable God and the Eternal Euthymia</td><td>2021 August 10</td></tr>
-<tr><td><div @click="showCharSheet('Yoimiya')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yoimiya.png"> <span class="gi-font el-pyro clickable">Yoimiya</span>
-            </div></td><td>v2.0: The Immovable God and the Eternal Euthymia</td><td>2021 August 10</td></tr>
-<tr><td><div @click="showCharSheet('Kamisato Ayaka')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayaka.png"> <span class="gi-font el-cryo clickable">Ayaka</span>
-            </div></td><td>v2.0: The Immovable God and the Eternal Euthymia</td><td>2021 July 21</td></tr>
-<tr><td><div @click="showCharSheet('Kaedehara Kazuha')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaedehara_kazuha.png"> <span class="gi-font el-anemo clickable">Kazuha</span>
-            </div></td><td>v1.6: Midsummer Island Adventure</td><td>2021 June 29</td></tr>
-<tr><td><div @click="showCharSheet('Eula')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/eula.png"> <span class="gi-font el-cryo clickable">Eula</span>
-            </div></td><td>v1.5: Beneath the Light of Jadeite</td><td>2021 May 18</td></tr>
-<tr><td><div @click="showCharSheet('Yanfei')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png"> <span class="gi-font el-pyro clickable">Yanfei</span>
-            </div></td><td>v1.5: Beneath the Light of Jadeite</td><td>2021 April 28</td></tr>
-<tr><td><div @click="showCharSheet('Rosaria')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/rosaria.png"> <span class="gi-font el-cryo clickable">Rosaria</span>
-            </div></td><td>v1.4: Invitation of Windblume</td><td>2021 April 6</td></tr>
-<tr><td><div @click="showCharSheet('Hu Tao')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/hu_tao.png"> <span class="gi-font el-pyro clickable">Hu Tao</span>
-            </div></td><td>v1.3: All That Glitters</td><td>2021 March 2</td></tr>
-<tr><td><div @click="showCharSheet('Xiao')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiao.png"> <span class="gi-font el-anemo clickable">Xiao</span>
-            </div></td><td>v1.3: All That Glitters</td><td>2021 February 3</td></tr>
-<tr><td><div @click="showCharSheet('Ganyu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ganyu.png"> <span class="gi-font el-cryo clickable">Ganyu</span>
-            </div></td><td>v1.2: The Chalk Prince and the Dragon</td><td>2021 January 12</td></tr>
-<tr><td><div @click="showCharSheet('Albedo')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/albedo.png"> <span class="gi-font el-geo clickable">Albedo</span>
-            </div></td><td>v1.2: The Chalk Prince and the Dragon</td><td>2020 December 23</td></tr>
-<tr><td><div @click="showCharSheet('Xinyan')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png"> <span class="gi-font el-pyro clickable">Xinyan</span>
-            </div></td><td>v1.1: A New Star Approaches</td><td>2020 December 1</td></tr>
-<tr><td><div @click="showCharSheet('Zhongli')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zhongli.png"> <span class="gi-font el-geo clickable">Zhongli</span>
-            </div></td><td>v1.1: A New Star Approaches</td><td>2020 December 1</td></tr>
-<tr><td><div @click="showCharSheet('Diona')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diona.png"> <span class="gi-font el-cryo clickable">Diona</span>
-            </div></td><td>v1.1: A New Star Approaches</td><td>2020 November 11</td></tr>
-<tr><td><div @click="showCharSheet('Tartaglia')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tartaglia.png"> <span class="gi-font el-hydro clickable">Childe</span>
-            </div></td><td>v1.1: A New Star Approaches</td><td>2020 November 11</td></tr>
-<tr><td><div @click="showCharSheet('Klee')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/klee.png"> <span class="gi-font el-pyro clickable">Klee</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 October 20</td></tr>
-<tr><td><div @click="showCharSheet('Amber')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/amber.png"> <span class="gi-font el-pyro clickable">Amber</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Barbara')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/barbara.png"> <span class="gi-font el-hydro clickable">Barbara</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Beidou')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/beidou.png"> <span class="gi-font el-electro clickable">Beidou</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Bennett')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/bennett.png"> <span class="gi-font el-pyro clickable">Bennett</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Chongyun')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chongyun.png"> <span class="gi-font el-cryo clickable">Chongyun</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Diluc')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diluc.png"> <span class="gi-font el-pyro clickable">Diluc</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Fischl')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/fischl.png"> <span class="gi-font el-electro clickable">Fischl</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Jean')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jean.png"> <span class="gi-font el-anemo clickable">Jean</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Kaeya')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaeya.png"> <span class="gi-font el-cryo clickable">Kaeya</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Keqing')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/keqing.png"> <span class="gi-font el-electro clickable">Keqing</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Lisa')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lisa.png"> <span class="gi-font el-electro clickable">Lisa</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Mona')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mona.png"> <span class="gi-font el-hydro clickable">Mona</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Ningguang')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png"> <span class="gi-font el-geo clickable">Ningguang</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Noelle')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png"> <span class="gi-font el-geo clickable">Noelle</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Qiqi')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/qiqi.png"> <span class="gi-font el-cryo clickable">Qiqi</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Razor')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/razor.png"> <span class="gi-font el-electro clickable">Razor</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Sucrose')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sucrose.png"> <span class="gi-font el-anemo clickable">Sucrose</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Venti')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/venti.png"> <span class="gi-font el-anemo clickable">Venti</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Xiangling')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiangling.png"> <span class="gi-font el-pyro clickable">Xiangling</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
-<tr><td><div @click="showCharSheet('Xingqiu')" class="character-links">
-                <img width="20" height="20" src="https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xingqiu.png"> <span class="gi-font el-hydro clickable">Xingqiu</span>
-            </div></td><td>v1.0: Welcome to Teyvat</td><td>2020 September 28</td></tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Geo.svg">
+                            <br>
+                            Geo
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Geo rarity</td>
+                        <td class="totals-cells center">Geo gender</td>
+                        <td class="totals-cells center">Geo region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Electro.svg">
+                            <br>
+                            Electro
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Electro rarity</td>
+                        <td class="totals-cells center">Electro gender</td>
+                        <td class="totals-cells center">Electro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Hydro.svg">
+                            <br>
+                            Hydro
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Hydro rarity</td>
+                        <td class="totals-cells center">Hydro gender</td>
+                        <td class="totals-cells center">Hydro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Pyro.svg">
+                            <br>
+                            Pyro
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Pyro rarity</td>
+                        <td class="totals-cells center">Pyro gender</td>
+                        <td class="totals-cells center">Pyro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Cryo.svg">
+                            <br>
+                            Cryo
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Cryo rarity</td>
+                        <td class="totals-cells center">Cryo gender</td>
+                        <td class="totals-cells center">Cryo region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            Unknown
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Unknown element rarity</td>
+                        <td class="totals-cells center">Unknown element gender</td>
+                        <td class="totals-cells center">Unknown element region</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
     <div class="page-footer">
-        <div x-data="lastUpdated">
-            <span x-show="false" id="lastUpdatedTimestamp">2022-11-15 02:13:23.412724 UTC</span>
+        <div>
             Last updated <span x-text="lastUpdatedFormatted()"></span>
             <br>
             Above tables do not include the Traveler.
@@ -470,88 +461,20 @@
         </div>
         <div class="icons">
             <a href="https://t.me/Remls">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
                 </svg>
             </a>
             <a href="https://github.com/Remls/GenshinChars">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                 </svg>
             </a>
-        </div>
-    </div>
-
-    <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
-        <div class="modal-content" @click.outside="modalOpen = false">
-            <div class="modal-content-flex">
-                <img x-show="photo" height="250" :src="photo">
-                <div class="table-wrapper">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="label-column">Name</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Birthday</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Element</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Gender</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': gender === 'Unknown' }" x-text="gender"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Rarity</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': rarity === 'Unknown' }" x-text="rarity"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Region</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': region === 'Unknown' }" x-text="region"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Weapon</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': weapon === 'Unknown' }" x-text="weapon"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Version</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseVersion === 'Unknown' }" x-text="releaseVersion"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Date</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseDate === 'Unknown' }" x-text="releaseDate"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a :href="getWikiLink()">More info ></a>
-            </div>
         </div>
     </div>
 </body>

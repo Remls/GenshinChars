@@ -3,7 +3,7 @@
 
 <head>
     <title>Genshin Impact Characters</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
     <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -18,7 +18,7 @@
     <script src="assets/scripts.js"></script>
 </head>
 
-<body x-data="charSheet">
+<body x-data="charSheet" x-init="fetchAllData">
     <section>
         <h2>Characters by weapon/element</h2>
         <div class="table-wrapper">
@@ -28,37 +28,135 @@
                         <th>
                             <!-- Empty first header -->
                         </th>
-                        [HEADERS]
+                        <th width="12%"><img width="50" height="50" src="assets/images/Bow.webp"><br>Bow</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Catalyst.webp"><br>Catalyst</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Claymore.webp"><br>Claymore</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Polearm.webp"><br>Polearm</th>
+                        <th width="12%"><img width="50" height="50" src="assets/images/Sword.webp"><br>Sword</th>
+                        <th width="12%">Unknown</th>
+                        <th>RARITY</th>
+                        <th>GENDER</th>
+                        <th>REGION</th>
                     </tr>
                 </thead>
                 <tbody>
-                    [TABLE]
-                </tbody>
-            </table>
-        </div>
-    </section>
-    
-    <section>
-        <h2>Characters in order of release</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
                     <tr>
-                        <th>Character</th>
-                        <th>Release Version</th>
-                        <th>Release Date</th>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Anemo.svg">
+                            <br>
+                            Anemo
+                        </td>
+                        <td>[CHAR element:'Anemo',weapon:'Bow']</td>
+                        <td>[CHAR element:'Anemo',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Anemo',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Anemo',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Anemo',weapon:'Sword']</td>
+                        <td>[CHAR element:'Anemo',weapon:'?']</td>
+                        <td class="totals-cells center">Anemo rarity</td>
+                        <td class="totals-cells center">Anemo gender</td>
+                        <td class="totals-cells center">Anemo region</td>
                     </tr>
-                </thead>
-                <tbody>
-                    [VERSION_TABLE]
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Geo.svg">
+                            <br>
+                            Geo
+                        </td>
+                        <td>[CHAR element:'Geo',weapon:'Bow']</td>
+                        <td>[CHAR element:'Geo',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Geo',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Geo',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Geo',weapon:'Sword']</td>
+                        <td>[CHAR element:'Geo',weapon:'?']</td>
+                        <td class="totals-cells center">Geo rarity</td>
+                        <td class="totals-cells center">Geo gender</td>
+                        <td class="totals-cells center">Geo region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Electro.svg">
+                            <br>
+                            Electro
+                        </td>
+                        <td>[CHAR element:'Electro',weapon:'Bow']</td>
+                        <td>[CHAR element:'Electro',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Electro',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Electro',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Electro',weapon:'Sword']</td>
+                        <td>[CHAR element:'Electro',weapon:'?']</td>
+                        <td class="totals-cells center">Electro rarity</td>
+                        <td class="totals-cells center">Electro gender</td>
+                        <td class="totals-cells center">Electro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Hydro.svg">
+                            <br>
+                            Hydro
+                        </td>
+                        <td>[CHAR element:'Hydro',weapon:'Bow']</td>
+                        <td>[CHAR element:'Hydro',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Hydro',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Hydro',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Hydro',weapon:'Sword']</td>
+                        <td>[CHAR element:'Hydro',weapon:'?']</td>
+                        <td class="totals-cells center">Hydro rarity</td>
+                        <td class="totals-cells center">Hydro gender</td>
+                        <td class="totals-cells center">Hydro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Pyro.svg">
+                            <br>
+                            Pyro
+                        </td>
+                        <td>[CHAR element:'Pyro',weapon:'Bow']</td>
+                        <td>[CHAR element:'Pyro',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Pyro',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Pyro',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Pyro',weapon:'Sword']</td>
+                        <td>[CHAR element:'Pyro',weapon:'?']</td>
+                        <td class="totals-cells center">Pyro rarity</td>
+                        <td class="totals-cells center">Pyro gender</td>
+                        <td class="totals-cells center">Pyro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Cryo.svg">
+                            <br>
+                            Cryo
+                        </td>
+                        <td>[CHAR element:'Cryo',weapon:'Bow']</td>
+                        <td>[CHAR element:'Cryo',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'Cryo',weapon:'Claymore']</td>
+                        <td>[CHAR element:'Cryo',weapon:'Polearm']</td>
+                        <td>[CHAR element:'Cryo',weapon:'Sword']</td>
+                        <td>[CHAR element:'Cryo',weapon:'?']</td>
+                        <td class="totals-cells center">Cryo rarity</td>
+                        <td class="totals-cells center">Cryo gender</td>
+                        <td class="totals-cells center">Cryo region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            Unknown
+                        </td>
+                        <td>[CHAR element:'?',weapon:'Bow']</td>
+                        <td>[CHAR element:'?',weapon:'Catalyst']</td>
+                        <td>[CHAR element:'?',weapon:'Claymore']</td>
+                        <td>[CHAR element:'?',weapon:'Polearm']</td>
+                        <td>[CHAR element:'?',weapon:'Sword']</td>
+                        <td>[CHAR element:'?',weapon:'?']</td>
+                        <td class="totals-cells center">Unknown element rarity</td>
+                        <td class="totals-cells center">Unknown element gender</td>
+                        <td class="totals-cells center">Unknown element region</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
     <div class="page-footer">
-        <div x-data="lastUpdated">
-            <span x-show="false" id="lastUpdatedTimestamp">[LAST_UPDATED] UTC</span>
+        <div>
             Last updated <span x-text="lastUpdatedFormatted()"></span>
             <br>
             Above tables do not include the Traveler.
@@ -69,88 +167,20 @@
         </div>
         <div class="icons">
             <a href="https://t.me/Remls">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
                 </svg>
             </a>
             <a href="https://github.com/Remls/GenshinChars">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                 </svg>
             </a>
-        </div>
-    </div>
-
-    <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
-        <div class="modal-content" @click.outside="modalOpen = false">
-            <div class="modal-content-flex">
-                <img x-show="photo" height="250" :src="photo">
-                <div class="table-wrapper">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="label-column">Name</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Birthday</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Element</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Gender</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': gender === 'Unknown' }" x-text="gender"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Rarity</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': rarity === 'Unknown' }" x-text="rarity"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Region</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': region === 'Unknown' }" x-text="region"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Weapon</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': weapon === 'Unknown' }" x-text="weapon"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Version</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseVersion === 'Unknown' }" x-text="releaseVersion"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Date</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseDate === 'Unknown' }" x-text="releaseDate"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <a :href="getWikiLink()">More info ></a>
-            </div>
         </div>
     </div>
 </body>

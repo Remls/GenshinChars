@@ -1,8 +1,3 @@
-let characterData = []
-fetch('./assets/chars.json')
-    .then((response) => response.json())
-    .then((data) => characterData = data);
-
 const MONTHS = [
     'January', 'February', 'March',
     'April', 'May', 'June',
@@ -15,28 +10,16 @@ const WEEKDAYS = [
     'Friday', 'Saturday'
 ]
 
-const PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/'
+const PORTRAIT_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/'
+const PORTRAIT_PHOTO_FALLBACK = 'assets/images/Fallback.png'
+const FULL_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/'
 
 document.addEventListener('alpine:init', () => {
-    Alpine.data('lastUpdated', () => ({
-        zeroPad(n) {
-            return String(n).padStart(2, '0')
-        },
-
-        lastUpdatedFormatted() {
-            const date = new Date(document.getElementById('lastUpdatedTimestamp').innerHTML)
-            const wd = WEEKDAYS[date.getDay()]
-            const y = date.getFullYear()
-            const m = MONTHS[date.getMonth()]
-            const d = date.getDate()
-            const h = this.zeroPad(date.getHours())
-            const mn = this.zeroPad(date.getMinutes())
-            const s = this.zeroPad(date.getSeconds())
-            return `${wd}, ${d} ${m} ${y} ${h}:${mn}:${s}`
-        }
-    }))
-
     Alpine.data('charSheet', () => ({
+        allData: {},
+        characterData: {},
+
+        includeLeakedCharacters: false,
         modalOpen: false,
 
         name: null,
@@ -50,8 +33,73 @@ document.addEventListener('alpine:init', () => {
         releaseDate: null,
         photo: null,
 
+        fetchAllData() {
+            const urlParams = new URLSearchParams(window.location.search)
+            if (urlParams.get('leaks') === 'true')
+                this.includeLeakedCharacters = true
+
+            fetch('./assets/chars.json')
+                .then(r => r.json())
+                .then(d => {
+                    this.allData = d
+                    this.updateCharacterData()
+                })
+        },
+
+        updateCharacterData() {
+            let characterData = Object.values( this.allData['data'] )
+            if (!this.includeLeakedCharacters) {
+                characterData = characterData.filter(c => c.is_released)
+            }
+            let characterDataAsObj = {}
+            characterData.forEach(c => {
+                characterDataAsObj[c.name] = c;
+            })
+            this.characterData = characterDataAsObj
+        },
+
+        filterCharacterData(filters) {
+            const defaultFilters = {
+                element: null,
+                gender: null,
+                rarity: null,
+                region: null,
+                weapon: null,
+            }
+            filters = {...defaultFilters, ...filters}
+            let data = Object.values( this.characterData )
+            for (let [key, value] of Object.entries(filters)) {
+                if (!value) continue
+                if (value === '?') value = null
+                data = data.filter(c => c[key] === value)
+            }
+            return data
+        },
+
+        zeroPad(n) {
+            return String(n).padStart(2, '0')
+        },
+
+        getPortraitPhoto(photo) {
+            return photo ? `${PORTRAIT_PHOTO_BASE}${photo}` : PORTRAIT_PHOTO_FALLBACK
+        },
+
+        lastUpdatedFormatted() {
+            const lastUpdated = this.allData['last_updated']
+            if (!lastUpdated) return ''
+            const date = new Date(lastUpdated)
+            const wd = WEEKDAYS[date.getDay()]
+            const y = date.getFullYear()
+            const m = MONTHS[date.getMonth()]
+            const d = date.getDate()
+            const h = this.zeroPad(date.getHours())
+            const mn = this.zeroPad(date.getMinutes())
+            const s = this.zeroPad(date.getSeconds())
+            return `${wd}, ${d} ${m} ${y} ${h}:${mn}:${s}`
+        },
+
         showCharSheet(char) {
-            const selectedChar = characterData[char]
+            const selectedChar = this.allData['data'][char]
             this.name = selectedChar.name
             this.birthday = selectedChar.birthday || 'Unknown'
             this.element = selectedChar.element || 'Unknown'

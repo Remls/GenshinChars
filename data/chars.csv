@@ -19,7 +19,7 @@ Diluc,,5,Pyro,Claymore,Mondstadt,Male,04-30,1.0,
 Diona,,4,Cryo,Bow,Mondstadt,Female,01-18,1.1,
 Dori,,4,Electro,Claymore,Sumeru,Female,12-21,3.0,2022-09-09
 Eula,,5,Cryo,Claymore,Mondstadt,Female,10-25,1.5,2021-05-18
-Faruzan,,4,Anemo,Bow,Sumeru,Female,08-20,3.3,
+Faruzan,,4,Anemo,Bow,Sumeru,Female,,3.3,?
 Fischl,,4,Electro,Bow,Mondstadt,Female,05-27,1.0,
 Ganyu,,5,Cryo,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,Bow,Inazuma,Male,05-18,2.3,2021-12-14
@@ -57,7 +57,7 @@ Tartaglia,Childe,5,Hydro,Bow,Snezhnaya,Male,07-20,1.1,
 Thoma,,4,Pyro,Polearm,Inazuma,Male,01-09,2.2,2021-11-02
 Tighnari,,5,Dendro,Bow,Sumeru,Male,12-29,3.0,
 Venti,,5,Anemo,Bow,Mondstadt,Male,06-16,1.0,
-Wanderer,,5,Anemo,Catalyst,Sumeru,Male,01-03,3.3,
+Wanderer,,5,Anemo,Catalyst,Sumeru,Male,,3.3,?
 Xiangling,,4,Pyro,Polearm,Liyue,Female,11-02,1.0,
 Xiao,,5,Anemo,Polearm,Liyue,Male,04-17,1.3,
 Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
