@@ -53,7 +53,7 @@ document.addEventListener('alpine:init', () => {
             }
             let characterDataAsObj = {}
             characterData.forEach(c => {
-                characterDataAsObj[c.name] = c;
+                characterDataAsObj[c.name] = c
             })
             this.characterData = characterDataAsObj
         },
@@ -113,11 +113,24 @@ document.addEventListener('alpine:init', () => {
             this.modalOpen = true
         },
 
+        releaseUnknown(char) {
+            const noReleaseVersion = char.release_version === null
+            const noReleaseDate = !char.release_date
+            return noReleaseVersion && noReleaseDate
+        },
+
         formatVersion(version) {
             if (!version) return 'Unknown'
             let v = `v${version.version_number}`
             if (version.version_name) v += `: ${version.version_name}`
             return v
+        },
+
+        formatDate(date) {
+            if (!date) return 'Unknown'
+            date = date.split('-')
+            const m = MONTHS[parseInt(date[1])-1]
+            return `${date[0]} ${m} ${date[2]}`
         },
 
         getWikiLink() {

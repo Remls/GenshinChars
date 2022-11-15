@@ -155,6 +155,51 @@
         </div>
     </section>
 
+    <section>
+        <h2>Characters in order of release</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Character</th>
+                        <th>Release Version</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="char in Object.values( characterData )">
+                        <tr>
+                            <td>
+                                <div @click="showCharSheet(char.name)" class="character-links">
+                                    <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+                                    <span class="gi-font clickable" :class="`el-${char.element.toLowerCase()}`"
+                                        x-text="char.display_name || char.name">
+                                    </span>
+                                </div>
+                            </td>
+                            <td x-show="releaseUnknown(char)"
+                                colspan="2" class="center">
+                                <span class="text-unknown">Unknown</span>
+                            </td>
+                            <td x-show="!releaseUnknown(char)"
+                                :class="{'center': !char.release_version}">
+                                <span x-text="formatVersion(char.release_version)"
+                                    :class="{'text-unknown': !char.release_version}">
+                                </span>
+                            </td>
+                            <td x-show="!releaseUnknown(char)"
+                                :class="{'center': !char.release_date}">
+                                <span x-text="formatDate(char.release_date)"
+                                    :class="{'text-unknown': !char.release_date}">
+                                </span>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <div class="page-footer">
         <div>
             Last updated <span x-text="lastUpdatedFormatted()"></span>
