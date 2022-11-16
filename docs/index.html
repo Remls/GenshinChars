@@ -105,9 +105,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Anemo rarity</td>
-                        <td class="totals-cells center">Anemo gender</td>
-                        <td class="totals-cells center">Anemo region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -163,9 +178,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Geo rarity</td>
-                        <td class="totals-cells center">Geo gender</td>
-                        <td class="totals-cells center">Geo region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -221,9 +251,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Electro rarity</td>
-                        <td class="totals-cells center">Electro gender</td>
-                        <td class="totals-cells center">Electro region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -279,9 +324,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Dendro rarity</td>
-                        <td class="totals-cells center">Dendro gender</td>
-                        <td class="totals-cells center">Dendro region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -337,9 +397,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Hydro rarity</td>
-                        <td class="totals-cells center">Hydro gender</td>
-                        <td class="totals-cells center">Hydro region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -395,9 +470,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Pyro rarity</td>
-                        <td class="totals-cells center">Pyro gender</td>
-                        <td class="totals-cells center">Pyro region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -453,9 +543,24 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Cryo rarity</td>
-                        <td class="totals-cells center">Cryo gender</td>
-                        <td class="totals-cells center">Cryo region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
                     <tr>
                         <td class="label-column">
@@ -509,10 +614,167 @@
         </span>
     </div>
 </template></td>
-                        <td class="totals-cells center">Unknown element rarity</td>
-                        <td class="totals-cells center">Unknown element gender</td>
-                        <td class="totals-cells center">Unknown element region</td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
                     </tr>
+                    <tr>
+                        <td class="label-column"><b>RARITY</b></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="transparent-rb totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'rarity'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="transparent-rb totals-cells"></td>
+                        <td class="transparent-b totals-cells"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-column"><b>GENDER</b></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="transparent-rb totals-cells"></td>
+                        <td class="transparent-rb totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'gender'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="transparent-b totals-cells"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-column"><b>REGION</b></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                        <td class="transparent-r totals-cells"></td>
+                        <td class="transparent-r totals-cells"></td>
+                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'region'))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template></td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>

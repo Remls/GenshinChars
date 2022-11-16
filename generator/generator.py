@@ -21,6 +21,15 @@ replace = r"""<template x-for="char in filterCharacterData({\1})">
     </div>
 </template>"""
 output = re.sub(search, replace, output)
+
+search = r"\[COUNTER (.+)\]"
+replace = r"""<template x-for="[key, value] in Object.entries(groupCharacterData(\1))" :key="key">
+    <div>
+        <b x-text="key"></b> - <span x-text="value"></span>
+        <br/>
+    </div>
+</template>"""
+output = re.sub(search, replace, output)
 with open("docs/index.html", "w") as f:
     f.write(output)
 

@@ -104,6 +104,30 @@ document.addEventListener('alpine:init', () => {
             return data
         },
 
+        groupCharacterData(filters, groupBy) {
+            let filteredCharacterData = this.filterCharacterData(filters)
+            const groupFn = (existingGroupings, character) => {
+                const key = character[groupBy]
+                if (key in existingGroupings) {
+                    existingGroupings[key] += 1
+                } else {
+                    existingGroupings[key] = 1
+                }
+                return existingGroupings
+            }
+            const groupedCharacterData = filteredCharacterData.reduce(groupFn, {})
+            const sortedKeys = Object.keys(groupedCharacterData).sort()
+            let sortedObj = {}
+            sortedKeys.forEach(k => {
+                let presentableKey = k
+                // Presentable keys
+                if (k === 'null') presentableKey = 'Unknown'
+                else if (groupBy === 'rarity') presentableKey += '-star'
+                sortedObj[presentableKey] = groupedCharacterData[k]
+            })
+            return sortedObj
+        },
+
         zeroPad(n) {
             return String(n).padStart(2, '0')
         },
