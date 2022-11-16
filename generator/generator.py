@@ -1,4 +1,4 @@
-from classes import Character
+from classes import Character, version_data
 from functions import get_version, get_current_timestamp, load_template
 import csv, json, re
 
@@ -24,11 +24,11 @@ output = re.sub(search, replace, output)
 with open("docs/index.html", "w") as f:
     f.write(output)
 
-with open("docs/assets/chars.json", "w") as f:
+with open("docs/assets/data.json", "w") as f:
     chars = {}
     for el in character_version_data:
         char_data = el.input_row
-        char_data["release_version"] = el.get_version_data()
+        # char_data["release_version"] = el.get_version_data()
         char_data["release_date"] = el.release_date
         char_data["photo"] = el.get_character_image_filename()
         char_data["is_released"] = el.is_released()
@@ -40,6 +40,7 @@ with open("docs/assets/chars.json", "w") as f:
     data = {
         "version": get_version(),
         "last_updated": get_current_timestamp(),
-        "data": chars
+        "characters": chars,
+        "versions": version_data
     }
     f.write(json.dumps(data, default=vars, separators=(',', ':')))

@@ -18,6 +18,7 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('charSheet', () => ({
         allData: {},
         characterData: {},
+        versionData: {},
 
         includeLeakedCharacters: false,
         modalOpen: false,
@@ -38,16 +39,17 @@ document.addEventListener('alpine:init', () => {
             if (urlParams.get('leaks') === 'true')
                 this.includeLeakedCharacters = true
 
-            fetch('./assets/chars.json')
+            fetch('./assets/data.json')
                 .then(r => r.json())
                 .then(d => {
                     this.allData = d
+                    this.versionData = d['versions']
                     this.updateCharacterData()
                 })
         },
 
         updateCharacterData() {
-            let characterData = Object.values( this.allData['data'] )
+            let characterData = Object.values( this.allData['characters'] )
             if (!this.includeLeakedCharacters) {
                 characterData = characterData.filter(c => c.is_released)
             }
@@ -99,16 +101,16 @@ document.addEventListener('alpine:init', () => {
         },
 
         showCharSheet(char) {
-            const selectedChar = this.allData['data'][char]
+            const selectedChar = this.allData['characters'][char]
             this.name = selectedChar.name
-            this.birthday = selectedChar.birthday || 'Unknown'
+            this.birthday = this.formatDate(selectedChar.birthday)
             this.element = selectedChar.element || 'Unknown'
             this.gender = selectedChar.gender || 'Unknown'
             this.rarity = selectedChar.rarity ? `${selectedChar.rarity}-star` : 'Unknown'
             this.region = selectedChar.region || 'Unknown'
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
-            this.releaseDate = selectedChar.release_date || 'Unknown'
+            this.releaseDate = this.formatDate(selectedChar.release_date)
             this.photo = selectedChar.photo ? `${FULL_PHOTO_BASE}${selectedChar.photo}` : null
             this.modalOpen = true
         },
@@ -121,6 +123,7 @@ document.addEventListener('alpine:init', () => {
 
         formatVersion(version) {
             if (!version) return 'Unknown'
+            version = this.versionData[version]
             let v = `v${version.version_number}`
             if (version.version_name) v += `: ${version.version_name}`
             return v
@@ -129,8 +132,20 @@ document.addEventListener('alpine:init', () => {
         formatDate(date) {
             if (!date) return 'Unknown'
             date = date.split('-')
-            const m = MONTHS[parseInt(date[1])-1]
-            return `${date[0]} ${m} ${date[2]}`
+            let dateParts = []
+            if (date.length === 2) {
+                dateParts = [
+                    MONTHS[parseInt(date[0])-1],
+                    date[1]
+                ]
+            } else {
+                dateParts = [
+                    date[0],
+                    MONTHS[parseInt(date[1])-1],
+                    date[2]
+                ]
+            }
+            return dateParts.join(' ')
         },
 
         getWikiLink() {
