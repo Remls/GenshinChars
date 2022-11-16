@@ -15,6 +15,7 @@
     --secondary-color-muted: #30363d80;
     --modal-bg-color: #1d1f21;
     --txt-color: #c9d1d9;
+    --select-border: var(--txt-color);
 }
 
 body {
@@ -35,7 +36,31 @@ body {
     font-family: Genshin, Arial, Helvetica, sans-serif;
 }
 
-h2, th, td, .label-column {
+/** Resetting default styles */
+select {
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--select-border);
+    padding: 0.25em 0.5em;
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    color: var(--txt-color);
+    cursor: pointer;
+    line-height: 1.1;
+    border-radius: 0.25em;
+}
+
+.select-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+h2, select, label, th, td, .label-column {
     font-family: Genshin, Arial, Helvetica, sans-serif;
 }
 

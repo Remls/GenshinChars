@@ -20,8 +20,9 @@
 
 <body x-data="charSheet" x-init="fetchAllData">
 
-    <div>
-        <select x-model="selectedVersion" @change="updateCharacterData()">
+    <div class="select-wrapper">
+        <label for="version-select">Filter by version</label>
+        <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
             <template x-for="version in Object.values(versionData)" :key="version.version_number">
                 <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
             </template>
