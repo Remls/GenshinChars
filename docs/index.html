@@ -825,6 +825,43 @@
         </div>
     </section>
 
+    <section>
+        <h2>Character sorted by birthday</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Character</th>
+                        <th>Birthday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="char in sortCharactersByBirthday()">
+                        <tr>
+                            <td>
+                                <div @click="showCharSheet(char.name)" class="character-links">
+                                    <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
+                                        x-text="char.display_name || char.name">
+                                    </span>
+                                </div>
+                            </td>
+                            <td x-show="!char.birthday" class="center">
+                                <span class="text-unknown">Unknown</span>
+                            </td>
+                            <td x-show="char.birthday">
+                                <span x-text="formatDate(char.birthday)"></span>
+                                <template x-if="birthdayIsToday(char)">
+                                    <span style="padding-left: 2px;">(Today)</span>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <div class="page-footer">
         <div>
             Last updated <span x-text="lastUpdatedFormatted()"></span>
