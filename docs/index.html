@@ -59,7 +59,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -67,7 +67,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -75,7 +75,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -83,7 +83,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -91,7 +91,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -99,7 +99,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -117,7 +117,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -125,7 +125,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -133,7 +133,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -141,7 +141,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -149,7 +149,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -157,7 +157,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -175,7 +175,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -183,7 +183,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -191,7 +191,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -199,7 +199,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -207,7 +207,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -215,7 +215,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -233,7 +233,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -241,7 +241,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -249,7 +249,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -257,7 +257,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -265,7 +265,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -273,7 +273,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -291,7 +291,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -299,7 +299,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -307,7 +307,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -315,7 +315,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -323,7 +323,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -331,7 +331,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -349,7 +349,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -357,7 +357,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -365,7 +365,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -373,7 +373,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -381,7 +381,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -389,7 +389,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -407,7 +407,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -415,7 +415,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -423,7 +423,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -431,7 +431,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -439,7 +439,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -447,7 +447,7 @@
                         <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -463,7 +463,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'Bow'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -471,7 +471,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'Catalyst'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -479,7 +479,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'Claymore'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -487,7 +487,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'Polearm'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -495,7 +495,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'Sword'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -503,7 +503,7 @@
                         <td><template x-for="char in filterCharacterData({element:'?',weapon:'?'})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
@@ -534,7 +534,7 @@
                             <td>
                                 <div @click="showCharSheet(char.name)" class="character-links">
                                     <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
                                         x-text="char.display_name || char.name">
                                     </span>
                                 </div>

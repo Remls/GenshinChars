@@ -15,7 +15,7 @@ search = r"\[CHAR (.+)\]"
 replace = r"""<template x-for="char in filterCharacterData({\1})">
     <div @click="showCharSheet(char.name)" class="character-links">
         <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
             x-text="char.display_name || char.name">
         </span>
     </div>
