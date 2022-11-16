@@ -193,6 +193,14 @@ document.addEventListener('alpine:init', () => {
             }
         },
 
+        sortCharactersByBirthday() {
+            return Object.values( this.characterData ).sort((a, b) => {
+                if (a.birthday > b.birthday) return 1
+                if (a.birthday < b.birthday) return -1
+                if (a.birthday === b.birthday) return 0
+            })
+        },
+
         formatVersion(version) {
             if (!version) return 'Unknown'
             version = this.versionData[version]
