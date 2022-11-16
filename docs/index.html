@@ -19,6 +19,16 @@
 </head>
 
 <body x-data="charSheet" x-init="fetchAllData">
+
+    <div>
+        <select x-model="selectedVersion" @change="updateCharacterData()">
+            <template x-for="version in Object.values(versionData)" :key="version.version_number">
+                <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
+            </template>
+            <option :value="null">All known playable characters</option>
+        </select>
+    </div>
+
     <section>
         <h2>Characters by weapon/element</h2>
         <div class="table-wrapper">
@@ -213,6 +223,64 @@
                         <td class="totals-cells center">Electro rarity</td>
                         <td class="totals-cells center">Electro gender</td>
                         <td class="totals-cells center">Electro region</td>
+                    </tr>
+                    <tr>
+                        <td class="label-column">
+                            <img width="50" height="50" src="assets/images/Dendro.svg">
+                            <br>
+                            Dendro
+                        </td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Bow'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Catalyst'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Claymore'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Polearm'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Sword'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'?'})">
+    <div @click="showCharSheet(char.name)" class="character-links">
+        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
+        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : ''"
+            x-text="char.display_name || char.name">
+        </span>
+    </div>
+</template></td>
+                        <td class="totals-cells center">Dendro rarity</td>
+                        <td class="totals-cells center">Dendro gender</td>
+                        <td class="totals-cells center">Dendro region</td>
                     </tr>
                     <tr>
                         <td class="label-column">

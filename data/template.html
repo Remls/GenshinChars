@@ -19,6 +19,16 @@
 </head>
 
 <body x-data="charSheet" x-init="fetchAllData">
+
+    <div>
+        <select x-model="selectedVersion" @change="updateCharacterData()">
+            <template x-for="version in Object.values(versionData)" :key="version.version_number">
+                <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
+            </template>
+            <option :value="null">All known playable characters</option>
+        </select>
+    </div>
+
     <section>
         <h2>Characters by weapon/element</h2>
         <div class="table-wrapper">

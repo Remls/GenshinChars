@@ -20,9 +20,11 @@ document.addEventListener('alpine:init', () => {
         characterData: {},
         versionData: {},
 
-        includeLeakedCharacters: false,
-        modalOpen: false,
+        // Version filter
+        selectedVersion: null,
 
+        // Character details modal
+        modalOpen: false,
         name: null,
         birthday: null,
         element: null,
@@ -35,23 +37,30 @@ document.addEventListener('alpine:init', () => {
         photo: null,
 
         fetchAllData() {
-            const urlParams = new URLSearchParams(window.location.search)
-            if (urlParams.get('leaks') === 'true')
-                this.includeLeakedCharacters = true
-
             fetch('./assets/data.json')
                 .then(r => r.json())
                 .then(d => {
                     this.allData = d
                     this.versionData = d['versions']
+
+                    const urlParams = new URLSearchParams(window.location.search)
+                    const versionPassedInUrl = urlParams.get('v')
+                    if (versionPassedInUrl && Object.keys(this.versionData).includes(versionPassedInUrl))
+                        this.selectedVersion = versionPassedInUrl
+
                     this.updateCharacterData()
                 })
         },
 
         updateCharacterData() {
             let characterData = Object.values( this.allData['characters'] )
-            if (!this.includeLeakedCharacters) {
-                characterData = characterData.filter(c => c.is_released)
+            if (this.selectedVersion) {
+                characterData = characterData.filter(
+                    c => this.versionAIsBeforeOrEqualToVersionB(
+                        c.release_version,
+                        this.selectedVersion
+                    )
+                )
             }
             let characterDataAsObj = {}
             characterData.forEach(c => {
@@ -119,6 +128,28 @@ document.addEventListener('alpine:init', () => {
             const noReleaseVersion = char.release_version === null
             const noReleaseDate = !char.release_date
             return noReleaseVersion && noReleaseDate
+        },
+
+        /**
+         * Checks if version A came before (or is equal to) version B.
+         * Assumes both versions are in the format `x.y`
+         * 
+         * @param {string} a Version A
+         * @param {string} b Version B
+         * @returns bool
+         */
+        versionAIsBeforeOrEqualToVersionB(a, b) {
+            if (a === null) return false
+            if (b === null) return true
+            a = a.split('.').map(x => parseInt(x))
+            b = b.split('.').map(x => parseInt(x))
+            if (a[0] < b[0]) return true
+            else if (a[0] > b[0]) return false
+            else {
+                if (a[1] < b[1]) return true
+                else if (a[1] > b[1]) return false
+                else return true
+            }
         },
 
         formatVersion(version) {
