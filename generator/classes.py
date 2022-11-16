@@ -60,6 +60,12 @@ class Character:
                 {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>
             </div>"""
 
+    def is_released(self) -> bool:
+        if not self.release_date:
+            return False
+        release = datetime.strptime(self.release_date, "%Y-%m-%d")
+        return release <= datetime.now()
+
     def get_character_image(self) -> str:
         char_name = self.input_row['name'].replace(" ", "_").lower()
         if has_photo(char_name):
