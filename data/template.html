@@ -290,8 +290,9 @@
                             </td>
                             <td x-show="char.birthday">
                                 <span x-text="formatDate(char.birthday)"></span>
-                                <br/>
-                                Today
+                                <template x-if="birthdayIsToday(char)">
+                                    <span style="padding-left: 2px;">(Today)</span>
+                                </template>
                             </td>
                         </tr>
                     </template>

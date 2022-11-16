@@ -193,6 +193,15 @@ document.addEventListener('alpine:init', () => {
             }
         },
 
+        birthdayIsToday(char) {
+            const serverDate = new Date(
+                new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' })
+            )
+            const m = this.zeroPad(serverDate.getMonth() + 1)
+            const d = this.zeroPad(serverDate.getDate())
+            return char.birthday === `${m}-${d}`
+        },
+
         sortCharactersByBirthday() {
             return Object.values( this.characterData ).sort((a, b) => {
                 if (a.birthday > b.birthday) return 1
