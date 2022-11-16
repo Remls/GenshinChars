@@ -54,6 +54,10 @@ document.addEventListener('alpine:init', () => {
 
         updateCharacterData() {
             let characterData = Object.values( this.allData['characters'] )
+            // <select> can change this to a string, so change it back
+            if (this.selectedVersion === 'null') {
+                this.selectedVersion = null
+            }
             if (this.selectedVersion) {
                 characterData = characterData.filter(
                     c => this.versionAIsBeforeOrEqualToVersionB(
