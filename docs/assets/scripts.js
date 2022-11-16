@@ -47,9 +47,22 @@ document.addEventListener('alpine:init', () => {
                     const versionPassedInUrl = urlParams.get('v')
                     if (versionPassedInUrl && Object.keys(this.versionData).includes(versionPassedInUrl))
                         this.selectedVersion = versionPassedInUrl
+                    else
+                        this.setDefaultVersion()
 
                     this.updateCharacterData()
                 })
+        },
+
+        setDefaultVersion() {
+            // Get latest version with a name
+            let defaultVersion = null
+            Object.values(this.versionData).forEach(v => {
+                if (v.version_name) {
+                    defaultVersion = v.version_number
+                }
+            })
+            this.selectedVersion = defaultVersion
         },
 
         updateCharacterData() {
