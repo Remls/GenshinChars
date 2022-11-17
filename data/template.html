@@ -20,10 +20,10 @@
 
 <body x-data="charSheet" x-init="fetchAllData">
 
-    <table class="table-40 no-border">
+    <table class="filter-table table-40 no-border">
         <tr>
             <td width="10%">
-                <label for="version-select">Filter by version</label>
+                <label for="version-select">Filter by <span class="url-key">v</span>ersion</label>
             </td>
             <td>
                 <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
@@ -36,7 +36,7 @@
         </tr>
         <tr>
             <td>
-                <label for="rarity-select">Filter by rarity</label>
+                <label for="rarity-select">Filter by <span class="url-key">r</span>arity</label>
             </td>
             <td>
                 <select id="rarity-select" x-model="selectedRarity" @change="updateCharacterData()">
@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>
-                <label for="gender-select">Filter by gender</label>
+                <label for="gender-select">Filter by <span class="url-key">g</span>ender</label>
             </td>
             <td>
                 <select id="gender-select" x-model="selectedGender" @change="updateCharacterData()">
@@ -62,7 +62,7 @@
         </tr>
         <tr>
             <td>
-                <label for="region-select">Filter by region</label>
+                <label for="region-select">Filter by <span class="url-key">re</span>gion</label>
             </td>
             <td>
                 <select id="region-select" x-model="selectedRegion" @change="updateCharacterData()">
@@ -313,7 +313,7 @@
     <section>
         <h2>Characters sorted by birthday</h2>
         <div class="table-wrapper">
-            <table class="table-40">
+            <table class="birthday-table table-40">
                 <thead>
                     <tr>
                         <th>Character</th>

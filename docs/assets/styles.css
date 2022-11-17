@@ -15,6 +15,7 @@
     --secondary-color-muted: #30363d80;
     --modal-bg-color: #1d1f21;
     --txt-color: #c9d1d9;
+    --txt-secondary-color: gray;
     --select-border: var(--txt-color);
 }
 
@@ -103,44 +104,10 @@ table.no-border, table.no-border td {
     border: none;
     padding: 0.25rem;
 }
-
-.tooltip {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    padding: 3px 0;
-    text-decoration: underline dotted;
+.filter-table .url-key {
+    color: var(--txt-secondary-color);
+    text-decoration: underline;
     text-underline-offset: 3px;
-}
-.tooltip .tooltip-text {
-    /* Position */
-    top: 105%;
-    left: 50%;
-    margin-left: -60px;
-    position: absolute;
-    z-index: 1;
-    /* Appearance */
-    width: 120px;
-    background-color: var(--secondary-color);
-    color: var(--txt-color);
-    text-align: center;
-    border: 1px solid var(--txt-color);
-    padding: 5px 0;
-    border-radius: 6px;
-    /* Transition */
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.tooltip:hover .tooltip-text,
-.tooltip:focus .tooltip-text,
-.tooltip:active .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
-.prevent-selection {
-    user-select: none;
-    -webkit-user-select: none; /* Safari */
 }
 
 .center {
