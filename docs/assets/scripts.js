@@ -9,6 +9,11 @@ const WEEKDAYS = [
     'Wednesday', 'Thursday',
     'Friday', 'Saturday'
 ]
+const REGIONS = [
+    'Mondstadt', 'Liyue', 'Inazuma',
+    'Sumeru', 'Fontaine', 'Natlan',
+    'Snezhnaya', 'Khaenri\'ah'
+]
 
 const PORTRAIT_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/'
 const PORTRAIT_PHOTO_FALLBACK = 'assets/images/Fallback.png'
@@ -24,6 +29,7 @@ document.addEventListener('alpine:init', () => {
         selectedVersion: null,
         selectedRarity: null,
         selectedGender: null,
+        selectedRegion: null,
 
         // Character details modal
         modalOpen: false,
@@ -47,6 +53,7 @@ document.addEventListener('alpine:init', () => {
                     this.setSelectedVersionFromUrl()
                     this.setSelectedRarityFromUrl()
                     this.setSelectedGenderFromUrl()
+                    this.setSelectedRegionFromUrl()
                     this.updateCharacterData()
                 })
         },
@@ -115,10 +122,30 @@ document.addEventListener('alpine:init', () => {
             this.selectedGender = null
         },
 
+        setSelectedRegionFromUrl() {
+            // Check if value passed in URL
+            const urlParams = new URLSearchParams(window.location.search)
+            let regionPassedInUrl = urlParams.get('re')
+            if (regionPassedInUrl) {
+                regionPassedInUrl = regionPassedInUrl.toLowerCase()
+                selectableRegions = REGIONS.map(r => r.toLowerCase()).push('unknown')
+                if (regionPassedInUrl === 'all') {
+                    this.selectedRegion = null
+                    return
+                } else if (selectableRegions.includes(regionPassedInUrl)) {
+                    this.selectedRegion = this.upperCaseFirst(regionPassedInUrl)
+                    return
+                }
+            }
+
+            // No valid value passed in URL; use default
+            this.selectedRegion = null
+        },
+
         updateCharacterData() {
             let characterData = Object.values( this.allData['characters'] )
             // <select> can change this to a string, so change it back
-            const filters1 = ['version', 'rarity', 'gender']
+            const filters1 = ['version', 'rarity', 'gender', 'region']
             filters1.forEach(f => {
                 console.log(f)
                 const filterName = `selected${this.upperCaseFirst(f)}`
@@ -134,7 +161,7 @@ document.addEventListener('alpine:init', () => {
                     )
                 )
             }
-            const filters2 = ['rarity', 'gender']
+            const filters2 = ['rarity', 'gender', 'region']
             filters2.forEach(f => {
                 const filterName = `selected${this.upperCaseFirst(f)}`
                 if (this[filterName]) {

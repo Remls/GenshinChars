@@ -60,6 +60,20 @@
                 </select>
             </td>
         </tr>
+        <tr>
+            <td>
+                <label for="region-select">Filter by region</label>
+            </td>
+            <td>
+                <select id="region-select" x-model="selectedRegion" @change="updateCharacterData()">
+                    <option :value="null">All</option>
+                    <template x-for="region in REGIONS" :key="region">
+                        <option :value="region" x-text="region"></option>
+                    </template>
+                    <option value="Unknown">Unknown</option>
+                </select>
+            </td>
+        </tr>
     </table>
 
     <section>
