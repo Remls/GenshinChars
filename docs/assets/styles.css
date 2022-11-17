@@ -90,6 +90,9 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
 }
+.birthday-table {
+    width: 40%;
+}
 
 table, th, td {
     border: 1px solid;
