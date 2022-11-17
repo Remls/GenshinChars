@@ -305,6 +305,10 @@
                             </td>
                         </tr>
                     </template>
+
+                    <tr x-show="noCharacters()">
+                        <td class="center" colspan="3">No characters match your filters.</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -342,6 +346,10 @@
                             </td>
                         </tr>
                     </template>
+
+                    <tr x-show="noCharacters()">
+                        <td class="center" colspan="2">No characters match your filters.</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

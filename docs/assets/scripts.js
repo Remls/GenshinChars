@@ -266,6 +266,10 @@ document.addEventListener('alpine:init', () => {
             this.modalOpen = true
         },
 
+        noCharacters() {
+            return Object.values(this.characterData).length === 0
+        },
+
         releaseUnknown(char) {
             const noReleaseVersion = char.release_version === null
             const noReleaseDate = !char.release_date
