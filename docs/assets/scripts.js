@@ -128,7 +128,8 @@ document.addEventListener('alpine:init', () => {
             let regionPassedInUrl = urlParams.get('re')
             if (regionPassedInUrl) {
                 regionPassedInUrl = regionPassedInUrl.toLowerCase()
-                selectableRegions = REGIONS.map(r => r.toLowerCase()).push('unknown')
+                selectableRegions = REGIONS.map(r => r.toLowerCase())
+                selectableRegions.push('unknown')
                 if (regionPassedInUrl === 'all') {
                     this.selectedRegion = null
                     return
@@ -147,7 +148,6 @@ document.addEventListener('alpine:init', () => {
             // <select> can change this to a string, so change it back
             const filters1 = ['version', 'rarity', 'gender', 'region']
             filters1.forEach(f => {
-                console.log(f)
                 const filterName = `selected${this.upperCaseFirst(f)}`
                 if (this[filterName] === 'null') {
                     this[filterName] = null
