@@ -42,20 +42,27 @@ document.addEventListener('alpine:init', () => {
                 .then(d => {
                     this.allData = d
                     this.versionData = d['versions']
-
-                    const urlParams = new URLSearchParams(window.location.search)
-                    const versionPassedInUrl = urlParams.get('v')
-                    if (versionPassedInUrl && Object.keys(this.versionData).includes(versionPassedInUrl))
-                        this.selectedVersion = versionPassedInUrl
-                    else
-                        this.setDefaultVersion()
-
+                    this.setSelectedVersionFromUrl()
                     this.updateCharacterData()
                 })
         },
 
-        setDefaultVersion() {
-            // Get latest version with a name
+        setSelectedVersionFromUrl() {
+            // Check if value passed in URL
+            const urlParams = new URLSearchParams(window.location.search)
+            const versionPassedInUrl = urlParams.get('v')
+            if (versionPassedInUrl) {
+                if (versionPassedInUrl === 'all') {
+                    this.selectedVersion = null
+                    return
+                } else if (Object.keys(this.versionData).includes(versionPassedInUrl)) {
+                    this.selectedVersion = versionPassedInUrl
+                    return
+                }
+            }
+
+            // No valid value passed in URL; use default
+            // (first version with a name)
             let defaultVersion = null
             Object.values(this.versionData).forEach(v => {
                 if (v.version_name) {
