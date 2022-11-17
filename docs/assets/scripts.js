@@ -20,8 +20,9 @@ document.addEventListener('alpine:init', () => {
         characterData: {},
         versionData: {},
 
-        // Version filter
+        // Dropdown filters
         selectedVersion: null,
+        selectedGender: null,
 
         // Character details modal
         modalOpen: false,
@@ -43,6 +44,7 @@ document.addEventListener('alpine:init', () => {
                     this.allData = d
                     this.versionData = d['versions']
                     this.setSelectedVersionFromUrl()
+                    this.setSelectedGenderFromUrl()
                     this.updateCharacterData()
                 })
         },
@@ -50,8 +52,9 @@ document.addEventListener('alpine:init', () => {
         setSelectedVersionFromUrl() {
             // Check if value passed in URL
             const urlParams = new URLSearchParams(window.location.search)
-            const versionPassedInUrl = urlParams.get('v')
+            let versionPassedInUrl = urlParams.get('v')
             if (versionPassedInUrl) {
+                versionPassedInUrl = versionPassedInUrl.toLowerCase()
                 if (versionPassedInUrl === 'all') {
                     this.selectedVersion = null
                     return
@@ -72,11 +75,33 @@ document.addEventListener('alpine:init', () => {
             this.selectedVersion = defaultVersion
         },
 
+        setSelectedGenderFromUrl() {
+            // Check if value passed in URL
+            const urlParams = new URLSearchParams(window.location.search)
+            let genderPassedInUrl = urlParams.get('g')
+            if (genderPassedInUrl) {
+                genderPassedInUrl = genderPassedInUrl.toLowerCase()
+                if (genderPassedInUrl === 'all') {
+                    this.selectedGender = null
+                    return
+                } else if (['female', 'male', 'unknown'].includes(genderPassedInUrl)) {
+                    this.selectedGender = this.upperCaseFirst(genderPassedInUrl)
+                    return
+                }
+            }
+
+            // No valid value passed in URL; use default
+            this.selectedGender = null
+        },
+
         updateCharacterData() {
             let characterData = Object.values( this.allData['characters'] )
             // <select> can change this to a string, so change it back
             if (this.selectedVersion === 'null') {
                 this.selectedVersion = null
+            }
+            if (this.selectedGender === 'null') {
+                this.selectedGender = null
             }
             if (this.selectedVersion) {
                 characterData = characterData.filter(
@@ -85,6 +110,17 @@ document.addEventListener('alpine:init', () => {
                         this.selectedVersion
                     )
                 )
+            }
+            if (this.selectedGender) {
+                if (this.selectedGender === 'Unknown') {
+                    characterData = characterData.filter(
+                        c => c.gender === null
+                    )
+                } else {
+                    characterData = characterData.filter(
+                        c => c.gender === this.selectedGender
+                    )
+                }
             }
             let characterDataAsObj = {}
             characterData.forEach(c => {
@@ -137,6 +173,10 @@ document.addEventListener('alpine:init', () => {
 
         zeroPad(n) {
             return String(n).padStart(2, '0')
+        },
+
+        upperCaseFirst(s) {
+            return s.charAt(0).toUpperCase() + s.slice(1)
         },
 
         getPortraitPhoto(photo) {
