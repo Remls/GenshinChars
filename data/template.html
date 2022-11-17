@@ -20,26 +20,47 @@
 
 <body x-data="charSheet" x-init="fetchAllData">
 
-    <div class="all-selects-wrapper">
-        <div class="select-wrapper">
-            <label for="version-select">Filter by version</label>
-            <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
-                <template x-for="version in Object.values(versionData)" :key="version.version_number">
-                    <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
-                </template>
-                <option :value="null">All known playable characters</option>
-            </select>
-        </div>
-        <div class="select-wrapper">
-            <label for="gender-select">Filter by gender</label>
-            <select id="gender-select" x-model="selectedGender" @change="updateCharacterData()">
-                <option :value="null">All</option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Unknown">Unknown</option>
-            </select>
-        </div>
-    </div>
+    <table class="table-40 no-border">
+        <tr>
+            <td width="10%">
+                <label for="version-select">Filter by version</label>
+            </td>
+            <td>
+                <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
+                    <template x-for="version in Object.values(versionData)" :key="version.version_number">
+                        <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
+                    </template>
+                    <option :value="null">All known playable characters</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="rarity-select">Filter by rarity</label>
+            </td>
+            <td>
+                <select id="rarity-select" x-model="selectedRarity" @change="updateCharacterData()">
+                    <option :value="null">All</option>
+                    <option value="4">4-star</option>
+                    <option value="5">5-star</option>
+                    <option value="Unknown">Unknown</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender-select">Filter by gender</label>
+            </td>
+            <td>
+                <select id="gender-select" x-model="selectedGender" @change="updateCharacterData()">
+                    <option :value="null">All</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Unknown">Unknown</option>
+                </select>
+            </td>
+        </tr>
+    </table>
 
     <section>
         <h2>Characters by weapon/element</h2>
@@ -278,7 +299,7 @@
     <section>
         <h2>Characters sorted by birthday</h2>
         <div class="table-wrapper">
-            <table class="birthday-table">
+            <table class="table-40">
                 <thead>
                     <tr>
                         <th>Character</th>

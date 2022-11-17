@@ -57,10 +57,8 @@ select {
 }
 .select-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1em;
-    margin: 5px auto;
 }
 
 h2, select, label, th, td, .label-column {
@@ -92,7 +90,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
 }
-.birthday-table {
+.table-40 {
     width: 40%;
 }
 
@@ -100,6 +98,10 @@ table, th, td {
     border: 1px solid;
     padding: 0.5rem;
     white-space: nowrap;
+}
+table.no-border, table.no-border td {
+    border: none;
+    padding: 0.25rem;
 }
 
 .tooltip {

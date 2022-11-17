@@ -22,6 +22,7 @@ document.addEventListener('alpine:init', () => {
 
         // Dropdown filters
         selectedVersion: null,
+        selectedRarity: null,
         selectedGender: null,
 
         // Character details modal
@@ -44,6 +45,7 @@ document.addEventListener('alpine:init', () => {
                     this.allData = d
                     this.versionData = d['versions']
                     this.setSelectedVersionFromUrl()
+                    this.setSelectedRarityFromUrl()
                     this.setSelectedGenderFromUrl()
                     this.updateCharacterData()
                 })
@@ -75,6 +77,25 @@ document.addEventListener('alpine:init', () => {
             this.selectedVersion = defaultVersion
         },
 
+        setSelectedRarityFromUrl() {
+            // Check if value passed in URL
+            const urlParams = new URLSearchParams(window.location.search)
+            let rarityPassedInUrl = urlParams.get('r')
+            if (rarityPassedInUrl) {
+                rarityPassedInUrl = rarityPassedInUrl.toLowerCase()
+                if (rarityPassedInUrl === 'all') {
+                    this.selectedRarity = null
+                    return
+                } else if (['4', '5', 'unknown'].includes(rarityPassedInUrl)) {
+                    this.selectedRarity = this.upperCaseFirst(rarityPassedInUrl)
+                    return
+                }
+            }
+
+            // No valid value passed in URL; use default
+            this.selectedRarity = null
+        },
+
         setSelectedGenderFromUrl() {
             // Check if value passed in URL
             const urlParams = new URLSearchParams(window.location.search)
@@ -97,12 +118,14 @@ document.addEventListener('alpine:init', () => {
         updateCharacterData() {
             let characterData = Object.values( this.allData['characters'] )
             // <select> can change this to a string, so change it back
-            if (this.selectedVersion === 'null') {
-                this.selectedVersion = null
-            }
-            if (this.selectedGender === 'null') {
-                this.selectedGender = null
-            }
+            const filters1 = ['version', 'rarity', 'gender']
+            filters1.forEach(f => {
+                console.log(f)
+                const filterName = `selected${this.upperCaseFirst(f)}`
+                if (this[filterName] === 'null') {
+                    this[filterName] = null
+                }
+            })
             if (this.selectedVersion) {
                 characterData = characterData.filter(
                     c => this.versionAIsBeforeOrEqualToVersionB(
@@ -111,17 +134,21 @@ document.addEventListener('alpine:init', () => {
                     )
                 )
             }
-            if (this.selectedGender) {
-                if (this.selectedGender === 'Unknown') {
-                    characterData = characterData.filter(
-                        c => c.gender === null
-                    )
-                } else {
-                    characterData = characterData.filter(
-                        c => c.gender === this.selectedGender
-                    )
+            const filters2 = ['rarity', 'gender']
+            filters2.forEach(f => {
+                const filterName = `selected${this.upperCaseFirst(f)}`
+                if (this[filterName]) {
+                    if (this[filterName] === 'Unknown') {
+                        characterData = characterData.filter(
+                            c => c[f] === null
+                        )
+                    } else {
+                        characterData = characterData.filter(
+                            c => c[f] === this[filterName]
+                        )
+                    }
                 }
-            }
+            })
             let characterDataAsObj = {}
             characterData.forEach(c => {
                 characterDataAsObj[c.name] = c
