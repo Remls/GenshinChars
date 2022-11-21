@@ -110,11 +110,6 @@ table.no-border, table.no-border td {
     border: none;
     padding: 0.25rem;
 }
-.filter-table .url-key {
-    color: var(--txt-secondary-color);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
 
 .center {
     text-align: center;

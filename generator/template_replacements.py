@@ -1,13 +1,31 @@
+from bs4 import BeautifulSoup
+from bs4.formatter import HTMLFormatter
 import re
 
 THUMBNAIL_IMAGE = "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Splashscreen_Akasha_Pulses%2C_the_Kalpa_Flame_Rises.png"
 
 
-def generate_index_file():
-    # Read
-    output = ""
+def read_template_file():
+    file_contents = ""
     with open('data/template.html') as f:
-        output = f.read()
+        file_contents = f.read()
+    return file_contents
+
+
+def read_index_file():
+    file_contents = ""
+    with open('docs/index.html') as f:
+        file_contents = f.read()
+    return file_contents
+
+
+def write_index_file(s: str):
+    with open("docs/index.html", "w") as f:
+        f.write(s)
+
+
+def generate_index_file():
+    output = read_template_file()
 
     # 1. Thumbnail
     search = r"\[THUMB\]"
@@ -45,11 +63,15 @@ def generate_index_file():
     replace = r"""<template x-for="[key, value] in Object.entries(groupCharacterData(\1))" :key="key">
         <div>
             <b x-text="key"></b> - <span x-text="value"></span>
-            <br/>
         </div>
     </template>"""
     output = re.sub(search, replace, output)
 
-    # Write
-    with open("docs/index.html", "w") as f:
-        f.write(output)
+    write_index_file(output)
+
+
+def prettify():
+    output = read_index_file()
+    soup = BeautifulSoup(output, "html.parser")
+    formatter = HTMLFormatter(indent=4)
+    write_index_file(soup.prettify(formatter=formatter))

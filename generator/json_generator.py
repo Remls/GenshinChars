@@ -1,6 +1,17 @@
-from classes import Character, version_data
+from classes import Character, Version, version_data
 from functions import get_version, get_current_timestamp
 import csv, json
+
+
+def empty_strings_to_null(data):
+    for k in data:
+        if isinstance(data[k], Version):
+            class_properties = vars(data[k])
+            data[k] = empty_strings_to_null(class_properties)
+            continue
+        if not data[k] and not isinstance(data[k], bool):
+            data[k] = None
+    return data
 
 
 def generate_data_file():
@@ -20,18 +31,14 @@ def generate_data_file():
         char_data["release_date"] = el.release_date
         char_data["photo"] = el.get_character_image_filename()
         char_data["is_released"] = el.is_released()
-        # Cleanup missing strings
-        for k in char_data:
-            if not char_data[k] and not isinstance(char_data[k], bool):
-                char_data[k] = None
-        chars[el.input_row["name"]] = char_data
+        chars[el.input_row["name"]] = empty_strings_to_null(char_data)
     data = {
         "version": get_version(),
         "last_updated": get_current_timestamp(),
         "characters": chars,
-        "versions": version_data
+        "versions": empty_strings_to_null(version_data)
     }
 
     # Write to JSON file
     with open("docs/assets/data.json", "w") as f:
-        f.write(json.dumps(data, default=vars, separators=(',', ':')))
+        f.write(json.dumps(data, indent=4, default=vars))
