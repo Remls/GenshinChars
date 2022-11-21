@@ -70,9 +70,7 @@ h2, th, .label-column {
     text-align: center;
 }
 
-h2 button.caret {
-    background-color: transparent;
-    border: none;
+h2.collapsible-header {
     cursor: pointer;
 }
 
@@ -84,7 +82,7 @@ th, .label-column {
 }
 
 section {
-    margin: 3rem 0 2rem 0;
+    margin: 3rem 0;
 }
 
 .table-wrapper {
