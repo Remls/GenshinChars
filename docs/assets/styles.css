@@ -194,6 +194,11 @@ table.no-border, table.no-border td {
     align-items: center;
     gap: 5px;
 }
+.full-photo {
+    max-height: 300px;
+    max-width: 300px;
+    padding-right: 2em;
+}
 
 .modal-content .label-column {
     width: 20%;

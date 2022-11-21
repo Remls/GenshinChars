@@ -406,7 +406,7 @@
     <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
         <div class="modal-content" @click.outside="modalOpen = false">
             <div class="modal-content-flex">
-                <img x-show="photo" height="250" :src="photo">
+                <img class="full-photo" x-show="photo" :src="photo">
                 <div class="table-wrapper">
                     <table>
                         <tbody>
