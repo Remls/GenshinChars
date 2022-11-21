@@ -16,6 +16,8 @@ def load_photo_cache_from_file() -> str:
             file_contents = f.read()
     except FileNotFoundError:
         pass
+    if not file_contents:
+        return []
     return file_contents.split("\n")
 
 

@@ -10,8 +10,8 @@ photo_cache = load_photo_cache_from_file()
 @cache
 def has_photo(char_name: str) -> bool:
     print(f"Loading {char_name} ...")
-    if char_name in photo_cache:
-        return True
+    if photo_cache:
+        return char_name in photo_cache
     url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
     r = requests.get(url)
     if r.ok:
