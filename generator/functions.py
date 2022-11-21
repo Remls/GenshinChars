@@ -2,13 +2,6 @@ import subprocess
 from datetime import datetime
 
 
-def load_template() -> str:
-    file_contents = ""
-    with open('data/template.html') as f:
-        file_contents = f.read()
-    return file_contents
-
-
 def load_photo_cache_from_file() -> str:
     file_contents = ""
     try:

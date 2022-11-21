@@ -6,6 +6,7 @@ import requests
 
 FALLBACK_PHOTO = "assets/images/Fallback.png"
 
+
 photo_cache = load_photo_cache_from_file()
 @cache
 def has_photo(char_name: str) -> bool:
