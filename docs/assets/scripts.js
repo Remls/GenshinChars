@@ -338,13 +338,13 @@ document.addEventListener('alpine:init', () => {
             if (date.length === 2) {
                 dateParts = [
                     MONTHS[parseInt(date[0])-1],
-                    date[1]
+                    parseInt(date[1])
                 ]
             } else {
                 dateParts = [
                     date[0],
                     MONTHS[parseInt(date[1])-1],
-                    date[2]
+                    parseInt(date[2])
                 ]
             }
             return dateParts.join(' ')
