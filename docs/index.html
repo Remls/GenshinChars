@@ -1,1020 +1,1483 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Genshin Impact Characters</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
-    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/styles.css">
-    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
-    <script src="assets/scripts.js"></script>
-</head>
-
-<body x-data="charSheet" x-init="fetchAllData">
-
-    <table class="filter-table table-40 no-border">
-        <tr>
-            <td width="10%">
-                <label for="version-select">Filter by <span class="url-key">v</span>ersion</label>
-            </td>
-            <td>
-                <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
-                    <template x-for="version in Object.values(versionData)" :key="version.version_number">
-                        <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
-                    </template>
-                    <option :value="null">All known playable characters</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="rarity-select">Filter by <span class="url-key">r</span>arity</label>
-            </td>
-            <td>
-                <select id="rarity-select" x-model="selectedRarity" @change="updateCharacterData()">
-                    <option :value="null">All</option>
-                    <option value="4">4-star</option>
-                    <option value="5">5-star</option>
-                    <option value="Unknown">Unknown</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="gender-select">Filter by <span class="url-key">g</span>ender</label>
-            </td>
-            <td>
-                <select id="gender-select" x-model="selectedGender" @change="updateCharacterData()">
-                    <option :value="null">All</option>
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    <option value="Unknown">Unknown</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="region-select">Filter by <span class="url-key">re</span>gion</label>
-            </td>
-            <td>
-                <select id="region-select" x-model="selectedRegion" @change="updateCharacterData()">
-                    <option :value="null">All</option>
-                    <template x-for="region in REGIONS" :key="region">
-                        <option :value="region" x-text="region"></option>
-                    </template>
-                    <option value="Unknown">Unknown</option>
-                </select>
-            </td>
-        </tr>
-    </table>
-
-    <section>
-        <h2>Characters by weapon/element</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, height=device-height, initial-scale=0.5" name="viewport">
+            <title>
+                Genshin Impact Characters
+            </title>
+            <link href="icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="76x76"/>
+            <link href="icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+            <link href="icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+            <link href="icons/site.webmanifest" rel="manifest"/>
+            <link color="#5bbad5" href="icons/safari-pinned-tab.svg" rel="mask-icon"/>
+            <link href="icons/favicon.ico" rel="shortcut icon"/>
+            <meta content="#da532c" name="msapplication-TileColor"/>
+            <meta content="icons/browserconfig.xml" name="msapplication-config"/>
+            <meta content="#ffffff" name="theme-color"/>
+            <meta content="Genshin Impact Characters" property="og:title"/>
+            <meta content="website" property="og:type">
+                <meta content="https://static.wikia.nocookie.net/gensin-impact/images/3/30/Splashscreen_Akasha_Pulses%2C_the_Kalpa_Flame_Rises.png" property="og:image"/>
+                <meta content="https://remls.github.io/GenshinChars" property="og:url"/>
+                <meta content="https://static.wikia.nocookie.net/gensin-impact/images/3/30/Splashscreen_Akasha_Pulses%2C_the_Kalpa_Flame_Rises.png" name="twitter:card"/>
+                <link href="assets/styles.css" rel="stylesheet"/>
+                <script defer="" src="https://unpkg.com/@alpinejs/collapse@3.10.5/dist/cdn.min.js">
+                </script>
+                <script defer="" src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js">
+                </script>
+                <script src="assets/scripts.js">
+                </script>
+            </meta>
+        </meta>
+    </head>
+    <body x-data="charSheet" x-init="fetchAllData">
+        <section>
+            <h2 @click="showSection.filters = !showSection.filters" class="collapsible-header">
+                Filters
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="showSection.filters">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)">
+                    </path>
+                </svg>
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="!showSection.filters">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)">
+                    </path>
+                </svg>
+            </h2>
+            <div class="table-wrapper" x-collapse="" x-show="showSection.filters">
+                <table class="filter-table table-40 no-border">
                     <tr>
-                        <th>
-                            <!-- Empty first header -->
-                        </th>
-                        <th width="12%"><img width="50" height="50" src="assets/images/Bow.webp"><br>Bow</th>
-                        <th width="12%"><img width="50" height="50" src="assets/images/Catalyst.webp"><br>Catalyst</th>
-                        <th width="12%"><img width="50" height="50" src="assets/images/Claymore.webp"><br>Claymore</th>
-                        <th width="12%"><img width="50" height="50" src="assets/images/Polearm.webp"><br>Polearm</th>
-                        <th width="12%"><img width="50" height="50" src="assets/images/Sword.webp"><br>Sword</th>
-                        <th width="12%">Unknown</th>
-                        <th>RARITY</th>
-                        <th>GENDER</th>
-                        <th>REGION</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Anemo.svg">
-                            <br>
-                            Anemo
+                        <td width="10%">
+                            <label for="version-select">
+                                Filter by version
+                            </label>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Anemo',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Geo.svg">
-                            <br>
-                            Geo
+                        <td>
+                            <select @change="updateCharacterData()" id="version-select" x-model="selectedVersion">
+                                <template :key="version.version_number" x-for="version in Object.values(versionData)">
+                                    <option :value="version.version_number" x-text="formatVersion(version.version_number)">
+                                    </option>
+                                </template>
+                                <option :value="null">
+                                    All known playable characters
+                                </option>
+                            </select>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Geo',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
                     </tr>
                     <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Electro.svg">
-                            <br>
-                            Electro
+                        <td>
+                            <label for="rarity-select">
+                                Filter by rarity
+                            </label>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Electro',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Dendro.svg">
-                            <br>
-                            Dendro
+                        <td>
+                            <select @change="updateCharacterData()" id="rarity-select" x-model="selectedRarity">
+                                <option :value="null">
+                                    All
+                                </option>
+                                <option value="4">
+                                    4-star
+                                </option>
+                                <option value="5">
+                                    5-star
+                                </option>
+                                <option value="Unknown">
+                                    Unknown
+                                </option>
+                            </select>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Dendro',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
                     </tr>
                     <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Hydro.svg">
-                            <br>
-                            Hydro
+                        <td>
+                            <label for="gender-select">
+                                Filter by gender
+                            </label>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Hydro',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Pyro.svg">
-                            <br>
-                            Pyro
+                        <td>
+                            <select @change="updateCharacterData()" id="gender-select" x-model="selectedGender">
+                                <option :value="null">
+                                    All
+                                </option>
+                                <option value="Female">
+                                    Female
+                                </option>
+                                <option value="Male">
+                                    Male
+                                </option>
+                                <option value="Unknown">
+                                    Unknown
+                                </option>
+                            </select>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Pyro',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
                     </tr>
                     <tr>
-                        <td class="label-column">
-                            <img width="50" height="50" src="assets/images/Cryo.svg">
-                            <br>
-                            Cryo
+                        <td>
+                            <label for="region-select">
+                                Filter by region
+                            </label>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'Cryo',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column">
-                            Unknown
+                        <td>
+                            <select @change="updateCharacterData()" id="region-select" x-model="selectedRegion">
+                                <option :value="null">
+                                    All
+                                </option>
+                                <template :key="region" x-for="region in REGIONS">
+                                    <option :value="region" x-text="region">
+                                    </option>
+                                </template>
+                                <option value="Unknown">
+                                    Unknown
+                                </option>
+                            </select>
                         </td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Bow'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Catalyst'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Claymore'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Polearm'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'Sword'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td><template x-for="char in filterCharacterData({element:'?',weapon:'?'})">
-    <div @click="showCharSheet(char.name)" class="character-links">
-        <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-        <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-            x-text="char.display_name || char.name">
-        </span>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
                     </tr>
-                    <tr>
-                        <td class="label-column"><b>RARITY</b></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="transparent-rb totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'rarity'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="transparent-rb totals-cells"></td>
-                        <td class="transparent-b totals-cells"></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column"><b>GENDER</b></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="transparent-rb totals-cells"></td>
-                        <td class="transparent-rb totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'gender'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="transparent-b totals-cells"></td>
-                    </tr>
-                    <tr>
-                        <td class="label-column"><b>REGION</b></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                        <td class="transparent-r totals-cells"></td>
-                        <td class="transparent-r totals-cells"></td>
-                        <td class="totals-cells center"><template x-for="[key, value] in Object.entries(groupCharacterData(null,'region'))" :key="key">
-    <div>
-        <b x-text="key"></b> - <span x-text="value"></span>
-        <br/>
-    </div>
-</template></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section>
-        <h2>Characters in order of release</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Character</th>
-                        <th>Release Version</th>
-                        <th>Release Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <template x-for="char in Object.values( characterData )">
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2 @click="showSection.weaponElementTable = !showSection.weaponElementTable" class="collapsible-header">
+                Characters by weapon/element
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="showSection.weaponElementTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)">
+                    </path>
+                </svg>
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="!showSection.weaponElementTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)">
+                    </path>
+                </svg>
+            </h2>
+            <div class="table-wrapper" x-collapse="" x-show="showSection.weaponElementTable">
+                <table>
+                    <thead>
                         <tr>
-                            <td>
-                                <div @click="showCharSheet(char.name)" class="character-links">
-                                    <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-                                        x-text="char.display_name || char.name">
-                                    </span>
-                                </div>
-                            </td>
-                            <td x-show="releaseUnknown(char)"
-                                colspan="2" class="center">
-                                <span class="text-unknown">Unknown</span>
-                            </td>
-                            <td x-show="!releaseUnknown(char)"
-                                :class="{'center': !char.release_version}">
-                                <span x-text="formatVersion(char.release_version)"
-                                    :class="{'text-unknown': !char.release_version}">
-                                </span>
-                            </td>
-                            <td x-show="!releaseUnknown(char)"
-                                :class="{'center': !char.release_date}">
-                                <span x-text="formatDate(char.release_date)"
-                                    :class="{'text-unknown': !char.release_date}">
-                                </span>
-                            </td>
+                            <th>
+                                <!-- Empty first header -->
+                            </th>
+                            <th width="12%">
+                                <img height="50" src="assets/images/Bow.webp" width="50"/>
+                                <br/>
+                                Bow
+                            </th>
+                            <th width="12%">
+                                <img height="50" src="assets/images/Catalyst.webp" width="50"/>
+                                <br/>
+                                Catalyst
+                            </th>
+                            <th width="12%">
+                                <img height="50" src="assets/images/Claymore.webp" width="50"/>
+                                <br/>
+                                Claymore
+                            </th>
+                            <th width="12%">
+                                <img height="50" src="assets/images/Polearm.webp" width="50"/>
+                                <br/>
+                                Polearm
+                            </th>
+                            <th width="12%">
+                                <img height="50" src="assets/images/Sword.webp" width="50"/>
+                                <br/>
+                                Sword
+                            </th>
+                            <th width="12%">
+                                Unknown
+                            </th>
+                            <th>
+                                RARITY
+                            </th>
+                            <th>
+                                GENDER
+                            </th>
+                            <th>
+                                REGION
+                            </th>
                         </tr>
-                    </template>
-
-                    <tr x-show="noCharacters()">
-                        <td class="center" colspan="3">No characters match your filters.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section>
-        <h2>Characters sorted by birthday</h2>
-        <div class="table-wrapper">
-            <table class="birthday-table table-40">
-                <thead>
-                    <tr>
-                        <th>Character</th>
-                        <th>Birthday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <template x-for="char in sortCharactersByBirthday()">
+                    </thead>
+                    <tbody>
                         <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Anemo.svg" width="50"/>
+                                <br/>
+                                Anemo
+                            </td>
                             <td>
-                                <div @click="showCharSheet(char.name)" class="character-links">
-                                    <img width="20" height="20" :src="getPortraitPhoto(char.photo)">
-                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-                                        x-text="char.display_name || char.name">
-                                    </span>
-                                </div>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
                             </td>
-                            <td x-show="!char.birthday" class="center">
-                                <span class="text-unknown">Unknown</span>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
                             </td>
-                            <td x-show="char.birthday">
-                                <span x-text="formatDate(char.birthday)"></span>
-                                <template x-if="birthdayIsToday(char)">
-                                    <span style="padding-left: 2px;">(Today)</span>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Anemo',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Anemo'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
                                 </template>
                             </td>
                         </tr>
-                    </template>
-
-                    <tr x-show="noCharacters()">
-                        <td class="center" colspan="2">No characters match your filters.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <div class="page-footer">
-        <div>
-            Last updated <span x-text="lastUpdatedFormatted()"></span>
-            <br>
-            Above tables do not include the Traveler.
-            <br>
-            Info for unreleased characters are subject to change.
-            <br>
-            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a>
-        </div>
-        <div class="icons">
-            <a href="https://t.me/Remls">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Geo.svg" width="50"/>
+                                <br/>
+                                Geo
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Geo',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Geo'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Electro.svg" width="50"/>
+                                <br/>
+                                Electro
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Electro',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Electro'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Dendro.svg" width="50"/>
+                                <br/>
+                                Dendro
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Dendro',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Dendro'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Hydro.svg" width="50"/>
+                                <br/>
+                                Hydro
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Hydro',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Hydro'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Pyro.svg" width="50"/>
+                                <br/>
+                                Pyro
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Pyro',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Pyro'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <img height="50" src="assets/images/Cryo.svg" width="50"/>
+                                <br/>
+                                Cryo
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'Cryo',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'Cryo'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                Unknown
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'Bow'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'Catalyst'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'Claymore'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'Polearm'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'Sword'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td>
+                                <template x-for="char in filterCharacterData({element:'?',weapon:'?'})">
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({element:'?'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <b>
+                                    RARITY
+                                </b>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="transparent-rb totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData(null,'rarity'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="transparent-rb totals-cells">
+                            </td>
+                            <td class="transparent-b totals-cells">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <b>
+                                    GENDER
+                                </b>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="transparent-rb totals-cells">
+                            </td>
+                            <td class="transparent-rb totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData(null,'gender'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="transparent-b totals-cells">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label-column">
+                                <b>
+                                    REGION
+                                </b>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Bow'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Catalyst'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Claymore'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Polearm'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'Sword'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData({weapon:'?'},'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                            <td class="transparent-r totals-cells">
+                            </td>
+                            <td class="transparent-r totals-cells">
+                            </td>
+                            <td class="totals-cells center">
+                                <template :key="key" x-for="[key, value] in Object.entries(groupCharacterData(null,'region'))">
+                                    <div>
+                                        <b x-text="key">
+                                        </b>
+                                        -
+                                        <span x-text="value">
+                                        </span>
+                                    </div>
+                                </template>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2 @click="showSection.releaseOrderTable = !showSection.releaseOrderTable" class="collapsible-header">
+                Characters in order of release
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="showSection.releaseOrderTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)">
+                    </path>
                 </svg>
-            </a>
-            <a href="https://github.com/Remls/GenshinChars">
-                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path
-                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="!showSection.releaseOrderTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)">
+                    </path>
                 </svg>
-            </a>
+            </h2>
+            <div class="table-wrapper" x-collapse="" x-show="showSection.releaseOrderTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Character
+                            </th>
+                            <th>
+                                Release Version
+                            </th>
+                            <th>
+                                Release Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template x-for="char in Object.values( characterData )">
+                            <tr>
+                                <td>
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="center" colspan="2" x-show="releaseUnknown(char)">
+                                    <span class="text-unknown">
+                                        Unknown
+                                    </span>
+                                </td>
+                                <td :class="{'center': !char.release_version}" x-show="!releaseUnknown(char)">
+                                    <span :class="{'text-unknown': !char.release_version}" x-text="formatVersion(char.release_version)">
+                                    </span>
+                                </td>
+                                <td :class="{'center': !char.release_date}" x-show="!releaseUnknown(char)">
+                                    <span :class="{'text-unknown': !char.release_date}" x-text="formatDate(char.release_date)">
+                                    </span>
+                                </td>
+                            </tr>
+                        </template>
+                        <tr x-show="noCharacters()">
+                            <td class="center" colspan="3">
+                                No characters match your filters.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2 @click="showSection.birthdayOrderTable = !showSection.birthdayOrderTable" class="collapsible-header">
+                Characters sorted by birthday
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="showSection.birthdayOrderTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)">
+                    </path>
+                </svg>
+                <svg fill="#c9d1d9" height="15" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="15" x-show="!showSection.birthdayOrderTable">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                    </path>
+                    <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)">
+                    </path>
+                </svg>
+            </h2>
+            <div class="table-wrapper" x-collapse="" x-show="showSection.birthdayOrderTable">
+                <table class="birthday-table table-40">
+                    <thead>
+                        <tr>
+                            <th>
+                                Character
+                            </th>
+                            <th>
+                                Birthday
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template x-for="char in sortCharactersByBirthday()">
+                            <tr>
+                                <td>
+                                    <div @click="showCharSheet(char.name)" class="character-links">
+                                        <img :src="getPortraitPhoto(char.photo)" height="20" width="20"/>
+                                        <span :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'" class="gi-font clickable" x-text="char.display_name || char.name">
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="center" x-show="!char.birthday">
+                                    <span class="text-unknown">
+                                        Unknown
+                                    </span>
+                                </td>
+                                <td x-show="char.birthday">
+                                    <span x-text="formatDate(char.birthday)">
+                                    </span>
+                                    <template x-if="birthdayIsToday(char)">
+                                        <span style="padding-left: 2px;">
+                                            (Today)
+                                        </span>
+                                    </template>
+                                </td>
+                            </tr>
+                        </template>
+                        <tr x-show="noCharacters()">
+                            <td class="center" colspan="2">
+                                No characters match your filters.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="page-footer">
+            <div>
+                Last updated
+                <span x-text="lastUpdatedFormatted()">
+                </span>
+                <br/>
+                Above tables do not include the Traveler.
+                <br/>
+                Info for unreleased characters are subject to change.
+                <br/>
+                Pictures sourced from
+                <a class="clickable" href="https://paimon.moe">
+                    Paimon.moe
+                </a>
+            </div>
+            <div class="icons">
+                <a href="https://t.me/Remls">
+                    <svg fill="none" height="25" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="25">
+                        <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                        </path>
+                        <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://github.com/Remls/GenshinChars">
+                    <svg fill="none" height="25" stroke="#c9d1d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="25">
+                        <path d="M0 0h24v24H0z" fill="none" stroke="none">
+                        </path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                        </path>
+                    </svg>
+                </a>
+            </div>
         </div>
-    </div>
-
-    <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
-        <div class="modal-content" @click.outside="modalOpen = false">
-            <div class="modal-content-flex">
-                <img x-show="photo" height="250" :src="photo">
-                <div class="table-wrapper">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="label-column">Name</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Birthday</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Element</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Gender</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': gender === 'Unknown' }" x-text="gender"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Rarity</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': rarity === 'Unknown' }" x-text="rarity"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Region</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': region === 'Unknown' }" x-text="region"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Weapon</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': weapon === 'Unknown' }" x-text="weapon"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Version</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseVersion === 'Unknown' }" x-text="releaseVersion"></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label-column">Release Date</td>
-                                <td>
-                                    <span :class="{ 'text-unknown': releaseDate === 'Unknown' }" x-text="releaseDate"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div class="modal" x-show="modalOpen" x-transition="" x-transition.duration.500ms="">
+            <div @click.outside="modalOpen = false" class="modal-content">
+                <div class="modal-content-flex">
+                    <img :src="photo" class="full-photo" x-show="photo"/>
+                    <div class="table-wrapper">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="label-column">
+                                        Name
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': name === 'Unknown' }" x-text="name">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Birthday
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': birthday === 'Unknown' }" x-text="birthday">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Element
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': element === 'Unknown' }" x-text="element">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Gender
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': gender === 'Unknown' }" x-text="gender">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Rarity
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': rarity === 'Unknown' }" x-text="rarity">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Region
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': region === 'Unknown' }" x-text="region">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Weapon
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': weapon === 'Unknown' }" x-text="weapon">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Release Version
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': releaseVersion === 'Unknown' }" x-text="releaseVersion">
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-column">
+                                        Release Date
+                                    </td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': releaseDate === 'Unknown' }" x-text="releaseDate">
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a :href="getWikiLink()">
+                        More info >
+                    </a>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a :href="getWikiLink()">More info ></a>
-            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
