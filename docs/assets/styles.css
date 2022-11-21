@@ -70,6 +70,12 @@ h2, th, .label-column {
     text-align: center;
 }
 
+h2 button.caret {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 th, .label-column {
     background-color: var(--secondary-color);
 }

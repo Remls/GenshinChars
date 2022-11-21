@@ -24,12 +24,12 @@
 
     <link rel="stylesheet" href="assets/styles.css">
 
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.10.5/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
     <script src="assets/scripts.js"></script>
 </head>
 
 <body x-data="charSheet" x-init="fetchAllData">
-
     <table class="filter-table table-40 no-border">
         <tr>
             <td width="10%">
@@ -87,8 +87,11 @@
     </table>
 
     <section>
-        <h2>Characters by weapon/element</h2>
-        <div class="table-wrapper">
+        <h2>
+            Characters by weapon/element
+            [CARET weaponElementTable]
+        </h2>
+        <div class="table-wrapper" x-show="showSection.weaponElementTable" x-collapse>
             <table>
                 <thead>
                     <tr>
@@ -276,8 +279,11 @@
     </section>
 
     <section>
-        <h2>Characters in order of release</h2>
-        <div class="table-wrapper">
+        <h2>
+            Characters in order of release
+            [CARET releaseOrderTable]
+        </h2>
+        <div class="table-wrapper" x-show="showSection.releaseOrderTable" x-collapse>
             <table>
                 <thead>
                     <tr>
@@ -325,8 +331,11 @@
     </section>
 
     <section>
-        <h2>Characters sorted by birthday</h2>
-        <div class="table-wrapper">
+        <h2>
+            Characters sorted by birthday
+            [CARET birthdayOrderTable]
+        </h2>
+        <div class="table-wrapper" x-show="showSection.birthdayOrderTable" x-collapse>
             <table class="birthday-table table-40">
                 <thead>
                     <tr>

@@ -14,7 +14,21 @@ def generate_index_file():
     replace = THUMBNAIL_IMAGE
     output = re.sub(search, replace, output)
 
-    # 2. Character display template
+    # 2. Carets (for toggling sections)
+    search = r"\[CARET (.+)\]"
+    replace = r"""<button class="caret" @click="showSection.\1 = !showSection.\1">
+        <svg x-show="showSection.\1" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+        </svg>
+        <svg x-show="!showSection.\1" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+        </svg>
+    </button>"""
+    output = re.sub(search, replace, output)
+
+    # 3. Character display template
     search = r"\[CHAR (.+)\]"
     replace = r"""<template x-for="char in filterCharacterData({\1})">
         <div @click="showCharSheet(char.name)" class="character-links">
@@ -26,7 +40,7 @@ def generate_index_file():
     </template>"""
     output = re.sub(search, replace, output)
 
-    # 3. Counter template
+    # 4. Counter template
     search = r"\[COUNTER (.+)\]"
     replace = r"""<template x-for="[key, value] in Object.entries(groupCharacterData(\1))" :key="key">
         <div>

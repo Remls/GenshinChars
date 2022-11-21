@@ -21,9 +21,17 @@ const FULL_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('charSheet', () => ({
+        // Data
         allData: {},
         characterData: {},
         versionData: {},
+
+        // Section collapses
+        showSection: {
+            weaponElementTable: true,
+            releaseOrderTable: true,
+            birthdayOrderTable: true,
+        },
 
         // Dropdown filters
         selectedVersion: null,
