@@ -1,0 +1,4 @@
+{
+  "ignore": ["docs/index.html", "docs/assets/data.json", "README.md"],
+  "ext": "py, html, css, js"
+}
