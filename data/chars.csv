@@ -1,6 +1,6 @@
 name,display_name,rarity,element,weapon,region,gender,birthday,release_version,release_date
 Albedo,,5,Geo,Sword,Mondstadt,Male,09-13,1.2,
-Alhaitham,,5,Dendro,Sword,Sumeru,Male,,3.4,?
+Alhaitham,,5,Dendro,Sword,Sumeru,Male,02-11,3.4,?
 Alice,,,,,Mondstadt,Female,,,
 Aloy,,5,Cryo,Bow,,Female,04-04,2.1,
 Amber,,4,Pyro,Bow,Mondstadt,Female,08-10,1.0,
@@ -64,7 +64,7 @@ Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
 Xinyan,,4,Pyro,Claymore,Liyue,Female,10-16,1.1,2020-12-01
 Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,
 Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,
-Yaoyao,,4,Dendro,Polearm,Liyue,Female,,3.4,?
+Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,?
 Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,
 Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
 Yun Jin,,4,Geo,Polearm,Liyue,Female,05-21,2.4,
