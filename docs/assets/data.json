@@ -1,6 +1,6 @@
 {
-    "version": "f725058",
-    "last_updated": "2022-12-26T10:02:25.855207Z",
+    "version": "d8fb1d5",
+    "last_updated": "2023-01-04T04:53:17.905782Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1086,8 +1086,8 @@
         },
         "3.4": {
             "version_number": "3.4",
-            "version_name": null,
-            "release_date": null
+            "version_name": "The Exquisite Night Chimes",
+            "release_date": "2023-01-18"
         },
         "3.5": {
             "version_number": "3.5",
