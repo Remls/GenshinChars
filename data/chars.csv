@@ -5,7 +5,7 @@ Alice,,,,,Mondstadt,Female,,,
 Aloy,,5,Cryo,Bow,,Female,04-04,2.1,
 Amber,,4,Pyro,Bow,Mondstadt,Female,08-10,1.0,
 Arataki Itto,Itto,5,Geo,Claymore,Inazuma,Male,06-01,2.3,2021-12-14
-Baizhu,,,Dendro,Catalyst,Liyue,Male,,3.6,?
+Baizhu,,5,Dendro,Catalyst,Liyue,Male,,3.6,?
 Barbara,,4,Hydro,Catalyst,Mondstadt,Female,07-05,1.0,
 Beidou,,4,Electro,Claymore,Liyue,Female,02-14,1.0,
 Bennett,,4,Pyro,Sword,Mondstadt,Male,02-29,1.0,
@@ -30,7 +30,7 @@ Kaedehara Kazuha,Kazuha,5,Anemo,Sword,Inazuma,Male,10-29,1.6,2021-06-29
 Kaeya,,4,Cryo,Sword,Mondstadt,Male,11-30,1.0,
 Kamisato Ayaka,Ayaka,5,Cryo,Sword,Inazuma,Female,09-28,2.0,
 Kamisato Ayato,Ayato,5,Hydro,Sword,Inazuma,Male,03-26,2.6,
-Kaveh,,,Dendro,Claymore,Sumeru,Male,,,
+Kaveh,,4,Dendro,Claymore,Sumeru,Male,,,
 Keqing,,5,Electro,Sword,Liyue,Female,11-20,1.0,
 Klee,,5,Pyro,Catalyst,Mondstadt,Female,07-27,1.0,2020-10-20
 Kujou Sara,Sara,4,Electro,Bow,Inazuma,Female,07-14,2.1,
@@ -51,7 +51,7 @@ Sangonomiya Kokomi,Kokomi,5,Hydro,Catalyst,Inazuma,Female,02-22,2.1,2021-09-21
 Sayu,,4,Anemo,Claymore,Inazuma,Female,10-19,2.0,2021-08-10
 Shenhe,,5,Cryo,Polearm,Liyue,Female,03-10,2.4,
 Shikanoin Heizou,Heizou,4,Anemo,Catalyst,Inazuma,Male,07-24,2.8,
-Soutine,,,Hydro,Claymore,Fontaine,,,3.8,?
+Soutine,,4,Hydro,Claymore,Fontaine,,,3.8,?
 Sucrose,,4,Anemo,Catalyst,Mondstadt,Female,11-26,1.0,
 Tartaglia,Childe,5,Hydro,Bow,Snezhnaya,Male,07-20,1.1,
 Thoma,,4,Pyro,Polearm,Inazuma,Male,01-09,2.2,2021-11-02
@@ -64,6 +64,7 @@ Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
 Xinyan,,4,Pyro,Claymore,Liyue,Female,10-16,1.1,2020-12-01
 Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,
 Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,
+Yaoguang,,5,Geo,,Liyue,,,
 Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,?
 Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,
 Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
