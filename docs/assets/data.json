@@ -1,6 +1,6 @@
 {
-    "version": "98e2a4a",
-    "last_updated": "2023-01-05T04:36:34.682167Z",
+    "version": "e595971",
+    "last_updated": "2023-01-05T04:46:55.782392Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -72,9 +72,9 @@
             "photo": null,
             "is_released": false
         },
-        "Yaoguang": {
-            "name": "Yaoguang",
-            "display_name": null,
+        "One of the Liyue Qixing (Yaoguang)": {
+            "name": "One of the Liyue Qixing (Yaoguang)",
+            "display_name": "Yaoguang",
             "rarity": "5",
             "element": "Geo",
             "weapon": null,
