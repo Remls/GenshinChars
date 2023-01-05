@@ -1,6 +1,6 @@
 {
-    "version": "bbd4541",
-    "last_updated": "2023-01-05T01:42:11.391766Z",
+    "version": "98e2a4a",
+    "last_updated": "2023-01-05T04:36:34.682167Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1120,22 +1120,22 @@
         "3.5": {
             "version_number": "3.5",
             "version_name": null,
-            "release_date": null
+            "release_date": "2023-03-01"
         },
         "3.6": {
             "version_number": "3.6",
             "version_name": null,
-            "release_date": null
+            "release_date": "2023-04-12"
         },
         "3.7": {
             "version_number": "3.7",
             "version_name": null,
-            "release_date": null
+            "release_date": "2023-05-24"
         },
         "3.8": {
             "version_number": "3.8",
             "version_name": null,
-            "release_date": null
+            "release_date": "2023-07-05"
         }
     }
 }
