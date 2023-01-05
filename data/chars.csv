@@ -1,7 +1,7 @@
 name,display_name,rarity,element,weapon,region,gender,birthday,release_version,release_date
 Albedo,,5,Geo,Sword,Mondstadt,Male,09-13,1.2,
 Alhaitham,,5,Dendro,Sword,Sumeru,Male,02-11,3.4,?
-Alice,,,,,Mondstadt,Female,,,
+Alice,,,,,Mondstadt,Female,,,?
 Aloy,,5,Cryo,Bow,,Female,04-04,2.1,
 Amber,,4,Pyro,Bow,Mondstadt,Female,08-10,1.0,
 Arataki Itto,Itto,5,Geo,Claymore,Inazuma,Male,06-01,2.3,2021-12-14
@@ -13,7 +13,7 @@ Candace,,4,Hydro,Polearm,Sumeru,Female,05-03,3.1,
 Chongyun,,4,Cryo,Claymore,Liyue,Male,09-07,1.0,
 Collei,,4,Dendro,Bow,Sumeru,Female,05-08,3.0,
 Cyno,,5,Electro,Polearm,Sumeru,Male,06-23,3.1,
-Dainsleif,,,,,Khaenri'ah,Male,,,
+Dainsleif,,,,,Khaenri'ah,Male,,,?
 Dehya,,5,Pyro,Claymore,Sumeru,Female,,3.5,?
 Diluc,,5,Pyro,Claymore,Mondstadt,Male,04-30,1.0,
 Diona,,4,Cryo,Bow,Mondstadt,Female,01-18,1.1,
@@ -21,17 +21,17 @@ Dori,,4,Electro,Claymore,Sumeru,Female,12-21,3.0,2022-09-09
 Eula,,5,Cryo,Claymore,Mondstadt,Female,10-25,1.5,2021-05-18
 Faruzan,,4,Anemo,Bow,Sumeru,Female,08-20,3.3,
 Fischl,,4,Electro,Bow,Mondstadt,Female,05-27,1.0,
-Focalors,,5,Hydro,,Fontaine,Female,,,
+Focalors,,5,Hydro,,Fontaine,Female,,,?
 Ganyu,,5,Cryo,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,Bow,Inazuma,Male,05-18,2.3,2021-12-14
 Hu Tao,,5,Pyro,Polearm,Liyue,Female,07-15,1.3,2021-03-02
-Il Dottore,Dottore,,,Claymore,Snezhnaya,Male,,,
+Il Dottore,Dottore,,,Claymore,Snezhnaya,Male,,,?
 Jean,,5,Anemo,Sword,Mondstadt,Female,03-14,1.0,
 Kaedehara Kazuha,Kazuha,5,Anemo,Sword,Inazuma,Male,10-29,1.6,2021-06-29
 Kaeya,,4,Cryo,Sword,Mondstadt,Male,11-30,1.0,
 Kamisato Ayaka,Ayaka,5,Cryo,Sword,Inazuma,Female,09-28,2.0,
 Kamisato Ayato,Ayato,5,Hydro,Sword,Inazuma,Male,03-26,2.6,
-Kaveh,,4,Dendro,Claymore,Sumeru,Male,,,
+Kaveh,,4,Dendro,Claymore,Sumeru,Male,,,?
 Keqing,,5,Electro,Sword,Liyue,Female,11-20,1.0,
 Klee,,5,Pyro,Catalyst,Mondstadt,Female,07-27,1.0,2020-10-20
 Kujou Sara,Sara,4,Electro,Bow,Inazuma,Female,07-14,2.1,
@@ -65,7 +65,7 @@ Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
 Xinyan,,4,Pyro,Claymore,Liyue,Female,10-16,1.1,2020-12-01
 Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,
 Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,
-Yaoguang,,5,Geo,,Liyue,,,
+Yaoguang,,5,Geo,,Liyue,,,,?
 Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,?
 Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,
 Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
