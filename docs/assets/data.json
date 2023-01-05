@@ -1,6 +1,6 @@
 {
-    "version": "be9aeec",
-    "last_updated": "2023-01-05T01:34:33.910479Z",
+    "version": "bbd4541",
+    "last_updated": "2023-01-05T01:42:11.391766Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -24,6 +24,20 @@
             "weapon": null,
             "region": "Khaenri'ah",
             "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Focalors": {
+            "name": "Focalors",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
