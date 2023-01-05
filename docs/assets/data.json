@@ -1,6 +1,6 @@
 {
-    "version": "d8fb1d5",
-    "last_updated": "2023-01-04T04:53:17.905782Z",
+    "version": "be9aeec",
+    "last_updated": "2023-01-05T01:34:33.910479Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -47,7 +47,7 @@
         "Kaveh": {
             "name": "Kaveh",
             "display_name": null,
-            "rarity": null,
+            "rarity": "4",
             "element": "Dendro",
             "weapon": "Claymore",
             "region": "Sumeru",
@@ -58,10 +58,24 @@
             "photo": null,
             "is_released": false
         },
+        "Yaoguang": {
+            "name": "Yaoguang",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
+            "weapon": null,
+            "region": "Liyue",
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
         "Soutine": {
             "name": "Soutine",
             "display_name": null,
-            "rarity": null,
+            "rarity": "4",
             "element": "Hydro",
             "weapon": "Claymore",
             "region": "Fontaine",
@@ -75,7 +89,7 @@
         "Baizhu": {
             "name": "Baizhu",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Dendro",
             "weapon": "Catalyst",
             "region": "Liyue",
