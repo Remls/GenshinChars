@@ -1,6 +1,6 @@
 {
-    "version": "e595971",
-    "last_updated": "2023-01-05T04:46:55.782392Z",
+    "version": "36fb373",
+    "last_updated": "2023-01-06T04:03:10.272375Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -80,6 +80,20 @@
             "weapon": null,
             "region": "Liyue",
             "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Yuelyn": {
+            "name": "Yuelyn",
+            "display_name": null,
+            "rarity": null,
+            "element": "Geo",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
