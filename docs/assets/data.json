@@ -1,6 +1,6 @@
 {
-    "version": "e190316",
-    "last_updated": "2023-01-08T17:38:40.563368Z",
+    "version": "8154d4e",
+    "last_updated": "2023-01-08T17:41:09.887841Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -65,6 +65,20 @@
             "element": "Dendro",
             "weapon": "Claymore",
             "region": "Sumeru",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Neuvillette": {
+            "name": "Neuvillette",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Fontaine",
             "gender": "Male",
             "birthday": null,
             "release_version": null,
