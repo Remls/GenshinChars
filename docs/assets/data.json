@@ -1,6 +1,6 @@
 {
-    "version": "36fb373",
-    "last_updated": "2023-01-06T04:03:10.272375Z",
+    "version": "cb6e9eb",
+    "last_updated": "2023-01-08T03:41:43.687891Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -77,7 +77,7 @@
             "display_name": "Yaoguang",
             "rarity": "5",
             "element": "Geo",
-            "weapon": null,
+            "weapon": "Bow",
             "region": "Liyue",
             "gender": null,
             "birthday": null,
