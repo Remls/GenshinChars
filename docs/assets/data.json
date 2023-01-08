@@ -1,6 +1,6 @@
 {
-    "version": "cb6e9eb",
-    "last_updated": "2023-01-08T03:41:43.687891Z",
+    "version": "e190316",
+    "last_updated": "2023-01-08T17:38:40.563368Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -35,7 +35,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "weapon": null,
+            "weapon": "Claymore",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
