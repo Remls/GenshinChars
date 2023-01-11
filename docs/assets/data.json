@@ -1,6 +1,6 @@
 {
-    "version": "8154d4e",
-    "last_updated": "2023-01-08T17:41:09.887841Z",
+    "version": "49e88b6",
+    "last_updated": "2023-01-11T15:55:31.223932Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -86,20 +86,6 @@
             "photo": null,
             "is_released": false
         },
-        "One of the Liyue Qixing (Yaoguang)": {
-            "name": "One of the Liyue Qixing (Yaoguang)",
-            "display_name": "Yaoguang",
-            "rarity": "5",
-            "element": "Geo",
-            "weapon": "Bow",
-            "region": "Liyue",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": null,
-            "is_released": false
-        },
         "Yuelyn": {
             "name": "Yuelyn",
             "display_name": null,
@@ -124,6 +110,20 @@
             "gender": null,
             "birthday": null,
             "release_version": "3.8",
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "One of the Liyue Qixing (Yaoguang)": {
+            "name": "One of the Liyue Qixing (Yaoguang)",
+            "display_name": "Yaoguang",
+            "rarity": "5",
+            "element": "Geo",
+            "weapon": "Bow",
+            "region": "Liyue",
+            "gender": null,
+            "birthday": null,
+            "release_version": "3.7",
             "release_date": null,
             "photo": null,
             "is_released": false
@@ -180,7 +180,7 @@
             "gender": "Male",
             "birthday": "02-11",
             "release_version": "3.4",
-            "release_date": null,
+            "release_date": "2023-01-18",
             "photo": null,
             "is_released": false
         },
@@ -194,7 +194,7 @@
             "gender": "Female",
             "birthday": "03-06",
             "release_version": "3.4",
-            "release_date": null,
+            "release_date": "2023-01-18",
             "photo": null,
             "is_released": false
         },
