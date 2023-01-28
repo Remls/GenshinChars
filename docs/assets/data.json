@@ -1,6 +1,6 @@
 {
-    "version": "49e88b6",
-    "last_updated": "2023-01-11T15:55:31.223932Z",
+    "version": "980035f",
+    "last_updated": "2023-01-28T14:09:05.853529Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -181,8 +181,8 @@
             "birthday": "02-11",
             "release_version": "3.4",
             "release_date": "2023-01-18",
-            "photo": null,
-            "is_released": false
+            "photo": "alhaitham.png",
+            "is_released": true
         },
         "Yaoyao": {
             "name": "Yaoyao",
@@ -195,8 +195,8 @@
             "birthday": "03-06",
             "release_version": "3.4",
             "release_date": "2023-01-18",
-            "photo": null,
-            "is_released": false
+            "photo": "yaoyao.png",
+            "is_released": true
         },
         "Faruzan": {
             "name": "Faruzan",
