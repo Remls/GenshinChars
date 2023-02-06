@@ -1,6 +1,6 @@
 {
-    "version": "6390290",
-    "last_updated": "2023-02-06T10:21:09.763343Z",
+    "version": "deb3463",
+    "last_updated": "2023-02-06T15:22:52.350637Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -150,7 +150,7 @@
             "weapon": "Claymore",
             "region": "Sumeru",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "04-07",
             "release_version": "3.5",
             "release_date": null,
             "photo": null,
@@ -164,7 +164,7 @@
             "weapon": "Polearm",
             "region": "Mondstadt",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "08-11",
             "release_version": "3.5",
             "release_date": null,
             "photo": null,
