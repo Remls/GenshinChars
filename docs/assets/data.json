@@ -1,6 +1,6 @@
 {
-    "version": "980035f",
-    "last_updated": "2023-01-28T14:09:05.853529Z",
+    "version": "6390290",
+    "last_updated": "2023-02-06T10:21:09.763343Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -51,20 +51,6 @@
             "element": null,
             "weapon": "Claymore",
             "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": null,
-            "is_released": false
-        },
-        "Kaveh": {
-            "name": "Kaveh",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Dendro",
-            "weapon": "Claymore",
-            "region": "Sumeru",
             "gender": "Male",
             "birthday": null,
             "release_version": null,
@@ -135,6 +121,20 @@
             "element": "Dendro",
             "weapon": "Catalyst",
             "region": "Liyue",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "3.6",
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Kaveh": {
+            "name": "Kaveh",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Dendro",
+            "weapon": "Claymore",
+            "region": "Sumeru",
             "gender": "Male",
             "birthday": null,
             "release_version": "3.6",
