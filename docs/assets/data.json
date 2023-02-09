@@ -1,6 +1,6 @@
 {
-    "version": "deb3463",
-    "last_updated": "2023-02-06T15:22:52.350637Z",
+    "version": "0f65737",
+    "last_updated": "2023-02-09T17:56:56.030774Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -100,9 +100,23 @@
             "photo": null,
             "is_released": false
         },
+        "Asase Shrine Maiden": {
+            "name": "Asase Shrine Maiden",
+            "display_name": "(Asase Shrine Maiden)",
+            "rarity": null,
+            "element": "Geo",
+            "weapon": null,
+            "region": "Inazuma",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "3.7",
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
         "One of the Liyue Qixing (Yaoguang)": {
             "name": "One of the Liyue Qixing (Yaoguang)",
-            "display_name": "Yaoguang",
+            "display_name": "(Yaoguang)",
             "rarity": "5",
             "element": "Geo",
             "weapon": "Bow",
