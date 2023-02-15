@@ -1,6 +1,6 @@
 {
-    "version": "0f65737",
-    "last_updated": "2023-02-09T17:56:56.030774Z",
+    "version": "870128d",
+    "last_updated": "2023-02-15T04:15:18.632917Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1161,7 +1161,7 @@
         },
         "3.5": {
             "version_number": "3.5",
-            "version_name": null,
+            "version_name": "Windblume's Breath",
             "release_date": "2023-03-01"
         },
         "3.6": {
