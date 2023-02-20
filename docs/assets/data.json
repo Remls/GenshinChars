@@ -1,6 +1,6 @@
 {
-    "version": "870128d",
-    "last_updated": "2023-02-15T04:15:18.632917Z",
+    "version": "59c8a41",
+    "last_updated": "2023-02-20T15:40:11.785771Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -156,20 +156,6 @@
             "photo": null,
             "is_released": false
         },
-        "Dehya": {
-            "name": "Dehya",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "weapon": "Claymore",
-            "region": "Sumeru",
-            "gender": "Female",
-            "birthday": "04-07",
-            "release_version": "3.5",
-            "release_date": null,
-            "photo": null,
-            "is_released": false
-        },
         "Mika": {
             "name": "Mika",
             "display_name": null,
@@ -180,7 +166,21 @@
             "gender": "Male",
             "birthday": "08-11",
             "release_version": "3.5",
-            "release_date": null,
+            "release_date": "2023-03-21",
+            "photo": null,
+            "is_released": false
+        },
+        "Dehya": {
+            "name": "Dehya",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "weapon": "Claymore",
+            "region": "Sumeru",
+            "gender": "Female",
+            "birthday": "04-07",
+            "release_version": "3.5",
+            "release_date": "2023-03-01",
             "photo": null,
             "is_released": false
         },
