@@ -1,6 +1,6 @@
 {
-    "version": "59c8a41",
-    "last_updated": "2023-02-20T15:40:11.785771Z",
+    "version": "e6b8688",
+    "last_updated": "2023-02-22T17:04:33.159491Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -103,7 +103,7 @@
         "Asase Shrine Maiden": {
             "name": "Asase Shrine Maiden",
             "display_name": "(Asase Shrine Maiden)",
-            "rarity": null,
+            "rarity": "5",
             "element": "Geo",
             "weapon": null,
             "region": "Inazuma",
