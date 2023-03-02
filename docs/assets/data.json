@@ -1,6 +1,6 @@
 {
-    "version": "e6b8688",
-    "last_updated": "2023-02-22T17:04:33.159491Z",
+    "version": "db515d9",
+    "last_updated": "2023-03-02T07:03:21.093640Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -181,8 +181,8 @@
             "birthday": "04-07",
             "release_version": "3.5",
             "release_date": "2023-03-01",
-            "photo": null,
-            "is_released": false
+            "photo": "dehya.png",
+            "is_released": true
         },
         "Alhaitham": {
             "name": "Alhaitham",
