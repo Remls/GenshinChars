@@ -1,6 +1,6 @@
 {
-    "version": "cc5f84a",
-    "last_updated": "2023-03-07T11:51:21.280902Z",
+    "version": "bb7ac14",
+    "last_updated": "2023-03-07T15:35:33.353818Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -105,7 +105,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Geo",
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Inazuma",
             "gender": "Female",
             "birthday": null,
