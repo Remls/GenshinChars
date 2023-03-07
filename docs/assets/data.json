@@ -1,6 +1,6 @@
 {
-    "version": "a88ae3f",
-    "last_updated": "2023-03-02T08:07:22.326414Z",
+    "version": "d134670",
+    "last_updated": "2023-03-07T11:39:07.232025Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -100,9 +100,9 @@
             "photo": null,
             "is_released": false
         },
-        "Asase Shrine Maiden": {
-            "name": "Asase Shrine Maiden",
-            "display_name": "(Asase Shrine Maiden)",
+        "Momoka": {
+            "name": "Momoka",
+            "display_name": null,
             "rarity": "5",
             "element": "Geo",
             "weapon": null,
