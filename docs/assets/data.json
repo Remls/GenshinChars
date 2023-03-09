@@ -1,6 +1,6 @@
 {
-    "version": "bb7ac14",
-    "last_updated": "2023-03-07T15:35:33.353818Z",
+    "version": "cc3646a",
+    "last_updated": "2023-03-09T22:07:40.515775Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -103,8 +103,8 @@
         "Momoka": {
             "name": "Momoka",
             "display_name": null,
-            "rarity": "5",
-            "element": "Geo",
+            "rarity": "4",
+            "element": "Dendro",
             "weapon": "Sword",
             "region": "Inazuma",
             "gender": "Female",
