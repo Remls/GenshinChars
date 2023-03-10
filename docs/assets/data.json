@@ -1,6 +1,6 @@
 {
-    "version": "cc3646a",
-    "last_updated": "2023-03-09T22:07:40.515775Z",
+    "version": "5e87f34",
+    "last_updated": "2023-03-10T10:50:14.094118Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -100,8 +100,8 @@
             "photo": null,
             "is_released": false
         },
-        "Momoka": {
-            "name": "Momoka",
+        "Kirara": {
+            "name": "Kirara",
             "display_name": null,
             "rarity": "4",
             "element": "Dendro",
