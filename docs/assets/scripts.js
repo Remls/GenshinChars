@@ -15,10 +15,6 @@ const REGIONS = [
     'Snezhnaya', 'Khaenri\'ah'
 ]
 
-const PORTRAIT_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/'
-const PORTRAIT_PHOTO_FALLBACK = 'assets/images/Fallback.png'
-const FULL_PHOTO_BASE = 'https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/'
-
 document.addEventListener('alpine:init', () => {
     Alpine.data('charSheet', () => ({
         // Data
@@ -52,6 +48,7 @@ document.addEventListener('alpine:init', () => {
         releaseVersion: null,
         releaseDate: null,
         photo: null,
+        fullPhoto: null,
 
         fetchAllData() {
             fetch('./assets/data.json')
@@ -242,10 +239,6 @@ document.addEventListener('alpine:init', () => {
             return s.charAt(0).toUpperCase() + s.slice(1)
         },
 
-        getPortraitPhoto(photo) {
-            return photo ? `${PORTRAIT_PHOTO_BASE}${photo}` : PORTRAIT_PHOTO_FALLBACK
-        },
-
         lastUpdatedFormatted() {
             const lastUpdated = this.allData['last_updated']
             if (!lastUpdated) return ''
@@ -271,7 +264,8 @@ document.addEventListener('alpine:init', () => {
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
             this.releaseDate = this.formatDate(selectedChar.release_date)
-            this.photo = selectedChar.photo ? `${FULL_PHOTO_BASE}${selectedChar.photo}` : null
+            this.photo = selectedChar.photo
+            this.fullPhoto = selectedChar.full_photo
             this.modalOpen = true
         },
 
