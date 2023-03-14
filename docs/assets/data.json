@@ -1,6 +1,6 @@
 {
-    "version": "5e87f34",
-    "last_updated": "2023-03-10T10:50:14.094118Z",
+    "version": "8b13d86",
+    "last_updated": "2023-03-14T03:11:07.237264Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -51,6 +51,34 @@
             "element": null,
             "weapon": "Claymore",
             "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Lynette": {
+            "name": "Lynette",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "weapon": "Sword",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": null,
+            "is_released": false
+        },
+        "Lyney": {
+            "name": "Lyney",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "weapon": "Bow",
+            "region": "Fontaine",
             "gender": "Male",
             "birthday": null,
             "release_version": null,
