@@ -1472,6 +1472,16 @@
                         </table>
                     </div>
                 </div>
+                <template x-if="notes">
+                    <div class="modal-notes">
+                        <ul>
+                            <template x-for="note in notes">
+                                <li x-text="note">
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
                 <div class="modal-footer">
                     <a :href="getWikiLink()">
                         More info >

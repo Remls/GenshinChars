@@ -1,6 +1,6 @@
 {
-    "version": "be057fb",
-    "last_updated": "2023-03-16T03:11:26.714516Z",
+    "version": "fdb0f60",
+    "last_updated": "2023-03-16T05:14:25.973560Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -15,7 +15,12 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "A member of the Hexenzirkel",
+                "Klee's mother",
+                "Voice is known, appearance is unknown"
+            ]
         },
         "Captain R": {
             "name": "Captain R",
@@ -23,14 +28,17 @@
             "rarity": null,
             "element": null,
             "weapon": null,
-            "region": null,
+            "region": "Mondstadt",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/captain_r.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "This is what the community call her, and is unlikely to be her final name"
+            ]
         },
         "Dainsleif": {
             "name": "Dainsleif",
@@ -45,22 +53,48 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/dainsleif.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
+                "He also has no visible Vision on his body"
+            ]
         },
         "Focalors": {
             "name": "Focalors",
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "weapon": "Claymore",
+            "weapon": null,
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
+            "photo": "assets/images/characters/focalors.png",
+            "full_photo": "assets/images/full-characters/focalors.png",
+            "is_released": false,
+            "notes": [
+                "Archon of Fontaine",
+                "May or may not be the same person as Soutine"
+            ]
+        },
+        "Iansan": {
+            "name": "Iansan",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "full_photo": "assets/images/full-characters/iansan.png",
+            "is_released": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview"
+            ]
         },
         "Il Dottore": {
             "name": "Il Dottore",
@@ -75,7 +109,8 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/il_dottore.png",
-            "is_released": false
+            "is_released": false,
+            "notes": null
         },
         "Lynette": {
             "name": "Lynette",
@@ -90,7 +125,11 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lynette.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview",
+                "The element and rarity is likely to be placeholders for now"
+            ]
         },
         "Lyney": {
             "name": "Lyney",
@@ -105,7 +144,11 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lyney.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview",
+                "The element and rarity is likely to be placeholders for now"
+            ]
         },
         "Neuvillette": {
             "name": "Neuvillette",
@@ -120,7 +163,10 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "Judge of the Supreme Court of Fontaine"
+            ]
         },
         "Wriothesley": {
             "name": "Wriothesley",
@@ -135,7 +181,11 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/wriothesley.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "This is the character mistakenly thought to be Varka",
+                "Known to look similar to the Pok\u00e9mon Zoroark (pictured)"
+            ]
         },
         "Yuelyn": {
             "name": "Yuelyn",
@@ -150,7 +200,8 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "is_released": false,
+            "notes": null
         },
         "Soutine": {
             "name": "Soutine",
@@ -165,7 +216,12 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "May or may not be Focalors, the archon of Fontaine",
+                "If true, they may be a 5-star female, and might not be a claymore user",
+                "Release version may have been delayed"
+            ]
         },
         "Kirara": {
             "name": "Kirara",
@@ -180,11 +236,14 @@
             "release_date": null,
             "photo": "assets/images/characters/kirara.png",
             "full_photo": "assets/images/full-characters/kirara.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "Shrine maiden at the Asase Shrine"
+            ]
         },
-        "One of the Liyue Qixing (Yaoguang)": {
-            "name": "One of the Liyue Qixing (Yaoguang)",
-            "display_name": "(Yaoguang)",
+        "Yaoguang": {
+            "name": "Yaoguang",
+            "display_name": null,
             "rarity": "5",
             "element": "Geo",
             "weapon": "Bow",
@@ -195,7 +254,12 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false
+            "is_released": false,
+            "notes": [
+                "Yaoguang is not their actual name, but is rather their title",
+                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
+                "Release version may have been delayed"
+            ]
         },
         "Baizhu": {
             "name": "Baizhu",
@@ -210,7 +274,8 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/baizhu.png",
-            "is_released": false
+            "is_released": false,
+            "notes": null
         },
         "Kaveh": {
             "name": "Kaveh",
@@ -225,7 +290,8 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/kaveh.png",
-            "is_released": false
+            "is_released": false,
+            "notes": null
         },
         "Mika": {
             "name": "Mika",
@@ -240,7 +306,8 @@
             "release_date": "2023-03-21",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/mika.png",
-            "is_released": false
+            "is_released": false,
+            "notes": null
         },
         "Dehya": {
             "name": "Dehya",
@@ -255,7 +322,8 @@
             "release_date": "2023-03-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dehya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dehya.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Alhaitham": {
             "name": "Alhaitham",
@@ -270,7 +338,8 @@
             "release_date": "2023-01-18",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/alhaitham.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/alhaitham.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yaoyao": {
             "name": "Yaoyao",
@@ -285,7 +354,8 @@
             "release_date": "2023-01-18",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yaoyao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yaoyao.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Faruzan": {
             "name": "Faruzan",
@@ -300,7 +370,8 @@
             "release_date": "2022-12-07",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/faruzan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/faruzan.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Wanderer": {
             "name": "Wanderer",
@@ -315,7 +386,10 @@
             "release_date": "2022-12-07",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/wanderer.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/wanderer.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Formerly known as Scaramouche"
+            ]
         },
         "Layla": {
             "name": "Layla",
@@ -330,7 +404,8 @@
             "release_date": "2022-11-18",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/layla.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/layla.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Nahida": {
             "name": "Nahida",
@@ -345,7 +420,10 @@
             "release_date": "2022-11-02",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nahida.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nahida.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Archon of Sumeru"
+            ]
         },
         "Nilou": {
             "name": "Nilou",
@@ -360,7 +438,8 @@
             "release_date": "2022-10-14",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nilou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nilou.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Candace": {
             "name": "Candace",
@@ -375,7 +454,8 @@
             "release_date": "2022-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/candace.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/candace.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Cyno": {
             "name": "Cyno",
@@ -390,7 +470,8 @@
             "release_date": "2022-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/cyno.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/cyno.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Dori": {
             "name": "Dori",
@@ -405,7 +486,8 @@
             "release_date": "2022-09-09",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dori.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dori.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Collei": {
             "name": "Collei",
@@ -420,7 +502,8 @@
             "release_date": "2022-08-24",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/collei.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/collei.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Tighnari": {
             "name": "Tighnari",
@@ -435,7 +518,8 @@
             "release_date": "2022-08-24",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tighnari.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Shikanoin Heizou": {
             "name": "Shikanoin Heizou",
@@ -450,7 +534,8 @@
             "release_date": "2022-07-13",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shikanoin_heizou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shikanoin_heizou.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Kuki Shinobu": {
             "name": "Kuki Shinobu",
@@ -465,7 +550,8 @@
             "release_date": "2022-06-21",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kuki_shinobu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kuki_shinobu.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yelan": {
             "name": "Yelan",
@@ -480,7 +566,8 @@
             "release_date": "2022-05-31",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yelan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yelan.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Kamisato Ayato": {
             "name": "Kamisato Ayato",
@@ -495,7 +582,8 @@
             "release_date": "2022-03-30",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayato.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yae Miko": {
             "name": "Yae Miko",
@@ -510,7 +598,8 @@
             "release_date": "2022-02-16",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yae_miko.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Shenhe": {
             "name": "Shenhe",
@@ -525,7 +614,8 @@
             "release_date": "2022-01-05",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shenhe.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shenhe.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yun Jin": {
             "name": "Yun Jin",
@@ -540,7 +630,8 @@
             "release_date": "2022-01-05",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yun_jin.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yun_jin.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Arataki Itto": {
             "name": "Arataki Itto",
@@ -555,7 +646,8 @@
             "release_date": "2021-12-14",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arataki_itto.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arataki_itto.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Gorou": {
             "name": "Gorou",
@@ -570,7 +662,8 @@
             "release_date": "2021-12-14",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gorou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/gorou.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Thoma": {
             "name": "Thoma",
@@ -585,7 +678,8 @@
             "release_date": "2021-11-02",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/thoma.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/thoma.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Sangonomiya Kokomi": {
             "name": "Sangonomiya Kokomi",
@@ -600,7 +694,8 @@
             "release_date": "2021-09-21",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sangonomiya_kokomi.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sangonomiya_kokomi.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Aloy": {
             "name": "Aloy",
@@ -615,7 +710,11 @@
             "release_date": "2021-09-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aloy.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aloy.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Crossover character from Horizon Zero Dawn",
+                "Given for free to all players through in-game mail during Version 2.2"
+            ]
         },
         "Kujou Sara": {
             "name": "Kujou Sara",
@@ -630,7 +729,8 @@
             "release_date": "2021-09-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kujou_sara.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Raiden Shogun": {
             "name": "Raiden Shogun",
@@ -645,7 +745,10 @@
             "release_date": "2021-09-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/raiden_shogun.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/raiden_shogun.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Archon of Inazuma"
+            ]
         },
         "Sayu": {
             "name": "Sayu",
@@ -660,7 +763,8 @@
             "release_date": "2021-08-10",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sayu.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yoimiya": {
             "name": "Yoimiya",
@@ -675,7 +779,8 @@
             "release_date": "2021-08-10",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yoimiya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yoimiya.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Kamisato Ayaka": {
             "name": "Kamisato Ayaka",
@@ -690,7 +795,8 @@
             "release_date": "2021-07-21",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayaka.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayaka.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Kaedehara Kazuha": {
             "name": "Kaedehara Kazuha",
@@ -705,7 +811,8 @@
             "release_date": "2021-06-29",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaedehara_kazuha.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaedehara_kazuha.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Eula": {
             "name": "Eula",
@@ -720,7 +827,8 @@
             "release_date": "2021-05-18",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/eula.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/eula.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Yanfei": {
             "name": "Yanfei",
@@ -735,7 +843,8 @@
             "release_date": "2021-04-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yanfei.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Rosaria": {
             "name": "Rosaria",
@@ -750,7 +859,8 @@
             "release_date": "2021-04-06",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/rosaria.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/rosaria.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Hu Tao": {
             "name": "Hu Tao",
@@ -765,7 +875,8 @@
             "release_date": "2021-03-02",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/hu_tao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/hu_tao.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Xiao": {
             "name": "Xiao",
@@ -780,7 +891,8 @@
             "release_date": "2021-02-03",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiao.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Ganyu": {
             "name": "Ganyu",
@@ -795,7 +907,8 @@
             "release_date": "2021-01-12",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ganyu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ganyu.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Albedo": {
             "name": "Albedo",
@@ -810,7 +923,8 @@
             "release_date": "2020-12-23",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/albedo.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/albedo.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Xinyan": {
             "name": "Xinyan",
@@ -825,7 +939,8 @@
             "release_date": "2020-12-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xinyan.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Zhongli": {
             "name": "Zhongli",
@@ -840,7 +955,10 @@
             "release_date": "2020-12-01",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zhongli.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zhongli.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Archon of Liyue"
+            ]
         },
         "Diona": {
             "name": "Diona",
@@ -855,7 +973,8 @@
             "release_date": "2020-11-11",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diona.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diona.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Tartaglia": {
             "name": "Tartaglia",
@@ -870,7 +989,8 @@
             "release_date": "2020-11-11",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tartaglia.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tartaglia.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Klee": {
             "name": "Klee",
@@ -885,7 +1005,8 @@
             "release_date": "2020-10-20",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/klee.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/klee.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Amber": {
             "name": "Amber",
@@ -900,7 +1021,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/amber.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/amber.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Barbara": {
             "name": "Barbara",
@@ -915,7 +1037,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/barbara.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/barbara.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Beidou": {
             "name": "Beidou",
@@ -930,7 +1053,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/beidou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/beidou.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Bennett": {
             "name": "Bennett",
@@ -945,7 +1069,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/bennett.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/bennett.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Chongyun": {
             "name": "Chongyun",
@@ -960,7 +1085,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chongyun.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chongyun.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Diluc": {
             "name": "Diluc",
@@ -975,7 +1101,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diluc.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diluc.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Fischl": {
             "name": "Fischl",
@@ -990,7 +1117,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/fischl.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/fischl.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Jean": {
             "name": "Jean",
@@ -1005,7 +1133,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jean.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/jean.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Kaeya": {
             "name": "Kaeya",
@@ -1020,7 +1149,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaeya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaeya.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Keqing": {
             "name": "Keqing",
@@ -1035,7 +1165,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/keqing.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/keqing.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Lisa": {
             "name": "Lisa",
@@ -1050,7 +1181,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lisa.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lisa.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Mona": {
             "name": "Mona",
@@ -1065,7 +1197,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mona.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mona.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Ningguang": {
             "name": "Ningguang",
@@ -1080,7 +1213,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ningguang.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Noelle": {
             "name": "Noelle",
@@ -1095,7 +1229,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/noelle.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Qiqi": {
             "name": "Qiqi",
@@ -1110,7 +1245,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/qiqi.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/qiqi.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Razor": {
             "name": "Razor",
@@ -1125,7 +1261,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/razor.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/razor.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Sucrose": {
             "name": "Sucrose",
@@ -1140,7 +1277,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sucrose.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sucrose.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Venti": {
             "name": "Venti",
@@ -1155,7 +1293,10 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/venti.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/venti.png",
-            "is_released": true
+            "is_released": true,
+            "notes": [
+                "Archon of Mondstadt"
+            ]
         },
         "Xiangling": {
             "name": "Xiangling",
@@ -1170,7 +1311,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiangling.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiangling.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         },
         "Xingqiu": {
             "name": "Xingqiu",
@@ -1185,7 +1327,8 @@
             "release_date": "2020-09-28",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xingqiu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xingqiu.png",
-            "is_released": true
+            "is_released": true,
+            "notes": null
         }
     },
     "versions": {
