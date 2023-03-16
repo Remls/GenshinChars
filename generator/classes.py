@@ -146,7 +146,7 @@ class Character:
             lines = []
             with open(expected_filename) as file:
                 for line in file:
-                    lines.append(line)
+                    lines.append(line.strip())
             return lines
         else:
             prRed(" X")

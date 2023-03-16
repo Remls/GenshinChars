@@ -10,7 +10,7 @@ Barbara,,4,Hydro,Catalyst,Mondstadt,Female,07-05,1.0,
 Beidou,,4,Electro,Claymore,Liyue,Female,02-14,1.0,
 Bennett,,4,Pyro,Sword,Mondstadt,Male,02-29,1.0,
 Candace,,4,Hydro,Polearm,Sumeru,Female,05-03,3.1,
-Captain R,,,,,,Female,,,?
+Captain R,,,,,Mondstadt,Female,,,?
 Chongyun,,4,Cryo,Claymore,Liyue,Male,09-07,1.0,
 Collei,,4,Dendro,Bow,Sumeru,Female,05-08,3.0,
 Cyno,,5,Electro,Polearm,Sumeru,Male,06-23,3.1,
@@ -22,10 +22,11 @@ Dori,,4,Electro,Claymore,Sumeru,Female,12-21,3.0,2022-09-09
 Eula,,5,Cryo,Claymore,Mondstadt,Female,10-25,1.5,2021-05-18
 Faruzan,,4,Anemo,Bow,Sumeru,Female,08-20,3.3,
 Fischl,,4,Electro,Bow,Mondstadt,Female,05-27,1.0,
-Focalors,,5,Hydro,Claymore,Fontaine,Female,,,?
+Focalors,,5,Hydro,,Fontaine,Female,,,?
 Ganyu,,5,Cryo,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,Bow,Inazuma,Male,05-18,2.3,2021-12-14
 Hu Tao,,5,Pyro,Polearm,Liyue,Female,07-15,1.3,2021-03-02
+Iansan,,,,,Natlan,Female,,,?
 Il Dottore,Dottore,,,Claymore,Snezhnaya,Male,,,?
 Jean,,5,Anemo,Sword,Mondstadt,Female,03-14,1.0,
 Kaedehara Kazuha,Kazuha,5,Anemo,Sword,Inazuma,Male,10-29,1.6,2021-06-29
@@ -71,7 +72,7 @@ Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
 Xinyan,,4,Pyro,Claymore,Liyue,Female,10-16,1.1,2020-12-01
 Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,
 Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,
-One of the Liyue Qixing (Yaoguang),(Yaoguang),5,Geo,Bow,Liyue,,,3.7,?
+Yaoguang,,5,Geo,Bow,Liyue,,,3.7,?
 Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,
 Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,
 Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
