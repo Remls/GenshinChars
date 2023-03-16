@@ -49,6 +49,7 @@ document.addEventListener('alpine:init', () => {
         releaseDate: null,
         photo: null,
         fullPhoto: null,
+        notes: null,
 
         fetchAllData() {
             fetch('./assets/data.json')
@@ -266,6 +267,7 @@ document.addEventListener('alpine:init', () => {
             this.releaseDate = this.formatDate(selectedChar.release_date)
             this.photo = selectedChar.photo
             this.fullPhoto = selectedChar.full_photo
+            this.notes = selectedChar.notes
             this.modalOpen = true
         },
 

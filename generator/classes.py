@@ -89,6 +89,9 @@ class Character:
                 {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>
             </div>"""
 
+    def get_char_slug(self) -> str:
+        return self.input_row['name'].replace(" ", "_").lower()
+
     def is_released(self) -> bool:
         if not self.release_date:
             return False
@@ -99,7 +102,7 @@ class Character:
         return f"<img width=\"20\" height=\"20\" src=\"{self.get_character_image_link()}\">"
 
     def get_character_image_link(self) -> str:
-        char_name = self.input_row['name'].replace(" ", "_").lower()
+        char_name = self.get_char_slug()
         if has_official_photo(char_name):
             url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
         elif has_custom_photo(char_name):
@@ -109,7 +112,7 @@ class Character:
         return url
         
     def get_character_full_image_link(self) -> str:
-        char_name = self.input_row['name'].replace(" ", "_").lower()
+        char_name = self.get_char_slug()
         if has_official_photo(char_name):
             url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_name}.png"
         elif has_custom_photo(char_name, True):
@@ -133,6 +136,21 @@ class Character:
             date = datetime.strptime(birthday, "%m-%d")
             return date.strftime("%B %-d")
         return None
+    
+    def get_notes(self) -> list:
+        char_name = self.get_char_slug()
+        print(f"Loading {char_name} (notes) ...", end='')
+        expected_filename = f"data/notes/{char_name}.txt"
+        if os.path.isfile(expected_filename):
+            prGreen(" O")
+            lines = []
+            with open(expected_filename) as file:
+                for line in file:
+                    lines.append(line)
+            return lines
+        else:
+            prRed(" X")
+            return []
 
     def __eq__(self, other) -> bool:
         return (self.release_version == other.release_version and

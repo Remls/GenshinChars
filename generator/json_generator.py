@@ -27,11 +27,13 @@ def generate_data_file():
     # Format data for JSON
     chars = {}
     for el in character_version_data:
+        el: Character = el
         char_data = el.input_row
         char_data["release_date"] = el.release_date
         char_data["photo"] = el.get_character_image_link()
         char_data["full_photo"] = el.get_character_full_image_link()
         char_data["is_released"] = el.is_released()
+        char_data["notes"] = el.get_notes()
         chars[el.input_row["name"]] = empty_strings_to_null(char_data)
     data = {
         "version": get_version(),
