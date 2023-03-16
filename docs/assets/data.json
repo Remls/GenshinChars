@@ -1,6 +1,6 @@
 {
-    "version": "fdb0f60",
-    "last_updated": "2023-03-16T05:14:25.973560Z",
+    "version": "2f0a750",
+    "last_updated": "2023-03-16T05:33:00.479715Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -59,6 +59,24 @@
                 "He also has no visible Vision on his body"
             ]
         },
+        "Djajeet": {
+            "name": "Djajeet",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "notes": [
+                "This is very old data, from March 2022"
+            ]
+        },
         "Focalors": {
             "name": "Focalors",
             "display_name": null,
@@ -94,6 +112,24 @@
             "is_released": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview"
+            ]
+        },
+        "Ikhfa": {
+            "name": "Ikhfa",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": null,
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "notes": [
+                "This is very old data, from May 2022"
             ]
         },
         "Il Dottore": {
@@ -148,6 +184,24 @@
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
                 "The element and rarity is likely to be placeholders for now"
+            ]
+        },
+        "Nafs": {
+            "name": "Nafs",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "notes": [
+                "This is very old data, from March 2022"
             ]
         },
         "Neuvillette": {
