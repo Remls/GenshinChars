@@ -1,6 +1,6 @@
 {
-    "version": "de61fc8",
-    "last_updated": "2023-03-14T04:37:54.030379Z",
+    "version": "be057fb",
+    "last_updated": "2023-03-16T03:11:26.714516Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -15,6 +15,21 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
+            "is_released": false
+        },
+        "Captain R": {
+            "name": "Captain R",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/captain_r.png",
             "is_released": false
         },
         "Dainsleif": {
@@ -105,6 +120,21 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
+            "is_released": false
+        },
+        "Wriothesley": {
+            "name": "Wriothesley",
+            "display_name": null,
+            "rarity": null,
+            "element": "Cryo",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/wriothesley.png",
             "is_released": false
         },
         "Yuelyn": {
