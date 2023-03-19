@@ -1,6 +1,6 @@
 {
-    "version": "2f0a750",
-    "last_updated": "2023-03-16T05:33:00.479715Z",
+    "version": "d05ff5b",
+    "last_updated": "2023-03-19T05:29:55.207524Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -16,6 +16,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "A member of the Hexenzirkel",
                 "Klee's mother",
@@ -36,6 +37,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/captain_r.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "This is what the community call her, and is unlikely to be her final name"
             ]
@@ -54,6 +56,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/dainsleif.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
                 "He also has no visible Vision on his body"
@@ -73,6 +76,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": true,
             "notes": [
                 "This is very old data, from March 2022"
             ]
@@ -91,6 +95,7 @@
             "photo": "assets/images/characters/focalors.png",
             "full_photo": "assets/images/full-characters/focalors.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Archon of Fontaine",
                 "May or may not be the same person as Soutine"
@@ -110,6 +115,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/iansan.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview"
             ]
@@ -128,6 +134,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": true,
             "notes": [
                 "This is very old data, from May 2022"
             ]
@@ -146,6 +153,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/il_dottore.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": null
         },
         "Lynette": {
@@ -162,6 +170,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lynette.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
                 "The element and rarity is likely to be placeholders for now"
@@ -181,6 +190,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lyney.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
                 "The element and rarity is likely to be placeholders for now"
@@ -200,6 +210,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": true,
             "notes": [
                 "This is very old data, from March 2022"
             ]
@@ -218,6 +229,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Judge of the Supreme Court of Fontaine"
             ]
@@ -236,6 +248,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/wriothesley.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "This is the character mistakenly thought to be Varka",
                 "Known to look similar to the Pok\u00e9mon Zoroark (pictured)"
@@ -255,6 +268,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": null
         },
         "Soutine": {
@@ -271,6 +285,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "May or may not be Focalors, the archon of Fontaine",
                 "If true, they may be a 5-star female, and might not be a claymore user",
@@ -291,6 +306,7 @@
             "photo": "assets/images/characters/kirara.png",
             "full_photo": "assets/images/full-characters/kirara.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Shrine maiden at the Asase Shrine"
             ]
@@ -309,6 +325,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
+            "is_outdated": true,
             "notes": [
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
@@ -329,6 +346,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/baizhu.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": null
         },
         "Kaveh": {
@@ -345,6 +363,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/kaveh.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": null
         },
         "Mika": {
@@ -361,6 +380,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/mika.png",
             "is_released": false,
+            "is_outdated": false,
             "notes": null
         },
         "Dehya": {
@@ -377,6 +397,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dehya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dehya.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Alhaitham": {
@@ -393,6 +414,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/alhaitham.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/alhaitham.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yaoyao": {
@@ -409,6 +431,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yaoyao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yaoyao.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Faruzan": {
@@ -425,6 +448,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/faruzan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/faruzan.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Wanderer": {
@@ -441,6 +465,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/wanderer.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/wanderer.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Formerly known as Scaramouche"
             ]
@@ -459,6 +484,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/layla.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/layla.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Nahida": {
@@ -475,6 +501,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nahida.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nahida.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Archon of Sumeru"
             ]
@@ -493,6 +520,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nilou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nilou.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Candace": {
@@ -509,6 +537,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/candace.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/candace.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Cyno": {
@@ -525,6 +554,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/cyno.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/cyno.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Dori": {
@@ -541,6 +571,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dori.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dori.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Collei": {
@@ -557,6 +588,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/collei.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/collei.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Tighnari": {
@@ -573,6 +605,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tighnari.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Shikanoin Heizou": {
@@ -589,6 +622,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shikanoin_heizou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shikanoin_heizou.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Kuki Shinobu": {
@@ -605,6 +639,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kuki_shinobu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kuki_shinobu.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yelan": {
@@ -621,6 +656,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yelan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yelan.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Kamisato Ayato": {
@@ -637,6 +673,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayato.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yae Miko": {
@@ -653,6 +690,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yae_miko.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Shenhe": {
@@ -669,6 +707,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shenhe.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shenhe.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yun Jin": {
@@ -685,6 +724,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yun_jin.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yun_jin.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Arataki Itto": {
@@ -701,6 +741,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arataki_itto.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arataki_itto.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Gorou": {
@@ -717,6 +758,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gorou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/gorou.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Thoma": {
@@ -733,6 +775,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/thoma.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/thoma.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Sangonomiya Kokomi": {
@@ -749,6 +792,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sangonomiya_kokomi.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sangonomiya_kokomi.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Aloy": {
@@ -765,6 +809,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aloy.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aloy.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Crossover character from Horizon Zero Dawn",
                 "Given for free to all players through in-game mail during Version 2.2"
@@ -784,6 +829,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kujou_sara.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Raiden Shogun": {
@@ -800,6 +846,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/raiden_shogun.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/raiden_shogun.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Archon of Inazuma"
             ]
@@ -818,6 +865,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sayu.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yoimiya": {
@@ -834,6 +882,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yoimiya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yoimiya.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Kamisato Ayaka": {
@@ -850,6 +899,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayaka.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayaka.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Kaedehara Kazuha": {
@@ -866,6 +916,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaedehara_kazuha.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaedehara_kazuha.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Eula": {
@@ -882,6 +933,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/eula.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/eula.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Yanfei": {
@@ -898,6 +950,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yanfei.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Rosaria": {
@@ -914,6 +967,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/rosaria.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/rosaria.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Hu Tao": {
@@ -930,6 +984,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/hu_tao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/hu_tao.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Xiao": {
@@ -946,6 +1001,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiao.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiao.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Ganyu": {
@@ -962,6 +1018,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ganyu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ganyu.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Albedo": {
@@ -978,6 +1035,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/albedo.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/albedo.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Xinyan": {
@@ -994,6 +1052,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xinyan.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Zhongli": {
@@ -1010,6 +1069,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zhongli.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zhongli.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Archon of Liyue"
             ]
@@ -1028,6 +1088,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diona.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diona.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Tartaglia": {
@@ -1044,6 +1105,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tartaglia.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tartaglia.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Klee": {
@@ -1060,6 +1122,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/klee.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/klee.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Amber": {
@@ -1076,6 +1139,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/amber.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/amber.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Barbara": {
@@ -1092,6 +1156,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/barbara.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/barbara.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Beidou": {
@@ -1108,6 +1173,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/beidou.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/beidou.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Bennett": {
@@ -1124,6 +1190,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/bennett.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/bennett.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Chongyun": {
@@ -1140,6 +1207,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chongyun.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chongyun.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Diluc": {
@@ -1156,6 +1224,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diluc.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diluc.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Fischl": {
@@ -1172,6 +1241,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/fischl.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/fischl.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Jean": {
@@ -1188,6 +1258,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jean.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/jean.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Kaeya": {
@@ -1204,6 +1275,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaeya.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaeya.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Keqing": {
@@ -1220,6 +1292,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/keqing.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/keqing.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Lisa": {
@@ -1236,6 +1309,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lisa.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lisa.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Mona": {
@@ -1252,6 +1326,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mona.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mona.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Ningguang": {
@@ -1268,6 +1343,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ningguang.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Noelle": {
@@ -1284,6 +1360,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/noelle.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Qiqi": {
@@ -1300,6 +1377,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/qiqi.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/qiqi.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Razor": {
@@ -1316,6 +1394,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/razor.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/razor.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Sucrose": {
@@ -1332,6 +1411,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sucrose.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sucrose.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Venti": {
@@ -1348,6 +1428,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/venti.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/venti.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": [
                 "Archon of Mondstadt"
             ]
@@ -1366,6 +1447,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiangling.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiangling.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         },
         "Xingqiu": {
@@ -1382,6 +1464,7 @@
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xingqiu.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xingqiu.png",
             "is_released": true,
+            "is_outdated": false,
             "notes": null
         }
     },
