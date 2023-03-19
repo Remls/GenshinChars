@@ -301,6 +301,7 @@
                                     <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
                                         x-text="char.display_name || char.name">
                                     </span>
+                                    <template x-if="char.is_outdated"><sup>†</sup></template>
                                 </div>
                             </td>
                             <td x-show="releaseUnknown(char)"
@@ -349,6 +350,7 @@
                                     <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
                                         x-text="char.display_name || char.name">
                                     </span>
+                                    <template x-if="char.is_outdated"><sup>†</sup></template>
                                 </div>
                             </td>
                             <td x-show="!char.birthday" class="center">
@@ -377,9 +379,12 @@
             <br>
             Above tables do not include the Traveler.
             <br>
+            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a>
+            <br>
+            <br>
             Info for unreleased characters are subject to change.
             <br>
-            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a>
+            † This denotes "outdated" characters: characters who have once been leaked, but have not had any new information about them recently.
         </div>
         <div class="icons">
             <a href="https://t.me/Remls">

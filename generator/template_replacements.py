@@ -55,6 +55,7 @@ def generate_index_file():
             <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
                 x-text="char.display_name || char.name">
             </span>
+            <template x-if="char.is_outdated"><sup>†</sup></template>
         </div>
     </template>"""
     output = re.sub(search, replace, output)

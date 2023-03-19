@@ -1,6 +1,6 @@
 from datetime import datetime
 from functools import cache
-from functions import load_photo_cache_from_file, add_to_photo_cache_file
+from functions import load_photo_cache_from_file, add_to_photo_cache_file, load_outdated_characters_list
 import csv
 import os
 import requests
@@ -15,6 +15,8 @@ def prRed(s):
 
 
 photo_cache = load_photo_cache_from_file()
+outdated_characters = load_outdated_characters_list()
+
 @cache
 def has_official_photo(char_name: str) -> bool:
     print(f"Loading {char_name} (official) ...", end='')
@@ -86,7 +88,7 @@ class Character:
         display_name = self.input_row['display_name'] or char_name
         element = self.input_row['element'].lower() if self.input_row['element'] else "unknown"
         return f"""<div @click="showCharSheet('{char_name}')" class="character-links">
-                {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>
+                {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>{'<sup>†</sup>' if self.is_outdated() else ''}
             </div>"""
 
     def get_char_slug(self) -> str:
@@ -97,6 +99,11 @@ class Character:
             return False
         release = datetime.strptime(self.release_date, "%Y-%m-%d")
         return release <= datetime.now()
+    
+    def is_outdated(self) -> bool:
+        if outdated_characters:
+            return self.get_char_slug() in outdated_characters
+        return False
 
     def get_character_image(self) -> str:
         return f"<img width=\"20\" height=\"20\" src=\"{self.get_character_image_link()}\">"

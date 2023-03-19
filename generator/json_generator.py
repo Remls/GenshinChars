@@ -33,6 +33,7 @@ def generate_data_file():
         char_data["photo"] = el.get_character_image_link()
         char_data["full_photo"] = el.get_character_full_image_link()
         char_data["is_released"] = el.is_released()
+        char_data["is_outdated"] = el.is_outdated()
         char_data["notes"] = el.get_notes()
         chars[el.input_row["name"]] = empty_strings_to_null(char_data)
     data = {

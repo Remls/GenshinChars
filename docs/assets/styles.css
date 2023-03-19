@@ -225,3 +225,9 @@ a:link, a:visited, a:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+sup {
+    font-size: 8px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
