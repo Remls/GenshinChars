@@ -1,6 +1,6 @@
 {
-    "version": "d05ff5b",
-    "last_updated": "2023-03-19T05:29:55.207524Z",
+    "version": "7f0ac3f",
+    "last_updated": "2023-03-20T11:56:11.871200Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -340,7 +340,7 @@
             "weapon": "Catalyst",
             "region": "Liyue",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "04-25",
             "release_version": "3.6",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
@@ -357,7 +357,7 @@
             "weapon": "Claymore",
             "region": "Sumeru",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "07-09",
             "release_version": "3.6",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
