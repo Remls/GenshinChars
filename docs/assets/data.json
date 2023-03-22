@@ -1,6 +1,6 @@
 {
-    "version": "bb3ea8a",
-    "last_updated": "2023-03-21T11:17:55.924974Z",
+    "version": "673204e",
+    "last_updated": "2023-03-22T04:43:31.438889Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -290,6 +290,28 @@
                 "May or may not be Focalors, the archon of Fontaine",
                 "If true, they may be a 5-star female, and might not be a claymore user",
                 "Release version may have been delayed"
+            ]
+        },
+        "(Unnamed)": {
+            "name": "(Unnamed)",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Electro",
+            "weapon": null,
+            "region": "Inazuma",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "3.8",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/(unnamed).png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Unnamed Inazuma 4-star Electro",
+                "Possibly the real Soutine, based on release version? But this is not from Fontaine though",
+                "Possibly a Dendro DPS teammate",
+                "Picture shown is fanart based on a description of the character"
             ]
         },
         "Kirara": {
