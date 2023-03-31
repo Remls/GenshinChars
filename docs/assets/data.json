@@ -1,6 +1,6 @@
 {
-    "version": "1dc9746",
-    "last_updated": "2023-03-31T17:53:56.186027Z",
+    "version": "585b647",
+    "last_updated": "2023-03-31T18:02:37.122595Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -387,7 +387,7 @@
             "gender": "Male",
             "birthday": "04-25",
             "release_version": "3.6",
-            "release_date": null,
+            "release_date": "2023-05-02",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/baizhu.png",
             "is_released": false,
@@ -404,7 +404,7 @@
             "gender": "Male",
             "birthday": "07-09",
             "release_version": "3.6",
-            "release_date": null,
+            "release_date": "2023-05-02",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/kaveh.png",
             "is_released": false,
