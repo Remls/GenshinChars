@@ -1,6 +1,6 @@
 {
-    "version": "99f2366",
-    "last_updated": "2023-03-29T12:08:09.547153Z",
+    "version": "1dc9746",
+    "last_updated": "2023-03-31T17:53:56.186027Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -39,7 +39,8 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "This is what the community call her, and is unlikely to be her final name"
+                "This is what the community call her, and is unlikely to be her final name",
+                "Possibly a sword user"
             ]
         },
         "Dainsleif": {
@@ -227,11 +228,53 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/neuvillette.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "Judge of the Supreme Court of Fontaine"
+            ]
+        },
+        "Sertice": {
+            "name": "Sertice",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": "Sword",
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sertice.png",
+            "is_released": false,
+            "is_outdated": true,
+            "notes": [
+                "Leaked to be from 4.0+",
+                "This data was leaked in March 2023, but other leakers already declared it outdated by about 5 months",
+                "Even the name Sertice likely belongs to another character now (than the one pictured above)"
+            ]
+        },
+        "Soutine": {
+            "name": "Soutine",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Hydro",
+            "weapon": "Claymore",
+            "region": "Fontaine",
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": true,
+            "notes": [
+                "May or may not be Focalors, the archon of Fontaine",
+                "If true, they may be a 5-star female, and might not be a claymore user",
+                "[2023-03-30] Was originally rumoured to be in v3.8, but later rumours say that a character being released in v3.8 is unlikely"
             ]
         },
         "Wriothesley": {
@@ -271,27 +314,6 @@
             "is_outdated": false,
             "notes": null
         },
-        "Soutine": {
-            "name": "Soutine",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Hydro",
-            "weapon": "Claymore",
-            "region": "Fontaine",
-            "gender": null,
-            "birthday": null,
-            "release_version": "3.8",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "May or may not be Focalors, the archon of Fontaine",
-                "If true, they may be a 5-star female, and might not be a claymore user",
-                "Release version may have been delayed"
-            ]
-        },
         "(Unnamed)": {
             "name": "(Unnamed)",
             "display_name": null,
@@ -301,7 +323,7 @@
             "region": "Inazuma",
             "gender": "Female",
             "birthday": null,
-            "release_version": "3.8",
+            "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/(unnamed).png",
@@ -311,7 +333,8 @@
                 "Unnamed Inazuma 4-star Electro",
                 "Possibly the real Soutine, based on release version? But this is not from Fontaine though",
                 "Possibly a Dendro DPS teammate",
-                "Picture shown is fanart based on a description of the character"
+                "Picture shown is fanart based on a description of the character",
+                "[2023-03-30] Was originally rumoured to be in v3.8, but later rumours say that a character being released in v3.8 is unlikely"
             ]
         },
         "Kirara": {
