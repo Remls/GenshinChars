@@ -1,6 +1,6 @@
 {
-    "version": "585b647",
-    "last_updated": "2023-03-31T18:02:37.122595Z",
+    "version": "3c11a7c",
+    "last_updated": "2023-04-11T08:32:35.629037Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -297,6 +297,26 @@
                 "Known to look similar to the Pok\u00e9mon Zoroark (pictured)"
             ]
         },
+        "Yaoguang": {
+            "name": "Yaoguang",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
+            "weapon": "Bow",
+            "region": "Liyue",
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": true,
+            "notes": [
+                "Yaoguang is not their actual name, but is rather their title",
+                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan"
+            ]
+        },
         "Yuelyn": {
             "name": "Yuelyn",
             "display_name": null,
@@ -348,33 +368,12 @@
             "birthday": null,
             "release_version": "3.7",
             "release_date": null,
-            "photo": "assets/images/characters/kirara.png",
+            "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/kirara.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "Shrine maiden at the Asase Shrine"
-            ]
-        },
-        "Yaoguang": {
-            "name": "Yaoguang",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Geo",
-            "weapon": "Bow",
-            "region": "Liyue",
-            "gender": null,
-            "birthday": null,
-            "release_version": "3.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "Yaoguang is not their actual name, but is rather their title",
-                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
-                "Release version may have been delayed"
             ]
         },
         "Baizhu": {
