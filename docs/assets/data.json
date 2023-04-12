@@ -1,6 +1,6 @@
 {
-    "version": "3c11a7c",
-    "last_updated": "2023-04-11T08:32:35.629037Z",
+    "version": "9ed2c2f",
+    "last_updated": "2023-04-12T00:06:13.494036Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -365,7 +365,7 @@
             "weapon": "Sword",
             "region": "Inazuma",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-22",
             "release_version": "3.7",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
