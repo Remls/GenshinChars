@@ -1,6 +1,6 @@
 {
-    "version": "9ed2c2f",
-    "last_updated": "2023-04-12T00:06:13.494036Z",
+    "version": "e84fa19",
+    "last_updated": "2023-04-24T10:10:32.160144Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -82,26 +82,6 @@
                 "This is very old data, from March 2022"
             ]
         },
-        "Focalors": {
-            "name": "Focalors",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/characters/focalors.png",
-            "full_photo": "assets/images/full-characters/focalors.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Archon of Fontaine",
-                "May or may not be the same person as Soutine"
-            ]
-        },
         "Iansan": {
             "name": "Iansan",
             "display_name": null,
@@ -170,26 +150,6 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lynette.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview",
-                "The element and rarity is likely to be placeholders for now"
-            ]
-        },
-        "Lyney": {
-            "name": "Lyney",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "weapon": "Bow",
-            "region": "Fontaine",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/lyney.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -355,6 +315,46 @@
                 "Possibly a Dendro DPS teammate",
                 "Picture shown is fanart based on a description of the character",
                 "[2023-03-30] Was originally rumoured to be in v3.8, but later rumours say that a character being released in v3.8 is unlikely"
+            ]
+        },
+        "Focalors": {
+            "name": "Focalors",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.2",
+            "release_date": null,
+            "photo": "assets/images/characters/focalors.png",
+            "full_photo": "assets/images/full-characters/focalors.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Archon of Fontaine",
+                "May or may not be the same person as Soutine"
+            ]
+        },
+        "Lyney": {
+            "name": "Lyney",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "weapon": "Bow",
+            "region": "Fontaine",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "4.0",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/lyney.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview",
+                "The element and rarity is likely to be placeholders for now"
             ]
         },
         "Kirara": {
@@ -1637,6 +1637,21 @@
             "version_number": "3.8",
             "version_name": null,
             "release_date": "2023-07-05"
+        },
+        "4.0": {
+            "version_number": "4.0",
+            "version_name": null,
+            "release_date": "2023-08-16"
+        },
+        "4.1": {
+            "version_number": "4.1",
+            "version_name": null,
+            "release_date": "2023-09-27"
+        },
+        "4.2": {
+            "version_number": "4.2",
+            "version_name": null,
+            "release_date": "2023-11-08"
         }
     }
 }
