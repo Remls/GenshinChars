@@ -1,6 +1,6 @@
 {
-    "version": "e84fa19",
-    "last_updated": "2023-04-24T10:10:32.160144Z",
+    "version": "96f2fd7",
+    "last_updated": "2023-05-11T04:32:29.537934Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -387,9 +387,9 @@
             "birthday": "04-25",
             "release_version": "3.6",
             "release_date": "2023-05-02",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/baizhu.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/baizhu.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/baizhu.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -404,9 +404,9 @@
             "birthday": "07-09",
             "release_version": "3.6",
             "release_date": "2023-05-02",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/kaveh.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaveh.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaveh.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -1630,7 +1630,7 @@
         },
         "3.7": {
             "version_number": "3.7",
-            "version_name": null,
+            "version_name": "Duel! The Summoners' Summit!",
             "release_date": "2023-05-24"
         },
         "3.8": {
