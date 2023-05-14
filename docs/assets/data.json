@@ -1,6 +1,6 @@
 {
-    "version": "96f2fd7",
-    "last_updated": "2023-05-11T04:32:29.537934Z",
+    "version": "aa671a4",
+    "last_updated": "2023-05-14T03:45:45.714384Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -337,6 +337,26 @@
                 "May or may not be the same person as Soutine"
             ]
         },
+        "Freminet": {
+            "name": "Freminet",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Cryo",
+            "weapon": "Claymore",
+            "region": "Fontaine",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "4.0",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/freminet.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Diver",
+                "Picture shown is AI-generated based on a description of the character, and is not 100% accurate"
+            ]
+        },
         "Lyney": {
             "name": "Lyney",
             "display_name": null,
@@ -372,9 +392,7 @@
             "full_photo": "assets/images/full-characters/kirara.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Shrine maiden at the Asase Shrine"
-            ]
+            "notes": null
         },
         "Baizhu": {
             "name": "Baizhu",
