@@ -1,6 +1,6 @@
 {
-    "version": "aa671a4",
-    "last_updated": "2023-05-14T03:45:45.714384Z",
+    "version": "817702f",
+    "last_updated": "2023-05-15T03:45:02.393307Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -41,6 +41,26 @@
             "notes": [
                 "This is what the community call her, and is unlikely to be her final name",
                 "Possibly a sword user"
+            ]
+        },
+        "Charlotte": {
+            "name": "Charlotte",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/charlotte.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Journalist at The Steambird",
+                "First seen in v3.7 event, but not playable (yet?)"
             ]
         },
         "Dainsleif": {
