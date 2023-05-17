@@ -1,6 +1,6 @@
 {
-    "version": "817702f",
-    "last_updated": "2023-05-15T03:45:02.393307Z",
+    "version": "acba12a",
+    "last_updated": "2023-05-17T03:03:33.130505Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -47,8 +47,8 @@
             "name": "Charlotte",
             "display_name": null,
             "rarity": null,
-            "element": null,
-            "weapon": null,
+            "element": "Cryo",
+            "weapon": "Catalyst",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
