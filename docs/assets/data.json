@@ -1,6 +1,6 @@
 {
-    "version": "acba12a",
-    "last_updated": "2023-05-17T03:03:33.130505Z",
+    "version": "5ec0614",
+    "last_updated": "2023-05-17T06:46:00.759885Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -342,7 +342,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
