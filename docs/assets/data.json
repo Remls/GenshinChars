@@ -1,6 +1,6 @@
 {
-    "version": "75f42ff",
-    "last_updated": "2023-05-21T03:16:56.278767Z",
+    "version": "8af8ec0",
+    "last_updated": "2023-05-21T13:36:48.982299Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -407,7 +407,7 @@
             "gender": "Female",
             "birthday": "01-22",
             "release_version": "3.7",
-            "release_date": null,
+            "release_date": "2023-05-24",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/kirara.png",
             "is_released": false,
