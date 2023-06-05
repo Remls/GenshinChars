@@ -51,7 +51,7 @@ Mika,,4,Cryo,Polearm,Mondstadt,Male,08-11,3.5,2023-03-21
 Mona,,5,Hydro,Catalyst,Mondstadt,Female,08-31,1.0,
 Nafs,,,,,,Female,,,?
 Nahida,,5,Dendro,Catalyst,Sumeru,Female,10-27,3.2,
-Neuvillette,,,,,Fontaine,Male,,,
+Neuvillette,,,,,Fontaine,Male,,,?
 Nilou,,5,Hydro,Sword,Sumeru,Female,12-03,3.1,2022-10-14
 Ningguang,,4,Geo,Catalyst,Liyue,Female,08-26,1.0,
 Noelle,,4,Geo,Claymore,Mondstadt,Female,03-21,1.0,
@@ -61,17 +61,17 @@ Razor,,4,Electro,Claymore,Mondstadt,Male,09-09,1.0,
 Rosaria,,4,Cryo,Polearm,Mondstadt,Female,01-24,1.4,2021-04-06
 Sangonomiya Kokomi,Kokomi,5,Hydro,Catalyst,Inazuma,Female,02-22,2.1,2021-09-21
 Sayu,,4,Anemo,Claymore,Inazuma,Female,10-19,2.0,2021-08-10
-Sertice,,,,Sword,,Female,,,
+Sertice,,,,Sword,,Female,,,?
 Shenhe,,5,Cryo,Polearm,Liyue,Female,03-10,2.4,
 Shikanoin Heizou,Heizou,4,Anemo,Catalyst,Inazuma,Male,07-24,2.8,
-Soutine,,4,Hydro,Claymore,Fontaine,,,,
+Soutine,,4,Hydro,Claymore,Fontaine,,,,?
 Sucrose,,4,Anemo,Catalyst,Mondstadt,Female,11-26,1.0,
 Tartaglia,Childe,5,Hydro,Bow,Snezhnaya,Male,07-20,1.1,
 Thoma,,4,Pyro,Polearm,Inazuma,Male,01-09,2.2,2021-11-02
 Tighnari,,5,Dendro,Bow,Sumeru,Male,12-29,3.0,
 Venti,,5,Anemo,Bow,Mondstadt,Male,06-16,1.0,
 Wanderer,,5,Anemo,Catalyst,Inazuma,Male,01-03,3.3,
-Wriothesley,,,Cryo,,Fontaine,Male,,,?
+Wriothesley,,5,Cryo,,Fontaine,Male,,4.1,?
 Xiangling,,4,Pyro,Polearm,Liyue,Female,11-02,1.0,
 Xiao,,5,Anemo,Polearm,Liyue,Male,04-17,1.3,
 Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
@@ -85,4 +85,5 @@ Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
 Yuelyn,,,Geo,,Fontaine,Female,,,?
 Yun Jin,,4,Geo,Polearm,Liyue,Female,05-21,2.4,
 Zhongli,,5,Geo,Polearm,Liyue,Male,12-31,1.1,2020-12-01
-(Unnamed),,4,Electro,,Inazuma,Female,,,
+(Unnamed 1),,4,Electro,,Inazuma,Female,,,?
+(Unnamed 2),,,,,Sumeru,Female,,,?
