@@ -1,6 +1,6 @@
 {
-    "version": "8af8ec0",
-    "last_updated": "2023-05-21T13:36:48.982299Z",
+    "version": "f4fe0b2",
+    "last_updated": "2023-06-05T04:40:55.153152Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -257,26 +257,6 @@
                 "[2023-03-30] Was originally rumoured to be in v3.8, but later rumours say that a character being released in v3.8 is unlikely"
             ]
         },
-        "Wriothesley": {
-            "name": "Wriothesley",
-            "display_name": null,
-            "rarity": null,
-            "element": "Cryo",
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/wriothesley.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "This is the character mistakenly thought to be Varka",
-                "Known to look similar to the Pok\u00e9mon Zoroark (pictured)"
-            ]
-        },
         "Yaoguang": {
             "name": "Yaoguang",
             "display_name": null,
@@ -309,13 +289,16 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/yuelyn.png",
             "is_released": false,
-            "is_outdated": false,
-            "notes": null
+            "is_outdated": true,
+            "notes": [
+                "Possible alternative spellings: Yuelin, Yueling",
+                "Name may have changed since initial leak"
+            ]
         },
-        "(Unnamed)": {
-            "name": "(Unnamed)",
+        "(Unnamed 1)": {
+            "name": "(Unnamed 1)",
             "display_name": null,
             "rarity": "4",
             "element": "Electro",
@@ -326,15 +309,33 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/(unnamed).png",
+            "full_photo": "assets/images/full-characters/(unnamed_1).png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "Unnamed Inazuma 4-star Electro",
-                "Possibly the real Soutine, based on release version? But this is not from Fontaine though",
                 "Possibly a Dendro DPS teammate",
                 "Picture shown is fanart based on a description of the character",
                 "[2023-03-30] Was originally rumoured to be in v3.8, but later rumours say that a character being released in v3.8 is unlikely"
+            ]
+        },
+        "(Unnamed 2)": {
+            "name": "(Unnamed 2)",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Sumeru",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/(unnamed_2).png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "One of many concepts for a character, that may not see the light of day"
             ]
         },
         "Focalors": {
@@ -357,6 +358,25 @@
                 "May or may not be the same person as Soutine"
             ]
         },
+        "Wriothesley": {
+            "name": "Wriothesley",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Cryo",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "4.1",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/wriothesley.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "May be added to standard banner pool"
+            ]
+        },
         "Freminet": {
             "name": "Freminet",
             "display_name": null,
@@ -374,7 +394,7 @@
             "is_outdated": false,
             "notes": [
                 "Diver",
-                "Picture shown is AI-generated based on a description of the character, and is not 100% accurate"
+                "Picture shown is not 100% accurate, and appearance may not be finalized yet"
             ]
         },
         "Lyney": {
@@ -394,7 +414,8 @@
             "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
-                "The element and rarity is likely to be placeholders for now"
+                "The element and rarity is likely to be placeholders for now",
+                "From the House of the Hearth, an orphanage set up by Lady Arlecchino"
             ]
         },
         "Kirara": {
@@ -408,9 +429,9 @@
             "birthday": "01-22",
             "release_version": "3.7",
             "release_date": "2023-05-24",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/kirara.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kirara.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kirara.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
