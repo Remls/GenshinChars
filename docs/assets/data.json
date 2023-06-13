@@ -1,6 +1,6 @@
 {
-    "version": "f4fe0b2",
-    "last_updated": "2023-06-05T04:40:55.153152Z",
+    "version": "cfc4e51",
+    "last_updated": "2023-06-13T08:31:09.923253Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -200,7 +200,7 @@
             "name": "Neuvillette",
             "display_name": null,
             "rarity": null,
-            "element": null,
+            "element": "Hydro",
             "weapon": null,
             "region": "Fontaine",
             "gender": "Male",
