@@ -1,6 +1,6 @@
 {
-    "version": "ca45f0d",
-    "last_updated": "2023-06-24T03:06:58.835363Z",
+    "version": "8705ae2",
+    "last_updated": "2023-07-03T17:04:51.596566Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -103,7 +103,6 @@
                 "The character dubbed Captain R by the community",
                 "Possibly a sword user",
                 "Character with high status",
-                "This is one of several concept art pieces for her, so is unlikely to be her final design",
                 "Expected to release during 4.x"
             ]
         },
@@ -340,6 +339,26 @@
                 "Expected to release during 4.x"
             ]
         },
+        "Sigewinne": {
+            "name": "Sigewinne",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sigewinne.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Nurse",
+                "Expected to release during 4.x"
+            ]
+        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -358,45 +377,6 @@
             "notes": [
                 "Tartaglia's master, who taught him to battle during his time in the Abyss",
                 "This is one of several concept art pieces for her, so is unlikely to be her final design"
-            ]
-        },
-        "Soutine": {
-            "name": "Soutine",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Hydro",
-            "weapon": "Claymore",
-            "region": "Fontaine",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "This is based on very old data"
-            ]
-        },
-        "Waghild": {
-            "name": "Waghild",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/waghild.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Nurse",
-                "Expected to release during 4.x"
             ]
         },
         "Yaoguang": {
