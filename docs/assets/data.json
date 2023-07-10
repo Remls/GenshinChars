@@ -1,6 +1,6 @@
 {
-    "version": "8705ae2",
-    "last_updated": "2023-07-03T17:04:51.596566Z",
+    "version": "8c9668c",
+    "last_updated": "2023-07-10T11:28:39.105212Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -398,6 +398,23 @@
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan"
             ]
+        },
+        "Cloud Retainer": {
+            "name": "Cloud Retainer",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Furina": {
             "name": "Furina",
@@ -1812,6 +1829,16 @@
             "version_number": "4.2",
             "version_name": null,
             "release_date": "2023-11-08"
+        },
+        "4.3": {
+            "version_number": "4.3",
+            "version_name": null,
+            "release_date": "2023-12-20"
+        },
+        "4.4": {
+            "version_number": "4.4",
+            "version_name": null,
+            "release_date": "2024-01-31"
         }
     }
 }
