@@ -1,6 +1,6 @@
 {
-    "version": "8c9668c",
-    "last_updated": "2023-07-10T11:28:39.105212Z",
+    "version": "c841f08",
+    "last_updated": "2023-07-12T02:17:51.877389Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -484,7 +484,7 @@
             "weapon": "Claymore",
             "region": "Fontaine",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "09-24",
             "release_version": "4.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
