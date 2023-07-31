@@ -1,6 +1,6 @@
 {
-    "version": "b12de95",
-    "last_updated": "2023-07-31T04:15:37.582024Z",
+    "version": "e7bafa3",
+    "last_updated": "2023-07-31T04:38:08.984766Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -23,27 +23,6 @@
                 "Voice is known, appearance is unknown"
             ]
         },
-        "Arlecchino": {
-            "name": "Arlecchino",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "weapon": "Sword",
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/arlecchino.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Pyro Delusion",
-                "Could possibly see a release in 4.3",
-                "Not clear if she will be playable yet"
-            ]
-        },
         "Charlotte": {
             "name": "Charlotte",
             "display_name": null,
@@ -61,7 +40,7 @@
             "is_outdated": false,
             "notes": [
                 "Journalist at The Steambird",
-                "First seen in v3.7 event, but not playable (yet?)",
+                "First seen in v3.7 event",
                 "Expected to release during 4.x"
             ]
         },
@@ -421,6 +400,27 @@
                 "Could possibly see a release in 4.4"
             ]
         },
+        "Arlecchino": {
+            "name": "Arlecchino",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "weapon": "Sword",
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/arlecchino.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Pyro Delusion",
+                "Could possibly see a release in 4.3",
+                "Not clear if she will be playable yet"
+            ]
+        },
         "Furina": {
             "name": "Furina",
             "display_name": null,
@@ -508,7 +508,7 @@
             "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "02-02",
             "release_version": "4.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
@@ -528,7 +528,7 @@
             "weapon": "Bow",
             "region": "Fontaine",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "02-02",
             "release_version": "4.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
