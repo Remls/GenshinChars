@@ -1,6 +1,6 @@
 {
-    "version": "c841f08",
-    "last_updated": "2023-07-12T02:17:51.877389Z",
+    "version": "b12de95",
+    "last_updated": "2023-07-31T04:15:37.582024Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -40,6 +40,7 @@
             "is_outdated": false,
             "notes": [
                 "Pyro Delusion",
+                "Could possibly see a release in 4.3",
                 "Not clear if she will be playable yet"
             ]
         },
@@ -88,9 +89,9 @@
             "name": "Clorinde",
             "display_name": null,
             "rarity": "5",
-            "element": null,
-            "weapon": null,
-            "region": "Mondstadt",
+            "element": "Electro",
+            "weapon": "Sword",
+            "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
@@ -257,6 +258,7 @@
             "is_outdated": false,
             "notes": [
                 "Prisoner",
+                "Could possibly be named Chevreuse",
                 "Expected to release during 4.x"
             ]
         },
@@ -336,6 +338,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
+                "Could possibly be named Chevreuse",
                 "Expected to release during 4.x"
             ]
         },
@@ -344,8 +347,8 @@
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "weapon": null,
-            "region": null,
+            "weapon": "Bow",
+            "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
@@ -414,7 +417,9 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Could possibly see a release in 4.4"
+            ]
         },
         "Furina": {
             "name": "Furina",
