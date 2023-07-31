@@ -68,13 +68,16 @@ class Character:
         self.input_row = row
         self.release_version = row['release_version'] or None
 
-        if row['release_date']:
-            if row['release_date'] == '?':
+        if self.release_version:
+            # release version known, exact date unknown
+            if not row['release_date']:
                 self.release_date = None
+            # release on same date as version
+            elif row['release_date'] == 'R':
+                self.release_date = self.get_version_data().release_date
+            # released during the version but sometime after the version release date
             else:
                 self.release_date = row['release_date']
-        elif self.release_version:
-            self.release_date = self.get_version_data().release_date
         else:
             self.release_date = None
 

@@ -1,95 +1,95 @@
 name,display_name,rarity,element,weapon,region,gender,birthday,release_version,release_date
-Albedo,,5,Geo,Sword,Mondstadt,Male,09-13,1.2,
-Alhaitham,,5,Dendro,Sword,Sumeru,Male,02-11,3.4,
-Alice,,,,,Mondstadt,Female,,,?
-Aloy,,5,Cryo,Bow,,Female,04-04,2.1,
-Amber,,4,Pyro,Bow,Mondstadt,Female,08-10,1.0,
+Albedo,,5,Geo,Sword,Mondstadt,Male,09-13,1.2,R
+Alhaitham,,5,Dendro,Sword,Sumeru,Male,02-11,3.4,R
+Alice,,,,,Mondstadt,Female,,,
+Aloy,,5,Cryo,Bow,,Female,04-04,2.1,R
+Amber,,4,Pyro,Bow,Mondstadt,Female,08-10,1.0,R
 Arataki Itto,Itto,5,Geo,Claymore,Inazuma,Male,06-01,2.3,2021-12-14
-Arlecchino,,5,Pyro,Sword,Snezhnaya,Female,,,?
+Arlecchino,,5,Pyro,Sword,Snezhnaya,Female,,4.3,
 Baizhu,,5,Dendro,Catalyst,Liyue,Male,04-25,3.6,2023-05-02
-Barbara,,4,Hydro,Catalyst,Mondstadt,Female,07-05,1.0,
-Beidou,,4,Electro,Claymore,Liyue,Female,02-14,1.0,
-Bennett,,4,Pyro,Sword,Mondstadt,Male,02-29,1.0,
-Candace,,4,Hydro,Polearm,Sumeru,Female,05-03,3.1,
-Charlotte,,4,Cryo,Catalyst,Fontaine,Female,,,?
-Chiori,,5,Electro,,Inazuma,Female,,,?
-Chongyun,,4,Cryo,Claymore,Liyue,Male,09-07,1.0,
-Clorinde,,5,Electro,Sword,Fontaine,Female,,,?
-Cloud Retainer,,,,,Liyue,Female,,4.4,?
-Collei,,4,Dendro,Bow,Sumeru,Female,05-08,3.0,
-Cyno,,5,Electro,Polearm,Sumeru,Male,06-23,3.1,
-Dahlia,,4,Hydro,Catalyst,Mondstadt,Male,,,?
-Dainsleif,,,,,Khaenri'ah,Male,,,?
-Dehya,,5,Pyro,Claymore,Sumeru,Female,04-07,3.5,
-Diluc,,5,Pyro,Claymore,Mondstadt,Male,04-30,1.0,
-Djajeet,,,,,,Male,,,?
-Diona,,4,Cryo,Bow,Mondstadt,Female,01-18,1.1,
+Barbara,,4,Hydro,Catalyst,Mondstadt,Female,07-05,1.0,R
+Beidou,,4,Electro,Claymore,Liyue,Female,02-14,1.0,R
+Bennett,,4,Pyro,Sword,Mondstadt,Male,02-29,1.0,R
+Candace,,4,Hydro,Polearm,Sumeru,Female,05-03,3.1,R
+Charlotte,,4,Cryo,Catalyst,Fontaine,Female,,,
+Chiori,,5,Electro,,Inazuma,Female,,,
+Chongyun,,4,Cryo,Claymore,Liyue,Male,09-07,1.0,R
+Clorinde,,5,Electro,Sword,Fontaine,Female,,,
+Cloud Retainer,,,,,Liyue,Female,,4.4,
+Collei,,4,Dendro,Bow,Sumeru,Female,05-08,3.0,R
+Cyno,,5,Electro,Polearm,Sumeru,Male,06-23,3.1,R
+Dahlia,,4,Hydro,Catalyst,Mondstadt,Male,,,
+Dainsleif,,,,,Khaenri'ah,Male,,,
+Dehya,,5,Pyro,Claymore,Sumeru,Female,04-07,3.5,R
+Diluc,,5,Pyro,Claymore,Mondstadt,Male,04-30,1.0,R
+Djajeet,,,,,,Male,,,
+Diona,,4,Cryo,Bow,Mondstadt,Female,01-18,1.1,R
 Dori,,4,Electro,Claymore,Sumeru,Female,12-21,3.0,2022-09-09
 Eula,,5,Cryo,Claymore,Mondstadt,Female,10-25,1.5,2021-05-18
-Faruzan,,4,Anemo,Bow,Sumeru,Female,08-20,3.3,
-Fischl,,4,Electro,Bow,Mondstadt,Female,05-27,1.0,
-Freminet,,4,Cryo,Claymore,Fontaine,Male,09-24,4.0,?
-Furina,,5,Hydro,Sword,Fontaine,Female,,4.2,?
+Faruzan,,4,Anemo,Bow,Sumeru,Female,08-20,3.3,R
+Fischl,,4,Electro,Bow,Mondstadt,Female,05-27,1.0,R
+Freminet,,4,Cryo,Claymore,Fontaine,Male,09-24,4.0,
+Furina,,5,Hydro,Sword,Fontaine,Female,,4.2,
 Ganyu,,5,Cryo,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,Bow,Inazuma,Male,05-18,2.3,2021-12-14
 Hu Tao,,5,Pyro,Polearm,Liyue,Female,07-15,1.3,2021-03-02
-Iansan,,,,,Natlan,Female,,,?
-Ikhfa,,,,,,,,,?
-Il Dottore,Dottore,,,Claymore,Snezhnaya,Male,,,?
-Jean,,5,Anemo,Sword,Mondstadt,Female,03-14,1.0,
+Iansan,,,,,Natlan,Female,,,
+Ikhfa,,,,,,,,,
+Il Dottore,Dottore,,,Claymore,Snezhnaya,Male,,,
+Jean,,5,Anemo,Sword,Mondstadt,Female,03-14,1.0,R
 Kaedehara Kazuha,Kazuha,5,Anemo,Sword,Inazuma,Male,10-29,1.6,2021-06-29
-Kaeya,,4,Cryo,Sword,Mondstadt,Male,11-30,1.0,
-Kamisato Ayaka,Ayaka,5,Cryo,Sword,Inazuma,Female,09-28,2.0,
-Kamisato Ayato,Ayato,5,Hydro,Sword,Inazuma,Male,03-26,2.6,
+Kaeya,,4,Cryo,Sword,Mondstadt,Male,11-30,1.0,R
+Kamisato Ayaka,Ayaka,5,Cryo,Sword,Inazuma,Female,09-28,2.0,R
+Kamisato Ayato,Ayato,5,Hydro,Sword,Inazuma,Male,03-26,2.6,R
 Kaveh,,4,Dendro,Claymore,Sumeru,Male,07-09,3.6,2023-05-02
-Keqing,,5,Electro,Sword,Liyue,Female,11-20,1.0,
-Kirara,,4,Dendro,Sword,Inazuma,Female,01-22,3.7,
+Keqing,,5,Electro,Sword,Liyue,Female,11-20,1.0,R
+Kirara,,4,Dendro,Sword,Inazuma,Female,01-22,3.7,R
 Klee,,5,Pyro,Catalyst,Mondstadt,Female,07-27,1.0,2020-10-20
-Kujou Sara,Sara,4,Electro,Bow,Inazuma,Female,07-14,2.1,
+Kujou Sara,Sara,4,Electro,Bow,Inazuma,Female,07-14,2.1,R
 Kuki Shinobu,Shinobu,4,Electro,Sword,Inazuma,Female,07-27,2.7,2022-06-21
 Layla,,4,Cryo,Sword,Sumeru,Female,12-19,3.2,2022-11-18
-Lion Dance Boy,,4,,,Liyue,Male,,,?
-Lisa,,4,Electro,Catalyst,Mondstadt,Female,06-09,1.0,
-Lynette,,4,Anemo,Sword,Fontaine,Female,02-02,4.0,?
-Lyney,,5,Pyro,Bow,Fontaine,Male,02-02,4.0,?
-M,,4,,,,Female,,,?
+Lion Dance Boy,,4,,,Liyue,Male,,,
+Lisa,,4,Electro,Catalyst,Mondstadt,Female,06-09,1.0,R
+Lynette,,4,Anemo,Sword,Fontaine,Female,02-02,4.0,
+Lyney,,5,Pyro,Bow,Fontaine,Male,02-02,4.0,
+M,,4,,,,Female,,,
 Mika,,4,Cryo,Polearm,Mondstadt,Male,08-11,3.5,2023-03-21
-Mona,,5,Hydro,Catalyst,Mondstadt,Female,08-31,1.0,
-Mummy Girl,,4,Hydro,Bow,Sumeru,Female,,,?
-Nafs,,,,,,Female,,,?
-Nahida,,5,Dendro,Catalyst,Sumeru,Female,10-27,3.2,
-Navia,,5,Geo,,Fontaine,Female,,,?
-Neuvillette,,5,Hydro,Catalyst,Fontaine,Male,,4.1,?
+Mona,,5,Hydro,Catalyst,Mondstadt,Female,08-31,1.0,R
+Mummy Girl,,4,Hydro,Bow,Sumeru,Female,,,
+Nafs,,,,,,Female,,,
+Nahida,,5,Dendro,Catalyst,Sumeru,Female,10-27,3.2,R
+Navia,,5,Geo,,Fontaine,Female,,,
+Neuvillette,,5,Hydro,Catalyst,Fontaine,Male,,4.1,
 Nilou,,5,Hydro,Sword,Sumeru,Female,12-03,3.1,2022-10-14
-Ningguang,,4,Geo,Catalyst,Liyue,Female,08-26,1.0,
-Noelle,,4,Geo,Claymore,Mondstadt,Female,03-21,1.0,
-Qiqi,,5,Cryo,Sword,Liyue,Female,03-03,1.0,
-Raiden Shogun,Ei,5,Electro,Polearm,Inazuma,Female,06-26,2.1,
-Razor,,4,Electro,Claymore,Mondstadt,Male,09-09,1.0,
+Ningguang,,4,Geo,Catalyst,Liyue,Female,08-26,1.0,R
+Noelle,,4,Geo,Claymore,Mondstadt,Female,03-21,1.0,R
+Qiqi,,5,Cryo,Sword,Liyue,Female,03-03,1.0,R
+Raiden Shogun,Ei,5,Electro,Polearm,Inazuma,Female,06-26,2.1,R
+Razor,,4,Electro,Claymore,Mondstadt,Male,09-09,1.0,R
 Rosaria,,4,Cryo,Polearm,Mondstadt,Female,01-24,1.4,2021-04-06
 Sangonomiya Kokomi,Kokomi,5,Hydro,Catalyst,Inazuma,Female,02-22,2.1,2021-09-21
 Sayu,,4,Anemo,Claymore,Inazuma,Female,10-19,2.0,2021-08-10
-Sertice,,4,,Sword,,Female,,,?
-Shenhe,,5,Cryo,Polearm,Liyue,Female,03-10,2.4,
-Shikanoin Heizou,Heizou,4,Anemo,Catalyst,Inazuma,Male,07-24,2.8,
-Sigewinne,,5,Hydro,Bow,Fontaine,Female,,,?
-Skirk,,,,Sword,,Female,,,?
-Sucrose,,4,Anemo,Catalyst,Mondstadt,Female,11-26,1.0,
-Tartaglia,Childe,5,Hydro,Bow,Snezhnaya,Male,07-20,1.1,
+Sertice,,4,,Sword,,Female,,,
+Shenhe,,5,Cryo,Polearm,Liyue,Female,03-10,2.4,R
+Shikanoin Heizou,Heizou,4,Anemo,Catalyst,Inazuma,Male,07-24,2.8,R
+Sigewinne,,5,Hydro,Bow,Fontaine,Female,,,
+Skirk,,,,Sword,,Female,,,
+Sucrose,,4,Anemo,Catalyst,Mondstadt,Female,11-26,1.0,R
+Tartaglia,Childe,5,Hydro,Bow,Snezhnaya,Male,07-20,1.1,R
 Thoma,,4,Pyro,Polearm,Inazuma,Male,01-09,2.2,2021-11-02
-Tighnari,,5,Dendro,Bow,Sumeru,Male,12-29,3.0,
-Venti,,5,Anemo,Bow,Mondstadt,Male,06-16,1.0,
-Wanderer,,5,Anemo,Catalyst,Inazuma,Male,01-03,3.3,
-Wriothesley,,5,Cryo,Polearm,Fontaine,Male,,4.1,?
-Xiangling,,4,Pyro,Polearm,Liyue,Female,11-02,1.0,
-Xiao,,5,Anemo,Polearm,Liyue,Male,04-17,1.3,
-Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,
+Tighnari,,5,Dendro,Bow,Sumeru,Male,12-29,3.0,R
+Venti,,5,Anemo,Bow,Mondstadt,Male,06-16,1.0,R
+Wanderer,,5,Anemo,Catalyst,Inazuma,Male,01-03,3.3,R
+Wriothesley,,5,Cryo,Polearm,Fontaine,Male,,4.1,
+Xiangling,,4,Pyro,Polearm,Liyue,Female,11-02,1.0,R
+Xiao,,5,Anemo,Polearm,Liyue,Male,04-17,1.3,R
+Xingqiu,,4,Hydro,Sword,Liyue,Male,10-09,1.0,R
 Xinyan,,4,Pyro,Claymore,Liyue,Female,10-16,1.1,2020-12-01
-Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,
-Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,
-Yaoguang,,5,Geo,Bow,Liyue,,,,?
-Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,
-Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,
+Yae Miko,Miko,5,Electro,Catalyst,Inazuma,Female,06-27,2.5,R
+Yanfei,,4,Pyro,Catalyst,Liyue,Female,07-28,1.5,R
+Yaoguang,,5,Geo,Bow,Liyue,,,,
+Yaoyao,,4,Dendro,Polearm,Liyue,Female,03-06,3.4,R
+Yelan,,5,Hydro,Bow,Liyue,Female,04-20,2.7,R
 Yoimiya,,5,Pyro,Bow,Inazuma,Female,06-21,2.0,2021-08-10
-Yun Jin,,4,Geo,Polearm,Liyue,Female,05-21,2.4,
+Yun Jin,,4,Geo,Polearm,Liyue,Female,05-21,2.4,R
 Zhongli,,5,Geo,Polearm,Liyue,Male,12-31,1.1,2020-12-01
