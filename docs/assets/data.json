@@ -1,6 +1,6 @@
 {
-    "version": "ff86336",
-    "last_updated": "2023-08-06T23:06:48.046931Z",
+    "version": "7632819",
+    "last_updated": "2023-08-08T01:24:02.455887Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -285,7 +285,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Geo",
-            "weapon": null,
+            "weapon": "Claymore",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
