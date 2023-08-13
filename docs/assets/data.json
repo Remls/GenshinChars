@@ -1,6 +1,6 @@
 {
-    "version": "7632819",
-    "last_updated": "2023-08-08T01:24:02.455887Z",
+    "version": "eab371f",
+    "last_updated": "2023-08-13T14:42:05.572257Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -144,6 +144,23 @@
             "notes": [
                 "This is based on very old data, from March 2022"
             ]
+        },
+        "Emilia": {
+            "name": "Emilia",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Iansan": {
             "name": "Iansan",
@@ -465,7 +482,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Cryo",
-            "weapon": "Polearm",
+            "weapon": "Catalyst",
             "region": "Fontaine",
             "gender": "Male",
             "birthday": null,
@@ -491,7 +508,7 @@
             "gender": "Male",
             "birthday": "09-24",
             "release_version": "4.0",
-            "release_date": null,
+            "release_date": "2023-09-07",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/freminet.png",
             "is_released": false,
@@ -510,7 +527,7 @@
             "gender": "Female",
             "birthday": "02-02",
             "release_version": "4.0",
-            "release_date": null,
+            "release_date": "2023-08-16",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lynette.png",
             "is_released": false,
@@ -530,7 +547,7 @@
             "gender": "Male",
             "birthday": "02-02",
             "release_version": "4.0",
-            "release_date": null,
+            "release_date": "2023-08-16",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/lyney.png",
             "is_released": false,
