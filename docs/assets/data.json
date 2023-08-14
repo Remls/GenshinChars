@@ -1,6 +1,6 @@
 {
-    "version": "eab371f",
-    "last_updated": "2023-08-13T14:42:05.572257Z",
+    "version": "61910dd",
+    "last_updated": "2023-08-14T12:20:46.407808Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -377,6 +377,23 @@
                 "Tartaglia's master, who taught him to battle during his time in the Abyss",
                 "This is one of several concept art pieces for her, so is unlikely to be her final design"
             ]
+        },
+        "Xbalanque": {
+            "name": "Xbalanque",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Yaoguang": {
             "name": "Yaoguang",
