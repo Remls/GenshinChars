@@ -1,6 +1,6 @@
 {
-    "version": "61910dd",
-    "last_updated": "2023-08-14T12:20:46.407808Z",
+    "version": "d16ba73",
+    "last_updated": "2023-08-14T13:01:18.401476Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -393,7 +393,10 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Mentioned in Neuvillette's drip marketing",
+                "No other information known; may even be an NPC"
+            ]
         },
         "Yaoguang": {
             "name": "Yaoguang",
