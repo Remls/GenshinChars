@@ -1,6 +1,6 @@
 {
-    "version": "45881cc",
-    "last_updated": "2023-08-14T13:30:07.637662Z",
+    "version": "57ccd64",
+    "last_updated": "2023-08-17T06:46:41.811103Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -42,6 +42,26 @@
                 "Journalist at The Steambird",
                 "First seen in v3.7 event",
                 "Expected to release during 4.x"
+            ]
+        },
+        "Chevreuse": {
+            "name": "Chevreuse",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/chevreuse.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Captain of the Special Security and Surveillance Patrol, which is the elite of the Maison Gardiennage",
+                "No other information known (may not be playable)"
             ]
         },
         "Chiori": {
@@ -548,9 +568,9 @@
             "birthday": "02-02",
             "release_version": "4.0",
             "release_date": "2023-08-16",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/lynette.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lynette.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lynette.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
@@ -568,9 +588,9 @@
             "birthday": "02-02",
             "release_version": "4.0",
             "release_date": "2023-08-16",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/lyney.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lyney.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lyney.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Revealed in Teyvat Chapter Storyline Preview",
