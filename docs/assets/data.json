@@ -1,6 +1,6 @@
 {
-    "version": "96d17a1",
-    "last_updated": "2023-08-28T07:31:14.193577Z",
+    "version": "e7e402c",
+    "last_updated": "2023-08-28T07:31:56.787782Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -41,7 +41,8 @@
             "notes": [
                 "Journalist at The Steambird",
                 "First seen in v3.7 event",
-                "Expected to release during 4.x"
+                "Expected to release during 4.x",
+                "[2023-08-24] She is an off-field group healer"
             ]
         },
         "Chevreuse": {
