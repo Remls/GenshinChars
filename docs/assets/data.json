@@ -1,6 +1,6 @@
 {
-    "version": "6736caa",
-    "last_updated": "2023-08-17T14:43:29.930336Z",
+    "version": "96d17a1",
+    "last_updated": "2023-08-28T07:31:14.193577Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -463,7 +463,7 @@
             "rarity": "5",
             "element": "Pyro",
             "weapon": "Polearm",
-            "region": "Snezhnaya",
+            "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": "4.3",
