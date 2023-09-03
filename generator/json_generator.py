@@ -29,6 +29,7 @@ def generate_data_file():
     for el in character_version_data:
         el: Character = el
         char_data = el.input_row
+        char_data["arkhe"] = el.arkhe
         char_data["release_date"] = el.release_date
         char_data["photo"] = el.get_character_image_link()
         char_data["full_photo"] = el.get_character_full_image_link()

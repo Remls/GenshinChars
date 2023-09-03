@@ -41,6 +41,7 @@ document.addEventListener('alpine:init', () => {
         name: null,
         birthday: null,
         element: null,
+        arkhe: null,
         gender: null,
         rarity: null,
         region: null,
@@ -259,6 +260,7 @@ document.addEventListener('alpine:init', () => {
             this.name = selectedChar.name
             this.birthday = this.formatDate(selectedChar.birthday)
             this.element = selectedChar.element || 'Unknown'
+            this.arkhe = selectedChar.arkhe // Null if non-Fontaine
             this.gender = selectedChar.gender || 'Unknown'
             this.rarity = selectedChar.rarity ? `${selectedChar.rarity}-star` : 'Unknown'
             this.region = selectedChar.region || 'Unknown'

@@ -68,6 +68,14 @@ class Character:
         self.input_row = row
         self.release_version = row['release_version'] or None
 
+        if self.input_row['arkhe']:
+            if self.input_row['arkhe'] == 'N/A':
+                self.arkhe = None
+            else:
+                self.arkhe = self.input_row['arkhe']
+        else:
+            self.arkhe = 'Unknown'
+
         if self.release_version:
             # release version known, exact date unknown
             if not row['release_date']:
@@ -91,7 +99,11 @@ class Character:
         display_name = self.input_row['display_name'] or char_name
         element = self.input_row['element'].lower() if self.input_row['element'] else "unknown"
         return f"""<div @click="showCharSheet('{char_name}')" class="character-links">
-                {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>{'<sup>†</sup>' if self.is_outdated() else ''}
+                {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>
+                {'<sup>†</sup>' if self.is_outdated() else ''}
+                {'<sup>Pn</sup>' if self.arkhe == 'Pneuma' else ''}
+                {'<sup>Ou</sup>' if self.arkhe == 'Ousia' else ''}
+                {'<sup>??</sup>' if self.arkhe == 'Unknown' else ''}
             </div>"""
 
     def get_char_slug(self) -> str:

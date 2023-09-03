@@ -56,6 +56,9 @@ def generate_index_file():
                 x-text="char.display_name || char.name">
             </span>
             <template x-if="char.is_outdated"><sup>†</sup></template>
+            <template x-if="char.arkhe === 'Pneuma'"><sup>Pn</sup></template>
+            <template x-if="char.arkhe === 'Ousia'"><sup>Ou</sup></template>
+            <template x-if="char.arkhe === 'Unknown'"><sup>??</sup></template>
         </div>
     </template>"""
     output = re.sub(search, replace, output)
