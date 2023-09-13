@@ -1,6 +1,6 @@
 {
-    "version": "d210e5b",
-    "last_updated": "2023-09-03T04:22:25.443756Z",
+    "version": "f01eb69",
+    "last_updated": "2023-09-13T04:33:33.658093Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -578,9 +578,9 @@
             "birthday": "09-24",
             "release_version": "4.0",
             "release_date": "2023-09-07",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/freminet.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/freminet.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/freminet.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Diver"
@@ -1982,7 +1982,7 @@
         },
         "4.1": {
             "version_number": "4.1",
-            "version_name": null,
+            "version_name": "To the Stars Shining in the Depths",
             "release_date": "2023-09-27"
         },
         "4.2": {
