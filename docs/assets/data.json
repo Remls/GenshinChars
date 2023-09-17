@@ -1,6 +1,6 @@
 {
-    "version": "f01eb69",
-    "last_updated": "2023-09-13T04:33:33.658093Z",
+    "version": "6689235",
+    "last_updated": "2023-09-17T04:56:29.033898Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -24,48 +24,26 @@
                 "Voice is known, appearance is unknown"
             ]
         },
-        "Charlotte": {
-            "name": "Charlotte",
+        "Arlecchino": {
+            "name": "Arlecchino",
             "display_name": null,
-            "rarity": "4",
-            "element": "Cryo",
-            "arkhe": "Pneuma",
-            "weapon": "Catalyst",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/charlotte.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Journalist at The Steambird",
-                "First seen in v3.7 event",
-                "Expected to release during 4.x",
-                "[2023-08-24] She is an off-field group healer"
-            ]
-        },
-        "Chevreuse": {
-            "name": "Chevreuse",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
+            "rarity": "5",
+            "element": "Pyro",
             "arkhe": "Unknown",
-            "weapon": null,
+            "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/chevreuse.png",
+            "full_photo": "assets/images/full-characters/arlecchino.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Captain of the Special Security and Surveillance Patrol, which is the elite of the Maison Gardiennage",
-                "No other information known (may not be playable)"
+                "Pyro Delusion",
+                "Could possibly see a release in 4.3",
+                "Not clear if she will be playable yet"
             ]
         },
         "Chiori": {
@@ -334,49 +312,6 @@
                 "This is very old data, from March 2022"
             ]
         },
-        "Navia": {
-            "name": "Navia",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Geo",
-            "arkhe": "Ousia",
-            "weapon": "Claymore",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/navia.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Associated with the navy",
-                "Might be the character formerly known as Yuelyn",
-                "Expected to release during 4.x"
-            ]
-        },
-        "Sertice": {
-            "name": "Sertice",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Sword",
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sertice.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Could possibly be named Chevreuse",
-                "Expected to release during 4.x"
-            ]
-        },
         "Sigewinne": {
             "name": "Sigewinne",
             "display_name": null,
@@ -481,10 +416,10 @@
                 "Could possibly see a release in 4.4"
             ]
         },
-        "Arlecchino": {
-            "name": "Arlecchino",
+        "Chevreuse": {
+            "name": "Chevreuse",
             "display_name": null,
-            "rarity": "5",
+            "rarity": "4",
             "element": "Pyro",
             "arkhe": "Unknown",
             "weapon": "Polearm",
@@ -494,13 +429,56 @@
             "release_version": "4.3",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/arlecchino.png",
+            "full_photo": "assets/images/full-characters/chevreuse.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Pyro Delusion",
-                "Could possibly see a release in 4.3",
-                "Not clear if she will be playable yet"
+                "Captain of the Special Security and Surveillance Patrol, which is the elite of the Maison Gardiennage"
+            ]
+        },
+        "Navia": {
+            "name": "Navia",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
+            "arkhe": "Ousia",
+            "weapon": "Claymore",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/navia.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Associated with the navy",
+                "Might be the character formerly known as Yuelyn",
+                "Expected to release during 4.x"
+            ]
+        },
+        "Charlotte": {
+            "name": "Charlotte",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Cryo",
+            "arkhe": "Pneuma",
+            "weapon": "Catalyst",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/charlotte.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Journalist at The Steambird",
+                "First seen in v3.7 event",
+                "Expected to release during 4.x",
+                "[2023-08-24] She is an off-field group healer"
             ]
         },
         "Furina": {
@@ -524,26 +502,6 @@
                 "Supporter/buffer"
             ]
         },
-        "Neuvillette": {
-            "name": "Neuvillette",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "arkhe": "Pneuma",
-            "weapon": "Catalyst",
-            "region": "Fontaine",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "4.1",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/neuvillette.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Chief Judge of the Supreme Court of Fontaine"
-            ]
-        },
         "Wriothesley": {
             "name": "Wriothesley",
             "display_name": null,
@@ -553,9 +511,9 @@
             "weapon": "Catalyst",
             "region": "Fontaine",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "11-23",
             "release_version": "4.1",
-            "release_date": null,
+            "release_date": "2023-10-17",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/wriothesley.png",
             "is_released": false,
@@ -564,6 +522,26 @@
                 "Police officer",
                 "DPS",
                 "May be added to standard banner pool"
+            ]
+        },
+        "Neuvillette": {
+            "name": "Neuvillette",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "arkhe": "Pneuma",
+            "weapon": "Catalyst",
+            "region": "Fontaine",
+            "gender": "Male",
+            "birthday": "12-18",
+            "release_version": "4.1",
+            "release_date": "2023-09-27",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/neuvillette.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Chief Judge of the Supreme Court of Fontaine"
             ]
         },
         "Freminet": {
