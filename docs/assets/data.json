@@ -1,6 +1,6 @@
 {
-    "version": "6689235",
-    "last_updated": "2023-09-17T04:56:29.033898Z",
+    "version": "49d8149",
+    "last_updated": "2023-09-17T05:06:47.134710Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -42,7 +42,6 @@
             "is_outdated": false,
             "notes": [
                 "Pyro Delusion",
-                "Could possibly see a release in 4.3",
                 "Not clear if she will be playable yet"
             ]
         },
@@ -83,12 +82,7 @@
             "full_photo": "assets/images/full-characters/clorinde.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "The character dubbed Captain R by the community",
-                "Possibly a sword user",
-                "Character with high status",
-                "Expected to release during 4.x"
-            ]
+            "notes": null
         },
         "Dahlia": {
             "name": "Dahlia",
@@ -267,7 +261,6 @@
             "is_outdated": false,
             "notes": [
                 "Prisoner",
-                "Could possibly be named Chevreuse",
                 "Expected to release during 4.x"
             ]
         },
@@ -412,9 +405,7 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Could possibly see a release in 4.4"
-            ]
+            "notes": null
         },
         "Chevreuse": {
             "name": "Chevreuse",
@@ -452,11 +443,7 @@
             "full_photo": "assets/images/full-characters/navia.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Associated with the navy",
-                "Might be the character formerly known as Yuelyn",
-                "Expected to release during 4.x"
-            ]
+            "notes": null
         },
         "Charlotte": {
             "name": "Charlotte",
@@ -475,9 +462,6 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Journalist at The Steambird",
-                "First seen in v3.7 event",
-                "Expected to release during 4.x",
                 "[2023-08-24] She is an off-field group healer"
             ]
         },
@@ -518,11 +502,7 @@
             "full_photo": "assets/images/full-characters/wriothesley.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Police officer",
-                "DPS",
-                "May be added to standard banner pool"
-            ]
+            "notes": null
         },
         "Neuvillette": {
             "name": "Neuvillette",
@@ -540,9 +520,7 @@
             "full_photo": "assets/images/full-characters/neuvillette.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Chief Judge of the Supreme Court of Fontaine"
-            ]
+            "notes": null
         },
         "Freminet": {
             "name": "Freminet",
@@ -560,9 +538,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/freminet.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Diver"
-            ]
+            "notes": null
         },
         "Lynette": {
             "name": "Lynette",
@@ -580,10 +556,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lynette.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview",
-                "Off-field supporter"
-            ]
+            "notes": null
         },
         "Lyney": {
             "name": "Lyney",
@@ -601,11 +574,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lyney.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview",
-                "From the House of the Hearth, an orphanage set up by Lady Arlecchino",
-                "Charged Attack DPS"
-            ]
+            "notes": null
         },
         "Kirara": {
             "name": "Kirara",
