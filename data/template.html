@@ -42,7 +42,7 @@
                     <td>
                         <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
                             <template x-for="version in Object.values(versionData)" :key="version.version_number">
-                                <option :value="version.version_number" x-text="formatVersion(version.version_number)"></option>
+                                <option :value="version.version_number" x-text="formatVersion(version.version_number, true)"></option>
                             </template>
                             <option :value="null">All known playable characters</option>
                         </select>
