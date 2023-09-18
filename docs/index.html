@@ -58,7 +58,7 @@
                         <td>
                             <select @change="updateCharacterData()" id="version-select" x-model="selectedVersion">
                                 <template :key="version.version_number" x-for="version in Object.values(versionData)">
-                                    <option :value="version.version_number" x-text="formatVersion(version.version_number)">
+                                    <option :value="version.version_number" x-text="formatVersion(version.version_number, true)">
                                     </option>
                                 </template>
                                 <option :value="null">
