@@ -1,6 +1,6 @@
 {
-    "version": "ca4f3a8",
-    "last_updated": "2023-09-18T03:28:22.439515Z",
+    "version": "116b885",
+    "last_updated": "2023-09-25T04:40:47.768435Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -470,7 +470,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "arkhe": "Unknown",
+            "arkhe": "Pneumousia",
             "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
