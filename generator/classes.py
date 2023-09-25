@@ -103,6 +103,7 @@ class Character:
                 {'<sup>†</sup>' if self.is_outdated() else ''}
                 {'<sup>Pn</sup>' if self.arkhe == 'Pneuma' else ''}
                 {'<sup>Ou</sup>' if self.arkhe == 'Ousia' else ''}
+                {'<sup>PnOu</sup>' if self.arkhe == 'Pneumousia' else ''}
                 {'<sup>??</sup>' if self.arkhe == 'Unknown' else ''}
             </div>"""
 
