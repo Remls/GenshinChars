@@ -1,6 +1,6 @@
 {
-    "version": "116b885",
-    "last_updated": "2023-09-25T04:40:47.768435Z",
+    "version": "d08c98d",
+    "last_updated": "2023-09-30T11:23:58.939476Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -310,7 +310,7 @@
             "display_name": null,
             "rarity": "4",
             "element": "Hydro",
-            "arkhe": "Unknown",
+            "arkhe": "Ousia",
             "weapon": "Bow",
             "region": "Fontaine",
             "gender": "Female",
@@ -516,9 +516,9 @@
             "birthday": "12-18",
             "release_version": "4.1",
             "release_date": "2023-09-27",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/neuvillette.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/neuvillette.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/neuvillette.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
