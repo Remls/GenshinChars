@@ -1,6 +1,6 @@
 {
-    "version": "d08c98d",
-    "last_updated": "2023-09-30T11:23:58.939476Z",
+    "version": "4f2a084",
+    "last_updated": "2023-10-14T05:57:29.507227Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -393,9 +393,9 @@
             "name": "Cloud Retainer",
             "display_name": null,
             "rarity": null,
-            "element": null,
+            "element": "Anemo",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Liyue",
             "gender": "Female",
             "birthday": null,
