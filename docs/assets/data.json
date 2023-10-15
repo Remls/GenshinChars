@@ -1,6 +1,6 @@
 {
-    "version": "4f2a084",
-    "last_updated": "2023-10-14T05:57:29.507227Z",
+    "version": "c151246",
+    "last_updated": "2023-10-15T15:48:46.563538Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -23,66 +23,6 @@
                 "Klee's mother",
                 "Voice is known, appearance is unknown"
             ]
-        },
-        "Arlecchino": {
-            "name": "Arlecchino",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "arkhe": "Unknown",
-            "weapon": "Polearm",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/arlecchino.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Pyro Delusion",
-                "Not clear if she will be playable yet"
-            ]
-        },
-        "Chiori": {
-            "name": "Chiori",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Inazuma",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/chiori.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Possibly a Dendro DPS teammate",
-                "Already named in Kirara's voicelines"
-            ]
-        },
-        "Clorinde": {
-            "name": "Clorinde",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Electro",
-            "arkhe": "Ousia",
-            "weapon": "Sword",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/clorinde.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Dahlia": {
             "name": "Dahlia",
@@ -145,24 +85,6 @@
             "notes": [
                 "This is based on very old data, from March 2022"
             ]
-        },
-        "Emilia": {
-            "name": "Emilia",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": "Unknown",
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Iansan": {
             "name": "Iansan",
@@ -387,6 +309,84 @@
             "notes": [
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan"
+            ]
+        },
+        "Emilie": {
+            "name": "Emilie",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": "Unknown",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.8",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Clorinde": {
+            "name": "Clorinde",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": "Ousia",
+            "weapon": "Sword",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/clorinde.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Arlecchino": {
+            "name": "Arlecchino",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "arkhe": "Unknown",
+            "weapon": "Polearm",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/arlecchino.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Pyro Delusion",
+                "Not clear if she will be playable yet"
+            ]
+        },
+        "Chiori": {
+            "name": "Chiori",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Inazuma",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/chiori.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Possibly a Dendro DPS teammate",
+                "Already named in Kirara's voicelines"
             ]
         },
         "Cloud Retainer": {
