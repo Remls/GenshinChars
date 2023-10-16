@@ -1,6 +1,6 @@
 {
-    "version": "c151246",
-    "last_updated": "2023-10-15T15:48:46.563538Z",
+    "version": "0662dc0",
+    "last_updated": "2023-10-16T12:51:35.922107Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -454,9 +454,9 @@
             "weapon": "Catalyst",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "04-10",
             "release_version": "4.2",
-            "release_date": null,
+            "release_date": "2023-11-08",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/charlotte.png",
             "is_released": false,
@@ -474,9 +474,9 @@
             "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "10-13",
             "release_version": "4.2",
-            "release_date": null,
+            "release_date": "2023-11-08",
             "photo": "assets/images/characters/furina.png",
             "full_photo": "assets/images/full-characters/furina.png",
             "is_released": false,
