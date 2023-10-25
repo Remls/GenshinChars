@@ -1,6 +1,6 @@
 {
-    "version": "3848fb0",
-    "last_updated": "2023-10-25T04:52:42.230983Z",
+    "version": "5f11af9",
+    "last_updated": "2023-10-25T05:32:26.535250Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -230,7 +230,7 @@
         "Sigewinne": {
             "name": "Sigewinne",
             "display_name": null,
-            "rarity": "4",
+            "rarity": "5",
             "element": "Hydro",
             "arkhe": "Ousia",
             "weapon": "Bow",
