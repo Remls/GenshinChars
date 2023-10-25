@@ -1,6 +1,6 @@
 {
-    "version": "0662dc0",
-    "last_updated": "2023-10-16T12:51:35.922107Z",
+    "version": "3848fb0",
+    "last_updated": "2023-10-25T04:52:42.230983Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -498,9 +498,9 @@
             "birthday": "11-23",
             "release_version": "4.1",
             "release_date": "2023-10-17",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/wriothesley.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/wriothesley.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/wriothesley.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -1934,7 +1934,7 @@
         },
         "4.2": {
             "version_number": "4.2",
-            "version_name": null,
+            "version_name": "Masquerade of the Guilty",
             "release_date": "2023-11-08"
         },
         "4.3": {
