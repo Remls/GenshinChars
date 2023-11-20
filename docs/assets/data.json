@@ -1,6 +1,6 @@
 {
-    "version": "5e36c8b",
-    "last_updated": "2023-11-07T08:34:07.654653Z",
+    "version": "0ee52be",
+    "last_updated": "2023-11-20T12:12:27.947436Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -227,27 +227,6 @@
                 "This is very old data, from March 2022"
             ]
         },
-        "Sigewinne": {
-            "name": "Sigewinne",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "arkhe": "Ousia",
-            "weapon": "Bow",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sigewinne.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Nurse",
-                "Expected to release during 4.x"
-            ]
-        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -311,24 +290,6 @@
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan"
             ]
         },
-        "Emilie": {
-            "name": "Emilie",
-            "display_name": null,
-            "rarity": "5",
-            "element": null,
-            "arkhe": "Unknown",
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "4.8",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
         "Clorinde": {
             "name": "Clorinde",
             "display_name": null,
@@ -374,7 +335,7 @@
             "rarity": "5",
             "element": "Electro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Inazuma",
             "gender": "Female",
             "birthday": null,
@@ -387,6 +348,27 @@
             "notes": [
                 "Possibly a Dendro DPS teammate",
                 "Already named in Kirara's voicelines"
+            ]
+        },
+        "Sigewinne": {
+            "name": "Sigewinne",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "arkhe": "Ousia",
+            "weapon": "Bow",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sigewinne.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Nurse",
+                "Expected to release during 4.x"
             ]
         },
         "Cloud Retainer": {
@@ -407,6 +389,26 @@
             "is_outdated": false,
             "notes": null
         },
+        "Emilie": {
+            "name": "Emilie",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": "Unknown",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Release date unknown, may be in 4.4"
+            ]
+        },
         "Chevreuse": {
             "name": "Chevreuse",
             "display_name": null,
@@ -419,7 +421,7 @@
             "birthday": null,
             "release_version": "4.3",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/chevreuse.png",
             "full_photo": "assets/images/full-characters/chevreuse.png",
             "is_released": false,
             "is_outdated": false,
@@ -439,7 +441,7 @@
             "birthday": null,
             "release_version": "4.3",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/navia.png",
             "full_photo": "assets/images/full-characters/navia.png",
             "is_released": false,
             "is_outdated": false,
@@ -457,9 +459,9 @@
             "birthday": "04-10",
             "release_version": "4.2",
             "release_date": "2023-11-08",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/charlotte.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/charlotte.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/charlotte.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "[2023-08-24] She is an off-field group healer"
@@ -477,13 +479,12 @@
             "birthday": "10-13",
             "release_version": "4.2",
             "release_date": "2023-11-08",
-            "photo": "assets/images/characters/furina.png",
-            "full_photo": "assets/images/full-characters/furina.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/furina.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/furina.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
-                "Archon of Fontaine",
-                "Supporter/buffer"
+                "Archon of Fontaine"
             ]
         },
         "Wriothesley": {
