@@ -1,6 +1,6 @@
 {
-    "version": "2c7b682",
-    "last_updated": "2023-11-27T11:27:25.072355Z",
+    "version": "3374db0",
+    "last_updated": "2023-12-06T04:15:57.275455Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1940,7 +1940,7 @@
         },
         "4.3": {
             "version_number": "4.3",
-            "version_name": null,
+            "version_name": "Roses and Muskets",
             "release_date": "2023-12-20"
         },
         "4.4": {
