@@ -1,6 +1,6 @@
 {
-    "version": "3374db0",
-    "last_updated": "2023-12-06T04:15:57.275455Z",
+    "version": "d8ead91",
+    "last_updated": "2023-12-11T17:57:23.584117Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -384,7 +384,7 @@
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/cloud_retainer.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
