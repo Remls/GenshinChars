@@ -1,6 +1,6 @@
 {
-    "version": "d8ead91",
-    "last_updated": "2023-12-11T17:57:23.584117Z",
+    "version": "ccb0264",
+    "last_updated": "2023-12-11T18:27:27.683299Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -21,7 +21,8 @@
             "notes": [
                 "A member of the Hexenzirkel",
                 "Klee's mother",
-                "Voice is known, appearance is unknown"
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v1.6 and v3.5 (voice only)"
             ]
         },
         "Dahlia": {
@@ -42,7 +43,7 @@
             "is_outdated": false,
             "notes": [
                 "Deacon of the Church of Favonius, similar to Barbara",
-                "Expected to release during 4.x"
+                "Expected to release during v4.x"
             ]
         },
         "Dainsleif": {
@@ -63,7 +64,8 @@
             "is_outdated": false,
             "notes": [
                 "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
-                "He also has no visible Vision on his body"
+                "He also has no visible Vision on his body",
+                "Appears in multiple archon quests"
             ]
         },
         "Djajeet": {
@@ -142,7 +144,9 @@
             "full_photo": "assets/images/full-characters/il_dottore.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in Sumeru's archon quest"
+            ]
         },
         "Lion Dance Boy": {
             "name": "Lion Dance Boy",
@@ -162,7 +166,7 @@
             "is_outdated": false,
             "notes": [
                 "Unnamed",
-                "Expected to release during 4.x, during the 2024 Lantern Rite Festival"
+                "Expected to release during v4.x, during the 2024 Lantern Rite Festival"
             ]
         },
         "M": {
@@ -183,7 +187,8 @@
             "is_outdated": false,
             "notes": [
                 "Prisoner",
-                "Expected to release during 4.x"
+                "This is likely not her final name",
+                "Expected to release during v4.x"
             ]
         },
         "Mummy Girl": {
@@ -204,7 +209,7 @@
             "is_outdated": false,
             "notes": [
                 "Unnamed",
-                "Expected to release during 4.x"
+                "Expected to release during v4.x"
             ]
         },
         "Nafs": {
@@ -245,7 +250,7 @@
             "is_outdated": false,
             "notes": [
                 "Tartaglia's master, who taught him to battle during his time in the Abyss",
-                "This is one of several concept art pieces for her, so is unlikely to be her final design"
+                "Appears in Fontaine's archon quest"
             ]
         },
         "Xbalanque": {
@@ -306,7 +311,9 @@
             "full_photo": "assets/images/full-characters/clorinde.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in Fontaine's archon quest"
+            ]
         },
         "Arlecchino": {
             "name": "Arlecchino",
@@ -347,7 +354,8 @@
             "is_outdated": false,
             "notes": [
                 "Possibly a Dendro DPS teammate",
-                "Already named in Kirara's voicelines"
+                "Already named in Kirara's voicelines",
+                "Appears in the trailer and main event in v4.3"
             ]
         },
         "Sigewinne": {
@@ -368,7 +376,8 @@
             "is_outdated": false,
             "notes": [
                 "Nurse",
-                "Expected to release during 4.x"
+                "Appears in Fontaine's archon quest",
+                "Expected to release during v4.x"
             ]
         },
         "Cloud Retainer": {
@@ -387,7 +396,9 @@
             "full_photo": "assets/images/full-characters/cloud_retainer.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in human form in a cutscene during the main event in v3.4"
+            ]
         },
         "Emilie": {
             "name": "Emilie",
@@ -406,7 +417,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Release date unknown, may be in 4.4"
+                "Release date unknown, may be in v4.4"
             ]
         },
         "Chevreuse": {
@@ -445,7 +456,9 @@
             "full_photo": "assets/images/full-characters/navia.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in Fontaine's archon quest"
+            ]
         },
         "Charlotte": {
             "name": "Charlotte",
@@ -463,9 +476,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/charlotte.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "[2023-08-24] She is an off-field group healer"
-            ]
+            "notes": null
         },
         "Furina": {
             "name": "Furina",
@@ -484,7 +495,7 @@
             "is_released": true,
             "is_outdated": false,
             "notes": [
-                "Archon of Fontaine"
+                "Former Archon of Fontaine"
             ]
         },
         "Wriothesley": {
@@ -521,7 +532,9 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/neuvillette.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Current Hydro Dragon Sovereign"
+            ]
         },
         "Freminet": {
             "name": "Freminet",
