@@ -1,2 +1,2 @@
 Deacon of the Church of Favonius, similar to Barbara
-Expected to release during 4.x
+Expected to release during v4.x
