@@ -1,6 +1,6 @@
 {
-    "version": "ccb0264",
-    "last_updated": "2023-12-11T18:27:27.683299Z",
+    "version": "5d142c3",
+    "last_updated": "2023-12-11T18:43:55.321329Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -86,6 +86,26 @@
             "is_outdated": true,
             "notes": [
                 "This is based on very old data, from March 2022"
+            ]
+        },
+        "Emilie": {
+            "name": "Emilie",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": "Unknown",
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Already named in multiple character voicelines"
             ]
         },
         "Iansan": {
@@ -354,7 +374,7 @@
             "is_outdated": false,
             "notes": [
                 "Possibly a Dendro DPS teammate",
-                "Already named in Kirara's voicelines",
+                "Already named in multiple character voicelines",
                 "Appears in the trailer and main event in v4.3"
             ]
         },
@@ -400,26 +420,6 @@
                 "Appears in human form in a cutscene during the main event in v3.4"
             ]
         },
-        "Emilie": {
-            "name": "Emilie",
-            "display_name": null,
-            "rarity": "5",
-            "element": null,
-            "arkhe": "Unknown",
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "4.4",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Release date unknown, may be in v4.4"
-            ]
-        },
         "Chevreuse": {
             "name": "Chevreuse",
             "display_name": null,
@@ -431,7 +431,7 @@
             "gender": "Female",
             "birthday": "01-10",
             "release_version": "4.3",
-            "release_date": null,
+            "release_date": "2024-01-09",
             "photo": "assets/images/characters/chevreuse.png",
             "full_photo": "assets/images/full-characters/chevreuse.png",
             "is_released": false,
@@ -451,7 +451,7 @@
             "gender": "Female",
             "birthday": "08-16",
             "release_version": "4.3",
-            "release_date": null,
+            "release_date": "2023-12-20",
             "photo": "assets/images/characters/navia.png",
             "full_photo": "assets/images/full-characters/navia.png",
             "is_released": false,
@@ -547,7 +547,7 @@
             "gender": "Male",
             "birthday": "09-24",
             "release_version": "4.0",
-            "release_date": "2023-09-07",
+            "release_date": "2023-09-05",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/freminet.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/freminet.png",
             "is_released": true,
