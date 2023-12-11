@@ -1,6 +1,6 @@
 {
-    "version": "5d142c3",
-    "last_updated": "2023-12-11T18:43:55.321329Z",
+    "version": "cd8683b",
+    "last_updated": "2023-12-11T18:49:25.084764Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1116,7 +1116,7 @@
             "is_outdated": false,
             "notes": [
                 "Crossover character from Horizon Zero Dawn",
-                "Given for free to all players through in-game mail during Version 2.2"
+                "Given for free to all players through in-game mail during v2.2"
             ]
         },
         "Kujou Sara": {
