@@ -1,6 +1,6 @@
 {
-    "version": "27a4a51",
-    "last_updated": "2023-12-18T05:20:26.345176Z",
+    "version": "5022cc1",
+    "last_updated": "2023-12-18T13:53:20.793657Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -168,27 +168,6 @@
                 "Appears in Sumeru's archon quest"
             ]
         },
-        "Lion Dance Boy": {
-            "name": "Lion Dance Boy",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Liyue",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/lion_dance_boy.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Unnamed",
-                "Expected to release during v4.x, during the 2024 Lantern Rite Festival"
-            ]
-        },
         "M": {
             "name": "M",
             "display_name": null,
@@ -271,27 +250,6 @@
             "notes": [
                 "Tartaglia's master, who taught him to battle during his time in the Abyss",
                 "Appears in Fontaine's archon quest"
-            ]
-        },
-        "Xbalanque": {
-            "name": "Xbalanque",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Mentioned in Neuvillette's drip marketing",
-                "No other information known; may even be an NPC"
             ]
         },
         "Yaoguang": {
@@ -400,10 +358,28 @@
                 "Expected to release during v4.x"
             ]
         },
-        "Cloud Retainer": {
-            "name": "Cloud Retainer",
+        "Gaming": {
+            "name": "Gaming",
             "display_name": null,
             "rarity": null,
+            "element": "Pyro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "4.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Xianyun": {
+            "name": "Xianyun",
+            "display_name": null,
+            "rarity": "5",
             "element": "Anemo",
             "arkhe": null,
             "weapon": "Catalyst",
@@ -413,10 +389,11 @@
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/cloud_retainer.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
+                "Cloud Retainer",
                 "Appears in human form in a cutscene during the main event in v3.4"
             ]
         },
