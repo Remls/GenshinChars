@@ -1,6 +1,6 @@
 {
-    "version": "cd8683b",
-    "last_updated": "2023-12-11T18:49:25.084764Z",
+    "version": "27a4a51",
+    "last_updated": "2023-12-18T05:20:26.345176Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -359,8 +359,8 @@
         "Chiori": {
             "name": "Chiori",
             "display_name": null,
-            "rarity": "5",
-            "element": "Electro",
+            "rarity": null,
+            "element": "Geo",
             "arkhe": null,
             "weapon": "Sword",
             "region": "Inazuma",
