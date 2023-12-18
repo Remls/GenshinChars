@@ -1,6 +1,6 @@
 {
-    "version": "5022cc1",
-    "last_updated": "2023-12-18T13:53:20.793657Z",
+    "version": "d52b193",
+    "last_updated": "2023-12-18T13:57:35.910496Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -371,7 +371,7 @@
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/gaming.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -389,7 +389,7 @@
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/xianyun.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
