@@ -1,6 +1,6 @@
 {
-    "version": "a77b8e1",
-    "last_updated": "2023-12-18T14:00:39.701072Z",
+    "version": "1878146",
+    "last_updated": "2023-12-19T05:32:42.197518Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -364,7 +364,7 @@
             "rarity": null,
             "element": "Pyro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Claymore",
             "region": "Liyue",
             "gender": "Male",
             "birthday": null,
