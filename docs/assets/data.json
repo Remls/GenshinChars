@@ -1,6 +1,6 @@
 {
-    "version": "1878146",
-    "last_updated": "2023-12-19T05:32:42.197518Z",
+    "version": "21cd495",
+    "last_updated": "2023-12-20T15:29:59.237817Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -361,7 +361,7 @@
         "Gaming": {
             "name": "Gaming",
             "display_name": null,
-            "rarity": null,
+            "rarity": "4",
             "element": "Pyro",
             "arkhe": null,
             "weapon": "Claymore",
@@ -429,9 +429,9 @@
             "birthday": "08-16",
             "release_version": "4.3",
             "release_date": "2023-12-20",
-            "photo": "assets/images/characters/navia.png",
-            "full_photo": "assets/images/full-characters/navia.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/navia.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/navia.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Appears in Fontaine's archon quest"
