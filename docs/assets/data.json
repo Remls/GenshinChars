@@ -1,6 +1,6 @@
 {
-    "version": "4bbca24",
-    "last_updated": "2023-12-21T04:22:02.403435Z",
+    "version": "287b646",
+    "last_updated": "2024-01-01T10:30:59.377318Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -367,7 +367,7 @@
             "weapon": "Claymore",
             "region": "Liyue",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "12-22",
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/characters/gaming.png",
@@ -385,7 +385,7 @@
             "weapon": "Catalyst",
             "region": "Liyue",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-01",
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/characters/xianyun.png",
