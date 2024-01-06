@@ -1,6 +1,6 @@
 {
-    "version": "287b646",
-    "last_updated": "2024-01-01T10:30:59.377318Z",
+    "version": "1797997",
+    "last_updated": "2024-01-06T04:40:37.579015Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -187,7 +187,7 @@
             "notes": [
                 "Prisoner",
                 "This is likely not her final name",
-                "Expected to release during v4.x"
+                "[2024-01-05] Not expected to release during 4.x"
             ]
         },
         "Mummy Girl": {
