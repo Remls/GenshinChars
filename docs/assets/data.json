@@ -1,6 +1,6 @@
 {
-    "version": "64cc649",
-    "last_updated": "2024-01-06T04:41:43.539033Z",
+    "version": "c57ac7d",
+    "last_updated": "2024-01-08T16:42:13.057872Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -385,7 +385,7 @@
             "weapon": "Catalyst",
             "region": "Liyue",
             "gender": "Female",
-            "birthday": "01-01",
+            "birthday": "04-11",
             "release_version": "4.4",
             "release_date": null,
             "photo": "assets/images/characters/xianyun.png",
