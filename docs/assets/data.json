@@ -1,6 +1,6 @@
 {
-    "version": "c57ac7d",
-    "last_updated": "2024-01-08T16:42:13.057872Z",
+    "version": "b8bf591",
+    "last_updated": "2024-01-13T11:13:32.892503Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -23,6 +23,26 @@
                 "Klee's mother",
                 "Voice is known, appearance is unknown",
                 "Appears in the main events in v1.6 and v3.5 (voice only)"
+            ]
+        },
+        "Columbina": {
+            "name": "Columbina",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/columbina.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Expected to release during v5.x"
             ]
         },
         "Dahlia": {
@@ -369,7 +389,7 @@
             "gender": "Male",
             "birthday": "12-22",
             "release_version": "4.4",
-            "release_date": null,
+            "release_date": "2024-01-31",
             "photo": "assets/images/characters/gaming.png",
             "full_photo": "assets/images/full-characters/gaming.png",
             "is_released": false,
@@ -387,7 +407,7 @@
             "gender": "Female",
             "birthday": "04-11",
             "release_version": "4.4",
-            "release_date": null,
+            "release_date": "2024-01-31",
             "photo": "assets/images/characters/xianyun.png",
             "full_photo": "assets/images/full-characters/xianyun.png",
             "is_released": false,
@@ -409,9 +429,9 @@
             "birthday": "01-10",
             "release_version": "4.3",
             "release_date": "2024-01-09",
-            "photo": "assets/images/characters/chevreuse.png",
-            "full_photo": "assets/images/full-characters/chevreuse.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chevreuse.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chevreuse.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Captain of the Special Security and Surveillance Patrol, which is the elite of the Maison Gardiennage"
