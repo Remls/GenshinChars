@@ -1,6 +1,6 @@
 {
-    "version": "299bf01",
-    "last_updated": "2024-01-17T04:14:02.872061Z",
+    "version": "6d70ccd",
+    "last_updated": "2024-01-29T11:29:44.913932Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -251,6 +251,28 @@
                 "This is very old data, from March 2022"
             ]
         },
+        "Sigewinne": {
+            "name": "Sigewinne",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "arkhe": "Ousia",
+            "weapon": "Bow",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sigewinne.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Nurse",
+                "Appears in Fontaine's archon quest",
+                "Expected to release during v4.x"
+            ]
+        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -337,7 +359,7 @@
         "Chiori": {
             "name": "Chiori",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Geo",
             "arkhe": null,
             "weapon": "Sword",
@@ -354,28 +376,6 @@
                 "Possibly a Dendro DPS teammate",
                 "Already named in multiple character voicelines",
                 "Appears in the trailer and main event in v4.3"
-            ]
-        },
-        "Sigewinne": {
-            "name": "Sigewinne",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "arkhe": "Ousia",
-            "weapon": "Bow",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "4.5",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sigewinne.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Nurse",
-                "Appears in Fontaine's archon quest",
-                "Expected to release during v4.x"
             ]
         },
         "Gaming": {
