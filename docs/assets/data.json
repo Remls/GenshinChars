@@ -1,6 +1,6 @@
 {
-    "version": "6d70ccd",
-    "last_updated": "2024-01-29T11:29:44.913932Z",
+    "version": "3fa1bf4",
+    "last_updated": "2024-02-05T09:40:39.439580Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -368,7 +368,7 @@
             "birthday": null,
             "release_version": "4.5",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/chiori.png",
             "full_photo": "assets/images/full-characters/chiori.png",
             "is_released": false,
             "is_outdated": false,
@@ -390,9 +390,9 @@
             "birthday": "12-22",
             "release_version": "4.4",
             "release_date": "2024-01-31",
-            "photo": "assets/images/characters/gaming.png",
-            "full_photo": "assets/images/full-characters/gaming.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gaming.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/gaming.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -408,9 +408,9 @@
             "birthday": "04-11",
             "release_version": "4.4",
             "release_date": "2024-01-31",
-            "photo": "assets/images/characters/xianyun.png",
-            "full_photo": "assets/images/full-characters/xianyun.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xianyun.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xianyun.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Cloud Retainer",
