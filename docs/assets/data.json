@@ -1,6 +1,6 @@
 {
-    "version": "1873b0d",
-    "last_updated": "2024-02-15T06:10:18.553101Z",
+    "version": "ba827e6",
+    "last_updated": "2024-02-26T07:51:08.111202Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -112,7 +112,7 @@
             "name": "Emilie",
             "display_name": null,
             "rarity": "5",
-            "element": null,
+            "element": "Dendro",
             "arkhe": "Unknown",
             "weapon": null,
             "region": "Fontaine",
