@@ -1,6 +1,6 @@
 {
-    "version": "ba827e6",
-    "last_updated": "2024-02-26T07:51:08.111202Z",
+    "version": "790566c",
+    "last_updated": "2024-03-01T11:53:00.636520Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -1958,7 +1958,7 @@
         },
         "4.5": {
             "version_number": "4.5",
-            "version_name": null,
+            "version_name": "Blades Weaving Betwixt Brocade",
             "release_date": "2024-03-13"
         },
         "4.6": {
