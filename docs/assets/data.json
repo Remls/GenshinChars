@@ -1,6 +1,6 @@
 {
-    "version": "790566c",
-    "last_updated": "2024-03-01T11:53:00.636520Z",
+    "version": "116e7e6",
+    "last_updated": "2024-03-11T11:09:02.134123Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -294,6 +294,26 @@
                 "Appears in Fontaine's archon quest"
             ]
         },
+        "Xbalanque": {
+            "name": "Xbalanque",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": "Unknown",
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Neuvillette's character introduction (drip marketing; mentioned)"
+            ]
+        },
         "Yaoguang": {
             "name": "Yaoguang",
             "display_name": null,
@@ -351,10 +371,7 @@
             "full_photo": "assets/images/full-characters/arlecchino.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Pyro Delusion",
-                "Not clear if she will be playable yet"
-            ]
+            "notes": null
         },
         "Chiori": {
             "name": "Chiori",
@@ -372,11 +389,7 @@
             "full_photo": "assets/images/full-characters/chiori.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Possibly a Dendro DPS teammate",
-                "Already named in multiple character voicelines",
-                "Appears in the trailer and main event in v4.3"
-            ]
+            "notes": null
         },
         "Gaming": {
             "name": "Gaming",
@@ -412,10 +425,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xianyun.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Cloud Retainer",
-                "Appears in human form in a cutscene during the main event in v3.4"
-            ]
+            "notes": null
         },
         "Chevreuse": {
             "name": "Chevreuse",
@@ -433,9 +443,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chevreuse.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Captain of the Special Security and Surveillance Patrol, which is the elite of the Maison Gardiennage"
-            ]
+            "notes": null
         },
         "Navia": {
             "name": "Navia",
