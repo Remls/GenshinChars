@@ -1,6 +1,6 @@
 {
-    "version": "116e7e6",
-    "last_updated": "2024-03-11T11:09:02.134123Z",
+    "version": "89857d1",
+    "last_updated": "2024-03-11T14:04:00.882563Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -384,7 +384,7 @@
             "gender": "Female",
             "birthday": "08-17",
             "release_version": "4.5",
-            "release_date": null,
+            "release_date": "2024-03-13",
             "photo": "assets/images/characters/chiori.png",
             "full_photo": "assets/images/full-characters/chiori.png",
             "is_released": false,
