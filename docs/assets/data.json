@@ -1,6 +1,6 @@
 {
-    "version": "74881c6",
-    "last_updated": "2024-03-16T19:29:36.830968Z",
+    "version": "a9f7b28",
+    "last_updated": "2024-03-28T11:41:17.922604Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -384,7 +384,7 @@
             "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "08-22",
             "release_version": "4.6",
             "release_date": null,
             "photo": "assets/images/characters/arlecchino.png",
