@@ -1,6 +1,6 @@
 {
-    "version": "a9f7b28",
-    "last_updated": "2024-03-28T11:41:17.922604Z",
+    "version": "5c80cac",
+    "last_updated": "2024-04-07T21:00:25.690058Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -251,26 +251,6 @@
                 "This is very old data, from March 2022"
             ]
         },
-        "Sethos": {
-            "name": "Sethos",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Sumeru",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sethos.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Cyno's second story quest"
-            ]
-        },
         "Sigewinne": {
             "name": "Sigewinne",
             "display_name": null,
@@ -373,6 +353,26 @@
             "is_outdated": false,
             "notes": [
                 "Appears in Fontaine's archon quest"
+            ]
+        },
+        "Sethos": {
+            "name": "Sethos",
+            "display_name": null,
+            "rarity": "4",
+            "element": null,
+            "arkhe": null,
+            "weapon": "Bow",
+            "region": "Sumeru",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "4.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sethos.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Cyno's second story quest"
             ]
         },
         "Arlecchino": {
