@@ -1,6 +1,6 @@
 {
-    "version": "5c80cac",
-    "last_updated": "2024-04-07T21:00:25.690058Z",
+    "version": "bdee444",
+    "last_updated": "2024-04-10T11:34:06.521205Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -251,28 +251,6 @@
                 "This is very old data, from March 2022"
             ]
         },
-        "Sigewinne": {
-            "name": "Sigewinne",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Hydro",
-            "arkhe": "Ousia",
-            "weapon": "Bow",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sigewinne.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Nurse",
-                "Appears in Fontaine's archon quest",
-                "Expected to release during v4.x"
-            ]
-        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -373,6 +351,28 @@
             "is_outdated": false,
             "notes": [
                 "Appears in Cyno's second story quest"
+            ]
+        },
+        "Sigewinne": {
+            "name": "Sigewinne",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Hydro",
+            "arkhe": "Ousia",
+            "weapon": "Bow",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "4.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sigewinne.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Nurse",
+                "Appears in Fontaine's archon quest",
+                "Expected to release during v4.x"
             ]
         },
         "Arlecchino": {
