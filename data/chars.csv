@@ -5,7 +5,7 @@ Alice,,,,N/A,,Mondstadt,Female,,,
 Aloy,,5,Cryo,N/A,Bow,,Female,04-04,2.1,R
 Amber,,4,Pyro,N/A,Bow,Mondstadt,Female,08-10,1.0,R
 Arataki Itto,Itto,5,Geo,N/A,Claymore,Inazuma,Male,06-01,2.3,2021-12-14
-Arlecchino,,5,Pyro,,Polearm,Fontaine,Female,08-22,4.6,
+Arlecchino,,5,Pyro,N/A,Polearm,Fontaine,Female,08-22,4.6,R
 Baizhu,,5,Dendro,N/A,Catalyst,Liyue,Male,04-25,3.6,2023-05-02
 Barbara,,4,Hydro,N/A,Catalyst,Mondstadt,Female,07-05,1.0,R
 Beidou,,4,Electro,N/A,Claymore,Liyue,Female,02-14,1.0,R
@@ -71,7 +71,7 @@ Razor,,4,Electro,N/A,Claymore,Mondstadt,Male,09-09,1.0,R
 Rosaria,,4,Cryo,N/A,Polearm,Mondstadt,Female,01-24,1.4,2021-04-06
 Sangonomiya Kokomi,Kokomi,5,Hydro,N/A,Catalyst,Inazuma,Female,02-22,2.1,2021-09-21
 Sayu,,4,Anemo,N/A,Claymore,Inazuma,Female,10-19,2.0,2021-08-10
-Sethos,,4,,N/A,Bow,Sumeru,Male,,4.7,
+Sethos,,4,Electro,N/A,Bow,Sumeru,Male,,4.7,
 Shenhe,,5,Cryo,N/A,Polearm,Liyue,Female,03-10,2.4,R
 Shikanoin Heizou,Heizou,4,Anemo,N/A,Catalyst,Inazuma,Male,07-24,2.8,R
 Sigewinne,,5,Hydro,Ousia,Bow,Fontaine,Female,,4.7,
