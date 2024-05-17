@@ -1,6 +1,6 @@
 {
-    "version": "09b9e2c",
-    "last_updated": "2024-04-24T22:09:48.420822Z",
+    "version": "0e662fc",
+    "last_updated": "2024-05-17T04:04:26.246042Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -322,7 +322,7 @@
             "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": "9-20",
+            "birthday": "09-20",
             "release_version": "4.7",
             "release_date": null,
             "photo": "assets/images/characters/clorinde.png",
@@ -342,7 +342,7 @@
             "weapon": "Bow",
             "region": "Sumeru",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "05-31",
             "release_version": "4.7",
             "release_date": null,
             "photo": "assets/images/characters/sethos.png",
@@ -362,7 +362,7 @@
             "weapon": "Bow",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "03-30",
             "release_version": "4.7",
             "release_date": null,
             "photo": "assets/images/characters/sigewinne.png",
