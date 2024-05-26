@@ -1,6 +1,6 @@
 {
-    "version": "d32eb91",
-    "last_updated": "2024-05-24T11:59:14.363760Z",
+    "version": "80db78a",
+    "last_updated": "2024-05-26T11:35:11.380704Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -114,7 +114,7 @@
             "rarity": "5",
             "element": "Dendro",
             "arkhe": "Unknown",
-            "weapon": null,
+            "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
