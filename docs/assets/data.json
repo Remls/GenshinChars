@@ -1,6 +1,6 @@
 {
-    "version": "80db78a",
-    "last_updated": "2024-05-26T11:35:11.380704Z",
+    "version": "515f249",
+    "last_updated": "2024-06-03T10:51:03.151418Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -60,10 +60,11 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/dahlia.png",
             "is_released": false,
-            "is_outdated": false,
+            "is_outdated": true,
             "notes": [
                 "Deacon of the Church of Favonius, similar to Barbara",
-                "Expected to release during v4.x"
+                "Was expected to release during v4.x",
+                "This is based on very old data, from June 2023"
             ]
         },
         "Dainsleif": {
@@ -106,26 +107,6 @@
             "is_outdated": true,
             "notes": [
                 "This is based on very old data, from March 2022"
-            ]
-        },
-        "Emilie": {
-            "name": "Emilie",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Dendro",
-            "arkhe": "Unknown",
-            "weapon": "Polearm",
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Already named in multiple character voicelines"
             ]
         },
         "Iansan": {
@@ -225,10 +206,11 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/mummy_girl.png",
             "is_released": false,
-            "is_outdated": false,
+            "is_outdated": true,
             "notes": [
                 "Unnamed",
-                "Expected to release during v4.x"
+                "Was expected to release during v4.x",
+                "This is based on very old data, from June 2023"
             ]
         },
         "Nafs": {
@@ -310,48 +292,27 @@
             "is_outdated": true,
             "notes": [
                 "Yaoguang is not their actual name, but is rather their title",
-                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan"
+                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
+                "This is based on very old data, from March 2023"
             ]
         },
-        "Clorinde": {
-            "name": "Clorinde",
+        "Emilie": {
+            "name": "Emilie",
             "display_name": null,
             "rarity": "5",
-            "element": "Electro",
+            "element": "Dendro",
             "arkhe": "Pneuma",
-            "weapon": "Sword",
+            "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": "09-20",
-            "release_version": "4.7",
+            "birthday": null,
+            "release_version": "4.8",
             "release_date": null,
-            "photo": "assets/images/characters/clorinde.png",
-            "full_photo": "assets/images/full-characters/clorinde.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/emilie.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Appears in Fontaine's archon quest"
-            ]
-        },
-        "Sethos": {
-            "name": "Sethos",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Sumeru",
-            "gender": "Male",
-            "birthday": "05-31",
-            "release_version": "4.7",
-            "release_date": null,
-            "photo": "assets/images/characters/sethos.png",
-            "full_photo": "assets/images/full-characters/sethos.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Cyno's second story quest"
-            ]
+            "notes": null
         },
         "Sigewinne": {
             "name": "Sigewinne",
@@ -364,16 +325,48 @@
             "gender": "Female",
             "birthday": "03-30",
             "release_version": "4.7",
-            "release_date": null,
+            "release_date": "2024-06-25",
             "photo": "assets/images/characters/sigewinne.png",
             "full_photo": "assets/images/full-characters/sigewinne.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Nurse",
-                "Appears in Fontaine's archon quest",
-                "Expected to release during v4.x"
-            ]
+            "notes": null
+        },
+        "Clorinde": {
+            "name": "Clorinde",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": "Pneuma",
+            "weapon": "Sword",
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": "09-20",
+            "release_version": "4.7",
+            "release_date": "2024-06-05",
+            "photo": "assets/images/characters/clorinde.png",
+            "full_photo": "assets/images/full-characters/clorinde.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Sethos": {
+            "name": "Sethos",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Bow",
+            "region": "Sumeru",
+            "gender": "Male",
+            "birthday": "05-31",
+            "release_version": "4.7",
+            "release_date": "2024-06-05",
+            "photo": "assets/images/characters/sethos.png",
+            "full_photo": "assets/images/full-characters/sethos.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Arlecchino": {
             "name": "Arlecchino",
