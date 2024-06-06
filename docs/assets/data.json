@@ -1,6 +1,6 @@
 {
-    "version": "515f249",
-    "last_updated": "2024-06-03T10:51:03.151418Z",
+    "version": "111a0ec",
+    "last_updated": "2024-06-06T08:27:55.376162Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -344,9 +344,9 @@
             "birthday": "09-20",
             "release_version": "4.7",
             "release_date": "2024-06-05",
-            "photo": "assets/images/characters/clorinde.png",
-            "full_photo": "assets/images/full-characters/clorinde.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/clorinde.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/clorinde.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -362,9 +362,9 @@
             "birthday": "05-31",
             "release_version": "4.7",
             "release_date": "2024-06-05",
-            "photo": "assets/images/characters/sethos.png",
-            "full_photo": "assets/images/full-characters/sethos.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sethos.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sethos.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
