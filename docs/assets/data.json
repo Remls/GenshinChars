@@ -1,6 +1,6 @@
 {
-    "version": "ef68220",
-    "last_updated": "2024-06-28T15:57:30.240596Z",
+    "version": "2c028a5",
+    "last_updated": "2024-06-29T00:06:07.176648Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -367,7 +367,7 @@
             "element": "Dendro",
             "arkhe": null,
             "weapon": "Claymore",
-            "region": null,
+            "region": "Natlan",
             "gender": "Male",
             "birthday": null,
             "release_version": "5.0",
@@ -383,11 +383,11 @@
         "Unnamed Hydro": {
             "name": "Unnamed Hydro",
             "display_name": null,
-            "rarity": "4",
+            "rarity": "5",
             "element": "Hydro",
             "arkhe": null,
             "weapon": "Catalyst",
-            "region": null,
+            "region": "Natlan",
             "gender": "Female",
             "birthday": null,
             "release_version": "5.0",
@@ -407,7 +407,7 @@
             "element": "Geo",
             "arkhe": null,
             "weapon": "Polearm",
-            "region": null,
+            "region": "Natlan",
             "gender": "Female",
             "birthday": null,
             "release_version": "5.0",
