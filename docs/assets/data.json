@@ -1,6 +1,6 @@
 {
-    "version": "2c028a5",
-    "last_updated": "2024-06-29T00:06:07.176648Z",
+    "version": "31f7255",
+    "last_updated": "2024-06-29T00:07:51.080154Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -343,7 +343,7 @@
         "Unnamed Geo 2": {
             "name": "Unnamed Geo 2",
             "display_name": null,
-            "rarity": "4",
+            "rarity": null,
             "element": "Geo",
             "arkhe": null,
             "weapon": null,
