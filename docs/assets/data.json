@@ -1,6 +1,6 @@
 {
-    "version": "31f7255",
-    "last_updated": "2024-06-29T00:07:51.080154Z",
+    "version": "57c96a0",
+    "last_updated": "2024-07-13T05:26:54.238357Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -109,26 +109,6 @@
                 "This is based on very old data, from March 2022"
             ]
         },
-        "Iansan": {
-            "name": "Iansan",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/iansan.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview"
-            ]
-        },
         "Ikhfa": {
             "name": "Ikhfa",
             "display_name": null,
@@ -234,28 +214,6 @@
                 "This is based on very old data, from June 2023"
             ]
         },
-        "Murata": {
-            "name": "Murata",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/murata.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Archon of Natlan",
-                "Unknown if this name belongs to the current Archon of Natlan or a previous one",
-                "[2024-06-26] Can be both on-field and off-field, C2 meta, C6 buffs herself and on-field character, has some mechanics that make the whole team survive better"
-            ]
-        },
         "Nafs": {
             "name": "Nafs",
             "display_name": null,
@@ -297,27 +255,6 @@
                 "Appears in Fontaine's archon quest"
             ]
         },
-        "Xbalanque": {
-            "name": "Xbalanque",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Neuvillette's character introduction (drip marketing; mentioned)",
-                "[2024-06-26] Will not be before 5.2"
-            ]
-        },
         "Yaoguang": {
             "name": "Yaoguang",
             "display_name": null,
@@ -340,28 +277,176 @@
                 "This is based on very old data, from March 2023"
             ]
         },
-        "Unnamed Geo 2": {
-            "name": "Unnamed Geo 2",
+        "Iansan": {
+            "name": "Iansan",
             "display_name": null,
-            "rarity": null,
-            "element": "Geo",
+            "rarity": "4",
+            "element": null,
             "arkhe": null,
             "weapon": null,
-            "region": null,
+            "region": "Natlan",
             "gender": "Female",
             "birthday": null,
-            "release_version": "5.1",
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/iansan.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview",
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
+        "Mavuika": {
+            "name": "Mavuika",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/mavuika.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13",
+                "May or may not be the same character as Murata",
+                "May or may not be the Pyro Archon"
+            ]
+        },
+        "Murata": {
+            "name": "Murata",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2024-06-26] Adult female body type, support"
+                "Archon of Natlan",
+                "Unknown if this name belongs to the current Archon of Natlan or a previous one",
+                "May or may not be the same character as Mavuika",
+                "[2024-06-26] Can be both on-field and off-field, C2 meta, C6 buffs herself and on-field character, has some mechanics that make the whole team survive better"
             ]
         },
-        "Unnamed Dendro": {
-            "name": "Unnamed Dendro",
+        "Xbalanque": {
+            "name": "Xbalanque",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Neuvillette's character introduction (drip marketing; mentioned)",
+                "[2024-06-26] Will not be before 5.2"
+            ]
+        },
+        "Citlali": {
+            "name": "Citlali",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Cryo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/citlali.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
+        "Ororon": {
+            "name": "Ororon",
+            "display_name": null,
+            "rarity": "4",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "5.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/ororon.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
+        "Xilonen": {
+            "name": "Xilonen",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.1",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/xilonen.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13",
+                "[2024-06-26] Supposedly a broken support"
+            ]
+        },
+        "Chasca": {
+            "name": "Chasca",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Cryo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.1",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/chasca.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
+        "Kinich": {
+            "name": "Kinich",
             "display_name": null,
             "rarity": "5",
             "element": "Dendro",
@@ -373,15 +458,17 @@
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/kinich.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2024-06-26] Teen male body type, dark-skinned, Dendro DPS (burning/bloom-related)"
+                "Appears in Natlan teaser on 2024-07-13",
+                "Accompanied by a familiar named K'uhul Ajaw (similar to Oz with Fischl)",
+                "[2024-06-26] Dendro DPS (burning/bloom-related)"
             ]
         },
-        "Unnamed Hydro": {
-            "name": "Unnamed Hydro",
+        "Mualani": {
+            "name": "Mualani",
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
@@ -393,15 +480,16 @@
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/mualani.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2024-06-26] Teen female body type, dark-skinned, Hydro DPS, moves quickly on water"
+                "Appears in Natlan teaser on 2024-07-13",
+                "[2024-06-26] Hydro DPS, moves quickly on water"
             ]
         },
-        "Unnamed Geo 1": {
-            "name": "Unnamed Geo 1",
+        "Kachina": {
+            "name": "Kachina",
             "display_name": null,
             "rarity": "4",
             "element": "Geo",
@@ -413,11 +501,11 @@
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/kachina.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2024-06-26] Dark-skinned"
+                "Appears in Natlan teaser on 2024-07-13"
             ]
         },
         "Emilie": {
@@ -2135,6 +2223,11 @@
             "version_number": "5.2",
             "version_name": null,
             "release_date": "2024-11-20"
+        },
+        "5.3": {
+            "version_number": "5.3",
+            "version_name": null,
+            "release_date": "2025-01-01"
         }
     }
 }
