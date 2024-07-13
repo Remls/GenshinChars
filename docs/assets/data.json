@@ -1,6 +1,6 @@
 {
-    "version": "57c96a0",
-    "last_updated": "2024-07-13T05:26:54.238357Z",
+    "version": "431877d",
+    "last_updated": "2024-07-13T05:35:41.703030Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -89,46 +89,6 @@
                 "Appears in multiple archon quests"
             ]
         },
-        "Djajeet": {
-            "name": "Djajeet",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "This is based on very old data, from March 2022"
-            ]
-        },
-        "Ikhfa": {
-            "name": "Ikhfa",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "This is based on very old data, from May 2022"
-            ]
-        },
         "Il Dottore": {
             "name": "Il Dottore",
             "display_name": "Dottore",
@@ -164,7 +124,7 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/m.png",
             "is_released": false,
-            "is_outdated": false,
+            "is_outdated": true,
             "notes": [
                 "Prisoner",
                 "This is likely not her final name",
@@ -212,26 +172,6 @@
                 "Unnamed",
                 "Was expected to release during v4.x",
                 "This is based on very old data, from June 2023"
-            ]
-        },
-        "Nafs": {
-            "name": "Nafs",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "This is very old data, from March 2022"
             ]
         },
         "Skirk": {
