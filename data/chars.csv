@@ -36,7 +36,6 @@ Gaming,,4,Pyro,N/A,Claymore,Liyue,Male,12-22,4.4,R
 Ganyu,,5,Cryo,N/A,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,N/A,Bow,Inazuma,Male,05-18,2.3,2021-12-14
 Hu Tao,,5,Pyro,N/A,Polearm,Liyue,Female,07-15,1.3,2021-03-02
-Iansan,,,,N/A,,Natlan,Female,,,
 Ikhfa,,,,N/A,,,,,,
 Il Dottore,Dottore,,,N/A,Claymore,Snezhnaya,Male,,,
 Jean,,5,Anemo,N/A,Sword,Mondstadt,Female,03-14,1.0,R
@@ -59,7 +58,6 @@ Madame Ping,,5,,N/A,Polearm,Liyue,Female,
 Mika,,4,Cryo,N/A,Polearm,Mondstadt,Male,08-11,3.5,2023-03-21
 Mona,,5,Hydro,N/A,Catalyst,Mondstadt,Female,08-31,1.0,R
 Mummy Girl,,4,Hydro,N/A,Bow,Sumeru,Female,,,
-Murata,,5,Pyro,N/A,,Natlan,Female,,,
 Nafs,,,,N/A,,,Female,,,
 Nahida,,5,Dendro,N/A,Catalyst,Sumeru,Female,10-27,3.2,R
 Navia,,5,Geo,Ousia,Claymore,Fontaine,Female,08-16,4.3,R
@@ -85,7 +83,6 @@ Tighnari,,5,Dendro,N/A,Bow,Sumeru,Male,12-29,3.0,R
 Venti,,5,Anemo,N/A,Bow,Mondstadt,Male,06-16,1.0,R
 Wanderer,,5,Anemo,N/A,Catalyst,Inazuma,Male,01-03,3.3,R
 Wriothesley,,5,Cryo,Ousia,Catalyst,Fontaine,Male,11-23,4.1,2023-10-17
-Xbalanque,,,,N/A,,Natlan,Male,,,
 Xiangling,,4,Pyro,N/A,Polearm,Liyue,Female,11-02,1.0,R
 Xianyun,,5,Anemo,N/A,Catalyst,Liyue,Female,04-11,4.4,R
 Xiao,,5,Anemo,N/A,Polearm,Liyue,Male,04-17,1.3,R
@@ -99,7 +96,17 @@ Yelan,,5,Hydro,N/A,Bow,Liyue,Female,04-20,2.7,R
 Yoimiya,,5,Pyro,N/A,Bow,Inazuma,Female,06-21,2.0,2021-08-10
 Yun Jin,,4,Geo,N/A,Polearm,Liyue,Female,05-21,2.4,R
 Zhongli,,5,Geo,N/A,Polearm,Liyue,Male,12-31,1.1,2020-12-01
-Unnamed Dendro,,5,Dendro,N/A,Claymore,Natlan,Male,,5.0,
-Unnamed Hydro,,5,Hydro,N/A,Catalyst,Natlan,Female,,5.0,
-Unnamed Geo 1,,4,Geo,N/A,Polearm,Natlan,Female,,5.0,
-Unnamed Geo 2,,,Geo,N/A,,,Female,,5.1,
+
+
+
+Kinich,,5,Dendro,N/A,Claymore,Natlan,Male,,5.0,
+Mualani,,5,Hydro,N/A,Catalyst,Natlan,Female,,5.0,
+Kachina,,4,Geo,N/A,Polearm,Natlan,Female,,5.0,
+Xilonen,,5,Geo,N/A,,Natlan,Female,,5.1,
+Chasca,,5,Cryo,N/A,,Natlan,Female,,5.1,
+Ororon,,4,,N/A,,Natlan,Male,,5.2,
+Citlali,,4,Cryo,N/A,,Natlan,Female,,5.3,
+Iansan,,4,,N/A,,Natlan,Female,,,
+Mavuika,,,,N/A,,Natlan,Female,,,
+Murata,,5,Pyro,N/A,,Natlan,Female,,,
+Xbalanque,,,,N/A,,Natlan,Male,,,
