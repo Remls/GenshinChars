@@ -1,6 +1,6 @@
 {
-    "version": "e7374d9",
-    "last_updated": "2024-07-22T12:39:33.074192Z",
+    "version": "dbe76ad",
+    "last_updated": "2024-07-30T11:02:33.623439Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -412,7 +412,7 @@
             "weapon": "Claymore",
             "region": "Natlan",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "11-11",
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/characters/kinich.png",
@@ -455,7 +455,7 @@
             "weapon": "Polearm",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "04-22",
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/characters/kachina.png",
