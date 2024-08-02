@@ -1,6 +1,6 @@
 {
-    "version": "0e6b2e1",
-    "last_updated": "2024-08-02T07:11:02.380186Z",
+    "version": "0ea7a77",
+    "last_updated": "2024-08-02T13:17:04.985073Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -238,28 +238,6 @@
                 "Appears in Natlan teaser on 2024-07-13"
             ]
         },
-        "Mavuika": {
-            "name": "Mavuika",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": "Claymore",
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/mavuika.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Natlan teaser on 2024-07-13",
-                "May or may not be the same character as Murata",
-                "May or may not be the Pyro Archon"
-            ]
-        },
         "Murata": {
             "name": "Murata",
             "display_name": null,
@@ -340,6 +318,28 @@
             "is_outdated": false,
             "notes": [
                 "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
+        "Mavuika": {
+            "name": "Mavuika",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": "Claymore",
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/mavuika.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13",
+                "May or may not be the same character as Murata",
+                "May or may not be the Pyro Archon"
             ]
         },
         "Chasca": {
