@@ -1,6 +1,6 @@
 {
-    "version": "dbe76ad",
-    "last_updated": "2024-07-30T11:02:33.623439Z",
+    "version": "0e6b2e1",
+    "last_updated": "2024-08-02T07:11:02.380186Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -342,6 +342,26 @@
                 "Appears in Natlan teaser on 2024-07-13"
             ]
         },
+        "Chasca": {
+            "name": "Chasca",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Cryo",
+            "arkhe": null,
+            "weapon": "Bow",
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/chasca.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
         "Ororon": {
             "name": "Ororon",
             "display_name": null,
@@ -381,26 +401,6 @@
             "notes": [
                 "Appears in Natlan teaser on 2024-07-13",
                 "[2024-06-26] Supposedly a broken support"
-            ]
-        },
-        "Chasca": {
-            "name": "Chasca",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Cryo",
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.1",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/chasca.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Natlan teaser on 2024-07-13"
             ]
         },
         "Kinich": {
