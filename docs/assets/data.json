@@ -1,6 +1,6 @@
 {
-    "version": "0ea7a77",
-    "last_updated": "2024-08-02T13:17:04.985073Z",
+    "version": "3c4c3b7",
+    "last_updated": "2024-08-05T11:34:49.635507Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -434,7 +434,7 @@
             "weapon": "Catalyst",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "08-03",
             "release_version": "5.0",
             "release_date": null,
             "photo": "assets/images/characters/mualani.png",
