@@ -1,6 +1,6 @@
 {
-    "version": "7515268",
-    "last_updated": "2024-08-15T13:31:50.880203Z",
+    "version": "fc78bbf",
+    "last_updated": "2024-08-15T13:34:41.157917Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -477,10 +477,10 @@
             "gender": "Female",
             "birthday": "09-22",
             "release_version": "4.8",
-            "release_date": null,
+            "release_date": "2024-08-06",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/emilie.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/emilie.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
