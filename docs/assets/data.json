@@ -1,6 +1,6 @@
 {
-    "version": "3c4c3b7",
-    "last_updated": "2024-08-05T11:34:49.635507Z",
+    "version": "7515268",
+    "last_updated": "2024-08-15T13:31:50.880203Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -478,8 +478,8 @@
             "birthday": "09-22",
             "release_version": "4.8",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/emilie.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/emilie.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/emilie.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -2169,7 +2169,7 @@
         },
         "5.0": {
             "version_number": "5.0",
-            "version_name": null,
+            "version_name": "Flowers Resplendent on the Sun-Scorched Sojourn",
             "release_date": "2024-08-28"
         },
         "5.1": {
