@@ -1,6 +1,6 @@
 {
-    "version": "044181a",
-    "last_updated": "2024-08-17T10:08:22.020688Z",
+    "version": "c30510f",
+    "last_updated": "2024-08-17T10:10:27.424791Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -316,9 +316,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Appears in Natlan teaser on 2024-07-13",
-                "May or may not be the same character as Murata",
-                "May or may not be the Pyro Archon"
+                "Archon of Natlan"
             ]
         },
         "Chasca": {
