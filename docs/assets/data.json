@@ -1,6 +1,6 @@
 {
-    "version": "4809979",
-    "last_updated": "2024-08-17T10:05:02.864094Z",
+    "version": "044181a",
+    "last_updated": "2024-08-17T10:08:22.020688Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -302,8 +302,8 @@
         "Mavuika": {
             "name": "Mavuika",
             "display_name": null,
-            "rarity": null,
-            "element": null,
+            "rarity": "5",
+            "element": "Pyro",
             "arkhe": null,
             "weapon": "Claymore",
             "region": "Natlan",
@@ -325,7 +325,7 @@
             "name": "Chasca",
             "display_name": null,
             "rarity": "5",
-            "element": "Cryo",
+            "element": "Anemo",
             "arkhe": null,
             "weapon": "Bow",
             "region": "Natlan",
