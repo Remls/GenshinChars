@@ -1,6 +1,6 @@
 {
-    "version": "c30510f",
-    "last_updated": "2024-08-17T10:10:27.424791Z",
+    "version": "614dc6e",
+    "last_updated": "2024-08-17T10:12:49.573817Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -215,29 +215,6 @@
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
                 "This is based on very old data, from March 2023"
-            ]
-        },
-        "Murata": {
-            "name": "Murata",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Archon of Natlan",
-                "Unknown if this name belongs to the current Archon of Natlan or a previous one",
-                "May or may not be the same character as Mavuika",
-                "[2024-06-26] Can be both on-field and off-field, C2 meta, C6 buffs herself and on-field character, has some mechanics that make the whole team survive better"
             ]
         },
         "Xbalanque": {
