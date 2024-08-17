@@ -1,6 +1,6 @@
 {
-    "version": "614dc6e",
-    "last_updated": "2024-08-17T10:12:49.573817Z",
+    "version": "8b67541",
+    "last_updated": "2024-08-17T10:13:47.053636Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -293,7 +293,8 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Archon of Natlan"
+                "Archon of Natlan",
+                "[2024-06-26] Can be both on-field and off-field, C2 meta, C6 buffs herself and on-field character, has some mechanics that make the whole team survive better"
             ]
         },
         "Chasca": {
