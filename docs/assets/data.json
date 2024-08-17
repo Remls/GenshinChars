@@ -1,6 +1,6 @@
 {
-    "version": "8b67541",
-    "last_updated": "2024-08-17T10:13:47.053636Z",
+    "version": "332865d",
+    "last_updated": "2024-08-17T10:59:38.145812Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -390,7 +390,7 @@
             "gender": "Male",
             "birthday": "11-11",
             "release_version": "5.0",
-            "release_date": null,
+            "release_date": "2024-09-17",
             "photo": "assets/images/characters/kinich.png",
             "full_photo": "assets/images/full-characters/kinich.png",
             "is_released": false,
@@ -412,7 +412,7 @@
             "gender": "Female",
             "birthday": "08-03",
             "release_version": "5.0",
-            "release_date": null,
+            "release_date": "2024-08-28",
             "photo": "assets/images/characters/mualani.png",
             "full_photo": "assets/images/full-characters/mualani.png",
             "is_released": false,
@@ -433,7 +433,7 @@
             "gender": "Female",
             "birthday": "04-22",
             "release_version": "5.0",
-            "release_date": null,
+            "release_date": "2024-08-28",
             "photo": "assets/images/characters/kachina.png",
             "full_photo": "assets/images/full-characters/kachina.png",
             "is_released": false,
