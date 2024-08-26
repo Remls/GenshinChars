@@ -1,6 +1,6 @@
 {
-    "version": "9a0fd29",
-    "last_updated": "2024-08-26T22:49:18.930644Z",
+    "version": "8853be3",
+    "last_updated": "2024-08-26T23:54:32.590954Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -238,6 +238,33 @@
                 "[2024-06-26] Will not be before 5.2"
             ]
         },
+        "Ifa": {
+            "name": "Ifa",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "null": [
+                "",
+                "",
+                ""
+            ],
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Mentioned in character voicelines in v5.0",
+                "From the Flower-Feather Clan",
+                "Sauro-veterinarian"
+            ]
+        },
         "Il Capitano": {
             "name": "Il Capitano",
             "display_name": "Capitano",
@@ -254,7 +281,9 @@
             "full_photo": "assets/images/full-characters/il_capitano.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in Natlan's archon quest"
+            ]
         },
         "Citlali": {
             "name": "Citlali",
