@@ -1,6 +1,6 @@
 {
-    "version": "332865d",
-    "last_updated": "2024-08-17T10:59:38.145812Z",
+    "version": "9a0fd29",
+    "last_updated": "2024-08-26T22:49:18.930644Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -337,6 +337,27 @@
                 "Appears in Natlan teaser on 2024-07-13"
             ]
         },
+        "Iansan": {
+            "name": "Iansan",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Polearm",
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/iansan.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Revealed in Teyvat Chapter Storyline Preview",
+                "Appears in Natlan teaser on 2024-07-13"
+            ]
+        },
         "Xilonen": {
             "name": "Xilonen",
             "display_name": null,
@@ -356,27 +377,6 @@
             "notes": [
                 "Appears in Natlan teaser on 2024-07-13",
                 "[2024-06-26] Supposedly a broken support"
-            ]
-        },
-        "Iansan": {
-            "name": "Iansan",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Polearm",
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.1",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/iansan.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview",
-                "Appears in Natlan teaser on 2024-07-13"
             ]
         },
         "Kinich": {
