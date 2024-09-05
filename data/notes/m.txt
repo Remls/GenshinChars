@@ -1,3 +1,0 @@
-Prisoner
-This is likely not her final name
-[2024-01-05] Not expected to release during v4.x
