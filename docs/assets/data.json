@@ -1,6 +1,6 @@
 {
-    "version": "d858cee",
-    "last_updated": "2024-08-31T01:35:38.014677Z",
+    "version": "175451f",
+    "last_updated": "2024-09-05T05:51:06.274464Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -107,49 +107,6 @@
             "is_outdated": false,
             "notes": [
                 "Appears in Sumeru's archon quest"
-            ]
-        },
-        "M": {
-            "name": "M",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/m.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "Prisoner",
-                "This is likely not her final name",
-                "[2024-01-05] Not expected to release during v4.x"
-            ]
-        },
-        "Madame Ping": {
-            "name": "Madame Ping",
-            "display_name": null,
-            "rarity": "5",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Polearm",
-            "region": "Liyue",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/madame_ping.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Adeptus (known as Streetward Rambler)",
-                "[2024-06-26] playable for 5.x Lantern Rite, her signature weapon is also useful for Xiao (Crit DMG main stat)"
             ]
         },
         "Mummy Girl": {
@@ -264,6 +221,26 @@
                 "Appears in Natlan's archon quest"
             ]
         },
+        "Mizuki": {
+            "name": "Mizuki",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/mizuki.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "This is likely not her real name"
+            ]
+        },
         "Iansan": {
             "name": "Iansan",
             "display_name": null,
@@ -288,10 +265,50 @@
                 "Expected to release in either v5.5 or v5.6"
             ]
         },
+        "Lanya": {
+            "name": "Lanya",
+            "display_name": "Madame Ping",
+            "rarity": "5",
+            "element": null,
+            "arkhe": null,
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/lanya.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Currently an NPC known as Madame Ping",
+                "Adeptus (known as Streetward Rambler)",
+                "[2024-06-26] playable for 5.x Lantern Rite, her signature weapon is also useful for Xiao (Crit DMG main stat)"
+            ]
+        },
+        "Unnamed": {
+            "name": "Unnamed",
+            "display_name": null,
+            "rarity": "4",
+            "element": null,
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": null,
+            "gender": null,
+            "birthday": null,
+            "release_version": "5.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Citlali": {
             "name": "Citlali",
             "display_name": null,
-            "rarity": "4",
+            "rarity": "5",
             "element": "Cryo",
             "arkhe": null,
             "weapon": "Catalyst",
@@ -358,7 +375,7 @@
             "name": "Ororon",
             "display_name": null,
             "rarity": "4",
-            "element": null,
+            "element": "Electro",
             "arkhe": null,
             "weapon": "Bow",
             "region": "Natlan",
@@ -2173,6 +2190,31 @@
             "version_number": "5.3",
             "version_name": null,
             "release_date": "2025-01-01"
+        },
+        "5.4": {
+            "version_number": "5.4",
+            "version_name": null,
+            "release_date": "2025-02-12"
+        },
+        "5.5": {
+            "version_number": "5.5",
+            "version_name": null,
+            "release_date": "2025-03-26"
+        },
+        "5.6": {
+            "version_number": "5.6",
+            "version_name": null,
+            "release_date": "2025-05-07"
+        },
+        "5.7": {
+            "version_number": "5.7",
+            "version_name": null,
+            "release_date": "2025-06-18"
+        },
+        "6.0": {
+            "version_number": "6.0",
+            "version_name": null,
+            "release_date": "2025-07-30"
         }
     }
 }
