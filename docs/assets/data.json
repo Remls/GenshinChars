@@ -1,6 +1,6 @@
 {
-    "version": "175451f",
-    "last_updated": "2024-09-05T05:51:06.274464Z",
+    "version": "4fe08a7",
+    "last_updated": "2024-09-05T17:25:58.242984Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -244,7 +244,7 @@
         "Iansan": {
             "name": "Iansan",
             "display_name": null,
-            "rarity": "4",
+            "rarity": "5",
             "element": "Electro",
             "arkhe": null,
             "weapon": "Polearm",
