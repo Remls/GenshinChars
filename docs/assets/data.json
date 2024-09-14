@@ -1,6 +1,6 @@
 {
-    "version": "4fe08a7",
-    "last_updated": "2024-09-05T17:25:58.242984Z",
+    "version": "7b34f12",
+    "last_updated": "2024-09-14T11:53:17.117907Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -402,7 +402,7 @@
             "weapon": "Sword",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "03-13",
             "release_version": "5.1",
             "release_date": null,
             "photo": "assets/images/characters/xilonen.png",
