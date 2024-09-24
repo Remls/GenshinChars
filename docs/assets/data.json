@@ -1,6 +1,6 @@
 {
-    "version": "6c762fb",
-    "last_updated": "2024-09-16T17:23:17.792474Z",
+    "version": "5b91daf",
+    "last_updated": "2024-09-24T14:25:50.601206Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -428,9 +428,9 @@
             "birthday": "11-11",
             "release_version": "5.0",
             "release_date": "2024-09-17",
-            "photo": "assets/images/characters/kinich.png",
-            "full_photo": "assets/images/full-characters/kinich.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kinich.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kinich.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
