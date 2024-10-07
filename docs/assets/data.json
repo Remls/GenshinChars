@@ -1,6 +1,6 @@
 {
-    "version": "4655d88",
-    "last_updated": "2024-10-07T11:17:45.007536Z",
+    "version": "6e44e80",
+    "last_updated": "2024-10-07T11:27:59.242356Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -186,11 +186,6 @@
             "birthday": null,
             "release_version": null,
             "release_date": null,
-            "null": [
-                "",
-                "",
-                ""
-            ],
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
