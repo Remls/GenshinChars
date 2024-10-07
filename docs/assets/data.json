@@ -1,6 +1,6 @@
 {
-    "version": "767c27a",
-    "last_updated": "2024-10-03T10:09:13.461435Z",
+    "version": "4655d88",
+    "last_updated": "2024-10-07T11:17:45.007536Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -317,7 +317,7 @@
             "birthday": null,
             "release_version": "5.3",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/citlali.png",
             "full_photo": "assets/images/full-characters/citlali.png",
             "is_released": false,
             "is_outdated": false,
@@ -383,7 +383,7 @@
             "birthday": null,
             "release_version": "5.2",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/ororon.png",
             "full_photo": "assets/images/full-characters/ororon.png",
             "is_released": false,
             "is_outdated": false,
