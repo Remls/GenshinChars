@@ -1,6 +1,6 @@
 {
-    "version": "1b01826",
-    "last_updated": "2024-10-14T13:13:42.185466Z",
+    "version": "d2534be",
+    "last_updated": "2024-10-14T13:17:25.808916Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -383,9 +383,8 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Appears in Natlan's archon quest (voice only)",
-                "From the Masters of the Night Wind",
-                "Expected to release in either v5.2 or v5.3"
+                "Appears in Natlan's archon quest",
+                "From the Masters of the Night Wind"
             ]
         },
         "Xilonen": {
@@ -404,12 +403,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xilonen.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appears in Natlan teaser on 2024-07-13",
-                "Blacksmith",
-                "From the Children of Echoes",
-                "[2024-08-30] A broken support as of beta v1"
-            ]
+            "notes": null
         },
         "Kinich": {
             "name": "Kinich",
