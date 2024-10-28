@@ -1,6 +1,6 @@
 {
-    "version": "d2534be",
-    "last_updated": "2024-10-14T13:17:25.808916Z",
+    "version": "1935572",
+    "last_updated": "2024-10-28T11:18:09.552772Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -353,7 +353,7 @@
             "weapon": "Bow",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "12-10",
             "release_version": "5.2",
             "release_date": null,
             "photo": "assets/images/characters/chasca.png",
@@ -375,7 +375,7 @@
             "weapon": "Bow",
             "region": "Natlan",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "10-14",
             "release_version": "5.2",
             "release_date": null,
             "photo": "assets/images/characters/ororon.png",
