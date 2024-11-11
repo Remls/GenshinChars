@@ -1,6 +1,6 @@
 {
-    "version": "778c24a",
-    "last_updated": "2024-11-06T04:04:40.353736Z",
+    "version": "b039ef2",
+    "last_updated": "2024-11-11T08:16:38.214512Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -355,7 +355,7 @@
             "gender": "Female",
             "birthday": "12-10",
             "release_version": "5.2",
-            "release_date": null,
+            "release_date": "2024-11-20",
             "photo": "assets/images/characters/chasca.png",
             "full_photo": "assets/images/full-characters/chasca.png",
             "is_released": false,
@@ -377,7 +377,7 @@
             "gender": "Male",
             "birthday": "10-14",
             "release_version": "5.2",
-            "release_date": null,
+            "release_date": "2024-11-20",
             "photo": "assets/images/characters/ororon.png",
             "full_photo": "assets/images/full-characters/ororon.png",
             "is_released": false,
