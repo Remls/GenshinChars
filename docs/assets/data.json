@@ -1,6 +1,6 @@
 {
-    "version": "b039ef2",
-    "last_updated": "2024-11-11T08:16:38.214512Z",
+    "version": "e512d2c",
+    "last_updated": "2024-11-19T10:11:20.983206Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -216,6 +216,24 @@
                 "Appears in Natlan's archon quest"
             ]
         },
+        "Lanyan": {
+            "name": "Lanyan",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Mizuki": {
             "name": "Mizuki",
             "display_name": null,
@@ -281,6 +299,24 @@
                 "Adeptus (known as Streetward Rambler)",
                 "[2024-06-26] playable for 5.x Lantern Rite, her signature weapon is also useful for Xiao (Crit DMG main stat)"
             ]
+        },
+        "Kimitsuki": {
+            "name": "Kimitsuki",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Inazuma",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Unnamed": {
             "name": "Unnamed",
