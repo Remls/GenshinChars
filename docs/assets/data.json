@@ -1,6 +1,6 @@
 {
-    "version": "e512d2c",
-    "last_updated": "2024-11-19T10:11:20.983206Z",
+    "version": "a96c022",
+    "last_updated": "2024-11-29T10:16:06.404514Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -216,23 +216,28 @@
                 "Appears in Natlan's archon quest"
             ]
         },
-        "Lanyan": {
-            "name": "Lanyan",
+        "Iansan": {
+            "name": "Iansan",
             "display_name": null,
-            "rarity": "4",
-            "element": "Anemo",
+            "rarity": "5",
+            "element": "Electro",
             "arkhe": null,
-            "weapon": null,
-            "region": "Liyue",
+            "weapon": "Polearm",
+            "region": "Natlan",
             "gender": "Female",
             "birthday": null,
-            "release_version": null,
+            "release_version": "5.5",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/iansan.png",
+            "full_photo": "assets/images/full-characters/iansan.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Appears in Natlan's archon quest",
+                "Sports coach",
+                "From the Collective of Plenty",
+                "Expected to release in either v5.5 or v5.6"
+            ]
         },
         "Mizuki": {
             "name": "Mizuki",
@@ -254,54 +259,8 @@
                 "This is likely not her real name"
             ]
         },
-        "Iansan": {
-            "name": "Iansan",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Polearm",
-            "region": "Natlan",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.5",
-            "release_date": null,
-            "photo": "assets/images/characters/iansan.png",
-            "full_photo": "assets/images/full-characters/iansan.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Revealed in Teyvat Chapter Storyline Preview",
-                "Appears in Natlan's archon quest",
-                "Sports coach",
-                "From the Collective of Plenty",
-                "Expected to release in either v5.5 or v5.6"
-            ]
-        },
-        "Lanya": {
-            "name": "Lanya",
-            "display_name": "Madame Ping",
-            "rarity": "5",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Polearm",
-            "region": "Liyue",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.4",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/lanya.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Currently an NPC known as Madame Ping",
-                "Adeptus (known as Streetward Rambler)",
-                "[2024-06-26] playable for 5.x Lantern Rite, her signature weapon is also useful for Xiao (Crit DMG main stat)"
-            ]
-        },
-        "Kimitsuki": {
-            "name": "Kimitsuki",
+        "Kimitsuki Ayano": {
+            "name": "Kimitsuki Ayano",
             "display_name": null,
             "rarity": null,
             "element": null,
@@ -309,24 +268,6 @@
             "weapon": null,
             "region": "Inazuma",
             "gender": "Female",
-            "birthday": null,
-            "release_version": "5.4",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
-        "Unnamed": {
-            "name": "Unnamed",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": null,
-            "gender": null,
             "birthday": null,
             "release_version": "5.4",
             "release_date": null,
@@ -353,8 +294,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Appears in Natlan teaser on 2024-07-13",
-                "Expected to release in either v5.3 or v5.4",
+                "Appears in Natlan's archon quest",
                 "Fortune-teller",
                 "From the Masters of the Night Wind"
             ]
@@ -376,9 +316,26 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Archon of Natlan",
-                "[2024-06-26] Can be both on-field and off-field, C2 meta, C6 buffs herself and on-field character, has some mechanics that make the whole team survive better"
+                "Archon of Natlan"
             ]
+        },
+        "Lan Yan": {
+            "name": "Lan Yan",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.3",
+            "release_date": null,
+            "photo": "assets/images/characters/lan_yan.png",
+            "full_photo": "assets/images/full-characters/lan_yan.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Chasca": {
             "name": "Chasca",
@@ -392,15 +349,11 @@
             "birthday": "12-10",
             "release_version": "5.2",
             "release_date": "2024-11-20",
-            "photo": "assets/images/characters/chasca.png",
-            "full_photo": "assets/images/full-characters/chasca.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chasca.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chasca.png",
+            "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appears in Natlan's archon quest",
-                "Peacemaker",
-                "From the Flower-Feather Clan"
-            ]
+            "notes": null
         },
         "Ororon": {
             "name": "Ororon",
@@ -414,14 +367,11 @@
             "birthday": "10-14",
             "release_version": "5.2",
             "release_date": "2024-11-20",
-            "photo": "assets/images/characters/ororon.png",
-            "full_photo": "assets/images/full-characters/ororon.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ororon.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ororon.png",
+            "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appears in Natlan's archon quest",
-                "From the Masters of the Night Wind"
-            ]
+            "notes": null
         },
         "Xilonen": {
             "name": "Xilonen",
