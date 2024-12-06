@@ -1,6 +1,6 @@
 {
-    "version": "a96c022",
-    "last_updated": "2024-11-29T10:16:06.404514Z",
+    "version": "dffae88",
+    "last_updated": "2024-12-06T02:51:36.696737Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -174,28 +174,6 @@
                 "This is based on very old data, from March 2023"
             ]
         },
-        "Ifa": {
-            "name": "Ifa",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Mentioned in character voicelines in v5.0",
-                "Sauro-veterinarian",
-                "From the Flower-Feather Clan"
-            ]
-        },
         "Il Capitano": {
             "name": "Il Capitano",
             "display_name": "Capitano",
@@ -215,6 +193,46 @@
             "notes": [
                 "Appears in Natlan's archon quest"
             ]
+        },
+        "Ifa": {
+            "name": "Ifa",
+            "display_name": null,
+            "rarity": "4",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Mentioned in character voicelines in v5.0",
+                "Sauro-veterinarian",
+                "From the Flower-Feather Clan"
+            ]
+        },
+        "Varesa": {
+            "name": "Varesa",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Natlan",
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Iansan": {
             "name": "Iansan",
