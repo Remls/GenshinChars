@@ -17,7 +17,6 @@ Chiori,,5,Geo,N/A,Sword,Inazuma,Female,08-17,4.5,R
 Chongyun,,4,Cryo,N/A,Claymore,Liyue,Male,09-07,1.0,R
 Clorinde,,5,Electro,Pneuma,Sword,Fontaine,Female,09-20,4.7,R
 Collei,,4,Dendro,N/A,Bow,Sumeru,Female,05-08,3.0,R
-Columbina,,,,N/A,,Snezhnaya,Female,,,
 Cyno,,5,Electro,N/A,Polearm,Sumeru,Male,06-23,3.1,R
 Dahlia,,4,Hydro,N/A,Catalyst,Mondstadt,Male,,,
 Dainsleif,,,,N/A,,Khaenri'ah,Male,,,
@@ -97,12 +96,14 @@ Kachina,,4,Geo,N/A,Polearm,Natlan,Female,04-22,5.0,R
 Xilonen,,5,Geo,N/A,Sword,Natlan,Female,03-13,5.1,R
 Chasca,,5,Anemo,N/A,Bow,Natlan,Female,12-10,5.2,R
 Ororon,,4,Electro,N/A,Bow,Natlan,Male,10-14,5.2,R
-Citlali,,5,Cryo,N/A,Catalyst,Natlan,Female,,5.3,
-Mavuika,,5,Pyro,N/A,Claymore,Natlan,Female,,5.3,
-Lan Yan,,4,Anemo,N/A,Catalyst,Liyue,Female,,5.3,
-Kimitsuki Ayano,,,,N/A,,Inazuma,Female,,5.4,
+Citlali,,5,Cryo,N/A,Catalyst,Natlan,Female,01-20,5.3,
+Mavuika,,5,Pyro,N/A,Claymore,Natlan,Female,08-28,5.3,
+Lan Yan,,4,Anemo,N/A,Catalyst,Liyue,Female,01-06,5.3,
+Mizuki,,5,Anemo,N/A,,Inazuma,Female,,5.4,
 Iansan,,5,Electro,N/A,Polearm,Natlan,Female,,5.5,
 Mizuki,,5,Electro,N/A,Catalyst,,Female,,5.5,
+Skirk,,,,N/A,,,Female,,5.7,
 Il Capitano,Capitano,,,N/A,Sword,Snezhnaya,Male,,,
+Columbina,,,,N/A,,Snezhnaya,Female,,,
 Ifa,,4,,N/A,,Natlan,Male,,,
-Varesa,,,,N/A,,Natlan,,,,
+Varesa,,5,Electro,N/A,,Natlan,,,,
