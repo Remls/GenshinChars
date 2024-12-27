@@ -1,6 +1,6 @@
 {
-    "version": "dffae88",
-    "last_updated": "2024-12-06T02:51:36.696737Z",
+    "version": "7670599",
+    "last_updated": "2024-12-27T13:17:12.894280Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -23,26 +23,6 @@
                 "Klee's mother",
                 "Voice is known, appearance is unknown",
                 "Appears in the main events in v1.6 and v3.5 (voice only)"
-            ]
-        },
-        "Columbina": {
-            "name": "Columbina",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/columbina.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Expected to release during v5.x"
             ]
         },
         "Dahlia": {
@@ -137,11 +117,11 @@
             "rarity": null,
             "element": null,
             "arkhe": null,
-            "weapon": "Sword",
+            "weapon": null,
             "region": null,
             "gender": "Female",
             "birthday": null,
-            "release_version": null,
+            "release_version": "5.7",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/skirk.png",
@@ -194,6 +174,26 @@
                 "Appears in Natlan's archon quest"
             ]
         },
+        "Columbina": {
+            "name": "Columbina",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/columbina.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Expected to release during v6.x"
+            ]
+        },
         "Ifa": {
             "name": "Ifa",
             "display_name": null,
@@ -219,8 +219,8 @@
         "Varesa": {
             "name": "Varesa",
             "display_name": null,
-            "rarity": null,
-            "element": null,
+            "rarity": "5",
+            "element": "Electro",
             "arkhe": null,
             "weapon": null,
             "region": "Natlan",
@@ -261,27 +261,7 @@
             "name": "Mizuki",
             "display_name": null,
             "rarity": "5",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.5",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/mizuki.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "This is likely not her real name"
-            ]
-        },
-        "Kimitsuki Ayano": {
-            "name": "Kimitsuki Ayano",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
+            "element": "Anemo",
             "arkhe": null,
             "weapon": null,
             "region": "Inazuma",
@@ -290,10 +270,12 @@
             "release_version": "5.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/mizuki.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "This is likely not her real name"
+            ]
         },
         "Citlali": {
             "name": "Citlali",
@@ -304,7 +286,7 @@
             "weapon": "Catalyst",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-20",
             "release_version": "5.3",
             "release_date": null,
             "photo": "assets/images/characters/citlali.png",
@@ -326,7 +308,7 @@
             "weapon": "Claymore",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "08-28",
             "release_version": "5.3",
             "release_date": null,
             "photo": "assets/images/characters/mavuika.png",
@@ -346,7 +328,7 @@
             "weapon": "Catalyst",
             "region": "Liyue",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-06",
             "release_version": "5.3",
             "release_date": null,
             "photo": "assets/images/characters/lan_yan.png",
@@ -2181,7 +2163,7 @@
         },
         "5.3": {
             "version_number": "5.3",
-            "version_name": null,
+            "version_name": "Incandescent Ode of Resurrection",
             "release_date": "2025-01-01"
         },
         "5.4": {
