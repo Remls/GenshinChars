@@ -1,6 +1,6 @@
 {
-    "version": "7670599",
-    "last_updated": "2024-12-27T13:17:12.894280Z",
+    "version": "2b26366",
+    "last_updated": "2024-12-27T13:19:19.780178Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -111,27 +111,6 @@
                 "This is based on very old data, from June 2023"
             ]
         },
-        "Skirk": {
-            "name": "Skirk",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "5.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/skirk.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Tartaglia's master, who taught him to battle during his time in the Abyss",
-                "Appears in Fontaine's archon quest"
-            ]
-        },
         "Yaoguang": {
             "name": "Yaoguang",
             "display_name": null,
@@ -233,6 +212,27 @@
             "is_released": false,
             "is_outdated": false,
             "notes": null
+        },
+        "Skirk": {
+            "name": "Skirk",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/skirk.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Tartaglia's master, who taught him to battle during his time in the Abyss",
+                "Appears in Fontaine's archon quest"
+            ]
         },
         "Iansan": {
             "name": "Iansan",
