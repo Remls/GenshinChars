@@ -1,6 +1,6 @@
 {
-    "version": "c8fe842",
-    "last_updated": "2024-12-31T16:36:57.414480Z",
+    "version": "b70a8de",
+    "last_updated": "2024-12-31T16:39:18.115552Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -263,7 +263,7 @@
             "rarity": "5",
             "element": "Anemo",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Inazuma",
             "gender": "Female",
             "birthday": null,
@@ -274,7 +274,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "This is likely not her real name"
+                "[2024-12-31] This is a standard banner character"
             ]
         },
         "Lan Yan": {
