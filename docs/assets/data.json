@@ -1,6 +1,6 @@
 {
-    "version": "b463e7d",
-    "last_updated": "2024-12-27T13:20:06.363077Z",
+    "version": "c8fe842",
+    "last_updated": "2024-12-31T16:36:57.414480Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -277,6 +277,24 @@
                 "This is likely not her real name"
             ]
         },
+        "Lan Yan": {
+            "name": "Lan Yan",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": "01-06",
+            "release_version": "5.3",
+            "release_date": "2025-01-21",
+            "photo": "assets/images/characters/lan_yan.png",
+            "full_photo": "assets/images/full-characters/lan_yan.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Citlali": {
             "name": "Citlali",
             "display_name": null,
@@ -288,7 +306,7 @@
             "gender": "Female",
             "birthday": "01-20",
             "release_version": "5.3",
-            "release_date": null,
+            "release_date": "2025-01-01",
             "photo": "assets/images/characters/citlali.png",
             "full_photo": "assets/images/full-characters/citlali.png",
             "is_released": false,
@@ -310,7 +328,7 @@
             "gender": "Female",
             "birthday": "08-28",
             "release_version": "5.3",
-            "release_date": null,
+            "release_date": "2025-01-01",
             "photo": "assets/images/characters/mavuika.png",
             "full_photo": "assets/images/full-characters/mavuika.png",
             "is_released": false,
@@ -318,24 +336,6 @@
             "notes": [
                 "Archon of Natlan"
             ]
-        },
-        "Lan Yan": {
-            "name": "Lan Yan",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": "Liyue",
-            "gender": "Female",
-            "birthday": "01-06",
-            "release_version": "5.3",
-            "release_date": null,
-            "photo": "assets/images/characters/lan_yan.png",
-            "full_photo": "assets/images/full-characters/lan_yan.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Chasca": {
             "name": "Chasca",
