@@ -1,6 +1,6 @@
 {
-    "version": "b70a8de",
-    "last_updated": "2024-12-31T16:39:18.115552Z",
+    "version": "ebf87a7",
+    "last_updated": "2025-01-05T08:57:19.714470Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -257,9 +257,9 @@
                 "Expected to release in either v5.5 or v5.6"
             ]
         },
-        "Mizuki": {
-            "name": "Mizuki",
-            "display_name": null,
+        "Yumemizuki Mizuki": {
+            "name": "Yumemizuki Mizuki",
+            "display_name": "Mizuki",
             "rarity": "5",
             "element": "Anemo",
             "arkhe": null,
@@ -269,8 +269,8 @@
             "birthday": null,
             "release_version": "5.4",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/mizuki.png",
+            "photo": "assets/images/characters/yumemizuki_mizuki.png",
+            "full_photo": "assets/images/full-characters/yumemizuki_mizuki.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -307,9 +307,9 @@
             "birthday": "01-20",
             "release_version": "5.3",
             "release_date": "2025-01-01",
-            "photo": "assets/images/characters/citlali.png",
-            "full_photo": "assets/images/full-characters/citlali.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/citlali.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/citlali.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Appears in Natlan's archon quest",
@@ -329,9 +329,9 @@
             "birthday": "08-28",
             "release_version": "5.3",
             "release_date": "2025-01-01",
-            "photo": "assets/images/characters/mavuika.png",
-            "full_photo": "assets/images/full-characters/mavuika.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mavuika.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mavuika.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Archon of Natlan"
