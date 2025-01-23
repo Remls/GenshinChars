@@ -1,6 +1,6 @@
 {
-    "version": "48e7f8c",
-    "last_updated": "2025-01-05T09:01:47.584625Z",
+    "version": "3a424fe",
+    "last_updated": "2025-01-23T02:27:49.441592Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -133,27 +133,6 @@
                 "This is based on very old data, from March 2023"
             ]
         },
-        "Effie": {
-            "name": "Effie",
-            "display_name": null,
-            "rarity": "5",
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Fontaine",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/effie.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Chef girl",
-                "Might be named either Akkefi or Effie (This is translated from the Chinese name, so the English name might be entirely different)"
-            ]
-        },
         "Il Capitano": {
             "name": "Il Capitano",
             "display_name": "Capitano",
@@ -256,6 +235,27 @@
                 "Appears in Fontaine's archon quest"
             ]
         },
+        "Effie": {
+            "name": "Effie",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Fontaine",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/effie.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Chef girl",
+                "Might be named either Akkefi or Effie (This is translated from the Chinese name, so the English name might be entirely different)"
+            ]
+        },
         "Iansan": {
             "name": "Iansan",
             "display_name": null,
@@ -288,7 +288,7 @@
             "weapon": "Catalyst",
             "region": "Inazuma",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "03-16",
             "release_version": "5.4",
             "release_date": null,
             "photo": "assets/images/characters/yumemizuki_mizuki.png",
@@ -311,9 +311,9 @@
             "birthday": "01-06",
             "release_version": "5.3",
             "release_date": "2025-01-21",
-            "photo": "assets/images/characters/lan_yan.png",
-            "full_photo": "assets/images/full-characters/lan_yan.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lan_yan.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lan_yan.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -2190,7 +2190,7 @@
         },
         "5.4": {
             "version_number": "5.4",
-            "version_name": null,
+            "version_name": "Moonlight Amidst Dreams",
             "release_date": "2025-02-12"
         },
         "5.5": {
