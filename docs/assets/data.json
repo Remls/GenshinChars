@@ -1,6 +1,6 @@
 {
-    "version": "3a424fe",
-    "last_updated": "2025-01-23T02:27:49.441592Z",
+    "version": "33b1e12",
+    "last_updated": "2025-02-10T19:52:44.531600Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -196,24 +196,6 @@
                 "From the Flower-Feather Clan"
             ]
         },
-        "Varesa": {
-            "name": "Varesa",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Natlan",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -256,10 +238,28 @@
                 "Might be named either Akkefi or Effie (This is translated from the Chinese name, so the English name might be entirely different)"
             ]
         },
+        "Varesa": {
+            "name": "Varesa",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": "Natlan",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "5.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Iansan": {
             "name": "Iansan",
             "display_name": null,
-            "rarity": "5",
+            "rarity": "4",
             "element": "Electro",
             "arkhe": null,
             "weapon": "Polearm",
@@ -290,7 +290,7 @@
             "gender": "Female",
             "birthday": "03-16",
             "release_version": "5.4",
-            "release_date": null,
+            "release_date": "2025-02-12",
             "photo": "assets/images/characters/yumemizuki_mizuki.png",
             "full_photo": "assets/images/full-characters/yumemizuki_mizuki.png",
             "is_released": false,
