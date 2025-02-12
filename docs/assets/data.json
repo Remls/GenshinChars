@@ -1,6 +1,6 @@
 {
-    "version": "33b1e12",
-    "last_updated": "2025-02-10T19:52:44.531600Z",
+    "version": "d6a3319",
+    "last_updated": "2025-02-12T17:18:41.311623Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -180,7 +180,7 @@
             "rarity": "4",
             "element": null,
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Natlan",
             "gender": "Male",
             "birthday": null,
@@ -250,8 +250,8 @@
             "birthday": null,
             "release_version": "5.5",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/varesa.png",
+            "full_photo": "assets/images/full-characters/varesa.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -291,9 +291,9 @@
             "birthday": "03-16",
             "release_version": "5.4",
             "release_date": "2025-02-12",
-            "photo": "assets/images/characters/yumemizuki_mizuki.png",
-            "full_photo": "assets/images/full-characters/yumemizuki_mizuki.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yumemizuki_mizuki.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yumemizuki_mizuki.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "[2024-12-31] This is a standard banner character"
