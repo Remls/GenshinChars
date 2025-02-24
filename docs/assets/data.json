@@ -1,6 +1,6 @@
 {
-    "version": "78bfd3d",
-    "last_updated": "2025-02-12T17:21:40.718781Z",
+    "version": "7665a1f",
+    "last_updated": "2025-02-24T17:29:56.212309Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -247,7 +247,7 @@
             "weapon": "Catalyst",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "11-15",
             "release_version": "5.5",
             "release_date": null,
             "photo": "assets/images/characters/varesa.png",
@@ -265,7 +265,7 @@
             "weapon": "Polearm",
             "region": "Natlan",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "08-08",
             "release_version": "5.5",
             "release_date": null,
             "photo": "assets/images/characters/iansan.png",
