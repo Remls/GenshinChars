@@ -1,6 +1,6 @@
 {
-    "version": "583a10a",
-    "last_updated": "2025-03-15T17:00:53.971763Z",
+    "version": "568d2f8",
+    "last_updated": "2025-03-15T17:02:15.991667Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -2195,7 +2195,7 @@
         },
         "5.5": {
             "version_number": "5.5",
-            "version_name": null,
+            "version_name": "Day of the Flame's Return",
             "release_date": "2025-03-26"
         },
         "5.6": {
