@@ -1,6 +1,6 @@
 {
-    "version": "7665a1f",
-    "last_updated": "2025-02-24T17:29:56.212309Z",
+    "version": "583a10a",
+    "last_updated": "2025-03-15T17:00:53.971763Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -178,7 +178,7 @@
             "name": "Ifa",
             "display_name": null,
             "rarity": "4",
-            "element": null,
+            "element": "Anemo",
             "arkhe": null,
             "weapon": "Catalyst",
             "region": "Natlan",
