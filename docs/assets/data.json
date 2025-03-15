@@ -1,6 +1,6 @@
 {
-    "version": "568d2f8",
-    "last_updated": "2025-03-15T17:02:15.991667Z",
+    "version": "aeb491d",
+    "last_updated": "2025-03-15T17:13:12.430249Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -249,7 +249,7 @@
             "gender": "Female",
             "birthday": "11-15",
             "release_version": "5.5",
-            "release_date": null,
+            "release_date": "2025-03-26",
             "photo": "assets/images/characters/varesa.png",
             "full_photo": "assets/images/full-characters/varesa.png",
             "is_released": false,
@@ -267,7 +267,7 @@
             "gender": "Female",
             "birthday": "08-08",
             "release_version": "5.5",
-            "release_date": null,
+            "release_date": "2025-03-26",
             "photo": "assets/images/characters/iansan.png",
             "full_photo": "assets/images/full-characters/iansan.png",
             "is_released": false,
