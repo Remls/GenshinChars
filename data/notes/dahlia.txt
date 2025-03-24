@@ -1,3 +1,2 @@
 Deacon of the Church of Favonius, similar to Barbara
-Was expected to release during v4.x
-This is based on very old data, from June 2023
+Expected to release during v5.x
