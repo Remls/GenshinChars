@@ -1,6 +1,6 @@
 {
-    "version": "0f8c9f4",
-    "last_updated": "2025-03-17T02:12:37.594434Z",
+    "version": "7cd584a",
+    "last_updated": "2025-03-24T18:47:36.921825Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -40,11 +40,10 @@
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/dahlia.png",
             "is_released": false,
-            "is_outdated": true,
+            "is_outdated": false,
             "notes": [
                 "Deacon of the Church of Favonius, similar to Barbara",
-                "Was expected to release during v4.x",
-                "This is based on very old data, from June 2023"
+                "Expected to release during v5.x"
             ]
         },
         "Dainsleif": {
@@ -174,33 +173,11 @@
                 "Expected to release during v6.x"
             ]
         },
-        "Ifa": {
-            "name": "Ifa",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": "Natlan",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/ifa.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Mentioned in character voicelines in v5.0",
-                "Sauro-veterinarian",
-                "From the Flower-Feather Clan"
-            ]
-        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
-            "rarity": null,
-            "element": null,
+            "rarity": "5",
+            "element": "Cryo",
             "arkhe": null,
             "weapon": "Sword",
             "region": null,
@@ -217,25 +194,47 @@
                 "Appears in Fontaine's archon quest"
             ]
         },
-        "Effie": {
-            "name": "Effie",
+        "Escoffier": {
+            "name": "Escoffier",
             "display_name": null,
             "rarity": "5",
-            "element": null,
+            "element": "Cryo",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
             "birthday": null,
             "release_version": "5.6",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/effie.png",
+            "full_photo": "assets/images/full-characters/escoffier.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Chef girl",
-                "Might be named either Akkefi or Effie (This is translated from the Chinese name, so the English name might be entirely different)"
+                "Chef girl from Fontaine"
+            ]
+        },
+        "Ifa": {
+            "name": "Ifa",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": "Natlan",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "5.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/ifa.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Mentioned in character voicelines in v5.0",
+                "Appears in-game in v5.5",
+                "Sauro-veterinarian",
+                "From the Flower-Feather Clan"
             ]
         },
         "Varesa": {
@@ -272,12 +271,7 @@
             "full_photo": "assets/images/full-characters/iansan.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Appears in Natlan's archon quest",
-                "Sports coach",
-                "From the Collective of Plenty",
-                "Expected to release in either v5.5 or v5.6"
-            ]
+            "notes": null
         },
         "Yumemizuki Mizuki": {
             "name": "Yumemizuki Mizuki",
@@ -295,9 +289,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yumemizuki_mizuki.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "[2024-12-31] This is a standard banner character"
-            ]
+            "notes": null
         },
         "Lan Yan": {
             "name": "Lan Yan",
@@ -333,11 +325,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/citlali.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appears in Natlan's archon quest",
-                "Fortune-teller",
-                "From the Masters of the Night Wind"
-            ]
+            "notes": null
         },
         "Mavuika": {
             "name": "Mavuika",
