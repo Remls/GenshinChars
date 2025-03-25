@@ -1,6 +1,6 @@
 {
-    "version": "7cd584a",
-    "last_updated": "2025-03-24T18:47:36.921825Z",
+    "version": "754f0d9",
+    "last_updated": "2025-03-25T04:21:37.169477Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -199,7 +199,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Cryo",
-            "arkhe": null,
+            "arkhe": "Ousia",
             "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
