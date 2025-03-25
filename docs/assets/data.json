@@ -1,6 +1,6 @@
 {
-    "version": "754f0d9",
-    "last_updated": "2025-03-25T04:21:37.169477Z",
+    "version": "84920f4",
+    "last_updated": "2025-03-25T04:29:34.896194Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -478,7 +478,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Hydro",
-            "arkhe": "Pneuma",
+            "arkhe": "Ousia",
             "weapon": "Bow",
             "region": "Fontaine",
             "gender": "Female",
@@ -496,7 +496,7 @@
             "display_name": null,
             "rarity": "5",
             "element": "Electro",
-            "arkhe": "Pneuma",
+            "arkhe": "Ousia",
             "weapon": "Sword",
             "region": "Fontaine",
             "gender": "Female",
