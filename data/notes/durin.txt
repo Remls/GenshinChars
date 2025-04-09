@@ -1,0 +1,3 @@
+Dragon slain by Dvalin
+Body currently rests on Dragonspine
+Expected to release during 6.x
