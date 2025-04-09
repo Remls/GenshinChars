@@ -1,6 +1,6 @@
 {
-    "version": "84920f4",
-    "last_updated": "2025-03-25T04:29:34.896194Z",
+    "version": "b6c100e",
+    "last_updated": "2025-04-09T07:54:53.185511Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -173,6 +173,28 @@
                 "Expected to release during v6.x"
             ]
         },
+        "Durin": {
+            "name": "Durin",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Mondstadt",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Dragon slain by Dvalin",
+                "Body currently rests on Dragonspine",
+                "Expected to release during 6.x"
+            ]
+        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -203,16 +225,14 @@
             "weapon": "Polearm",
             "region": "Fontaine",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "06-08",
             "release_version": "5.6",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/escoffier.png",
             "full_photo": "assets/images/full-characters/escoffier.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Chef girl from Fontaine"
-            ]
+            "notes": null
         },
         "Ifa": {
             "name": "Ifa",
@@ -223,19 +243,14 @@
             "weapon": "Catalyst",
             "region": "Natlan",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "03-23",
             "release_version": "5.6",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/ifa.png",
             "full_photo": "assets/images/full-characters/ifa.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Mentioned in character voicelines in v5.0",
-                "Appears in-game in v5.5",
-                "Sauro-veterinarian",
-                "From the Flower-Feather Clan"
-            ]
+            "notes": null
         },
         "Varesa": {
             "name": "Varesa",
@@ -249,9 +264,9 @@
             "birthday": "11-15",
             "release_version": "5.5",
             "release_date": "2025-03-26",
-            "photo": "assets/images/characters/varesa.png",
-            "full_photo": "assets/images/full-characters/varesa.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/varesa.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/varesa.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -267,9 +282,9 @@
             "birthday": "08-08",
             "release_version": "5.5",
             "release_date": "2025-03-26",
-            "photo": "assets/images/characters/iansan.png",
-            "full_photo": "assets/images/full-characters/iansan.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/iansan.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/iansan.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
