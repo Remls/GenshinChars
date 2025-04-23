@@ -1,6 +1,6 @@
 {
-    "version": "b6c100e",
-    "last_updated": "2025-04-09T07:54:53.185511Z",
+    "version": "266bd8c",
+    "last_updated": "2025-04-23T05:01:48.543195Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -2203,7 +2203,7 @@
         },
         "5.6": {
             "version_number": "5.6",
-            "version_name": null,
+            "version_name": "Paralogism",
             "release_date": "2025-05-07"
         },
         "5.7": {
