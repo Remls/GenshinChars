@@ -1,6 +1,6 @@
 {
-    "version": "266bd8c",
-    "last_updated": "2025-04-23T05:01:48.543195Z",
+    "version": "c5fee4f",
+    "last_updated": "2025-04-30T12:27:58.872066Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -2215,6 +2215,11 @@
             "version_number": "5.8",
             "version_name": null,
             "release_date": "2025-07-30"
+        },
+        "6.0": {
+            "version_number": "6.0",
+            "version_name": "Song of the Welkin Moon",
+            "release_date": "2025-09-10"
         }
     }
 }
