@@ -1,6 +1,6 @@
 {
-    "version": "c5fee4f",
-    "last_updated": "2025-04-30T12:27:58.872066Z",
+    "version": "19e9d83",
+    "last_updated": "2025-05-16T10:25:19.686723Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -23,27 +23,6 @@
                 "Klee's mother",
                 "Voice is known, appearance is unknown",
                 "Appears in the main events in v1.6 and v3.5 (voice only)"
-            ]
-        },
-        "Dahlia": {
-            "name": "Dahlia",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Hydro",
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": "Mondstadt",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/dahlia.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Deacon of the Church of Favonius, similar to Barbara",
-                "Expected to release during v5.x"
             ]
         },
         "Dainsleif": {
@@ -195,6 +174,27 @@
                 "Expected to release during 6.x"
             ]
         },
+        "Dahlia": {
+            "name": "Dahlia",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Hydro",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "5.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/dahlia.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Deacon of the Church of Favonius, similar to Barbara",
+                "Expected to release during v5.x"
+            ]
+        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -227,10 +227,10 @@
             "gender": "Female",
             "birthday": "06-08",
             "release_version": "5.6",
-            "release_date": null,
-            "photo": "assets/images/characters/escoffier.png",
-            "full_photo": "assets/images/full-characters/escoffier.png",
-            "is_released": false,
+            "release_date": "2025-05-07",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/escoffier.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/escoffier.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -245,10 +245,10 @@
             "gender": "Male",
             "birthday": "03-23",
             "release_version": "5.6",
-            "release_date": null,
-            "photo": "assets/images/characters/ifa.png",
-            "full_photo": "assets/images/full-characters/ifa.png",
-            "is_released": false,
+            "release_date": "2025-05-07",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ifa.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ifa.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
