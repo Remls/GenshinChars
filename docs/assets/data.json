@@ -1,6 +1,6 @@
 {
-    "version": "19e9d83",
-    "last_updated": "2025-05-16T10:25:19.686723Z",
+    "version": "1fa7e85",
+    "last_updated": "2025-05-20T10:43:32.480789Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -22,7 +22,7 @@
                 "A member of the Hexenzirkel",
                 "Klee's mother",
                 "Voice is known, appearance is unknown",
-                "Appears in the main events in v1.6 and v3.5 (voice only)"
+                "Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)"
             ]
         },
         "Dainsleif": {
@@ -174,27 +174,6 @@
                 "Expected to release during 6.x"
             ]
         },
-        "Dahlia": {
-            "name": "Dahlia",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Hydro",
-            "arkhe": null,
-            "weapon": "Sword",
-            "region": "Mondstadt",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "5.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/dahlia.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Deacon of the Church of Favonius, similar to Barbara",
-                "Expected to release during v5.x"
-            ]
-        },
         "Skirk": {
             "name": "Skirk",
             "display_name": null,
@@ -204,17 +183,32 @@
             "weapon": "Sword",
             "region": null,
             "gender": "Female",
-            "birthday": null,
+            "birthday": "11-23",
             "release_version": "5.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "release_date": "2025-06-18",
+            "photo": "assets/images/characters/skirk.png",
             "full_photo": "assets/images/full-characters/skirk.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Tartaglia's master, who taught him to battle during his time in the Abyss",
-                "Appears in Fontaine's archon quest"
-            ]
+            "notes": null
+        },
+        "Dahlia": {
+            "name": "Dahlia",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Hydro",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "gender": "Male",
+            "birthday": "05-25",
+            "release_version": "5.7",
+            "release_date": "2025-06-18",
+            "photo": "assets/images/characters/dahlia.png",
+            "full_photo": "assets/images/full-characters/dahlia.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Escoffier": {
             "name": "Escoffier",
@@ -354,8 +348,8 @@
             "birthday": "08-28",
             "release_version": "5.3",
             "release_date": "2025-01-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mavuika.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mavuika.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -446,8 +440,8 @@
             "birthday": "08-03",
             "release_version": "5.0",
             "release_date": "2024-08-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mualani.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mualani.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -554,8 +548,8 @@
             "birthday": "08-22",
             "release_version": "4.6",
             "release_date": "2024-04-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arlecchino.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arlecchino.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -608,8 +602,8 @@
             "birthday": "04-11",
             "release_version": "4.4",
             "release_date": "2024-01-31",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xianyun.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xianyun.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -680,8 +674,8 @@
             "birthday": "10-13",
             "release_version": "4.2",
             "release_date": "2023-11-08",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/furina.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/furina.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -718,8 +712,8 @@
             "birthday": "12-18",
             "release_version": "4.1",
             "release_date": "2023-09-27",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/neuvillette.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/neuvillette.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -792,8 +786,8 @@
             "birthday": "01-22",
             "release_version": "3.7",
             "release_date": "2023-05-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kirara.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kirara.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -900,8 +894,8 @@
             "birthday": "03-06",
             "release_version": "3.4",
             "release_date": "2023-01-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yaoyao.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yaoyao.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -956,8 +950,8 @@
             "birthday": "12-19",
             "release_version": "3.2",
             "release_date": "2022-11-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/layla.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/layla.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1084,8 +1078,8 @@
             "birthday": "12-29",
             "release_version": "3.0",
             "release_date": "2022-08-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tighnari.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1156,8 +1150,8 @@
             "birthday": "03-26",
             "release_version": "2.6",
             "release_date": "2022-03-30",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayato.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1174,8 +1168,8 @@
             "birthday": "06-27",
             "release_version": "2.5",
             "release_date": "2022-02-16",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yae_miko.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1321,8 +1315,8 @@
             "birthday": "07-14",
             "release_version": "2.1",
             "release_date": "2021-09-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kujou_sara.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1359,8 +1353,8 @@
             "birthday": "10-19",
             "release_version": "2.0",
             "release_date": "2021-08-10",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sayu.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1449,8 +1443,8 @@
             "birthday": "07-28",
             "release_version": "1.5",
             "release_date": "2021-04-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yanfei.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1557,8 +1551,8 @@
             "birthday": "10-16",
             "release_version": "1.1",
             "release_date": "2020-12-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xinyan.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1865,8 +1859,8 @@
             "birthday": "08-26",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ningguang.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1883,8 +1877,8 @@
             "birthday": "03-21",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/noelle.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
