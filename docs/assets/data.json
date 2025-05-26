@@ -1,6 +1,6 @@
 {
-    "version": "717955f",
-    "last_updated": "2025-05-20T21:40:46.853551Z",
+    "version": "206a915",
+    "last_updated": "2025-05-26T12:06:12.605203Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -183,7 +183,7 @@
             "weapon": "Sword",
             "region": null,
             "gender": "Female",
-            "birthday": "11-23",
+            "birthday": "11-05",
             "release_version": "5.7",
             "release_date": "2025-06-18",
             "photo": "assets/images/characters/skirk.png",
