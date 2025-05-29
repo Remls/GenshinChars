@@ -1,6 +1,6 @@
 {
-    "version": "298c0c3",
-    "last_updated": "2025-05-29T04:26:12.269999Z",
+    "version": "33b355f",
+    "last_updated": "2025-05-29T05:49:30.461554Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -284,6 +284,24 @@
                 "Revived during the events of the v5.6 Archon Quest",
                 "[2025-05-29] Expected to release in v6.1"
             ]
+        },
+        "Unnamed": {
+            "name": "Unnamed",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": null,
+            "birthday": null,
+            "release_version": "5.8",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Skirk": {
             "name": "Skirk",
