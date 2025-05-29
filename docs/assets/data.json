@@ -1,6 +1,6 @@
 {
-    "version": "33b355f",
-    "last_updated": "2025-05-29T05:49:30.461554Z",
+    "version": "4173f2b",
+    "last_updated": "2025-05-29T21:15:05.052458Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -31,7 +31,7 @@
             "rarity": null,
             "element": null,
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Khaenri'ah",
             "gender": "Male",
             "birthday": null,
