@@ -1,1 +1,2 @@
-Expected to release during v6.x
+3rd of the Fatui Harbingers
+[2025-05-29] Expected to release in v6.2

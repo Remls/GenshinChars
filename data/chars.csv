@@ -33,7 +33,6 @@ Gaming,,4,Pyro,N/A,Claymore,Liyue,Male,12-22,4.4,R
 Ganyu,,5,Cryo,N/A,Bow,Liyue,Female,12-02,1.2,2021-01-12
 Gorou,,4,Geo,N/A,Bow,Inazuma,Male,05-18,2.3,2021-12-14
 Hu Tao,,5,Pyro,N/A,Polearm,Liyue,Female,07-15,1.3,2021-03-02
-Il Dottore,Dottore,,,N/A,Claymore,Snezhnaya,Male,,,
 Jean,,5,Anemo,N/A,Sword,Mondstadt,Female,03-14,1.0,R
 Kaedehara Kazuha,Kazuha,5,Anemo,N/A,Sword,Inazuma,Male,10-29,1.6,2021-06-29
 Kaeya,,4,Cryo,N/A,Sword,Mondstadt,Male,11-30,1.0,R
@@ -105,5 +104,12 @@ Ifa,,4,Anemo,N/A,Catalyst,Natlan,Male,03-23,5.6,R
 Skirk,,5,Cryo,N/A,Sword,,Female,11-05,5.7,R
 Dahlia,,4,Hydro,N/A,Sword,Mondstadt,Male,05-25,5.7,R
 Il Capitano,Capitano,,,N/A,Sword,Snezhnaya,Male,,,
-Columbina,,,,N/A,,Snezhnaya,Female,,,
-Durin,,,,N/A,,Mondstadt,Male,,,
+
+Barbeloth,,,,N/A,,,Female,,,
+Columbina,,5,,N/A,,Snezhnaya,Female,,6.2,
+Il Dottore,Dottore,,Electro,N/A,Claymore,Snezhnaya,Male,,6.5,
+Varka,,,Anemo,N/A,,Mondstadt,Male,,6.4,
+Unknown Geo Officer,,,,N/A,,,,,,
+Durin,,,Anemo,N/A,,,Male,,6.1,
+Curatorium Boss,,,,N/A,,Snezhnaya,Female,,,
+Gold-Eyed Celadon Mare,,,,N/A,,Liyue,Female,,,
