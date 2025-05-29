@@ -1,6 +1,6 @@
 {
-    "version": "0cfca9f",
-    "last_updated": "2025-05-29T04:09:03.488560Z",
+    "version": "315dd16",
+    "last_updated": "2025-05-29T04:16:44.570139Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -15,7 +15,7 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/alice.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -126,7 +126,7 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/barbeloth.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -191,7 +191,11 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Adeptus-like character from Liyue (not an actual adeptus)",
+                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
+                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
+            ]
         },
         "Il Dottore": {
             "name": "Il Dottore",
@@ -228,7 +232,7 @@
             "release_version": "6.4",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/varka.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -272,7 +276,7 @@
             "release_version": "6.1",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/durin.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
