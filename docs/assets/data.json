@@ -1,6 +1,6 @@
 {
-    "version": "206a915",
-    "last_updated": "2025-05-26T12:06:12.605203Z",
+    "version": "0cfca9f",
+    "last_updated": "2025-05-29T04:09:03.488560Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -45,26 +45,6 @@
                 "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
                 "He also has no visible Vision on his body",
                 "Appears in multiple archon quests"
-            ]
-        },
-        "Il Dottore": {
-            "name": "Il Dottore",
-            "display_name": "Dottore",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": "Claymore",
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/il_dottore.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Appears in Sumeru's archon quest"
             ]
         },
         "Mummy Girl": {
@@ -128,12 +108,55 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
+                "1st of the Fatui Harbingers",
                 "Appears in Natlan's archon quest",
                 "[2025-01-05] Potentially releasing during v6.x"
             ]
         },
-        "Columbina": {
-            "name": "Columbina",
+        "Barbeloth": {
+            "name": "Barbeloth",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "A member of the Hexenzirkel",
+                "Mona's teacher",
+                "The Goddess of Prophecy (to the people of Simulanka)",
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v4.8 and v5.6 (voice only)"
+            ]
+        },
+        "Unknown Geo Officer": {
+            "name": "Unknown Geo Officer",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": null,
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Curatorium Boss": {
+            "name": "Curatorium Boss",
             "display_name": null,
             "rarity": null,
             "element": null,
@@ -145,22 +168,22 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/columbina.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "Expected to release during v6.x"
+                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\""
             ]
         },
-        "Durin": {
-            "name": "Durin",
+        "Gold-Eyed Celadon Mare": {
+            "name": "Gold-Eyed Celadon Mare",
             "display_name": null,
             "rarity": null,
             "element": null,
             "arkhe": null,
             "weapon": null,
-            "region": "Mondstadt",
-            "gender": "Male",
+            "region": "Liyue",
+            "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
@@ -168,10 +191,94 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
+            "notes": null
+        },
+        "Il Dottore": {
+            "name": "Il Dottore",
+            "display_name": "Dottore",
+            "rarity": null,
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Claymore",
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/il_dottore.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "2nd of the Fatui Harbingers",
+                "Appears in Sumeru's archon quest",
+                "[2025-05-29] Expected to release in v6.5 or v6.6"
+            ]
+        },
+        "Varka": {
+            "name": "Varka",
+            "display_name": null,
+            "rarity": null,
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Mondstadt",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Current Grand Master of the Knights of Favonius",
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v5.6 (voice only)",
+                "[2025-05-29] Expected to release sometime during or after v6.4"
+            ]
+        },
+        "Columbina": {
+            "name": "Columbina",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/columbina.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "3rd of the Fatui Harbingers",
+                "[2025-05-29] Expected to release in v6.2"
+            ]
+        },
+        "Durin": {
+            "name": "Durin",
+            "display_name": null,
+            "rarity": null,
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.1",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
             "notes": [
                 "Dragon slain by Dvalin",
-                "Body currently rests on Dragonspine",
-                "Expected to release during 6.x"
+                "Revived during the events of the v5.6 Archon Quest",
+                "[2025-05-29] Expected to release in v6.1"
             ]
         },
         "Skirk": {
@@ -552,7 +659,9 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arlecchino.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "4th of the Fatui Harbingers"
+            ]
         },
         "Chiori": {
             "name": "Chiori",
@@ -935,7 +1044,7 @@
             "is_released": true,
             "is_outdated": false,
             "notes": [
-                "Formerly known as Scaramouche"
+                "Formerly known as Scaramouche, 6th of the Fatui Harbingers"
             ]
         },
         "Layla": {
@@ -1611,7 +1720,9 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tartaglia.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "11th of the Fatui Harbingers"
+            ]
         },
         "Klee": {
             "name": "Klee",
@@ -2214,6 +2325,36 @@
             "version_number": "6.0",
             "version_name": "Song of the Welkin Moon",
             "release_date": "2025-09-10"
+        },
+        "6.1": {
+            "version_number": "6.1",
+            "version_name": null,
+            "release_date": "2025-10-22"
+        },
+        "6.2": {
+            "version_number": "6.2",
+            "version_name": null,
+            "release_date": "2025-12-03"
+        },
+        "6.3": {
+            "version_number": "6.3",
+            "version_name": null,
+            "release_date": "2026-01-14"
+        },
+        "6.4": {
+            "version_number": "6.4",
+            "version_name": null,
+            "release_date": "2026-02-25"
+        },
+        "6.5": {
+            "version_number": "6.5",
+            "version_name": null,
+            "release_date": "2026-04-08"
+        },
+        "6.6": {
+            "version_number": "6.6",
+            "version_name": null,
+            "release_date": "2026-05-20"
         }
     }
 }
