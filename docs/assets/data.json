@@ -1,6 +1,6 @@
 {
-    "version": "315dd16",
-    "last_updated": "2025-05-29T04:16:44.570139Z",
+    "version": "c612f5d",
+    "last_updated": "2025-05-29T04:21:29.940302Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -141,7 +141,7 @@
             "name": "Unknown Geo Officer",
             "display_name": null,
             "rarity": null,
-            "element": null,
+            "element": "Geo",
             "arkhe": null,
             "weapon": null,
             "region": null,
