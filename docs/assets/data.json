@@ -1,6 +1,6 @@
 {
-    "version": "c612f5d",
-    "last_updated": "2025-05-29T04:21:29.940302Z",
+    "version": "298c0c3",
+    "last_updated": "2025-05-29T04:26:12.269999Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -137,9 +137,9 @@
                 "Appears in the main events in v4.8 and v5.6 (voice only)"
             ]
         },
-        "Unknown Geo Officer": {
-            "name": "Unknown Geo Officer",
-            "display_name": null,
+        "Unnamed Geo Officer": {
+            "name": "Unnamed Geo Officer",
+            "display_name": "Unnamed Officer",
             "rarity": null,
             "element": "Geo",
             "arkhe": null,
@@ -177,13 +177,13 @@
         },
         "Gold-Eyed Celadon Mare": {
             "name": "Gold-Eyed Celadon Mare",
-            "display_name": null,
+            "display_name": "Celadon Mare",
             "rarity": null,
             "element": null,
             "arkhe": null,
             "weapon": null,
             "region": "Liyue",
-            "gender": "Female",
+            "gender": null,
             "birthday": null,
             "release_version": null,
             "release_date": null,
