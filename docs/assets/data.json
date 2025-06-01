@@ -1,6 +1,6 @@
 {
-    "version": "4173f2b",
-    "last_updated": "2025-05-29T21:15:05.052458Z",
+    "version": "9421009",
+    "last_updated": "2025-06-01T23:27:44.914817Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -113,6 +113,29 @@
                 "[2025-01-05] Potentially releasing during v6.x"
             ]
         },
+        "Il Dottore": {
+            "name": "Il Dottore",
+            "display_name": "Dottore",
+            "rarity": null,
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Claymore",
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/il_dottore.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "2nd of the Fatui Harbingers",
+                "Appears in Sumeru's archon quest",
+                "[2025-05-29] Expected to release in v6.5 or v6.6",
+                "[2025-06-02] No longer expected to release during 6.x"
+            ]
+        },
         "Barbeloth": {
             "name": "Barbeloth",
             "display_name": null,
@@ -195,28 +218,6 @@
                 "Adeptus-like character from Liyue (not an actual adeptus)",
                 "One of the Eight Adepts that worked together to subdue the god Tao Duo",
                 "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
-            ]
-        },
-        "Il Dottore": {
-            "name": "Il Dottore",
-            "display_name": "Dottore",
-            "rarity": null,
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Claymore",
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "6.5",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/il_dottore.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "2nd of the Fatui Harbingers",
-                "Appears in Sumeru's archon quest",
-                "[2025-05-29] Expected to release in v6.5 or v6.6"
             ]
         },
         "Varka": {
