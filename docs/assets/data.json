@@ -1,6 +1,6 @@
 {
-    "version": "be2c02d",
-    "last_updated": "2025-06-03T04:09:09.998184Z",
+    "version": "ba3d246",
+    "last_updated": "2025-06-04T00:57:17.710539Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -286,15 +286,15 @@
                 "[2025-05-29] Expected to release in v6.1"
             ]
         },
-        "Unnamed": {
-            "name": "Unnamed",
+        "Yennefer": {
+            "name": "Yennefer",
             "display_name": null,
             "rarity": null,
-            "element": null,
+            "element": "Electro",
             "arkhe": null,
             "weapon": null,
             "region": null,
-            "gender": null,
+            "gender": "Female",
             "birthday": null,
             "release_version": "5.8",
             "release_date": null,
