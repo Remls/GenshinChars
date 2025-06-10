@@ -1,6 +1,6 @@
 {
-    "version": "ba3d246",
-    "last_updated": "2025-06-04T00:57:17.710539Z",
+    "version": "d103e19",
+    "last_updated": "2025-06-10T05:40:13.782934Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -136,9 +136,9 @@
                 "[2025-06-02] No longer expected to release during 6.x"
             ]
         },
-        "Barbeloth": {
-            "name": "Barbeloth",
-            "display_name": null,
+        "Nicole Reeyn": {
+            "name": "Nicole Reeyn",
+            "display_name": "Nicole",
             "rarity": null,
             "element": null,
             "arkhe": null,
@@ -149,15 +149,13 @@
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/barbeloth.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "A member of the Hexenzirkel",
-                "Mona's teacher",
-                "The Goddess of Prophecy (to the people of Simulanka)",
                 "Voice is known, appearance is unknown",
-                "Appears in the main events in v4.8 and v5.6 (voice only)"
+                "Appears in the main events in v3.3 and v4.2 (voice only)"
             ]
         },
         "Unnamed Geo Officer": {
@@ -178,9 +176,9 @@
             "is_outdated": false,
             "notes": null
         },
-        "Curatorium Boss": {
-            "name": "Curatorium Boss",
-            "display_name": null,
+        "Boss of the Curatorium of Secrets": {
+            "name": "Boss of the Curatorium of Secrets",
+            "display_name": "Curatorium Boss",
             "rarity": null,
             "element": null,
             "arkhe": null,
@@ -261,7 +259,8 @@
             "is_outdated": false,
             "notes": [
                 "3rd of the Fatui Harbingers",
-                "[2025-05-29] Expected to release in v6.2"
+                "[2025-05-29] Expected to release in v6.2",
+                "[2025-06-04] Not Cryo"
             ]
         },
         "Durin": {
@@ -286,6 +285,44 @@
                 "[2025-05-29] Expected to release in v6.1"
             ]
         },
+        "Unnamed Lightkeeper": {
+            "name": "Unnamed Lightkeeper",
+            "display_name": null,
+            "rarity": null,
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.0",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-06-04] DPS"
+            ]
+        },
+        "High Priestess of the Frostmoon Scions": {
+            "name": "High Priestess of the Frostmoon Scions",
+            "display_name": "High Priestess",
+            "rarity": "5",
+            "element": "Geo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.0",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Yennefer": {
             "name": "Yennefer",
             "display_name": null,
@@ -293,7 +330,7 @@
             "element": "Electro",
             "arkhe": null,
             "weapon": null,
-            "region": null,
+            "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
             "release_version": "5.8",
