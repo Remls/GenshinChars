@@ -1,2 +1,3 @@
 3rd of the Fatui Harbingers
 [2025-05-29] Expected to release in v6.2
+[2025-06-04] Not Cryo
