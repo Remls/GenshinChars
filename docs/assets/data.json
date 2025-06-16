@@ -1,6 +1,6 @@
 {
-    "version": "d103e19",
-    "last_updated": "2025-06-10T05:40:13.782934Z",
+    "version": "bcfd9d9",
+    "last_updated": "2025-06-16T15:16:53.712609Z",
     "characters": {
         "Alice": {
             "name": "Alice",
@@ -329,7 +329,7 @@
             "rarity": null,
             "element": "Electro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
@@ -339,7 +339,9 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "Name not finalised; also known as Inef/Ineva"
+            ]
         },
         "Skirk": {
             "name": "Skirk",
