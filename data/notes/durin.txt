@@ -1,3 +1,4 @@
 Dragon slain by Dvalin
 Revived during the events of the v5.6 Archon Quest
-[2025-05-29] Expected to release in v6.1
+[2025-06-24] Vaporize
+[2025-06-24] DPS

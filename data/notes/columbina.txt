@@ -1,3 +1,4 @@
 3rd of the Fatui Harbingers
-[2025-05-29] Expected to release in v6.2
-[2025-06-04] Not Cryo
+[2025-06-24] "Special Hydro reaction"
+[2025-06-24] Can be support, can be DPS
+[2025-06-24] 6.3 Phase 1

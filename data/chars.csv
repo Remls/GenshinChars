@@ -1,7 +1,6 @@
 name,display_name,rarity,element,arkhe,weapon,region,gender,birthday,release_version,release_date
 Albedo,,5,Geo,N/A,Sword,Mondstadt,Male,09-13,1.2,R
 Alhaitham,,5,Dendro,N/A,Sword,Sumeru,Male,02-11,3.4,R
-Alice,,,,N/A,,Mondstadt,Female,,,
 Aloy,,5,Cryo,N/A,Bow,,Female,04-04,2.1,R
 Amber,,4,Pyro,N/A,Bow,Mondstadt,Female,08-10,1.0,R
 Arataki Itto,Itto,5,Geo,N/A,Claymore,Inazuma,Male,06-01,2.3,2021-12-14
@@ -103,16 +102,19 @@ Escoffier,,5,Cryo,Ousia,Polearm,Fontaine,Female,06-08,5.6,R
 Ifa,,4,Anemo,N/A,Catalyst,Natlan,Male,03-23,5.6,R
 Skirk,,5,Cryo,N/A,Sword,,Female,11-05,5.7,R
 Dahlia,,4,Hydro,N/A,Sword,Mondstadt,Male,05-25,5.7,R
-Yennefer,,,Electro,N/A,Polearm,Snezhnaya,Female,,5.8,
-Il Capitano,Capitano,,,N/A,Sword,Snezhnaya,Male,,,
+Ineffa,,5,Electro,N/A,Polearm,Snezhnaya,Female,04-02,5.8,
 
-Unnamed Lightkeeper,,,Electro,N/A,,Snezhnaya,Male,,6.0,
+Unnamed Lightkeeper,,,Electro,N/A,Bow,Snezhnaya,Male,,6.0,
 High Priestess of the Frostmoon Scions,High Priestess,5,Geo,N/A,,Snezhnaya,Female,,6.0,
-Durin,,,Anemo,N/A,,,Male,,6.1,
-Columbina,,5,,N/A,,Snezhnaya,Female,,6.2,
-Varka,,,Anemo,N/A,,Mondstadt,Male,,6.4,
+Boss of the Curatorium of Secrets,Curatorium Boss,,Pyro,N/A,,Snezhnaya,Female,,6.1,
+Durin,,,Pyro,N/A,,,Male,,6.2,
+Columbina,,5,Hydro,N/A,,Snezhnaya,Female,,6.3,
+White Horse Fairy,,,Anemo,N/A,,,Female,,6.3,
+Varka,,,Anemo,N/A,,Mondstadt,Male,,6.5,
+Nicole Reeyn,Nicole,,Cryo,N/A,,,Female,,6.6,
+Alice,,,Pyro,N/A,,Mondstadt,Female,,6.7,
+Unnamed Snezhnaya Guide,Unnamed Guide,,,N/A,,Snezhnaya,Female,,6.8,
 Il Dottore,Dottore,,Electro,N/A,Claymore,Snezhnaya,Male,,,
-Nicole Reeyn,Nicole,,,N/A,,,Female,,,
 Unnamed Geo Officer,Unnamed Officer,,Geo,N/A,,,,,,
-Boss of the Curatorium of Secrets,Curatorium Boss,,,N/A,,Snezhnaya,Female,,,
 Gold-Eyed Celadon Mare,Celadon Mare,,,N/A,,Liyue,,,,
+Il Capitano,Capitano,,,N/A,Sword,Snezhnaya,Male,,,
