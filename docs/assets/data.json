@@ -1,6 +1,6 @@
 {
-    "version": "70164a2",
-    "last_updated": "2025-07-04T10:54:22.648137Z",
+    "version": "ac163d4",
+    "last_updated": "2025-07-04T10:57:47.431702Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -2470,6 +2470,16 @@
             "version_number": "6.6",
             "version_name": null,
             "release_date": "2026-05-20"
+        },
+        "6.7": {
+            "version_number": "6.7",
+            "version_name": null,
+            "release_date": "2026-07-01"
+        },
+        "6.8": {
+            "version_number": "6.8",
+            "version_name": null,
+            "release_date": "2026-08-12"
         }
     }
 }
