@@ -1,6 +1,6 @@
 {
-    "version": "69bcc52",
-    "last_updated": "2025-07-16T04:32:48.873995Z",
+    "version": "cebc7fe",
+    "last_updated": "2025-07-19T03:30:08.349805Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -66,6 +66,28 @@
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
                 "This is based on very old data, from March 2023"
+            ]
+        },
+        "Aino": {
+            "name": "Aino",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/aino.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appeared in the Nod-Krai teaser during v5.8 livestream",
+                "From the Clink-Clank Krumkake Craftshop",
+                "Designer of Ineffa"
             ]
         },
         "Il Dottore": {
@@ -356,11 +378,11 @@
                 "[2025-06-24] 6.0 Phase 1"
             ]
         },
-        "High Priestess of the Frostmoon Scions": {
-            "name": "High Priestess of the Frostmoon Scions",
-            "display_name": "High Priestess",
+        "Lauma": {
+            "name": "Lauma",
+            "display_name": null,
             "rarity": "5",
-            "element": "Geo",
+            "element": "Dendro",
             "arkhe": null,
             "weapon": null,
             "region": "Snezhnaya",
@@ -369,13 +391,13 @@
             "release_version": "6.0",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/lauma.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2025-06-24] Crystallize",
-                "[2025-06-24] \"Like Nilou\"",
-                "[2025-06-24] 6.0 Phase 2"
+                "Appeared in the Nod-Krai teaser during v5.8 livestream",
+                "From the Frostmoon Scions",
+                "[2025-07-18] Expected to release in v6.0 Phase 2"
             ]
         },
         "Ineffa": {
