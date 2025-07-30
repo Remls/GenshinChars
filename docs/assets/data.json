@@ -1,6 +1,6 @@
 {
-    "version": "cebc7fe",
-    "last_updated": "2025-07-19T03:30:08.349805Z",
+    "version": "b5f8028",
+    "last_updated": "2025-07-30T07:16:46.572662Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -68,27 +68,23 @@
                 "This is based on very old data, from March 2023"
             ]
         },
-        "Aino": {
-            "name": "Aino",
+        "Jahoda": {
+            "name": "Jahoda",
             "display_name": null,
             "rarity": null,
             "element": null,
             "arkhe": null,
-            "weapon": "Sword",
+            "weapon": null,
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
             "release_version": null,
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/aino.png",
+            "full_photo": "assets/images/full-characters/jahoda.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "Appeared in the Nod-Krai teaser during v5.8 livestream",
-                "From the Clink-Clank Krumkake Craftshop",
-                "Designer of Ineffa"
-            ]
+            "notes": null
         },
         "Il Dottore": {
             "name": "Il Dottore",
@@ -175,24 +171,6 @@
                 "[2025-01-05] Potentially releasing during v6.x"
             ]
         },
-        "Unnamed Snezhnaya Guide": {
-            "name": "Unnamed Snezhnaya Guide",
-            "display_name": "Unnamed Guide",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.8",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
         "Alice": {
             "name": "Alice",
             "display_name": null,
@@ -218,6 +196,24 @@
                 "[2025-06-21] \"Big Xiangling\""
             ]
         },
+        "Unnamed Snezhnaya Guide": {
+            "name": "Unnamed Snezhnaya Guide",
+            "display_name": "Unnamed Guide",
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Nicole Reeyn": {
             "name": "Nicole Reeyn",
             "display_name": "Nicole",
@@ -231,7 +227,7 @@
             "release_version": "6.6",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/nicole_reeyn.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -264,6 +260,24 @@
                 "[2025-05-29] Expected to release sometime during or after v6.4",
                 "[2025-06-21] DPS"
             ]
+        },
+        "Nefer": {
+            "name": "Nefer",
+            "display_name": null,
+            "rarity": null,
+            "element": "Dendro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/nefer.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Columbina": {
             "name": "Columbina",
@@ -355,36 +369,13 @@
                 "[2025-06-24] Support"
             ]
         },
-        "Unnamed Lightkeeper": {
-            "name": "Unnamed Lightkeeper",
-            "display_name": null,
-            "rarity": null,
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "6.0",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-06-04] DPS",
-                "[2025-06-21] Apperance: Long white hair, gloomy demeanor. Based on a character from a classic foreign film.",
-                "[2025-06-24] Lunar Electrocharged",
-                "[2025-06-24] 6.0 Phase 1"
-            ]
-        },
         "Lauma": {
             "name": "Lauma",
             "display_name": null,
             "rarity": "5",
             "element": "Dendro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
@@ -400,6 +391,50 @@
                 "[2025-07-18] Expected to release in v6.0 Phase 2"
             ]
         },
+        "Kyryll Chudomirovich Flins": {
+            "name": "Kyryll Chudomirovich Flins",
+            "display_name": "Flins",
+            "rarity": "5",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Polearm",
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.0",
+            "release_date": "2025-09-10",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-06-04] DPS",
+                "[2025-06-24] Lunar Electrocharged",
+                "[2025-06-24] 6.0 Phase 1"
+            ]
+        },
+        "Aino": {
+            "name": "Aino",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Hydro",
+            "arkhe": null,
+            "weapon": "Claymore",
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.0",
+            "release_date": "2025-09-10",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/aino.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Appeared in the Nod-Krai teaser during v5.8 livestream",
+                "From the Clink-Clank Krumkake Craftshop",
+                "Designer of Ineffa"
+            ]
+        },
         "Ineffa": {
             "name": "Ineffa",
             "display_name": null,
@@ -411,10 +446,10 @@
             "gender": "Female",
             "birthday": "04-02",
             "release_version": "5.8",
-            "release_date": null,
-            "photo": "assets/images/characters/ineffa.png",
-            "full_photo": "assets/images/full-characters/ineffa.png",
-            "is_released": false,
+            "release_date": "2025-07-30",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ineffa.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ineffa.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -2497,11 +2532,6 @@
             "version_number": "6.7",
             "version_name": null,
             "release_date": "2026-07-01"
-        },
-        "6.8": {
-            "version_number": "6.8",
-            "version_name": null,
-            "release_date": "2026-08-12"
         }
     }
 }
