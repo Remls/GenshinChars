@@ -1,6 +1,6 @@
 {
-    "version": "b5f8028",
-    "last_updated": "2025-07-30T07:16:46.572662Z",
+    "version": "dd29a4a",
+    "last_updated": "2025-07-30T07:19:40.776659Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -85,6 +85,27 @@
             "is_released": false,
             "is_outdated": false,
             "notes": null
+        },
+        "Sandrone": {
+            "name": "Sandrone",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sandrone.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "7th of the Fatui Harbingers",
+                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
+            ]
         },
         "Il Dottore": {
             "name": "Il Dottore",
