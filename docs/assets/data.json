@@ -1,6 +1,6 @@
 {
-    "version": "dd29a4a",
-    "last_updated": "2025-07-30T07:19:40.776659Z",
+    "version": "8d4df32",
+    "last_updated": "2025-08-05T03:36:29.095982Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -352,7 +352,7 @@
             "element": "Pyro",
             "arkhe": null,
             "weapon": null,
-            "region": null,
+            "region": "Mondstadt",
             "gender": "Male",
             "birthday": null,
             "release_version": "6.2",
