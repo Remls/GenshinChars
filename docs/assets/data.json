@@ -1,6 +1,6 @@
 {
-    "version": "8d4df32",
-    "last_updated": "2025-08-05T03:36:29.095982Z",
+    "version": "ceddd22",
+    "last_updated": "2025-08-14T10:48:02.193752Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -71,10 +71,10 @@
         "Jahoda": {
             "name": "Jahoda",
             "display_name": null,
-            "rarity": null,
+            "rarity": "4",
             "element": null,
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Bow",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
@@ -148,28 +148,6 @@
             "is_outdated": false,
             "notes": null
         },
-        "Gold-Eyed Celadon Mare": {
-            "name": "Gold-Eyed Celadon Mare",
-            "display_name": "Celadon Mare",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Liyue",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Adeptus-like character from Liyue (not an actual adeptus)",
-                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
-                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
-            ]
-        },
         "Il Capitano": {
             "name": "Il Capitano",
             "display_name": "Capitano",
@@ -195,7 +173,7 @@
         "Alice": {
             "name": "Alice",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Pyro",
             "arkhe": null,
             "weapon": null,
@@ -238,7 +216,7 @@
         "Nicole Reeyn": {
             "name": "Nicole Reeyn",
             "display_name": "Nicole",
-            "rarity": null,
+            "rarity": "5",
             "element": "Cryo",
             "arkhe": null,
             "weapon": null,
@@ -261,10 +239,10 @@
         "Varka": {
             "name": "Varka",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Anemo",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Claymore",
             "region": "Mondstadt",
             "gender": "Male",
             "birthday": null,
@@ -285,10 +263,10 @@
         "Nefer": {
             "name": "Nefer",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Dendro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
@@ -306,7 +284,7 @@
             "rarity": "5",
             "element": "Hydro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Catalyst",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
@@ -345,10 +323,32 @@
                 "[2025-06-24] 6.3 Phase 2"
             ]
         },
+        "Gold-Eyed Celadon Mare": {
+            "name": "Gold-Eyed Celadon Mare",
+            "display_name": "Celadon Mare",
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Adeptus-like character from Liyue (not an actual adeptus)",
+                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
+                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
+            ]
+        },
         "Durin": {
             "name": "Durin",
             "display_name": null,
-            "rarity": null,
+            "rarity": "5",
             "element": "Pyro",
             "arkhe": null,
             "weapon": null,
@@ -402,7 +402,7 @@
             "birthday": null,
             "release_version": "6.0",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/lauma.png",
             "full_photo": "assets/images/full-characters/lauma.png",
             "is_released": false,
             "is_outdated": false,
@@ -424,7 +424,7 @@
             "birthday": null,
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
             "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
             "is_released": false,
             "is_outdated": false,
@@ -446,7 +446,7 @@
             "birthday": null,
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/aino.png",
             "full_photo": "assets/images/full-characters/aino.png",
             "is_released": false,
             "is_outdated": false,
