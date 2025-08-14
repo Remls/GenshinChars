@@ -12,7 +12,7 @@ const WEEKDAYS = [
 const REGIONS = [
     'Mondstadt', 'Liyue', 'Inazuma',
     'Sumeru', 'Fontaine', 'Natlan',
-    'Snezhnaya', 'Khaenri\'ah'
+    'Nod-Krai', 'Snezhnaya', 'Khaenri\'ah'
 ]
 
 document.addEventListener('alpine:init', () => {
