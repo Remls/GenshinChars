@@ -1,6 +1,6 @@
 {
-    "version": "26da286",
-    "last_updated": "2025-08-14T11:39:06.828121Z",
+    "version": "196d4e7",
+    "last_updated": "2025-08-14T12:34:52.016963Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -114,7 +114,7 @@
             "element": "Electro",
             "arkhe": null,
             "weapon": "Claymore",
-            "region": "Snezhnaya",
+            "region": "Sumeru",
             "gender": "Male",
             "birthday": null,
             "release_version": null,
@@ -155,7 +155,7 @@
             "element": null,
             "arkhe": null,
             "weapon": "Sword",
-            "region": "Snezhnaya",
+            "region": "Khaenri'ah",
             "gender": "Male",
             "birthday": null,
             "release_version": null,
@@ -267,7 +267,7 @@
             "element": "Dendro",
             "arkhe": null,
             "weapon": "Catalyst",
-            "region": "Nod-Krai",
+            "region": "Sumeru",
             "gender": "Female",
             "birthday": null,
             "release_version": "6.4",
