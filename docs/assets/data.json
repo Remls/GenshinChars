@@ -1,6 +1,6 @@
 {
-    "version": "196d4e7",
-    "last_updated": "2025-08-14T12:34:52.016963Z",
+    "version": "a352346",
+    "last_updated": "2025-08-18T12:53:07.856943Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -399,7 +399,7 @@
             "weapon": "Catalyst",
             "region": "Nod-Krai",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "03-01",
             "release_version": "6.0",
             "release_date": null,
             "photo": "assets/images/characters/lauma.png",
@@ -421,7 +421,7 @@
             "weapon": "Polearm",
             "region": "Nod-Krai",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "10-31",
             "release_version": "6.0",
             "release_date": "2025-09-10",
             "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
