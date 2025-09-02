@@ -1,6 +1,6 @@
 {
-    "version": "7d2e2b4",
-    "last_updated": "2025-09-02T12:07:53.931087Z",
+    "version": "a459447",
+    "last_updated": "2025-09-02T12:11:25.175723Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -85,27 +85,6 @@
             "is_released": false,
             "is_outdated": false,
             "notes": null
-        },
-        "Sandrone": {
-            "name": "Sandrone",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sandrone.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "7th of the Fatui Harbingers",
-                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
-            ]
         },
         "Il Dottore": {
             "name": "Il Dottore",
@@ -195,6 +174,27 @@
                 "[2025-06-21] \"Big Xiangling\""
             ]
         },
+        "Sandrone": {
+            "name": "Sandrone",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sandrone.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "7th of the Fatui Harbingers",
+                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
+            ]
+        },
         "Unnamed Snezhnaya Guide": {
             "name": "Unnamed Snezhnaya Guide",
             "display_name": "Unnamed Guide",
@@ -236,30 +236,6 @@
                 "[2025-06-21] Off-field support (for Alice)"
             ]
         },
-        "Varka": {
-            "name": "Varka",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": "Claymore",
-            "region": "Mondstadt",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "6.5",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/varka.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Current Grand Master of the Knights of Favonius",
-                "Voice is known, appearance is unknown",
-                "Appears in the main events in v5.6 (voice only)",
-                "[2025-05-29] Expected to release sometime during or after v6.4",
-                "[2025-06-21] DPS"
-            ]
-        },
         "Nefer": {
             "name": "Nefer",
             "display_name": null,
@@ -280,6 +256,30 @@
                 "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
                 "[2025-06-24] \"Like Escoffier\"",
                 "[2025-06-24] Support"
+            ]
+        },
+        "Varka": {
+            "name": "Varka",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Claymore",
+            "region": "Mondstadt",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.4",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/varka.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Current Grand Master of the Knights of Favonius",
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v5.6 (voice only)",
+                "[2025-05-29] Expected to release sometime during or after v6.4",
+                "[2025-06-21] DPS"
             ]
         },
         "Columbina": {
