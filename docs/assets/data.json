@@ -1,6 +1,6 @@
 {
-    "version": "12de58b",
-    "last_updated": "2025-08-27T05:06:10.510292Z",
+    "version": "7d2e2b4",
+    "last_updated": "2025-09-02T12:07:53.931087Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -276,7 +276,11 @@
             "full_photo": "assets/images/full-characters/nefer.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
+                "[2025-06-24] \"Like Escoffier\"",
+                "[2025-06-24] Support"
+            ]
         },
         "Columbina": {
             "name": "Columbina",
@@ -368,26 +372,26 @@
                 "[2025-06-24] DPS"
             ]
         },
-        "Boss of the Curatorium of Secrets": {
-            "name": "Boss of the Curatorium of Secrets",
-            "display_name": "Curatorium Boss",
-            "rarity": null,
-            "element": "Pyro",
+        "Kyryll Chudomirovich Flins": {
+            "name": "Kyryll Chudomirovich Flins",
+            "display_name": "Flins",
+            "rarity": "5",
+            "element": "Electro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Polearm",
             "region": "Nod-Krai",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.1",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "gender": "Male",
+            "birthday": "10-31",
+            "release_version": "6.0",
+            "release_date": "2025-09-30",
+            "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
+            "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
-                "[2025-06-24] \"Like Escoffier\"",
-                "[2025-06-24] Support"
+                "[2025-06-04] DPS",
+                "[2025-06-24] Lunar Electrocharged",
+                "[2025-06-24] 6.0 Phase 1"
             ]
         },
         "Lauma": {
@@ -401,7 +405,7 @@
             "gender": "Female",
             "birthday": "03-01",
             "release_version": "6.0",
-            "release_date": null,
+            "release_date": "2025-09-10",
             "photo": "assets/images/characters/lauma.png",
             "full_photo": "assets/images/full-characters/lauma.png",
             "is_released": false,
@@ -410,28 +414,6 @@
                 "Appeared in the Nod-Krai teaser during v5.8 livestream",
                 "From the Frostmoon Scions",
                 "[2025-07-18] Expected to release in v6.0 Phase 2"
-            ]
-        },
-        "Kyryll Chudomirovich Flins": {
-            "name": "Kyryll Chudomirovich Flins",
-            "display_name": "Flins",
-            "rarity": "5",
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Polearm",
-            "region": "Nod-Krai",
-            "gender": "Male",
-            "birthday": "10-31",
-            "release_version": "6.0",
-            "release_date": "2025-09-10",
-            "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
-            "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-06-04] DPS",
-                "[2025-06-24] Lunar Electrocharged",
-                "[2025-06-24] 6.0 Phase 1"
             ]
         },
         "Aino": {
@@ -2301,256 +2283,307 @@
     "versions": {
         "1.0": {
             "version_number": "1.0",
+            "display_version_number": "v1.0",
             "version_name": "Welcome to Teyvat",
             "release_date": "2020-09-28"
         },
         "1.1": {
             "version_number": "1.1",
+            "display_version_number": "v1.1",
             "version_name": "A New Star Approaches",
             "release_date": "2020-11-11"
         },
         "1.2": {
             "version_number": "1.2",
+            "display_version_number": "v1.2",
             "version_name": "The Chalk Prince and the Dragon",
             "release_date": "2020-12-23"
         },
         "1.3": {
             "version_number": "1.3",
+            "display_version_number": "v1.3",
             "version_name": "All That Glitters",
             "release_date": "2021-02-03"
         },
         "1.4": {
             "version_number": "1.4",
+            "display_version_number": "v1.4",
             "version_name": "Invitation of Windblume",
             "release_date": "2021-03-17"
         },
         "1.5": {
             "version_number": "1.5",
+            "display_version_number": "v1.5",
             "version_name": "Beneath the Light of Jadeite",
             "release_date": "2021-04-28"
         },
         "1.6": {
             "version_number": "1.6",
+            "display_version_number": "v1.6",
             "version_name": "Midsummer Island Adventure",
             "release_date": "2021-06-09"
         },
         "2.0": {
             "version_number": "2.0",
+            "display_version_number": "v2.0",
             "version_name": "The Immovable God and the Eternal Euthymia",
             "release_date": "2021-07-21"
         },
         "2.1": {
             "version_number": "2.1",
+            "display_version_number": "v2.1",
             "version_name": "Floating World Under the Moonlight",
             "release_date": "2021-09-01"
         },
         "2.2": {
             "version_number": "2.2",
+            "display_version_number": "v2.2",
             "version_name": "Into the Perilous Labyrinth of Fog",
             "release_date": "2021-10-13"
         },
         "2.3": {
             "version_number": "2.3",
+            "display_version_number": "v2.3",
             "version_name": "Shadows Amidst Snowstorms",
             "release_date": "2021-11-24"
         },
         "2.4": {
             "version_number": "2.4",
+            "display_version_number": "v2.4",
             "version_name": "Fleeting Colors in Flight",
             "release_date": "2022-01-05"
         },
         "2.5": {
             "version_number": "2.5",
+            "display_version_number": "v2.5",
             "version_name": "When the Sakura Bloom",
             "release_date": "2022-02-16"
         },
         "2.6": {
             "version_number": "2.6",
+            "display_version_number": "v2.6",
             "version_name": "Zephyr of the Violet Garden",
             "release_date": "2022-03-30"
         },
         "2.7": {
             "version_number": "2.7",
+            "display_version_number": "v2.7",
             "version_name": "Hidden Dreams in the Depths",
             "release_date": "2022-05-31"
         },
         "2.8": {
             "version_number": "2.8",
+            "display_version_number": "v2.8",
             "version_name": "Summer Fantasia",
             "release_date": "2022-07-13"
         },
         "3.0": {
             "version_number": "3.0",
+            "display_version_number": "v3.0",
             "version_name": "The Morn a Thousand Roses Brings",
             "release_date": "2022-08-24"
         },
         "3.1": {
             "version_number": "3.1",
+            "display_version_number": "v3.1",
             "version_name": "King Deshret and the Three Magi",
             "release_date": "2022-09-28"
         },
         "3.2": {
             "version_number": "3.2",
+            "display_version_number": "v3.2",
             "version_name": "Akasha Pulses, the Kalpa Flame Rises",
             "release_date": "2022-11-02"
         },
         "3.3": {
             "version_number": "3.3",
+            "display_version_number": "v3.3",
             "version_name": "All Senses Clear, All Existence Void",
             "release_date": "2022-12-07"
         },
         "3.4": {
             "version_number": "3.4",
+            "display_version_number": "v3.4",
             "version_name": "The Exquisite Night Chimes",
             "release_date": "2023-01-18"
         },
         "3.5": {
             "version_number": "3.5",
+            "display_version_number": "v3.5",
             "version_name": "Windblume's Breath",
             "release_date": "2023-03-01"
         },
         "3.6": {
             "version_number": "3.6",
+            "display_version_number": "v3.6",
             "version_name": "A Parade of Providence",
             "release_date": "2023-04-12"
         },
         "3.7": {
             "version_number": "3.7",
+            "display_version_number": "v3.7",
             "version_name": "Duel! The Summoners' Summit!",
             "release_date": "2023-05-24"
         },
         "3.8": {
             "version_number": "3.8",
+            "display_version_number": "v3.8",
             "version_name": "Secret Summer Paradise",
             "release_date": "2023-07-05"
         },
         "4.0": {
             "version_number": "4.0",
+            "display_version_number": "v4.0",
             "version_name": "As Light Rain Falls Without Reason",
             "release_date": "2023-08-16"
         },
         "4.1": {
             "version_number": "4.1",
+            "display_version_number": "v4.1",
             "version_name": "To the Stars Shining in the Depths",
             "release_date": "2023-09-27"
         },
         "4.2": {
             "version_number": "4.2",
+            "display_version_number": "v4.2",
             "version_name": "Masquerade of the Guilty",
             "release_date": "2023-11-08"
         },
         "4.3": {
             "version_number": "4.3",
+            "display_version_number": "v4.3",
             "version_name": "Roses and Muskets",
             "release_date": "2023-12-20"
         },
         "4.4": {
             "version_number": "4.4",
+            "display_version_number": "v4.4",
             "version_name": "Vibrant Harriers Aloft in Spring Breeze",
             "release_date": "2024-01-31"
         },
         "4.5": {
             "version_number": "4.5",
+            "display_version_number": "v4.5",
             "version_name": "Blades Weaving Betwixt Brocade",
             "release_date": "2024-03-13"
         },
         "4.6": {
             "version_number": "4.6",
+            "display_version_number": "v4.6",
             "version_name": "Two Worlds Aflame, the Crimson Night Fades",
             "release_date": "2024-04-24"
         },
         "4.7": {
             "version_number": "4.7",
+            "display_version_number": "v4.7",
             "version_name": "An Everlasting Dream Intertwined",
             "release_date": "2024-06-05"
         },
         "4.8": {
             "version_number": "4.8",
+            "display_version_number": "v4.8",
             "version_name": "Summertide Scales and Tales",
             "release_date": "2024-07-17"
         },
         "5.0": {
             "version_number": "5.0",
+            "display_version_number": "v5.0",
             "version_name": "Flowers Resplendent on the Sun-Scorched Sojourn",
             "release_date": "2024-08-28"
         },
         "5.1": {
             "version_number": "5.1",
+            "display_version_number": "v5.1",
             "version_name": "The Rainbow Destined to Burn",
             "release_date": "2024-10-09"
         },
         "5.2": {
             "version_number": "5.2",
+            "display_version_number": "v5.2",
             "version_name": "Tapestry of Spirit and Flame",
             "release_date": "2024-11-20"
         },
         "5.3": {
             "version_number": "5.3",
+            "display_version_number": "v5.3",
             "version_name": "Incandescent Ode of Resurrection",
             "release_date": "2025-01-01"
         },
         "5.4": {
             "version_number": "5.4",
+            "display_version_number": "v5.4",
             "version_name": "Moonlight Amidst Dreams",
             "release_date": "2025-02-12"
         },
         "5.5": {
             "version_number": "5.5",
+            "display_version_number": "v5.5",
             "version_name": "Day of the Flame's Return",
             "release_date": "2025-03-26"
         },
         "5.6": {
             "version_number": "5.6",
+            "display_version_number": "v5.6",
             "version_name": "Paralogism",
             "release_date": "2025-05-07"
         },
         "5.7": {
             "version_number": "5.7",
+            "display_version_number": "v5.7",
             "version_name": "A Space and Time for You",
             "release_date": "2025-06-18"
         },
         "5.8": {
             "version_number": "5.8",
+            "display_version_number": "v5.8",
             "version_name": "Sunspray Summer Resort",
             "release_date": "2025-07-30"
         },
         "6.0": {
             "version_number": "6.0",
-            "version_name": "Song of the Welkin Moon: Segue \u2014 A Dance of Snowy Tides and Hoarfrost Groves",
+            "display_version_number": "Luna I",
+            "version_name": "A Dance of Snowy Tides and Hoarfrost Groves",
             "release_date": "2025-09-10"
         },
         "6.1": {
             "version_number": "6.1",
+            "display_version_number": "Luna II",
             "version_name": null,
             "release_date": "2025-10-22"
         },
         "6.2": {
             "version_number": "6.2",
+            "display_version_number": "Luna III",
             "version_name": null,
             "release_date": "2025-12-03"
         },
         "6.3": {
             "version_number": "6.3",
+            "display_version_number": "Luna IV",
             "version_name": null,
             "release_date": "2026-01-14"
         },
         "6.4": {
             "version_number": "6.4",
+            "display_version_number": "Luna V",
             "version_name": null,
             "release_date": "2026-02-25"
         },
         "6.5": {
             "version_number": "6.5",
+            "display_version_number": "Luna VI",
             "version_name": null,
             "release_date": "2026-04-08"
         },
         "6.6": {
             "version_number": "6.6",
+            "display_version_number": "Luna VII",
             "version_name": null,
             "release_date": "2026-05-20"
         },
         "6.7": {
             "version_number": "6.7",
+            "display_version_number": "Luna VIII",
             "version_name": null,
             "release_date": "2026-07-01"
         }
