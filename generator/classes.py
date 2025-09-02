@@ -52,6 +52,10 @@ def has_custom_photo(char_name: str, full_photo = False) -> bool:
 class Version:
     def __init__(self, row: dict):
         self.version_number = row['version']
+        if row['display_version_number']:
+            self.display_version_number = row['display_version_number']
+        else:
+            self.display_version_number = 'v' + self.version_number
         self.version_name = row['name']
         self.release_date = row['release_date'] or None
 

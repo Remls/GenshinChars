@@ -325,7 +325,7 @@ document.addEventListener('alpine:init', () => {
         formatVersion(version, includeDate=false) {
             if (!version) return 'Unknown'
             version = this.versionData[version]
-            let v = `v${version.version_number}`
+            let v = version.display_version_number
             if (version.version_name) v += `: ${version.version_name}`
             if (includeDate && version.release_date) v += ` (${this.formatDate(version.release_date)})`
             return v
