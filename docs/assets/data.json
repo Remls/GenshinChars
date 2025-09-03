@@ -1,6 +1,6 @@
 {
-    "version": "a459447",
-    "last_updated": "2025-09-02T12:11:25.175723Z",
+    "version": "5bdcedd",
+    "last_updated": "2025-09-03T05:42:26.909183Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -236,28 +236,6 @@
                 "[2025-06-21] Off-field support (for Alice)"
             ]
         },
-        "Nefer": {
-            "name": "Nefer",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Dendro",
-            "arkhe": null,
-            "weapon": "Catalyst",
-            "region": "Sumeru",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.4",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/nefer.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
-                "[2025-06-24] \"Like Escoffier\"",
-                "[2025-06-24] Support"
-            ]
-        },
         "Varka": {
             "name": "Varka",
             "display_name": null,
@@ -370,6 +348,28 @@
                 "Revived during the events of the v5.6 Archon Quest",
                 "[2025-06-24] Vaporize",
                 "[2025-06-24] DPS"
+            ]
+        },
+        "Nefer": {
+            "name": "Nefer",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Dendro",
+            "arkhe": null,
+            "weapon": "Catalyst",
+            "region": "Sumeru",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.1",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/nefer.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
+                "[2025-06-24] \"Like Escoffier\"",
+                "[2025-06-24] Support"
             ]
         },
         "Kyryll Chudomirovich Flins": {
