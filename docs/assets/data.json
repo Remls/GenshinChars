@@ -1,6 +1,6 @@
 {
-    "version": "f77f341",
-    "last_updated": "2025-09-10T02:17:00.178065Z",
+    "version": "46a432a",
+    "last_updated": "2025-09-10T02:18:02.003311Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -425,7 +425,7 @@
             "weapon": "Claymore",
             "region": "Nod-Krai",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "09-21",
             "release_version": "6.0",
             "release_date": "2025-09-10",
             "photo": "assets/images/characters/aino.png",
