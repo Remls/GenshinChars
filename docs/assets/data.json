@@ -1,6 +1,6 @@
 {
-    "version": "5bdcedd",
-    "last_updated": "2025-09-03T05:42:26.909183Z",
+    "version": "f77f341",
+    "last_updated": "2025-09-10T02:17:00.178065Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -66,6 +66,137 @@
                 "Yaoguang is not their actual name, but is rather their title",
                 "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
                 "This is based on very old data, from March 2023"
+            ]
+        },
+        "Nicole Reeyn": {
+            "name": "Nicole Reeyn",
+            "display_name": "Nicole",
+            "rarity": "5",
+            "element": "Cryo",
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/nicole_reeyn.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "A member of the Hexenzirkel",
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v3.3 and v4.2 (voice only)",
+                "[2025-06-21] Off-field support (for Alice)"
+            ]
+        },
+        "Alice": {
+            "name": "Alice",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Pyro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Mondstadt",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/alice.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "A member of the Hexenzirkel",
+                "Klee's mother",
+                "Voice is known, appearance is unknown",
+                "Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)",
+                "[2025-06-21] DPS",
+                "[2025-06-21] \"Big Xiangling\""
+            ]
+        },
+        "Sandrone": {
+            "name": "Sandrone",
+            "display_name": null,
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sandrone.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "7th of the Fatui Harbingers",
+                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
+            ]
+        },
+        "Unnamed Snezhnaya Guide": {
+            "name": "Unnamed Snezhnaya Guide",
+            "display_name": "Unnamed Guide",
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "White Horse Fairy": {
+            "name": "White Horse Fairy",
+            "display_name": null,
+            "rarity": null,
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-05-29] \"Spirit of Istaroth\"",
+                "[2025-06-24] \"Like Nilou\"",
+                "[2025-06-24] 6.3 Phase 2"
+            ]
+        },
+        "Gold-Eyed Celadon Mare": {
+            "name": "Gold-Eyed Celadon Mare",
+            "display_name": "Celadon Mare",
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": null,
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Adeptus-like character from Liyue (not an actual adeptus)",
+                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
+                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
             ]
         },
         "Jahoda": {
@@ -149,93 +280,6 @@
                 "[2025-01-05] Potentially releasing during v6.x"
             ]
         },
-        "Alice": {
-            "name": "Alice",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Mondstadt",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/alice.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "A member of the Hexenzirkel",
-                "Klee's mother",
-                "Voice is known, appearance is unknown",
-                "Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)",
-                "[2025-06-21] DPS",
-                "[2025-06-21] \"Big Xiangling\""
-            ]
-        },
-        "Sandrone": {
-            "name": "Sandrone",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sandrone.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "7th of the Fatui Harbingers",
-                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
-            ]
-        },
-        "Unnamed Snezhnaya Guide": {
-            "name": "Unnamed Snezhnaya Guide",
-            "display_name": "Unnamed Guide",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.7",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
-        "Nicole Reeyn": {
-            "name": "Nicole Reeyn",
-            "display_name": "Nicole",
-            "rarity": "5",
-            "element": "Cryo",
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.6",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/nicole_reeyn.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "A member of the Hexenzirkel",
-                "Voice is known, appearance is unknown",
-                "Appears in the main events in v3.3 and v4.2 (voice only)",
-                "[2025-06-21] Off-field support (for Alice)"
-            ]
-        },
         "Varka": {
             "name": "Varka",
             "display_name": null,
@@ -283,57 +327,13 @@
                 "[2025-06-24] 6.3 Phase 1"
             ]
         },
-        "White Horse Fairy": {
-            "name": "White Horse Fairy",
-            "display_name": null,
-            "rarity": null,
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.3",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-05-29] \"Spirit of Istaroth\"",
-                "[2025-06-24] \"Like Nilou\"",
-                "[2025-06-24] 6.3 Phase 2"
-            ]
-        },
-        "Gold-Eyed Celadon Mare": {
-            "name": "Gold-Eyed Celadon Mare",
-            "display_name": "Celadon Mare",
-            "rarity": "5",
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Liyue",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.3",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Adeptus-like character from Liyue (not an actual adeptus)",
-                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
-                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
-            ]
-        },
         "Durin": {
             "name": "Durin",
             "display_name": null,
             "rarity": "5",
             "element": "Pyro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Mondstadt",
             "gender": "Male",
             "birthday": null,
@@ -357,7 +357,7 @@
             "element": "Dendro",
             "arkhe": null,
             "weapon": "Catalyst",
-            "region": "Sumeru",
+            "region": "Nod-Krai",
             "gender": "Female",
             "birthday": null,
             "release_version": "6.1",
@@ -408,7 +408,7 @@
             "release_date": "2025-09-10",
             "photo": "assets/images/characters/lauma.png",
             "full_photo": "assets/images/full-characters/lauma.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Appeared in the Nod-Krai teaser during v5.8 livestream",
@@ -430,7 +430,7 @@
             "release_date": "2025-09-10",
             "photo": "assets/images/characters/aino.png",
             "full_photo": "assets/images/full-characters/aino.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Appeared in the Nod-Krai teaser during v5.8 livestream",
