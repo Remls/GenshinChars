@@ -1,6 +1,6 @@
 {
-    "version": "46a432a",
-    "last_updated": "2025-09-10T02:18:02.003311Z",
+    "version": "d7120e7",
+    "last_updated": "2025-09-29T05:59:14.697908Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -116,27 +116,6 @@
                 "[2025-06-21] \"Big Xiangling\""
             ]
         },
-        "Sandrone": {
-            "name": "Sandrone",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/sandrone.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "7th of the Fatui Harbingers",
-                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x"
-            ]
-        },
         "Unnamed Snezhnaya Guide": {
             "name": "Unnamed Snezhnaya Guide",
             "display_name": "Unnamed Guide",
@@ -154,50 +133,6 @@
             "is_released": false,
             "is_outdated": false,
             "notes": null
-        },
-        "White Horse Fairy": {
-            "name": "White Horse Fairy",
-            "display_name": null,
-            "rarity": null,
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-05-29] \"Spirit of Istaroth\"",
-                "[2025-06-24] \"Like Nilou\"",
-                "[2025-06-24] 6.3 Phase 2"
-            ]
-        },
-        "Gold-Eyed Celadon Mare": {
-            "name": "Gold-Eyed Celadon Mare",
-            "display_name": "Celadon Mare",
-            "rarity": "5",
-            "element": "Anemo",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Liyue",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "Adeptus-like character from Liyue (not an actual adeptus)",
-                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
-                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\""
-            ]
         },
         "Jahoda": {
             "name": "Jahoda",
@@ -280,6 +215,28 @@
                 "[2025-01-05] Potentially releasing during v6.x"
             ]
         },
+        "Sandrone": {
+            "name": "Sandrone",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.7",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/sandrone.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "7th of the Fatui Harbingers",
+                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x",
+                "[2025-09-28] Expected to be playable late into 6.x, main-focus character, Lunar-Crystallize"
+            ]
+        },
         "Varka": {
             "name": "Varka",
             "display_name": null,
@@ -325,6 +282,33 @@
                 "[2025-06-24] \"Special Hydro reaction\"",
                 "[2025-06-24] Can be support, can be DPS",
                 "[2025-06-24] 6.3 Phase 1"
+            ]
+        },
+        "Gold-Eyed Celadon Mare": {
+            "name": "Gold-Eyed Celadon Mare",
+            "display_name": "Celadon Mare",
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Liyue",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.3",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "Adeptus-like character from Liyue (not an actual adeptus)",
+                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
+                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\"",
+                "[2025-05-29] \"Spirit of Istaroth\"",
+                "[2025-06-24] \"Like Nilou\"",
+                "[2025-06-24] 6.3 Phase 2",
+                "[2025-09-12] 6.3",
+                "[2025-09-28] Anemo support"
             ]
         },
         "Durin": {
@@ -406,8 +390,8 @@
             "birthday": "03-01",
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "assets/images/characters/lauma.png",
-            "full_photo": "assets/images/full-characters/lauma.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lauma.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lauma.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
