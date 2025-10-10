@@ -1,6 +1,6 @@
 {
-    "version": "d7120e7",
-    "last_updated": "2025-09-29T05:59:14.697908Z",
+    "version": "a4f278d",
+    "last_updated": "2025-10-10T12:17:56.201750Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -370,7 +370,7 @@
             "release_date": "2025-09-30",
             "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
             "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "[2025-06-04] DPS",
@@ -412,8 +412,8 @@
             "birthday": "09-21",
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "assets/images/characters/aino.png",
-            "full_photo": "assets/images/full-characters/aino.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aino.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aino.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -2532,7 +2532,7 @@
         "6.1": {
             "version_number": "6.1",
             "display_version_number": "Luna II",
-            "version_name": null,
+            "version_name": "An Elegy for Faded Moonlight",
             "release_date": "2025-10-22"
         },
         "6.2": {
