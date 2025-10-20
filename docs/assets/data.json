@@ -1,6 +1,6 @@
 {
-    "version": "a4f278d",
-    "last_updated": "2025-10-10T12:17:56.201750Z",
+    "version": "1c23e17",
+    "last_updated": "2025-10-20T16:18:11.976810Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -130,24 +130,6 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
-        "Jahoda": {
-            "name": "Jahoda",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/jahoda.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -333,6 +315,24 @@
                 "[2025-06-24] Vaporize",
                 "[2025-06-24] DPS"
             ]
+        },
+        "Jahoda": {
+            "name": "Jahoda",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Bow",
+            "region": "Snezhnaya",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/jahoda.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Nefer": {
             "name": "Nefer",
