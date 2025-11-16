@@ -1,6 +1,6 @@
 {
-    "version": "1c23e17",
-    "last_updated": "2025-10-20T16:18:11.976810Z",
+    "version": "e6b3250",
+    "last_updated": "2025-11-16T03:10:57.549959Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -302,7 +302,7 @@
             "weapon": "Sword",
             "region": "Mondstadt",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "03-14",
             "release_version": "6.2",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
@@ -325,7 +325,7 @@
             "weapon": "Bow",
             "region": "Snezhnaya",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-05",
             "release_version": "6.2",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
@@ -343,11 +343,11 @@
             "weapon": "Catalyst",
             "region": "Nod-Krai",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "05-09",
             "release_version": "6.1",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/nefer.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nefer.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nefer.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
