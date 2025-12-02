@@ -2,7 +2,4 @@ Adeptus-like character from Liyue (not an actual adeptus)
 One of the Eight Adepts that worked together to subdue the god Tao Duo
 [2025-05-29] "Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)"
 [2025-05-29] "Spirit of Istaroth"
-[2025-06-24] "Like Nilou"
-[2025-06-24] 6.3 Phase 2
-[2025-09-12] 6.3
-[2025-09-28] Anemo support
+[2025-11-17] Geo (Lunar Crystallize) DPS; 6.3 Phase 2
