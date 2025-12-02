@@ -1,6 +1,6 @@
 {
-    "version": "e6b3250",
-    "last_updated": "2025-11-16T03:10:57.549959Z",
+    "version": "62d7a1e",
+    "last_updated": "2025-12-02T01:49:20.494902Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -22,50 +22,6 @@
                 "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
                 "He also has no visible Vision on his body",
                 "Appears in multiple archon quests"
-            ]
-        },
-        "Mummy Girl": {
-            "name": "Mummy Girl",
-            "display_name": null,
-            "rarity": "4",
-            "element": "Hydro",
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Sumeru",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/mummy_girl.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "Unnamed",
-                "Was expected to release during v4.x",
-                "This is based on very old data, from June 2023"
-            ]
-        },
-        "Yaoguang": {
-            "name": "Yaoguang",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Geo",
-            "arkhe": null,
-            "weapon": "Bow",
-            "region": "Liyue",
-            "gender": null,
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": true,
-            "notes": [
-                "Yaoguang is not their actual name, but is rather their title",
-                "This is the Yaoguang of the Liyue Qixing, similar to how Ningguang is the Tianquan",
-                "This is based on very old data, from March 2023"
             ]
         },
         "Nicole Reeyn": {
@@ -304,7 +260,7 @@
             "gender": "Male",
             "birthday": "03-14",
             "release_version": "6.2",
-            "release_date": null,
+            "release_date": "2025-12-03",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/durin.png",
             "is_released": false,
@@ -327,7 +283,7 @@
             "gender": "Female",
             "birthday": "01-05",
             "release_version": "6.2",
-            "release_date": null,
+            "release_date": "2025-12-03",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/jahoda.png",
             "is_released": false,
@@ -345,10 +301,10 @@
             "gender": "Female",
             "birthday": "05-09",
             "release_version": "6.1",
-            "release_date": null,
+            "release_date": "2025-10-22",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nefer.png",
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nefer.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
@@ -2538,7 +2494,7 @@
         "6.2": {
             "version_number": "6.2",
             "display_version_number": "Luna III",
-            "version_name": null,
+            "version_name": "A Nocturne of the Far North",
             "release_date": "2025-12-03"
         },
         "6.3": {
