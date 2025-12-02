@@ -49,7 +49,6 @@ Lynette,,4,Anemo,Ousia,Sword,Fontaine,Female,02-02,4.0,R
 Lyney,,5,Pyro,Pneuma,Bow,Fontaine,Male,02-02,4.0,R
 Mika,,4,Cryo,N/A,Polearm,Mondstadt,Male,08-11,3.5,2023-03-21
 Mona,,5,Hydro,N/A,Catalyst,Mondstadt,Female,08-31,1.0,R
-Mummy Girl,,4,Hydro,N/A,Bow,Sumeru,Female,,,
 Nahida,,5,Dendro,N/A,Catalyst,Sumeru,Female,10-27,3.2,R
 Navia,,5,Geo,Ousia,Claymore,Fontaine,Female,08-16,4.3,R
 Neuvillette,,5,Hydro,Pneuma,Catalyst,Fontaine,Male,12-18,4.1,R
@@ -80,7 +79,6 @@ Xingqiu,,4,Hydro,N/A,Sword,Liyue,Male,10-09,1.0,R
 Xinyan,,4,Pyro,N/A,Claymore,Liyue,Female,10-16,1.1,2020-12-01
 Yae Miko,Miko,5,Electro,N/A,Catalyst,Inazuma,Female,06-27,2.5,R
 Yanfei,,4,Pyro,N/A,Catalyst,Liyue,Female,07-28,1.5,R
-Yaoguang,,5,Geo,N/A,Bow,Liyue,,,,
 Yaoyao,,4,Dendro,N/A,Polearm,Liyue,Female,03-06,3.4,R
 Yelan,,5,Hydro,N/A,Bow,Liyue,Female,04-20,2.7,R
 Yoimiya,,5,Pyro,N/A,Bow,Inazuma,Female,06-21,2.0,2021-08-10
@@ -107,9 +105,9 @@ Ineffa,,5,Electro,N/A,Polearm,Nod-Krai,Female,04-02,5.8,R
 Lauma,,5,Dendro,N/A,Catalyst,Nod-Krai,Female,03-01,6.0,R
 Aino,,4,Hydro,N/A,Claymore,Nod-Krai,Female,09-21,6.0,R
 Kyryll Chudomirovich Flins,Flins,5,Electro,N/A,Polearm,Nod-Krai,Male,10-31,6.0,2025-09-30
-Nefer,,5,Dendro,N/A,Catalyst,Nod-Krai,Female,05-09,6.1,
-Durin,,5,Pyro,N/A,Sword,Mondstadt,Male,03-14,6.2,
-Jahoda,,4,Anemo,N/A,Bow,Snezhnaya,Female,01-05,6.2,
+Nefer,,5,Dendro,N/A,Catalyst,Nod-Krai,Female,05-09,6.1,R
+Durin,,5,Pyro,N/A,Sword,Mondstadt,Male,03-14,6.2,R
+Jahoda,,4,Anemo,N/A,Bow,Snezhnaya,Female,01-05,6.2,R
 Columbina,,5,Hydro,N/A,Catalyst,Nod-Krai,Female,,6.3,
 Gold-Eyed Celadon Mare,Celadon Mare,5,Anemo,N/A,,Liyue,Female,,6.3,
 Varka,,5,Anemo,N/A,Claymore,Mondstadt,Male,,6.4,
