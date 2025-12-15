@@ -1,6 +1,6 @@
 {
-    "version": "c82c7bb",
-    "last_updated": "2025-12-02T02:04:44.465119Z",
+    "version": "f6fd531",
+    "last_updated": "2025-12-15T06:39:09.931807Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -41,12 +41,14 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "A member of the Hexenzirkel",
+                "A member of the Hexenzirkel (codename A)",
                 "Klee's mother",
                 "Voice is known, appearance is unknown",
                 "Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)",
+                "Appears in Nod-Krai's archon quest",
                 "[2025-06-21] DPS",
-                "[2025-06-21] \"Big Xiangling\""
+                "[2025-06-21] \"Big Xiangling\"",
+                "[2025-12-01] No longer playable during 6.x"
             ]
         },
         "Unnamed Snezhnaya Guide": {
@@ -85,9 +87,7 @@
             "is_outdated": false,
             "notes": [
                 "2nd of the Fatui Harbingers",
-                "Appears in Sumeru's archon quest",
-                "[2025-05-29] Expected to release in v6.5 or v6.6",
-                "[2025-06-02] No longer expected to release during 6.x"
+                "Appears in Sumeru's and Nod-Krai's archon quests"
             ]
         },
         "Il Capitano": {
@@ -108,8 +108,7 @@
             "is_outdated": false,
             "notes": [
                 "1st of the Fatui Harbingers",
-                "Appears in Natlan's archon quest",
-                "[2025-01-05] Potentially releasing during v6.x"
+                "Appears in Natlan's archon quest"
             ]
         },
         "Sandrone": {
@@ -129,9 +128,7 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "7th of the Fatui Harbingers",
-                "[2025-07-22] Appeared in teaser trailer, but not expected to be playable during v6.x",
-                "[2025-09-28] Expected to be playable late into 6.x, main-focus character, Lunar-Crystallize"
+                "7th of the Fatui Harbingers"
             ]
         },
         "Nicole Reeyn": {
@@ -151,10 +148,9 @@
             "is_released": false,
             "is_outdated": false,
             "notes": [
-                "A member of the Hexenzirkel",
-                "Voice is known, appearance is unknown",
+                "A member of the Hexenzirkel (codename N)",
                 "Appears in the main events in v3.3 and v4.2 (voice only)",
-                "[2025-06-21] Off-field support (for Alice)"
+                "Appears in Nod-Krai's archon quest"
             ]
         },
         "Snegurochka": {
@@ -175,6 +171,27 @@
             "is_outdated": false,
             "notes": null
         },
+        "Lohen": {
+            "name": "Lohen",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Nod-Krai",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.4",
+            "release_date": "2026-03-17",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-12-14] Standard banner character",
+                "[2025-12-14] Vice Captain of the 5th Company\uff0cwhich belongs to the Knights of Favonius garrison in the Wavechaser Plain"
+            ]
+        },
         "Varka": {
             "name": "Varka",
             "display_name": null,
@@ -186,16 +203,15 @@
             "gender": "Male",
             "birthday": null,
             "release_version": "6.4",
-            "release_date": null,
+            "release_date": "2026-02-25",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/varka.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "Current Grand Master of the Knights of Favonius",
-                "Voice is known, appearance is unknown",
                 "Appears in the main events in v5.6 (voice only)",
-                "[2025-05-29] Expected to release sometime during or after v6.4",
+                "Appears in Nod-Krai's archon quest",
                 "[2025-06-21] DPS"
             ]
         },
@@ -212,7 +228,7 @@
             "release_version": "6.3",
             "release_date": "2026-02-03",
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/zibai.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -236,14 +252,14 @@
             "release_version": "6.3",
             "release_date": "2026-02-03",
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/illuga.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
         },
-        "Columbina": {
-            "name": "Columbina",
-            "display_name": null,
+        "Columbina Hyposelenia": {
+            "name": "Columbina Hyposelenia",
+            "display_name": "Columbina",
             "rarity": "5",
             "element": "Hydro",
             "arkhe": null,
@@ -254,14 +270,12 @@
             "release_version": "6.3",
             "release_date": "2026-01-14",
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/columbina.png",
+            "full_photo": "assets/images/full-characters/columbina_hyposelenia.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
                 "3rd of the Fatui Harbingers",
-                "[2025-06-24] \"Special Hydro reaction\"",
-                "[2025-06-24] Can be support, can be DPS",
-                "[2025-06-24] 6.3 Phase 1"
+                "Moon Maiden"
             ]
         },
         "Durin": {
@@ -276,16 +290,11 @@
             "birthday": "03-14",
             "release_version": "6.2",
             "release_date": "2025-12-03",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/durin.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/durin.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/durin.png",
+            "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Dragon slain by Dvalin",
-                "Revived during the events of the v5.6 Archon Quest",
-                "[2025-06-24] Vaporize",
-                "[2025-06-24] DPS"
-            ]
+            "notes": null
         },
         "Jahoda": {
             "name": "Jahoda",
@@ -299,9 +308,9 @@
             "birthday": "01-05",
             "release_version": "6.2",
             "release_date": "2025-12-03",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/jahoda.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jahoda.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/jahoda.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -321,11 +330,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nefer.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "[2025-05-29] \"Boss lady of the Curatorium of Secrets\"",
-                "[2025-06-24] \"Like Escoffier\"",
-                "[2025-06-24] Support"
-            ]
+            "notes": null
         },
         "Kyryll Chudomirovich Flins": {
             "name": "Kyryll Chudomirovich Flins",
@@ -339,15 +344,11 @@
             "birthday": "10-31",
             "release_version": "6.0",
             "release_date": "2025-09-30",
-            "photo": "assets/images/characters/kyryll_chudomirovich_flins.png",
-            "full_photo": "assets/images/full-characters/kyryll_chudomirovich_flins.png",
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "[2025-06-04] DPS",
-                "[2025-06-24] Lunar Electrocharged",
-                "[2025-06-24] 6.0 Phase 1"
-            ]
+            "notes": null
         },
         "Lauma": {
             "name": "Lauma",
@@ -365,11 +366,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lauma.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appeared in the Nod-Krai teaser during v5.8 livestream",
-                "From the Frostmoon Scions",
-                "[2025-07-18] Expected to release in v6.0 Phase 2"
-            ]
+            "notes": null
         },
         "Aino": {
             "name": "Aino",
@@ -387,11 +384,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aino.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Appeared in the Nod-Krai teaser during v5.8 livestream",
-                "From the Clink-Clank Krumkake Craftshop",
-                "Designer of Ineffa"
-            ]
+            "notes": null
         },
         "Ineffa": {
             "name": "Ineffa",
