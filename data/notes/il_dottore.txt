@@ -1,4 +1,2 @@
 2nd of the Fatui Harbingers
-Appears in Sumeru's archon quest
-[2025-05-29] Expected to release in v6.5 or v6.6
-[2025-06-02] No longer expected to release during 6.x
+Appears in Sumeru's and Nod-Krai's archon quests

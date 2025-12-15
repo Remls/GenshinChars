@@ -1,6 +1,8 @@
-A member of the Hexenzirkel
+A member of the Hexenzirkel (codename A)
 Klee's mother
 Voice is known, appearance is unknown
 Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)
+Appears in Nod-Krai's archon quest
 [2025-06-21] DPS
 [2025-06-21] "Big Xiangling"
+[2025-12-01] No longer playable during 6.x
