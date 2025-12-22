@@ -1,6 +1,6 @@
 {
-    "version": "f6fd531",
-    "last_updated": "2025-12-15T06:39:09.931807Z",
+    "version": "5d9f2b6",
+    "last_updated": "2025-12-22T10:46:11.942660Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -224,7 +224,7 @@
             "weapon": "Sword",
             "region": "Liyue",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "05-15",
             "release_version": "6.3",
             "release_date": "2026-02-03",
             "photo": "assets/images/Fallback.png",
@@ -248,7 +248,7 @@
             "weapon": "Polearm",
             "region": "Nod-Krai",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "12-23",
             "release_version": "6.3",
             "release_date": "2026-02-03",
             "photo": "assets/images/Fallback.png",
@@ -266,7 +266,7 @@
             "weapon": "Catalyst",
             "region": null,
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-14",
             "release_version": "6.3",
             "release_date": "2026-01-14",
             "photo": "assets/images/Fallback.png",
