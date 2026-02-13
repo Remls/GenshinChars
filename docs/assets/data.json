@@ -1,6 +1,6 @@
 {
-    "version": "fa874f4",
-    "last_updated": "2025-12-30T17:45:15.617313Z",
+    "version": "31a91c4",
+    "last_updated": "2026-02-13T12:08:25.855515Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -227,9 +227,9 @@
             "birthday": "05-15",
             "release_version": "6.3",
             "release_date": "2026-02-03",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/zibai.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zibai.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zibai.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Adeptus-like character from Liyue (not an actual adeptus)",
@@ -251,9 +251,9 @@
             "birthday": "12-23",
             "release_version": "6.3",
             "release_date": "2026-02-03",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/illuga.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/illuga.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/illuga.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -271,7 +271,7 @@
             "release_date": "2026-01-14",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/columbina_hyposelenia.png",
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "3rd of the Fatui Harbingers",
@@ -2514,7 +2514,7 @@
         "6.4": {
             "version_number": "6.4",
             "display_version_number": "Luna V",
-            "version_name": null,
+            "version_name": "Homeward, He Who Caught the Wind",
             "release_date": "2026-02-25"
         },
         "6.5": {
