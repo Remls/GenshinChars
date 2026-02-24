@@ -1,6 +1,6 @@
 {
-    "version": "31a91c4",
-    "last_updated": "2026-02-13T12:08:25.855515Z",
+    "version": "fc1fe26",
+    "last_updated": "2026-02-24T14:05:53.065633Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -131,6 +131,45 @@
                 "7th of the Fatui Harbingers"
             ]
         },
+        "Lohen": {
+            "name": "Lohen",
+            "display_name": null,
+            "rarity": "5",
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": "Nod-Krai",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": [
+                "[2025-12-14] Standard banner character",
+                "[2025-12-14] Vice Captain of the 5th Company\uff0cwhich belongs to the Knights of Favonius garrison in the Wavechaser Plain"
+            ]
+        },
+        "Snegurochka": {
+            "name": "Snegurochka",
+            "display_name": "Snow Maiden",
+            "rarity": null,
+            "element": null,
+            "arkhe": null,
+            "weapon": null,
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
         "Nicole Reeyn": {
             "name": "Nicole Reeyn",
             "display_name": "Nicole",
@@ -153,14 +192,14 @@
                 "Appears in Nod-Krai's archon quest"
             ]
         },
-        "Snegurochka": {
-            "name": "Snegurochka",
-            "display_name": "Snow Maiden",
-            "rarity": null,
-            "element": null,
+        "Linnea": {
+            "name": "Linnea",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Geo",
             "arkhe": null,
-            "weapon": null,
-            "region": null,
+            "weapon": "Bow",
+            "region": "Nod-Krai",
             "gender": "Female",
             "birthday": null,
             "release_version": "6.5",
@@ -170,27 +209,6 @@
             "is_released": false,
             "is_outdated": false,
             "notes": null
-        },
-        "Lohen": {
-            "name": "Lohen",
-            "display_name": null,
-            "rarity": "5",
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Nod-Krai",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": "6.4",
-            "release_date": "2026-03-17",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "[2025-12-14] Standard banner character",
-                "[2025-12-14] Vice Captain of the 5th Company\uff0cwhich belongs to the Knights of Favonius garrison in the Wavechaser Plain"
-            ]
         },
         "Varka": {
             "name": "Varka",
@@ -264,7 +282,7 @@
             "element": "Hydro",
             "arkhe": null,
             "weapon": "Catalyst",
-            "region": null,
+            "region": "Nod-Krai",
             "gender": "Female",
             "birthday": "01-14",
             "release_version": "6.3",
@@ -303,7 +321,7 @@
             "element": "Anemo",
             "arkhe": null,
             "weapon": "Bow",
-            "region": "Snezhnaya",
+            "region": "Nod-Krai",
             "gender": "Female",
             "birthday": "01-05",
             "release_version": "6.2",
