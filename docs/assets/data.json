@@ -1,6 +1,6 @@
 {
-    "version": "fc1fe26",
-    "last_updated": "2026-02-24T14:05:53.065633Z",
+    "version": "f56b03e",
+    "last_updated": "2026-03-12T08:59:04.824297Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -219,12 +219,12 @@
             "weapon": "Claymore",
             "region": "Mondstadt",
             "gender": "Male",
-            "birthday": null,
+            "birthday": "02-17",
             "release_version": "6.4",
             "release_date": "2026-02-25",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/varka.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/varka.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/varka.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Current Grand Master of the Knights of Favonius",
@@ -288,7 +288,7 @@
             "release_version": "6.3",
             "release_date": "2026-01-14",
             "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/columbina_hyposelenia.png",
+            "full_photo": "assets/images/Fallback.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
