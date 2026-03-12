@@ -1,6 +1,6 @@
 {
-    "version": "f56b03e",
-    "last_updated": "2026-03-12T08:59:04.824297Z",
+    "version": "fd767e8",
+    "last_updated": "2026-03-12T09:17:15.303599Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -226,12 +226,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/varka.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Current Grand Master of the Knights of Favonius",
-                "Appears in the main events in v5.6 (voice only)",
-                "Appears in Nod-Krai's archon quest",
-                "[2025-06-21] DPS"
-            ]
+            "notes": null
         },
         "Zibai": {
             "name": "Zibai",
@@ -249,13 +244,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zibai.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "Adeptus-like character from Liyue (not an actual adeptus)",
-                "One of the Eight Adepts that worked together to subdue the god Tao Duo",
-                "[2025-05-29] \"Female White Horse Adeptus Liyue character for Lantern Rite (from the book Moonlit Bamboo Forest)\"",
-                "[2025-05-29] \"Spirit of Istaroth\"",
-                "[2025-11-17] Geo (Lunar Crystallize) DPS; 6.3 Phase 2"
-            ]
+            "notes": null
         },
         "Illuga": {
             "name": "Illuga",
@@ -287,8 +276,8 @@
             "birthday": "01-14",
             "release_version": "6.3",
             "release_date": "2026-01-14",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/columbina.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/columbina.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -362,8 +351,8 @@
             "birthday": "10-31",
             "release_version": "6.0",
             "release_date": "2025-09-30",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/flins.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/flins.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
