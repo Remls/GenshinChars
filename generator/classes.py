@@ -114,6 +114,11 @@ class Character:
     def get_char_slug(self) -> str:
         return self.input_row['name'].replace(" ", "_").lower()
 
+    def get_char_slug_display_name(self) -> str:
+        if not self.input_row['display_name']:
+            return ''
+        return self.input_row['display_name'].replace(" ", "_").lower()
+
     def is_released(self) -> bool:
         if not self.release_date:
             return False
@@ -130,8 +135,11 @@ class Character:
 
     def get_character_image_link(self) -> str:
         char_name = self.get_char_slug()
+        char_display_name = self.get_char_slug_display_name()
         if has_official_photo(char_name):
             url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
+        elif char_display_name and has_official_photo(char_display_name):
+            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_display_name}.png"
         elif has_custom_photo(char_name):
             url = f"assets/images/characters/{char_name}.png"
         else:
@@ -140,8 +148,11 @@ class Character:
         
     def get_character_full_image_link(self) -> str:
         char_name = self.get_char_slug()
+        char_display_name = self.get_char_slug_display_name()
         if has_official_photo(char_name):
             url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_name}.png"
+        elif char_display_name and has_official_photo(char_display_name):
+            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_display_name}.png"
         elif has_custom_photo(char_name, True):
             url = f"assets/images/full-characters/{char_name}.png"
         else:
