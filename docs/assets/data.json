@@ -1,6 +1,6 @@
 {
-    "version": "fd767e8",
-    "last_updated": "2026-03-12T09:17:15.303599Z",
+    "version": "8db984e",
+    "last_updated": "2026-03-16T17:34:49.904974Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -201,7 +201,7 @@
             "weapon": "Bow",
             "region": "Nod-Krai",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "05-23",
             "release_version": "6.5",
             "release_date": null,
             "photo": "assets/images/Fallback.png",
