@@ -1,6 +1,6 @@
 {
-    "version": "8db984e",
-    "last_updated": "2026-03-16T17:34:49.904974Z",
+    "version": "39ba553",
+    "last_updated": "2026-03-25T04:47:09.012928Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -2527,7 +2527,7 @@
         "6.5": {
             "version_number": "6.5",
             "display_version_number": "Luna VI",
-            "version_name": null,
+            "version_name": "Augured Homecoming",
             "release_date": "2026-04-08"
         },
         "6.6": {
