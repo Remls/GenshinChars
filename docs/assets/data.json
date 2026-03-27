@@ -1,6 +1,6 @@
 {
-    "version": "39ba553",
-    "last_updated": "2026-03-25T04:47:09.012928Z",
+    "version": "56d9e9d",
+    "last_updated": "2026-03-27T12:17:57.237822Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -203,7 +203,7 @@
             "gender": "Female",
             "birthday": "05-23",
             "release_version": "6.5",
-            "release_date": null,
+            "release_date": "2026-04-08",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
