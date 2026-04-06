@@ -1,6 +1,6 @@
 {
-    "version": "56d9e9d",
-    "last_updated": "2026-03-27T12:17:57.237822Z",
+    "version": "48d7762",
+    "last_updated": "2026-04-06T05:27:01.459517Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -50,24 +50,6 @@
                 "[2025-06-21] \"Big Xiangling\"",
                 "[2025-12-01] No longer playable during 6.x"
             ]
-        },
-        "Unnamed Snezhnaya Guide": {
-            "name": "Unnamed Snezhnaya Guide",
-            "display_name": "Unnamed Guide",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Il Dottore": {
             "name": "Il Dottore",
@@ -152,24 +134,6 @@
                 "[2025-12-14] Vice Captain of the 5th Company\uff0cwhich belongs to the Knights of Favonius garrison in the Wavechaser Plain"
             ]
         },
-        "Snegurochka": {
-            "name": "Snegurochka",
-            "display_name": "Snow Maiden",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": "6.6",
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
         "Nicole Reeyn": {
             "name": "Nicole Reeyn",
             "display_name": "Nicole",
@@ -191,6 +155,24 @@
                 "Appears in the main events in v3.3 and v4.2 (voice only)",
                 "Appears in Nod-Krai's archon quest"
             ]
+        },
+        "Prune": {
+            "name": "Prune",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Nod-Krai",
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.6",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/Fallback.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Linnea": {
             "name": "Linnea",
