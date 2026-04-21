@@ -1,6 +1,6 @@
 {
-    "version": "5f57349",
-    "last_updated": "2026-04-21T06:04:36.091001Z",
+    "version": "4b637c6",
+    "last_updated": "2026-04-21T06:07:52.863887Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -2523,6 +2523,12 @@
             "display_version_number": "Luna VIII",
             "version_name": null,
             "release_date": "2026-07-01"
+        },
+        "7.0": {
+            "version_number": "7.0",
+            "display_version_number": "v7.0",
+            "version_name": null,
+            "release_date": "2026-08-12"
         }
     }
 }
