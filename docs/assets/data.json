@@ -1,6 +1,6 @@
 {
-    "version": "2b16cae",
-    "last_updated": "2026-04-27T13:43:22.340930Z",
+    "version": "eff2e2c",
+    "last_updated": "2026-05-04T01:10:48.085130Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -151,9 +151,9 @@
             "name": "Sandrone",
             "display_name": null,
             "rarity": "5",
-            "element": "Geo",
+            "element": "Cryo",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Claymore",
             "region": "Snezhnaya",
             "gender": "Female",
             "birthday": null,
