@@ -1,6 +1,6 @@
 {
-    "version": "6f37340",
-    "last_updated": "2026-05-06T04:28:55.227195Z",
+    "version": "cb24c17",
+    "last_updated": "2026-05-08T12:26:48.272188Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -178,7 +178,7 @@
             "gender": "Male",
             "birthday": "04-03",
             "release_version": "6.6",
-            "release_date": null,
+            "release_date": "2026-06-09",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
@@ -199,7 +199,7 @@
             "gender": "Female",
             "birthday": "09-29",
             "release_version": "6.6",
-            "release_date": null,
+            "release_date": "2026-05-20",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/nicole_reeyn.png",
             "is_released": false,
@@ -221,7 +221,7 @@
             "gender": "Female",
             "birthday": "11-20",
             "release_version": "6.6",
-            "release_date": null,
+            "release_date": "2026-05-20",
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
