@@ -152,7 +152,7 @@ class Character:
         if has_official_photo(char_name):
             url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_name}.png"
         elif char_display_name and has_official_photo(char_display_name):
-            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_display_name}.png"
+            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_display_name}.png"
         elif has_custom_photo(char_name, True):
             url = f"assets/images/full-characters/{char_name}.png"
         else:
