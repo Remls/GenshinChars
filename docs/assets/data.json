@@ -1,6 +1,6 @@
 {
-    "version": "61b4f6d",
-    "last_updated": "2026-06-01T12:00:21.248095Z",
+    "version": "d10d36e",
+    "last_updated": "2026-06-01T12:07:12.742197Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -22,75 +22,6 @@
                 "He is known to be playable, but his element has either been redacted or is not one of the seven currently known elements",
                 "He also has no visible Vision on his body",
                 "Appears in multiple archon quests"
-            ]
-        },
-        "Alice": {
-            "name": "Alice",
-            "display_name": null,
-            "rarity": "5",
-            "element": "Pyro",
-            "arkhe": null,
-            "weapon": null,
-            "region": null,
-            "gender": "Female",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/alice.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "A member of the Hexenzirkel (codename A)",
-                "Klee's mother",
-                "Voice is known, appearance is unknown",
-                "Appears in the main events in v1.6, v3.5, v4.8, v5.6 (voice only)",
-                "Appears in Nod-Krai's archon quest",
-                "[2025-06-21] DPS",
-                "[2025-06-21] \"Big Xiangling\"",
-                "[2025-12-01] No longer playable during 6.x"
-            ]
-        },
-        "Il Dottore": {
-            "name": "Il Dottore",
-            "display_name": "Dottore",
-            "rarity": null,
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": "Claymore",
-            "region": "Sumeru",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/il_dottore.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "2nd of the Fatui Harbingers",
-                "Appears in Sumeru's and Nod-Krai's archon quests"
-            ]
-        },
-        "Il Capitano": {
-            "name": "Il Capitano",
-            "display_name": "Capitano",
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": "Sword",
-            "region": "Khaenri'ah",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/characters/il_capitano.png",
-            "full_photo": "assets/images/full-characters/il_capitano.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": [
-                "1st of the Fatui Harbingers",
-                "Appears in Natlan's archon quest"
             ]
         },
         "Vodyanitsa": {
@@ -159,7 +90,7 @@
             "birthday": null,
             "release_version": "6.7",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/sandrone.png",
             "full_photo": "assets/images/full-characters/sandrone.png",
             "is_released": false,
             "is_outdated": false,
@@ -183,10 +114,7 @@
             "full_photo": "assets/images/Fallback.png",
             "is_released": false,
             "is_outdated": false,
-            "notes": [
-                "[2025-12-14] Standard banner character",
-                "[2025-12-14] Vice Captain of the 5th Company\uff0cwhich belongs to the Knights of Favonius garrison in the Wavechaser Plain"
-            ]
+            "notes": null
         },
         "Nicole Reeyn": {
             "name": "Nicole Reeyn",
@@ -205,9 +133,7 @@
             "is_released": true,
             "is_outdated": false,
             "notes": [
-                "A member of the Hexenzirkel (codename N)",
-                "Appears in the main events in v3.3 and v4.2 (voice only)",
-                "Appears in Nod-Krai's archon quest"
+                "A member of the Hexenzirkel (codename N)"
             ]
         },
         "Prune": {
