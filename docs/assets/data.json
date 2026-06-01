@@ -1,6 +1,6 @@
 {
-    "version": "e47a34c",
-    "last_updated": "2026-06-01T12:14:52.152682Z",
+    "version": "41b9d97",
+    "last_updated": "2026-06-01T12:18:22.885925Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -110,8 +110,8 @@
             "birthday": "04-03",
             "release_version": "6.6",
             "release_date": "2026-06-09",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/lohen.png",
+            "full_photo": "assets/images/full-characters/lohen.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
