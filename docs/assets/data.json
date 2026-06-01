@@ -1,6 +1,6 @@
 {
-    "version": "d10d36e",
-    "last_updated": "2026-06-01T12:07:12.742197Z",
+    "version": "e47a34c",
+    "last_updated": "2026-06-01T12:14:52.152682Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -129,7 +129,7 @@
             "release_version": "6.6",
             "release_date": "2026-05-20",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nicole.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nicole.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nicole.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -239,7 +239,7 @@
             "release_version": "6.3",
             "release_date": "2026-01-14",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/columbina.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/columbina.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/columbina.png",
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -314,7 +314,7 @@
             "release_version": "6.0",
             "release_date": "2025-09-30",
             "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/flins.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/flins.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/flins.png",
             "is_released": true,
             "is_outdated": false,
             "notes": null
