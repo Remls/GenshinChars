@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from bs4.formatter import HTMLFormatter
 import re
 
-THUMBNAIL_IMAGE = "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Splashscreen_Windblume%27s_Breath.png"
+THUMBNAIL_IMAGE = "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Splashscreen_Truth_Amongst_the_Pages_of_Purana.png"
 
 
 def read_template_file():
