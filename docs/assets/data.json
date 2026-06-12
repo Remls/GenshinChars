@@ -1,6 +1,6 @@
 {
-    "version": "41b9d97",
-    "last_updated": "2026-06-01T12:18:22.885925Z",
+    "version": "943c4b6",
+    "last_updated": "2026-06-12T14:50:50.578009Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -110,9 +110,9 @@
             "birthday": "04-03",
             "release_version": "6.6",
             "release_date": "2026-06-09",
-            "photo": "assets/images/characters/lohen.png",
-            "full_photo": "assets/images/full-characters/lohen.png",
-            "is_released": false,
+            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lohen.png",
+            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lohen.png",
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
