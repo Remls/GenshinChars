@@ -1,6 +1,6 @@
 {
-    "version": "6555e4a",
-    "last_updated": "2026-06-12T15:22:23.211727Z",
+    "version": "1eabe4a",
+    "last_updated": "2026-06-16T06:33:15.578785Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -2501,7 +2501,7 @@
         "6.7": {
             "version_number": "6.7",
             "display_version_number": "Luna VIII",
-            "version_name": null,
+            "version_name": "Sunny Summer Fontinalia",
             "release_date": "2026-07-01"
         },
         "7.0": {
