@@ -1,6 +1,6 @@
 {
-    "version": "1eabe4a",
-    "last_updated": "2026-06-16T06:33:15.578785Z",
+    "version": "706e4ed",
+    "last_updated": "2026-06-18T12:22:46.721164Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -89,7 +89,7 @@
             "gender": "Female",
             "birthday": null,
             "release_version": "6.7",
-            "release_date": null,
+            "release_date": "2026-07-01",
             "photo": "assets/images/characters/sandrone.png",
             "full_photo": "assets/images/full-characters/sandrone.png",
             "is_released": false,
