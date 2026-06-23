@@ -1,6 +1,6 @@
 # ![](/docs/icons/favicon-16x16.png) Genshin Chars
 
-List of current and future characters in Genshin Impact. Available at https://genshin-chars.remls.io
+List of current and future characters in Genshin Impact. Available at https://chars.remls.io
 
 ### Development
 
