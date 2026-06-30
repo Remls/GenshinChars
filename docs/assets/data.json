@@ -1,6 +1,6 @@
 {
-    "version": "cc2189d",
-    "last_updated": "2026-06-23T21:36:22.301978Z",
+    "version": "cec860b",
+    "last_updated": "2026-06-30T10:49:06.533941Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -87,7 +87,7 @@
             "weapon": "Claymore",
             "region": "Snezhnaya",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "01-13",
             "release_version": "6.7",
             "release_date": "2026-07-01",
             "photo": "assets/images/characters/sandrone.png",
