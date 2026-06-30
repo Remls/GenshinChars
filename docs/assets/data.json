@@ -1,6 +1,6 @@
 {
-    "version": "46f55a4",
-    "last_updated": "2026-06-30T11:47:48.367313Z",
+    "version": "74882a4",
+    "last_updated": "2026-06-30T11:57:59.171307Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -23,24 +23,6 @@
                 "He also has no visible Vision on his body",
                 "Appears in multiple archon quests"
             ]
-        },
-        "Alyosha": {
-            "name": "Alyosha",
-            "display_name": null,
-            "rarity": null,
-            "element": null,
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/alyosha.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Valeriy": {
             "name": "Valeriy",
@@ -213,8 +195,8 @@
         "Odette": {
             "name": "Odette",
             "display_name": null,
-            "rarity": null,
-            "element": null,
+            "rarity": "5",
+            "element": "Cryo",
             "arkhe": null,
             "weapon": "Sword",
             "region": "Snezhnaya",
@@ -224,6 +206,24 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/odette.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Alyosha": {
+            "name": "Alyosha",
+            "display_name": null,
+            "rarity": null,
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Polearm",
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "7.0",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/alyosha.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
