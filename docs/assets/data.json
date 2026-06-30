@@ -1,6 +1,6 @@
 {
-    "version": "74882a4",
-    "last_updated": "2026-06-30T11:57:59.171307Z",
+    "version": "6711877",
+    "last_updated": "2026-06-30T13:31:08.023846Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -213,7 +213,7 @@
         "Alyosha": {
             "name": "Alyosha",
             "display_name": null,
-            "rarity": null,
+            "rarity": "4",
             "element": "Electro",
             "arkhe": null,
             "weapon": "Polearm",
