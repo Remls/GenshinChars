@@ -1,6 +1,6 @@
 {
-    "version": "d2643af",
-    "last_updated": "2026-06-30T11:40:52.737951Z",
+    "version": "46f55a4",
+    "last_updated": "2026-06-30T11:47:48.367313Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -240,8 +240,8 @@
             "birthday": "01-13",
             "release_version": "6.7",
             "release_date": "2026-07-01",
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/Fallback.png",
+            "photo": "assets/images/characters/sandrone.png",
+            "full_photo": "assets/images/full-characters/sandrone.png",
             "is_released": false,
             "is_outdated": false,
             "notes": [
