@@ -159,7 +159,7 @@
         },
         {
             "name": "Ancient Watchtower",
-            "location": "Tequemecan Valley",
+            "location": "Coatepec Mountain",
             "region": "Natlan",
             "type": "weapon_ascension_mats",
             "rewards": {
@@ -407,7 +407,7 @@
         },
         {
             "name": "Blazing Ruins",
-            "location": "Tepecac Rise, Tequemecan Valley",
+            "location": "Coatepec Mountain",
             "region": "Natlan",
             "type": "talent_upgrade_mats",
             "rewards": {
@@ -550,7 +550,7 @@
         },
         {
             "name": "Clear Pool and Mountain Cavern",
-            "location": "Mt. Aocang, Minling",
+            "location": "Mt. Aocang, Minlin",
             "region": "Liyue",
             "type": "artifacts",
             "rewards": [
@@ -590,7 +590,7 @@
         },
         {
             "name": "Slumbering Court",
-            "location": "Seirai Island",
+            "location": "Fort Hiraumi, Seirai Island",
             "region": "Inazuma",
             "type": "artifacts",
             "rewards": [
@@ -600,7 +600,7 @@
         },
         {
             "name": "Spire of Solitary Enlightenment",
-            "location": "Gandha Hill, Avidya Forest, Dharma Forest",
+            "location": "Gandha Hill, Avidya Forest",
             "region": "Sumeru",
             "type": "artifacts",
             "rewards": [
@@ -610,7 +610,7 @@
         },
         {
             "name": "City of Gold",
-            "location": "Eye of the Sands, Land of Lower Setekh, Great Red Sand",
+            "location": "Khaj-Nisut, Land of Lower Setekh",
             "region": "Sumeru",
             "type": "artifacts",
             "rewards": [
@@ -620,7 +620,7 @@
         },
         {
             "name": "Molten Iron Fortress",
-            "location": "Gavireh Lajavard, Girdle of the Sands",
+            "location": "Gavireh Lajavard",
             "region": "Sumeru",
             "type": "artifacts",
             "rewards": [
@@ -650,7 +650,7 @@
         },
         {
             "name": "Faded Theater",
-            "location": "Nostoi Region",
+            "location": "Petrichor, Nostoi Region",
             "region": "Fontaine",
             "type": "artifacts",
             "rewards": [
@@ -660,7 +660,7 @@
         },
         {
             "name": "Sanctum of Rainbow Spirits",
-            "location": "Toyac Springs",
+            "location": "Ameyalco Waters, Toyac Springs",
             "region": "Natlan",
             "type": "artifacts",
             "rewards": [
@@ -670,7 +670,7 @@
         },
         {
             "name": "Derelict Masonry Dock",
-            "location": "Atocpan",
+            "location": "Remnants of Tetenanco, Atocpan",
             "region": "Natlan",
             "type": "artifacts",
             "rewards": [
@@ -720,7 +720,7 @@
         },
         {
             "name": "Anemo Hypostasis",
-            "location": "Stormbearer Mountains",
+            "location": "Stormbearer Mountains, Starfell Valley",
             "region": "Mondstadt",
             "type": "normal_bosses",
             "rewards": [
@@ -729,7 +729,7 @@
         },
         {
             "name": "Cryo Hypostasis",
-            "location": "Dragonspine",
+            "location": "Entombed City - Outskirts, Dragonspine",
             "region": "Mondstadt",
             "type": "normal_bosses",
             "rewards": [
@@ -738,7 +738,7 @@
         },
         {
             "name": "Cryo Regisvine",
-            "location": "Falcon Coast",
+            "location": "Starfell Valley",
             "region": "Mondstadt",
             "type": "normal_bosses",
             "rewards": [
@@ -747,7 +747,7 @@
         },
         {
             "name": "Electro Hypostasis",
-            "location": "Cape Oath",
+            "location": "Cape Oath, Galesong Hill",
             "region": "Mondstadt",
             "type": "normal_bosses",
             "rewards": [
@@ -756,7 +756,7 @@
         },
         {
             "name": "Geo Hypostasis",
-            "location": "Guyun Stone Forest",
+            "location": "Guyun Stone Forest, Sea of Clouds",
             "region": "Liyue",
             "type": "normal_bosses",
             "rewards": [
@@ -765,7 +765,7 @@
         },
         {
             "name": "Primo Geovishap",
-            "location": "Minlin",
+            "location": "Tianqiu Valley, Minlin",
             "region": "Liyue",
             "type": "normal_bosses",
             "rewards": [
@@ -774,7 +774,7 @@
         },
         {
             "name": "Pyro Regisvine",
-            "location": "Cuijue Slope",
+            "location": "Cuijue Slope, Minlin",
             "region": "Liyue",
             "type": "normal_bosses",
             "rewards": [
@@ -783,7 +783,7 @@
         },
         {
             "name": "Rhodeia of Loch",
-            "location": "Bishui Plain",
+            "location": "Wuwang Hill, Bishui Plain",
             "region": "Liyue",
             "type": "normal_bosses",
             "rewards": [
@@ -819,7 +819,7 @@
         },
         {
             "name": "Hydro Hypostasis",
-            "location": "Suigetsu Pool, Watatsumi Island",
+            "location": "Watatsumi Island",
             "region": "Inazuma",
             "type": "normal_bosses",
             "rewards": [
@@ -837,7 +837,7 @@
         },
         {
             "name": "Perpetual Mechanical Array",
-            "location": "Narukami Island",
+            "location": "Araumi, Narukami Island",
             "region": "Inazuma",
             "type": "normal_bosses",
             "rewards": [
@@ -882,7 +882,7 @@
         },
         {
             "name": "Algorithm of Semi-Intransient Matrix of Overseer Network",
-            "location": "Hypostyle Desert",
+            "location": "The Dune of Elusion, Hypostyle Desert",
             "region": "Sumeru",
             "type": "normal_bosses",
             "rewards": [
@@ -891,7 +891,7 @@
         },
         {
             "name": "Aeonblight Drake",
-            "location": "Ardravi Valley",
+            "location": "Devantaka Mountain, Ardravi Valley",
             "region": "Sumeru",
             "type": "normal_bosses",
             "rewards": [
@@ -909,7 +909,7 @@
         },
         {
             "name": "Setekh Wenut",
-            "location": "Desert of Hadramaveth",
+            "location": "Wenut Tunnels, Desert of Hadramaveth",
             "region": "Sumeru",
             "type": "normal_bosses",
             "rewards": [
@@ -918,7 +918,7 @@
         },
         {
             "name": "Iniquitous Baptist",
-            "location": "Gavireh Lajavard",
+            "location": "Gate of Zulqarnain, Gavireh Lajavard",
             "region": "Sumeru",
             "type": "normal_bosses",
             "rewards": [
@@ -946,7 +946,7 @@
         },
         {
             "name": "Prototype Cal. Breguet",
-            "location": "Academic Assembly Hall",
+            "location": "Fontaine Research Institute of Kinetic Energy Engineering Region, Academic Assembly Hall",
             "region": "Fontaine",
             "type": "normal_bosses",
             "rewards": [
@@ -973,7 +973,7 @@
         },
         {
             "name": "Solitary Suanni",
-            "location": "Chenyu Vale: Southern Mountain",
+            "location": "Chizhang Wall, Chenyu Vale: Southern Mountain",
             "region": "Liyue",
             "type": "normal_bosses",
             "rewards": [
@@ -1018,7 +1018,7 @@
         },
         {
             "name": "Tenebrous Papilla",
-            "location": "Toyac Springs",
+            "location": "Quahuacan Cliff",
             "region": "Natlan",
             "type": "normal_bosses",
             "rewards": [
@@ -1054,7 +1054,7 @@
         },
         {
             "name": "Radiant Moonfly",
-            "location": "Lempo Isle",
+            "location": "Barrowmoss Barrens, Lempo Isle",
             "region": "Nod-Krai",
             "type": "normal_bosses",
             "rewards": [
@@ -1063,7 +1063,7 @@
         },
         {
             "name": "Knuckle Duckle",
-            "location": "Lempo Isle",
+            "location": "Clink-Clank Krumkake Craftshop, Lempo Isle",
             "region": "Nod-Krai",
             "type": "normal_bosses",
             "rewards": [
@@ -1212,7 +1212,7 @@
         },
         {
             "name": "The Realm of Beginnings (Guardian of Apep's Oasis)",
-            "location": "Desert of Hadramaveth",
+            "location": "Apep's Resort, Desert of Hadramaveth",
             "region": "Sumeru",
             "type": "weekly_bosses",
             "rewards": [
