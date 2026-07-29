@@ -439,4 +439,6 @@ a.char-chip:hover span {
 mark {
     background-color: var(--txt-color);
     color: var(--bg-color);
+    padding: 1px 3px;
+    border-radius: 3px;
 }
