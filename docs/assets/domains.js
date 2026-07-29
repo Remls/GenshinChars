@@ -447,8 +447,15 @@ document.addEventListener('alpine:init', () => {
             if (query) this.searchQuery = query
         },
 
+        // Comma-separated search terms, lowercased
+        searchTerms() {
+            return this.searchQuery.split(',')
+                .map(term => term.trim().toLowerCase())
+                .filter(term => term !== '')
+        },
+
         searching() {
-            return this.searchQuery.trim() !== ''
+            return this.searchTerms().length > 0
         },
 
         resetCache() {
@@ -513,15 +520,24 @@ document.addEventListener('alpine:init', () => {
                 .replaceAll('"', '&quot;')
         },
 
-        // Escape, and mark the part matching the current search query
+        // Escape, and mark the parts matching the current search terms
         highlight(s) {
-            const query = this.searchQuery.trim()
-            if (!query) return this.escapeHtml(s)
-            const index = s.toLowerCase().indexOf(query.toLowerCase())
-            if (index === -1) return this.escapeHtml(s)
-            return this.escapeHtml(s.slice(0, index))
-                + '<mark>' + this.escapeHtml(s.slice(index, index + query.length)) + '</mark>'
-                + this.escapeHtml(s.slice(index + query.length))
+            const lower = s.toLowerCase()
+            const ranges = []
+            this.searchTerms().forEach(term => {
+                const index = lower.indexOf(term)
+                if (index !== -1) ranges.push([index, index + term.length])
+            })
+            ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1])  // longest first on ties
+            let html = ''
+            let pos = 0
+            ranges.forEach(([start, end]) => {
+                if (start < pos) return  // overlaps an already marked range
+                html += this.escapeHtml(s.slice(pos, start))
+                    + '<mark>' + this.escapeHtml(s.slice(start, end)) + '</mark>'
+                pos = end
+            })
+            return html + this.escapeHtml(s.slice(pos))
         },
 
         wikiLink(item) {
@@ -652,7 +668,8 @@ document.addEventListener('alpine:init', () => {
 
         matchesQuery(s) {
             if (!s) return false
-            return s.toLowerCase().includes(this.searchQuery.toLowerCase().trim())
+            const lower = s.toLowerCase()
+            return this.searchTerms().some(term => lower.includes(term))
         },
 
         characterMatchesQuery(name) {
