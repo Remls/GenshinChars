@@ -53,6 +53,7 @@ def generate_domains_file():
     with open('data/domains.json') as f:
         domains_data = json.load(f)
     data = {
+        "version": get_version(),
         "last_updated": get_current_timestamp(),
         **domains_data,
     }
