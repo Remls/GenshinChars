@@ -1,6 +1,6 @@
 {
-    "version": "72e7676",
-    "last_updated": "2026-07-29T12:28:10.369541Z",
+    "version": "140923f",
+    "last_updated": "2026-07-29T13:32:52.127337Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1017,7 +1017,7 @@
             ]
         },
         {
-            "name": "Tenebrous Papilla: Type I",
+            "name": "Tenebrous Papilla",
             "location": "Toyac Springs",
             "region": "Natlan",
             "type": "normal_bosses",
@@ -1134,7 +1134,7 @@
             ]
         },
         {
-            "name": "Confront Stormterror (Dvalin)",
+            "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
             "type": "weekly_bosses",
@@ -1178,7 +1178,7 @@
             ]
         },
         {
-            "name": "Narukami Island: Tenshukaku (Signora)",
+            "name": "Narukami Island: Tenshukaku (La Signora)",
             "location": "Inazuma City, Narukami Island",
             "region": "Inazuma",
             "type": "weekly_bosses",
@@ -1189,7 +1189,7 @@
             ]
         },
         {
-            "name": "End of the Oneiric Euthymia (Narukami no Mikoto)",
+            "name": "End of the Oneiric Euthymia (Magatsu Mitake Narukami no Mikoto)",
             "location": "Mt. Yougou, Narukami Island",
             "region": "Inazuma",
             "type": "weekly_bosses",
@@ -1200,7 +1200,7 @@
             ]
         },
         {
-            "name": "Joururi Workshop (Shouki no Kami)",
+            "name": "Joururi Workshop (Everlasting Lord of Arcane Wisdom)",
             "location": "Chinvat Ravine, Avidya Forest",
             "region": "Sumeru",
             "type": "weekly_bosses",
@@ -1233,7 +1233,7 @@
             ]
         },
         {
-            "name": "Scattered Ruins (Arlecchino)",
+            "name": "Scattered Ruins (The Knave)",
             "location": "Mont Esus East, Liffey Region",
             "region": "Fontaine",
             "type": "weekly_bosses",
@@ -1244,7 +1244,7 @@
             ]
         },
         {
-            "name": "Stone Stele Records (Gosoythoth-Xiuhcoatl)",
+            "name": "Stone Stele Records (Lord of Eroded Primal Fire)",
             "location": "Tezcatepetonco Range",
             "region": "Natlan",
             "type": "weekly_bosses",
@@ -1255,7 +1255,7 @@
             ]
         },
         {
-            "name": "Unresolved Chess Game (Chess King & Queen)",
+            "name": "Unresolved Chess Game (The Game Before the Gate)",
             "location": "Falcon Coast, Galesong Hill",
             "region": "Mondstadt",
             "type": "weekly_bosses",
@@ -1266,7 +1266,7 @@
             ]
         },
         {
-            "name": "False Moon Institute (Dottore)",
+            "name": "False Moon Institute (Heretic of the False Moon)",
             "location": "Special Territory Research Institute, Ashveil Peak",
             "region": "Nod-Krai",
             "type": "weekly_bosses",
@@ -1277,7 +1277,7 @@
             ]
         },
         {
-            "name": "Binding Field of Universal Nirvana (Dottore II)",
+            "name": "Binding Field of Universal Nirvana (Exalted Master of the Heretical Path)",
             "location": "Chatrakam Cave, Lokapala Jungle",
             "region": "Sumeru",
             "type": "weekly_bosses",

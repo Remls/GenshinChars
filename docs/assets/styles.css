@@ -241,6 +241,15 @@ a:link, a:visited, a:hover {
     text-underline-offset: 3px;
 }
 
+/* Links to the wiki: underline on hover only */
+a[href^="https://genshin-impact.fandom.com"]:not(.char-chip) {
+    text-decoration: none;
+}
+a[href^="https://genshin-impact.fandom.com"]:not(.char-chip):hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 sup {
     font-size: 8px;
     padding-bottom: 10px;
@@ -260,30 +269,54 @@ sup {
     padding: 2px 0;
 }
 
-.day-buttons {
+.day-buttons, .icon-buttons {
     display: flex;
     gap: 6px;
-    /* Same total width as the select/search filters (40ch at their font) */
+    /* Same total width as the search filter (40ch at its font) */
     width: 40ch;
     font-family: Genshin, Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
 }
-.day-button {
-    flex: 1;
+.day-button, .icon-button {
     font-family: Genshin, Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 1.1;
-    padding: 0.25em 0;
     background-color: var(--secondary-color-muted);
     border: 1px solid var(--select-border);
     border-radius: 0.25em;
     color: var(--txt-color);
     cursor: pointer;
 }
-.day-button.selected {
+.day-button {
+    flex: 1;
+    padding: 0.25em 0;
+}
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex: 1;
+    padding: 0.25em 0;
+}
+.icon-button .icon-button-label {
+    font-size: 0.85em;
+}
+.icon-button .region-icon {
+    display: block;
+}
+.icon-button.selected {
+    flex: none;
+    padding: 0.25em 0.5em;
+}
+.day-button.selected, .icon-button.selected {
     background-color: var(--txt-color);
     color: var(--bg-color);
     cursor: default;
+}
+/* Emblems are light-colored; invert them on the inverted selected background */
+.icon-button.selected .region-icon {
+    filter: invert(1);
 }
 .day-button.today span {
     text-decoration: underline;
@@ -291,13 +324,27 @@ sup {
 }
 .filter-hint {
     margin-top: 4px;
+    font-family: Genshin, Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color: var(--txt-secondary-color);
+}
+h2.with-hint {
+    margin-bottom: 4px;
+}
+h2.with-hint + .filter-hint {
+    margin-bottom: 1rem;
 }
 
 .item-thumb, .region-icon {
     width: 20px;
     height: 20px;
+    vertical-align: text-bottom;
+}
+.domain-shot {
+    width: 36px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 2px;
     vertical-align: text-bottom;
 }
 
@@ -323,6 +370,10 @@ a.char-chip:hover span {
 .domain-table th, .domain-table td {
     white-space: normal;
     overflow-wrap: break-word;
+}
+
+.domain-paren, .domain-paren a, .domain-paren a:visited, .domain-paren a:hover {
+    color: var(--txt-secondary-color);
 }
 
 .results-caption {

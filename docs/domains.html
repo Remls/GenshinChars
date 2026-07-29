@@ -56,26 +56,40 @@
                 </tr>
                 <tr x-show="!searching()">
                     <td>
-                        <label for="type-select">Filter by type</label>
+                        <label>Filter by type</label>
                     </td>
                     <td>
-                        <select id="type-select" x-model="selectedType">
+                        <div class="icon-buttons">
                             <template x-for="[key, type] in Object.entries(DOMAIN_TYPES)" :key="key">
-                                <option :value="key" x-text="`${type.icon} ${type.string}`"></option>
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedType === key }"
+                                    :title="type.string"
+                                    @click="selectedType = key">
+                                    <span x-text="type.icon"></span>
+                                    <span class="icon-button-label" x-show="selectedType === key" x-text="type.button_label"></span>
+                                </button>
                             </template>
-                        </select>
+                        </div>
                     </td>
                 </tr>
                 <tr x-show="!searching()">
                     <td>
-                        <label for="region-select">Filter by region</label>
+                        <label>Filter by region</label>
                     </td>
                     <td>
-                        <select id="region-select" x-model="selectedRegion">
+                        <div class="icon-buttons">
                             <template x-for="key in Object.keys(DOMAIN_REGIONS)" :key="key">
-                                <option :value="key" x-text="key"></option>
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRegion === key }"
+                                    :title="key"
+                                    @click="selectedRegion = key">
+                                    <template x-if="key !== 'All'">
+                                        <span x-html="regionIconHtml(key)"></span>
+                                    </template>
+                                    <span class="icon-button-label" x-show="key === 'All' || selectedRegion === key" x-text="key"></span>
+                                </button>
                             </template>
-                        </select>
+                        </div>
                     </td>
                 </tr>
                 <tr x-show="typeHasChangingRewards() && !searching()">
@@ -103,8 +117,8 @@
     </section>
 
     <section x-show="!searching()">
-        <h2 x-text="typeDetails().title"></h2>
-        <div class="center domain-note">
+        <h2 class="with-hint" x-text="typeDetails().title"></h2>
+        <div class="center filter-hint">
             <span x-text="typeDetails().description"></span>
             <span x-show="!typeHasChangingRewards() && !typeIsOverworld()">(same rewards everyday)</span>
             <span x-show="typeIsOverworld()">(collected in the overworld, available everyday)</span>
@@ -261,7 +275,8 @@
             Last updated <span x-text="lastUpdatedFormatted()"></span><br>
             Days are based on the Asia server (daily reset at 04:00, UTC+8).<br>
             Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a> and the <a href="https://genshin-impact.fandom.com" class="clickable">Genshin Impact Wiki</a><br>
-            Also see: <a href="index.html" class="clickable">Characters</a>
+            Also see: <a href="index.html" class="clickable">Characters</a><br>
+            <a href="#" @click.prevent="resetCache()" class="clickable">Reset cache</a>
         </div>
         <div class="icons">
             <a href="https://t.me/Remls">

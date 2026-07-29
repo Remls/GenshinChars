@@ -1,6 +1,7 @@
 const DOMAIN_TYPES = {
     weapon_ascension_mats: {
-        icon: '⚔',
+        button_label: 'Weapon mats',
+        icon: '🏹',
         short: 'w',
         string: 'Weapon ascension materials',
         title: 'Domains of Forgery',
@@ -8,6 +9,7 @@ const DOMAIN_TYPES = {
         changing_rewards: true,
     },
     talent_upgrade_mats: {
+        button_label: 'Talent mats',
         icon: '📖',
         short: 't',
         string: 'Talent upgrade materials',
@@ -16,6 +18,7 @@ const DOMAIN_TYPES = {
         changing_rewards: true,
     },
     artifacts: {
+        button_label: 'Artifacts',
         icon: '🏺',
         short: 'a',
         string: 'Artifacts',
@@ -24,6 +27,7 @@ const DOMAIN_TYPES = {
         changing_rewards: false,
     },
     normal_bosses: {
+        button_label: 'Normal bosses',
         icon: '🐲',
         short: 'nb',
         string: 'Normal bosses',
@@ -32,6 +36,7 @@ const DOMAIN_TYPES = {
         changing_rewards: false,
     },
     weekly_bosses: {
+        button_label: 'Weekly bosses',
         icon: '🐉',
         short: 'wb',
         string: 'Weekly bosses',
@@ -40,6 +45,7 @@ const DOMAIN_TYPES = {
         changing_rewards: false,
     },
     regional_specialties: {
+        button_label: 'Specialties',
         icon: '🌸',
         short: 'rs',
         string: 'Regional specialties',
@@ -96,6 +102,13 @@ const WIKI_ALT_NAMES = {
     'Charity':      'Teachings of Charity',
     'Fortitude':    'Teachings of Fortitude',
     'Glory':        'Teachings of Glory',
+}
+// Bosses whose archive icon file ("{name} Icon.png") uses a different base name
+// than their wiki page
+const BOSS_ICON_ALIASES = {
+    'Stormterror Dvalin': 'Stormterror',
+    'Childe':             'Childe P3',
+    'Rhodeia of Loch':    'Oceanid',
 }
 // Wiki images live at static.wikia.nocookie.net/gensin-impact/images/{h}/{hh}/{filename},
 // where {h}{hh} are the first hex chars of the MD5 of the filename. Computing that here
@@ -167,6 +180,7 @@ document.addEventListener('alpine:init', () => {
         characterLookup: {},
         rewardSources: {},
         itemImages: {},
+        domainImages: {},
 
         // Section collapses
         showSection: {
@@ -192,22 +206,24 @@ document.addEventListener('alpine:init', () => {
                 // Set here (not on init) so all bindings exist by the time this runs
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
-                this.resolveItemImages().catch(() => {})
+                this.resolveWikiImages().catch(() => {})
             })
         },
 
-        // Resolve each item's real image filename from the wiki API. Guessing
-        // "Item {name}.png" is not enough: artifact sets have no image of their own
-        // (we use their flower piece), some filenames drop characters like ":",
-        // and the CDN answers requests for nonexistent files with a placeholder
-        // image instead of an error. Results are cached per data version.
-        async resolveItemImages() {
-            const cacheKey = 'domains_item_images'
+        // Resolve real image filenames from the wiki API, for items and for
+        // domains/bosses. Guessing filenames is not enough: artifact sets have no
+        // image of their own (we use their flower piece), some filenames drop
+        // characters like ":", and the CDN answers requests for nonexistent files
+        // with a placeholder image instead of an error. Results are cached per
+        // data version.
+        async resolveWikiImages() {
+            const cacheKey = 'domains_wiki_images'
             const version = this.allData.last_updated
             try {
                 const cached = JSON.parse(localStorage.getItem(cacheKey))
                 if (cached && cached.version === version) {
-                    this.itemImages = cached.map
+                    this.itemImages = cached.items
+                    this.domainImages = cached.domains
                     return
                 }
             } catch (e) {}
@@ -277,9 +293,87 @@ document.addEventListener('alpine:init', () => {
                 map[name] = piece ? `Item_${piece.replaceAll(' ', '_')}.png` : null
             })
 
+            // Domains and bosses: the parenthetical part of weekly boss names is
+            // the boss, whose page has a portrait; the stripped name is the page
+            // the row should link to
+            const strip = name => name.replace(/\s*\([^)]*\)$/, '')
+            const paren = name => {
+                const m = name.match(/\(([^)]*)\)$/)
+                return m ? m[1] : null
+            }
+            const domainEntries = []
+            const seenDomains = new Set()
+            this.allData.domains.forEach(dm => {
+                if (dm.name.startsWith('???') || seenDomains.has(dm.name)) return
+                seenDomains.add(dm.name)
+                domainEntries.push({ name: dm.name, type: dm.type })
+            })
+            const titles = new Set()
+            const bossTitles = new Set()
+            domainEntries.forEach(({ name, type }) => {
+                titles.add(strip(name))
+                const bossLabel = paren(name)
+                if (bossLabel) { titles.add(bossLabel); bossTitles.add(bossLabel) }
+                else if (type === 'normal_bosses') bossTitles.add(strip(name))
+            })
+            const pages3 = await batched([...titles], { prop: 'pageimages', piprop: 'name' })
+            const imageOf = title => {
+                const page = pages3[title]
+                if (!page || 'missing' in page) return null
+                return page.pageimage || null
+            }
+
+            // Bosses have in-game archive icons named "{Boss} Icon.png" (colons
+            // dropped), which look better than the pageimages artwork
+            const iconFileFor = title => {
+                const page = pages3[title]
+                const finalTitle = (page && page.title) || title
+                const base = BOSS_ICON_ALIASES[title] || BOSS_ICON_ALIASES[finalTitle] || finalTitle
+                return `${base.replaceAll(':', '')} Icon.png`
+            }
+            const iconTitles = [...new Set([...bossTitles].map(iconFileFor))]
+            const pages4 = await batched(iconTitles.map(t => `File:${t}`), {})
+            const iconExists = {}
+            iconTitles.forEach(t => {
+                const page = pages4[`File:${t}`]
+                iconExists[t] = !!(page && !('missing' in page))
+            })
+            const bossImageOf = title => {
+                const iconFile = iconFileFor(title)
+                if (iconExists[iconFile]) return iconFile.replaceAll(' ', '_')
+                return imageOf(title)
+            }
+
+            const domainMap = {}
+            domainEntries.forEach(({ name, type }) => {
+                const linkTitle = strip(name)
+                const linkPage = pages3[linkTitle]
+                const bossLabel = paren(name)
+                let image = null
+                let boss = null
+                if (bossLabel) {
+                    // Boss rows always show a boss portrait, never the domain
+                    boss = {
+                        name: bossLabel,
+                        hasPage: !!(pages3[bossLabel] && !('missing' in pages3[bossLabel])),
+                    }
+                    image = bossImageOf(bossLabel)
+                } else if (type === 'normal_bosses') {
+                    image = bossImageOf(linkTitle)
+                } else {
+                    image = imageOf(linkTitle)
+                }
+                domainMap[name] = {
+                    image,
+                    link: linkPage && !('missing' in linkPage) ? linkTitle : null,
+                    boss,
+                }
+            })
+
             this.itemImages = map
+            this.domainImages = domainMap
             try {
-                localStorage.setItem(cacheKey, JSON.stringify({ version, map }))
+                localStorage.setItem(cacheKey, JSON.stringify({ version, items: map, domains: domainMap }))
             } catch (e) {}
         },
 
@@ -355,6 +449,11 @@ document.addEventListener('alpine:init', () => {
 
         searching() {
             return this.searchQuery.trim() !== ''
+        },
+
+        resetCache() {
+            localStorage.removeItem('domains_wiki_images')
+            location.reload()
         },
 
         typeDetails() {
@@ -476,7 +575,28 @@ document.addEventListener('alpine:init', () => {
         },
 
         domainNameHtml(domain) {
-            return `${DOMAIN_TYPES[domain.type].icon} <span class="gi-font">${this.highlight(domain.name)}</span>`
+            const info = this.domainImages[domain.name] || {}
+            const thumbClass = (info.image && info.image.startsWith('Domain_')) ? 'domain-shot' : 'item-thumb'
+            const src = info.image ? this.wikiFileUrl(info.image) : FALLBACK_PHOTO
+            const thumb = `<img src="${src}" class="${thumbClass}" height="20" loading="lazy"`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
+            const icon = DOMAIN_TYPES[domain.type].icon
+            const linkify = (html, title) =>
+                `<a href="${GENSHIN_WIKI + encodeURIComponent(title.replaceAll(' ', '_'))}" class="clickable">${html}</a>`
+
+            // Boss rows: "[thumb] Boss name", domain name below in grey
+            if (info.boss) {
+                let bossHtml = `<span class="gi-font">${this.highlight(info.boss.name)}</span>`
+                if (info.boss.hasPage) bossHtml = linkify(bossHtml, info.boss.name)
+                const domainName = domain.name.replace(/\s*\([^)]*\)$/, '')
+                let domainHtml = `<span class="gi-font">${this.highlight(domainName)}</span>`
+                if (info.link) domainHtml = linkify(domainHtml, info.link)
+                return `${icon} ${thumb} ${bossHtml}<br><span class="domain-paren">${domainHtml}</span>`
+            }
+
+            let name = `<span class="gi-font">${this.highlight(domain.name)}</span>`
+            if (info.link) name = linkify(name, info.link)
+            return `${icon} ${thumb} ${name}`
         },
 
         locationHtml(domain) {
