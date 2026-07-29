@@ -72,8 +72,8 @@
                     </td>
                     <td>
                         <select id="region-select" x-model="selectedRegion">
-                            <template x-for="[key, region] in Object.entries(DOMAIN_REGIONS)" :key="key">
-                                <option :value="key" x-text="key === 'All' ? 'All' : `${region.icon} ${key}`"></option>
+                            <template x-for="key in Object.keys(DOMAIN_REGIONS)" :key="key">
+                                <option :value="key" x-text="key"></option>
                             </template>
                         </select>
                     </td>
@@ -121,8 +121,8 @@
                 <tbody>
                     <template x-for="(specialty, idx) in filteredSpecialties()" :key="idx">
                         <tr>
-                            <td x-html="`${typeDetails().icon} ${wikiLinkHtml(specialty.name)}`"></td>
-                            <td x-html="`${DOMAIN_REGIONS[specialty.region].icon} ${highlight(specialty.region)}`"></td>
+                            <td x-html="`${typeDetails().icon} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
+                            <td x-html="`${regionIconHtml(specialty.region)} ${highlight(specialty.region)}`"></td>
                             <td x-html="specialtyCharactersHtml(specialty)"></td>
                         </tr>
                     </template>
@@ -240,8 +240,8 @@
                         <tbody>
                             <template x-for="(specialty, idx) in searchedSpecialties()" :key="idx">
                                 <tr>
-                                    <td x-html="`${DOMAIN_TYPES.regional_specialties.icon} ${wikiLinkHtml(specialty.name)}`"></td>
-                                    <td x-html="`${DOMAIN_REGIONS[specialty.region].icon} ${highlight(specialty.region)}`"></td>
+                                    <td x-html="`${DOMAIN_TYPES.regional_specialties.icon} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
+                                    <td x-html="`${regionIconHtml(specialty.region)} ${highlight(specialty.region)}`"></td>
                                     <td x-html="specialtyCharactersHtml(specialty)"></td>
                                 </tr>
                             </template>
@@ -260,7 +260,7 @@
         <div>
             Last updated <span x-text="lastUpdatedFormatted()"></span><br>
             Days are based on the Asia server (daily reset at 04:00, UTC+8).<br>
-            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a><br>
+            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a> and the <a href="https://genshin-impact.fandom.com" class="clickable">Genshin Impact Wiki</a><br>
             Also see: <a href="index.html" class="clickable">Characters</a>
         </div>
         <div class="icons">

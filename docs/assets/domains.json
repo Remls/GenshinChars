@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-07-29T11:24:47.593224Z",
+    "last_updated": "2026-07-29T12:05:27.937859Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1766,7 +1766,7 @@
             "effect": "Physical DMG +25%"
         },
         "a_shimenawa": {
-            "name": "Shimenawa's Reminiscense",
+            "name": "Shimenawa's Reminiscence",
             "type": "artifacts",
             "effect": "ATK +18%"
         },
@@ -1891,7 +1891,7 @@
             "effect": "Elemental mastery +80"
         },
         "a_rising_winds": {
-            "name": "A Day Carved from Rising Winds",
+            "name": "A Day Carved From Rising Winds",
             "type": "artifacts",
             "effect": "ATK +18%"
         },

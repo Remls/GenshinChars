@@ -295,6 +295,12 @@ sup {
     color: var(--txt-secondary-color);
 }
 
+.item-thumb, .region-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+
 .char-chip {
     display: inline-flex;
     align-items: center;

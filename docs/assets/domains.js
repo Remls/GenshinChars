@@ -50,15 +50,15 @@ const DOMAIN_TYPES = {
     },
 }
 const DOMAIN_REGIONS = {
-    'All':       { icon: '🅰️', short: 'a' },
-    'Mondstadt': { icon: '💚', short: 'm' },
-    'Liyue':     { icon: '🧡', short: 'l' },
-    'Inazuma':   { icon: '💜', short: 'i' },
-    'Sumeru':    { icon: '🤎', short: 'su' },
-    'Fontaine':  { icon: '💙', short: 'f' },
-    'Natlan':    { icon: '❤️', short: 'n' },
-    'Nod-Krai':  { icon: '🩶', short: 'nk' },
-    'Snezhnaya': { icon: '🤍', short: 'sn' },
+    'All':       { short: 'a' },
+    'Mondstadt': { short: 'm' },
+    'Liyue':     { short: 'l' },
+    'Inazuma':   { short: 'i' },
+    'Sumeru':    { short: 'su' },
+    'Fontaine':  { short: 'f' },
+    'Natlan':    { short: 'n' },
+    'Nod-Krai':  { short: 'nk' },
+    'Snezhnaya': { short: 'sn' },
 }
 const DOMAIN_DAYS = {
     sun: 'Sunday',
@@ -97,6 +97,49 @@ const WIKI_ALT_NAMES = {
     'Fortitude':    'Teachings of Fortitude',
     'Glory':        'Teachings of Glory',
 }
+// Wiki images live at static.wikia.nocookie.net/gensin-impact/images/{h}/{hh}/{filename},
+// where {h}{hh} are the first hex chars of the MD5 of the filename. Computing that here
+// lets us build thumbnail URLs for any item without calling the wiki API.
+function md5Hex(str) {
+    const utf8 = new TextEncoder().encode(str)
+    const K = Array.from({ length: 64 }, (_, i) => Math.floor(Math.abs(Math.sin(i + 1)) * 4294967296))
+    const S = [
+        7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22,
+        5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20,
+        4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23,
+        6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21,
+    ]
+    const padded = (((utf8.length + 8) >> 6) + 1) << 6
+    const bytes = new Uint8Array(padded)
+    bytes.set(utf8)
+    bytes[utf8.length] = 0x80
+    const view = new DataView(bytes.buffer)
+    const bitLen = utf8.length * 8
+    view.setUint32(padded - 8, bitLen >>> 0, true)
+    view.setUint32(padded - 4, Math.floor(bitLen / 4294967296), true)
+    let a0 = 0x67452301, b0 = 0xefcdab89, c0 = 0x98badcfe, d0 = 0x10325476
+    for (let chunk = 0; chunk < padded; chunk += 64) {
+        const M = Array.from({ length: 16 }, (_, i) => view.getUint32(chunk + i * 4, true))
+        let A = a0, B = b0, C = c0, D = d0
+        for (let i = 0; i < 64; i++) {
+            let F, g
+            if (i < 16) { F = (B & C) | (~B & D); g = i }
+            else if (i < 32) { F = (D & B) | (~D & C); g = (5 * i + 1) % 16 }
+            else if (i < 48) { F = B ^ C ^ D; g = (3 * i + 5) % 16 }
+            else { F = C ^ (B | ~D); g = (7 * i) % 16 }
+            F = (F + A + K[i] + M[g]) | 0
+            A = D; D = C; C = B
+            B = (B + ((F << S[i]) | (F >>> (32 - S[i])))) | 0
+        }
+        a0 = (a0 + A) | 0; b0 = (b0 + B) | 0; c0 = (c0 + C) | 0; d0 = (d0 + D) | 0
+    }
+    return [a0, b0, c0, d0].map(n => {
+        let s = ''
+        for (let j = 0; j < 4; j++) s += ((n >>> (j * 8)) & 0xff).toString(16).padStart(2, '0')
+        return s
+    }).join('')
+}
+
 const DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 // For displaying availability: weekdays first, Sunday (everything drops) last
 const DAY_DISPLAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
@@ -123,6 +166,7 @@ document.addEventListener('alpine:init', () => {
         allData: { domains: [], rewards: {}, specialties: {} },
         characterLookup: {},
         rewardSources: {},
+        itemImages: {},
 
         // Section collapses
         showSection: {
@@ -148,7 +192,95 @@ document.addEventListener('alpine:init', () => {
                 // Set here (not on init) so all bindings exist by the time this runs
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
+                this.resolveItemImages().catch(() => {})
             })
+        },
+
+        // Resolve each item's real image filename from the wiki API. Guessing
+        // "Item {name}.png" is not enough: artifact sets have no image of their own
+        // (we use their flower piece), some filenames drop characters like ":",
+        // and the CDN answers requests for nonexistent files with a placeholder
+        // image instead of an error. Results are cached per data version.
+        async resolveItemImages() {
+            const cacheKey = 'domains_item_images'
+            const version = this.allData.last_updated
+            try {
+                const cached = JSON.parse(localStorage.getItem(cacheKey))
+                if (cached && cached.version === version) {
+                    this.itemImages = cached.map
+                    return
+                }
+            } catch (e) {}
+
+            const titleOf = name => WIKI_ALT_NAMES[name] || name
+            const names = new Set()
+            Object.values(this.allData.rewards).forEach(r => names.add(r.name))
+            Object.values(this.allData.specialties || {}).forEach(s => names.add(s.name))
+            const queryable = [...names].filter(n => !n.startsWith('???'))
+
+            // Batched API query; returns requested-title -> page object
+            const apiQuery = async (titles, params) => {
+                const search = new URLSearchParams({
+                    action: 'query', format: 'json', origin: '*', redirects: '1',
+                    titles: titles.join('|'), ...params,
+                })
+                const data = await fetch(`https://genshin-impact.fandom.com/api.php?${search}`)
+                    .then(r => r.json())
+                const rename = {}
+                ;(data.query.normalized || []).forEach(x => { rename[x.from] = x.to })
+                ;(data.query.redirects || []).forEach(x => { rename[x.from] = x.to })
+                const byTitle = {}
+                Object.values(data.query.pages || {}).forEach(p => { byTitle[p.title] = p })
+                const result = {}
+                titles.forEach(t => {
+                    let final = t
+                    const seen = new Set()
+                    while (rename[final] && !seen.has(final)) { seen.add(final); final = rename[final] }
+                    result[t] = byTitle[final]
+                })
+                return result
+            }
+            const batched = async (items, params) => {
+                let pages = {}
+                for (let i = 0; i < items.length; i += 50) {
+                    const part = await apiQuery(items.slice(i, i + 50), params)
+                    pages = { ...pages, ...part }
+                }
+                return pages
+            }
+
+            // Phase 1: the page's own image (drops, specialties)
+            const map = {}
+            const noImage = []
+            const pages = await batched(queryable.map(titleOf), { prop: 'pageimages', piprop: 'name' })
+            queryable.forEach(name => {
+                const page = pages[titleOf(name)]
+                if (!page || 'missing' in page) map[name] = null
+                // Only trust item images; a page's lead image can be something
+                // else entirely (e.g. a version promo on artifact set pages)
+                else if (page.pageimage && page.pageimage.startsWith('Item_')) map[name] = page.pageimage
+                else noImage.push(name)
+            })
+
+            // Phase 2: pages without an own image are artifact sets; use a piece
+            // (flower where available) from the set infobox
+            const PIECE_SLOTS = ['flower', 'plume', 'sands', 'goblet', 'circlet']
+            const pages2 = await batched(noImage.map(titleOf), { prop: 'revisions', rvprop: 'content', rvslots: 'main' })
+            noImage.forEach(name => {
+                const page = pages2[titleOf(name)]
+                const wikitext = page?.revisions?.[0]?.slots?.main?.['*'] || ''
+                let piece = null
+                for (const slot of PIECE_SLOTS) {
+                    const m = wikitext.match(new RegExp(`\\|\\s*${slot}\\s*=\\s*([^\\n|}]+)`))
+                    if (m) { piece = m[1].trim(); break }
+                }
+                map[name] = piece ? `Item_${piece.replaceAll(' ', '_')}.png` : null
+            })
+
+            this.itemImages = map
+            try {
+                localStorage.setItem(cacheKey, JSON.stringify({ version, map }))
+            } catch (e) {}
         },
 
         // In-game day rolls over at 04:00 server time (Asia server, UTC+8)
@@ -298,6 +430,30 @@ document.addEventListener('alpine:init', () => {
             return GENSHIN_WIKI + encodeURIComponent(wikiName.replaceAll(' ', '_'))
         },
 
+        // Bare wiki image URLs (no /revision/... suffix) are served regardless of referer;
+        // the scaled-thumbnail URLs are not, so use the full-size images (5-20 KB each).
+        wikiFileUrl(filename) {
+            filename = filename.replaceAll(' ', '_')
+            const hash = md5Hex(filename)
+            const encoded = encodeURIComponent(filename)
+                .replaceAll("'", '%27').replaceAll('(', '%28').replaceAll(')', '%29')
+            return `https://static.wikia.nocookie.net/gensin-impact/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
+        },
+
+        itemThumbHtml(item) {
+            const filename = this.itemImages[item]
+            const src = filename ? this.wikiFileUrl(filename) : FALLBACK_PHOTO
+            return `<img src="${src}" class="item-thumb" width="20" height="20" loading="lazy"`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
+        },
+
+        // Wiki region emblem images are named "Emblem {Region}.png"
+        regionIconHtml(region) {
+            const src = this.wikiFileUrl(`Emblem ${region}.png`)
+            return `<img src="${src}" class="region-icon" width="20" height="20" loading="lazy"`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
+        },
+
         wikiLinkHtml(item) {
             const displayName = this.highlight(item)
             if (item === '???') return displayName
@@ -324,7 +480,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         locationHtml(domain) {
-            const icon = DOMAIN_REGIONS[domain.region].icon
+            const icon = this.regionIconHtml(domain.region)
             const segments = domain.location ? domain.location.split(', ') : []
             segments.push(domain.region)
             const lines = segments.map(s => this.highlight(s))
@@ -340,7 +496,7 @@ document.addEventListener('alpine:init', () => {
         rewardSourceHtml(rewardKey) {
             const sources = this.rewardSources[rewardKey] || []
             return sources.map(source => {
-                const icon = DOMAIN_REGIONS[source.region].icon
+                const icon = this.regionIconHtml(source.region)
                 let text = `${icon} <span class="gi-font">${this.escapeHtml(source.name)}</span>`
                 if (source.days) text += ` <span class="source-days">(${this.formatDays(source.days)})</span>`
                 return text
@@ -358,7 +514,7 @@ document.addEventListener('alpine:init', () => {
             if (withRewardType && reward.type) {
                 text += `${DOMAIN_TYPES[reward.type].icon} `
             }
-            text += this.wikiLinkHtml(reward.name)
+            text += `${this.itemThumbHtml(reward.name)} ${this.wikiLinkHtml(reward.name)}`
             if (reward.characters && reward.characters.length > 0) {
                 const chips = reward.characters.map(c => this.characterChipHtml(c))
                 text += ` (${chips.join(', ')})`
