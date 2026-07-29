@@ -62,21 +62,6 @@ const DOMAIN_DAYS = {
 }
 const GENSHIN_WIKI = 'https://genshin-impact.fandom.com/wiki/'
 const WIKI_ALT_NAMES = {
-    // Characters
-    'Childe':    'Tartaglia',
-    'Kazuha':    'Kaedehara Kazuha',
-    'Ayaka':     'Kamisato Ayaka',
-    'Ayato':     'Kamisato Ayato',
-    'Sara':      'Kujou Sara',
-    'Ei':        'Raiden Shogun',
-    'Kokomi':    'Sangonomiya Kokomi',
-    'Itto':      'Arataki Itto',
-    'Miko':      'Yae Miko',
-    'Shinobu':   'Kuki Shinobu',
-    'Heizou':    'Shikanoin Heizou',
-    'Mizuki':    'Yumemizuki Mizuki',
-    'Columbina': 'Columbina Hyposelenia',
-
     // Talent materials
     'Freedom':      'Teachings of Freedom',
     'Resistance':   'Teachings of Resistance',
@@ -184,10 +169,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         resolveCharacter(name) {
-            const altName = WIKI_ALT_NAMES[name] || ''
-            return this.characterLookup[name.toLowerCase()]
-                || this.characterLookup[altName.toLowerCase()]
-                || null
+            return this.characterLookup[name.toLowerCase()] || null
         },
 
         // Map each reward key to the domains that drop it, with days if rotating
@@ -308,7 +290,7 @@ document.addEventListener('alpine:init', () => {
             }
             chip += `<span class="gi-font ${elementClass}">${this.highlight(name)}</span>`
             if (name === '???') return `<span class="char-chip">${chip}</span>`
-            return `<a href="${this.wikiLink(name)}" class="char-chip">${chip}</a>`
+            return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip">${chip}</a>`
         },
 
         domainNameHtml(domain) {
@@ -367,7 +349,6 @@ document.addEventListener('alpine:init', () => {
 
         characterMatchesQuery(name) {
             if (this.matchesQuery(name)) return true
-            if (this.matchesQuery(WIKI_ALT_NAMES[name])) return true
             const info = this.resolveCharacter(name)
             if (!info) return false
             return this.matchesQuery(info.fullName) || this.matchesQuery(info.displayName)

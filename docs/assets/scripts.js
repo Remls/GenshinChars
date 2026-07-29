@@ -352,7 +352,7 @@ document.addEventListener('alpine:init', () => {
 
         getWikiLink() {
             if (this.name) {
-                return `https://genshin-impact.fandom.com/wiki/${this.name.replaceAll(' ', '_')}`
+                return `https://genshin-impact.fandom.com/wiki/${encodeURIComponent(this.name.replaceAll(' ', '_'))}`
             }
             return ''
         }

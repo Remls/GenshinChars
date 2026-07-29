@@ -93,6 +93,9 @@
                                 </button>
                             </template>
                         </div>
+                        <div class="filter-hint" x-show="selectedDay !== 'sun'">
+                            All drops will be available if it is currently the first week of any banner.
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -106,16 +109,16 @@
             <span x-show="!typeHasChangingRewards()">(same rewards everyday)</span>
         </div>
         <div class="table-wrapper">
-            <table>
+            <table class="domain-table">
                 <thead>
                     <tr>
-                        <th>Domain</th>
-                        <th>Location</th>
+                        <th width="30%">Domain</th>
+                        <th width="22%">Location</th>
                         <th x-text="typeHasChangingRewards() ? `Drops (${DOMAIN_DAYS[selectedDay]})` : 'Drops'"></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <template x-for="domain in filteredDomains()" :key="domain.name">
+                    <template x-for="(domain, idx) in filteredDomains()" :key="idx">
                         <tr>
                             <td x-html="domainNameHtml(domain)"></td>
                             <td x-html="locationHtml(domain)"></td>
@@ -134,9 +137,6 @@
                 </tbody>
             </table>
         </div>
-        <div class="center domain-note" x-show="typeHasChangingRewards() && selectedDay !== 'sun'">
-            ⚠️ ALL drops will be available if it is currently the first week of any banner.
-        </div>
     </section>
 
     <section x-show="searching()">
@@ -147,16 +147,16 @@
                     ... in domains/bosses (<span x-text="searchedDomains().length"></span>):
                 </div>
                 <div class="table-wrapper">
-                    <table>
+                    <table class="domain-table">
                         <thead>
                             <tr>
-                                <th>Domain/boss</th>
-                                <th>Location</th>
+                                <th width="30%">Domain/boss</th>
+                                <th width="22%">Location</th>
                                 <th>Drops</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <template x-for="domain in searchedDomains()" :key="domain.name">
+                            <template x-for="(domain, idx) in searchedDomains()" :key="idx">
                                 <tr>
                                     <td x-html="domainNameHtml(domain)"></td>
                                     <td x-html="locationHtml(domain)"></td>
@@ -180,10 +180,10 @@
                     ... in drops (<span x-text="searchedRewardEntries().length"></span>):
                 </div>
                 <div class="table-wrapper">
-                    <table>
+                    <table class="domain-table">
                         <thead>
                             <tr>
-                                <th>Drop</th>
+                                <th width="55%">Drop</th>
                                 <th>Where to get it</th>
                             </tr>
                         </thead>

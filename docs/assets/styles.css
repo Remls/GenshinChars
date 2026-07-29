@@ -262,14 +262,18 @@ sup {
 
 .day-buttons {
     display: flex;
-    flex-wrap: wrap;
     gap: 6px;
+    /* Same total width as the select/search filters (40ch at their font) */
+    width: 40ch;
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
 }
 .day-button {
+    flex: 1;
     font-family: Genshin, Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     line-height: 1.1;
-    padding: 0.25em 0.75em;
+    padding: 0.25em 0;
     background-color: var(--secondary-color-muted);
     border: 1px solid var(--select-border);
     border-radius: 0.25em;
@@ -285,6 +289,11 @@ sup {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+.filter-hint {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: var(--txt-secondary-color);
+}
 
 .char-chip {
     display: inline-flex;
@@ -298,6 +307,16 @@ a.char-chip, a.char-chip:visited, a.char-chip:hover {
 a.char-chip:hover span {
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+
+/* Fixed layout so columns keep the same widths regardless of content */
+.domain-table {
+    table-layout: fixed;
+    width: 95%;
+}
+.domain-table th, .domain-table td {
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .results-caption {
