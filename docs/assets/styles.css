@@ -52,6 +52,21 @@ select {
     border-radius: 0.25em;
 }
 
+input[type="search"] {
+    appearance: none;
+    outline: none;
+    background-color: var(--secondary-color-muted);
+    border: 1px solid var(--select-border);
+    padding: 0.25em 0.5em;
+    width: 40ch;
+    color: var(--txt-color);
+    font-size: 1.25rem;
+    line-height: 1.1;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+}
+
 .all-selects-wrapper {
     display: flex;
     flex-direction: column;
@@ -230,4 +245,70 @@ sup {
     font-size: 8px;
     padding-bottom: 10px;
     padding-left: 2px;
+}
+
+/* Domains page */
+.domain-note {
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+.domain-rewards {
+    margin: 0;
+    padding-left: 1.25em;
+}
+.domain-rewards li {
+    padding: 2px 0;
+}
+
+.day-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.day-button {
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    padding: 0.25em 0.75em;
+    background-color: var(--secondary-color-muted);
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    color: var(--txt-color);
+    cursor: pointer;
+}
+.day-button.selected {
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    cursor: default;
+}
+.day-button.today span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.char-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    vertical-align: middle;
+}
+a.char-chip, a.char-chip:visited, a.char-chip:hover {
+    text-decoration: none;
+}
+a.char-chip:hover span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.results-caption {
+    width: 95%;
+    margin: 1.5rem auto 0.5rem;
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+}
+.source-days {
+    color: var(--txt-secondary-color);
+}
+mark {
+    background-color: var(--txt-color);
+    color: var(--bg-color);
 }

@@ -1,0 +1,2688 @@
+{
+    "last_updated": "2026-07-29T10:21:56.686817Z",
+    "domains": [
+        {
+            "name": "Cecilia Garden",
+            "location": "Wolvendom, Windwail Highland",
+            "region": "Mondstadt",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_tile",
+                    "w_tooth",
+                    "w_shackle"
+                ],
+                "mon": [
+                    "w_tile"
+                ],
+                "tue": [
+                    "w_tooth"
+                ],
+                "wed": [
+                    "w_shackle"
+                ],
+                "thu": [
+                    "w_tile"
+                ],
+                "fri": [
+                    "w_tooth"
+                ],
+                "sat": [
+                    "w_shackle"
+                ]
+            }
+        },
+        {
+            "name": "Hidden Palace of Lianshan Formula",
+            "location": "Mingyun Village, Qiongji Estuary",
+            "region": "Liyue",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_guyun",
+                    "w_pearl",
+                    "w_aerosiderite"
+                ],
+                "mon": [
+                    "w_guyun"
+                ],
+                "tue": [
+                    "w_pearl"
+                ],
+                "wed": [
+                    "w_aerosiderite"
+                ],
+                "thu": [
+                    "w_guyun"
+                ],
+                "fri": [
+                    "w_pearl"
+                ],
+                "sat": [
+                    "w_aerosiderite"
+                ]
+            }
+        },
+        {
+            "name": "Court of Flowing Sand",
+            "location": "Mt. Yougou, Narukami Island",
+            "region": "Inazuma",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_branch",
+                    "w_comma",
+                    "w_mask"
+                ],
+                "mon": [
+                    "w_branch"
+                ],
+                "tue": [
+                    "w_comma"
+                ],
+                "wed": [
+                    "w_mask"
+                ],
+                "thu": [
+                    "w_branch"
+                ],
+                "fri": [
+                    "w_comma"
+                ],
+                "sat": [
+                    "w_mask"
+                ]
+            }
+        },
+        {
+            "name": "Tower of Abject Pride",
+            "location": "Apam Woods, Ashavan Realm",
+            "region": "Sumeru",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_forest_dew",
+                    "w_oasis_garden",
+                    "w_scorching_might"
+                ],
+                "mon": [
+                    "w_forest_dew"
+                ],
+                "tue": [
+                    "w_oasis_garden"
+                ],
+                "wed": [
+                    "w_scorching_might"
+                ],
+                "thu": [
+                    "w_forest_dew"
+                ],
+                "fri": [
+                    "w_oasis_garden"
+                ],
+                "sat": [
+                    "w_scorching_might"
+                ]
+            }
+        },
+        {
+            "name": "Echoes of the Deep Tides",
+            "location": "Court of Fontaine Region",
+            "region": "Fontaine",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_ancient_chord",
+                    "w_pure_sacred_dewdrop",
+                    "w_pristine_sea"
+                ],
+                "mon": [
+                    "w_ancient_chord"
+                ],
+                "tue": [
+                    "w_pure_sacred_dewdrop"
+                ],
+                "wed": [
+                    "w_pristine_sea"
+                ],
+                "thu": [
+                    "w_ancient_chord"
+                ],
+                "fri": [
+                    "w_pure_sacred_dewdrop"
+                ],
+                "sat": [
+                    "w_pristine_sea"
+                ]
+            }
+        },
+        {
+            "name": "Ancient Watchtower",
+            "location": "Tequemecan Valley",
+            "region": "Natlan",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_blazing_sacrificial_heart",
+                    "w_delirious_decadence",
+                    "w_night_wind"
+                ],
+                "mon": [
+                    "w_blazing_sacrificial_heart"
+                ],
+                "tue": [
+                    "w_delirious_decadence"
+                ],
+                "wed": [
+                    "w_night_wind"
+                ],
+                "thu": [
+                    "w_blazing_sacrificial_heart"
+                ],
+                "fri": [
+                    "w_delirious_decadence"
+                ],
+                "sat": [
+                    "w_night_wind"
+                ]
+            }
+        },
+        {
+            "name": "Lost Mooncourt",
+            "location": "Hiisi Island",
+            "region": "Nod-Krai",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_artful_device",
+                    "w_long_night_flint",
+                    "w_far_north_scions"
+                ],
+                "mon": [
+                    "w_artful_device"
+                ],
+                "tue": [
+                    "w_long_night_flint"
+                ],
+                "wed": [
+                    "w_far_north_scions"
+                ],
+                "thu": [
+                    "w_artful_device"
+                ],
+                "fri": [
+                    "w_long_night_flint"
+                ],
+                "sat": [
+                    "w_far_north_scions"
+                ]
+            }
+        },
+        {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "weapon_ascension_mats",
+            "rewards": {
+                "sun": [
+                    "w_pale_star_army",
+                    "w_spiritual_nectar",
+                    "w_frost_emperor"
+                ],
+                "mon": [
+                    "w_pale_star_army"
+                ],
+                "tue": [
+                    "w_spiritual_nectar"
+                ],
+                "wed": [
+                    "w_frost_emperor"
+                ],
+                "thu": [
+                    "w_pale_star_army"
+                ],
+                "fri": [
+                    "w_spiritual_nectar"
+                ],
+                "sat": [
+                    "w_frost_emperor"
+                ]
+            }
+        },
+        {
+            "name": "Forsaken Rift",
+            "location": "Springvale, Windwail Highland",
+            "region": "Mondstadt",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_freedom",
+                    "t_resistance",
+                    "t_ballad"
+                ],
+                "mon": [
+                    "t_freedom"
+                ],
+                "tue": [
+                    "t_resistance"
+                ],
+                "wed": [
+                    "t_ballad"
+                ],
+                "thu": [
+                    "t_freedom"
+                ],
+                "fri": [
+                    "t_resistance"
+                ],
+                "sat": [
+                    "t_ballad"
+                ]
+            }
+        },
+        {
+            "name": "Taishan Mansion",
+            "location": "Jueyun Karst, Minlin",
+            "region": "Liyue",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_prosperity",
+                    "t_diligence",
+                    "t_gold"
+                ],
+                "mon": [
+                    "t_prosperity"
+                ],
+                "tue": [
+                    "t_diligence"
+                ],
+                "wed": [
+                    "t_gold"
+                ],
+                "thu": [
+                    "t_prosperity"
+                ],
+                "fri": [
+                    "t_diligence"
+                ],
+                "sat": [
+                    "t_gold"
+                ]
+            }
+        },
+        {
+            "name": "Violet Court",
+            "location": "Kannazuka",
+            "region": "Inazuma",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_transience",
+                    "t_elegance",
+                    "t_light"
+                ],
+                "mon": [
+                    "t_transience"
+                ],
+                "tue": [
+                    "t_elegance"
+                ],
+                "wed": [
+                    "t_light"
+                ],
+                "thu": [
+                    "t_transience"
+                ],
+                "fri": [
+                    "t_elegance"
+                ],
+                "sat": [
+                    "t_light"
+                ]
+            }
+        },
+        {
+            "name": "Steeple of Ignorance",
+            "location": "Chatrakam Cave, Lokapala Jungle",
+            "region": "Sumeru",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_admonition",
+                    "t_ingenuity",
+                    "t_praxis"
+                ],
+                "mon": [
+                    "t_admonition"
+                ],
+                "tue": [
+                    "t_ingenuity"
+                ],
+                "wed": [
+                    "t_praxis"
+                ],
+                "thu": [
+                    "t_admonition"
+                ],
+                "fri": [
+                    "t_ingenuity"
+                ],
+                "sat": [
+                    "t_praxis"
+                ]
+            }
+        },
+        {
+            "name": "Pale Forgotten Glory",
+            "location": "Salacia Plain, Court of Fontaine Region",
+            "region": "Fontaine",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_equity",
+                    "t_justice",
+                    "t_order"
+                ],
+                "mon": [
+                    "t_equity"
+                ],
+                "tue": [
+                    "t_justice"
+                ],
+                "wed": [
+                    "t_order"
+                ],
+                "thu": [
+                    "t_equity"
+                ],
+                "fri": [
+                    "t_justice"
+                ],
+                "sat": [
+                    "t_order"
+                ]
+            }
+        },
+        {
+            "name": "Blazing Ruins",
+            "location": "Tepecac Rise, Tequemecan Valley",
+            "region": "Natlan",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_contention",
+                    "t_kindling",
+                    "t_conflict"
+                ],
+                "mon": [
+                    "t_contention"
+                ],
+                "tue": [
+                    "t_kindling"
+                ],
+                "wed": [
+                    "t_conflict"
+                ],
+                "thu": [
+                    "t_contention"
+                ],
+                "fri": [
+                    "t_kindling"
+                ],
+                "sat": [
+                    "t_conflict"
+                ]
+            }
+        },
+        {
+            "name": "Lightless Capital",
+            "location": "Lempo Isle",
+            "region": "Nod-Krai",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_moonlight",
+                    "t_elysium",
+                    "t_vagrancy"
+                ],
+                "mon": [
+                    "t_moonlight"
+                ],
+                "tue": [
+                    "t_elysium"
+                ],
+                "wed": [
+                    "t_vagrancy"
+                ],
+                "thu": [
+                    "t_moonlight"
+                ],
+                "fri": [
+                    "t_elysium"
+                ],
+                "sat": [
+                    "t_vagrancy"
+                ]
+            }
+        },
+        {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "talent_upgrade_mats",
+            "rewards": {
+                "sun": [
+                    "t_charity",
+                    "t_fortitude",
+                    "t_glory"
+                ],
+                "mon": [
+                    "t_charity"
+                ],
+                "tue": [
+                    "t_fortitude"
+                ],
+                "wed": [
+                    "t_glory"
+                ],
+                "thu": [
+                    "t_charity"
+                ],
+                "fri": [
+                    "t_fortitude"
+                ],
+                "sat": [
+                    "t_glory"
+                ]
+            }
+        },
+        {
+            "name": "Midsummer Courtyard",
+            "location": "Starsnatch Cliff, Starfell Valley",
+            "region": "Mondstadt",
+            "type": "artifacts",
+            "rewards": [
+                "a_thundering_fury",
+                "a_thundersoother"
+            ]
+        },
+        {
+            "name": "Valley of Remembrance",
+            "location": "Dawn Winery, Windwail Highland",
+            "region": "Mondstadt",
+            "type": "artifacts",
+            "rewards": [
+                "a_venerer",
+                "a_maiden"
+            ]
+        },
+        {
+            "name": "Peak of Vindagnyr",
+            "location": "Skyfrost Nail, Dragonspine",
+            "region": "Mondstadt",
+            "type": "artifacts",
+            "rewards": [
+                "a_depth",
+                "a_blizzard"
+            ]
+        },
+        {
+            "name": "Domain of Guyun",
+            "location": "Guyun Stone Forest, Sea of Clouds",
+            "region": "Liyue",
+            "type": "artifacts",
+            "rewards": [
+                "a_petra",
+                "a_bolide"
+            ]
+        },
+        {
+            "name": "Hidden Palace of Zhou Formula",
+            "location": "Wuwang Hill, Bishui Plain",
+            "region": "Liyue",
+            "type": "artifacts",
+            "rewards": [
+                "a_crimson_witch",
+                "a_lavawalker"
+            ]
+        },
+        {
+            "name": "Clear Pool and Mountain Cavern",
+            "location": "Mt. Aocang, Minling",
+            "region": "Liyue",
+            "type": "artifacts",
+            "rewards": [
+                "a_chivalry",
+                "a_noblesse"
+            ]
+        },
+        {
+            "name": "Ridge Watch",
+            "location": "Stone Gate, Bishui Plain",
+            "region": "Liyue",
+            "type": "artifacts",
+            "rewards": [
+                "a_millelith",
+                "a_pale_flame"
+            ]
+        },
+        {
+            "name": "The Lost Valley",
+            "location": "Fuao Vale, The Chasm",
+            "region": "Liyue",
+            "type": "artifacts",
+            "rewards": [
+                "a_vermillion",
+                "a_echoes"
+            ]
+        },
+        {
+            "name": "Momiji-Dyed Court",
+            "location": "Yashiori Island",
+            "region": "Inazuma",
+            "type": "artifacts",
+            "rewards": [
+                "a_shimenawa",
+                "a_severed_fate"
+            ]
+        },
+        {
+            "name": "Slumbering Court",
+            "location": "Seirai Island",
+            "region": "Inazuma",
+            "type": "artifacts",
+            "rewards": [
+                "a_clam",
+                "a_husk"
+            ]
+        },
+        {
+            "name": "Spire of Solitary Enlightenment",
+            "location": "Gandha Hill, Avidya Forest, Dharma Forest",
+            "region": "Sumeru",
+            "type": "artifacts",
+            "rewards": [
+                "a_deepwood",
+                "a_gilded_dreams"
+            ]
+        },
+        {
+            "name": "City of Gold",
+            "location": "Eye of the Sands, Land of Lower Setekh, Great Red Sand",
+            "region": "Sumeru",
+            "type": "artifacts",
+            "rewards": [
+                "a_desert_pavilion",
+                "a_flower_of_paradise_lost"
+            ]
+        },
+        {
+            "name": "Molten Iron Fortress",
+            "location": "Gavireh Lajavard, Girdle of the Sands",
+            "region": "Sumeru",
+            "type": "artifacts",
+            "rewards": [
+                "a_nymphs_dream",
+                "a_vourukashas_glow"
+            ]
+        },
+        {
+            "name": "Denouement of Sin",
+            "location": "Romaritime Harbor, Belleau Region",
+            "region": "Fontaine",
+            "type": "artifacts",
+            "rewards": [
+                "a_marechaussee",
+                "a_golden_troupe"
+            ]
+        },
+        {
+            "name": "Waterfall Wen",
+            "location": "East Slopes of Mont Automnequi, Morte Region",
+            "region": "Fontaine",
+            "type": "artifacts",
+            "rewards": [
+                "a_song_of_days_past",
+                "a_nighttime_whispers"
+            ]
+        },
+        {
+            "name": "Faded Theater",
+            "location": "Nostoi Region",
+            "region": "Fontaine",
+            "type": "artifacts",
+            "rewards": [
+                "a_fragment_of_harmonic_whimsy",
+                "a_unfinished_reverie"
+            ]
+        },
+        {
+            "name": "Sanctum of Rainbow Spirits",
+            "location": "Toyac Springs",
+            "region": "Natlan",
+            "type": "artifacts",
+            "rewards": [
+                "a_obsidian_codex",
+                "a_scroll_of_hero_of_cinder_city"
+            ]
+        },
+        {
+            "name": "Derelict Masonry Dock",
+            "location": "Atocpan",
+            "region": "Natlan",
+            "type": "artifacts",
+            "rewards": [
+                "a_finale_of_deep_galleries",
+                "a_long_nights_oath"
+            ]
+        },
+        {
+            "name": "Frostladen Machinery",
+            "location": "Maroon Basin, Paha Isle",
+            "region": "Nod-Krai",
+            "type": "artifacts",
+            "rewards": [
+                "a_night_sky_unveiling",
+                "a_silken_moon"
+            ]
+        },
+        {
+            "name": "Moonchild's Treasures",
+            "location": "Ashveil Peak",
+            "region": "Nod-Krai",
+            "type": "artifacts",
+            "rewards": [
+                "a_aubade_of_morning",
+                "a_rising_winds"
+            ]
+        },
+        {
+            "name": "Thorny Crown of the Mountain Wind",
+            "location": "Windrest Peak",
+            "region": "Mondstadt",
+            "type": "artifacts",
+            "rewards": [
+                "a_celestial_gift",
+                "a_deep_shadow"
+            ]
+        },
+        {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "artifacts",
+            "rewards": [
+                "a_snezhnaya_1",
+                "a_snezhnaya_2"
+            ]
+        },
+        {
+            "name": "Anemo Hypostasis",
+            "location": "Stormbearer Mountains",
+            "region": "Mondstadt",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_hurricane_seed"
+            ]
+        },
+        {
+            "name": "Cryo Hypostasis",
+            "location": "Dragonspine",
+            "region": "Mondstadt",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_crystalline_bloom"
+            ]
+        },
+        {
+            "name": "Cryo Regisvine",
+            "location": "Falcon Coast",
+            "region": "Mondstadt",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_hoarfrost_core"
+            ]
+        },
+        {
+            "name": "Electro Hypostasis",
+            "location": "Cape Oath",
+            "region": "Mondstadt",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_lightning_prism"
+            ]
+        },
+        {
+            "name": "Geo Hypostasis",
+            "location": "Guyun Stone Forest",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_basalt_pillar"
+            ]
+        },
+        {
+            "name": "Primo Geovishap",
+            "location": "Minlin",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_juvenile_jade"
+            ]
+        },
+        {
+            "name": "Pyro Regisvine",
+            "location": "Cuijue Slope",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_everflame_seed"
+            ]
+        },
+        {
+            "name": "Rhodeia of Loch",
+            "location": "Bishui Plain",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_cleansing_heart"
+            ]
+        },
+        {
+            "name": "Ruin Serpent",
+            "location": "The Serpent's Cave, The Chasm: Underground Mines",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_runic_fang"
+            ]
+        },
+        {
+            "name": "Coral Defenders",
+            "location": "Dainichi Mikoshi, Enkanomiya",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_dragonheir"
+            ]
+        },
+        {
+            "name": "Golden Wolflord",
+            "location": "Tsurumi Island",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_riftborn_regalia"
+            ]
+        },
+        {
+            "name": "Hydro Hypostasis",
+            "location": "Suigetsu Pool, Watatsumi Island",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_dew_of_repudiation"
+            ]
+        },
+        {
+            "name": "Maguu Kenki",
+            "location": "Serpent's Head, Yashiori Island",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_marionette_core"
+            ]
+        },
+        {
+            "name": "Perpetual Mechanical Array",
+            "location": "Narukami Island",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_perpetual_heart"
+            ]
+        },
+        {
+            "name": "Pyro Hypostasis",
+            "location": "Kannazuka",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_smoldering_pearl"
+            ]
+        },
+        {
+            "name": "Thunder Manifestation",
+            "location": "Amakumo Peak, Seirai Island",
+            "region": "Inazuma",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_storm_beads"
+            ]
+        },
+        {
+            "name": "Jadeplume Terrorshroom",
+            "location": "Vissudha Field",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_hooked_beak"
+            ]
+        },
+        {
+            "name": "Electro Regisvine",
+            "location": "Mawtiyima Forest, Lokapala Jungle",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_thunderclap_fruitcore"
+            ]
+        },
+        {
+            "name": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+            "location": "Hypostyle Desert",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_tetrahedron"
+            ]
+        },
+        {
+            "name": "Aeonblight Drake",
+            "location": "Ardravi Valley",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_perpetual_caliber"
+            ]
+        },
+        {
+            "name": "Dendro Hypostasis",
+            "location": "Land of Lower Setekh",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_quelled_creeper"
+            ]
+        },
+        {
+            "name": "Setekh Wenut",
+            "location": "Desert of Hadramaveth",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_pseudo_stamens"
+            ]
+        },
+        {
+            "name": "Iniquitous Baptist",
+            "location": "Gavireh Lajavard",
+            "region": "Sumeru",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_evergloom_ring"
+            ]
+        },
+        {
+            "name": "Emperor of Fire and Iron",
+            "location": "Belleau Region",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_emperors_resolution"
+            ]
+        },
+        {
+            "name": "Icewind Suite",
+            "location": "Court of Fontaine Region",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_coppelius",
+                "nb_coppelia"
+            ]
+        },
+        {
+            "name": "Prototype Cal. Breguet",
+            "location": "Academic Assembly Hall",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_tourbillon_device"
+            ]
+        },
+        {
+            "name": "Millennial Pearl Seahorse",
+            "location": "Liffey Region",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_fontemer_unihorn"
+            ]
+        },
+        {
+            "name": "Hydro Tulpa",
+            "location": "Beryl Region",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_failed_water"
+            ]
+        },
+        {
+            "name": "Solitary Suanni",
+            "location": "Chenyu Vale: Southern Mountain",
+            "region": "Liyue",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_cloudseam_scale"
+            ]
+        },
+        {
+            "name": "\"Statue of Marble and Brass\"",
+            "location": "Faded Castle, Nostoi Region",
+            "region": "Fontaine",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_golden_memory"
+            ]
+        },
+        {
+            "name": "Holawaqa Ngoubou",
+            "location": "Huitztli Hill, Basin of Unnumbered Flames",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_mark_of_binding_blessing"
+            ]
+        },
+        {
+            "name": "Kongamato",
+            "location": "Tequemecan Valley",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_overripe_flamegranate"
+            ]
+        },
+        {
+            "name": "Secret Source Automaton: Configuration Device",
+            "location": "Toyac Springs",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_source_code"
+            ]
+        },
+        {
+            "name": "Tenebrous Papilla: Type I",
+            "location": "Toyac Springs",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_ensnaring_gaze"
+            ]
+        },
+        {
+            "name": "Wayward Hermetic Spiritspeaker",
+            "location": "Tezcatepetonco Range",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_talisman"
+            ]
+        },
+        {
+            "name": "Lava Dragon Statue",
+            "location": "Atocpan",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_sparkless_statue_core"
+            ]
+        },
+        {
+            "name": "Secret Source Automaton: Overseer Device",
+            "location": "Atocpan",
+            "region": "Natlan",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_secret_source_airflow_accumulator"
+            ]
+        },
+        {
+            "name": "Radiant Moonfly",
+            "location": "Lempo Isle",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_lightbearing_scale_feather"
+            ]
+        },
+        {
+            "name": "Knuckle Duckle",
+            "location": "Lempo Isle",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_stamping_die"
+            ]
+        },
+        {
+            "name": "Frostnight Herra",
+            "location": "Hiisi Island",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_radiant_antler"
+            ]
+        },
+        {
+            "name": "Super-Heavy Landrover: Mechanized Fortress",
+            "location": "Paha Isle",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_kuuvahki_core"
+            ]
+        },
+        {
+            "name": "Lord of the Hidden Depths: Whisperer of Nightmares",
+            "location": "Ashveil Peak",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_dreadwing_remnant"
+            ]
+        },
+        {
+            "name": "Radiant Moongecko",
+            "location": "Afterglow Cavern, Wavechaser Plain",
+            "region": "Nod-Krai",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_severed_tail"
+            ]
+        },
+        {
+            "name": "The Open-Eyed",
+            "location": "Windrest Peak",
+            "region": "Mondstadt",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_plume_watcher"
+            ]
+        },
+        {
+            "name": "Immortal Construct",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_unscorched_blossom_branch"
+            ]
+        },
+        {
+            "name": "Chimeric Winged Lion",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_sky_roamer"
+            ]
+        },
+        {
+            "name": "Confront Stormterror (Dvalin)",
+            "location": "Stormterror's Lair, Brightcrown Mountains",
+            "region": "Mondstadt",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_dvalin_plume",
+                "wb_dvalin_claw",
+                "wb_dvalin_sigh"
+            ]
+        },
+        {
+            "name": "Wolf of the North Challenge (Andrius)",
+            "location": "Wolvendom, Windwail Highland",
+            "region": "Mondstadt",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_boreas_tail",
+                "wb_boreas_ring",
+                "wb_boreas_locket"
+            ]
+        },
+        {
+            "name": "Enter the Golden House (Childe)",
+            "location": "Mt. Tianheng, Sea of Clouds",
+            "region": "Liyue",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_tusk_of_monoceros_caeli",
+                "wb_shard_of_foul_legacy",
+                "wb_shadow_of_warrior"
+            ]
+        },
+        {
+            "name": "Beneath the Dragon-Queller (Azhdaha)",
+            "location": "Nantianmen, Minlin",
+            "region": "Liyue",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_dragon_lord_crown",
+                "wb_bloodjade_branch",
+                "wb_gilded_scale"
+            ]
+        },
+        {
+            "name": "Narukami Island: Tenshukaku (Signora)",
+            "location": "Inazuma City, Narukami Island",
+            "region": "Inazuma",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_molten_moment",
+                "wb_hellfire_butterfly",
+                "wb_ashen_heart"
+            ]
+        },
+        {
+            "name": "End of the Oneiric Euthymia (Narukami no Mikoto)",
+            "location": "Mt. Yougou, Narukami Island",
+            "region": "Inazuma",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_meaning_of_aeons",
+                "wb_mudra_of_malefic_general",
+                "wb_tears_of_calamitous_god"
+            ]
+        },
+        {
+            "name": "Joururi Workshop (Shouki no Kami)",
+            "location": "Chinvat Ravine, Avidya Forest",
+            "region": "Sumeru",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_puppet_strings",
+                "wb_dakas_bell",
+                "wb_mirror_of_mushin"
+            ]
+        },
+        {
+            "name": "The Realm of Beginnings (Guardian of Apep's Oasis)",
+            "location": "Desert of Hadramaveth",
+            "region": "Sumeru",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_worldspan_fern",
+                "wb_primordial_greenbloom",
+                "wb_everamber"
+            ]
+        },
+        {
+            "name": "Shadow of Another World (All-Devouring Narwhal)",
+            "location": "Salacia Plain, Court of Fontaine Region",
+            "region": "Fontaine",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_ptahur_string",
+                "wb_ptahur_eye",
+                "wb_ptahur_mass"
+            ]
+        },
+        {
+            "name": "Scattered Ruins (Arlecchino)",
+            "location": "Mont Esus East, Liffey Region",
+            "region": "Fontaine",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_fading_candle",
+                "wb_silken_feather",
+                "wb_denial_and_judgement"
+            ]
+        },
+        {
+            "name": "Stone Stele Records (Gosoythoth-Xiuhcoatl)",
+            "location": "Tezcatepetonco Range",
+            "region": "Natlan",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_eroded_horn",
+                "wb_eroded_sunfire",
+                "wb_eroded_scalefeather"
+            ]
+        },
+        {
+            "name": "Unresolved Chess Game (Chess King & Queen)",
+            "location": "Falcon Coast, Galesong Hill",
+            "region": "Mondstadt",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_chess_knight",
+                "wb_chess_rook",
+                "wb_chess_queen"
+            ]
+        },
+        {
+            "name": "False Moon Institute (Dottore)",
+            "location": "Special Territory Research Institute, Ashveil Peak",
+            "region": "Nod-Krai",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_doctor_mask",
+                "wb_doctor_belt",
+                "wb_doctor_buttplug"
+            ]
+        },
+        {
+            "name": "Binding Field of Universal Nirvana (Dottore II)",
+            "location": "Chatrakam Cave, Lokapala Jungle",
+            "region": "Sumeru",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_doctor_2_egg",
+                "wb_doctor_2_sprout",
+                "wb_doctor_2_branch"
+            ]
+        }
+    ],
+    "rewards": {
+        "w_tile": {
+            "name": "Tile of Decarabian's Tower",
+            "type": "weapon_ascension_mats"
+        },
+        "w_tooth": {
+            "name": "Boreal Wolf's Milk Tooth",
+            "type": "weapon_ascension_mats"
+        },
+        "w_shackle": {
+            "name": "Fetters of the Dandelion Gladiator",
+            "type": "weapon_ascension_mats"
+        },
+        "w_guyun": {
+            "name": "Luminous Sands from Guyun",
+            "type": "weapon_ascension_mats"
+        },
+        "w_pearl": {
+            "name": "Mist Veiled Lead Elixir",
+            "type": "weapon_ascension_mats"
+        },
+        "w_aerosiderite": {
+            "name": "Grain of Aerosiderite",
+            "type": "weapon_ascension_mats"
+        },
+        "w_branch": {
+            "name": "Coral Branch of a Distant Sea",
+            "type": "weapon_ascension_mats"
+        },
+        "w_comma": {
+            "name": "Narukami's Wisdom",
+            "type": "weapon_ascension_mats"
+        },
+        "w_mask": {
+            "name": "Mask of the Wicked Lieutenant",
+            "type": "weapon_ascension_mats"
+        },
+        "w_forest_dew": {
+            "name": "Copper Talisman of the Forest Dew",
+            "type": "weapon_ascension_mats"
+        },
+        "w_oasis_garden": {
+            "name": "Oasis Garden's Reminiscence",
+            "type": "weapon_ascension_mats"
+        },
+        "w_scorching_might": {
+            "name": "Echo of Scorching Might",
+            "type": "weapon_ascension_mats"
+        },
+        "w_ancient_chord": {
+            "name": "Fragment of an Ancient Chord",
+            "type": "weapon_ascension_mats"
+        },
+        "w_pure_sacred_dewdrop": {
+            "name": "Dross of Pure Sacred Dewdrop",
+            "type": "weapon_ascension_mats"
+        },
+        "w_pristine_sea": {
+            "name": "Broken Goblet of the Pristine Sea",
+            "type": "weapon_ascension_mats"
+        },
+        "w_blazing_sacrificial_heart": {
+            "name": "Blazing Sacrificial Heart's Terror",
+            "type": "weapon_ascension_mats"
+        },
+        "w_delirious_decadence": {
+            "name": "Delirious Decadence of the Sacred Lord",
+            "type": "weapon_ascension_mats"
+        },
+        "w_night_wind": {
+            "name": "Night-Wind's Mystic Consideration",
+            "type": "weapon_ascension_mats"
+        },
+        "w_artful_device": {
+            "name": "Artful Device Fragment",
+            "type": "weapon_ascension_mats"
+        },
+        "w_long_night_flint": {
+            "name": "Ember of Long Night Flint",
+            "type": "weapon_ascension_mats"
+        },
+        "w_far_north_scions": {
+            "name": "Sundered Glory of the Far-North Scions",
+            "type": "weapon_ascension_mats"
+        },
+        "w_pale_star_army": {
+            "name": "Rise of the Pale Star Army",
+            "type": "weapon_ascension_mats"
+        },
+        "w_spiritual_nectar": {
+            "name": "Measured Pour of the Cellared Spiritual Nectar",
+            "type": "weapon_ascension_mats"
+        },
+        "w_frost_emperor": {
+            "name": "The Frost Emperor's Revival",
+            "type": "weapon_ascension_mats"
+        },
+        "t_freedom": {
+            "name": "Freedom",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Aloy",
+                "Amber",
+                "Barbara",
+                "Childe",
+                "Diona",
+                "Klee",
+                "Sucrose",
+                "Varka"
+            ]
+        },
+        "t_resistance": {
+            "name": "Resistance",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Bennett",
+                "Diluc",
+                "Eula",
+                "Jean",
+                "Lohen",
+                "Mona",
+                "Noelle",
+                "Prune",
+                "Razor"
+            ]
+        },
+        "t_ballad": {
+            "name": "Ballad",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Albedo",
+                "Dahlia",
+                "Durin",
+                "Fischl",
+                "Kaeya",
+                "Lisa",
+                "Mika",
+                "Rosaria",
+                "Venti"
+            ]
+        },
+        "t_prosperity": {
+            "name": "Prosperity",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Gaming",
+                "Keqing",
+                "Ningguang",
+                "Qiqi",
+                "Shenhe",
+                "Xiao",
+                "Yelan"
+            ]
+        },
+        "t_diligence": {
+            "name": "Diligence",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Chongyun",
+                "Ganyu",
+                "Hu Tao",
+                "Kazuha",
+                "Lan Yan",
+                "Xiangling",
+                "Yaoyao",
+                "Yun Jin"
+            ]
+        },
+        "t_gold": {
+            "name": "Gold",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Baizhu",
+                "Beidou",
+                "Xianyun",
+                "Xingqiu",
+                "Xinyan",
+                "Yanfei",
+                "Zhongli",
+                "Zibai"
+            ]
+        },
+        "t_transience": {
+            "name": "Transience",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Heizou",
+                "Kirara",
+                "Kokomi",
+                "Mizuki",
+                "Thoma",
+                "Yoimiya"
+            ]
+        },
+        "t_elegance": {
+            "name": "Elegance",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Ayaka",
+                "Ayato",
+                "Itto",
+                "Sara",
+                "Shinobu"
+            ]
+        },
+        "t_light": {
+            "name": "Light",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Chiori",
+                "Ei",
+                "Gorou",
+                "Miko",
+                "Sayu"
+            ]
+        },
+        "t_admonition": {
+            "name": "Admonition",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Candace",
+                "Cyno",
+                "Faruzan",
+                "Tighnari"
+            ]
+        },
+        "t_ingenuity": {
+            "name": "Ingenuity",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Alhaitham",
+                "Dori",
+                "Kaveh",
+                "Layla",
+                "Nahida"
+            ]
+        },
+        "t_praxis": {
+            "name": "Praxis",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Collei",
+                "Dehya",
+                "Nilou",
+                "Sethos",
+                "Wanderer"
+            ]
+        },
+        "t_equity": {
+            "name": "Equity",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Lyney",
+                "Navia",
+                "Neuvillette",
+                "Sigewinne"
+            ]
+        },
+        "t_justice": {
+            "name": "Justice",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Charlotte",
+                "Clorinde",
+                "Escoffier",
+                "Freminet",
+                "Furina"
+            ]
+        },
+        "t_order": {
+            "name": "Order",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Arlecchino",
+                "Chevreuse",
+                "Emilie",
+                "Lynette",
+                "Wriothesley"
+            ]
+        },
+        "t_contention": {
+            "name": "Contention",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Iansan",
+                "Mavuika",
+                "Mualani",
+                "Skirk"
+            ]
+        },
+        "t_kindling": {
+            "name": "Kindling",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Citlali",
+                "Kinich",
+                "Ororon",
+                "Xilonen"
+            ]
+        },
+        "t_conflict": {
+            "name": "Conflict",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Chasca",
+                "Ifa",
+                "Ineffa",
+                "Kachina",
+                "Varesa"
+            ]
+        },
+        "t_moonlight": {
+            "name": "Moonlight",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Columbina",
+                "Lauma"
+            ]
+        },
+        "t_elysium": {
+            "name": "Elysium",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Aino",
+                "Illuga",
+                "Nefer",
+                "Nicole"
+            ]
+        },
+        "t_vagrancy": {
+            "name": "Vagrancy",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Flins",
+                "Jahoda",
+                "Linnea",
+                "Sandrone"
+            ]
+        },
+        "t_charity": {
+            "name": "Charity",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Odette"
+            ]
+        },
+        "t_fortitude": {
+            "name": "Fortitude",
+            "type": "talent_upgrade_mats",
+            "characters": [
+                "Alyosha"
+            ]
+        },
+        "t_glory": {
+            "name": "Glory",
+            "type": "talent_upgrade_mats",
+            "characters": []
+        },
+        "a_adventurer": {
+            "name": "Adventurer",
+            "type": "artifacts",
+            "effect": "HP +1000"
+        },
+        "a_sojourner": {
+            "name": "Resolution of Sojourner",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_thundering_fury": {
+            "name": "Thundering Fury",
+            "type": "artifacts",
+            "effect": "Electro DMG +15%"
+        },
+        "a_thundersoother": {
+            "name": "Thundersoother",
+            "type": "artifacts",
+            "effect": "Electro RES +40%"
+        },
+        "a_miracle": {
+            "name": "Tiny Miracle",
+            "type": "artifacts",
+            "effect": "Elemental RES +20%"
+        },
+        "a_traveling_doctor": {
+            "name": "Traveling Doctor",
+            "type": "artifacts",
+            "effect": "Incoming healing +20%"
+        },
+        "a_venerer": {
+            "name": "Viridescent Venerer",
+            "type": "artifacts",
+            "effect": "Anemo DMG +15%"
+        },
+        "a_maiden": {
+            "name": "Maiden Beloved",
+            "type": "artifacts",
+            "effect": "Healing effectiveness +15%"
+        },
+        "a_brave_heart": {
+            "name": "Brave Heart",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_lucky_dog": {
+            "name": "Lucky Dog",
+            "type": "artifacts",
+            "effect": "DEF +100"
+        },
+        "a_petra": {
+            "name": "Archaic Petra",
+            "type": "artifacts",
+            "effect": "Geo DMG +15%"
+        },
+        "a_bolide": {
+            "name": "Retracing Bolide",
+            "type": "artifacts",
+            "effect": "Shield strength +35%"
+        },
+        "a_defenders_will": {
+            "name": "Defender's Will",
+            "type": "artifacts",
+            "effect": "DEF +30%"
+        },
+        "a_martial_artist": {
+            "name": "Martial Artist",
+            "type": "artifacts",
+            "effect": "Normal/charged attack DMG +15%"
+        },
+        "a_crimson_witch": {
+            "name": "Crimson Witch of Flames",
+            "type": "artifacts",
+            "effect": "Pyro DMG +15%"
+        },
+        "a_lavawalker": {
+            "name": "Lavawalker",
+            "type": "artifacts",
+            "effect": "Pyro RES +40%"
+        },
+        "a_gambler": {
+            "name": "Gambler",
+            "type": "artifacts",
+            "effect": "Elemental skill DMG +20%"
+        },
+        "a_scholar": {
+            "name": "Scholar",
+            "type": "artifacts",
+            "effect": "Energy recharge +20%"
+        },
+        "a_chivalry": {
+            "name": "Bloodstained Chivalry",
+            "type": "artifacts",
+            "effect": "Physical DMG +25%"
+        },
+        "a_noblesse": {
+            "name": "Noblesse Oblige",
+            "type": "artifacts",
+            "effect": "Elemental burst DMG +20%"
+        },
+        "a_depth": {
+            "name": "Heart of Depth",
+            "type": "artifacts",
+            "effect": "Hydro DMG +15%"
+        },
+        "a_blizzard": {
+            "name": "Blizzard Strayer",
+            "type": "artifacts",
+            "effect": "Cryo DMG +15%"
+        },
+        "a_millelith": {
+            "name": "Tenacity of the Millelith",
+            "type": "artifacts",
+            "effect": "HP +20%"
+        },
+        "a_pale_flame": {
+            "name": "Pale Flame",
+            "type": "artifacts",
+            "effect": "Physical DMG +25%"
+        },
+        "a_shimenawa": {
+            "name": "Shimenawa's Reminiscense",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_severed_fate": {
+            "name": "Emblem of Severed Fate",
+            "type": "artifacts",
+            "effect": "Energy recharge +20%"
+        },
+        "a_clam": {
+            "name": "Ocean-Hued Clam",
+            "type": "artifacts",
+            "effect": "Healing bonus +15%"
+        },
+        "a_husk": {
+            "name": "Husk of Opulent Dreams",
+            "type": "artifacts",
+            "effect": "DEF +30%"
+        },
+        "a_vermillion": {
+            "name": "Vermillion Hereafter",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_echoes": {
+            "name": "Echoes of an Offering",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_deepwood": {
+            "name": "Deepwood Memories",
+            "type": "artifacts",
+            "effect": "Dendro DMG +15%"
+        },
+        "a_gilded_dreams": {
+            "name": "Gilded Dreams",
+            "type": "artifacts",
+            "effect": "Elemental mastery +80"
+        },
+        "a_desert_pavilion": {
+            "name": "Desert Pavilion Chronicle",
+            "type": "artifacts",
+            "effect": "Anemo DMG +15%"
+        },
+        "a_flower_of_paradise_lost": {
+            "name": "Flower of Paradise Lost",
+            "type": "artifacts",
+            "effect": "Elemental mastery +80"
+        },
+        "a_nymphs_dream": {
+            "name": "Nymph's Dream",
+            "type": "artifacts",
+            "effect": "Hydro DMG +15%"
+        },
+        "a_vourukashas_glow": {
+            "name": "Vourukasha's Glow",
+            "type": "artifacts",
+            "effect": "HP +20%"
+        },
+        "a_marechaussee": {
+            "name": "Marechaussee Hunter",
+            "type": "artifacts",
+            "effect": "Normal/charged attack DMG +15%"
+        },
+        "a_golden_troupe": {
+            "name": "Golden Troupe",
+            "type": "artifacts",
+            "effect": "Elemental skill DMG +20%"
+        },
+        "a_song_of_days_past": {
+            "name": "Song of Days Past",
+            "type": "artifacts",
+            "effect": "Healing bonus +15%"
+        },
+        "a_nighttime_whispers": {
+            "name": "Nighttime Whispers in the Echoing Woods",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_fragment_of_harmonic_whimsy": {
+            "name": "Fragment of Harmonic Whimsy",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_unfinished_reverie": {
+            "name": "Unfinished Reverie",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_obsidian_codex": {
+            "name": "Obsidian Codex",
+            "type": "artifacts",
+            "effect": "DMG +20% if in Nightsoul's Blessing"
+        },
+        "a_scroll_of_hero_of_cinder_city": {
+            "name": "Scroll of the Hero of Cinder City",
+            "type": "artifacts",
+            "effect": "Energy +6 on Nightsoul Burst"
+        },
+        "a_finale_of_deep_galleries": {
+            "name": "Finale of the Deep Galleries",
+            "type": "artifacts",
+            "effect": "Cryo DMG +15%"
+        },
+        "a_long_nights_oath": {
+            "name": "Long Night's Oath",
+            "type": "artifacts",
+            "effect": "Plunging attack DMG +25%"
+        },
+        "a_night_sky_unveiling": {
+            "name": "Night of the Sky's Unveiling",
+            "type": "artifacts",
+            "effect": "Elemental mastery +80"
+        },
+        "a_silken_moon": {
+            "name": "Silken Moon's Serenade",
+            "type": "artifacts",
+            "effect": "Energy recharge +20%"
+        },
+        "a_aubade_of_morning": {
+            "name": "Aubade of Morningstar and Moon",
+            "type": "artifacts",
+            "effect": "Elemental mastery +80"
+        },
+        "a_rising_winds": {
+            "name": "A Day Carved from Rising Winds",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_celestial_gift": {
+            "name": "Celestial Gift",
+            "type": "artifacts",
+            "effect": "Energy recharge +20%"
+        },
+        "a_deep_shadow": {
+            "name": "Disenchantment in Deep Shadow",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_snezhnaya_1": {
+            "name": "???",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "a_snezhnaya_2": {
+            "name": "???",
+            "type": "artifacts",
+            "effect": "ATK +18%"
+        },
+        "nb_hurricane_seed": {
+            "name": "Hurricane Seed",
+            "type": "normal_bosses",
+            "characters": [
+                "Jean",
+                "Sucrose",
+                "Venti"
+            ]
+        },
+        "nb_crystalline_bloom": {
+            "name": "Crystalline Bloom",
+            "type": "normal_bosses",
+            "characters": [
+                "Aloy",
+                "Eula"
+            ]
+        },
+        "nb_hoarfrost_core": {
+            "name": "Hoarfrost Core",
+            "type": "normal_bosses",
+            "characters": [
+                "Chongyun",
+                "Diona",
+                "Ganyu",
+                "Kaeya",
+                "Qiqi",
+                "Rosaria"
+            ]
+        },
+        "nb_lightning_prism": {
+            "name": "Lightning Prism",
+            "type": "normal_bosses",
+            "characters": [
+                "Beidou",
+                "Fischl",
+                "Keqing",
+                "Lisa",
+                "Razor"
+            ]
+        },
+        "nb_basalt_pillar": {
+            "name": "Basalt Pillar",
+            "type": "normal_bosses",
+            "characters": [
+                "Albedo",
+                "Ningguang",
+                "Noelle",
+                "Zhongli"
+            ]
+        },
+        "nb_juvenile_jade": {
+            "name": "Juvenile Jade",
+            "type": "normal_bosses",
+            "characters": [
+                "Hu Tao",
+                "Xiao",
+                "Yanfei"
+            ]
+        },
+        "nb_everflame_seed": {
+            "name": "Everflame Seed",
+            "type": "normal_bosses",
+            "characters": [
+                "Amber",
+                "Bennett",
+                "Diluc",
+                "Klee",
+                "Xiangling",
+                "Xinyan"
+            ]
+        },
+        "nb_cleansing_heart": {
+            "name": "Cleansing Heart",
+            "type": "normal_bosses",
+            "characters": [
+                "Barbara",
+                "Childe",
+                "Mona",
+                "Xingqiu"
+            ]
+        },
+        "nb_runic_fang": {
+            "name": "Runic Fang",
+            "type": "normal_bosses",
+            "characters": [
+                "Heizou",
+                "Shinobu",
+                "Yelan"
+            ]
+        },
+        "nb_dragonheir": {
+            "name": "Dragonheir's False Fin",
+            "type": "normal_bosses",
+            "characters": [
+                "Miko",
+                "Shenhe"
+            ]
+        },
+        "nb_riftborn_regalia": {
+            "name": "Riftborn Regalia",
+            "type": "normal_bosses",
+            "characters": [
+                "Itto",
+                "Yun Jin"
+            ]
+        },
+        "nb_dew_of_repudiation": {
+            "name": "Dew of Repudiation",
+            "type": "normal_bosses",
+            "characters": [
+                "Ayato",
+                "Kokomi"
+            ]
+        },
+        "nb_marionette_core": {
+            "name": "Marionette Core",
+            "type": "normal_bosses",
+            "characters": [
+                "Kazuha",
+                "Sayu"
+            ]
+        },
+        "nb_perpetual_heart": {
+            "name": "Perpetual Heart",
+            "type": "normal_bosses",
+            "characters": [
+                "Ayaka",
+                "Gorou"
+            ]
+        },
+        "nb_smoldering_pearl": {
+            "name": "Smoldering Pearl",
+            "type": "normal_bosses",
+            "characters": [
+                "Thoma",
+                "Yoimiya"
+            ]
+        },
+        "nb_storm_beads": {
+            "name": "Storm Beads",
+            "type": "normal_bosses",
+            "characters": [
+                "Ei",
+                "Sara"
+            ]
+        },
+        "nb_hooked_beak": {
+            "name": "Majestic Hooked Beak",
+            "type": "normal_bosses",
+            "characters": [
+                "Collei",
+                "Tighnari"
+            ]
+        },
+        "nb_thunderclap_fruitcore": {
+            "name": "Thunderclap Fruitcore",
+            "type": "normal_bosses",
+            "characters": [
+                "Cyno",
+                "Dori"
+            ]
+        },
+        "nb_tetrahedron": {
+            "name": "Light Guiding Tetrahedron",
+            "type": "normal_bosses",
+            "characters": [
+                "Candace",
+                "Dehya",
+                "Faruzan"
+            ]
+        },
+        "nb_perpetual_caliber": {
+            "name": "Perpetual Caliber",
+            "type": "normal_bosses",
+            "characters": [
+                "Nilou",
+                "Layla",
+                "Wanderer"
+            ]
+        },
+        "nb_quelled_creeper": {
+            "name": "Quelled Creeper",
+            "type": "normal_bosses",
+            "characters": [
+                "Kaveh",
+                "Nahida",
+                "Yaoyao"
+            ]
+        },
+        "nb_pseudo_stamens": {
+            "name": "Pseudo-Stamens",
+            "type": "normal_bosses",
+            "characters": [
+                "Alhaitham",
+                "Mika"
+            ]
+        },
+        "nb_evergloom_ring": {
+            "name": "Evergloom Ring",
+            "type": "normal_bosses",
+            "characters": [
+                "Baizhu",
+                "Kirara"
+            ]
+        },
+        "nb_emperors_resolution": {
+            "name": "Emperor's Resolution",
+            "type": "normal_bosses",
+            "characters": [
+                "Gaming",
+                "Lyney"
+            ]
+        },
+        "nb_coppelius": {
+            "name": "Artificed Spare Clockwork Component \u2014 Coppelius",
+            "type": "normal_bosses",
+            "characters": [
+                "Freminet",
+                "Navia"
+            ]
+        },
+        "nb_coppelia": {
+            "name": "Artificed Spare Clockwork Component \u2014 Coppelia",
+            "type": "normal_bosses",
+            "characters": [
+                "Chiori",
+                "Lynette"
+            ]
+        },
+        "nb_tourbillon_device": {
+            "name": "\"Tourbillon Device\"",
+            "type": "normal_bosses",
+            "characters": [
+                "Charlotte",
+                "Wriothesley"
+            ]
+        },
+        "nb_fontemer_unihorn": {
+            "name": "Fontemer Unihorn",
+            "type": "normal_bosses",
+            "characters": [
+                "Chevreuse",
+                "Clorinde",
+                "Neuvillette"
+            ]
+        },
+        "nb_failed_water": {
+            "name": "Water That Failed To Transcend",
+            "type": "normal_bosses",
+            "characters": [
+                "Furina",
+                "Sigewinne"
+            ]
+        },
+        "nb_cloudseam_scale": {
+            "name": "Cloudseam Scale",
+            "type": "normal_bosses",
+            "characters": [
+                "Sethos",
+                "Xianyun"
+            ]
+        },
+        "nb_golden_memory": {
+            "name": "Fragment of a Golden Memory",
+            "type": "normal_bosses",
+            "characters": [
+                "Arlecchino",
+                "Emilie"
+            ]
+        },
+        "nb_mark_of_binding_blessing": {
+            "name": "Mark of the Binding Blessing",
+            "type": "normal_bosses",
+            "characters": [
+                "Mualani",
+                "Ororon"
+            ]
+        },
+        "nb_overripe_flamegranate": {
+            "name": "Overripe Flamegranate",
+            "type": "normal_bosses",
+            "characters": [
+                "Kachina",
+                "Kinich"
+            ]
+        },
+        "nb_source_code": {
+            "name": "Gold-Inscribed Secret Source Code",
+            "type": "normal_bosses",
+            "characters": [
+                "Lan Yan",
+                "Mavuika",
+                "Xilonen"
+            ]
+        },
+        "nb_ensnaring_gaze": {
+            "name": "Ensnaring Gaze",
+            "type": "normal_bosses",
+            "characters": [
+                "Chasca",
+                "Iansan",
+                "Skirk"
+            ]
+        },
+        "nb_talisman": {
+            "name": "Talisman of the Enigmatic Land",
+            "type": "normal_bosses",
+            "characters": [
+                "Citlali",
+                "Mizuki"
+            ]
+        },
+        "nb_sparkless_statue_core": {
+            "name": "Sparkless Statue Core",
+            "type": "normal_bosses",
+            "characters": [
+                "Ifa",
+                "Varesa"
+            ]
+        },
+        "nb_secret_source_airflow_accumulator": {
+            "name": "Secret Source Airflow Accumulator",
+            "type": "normal_bosses",
+            "characters": [
+                "Dahlia",
+                "Escoffier",
+                "Ineffa"
+            ]
+        },
+        "nb_lightbearing_scale_feather": {
+            "name": "Lightbearing Scale-Feather",
+            "type": "normal_bosses",
+            "characters": [
+                "Jahoda",
+                "Lauma"
+            ]
+        },
+        "nb_stamping_die": {
+            "name": "Precision Kuuvahki Stamping Die",
+            "type": "normal_bosses",
+            "characters": [
+                "Flins",
+                "Aino"
+            ]
+        },
+        "nb_radiant_antler": {
+            "name": "Radiant Antler",
+            "type": "normal_bosses",
+            "characters": [
+                "Columbina",
+                "Nefer",
+                "Prune"
+            ]
+        },
+        "nb_kuuvahki_core": {
+            "name": "Cyclic Military Kuuvahki Core",
+            "type": "normal_bosses",
+            "characters": [
+                "Durin",
+                "Illuga"
+            ]
+        },
+        "nb_dreadwing_remnant": {
+            "name": "Remnant of the Dreadwing",
+            "type": "normal_bosses",
+            "characters": [
+                "Nicole",
+                "Zibai"
+            ]
+        },
+        "nb_severed_tail": {
+            "name": "Prismatic Severed Tail",
+            "type": "normal_bosses",
+            "characters": [
+                "Lohen",
+                "Varka"
+            ]
+        },
+        "nb_plume_watcher": {
+            "name": "Plume of the Fallen Watcher",
+            "type": "normal_bosses",
+            "characters": [
+                "Linnea",
+                "Sandrone"
+            ]
+        },
+        "nb_unscorched_blossom_branch": {
+            "name": "Unscorched Blossom Branch",
+            "type": "normal_bosses",
+            "characters": [
+                "Odette"
+            ]
+        },
+        "nb_sky_roamer": {
+            "name": "Severed Tail of the Sky-Roamer",
+            "type": "normal_bosses",
+            "characters": [
+                "Alyosha"
+            ]
+        },
+        "wb_dvalin_plume": {
+            "name": "Dvalin's Plume",
+            "type": "weekly_bosses",
+            "characters": [
+                "Bennett",
+                "Diluc",
+                "Jean"
+            ]
+        },
+        "wb_dvalin_claw": {
+            "name": "Dvalin's Claw",
+            "type": "weekly_bosses",
+            "characters": [
+                "Lisa",
+                "Noelle",
+                "Razor",
+                "Xiangling"
+            ]
+        },
+        "wb_dvalin_sigh": {
+            "name": "Dvalin's Sigh",
+            "type": "weekly_bosses",
+            "characters": [
+                "Amber",
+                "Beidou",
+                "Chongyun"
+            ]
+        },
+        "wb_boreas_tail": {
+            "name": "Tail of Boreas",
+            "type": "weekly_bosses",
+            "characters": [
+                "Qiqi",
+                "Venti",
+                "Xingqiu"
+            ]
+        },
+        "wb_boreas_ring": {
+            "name": "Ring of Boreas",
+            "type": "weekly_bosses",
+            "characters": [
+                "Barbara",
+                "Keqing",
+                "Klee",
+                "Mona"
+            ]
+        },
+        "wb_boreas_locket": {
+            "name": "Spirit Locket of Boreas",
+            "type": "weekly_bosses",
+            "characters": [
+                "Fischl",
+                "Kaeya",
+                "Ningguang",
+                "Sucrose"
+            ]
+        },
+        "wb_tusk_of_monoceros_caeli": {
+            "name": "Tusk of Monoceros Caeli",
+            "type": "weekly_bosses",
+            "characters": [
+                "Albedo",
+                "Xinyan",
+                "Zhongli"
+            ]
+        },
+        "wb_shard_of_foul_legacy": {
+            "name": "Shard of a Foul Legacy",
+            "type": "weekly_bosses",
+            "characters": [
+                "Childe",
+                "Diona",
+                "Hu Tao"
+            ]
+        },
+        "wb_shadow_of_warrior": {
+            "name": "Shadow of the Warrior",
+            "type": "weekly_bosses",
+            "characters": [
+                "Ganyu",
+                "Rosaria",
+                "Xiao"
+            ]
+        },
+        "wb_dragon_lord_crown": {
+            "name": "Dragon Lord's Crown",
+            "type": "weekly_bosses",
+            "characters": [
+                "Eula",
+                "Yoimiya"
+            ]
+        },
+        "wb_bloodjade_branch": {
+            "name": "Bloodjade Branch",
+            "type": "weekly_bosses",
+            "characters": [
+                "Ayaka",
+                "Dori",
+                "Yanfei"
+            ]
+        },
+        "wb_gilded_scale": {
+            "name": "Gilded Scale",
+            "type": "weekly_bosses",
+            "characters": [
+                "Kazuha",
+                "Sayu",
+                "Yelan"
+            ]
+        },
+        "wb_molten_moment": {
+            "name": "Molten Moment",
+            "type": "weekly_bosses",
+            "characters": [
+                "Aloy",
+                "Ei",
+                "Gorou"
+            ]
+        },
+        "wb_hellfire_butterfly": {
+            "name": "Hellfire Butterfly",
+            "type": "weekly_bosses",
+            "characters": [
+                "Kokomi",
+                "Shenhe",
+                "Thoma"
+            ]
+        },
+        "wb_ashen_heart": {
+            "name": "Ashen Heart",
+            "type": "weekly_bosses",
+            "characters": [
+                "Itto",
+                "Sara",
+                "Yun Jin"
+            ]
+        },
+        "wb_meaning_of_aeons": {
+            "name": "The Meaning of Aeons",
+            "type": "weekly_bosses",
+            "characters": [
+                "Heizou",
+                "Miko",
+                "Tighnari"
+            ]
+        },
+        "wb_mudra_of_malefic_general": {
+            "name": "Mudra of the Malefic General",
+            "type": "weekly_bosses",
+            "characters": [
+                "Ayato",
+                "Cyno"
+            ]
+        },
+        "wb_tears_of_calamitous_god": {
+            "name": "Tears of the Calamitous God",
+            "type": "weekly_bosses",
+            "characters": [
+                "Candace",
+                "Collei",
+                "Nilou",
+                "Shinobu"
+            ]
+        },
+        "wb_puppet_strings": {
+            "name": "Puppet Strings",
+            "type": "weekly_bosses",
+            "characters": [
+                "Dehya",
+                "Faruzan",
+                "Nahida"
+            ]
+        },
+        "wb_dakas_bell": {
+            "name": "Daka's Bell",
+            "type": "weekly_bosses",
+            "characters": [
+                "Layla",
+                "Sethos",
+                "Yaoyao"
+            ]
+        },
+        "wb_mirror_of_mushin": {
+            "name": "Mirror of Mushin",
+            "type": "weekly_bosses",
+            "characters": [
+                "Alhaitham",
+                "Mika",
+                "Wanderer",
+                "Xilonen"
+            ]
+        },
+        "wb_worldspan_fern": {
+            "name": "Worldspan Fern",
+            "type": "weekly_bosses",
+            "characters": [
+                "Baizhu",
+                "Freminet"
+            ]
+        },
+        "wb_primordial_greenbloom": {
+            "name": "Primordial Greenbloom",
+            "type": "weekly_bosses",
+            "characters": [
+                "Kaveh",
+                "Lyney",
+                "Wriothesley"
+            ]
+        },
+        "wb_everamber": {
+            "name": "Everamber",
+            "type": "weekly_bosses",
+            "characters": [
+                "Clorinde",
+                "Kirara",
+                "Lynette",
+                "Neuvillette"
+            ]
+        },
+        "wb_ptahur_string": {
+            "name": "Lightless Silk String",
+            "type": "weekly_bosses",
+            "characters": [
+                "Charlotte",
+                "Chiori",
+                "Navia",
+                "Ororon"
+            ]
+        },
+        "wb_ptahur_eye": {
+            "name": "Lightless Eye of the Maelstrom",
+            "type": "weekly_bosses",
+            "characters": [
+                "Chevreuse",
+                "Sigewinne",
+                "Xianyun"
+            ]
+        },
+        "wb_ptahur_mass": {
+            "name": "Lightless Mass",
+            "type": "weekly_bosses",
+            "characters": [
+                "Furina",
+                "Gaming",
+                "Mualani"
+            ]
+        },
+        "wb_fading_candle": {
+            "name": "Fading Candle",
+            "type": "weekly_bosses",
+            "characters": [
+                "Arlecchino",
+                "Kachina",
+                "Mizuki"
+            ]
+        },
+        "wb_silken_feather": {
+            "name": "Silken Feather",
+            "type": "weekly_bosses",
+            "characters": [
+                "Aino",
+                "Chasca",
+                "Emilie"
+            ]
+        },
+        "wb_denial_and_judgement": {
+            "name": "Denial and Judgement",
+            "type": "weekly_bosses",
+            "characters": [
+                "Citlali",
+                "Iansan",
+                "Kinich"
+            ]
+        },
+        "wb_eroded_horn": {
+            "name": "Eroded Horn",
+            "type": "weekly_bosses",
+            "characters": [
+                "Escoffier",
+                "Illuga",
+                "Mavuika"
+            ]
+        },
+        "wb_eroded_sunfire": {
+            "name": "Eroded Sunfire",
+            "type": "weekly_bosses",
+            "characters": [
+                "Durin",
+                "Ineffa",
+                "Lan Yan"
+            ]
+        },
+        "wb_eroded_scalefeather": {
+            "name": "Eroded Scale-Feather",
+            "type": "weekly_bosses",
+            "characters": [
+                "Dahlia",
+                "Lauma",
+                "Varesa"
+            ]
+        },
+        "wb_chess_knight": {
+            "name": "Ascended Sample: Knight",
+            "type": "weekly_bosses",
+            "characters": [
+                "Jahoda",
+                "Lohen",
+                "Skirk"
+            ]
+        },
+        "wb_chess_rook": {
+            "name": "Ascended Sample: Rook",
+            "type": "weekly_bosses",
+            "characters": [
+                "Ifa",
+                "Nefer",
+                "Varka"
+            ]
+        },
+        "wb_chess_queen": {
+            "name": "Ascended Sample: Queen",
+            "type": "weekly_bosses",
+            "characters": [
+                "Flins",
+                "Zibai"
+            ]
+        },
+        "wb_doctor_mask": {
+            "name": "Mask of the Virtuous Doctor",
+            "type": "weekly_bosses",
+            "characters": [
+                "Columbina",
+                "Prune"
+            ]
+        },
+        "wb_doctor_belt": {
+            "name": "Madman's Restraint",
+            "type": "weekly_bosses",
+            "characters": [
+                "Sandrone"
+            ]
+        },
+        "wb_doctor_buttplug": {
+            "name": "Elixir of the Heretic",
+            "type": "weekly_bosses",
+            "characters": [
+                "Alyosha",
+                "Linnea"
+            ]
+        },
+        "wb_doctor_2_egg": {
+            "name": "Counterfeit Resin",
+            "type": "weekly_bosses",
+            "characters": [
+                "Nicole"
+            ]
+        },
+        "wb_doctor_2_sprout": {
+            "name": "Profaned Sprout",
+            "type": "weekly_bosses",
+            "characters": []
+        },
+        "wb_doctor_2_branch": {
+            "name": "Twisted Withered Branch",
+            "type": "weekly_bosses",
+            "characters": [
+                "Odette"
+            ]
+        }
+    }
+}

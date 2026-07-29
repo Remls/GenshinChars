@@ -47,3 +47,14 @@ def generate_data_file():
     # Write to JSON file
     with open("docs/assets/data.json", "w") as f:
         f.write(json.dumps(data, indent=4, default=vars))
+
+
+def generate_domains_file():
+    with open('data/domains.json') as f:
+        domains_data = json.load(f)
+    data = {
+        "last_updated": get_current_timestamp(),
+        **domains_data,
+    }
+    with open("docs/assets/domains.json", "w") as f:
+        f.write(json.dumps(data, indent=4))

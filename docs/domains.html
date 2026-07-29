@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
+    <title>Genshin Impact Domains</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Genshin Impact Domains">
+    <meta property="og:description" content="Domain schedules and boss drops in Genshin Impact">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Splashscreen_Truth_Amongst_the_Pages_of_Purana.png">
+    <meta property="og:url" content="https://chars.remls.io/domains.html">
+    <meta name="twitter:card" content="https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Splashscreen_Truth_Amongst_the_Pages_of_Purana.png">
+
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.10.5/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+    <script src="assets/domains.js"></script>
+</head>
+
+<body x-data="domainSheet" x-init="fetchAllData">
+    <section>
+        <h2 class="collapsible-header" @click="showSection.filters = !showSection.filters">
+            Filters
+            <svg x-show="showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+            </svg>
+            <svg x-show="!showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+            </svg>
+        </h2>
+        <div class="table-wrapper" x-show="showSection.filters" x-collapse>
+            <table class="filter-table table-40 no-border">
+                <tr>
+                    <td width="10%">
+                        <label for="search-input">Search</label>
+                    </td>
+                    <td>
+                        <input type="search" id="search-input" placeholder="Domain, boss, drop, or character name"
+                            x-model.debounce.250ms="searchQuery">
+                    </td>
+                </tr>
+                <tr x-show="!searching()">
+                    <td>
+                        <label for="type-select">Filter by type</label>
+                    </td>
+                    <td>
+                        <select id="type-select" x-model="selectedType">
+                            <template x-for="[key, type] in Object.entries(DOMAIN_TYPES)" :key="key">
+                                <option :value="key" x-text="`${type.icon} ${type.string}`"></option>
+                            </template>
+                        </select>
+                    </td>
+                </tr>
+                <tr x-show="!searching()">
+                    <td>
+                        <label for="region-select">Filter by region</label>
+                    </td>
+                    <td>
+                        <select id="region-select" x-model="selectedRegion">
+                            <template x-for="[key, region] in Object.entries(DOMAIN_REGIONS)" :key="key">
+                                <option :value="key" x-text="key === 'All' ? 'All' : `${region.icon} ${key}`"></option>
+                            </template>
+                        </select>
+                    </td>
+                </tr>
+                <tr x-show="typeHasChangingRewards() && !searching()">
+                    <td>
+                        <label>Filter by day</label>
+                    </td>
+                    <td>
+                        <div class="day-buttons">
+                            <template x-for="[key, day] in Object.entries(DOMAIN_DAYS)" :key="key">
+                                <button type="button" class="day-button"
+                                    :class="{ 'selected': selectedDay === key, 'today': key === serverDay }"
+                                    :title="key === serverDay ? 'Today' : null"
+                                    @click="selectedDay = key">
+                                    <span x-text="day.slice(0, 3)"></span>
+                                </button>
+                            </template>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section x-show="!searching()">
+        <h2 x-text="typeDetails().title"></h2>
+        <div class="center domain-note">
+            <span x-text="typeDetails().description"></span>
+            <span x-show="!typeHasChangingRewards()">(same rewards everyday)</span>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Location</th>
+                        <th x-text="typeHasChangingRewards() ? `Drops (${DOMAIN_DAYS[selectedDay]})` : 'Drops'"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="domain in filteredDomains()" :key="domain.name">
+                        <tr>
+                            <td x-html="domainNameHtml(domain)"></td>
+                            <td x-html="locationHtml(domain)"></td>
+                            <td>
+                                <ul class="domain-rewards">
+                                    <template x-for="rewardKey in rewardKeysFor(domain)" :key="rewardKey">
+                                        <li x-html="formatRewardByKey(rewardKey)"></li>
+                                    </template>
+                                </ul>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr x-show="filteredDomains().length === 0">
+                        <td class="center" colspan="3">No matching data yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="center domain-note" x-show="typeHasChangingRewards() && selectedDay !== 'sun'">
+            ⚠️ ALL drops will be available if it is currently the first week of any banner.
+        </div>
+    </section>
+
+    <section x-show="searching()">
+        <h2>Search results</h2>
+        <template x-if="searchedDomains().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in domains/bosses (<span x-text="searchedDomains().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Domain/boss</th>
+                                <th>Location</th>
+                                <th>Drops</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="domain in searchedDomains()" :key="domain.name">
+                                <tr>
+                                    <td x-html="domainNameHtml(domain)"></td>
+                                    <td x-html="locationHtml(domain)"></td>
+                                    <td>
+                                        <ul class="domain-rewards">
+                                            <template x-for="rewardKey in allRewardKeysFor(domain)" :key="rewardKey">
+                                                <li x-html="formatRewardByKey(rewardKey)"></li>
+                                            </template>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <template x-if="searchedRewardEntries().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in drops (<span x-text="searchedRewardEntries().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Drop</th>
+                                <th>Where to get it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="[rewardKey, reward] in searchedRewardEntries()" :key="rewardKey">
+                                <tr>
+                                    <td x-html="formatReward(reward, true)"></td>
+                                    <td x-html="rewardSourceHtml(rewardKey)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <div class="center domain-note" x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0">
+            No results found for your query. Make sure there are no misspellings, and try again.
+        </div>
+    </section>
+
+    <div class="page-footer">
+        <div>
+            Last updated <span x-text="lastUpdatedFormatted()"></span><br>
+            Days are based on the Asia server (daily reset at 04:00, UTC+8).<br>
+            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a><br>
+            Also see: <a href="index.html" class="clickable">Characters</a>
+        </div>
+        <div class="icons">
+            <a href="https://t.me/Remls">
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                </svg>
+            </a>
+            <a href="https://github.com/Remls/GenshinChars">
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
