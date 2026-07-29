@@ -39,6 +39,15 @@ const DOMAIN_TYPES = {
         description: 'Provides character talent level-up materials (Lv7+)',
         changing_rewards: false,
     },
+    regional_specialties: {
+        icon: '🌸',
+        short: 'rs',
+        string: 'Regional specialties',
+        title: 'Regional specialties',
+        description: 'Provides character ascension materials',
+        changing_rewards: false,
+        overworld: true,
+    },
 }
 const DOMAIN_REGIONS = {
     'All':       { icon: '🅰️', short: 'a' },
@@ -111,7 +120,7 @@ document.addEventListener('alpine:init', () => {
         DOMAIN_DAYS,
 
         // Data
-        allData: { domains: [], rewards: {} },
+        allData: { domains: [], rewards: {}, specialties: {} },
         characterLookup: {},
         rewardSources: {},
 
@@ -224,6 +233,10 @@ document.addEventListener('alpine:init', () => {
             return this.typeDetails().changing_rewards
         },
 
+        typeIsOverworld() {
+            return !!this.typeDetails().overworld
+        },
+
         filteredDomains() {
             return this.allData.domains.filter(domain => {
                 if (domain.type !== this.selectedType) return false
@@ -236,6 +249,19 @@ document.addEventListener('alpine:init', () => {
         rewardKeysFor(domain) {
             if (Array.isArray(domain.rewards)) return domain.rewards
             return domain.rewards[this.selectedDay] || []
+        },
+
+        filteredSpecialties() {
+            return Object.values(this.allData.specialties || {}).filter(specialty =>
+                this.selectedRegion === 'All' || specialty.region === this.selectedRegion
+            )
+        },
+
+        specialtyCharactersHtml(specialty) {
+            if (specialty.characters.length === 0) {
+                return '<span class="text-unknown">Not used by any character yet</span>'
+            }
+            return specialty.characters.map(c => this.characterChipHtml(c)).join(', ')
         },
 
         allRewardKeysFor(domain) {
@@ -372,6 +398,15 @@ document.addEventListener('alpine:init', () => {
                 if (!reward.characters) return false
                 return reward.characters.some(c => this.characterMatchesQuery(c))
             })
+        },
+
+        searchedSpecialties() {
+            if (!this.searching()) return []
+            return Object.values(this.allData.specialties || {}).filter(specialty =>
+                this.matchesQuery(specialty.name)
+                || this.matchesQuery(specialty.region)
+                || specialty.characters.some(c => this.characterMatchesQuery(c))
+            )
         },
 
         zeroPad(n) {

@@ -106,9 +106,33 @@
         <h2 x-text="typeDetails().title"></h2>
         <div class="center domain-note">
             <span x-text="typeDetails().description"></span>
-            <span x-show="!typeHasChangingRewards()">(same rewards everyday)</span>
+            <span x-show="!typeHasChangingRewards() && !typeIsOverworld()">(same rewards everyday)</span>
+            <span x-show="typeIsOverworld()">(collected in the overworld, available everyday)</span>
         </div>
-        <div class="table-wrapper">
+        <div class="table-wrapper" x-show="typeIsOverworld()">
+            <table class="domain-table">
+                <thead>
+                    <tr>
+                        <th width="30%">Specialty</th>
+                        <th width="22%">Region</th>
+                        <th>Used by</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="(specialty, idx) in filteredSpecialties()" :key="idx">
+                        <tr>
+                            <td x-html="`${typeDetails().icon} ${wikiLinkHtml(specialty.name)}`"></td>
+                            <td x-html="`${DOMAIN_REGIONS[specialty.region].icon} ${highlight(specialty.region)}`"></td>
+                            <td x-html="specialtyCharactersHtml(specialty)"></td>
+                        </tr>
+                    </template>
+                    <tr x-show="filteredSpecialties().length === 0">
+                        <td class="center" colspan="3">No matching data yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper" x-show="!typeIsOverworld()">
             <table class="domain-table">
                 <thead>
                     <tr>
@@ -199,7 +223,35 @@
                 </div>
             </div>
         </template>
-        <div class="center domain-note" x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0">
+        <template x-if="searchedSpecialties().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in regional specialties (<span x-text="searchedSpecialties().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table class="domain-table">
+                        <thead>
+                            <tr>
+                                <th width="30%">Specialty</th>
+                                <th width="22%">Region</th>
+                                <th>Used by</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(specialty, idx) in searchedSpecialties()" :key="idx">
+                                <tr>
+                                    <td x-html="`${DOMAIN_TYPES.regional_specialties.icon} ${wikiLinkHtml(specialty.name)}`"></td>
+                                    <td x-html="`${DOMAIN_REGIONS[specialty.region].icon} ${highlight(specialty.region)}`"></td>
+                                    <td x-html="specialtyCharactersHtml(specialty)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <div class="center domain-note"
+            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0 && searchedSpecialties().length === 0">
             No results found for your query. Make sure there are no misspellings, and try again.
         </div>
     </section>

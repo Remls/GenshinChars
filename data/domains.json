@@ -602,7 +602,7 @@
             "location": "Faded Castle, Nostoi Region",
             "region": "Fontaine",
             "type": "normal_bosses",
-            "rewards": ["nb_golden_memory"]
+            "rewards": ["nb_golden_melody"]
         },
         {
             "name": "Holawaqa Ngoubou",
@@ -623,7 +623,7 @@
             "location": "Toyac Springs",
             "region": "Natlan",
             "type": "normal_bosses",
-            "rewards": ["nb_source_code"]
+            "rewards": ["nb_secret_source_core"]
         },
         {
             "name": "Tenebrous Papilla: Type I",
@@ -784,7 +784,7 @@
             "location": "Mont Esus East, Liffey Region",
             "region": "Fontaine",
             "type": "weekly_bosses",
-            "rewards": ["wb_fading_candle", "wb_silken_feather", "wb_denial_and_judgement"]
+            "rewards": ["wb_fading_candle", "wb_silken_feather", "wb_denial_and_judgment"]
         },
         {
             "name": "Stone Stele Records (Gosoythoth-Xiuhcoatl)",
@@ -1056,7 +1056,7 @@
         "nb_cloudseam_scale": {"name": "Cloudseam Scale", "type": "normal_bosses", "characters": [
             "Sethos", "Xianyun"
         ]},
-        "nb_golden_memory": {"name": "Fragment of a Golden Memory", "type": "normal_bosses", "characters": [
+        "nb_golden_melody": {"name": "Fragment of a Golden Melody", "type": "normal_bosses", "characters": [
             "Arlecchino", "Emilie"
         ]},
         "nb_mark_of_binding_blessing": {"name": "Mark of the Binding Blessing", "type": "normal_bosses", "characters": [
@@ -1065,7 +1065,7 @@
         "nb_overripe_flamegranate": {"name": "Overripe Flamegranate", "type": "normal_bosses", "characters": [
             "Kachina", "Kinich"
         ]},
-        "nb_source_code": {"name": "Gold-Inscribed Secret Source Code", "type": "normal_bosses", "characters": [
+        "nb_secret_source_core": {"name": "Gold-Inscribed Secret Source Core", "type": "normal_bosses", "characters": [
             "Lan Yan", "Mavuika", "Xilonen"
         ]},
         "nb_ensnaring_gaze": {"name": "Ensnaring Gaze", "type": "normal_bosses", "characters": [
@@ -1194,7 +1194,7 @@
         "wb_silken_feather": {"name": "Silken Feather", "type": "weekly_bosses", "characters": [
             "Aino", "Chasca", "Emilie"
         ]},
-        "wb_denial_and_judgement": {"name": "Denial and Judgement", "type": "weekly_bosses", "characters": [
+        "wb_denial_and_judgment": {"name": "Denial and Judgment", "type": "weekly_bosses", "characters": [
             "Citlali", "Iansan", "Kinich"
         ]},
         "wb_eroded_horn": {"name": "Eroded Horn", "type": "weekly_bosses", "characters": [
@@ -1232,6 +1232,188 @@
         ]},
         "wb_doctor_2_branch": {"name": "Twisted Withered Branch", "type": "weekly_bosses", "characters": [
             "Odette"
+        ]}
+    },
+    "specialties": {
+        "s_calla_lily": {"name": "Calla Lily", "region": "Mondstadt", "characters": [
+            "Dahlia", "Diona", "Kaeya"
+        ]},
+        "s_wolfhook": {"name": "Wolfhook", "region": "Mondstadt", "characters": [
+            "Mika", "Razor", "Varka"
+        ]},
+        "s_valberry": {"name": "Valberry", "region": "Mondstadt", "characters": [
+            "Lisa", "Noelle", "Rosaria"
+        ]},
+        "s_cecilia": {"name": "Cecilia", "region": "Mondstadt", "characters": [
+            "Albedo", "Venti"
+        ]},
+        "s_windwheel_aster": {"name": "Windwheel Aster", "region": "Mondstadt", "characters": [
+            "Bennett", "Sucrose"
+        ]},
+        "s_philanemo_mushroom": {"name": "Philanemo Mushroom", "region": "Mondstadt", "characters": [
+            "Barbara", "Klee", "Mona"
+        ]},
+        "s_small_lamp_grass": {"name": "Small Lamp Grass", "region": "Mondstadt", "characters": [
+            "Amber", "Diluc", "Fischl"
+        ]},
+        "s_dandelion_seed": {"name": "Dandelion Seed", "region": "Mondstadt", "characters": [
+            "Eula", "Jean"
+        ]},
+        "s_etherwing_moth": {"name": "Etherwing Moth", "region": "Mondstadt", "characters": [
+            "Linnea", "Lohen"
+        ]},
+        "s_jueyun_chili": {"name": "Jueyun Chili", "region": "Liyue", "characters": [
+            "Xiangling", "Yaoyao"
+        ]},
+        "s_noctilucous_jade": {"name": "Noctilucous Jade", "region": "Liyue", "characters": [
+            "Beidou", "Yanfei"
+        ]},
+        "s_silk_flower": {"name": "Silk Flower", "region": "Liyue", "characters": [
+            "Hu Tao", "Xingqiu"
+        ]},
+        "s_glaze_lily": {"name": "Glaze Lily", "region": "Liyue", "characters": [
+            "Ningguang", "Yun Jin", "Zibai"
+        ]},
+        "s_qingxin": {"name": "Qingxin", "region": "Liyue", "characters": [
+            "Ganyu", "Shenhe", "Xiao"
+        ]},
+        "s_starconch": {"name": "Starconch", "region": "Liyue", "characters": [
+            "Gaming", "Childe", "Yelan"
+        ]},
+        "s_violetgrass": {"name": "Violetgrass", "region": "Liyue", "characters": [
+            "Baizhu", "Qiqi", "Xinyan"
+        ]},
+        "s_cor_lapis": {"name": "Cor Lapis", "region": "Liyue", "characters": [
+            "Chongyun", "Keqing", "Zhongli"
+        ]},
+        "s_clearwater_jade": {"name": "Clearwater Jade", "region": "Liyue", "characters": [
+            "Lan Yan", "Xianyun"
+        ]},
+        "s_onikabuto": {"name": "Onikabuto", "region": "Inazuma", "characters": [
+            "Itto", "Heizou"
+        ]},
+        "s_sakura_bloom": {"name": "Sakura Bloom", "region": "Inazuma", "characters": [
+            "Ayaka", "Ayato"
+        ]},
+        "s_crystal_marrow": {"name": "Crystal Marrow", "region": "Inazuma", "characters": [
+            "Aloy", "Sayu"
+        ]},
+        "s_dendrobium": {"name": "Dendrobium", "region": "Inazuma", "characters": [
+            "Chiori", "Sara"
+        ]},
+        "s_naku_weed": {"name": "Naku Weed", "region": "Inazuma", "characters": [
+            "Shinobu", "Yoimiya"
+        ]},
+        "s_sea_ganoderma": {"name": "Sea Ganoderma", "region": "Inazuma", "characters": [
+            "Kazuha", "Miko", "Mizuki"
+        ]},
+        "s_sango_pearl": {"name": "Sango Pearl", "region": "Inazuma", "characters": [
+            "Gorou", "Kokomi"
+        ]},
+        "s_amakumo_fruit": {"name": "Amakumo Fruit", "region": "Inazuma", "characters": [
+            "Kirara", "Ei"
+        ]},
+        "s_fluorescent_fungus": {"name": "Fluorescent Fungus", "region": "Inazuma", "characters": [
+            "Thoma"
+        ]},
+        "s_rukkhashava_mushrooms": {"name": "Rukkhashava Mushrooms", "region": "Sumeru", "characters": [
+            "Collei", "Wanderer"
+        ]},
+        "s_padisarah": {"name": "Padisarah", "region": "Sumeru", "characters": [
+            "Nilou"
+        ]},
+        "s_nilotpala_lotus": {"name": "Nilotpala Lotus", "region": "Sumeru", "characters": [
+            "Layla", "Tighnari"
+        ]},
+        "s_kalpalata_lotus": {"name": "Kalpalata Lotus", "region": "Sumeru", "characters": [
+            "Dori", "Nahida"
+        ]},
+        "s_henna_berry": {"name": "Henna Berry", "region": "Sumeru", "characters": [
+            "Candace", "Faruzan"
+        ]},
+        "s_scarab": {"name": "Scarab", "region": "Sumeru", "characters": [
+            "Cyno"
+        ]},
+        "s_sand_grease_pupa": {"name": "Sand Grease Pupa", "region": "Sumeru", "characters": [
+            "Alhaitham", "Dehya"
+        ]},
+        "s_trishiraite": {"name": "Trishiraite", "region": "Sumeru", "characters": [
+            "Sethos"
+        ]},
+        "s_mourning_flower": {"name": "Mourning Flower", "region": "Sumeru", "characters": [
+            "Kaveh"
+        ]},
+        "s_beryl_conch": {"name": "Beryl Conch", "region": "Fontaine", "characters": [
+            "Charlotte", "Escoffier"
+        ]},
+        "s_romaritime_flower": {"name": "Romaritime Flower", "region": "Fontaine", "characters": [
+            "Freminet", "Sigewinne"
+        ]},
+        "s_lumidouce_bell": {"name": "Lumidouce Bell", "region": "Fontaine", "characters": [
+            "Chevreuse", "Lynette"
+        ]},
+        "s_rainbow_rose": {"name": "Rainbow Rose", "region": "Fontaine", "characters": [
+            "Arlecchino", "Lyney"
+        ]},
+        "s_lumitoile": {"name": "Lumitoile", "region": "Fontaine", "characters": [
+            "Clorinde", "Neuvillette"
+        ]},
+        "s_subdetection_unit": {"name": "Subdetection Unit", "region": "Fontaine", "characters": [
+            "Sandrone", "Wriothesley"
+        ]},
+        "s_lakelight_lily": {"name": "Lakelight Lily", "region": "Fontaine", "characters": [
+            "Emilie", "Furina"
+        ]},
+        "s_spring_of_the_first_dewdrop": {"name": "Spring of the First Dewdrop", "region": "Fontaine", "characters": [
+            "Navia"
+        ]},
+        "s_brilliant_chrysanthemum": {"name": "Brilliant Chrysanthemum", "region": "Natlan", "characters": [
+            "Xilonen"
+        ]},
+        "s_quenepa_berry": {"name": "Quenepa Berry", "region": "Natlan", "characters": [
+            "Citlali", "Kachina"
+        ]},
+        "s_saurian_claw_succulent": {"name": "Saurian Claw Succulent", "region": "Natlan", "characters": [
+            "Ifa", "Kinich"
+        ]},
+        "s_sprayfeather_gill": {"name": "Sprayfeather Gill", "region": "Natlan", "characters": [
+            "Mualani"
+        ]},
+        "s_withering_purpurbloom": {"name": "Withering Purpurbloom", "region": "Natlan", "characters": [
+            "Chasca", "Mavuika"
+        ]},
+        "s_glowing_hornshroom": {"name": "Glowing Hornshroom", "region": "Natlan", "characters": [
+            "Ineffa", "Ororon"
+        ]},
+        "s_skysplit_gembloom": {"name": "Skysplit Gembloom", "region": "Natlan", "characters": [
+            "Skirk", "Varesa"
+        ]},
+        "s_dracolite": {"name": "Dracolite", "region": "Natlan", "characters": [
+            "Iansan"
+        ]},
+        "s_frostlamp_flower": {"name": "Frostlamp Flower", "region": "Nod-Krai", "characters": [
+            "Durin", "Flins"
+        ]},
+        "s_moonfall_silver": {"name": "Moonfall Silver", "region": "Nod-Krai", "characters": [
+            "Lauma", "Nefer"
+        ]},
+        "s_portable_bearing": {"name": "Portable Bearing", "region": "Nod-Krai", "characters": [
+            "Aino", "Jahoda"
+        ]},
+        "s_winter_icelea": {"name": "Winter Icelea", "region": "Nod-Krai", "characters": [
+            "Columbina", "Prune"
+        ]},
+        "s_pine_amber": {"name": "Pine Amber", "region": "Nod-Krai", "characters": [
+            "Illuga", "Nicole"
+        ]},
+        "s_teardrop_of_the_moon": {"name": "Teardrop of the Moon", "region": "Nod-Krai", "characters": [
+            
+        ]},
+        "s_frostfairy_flower": {"name": "Frostfairy Flower", "region": "Snezhnaya", "characters": [
+            "Odette"
+        ]},
+        "s_flockingweed": {"name": "Flockingweed", "region": "Snezhnaya", "characters": [
+            "Alyosha"
         ]}
     }
 }
