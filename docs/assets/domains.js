@@ -195,6 +195,7 @@ document.addEventListener('alpine:init', () => {
         serverDay: 'sun',
 
         fetchAllData() {
+            this.initInfoTooltips()
             this.serverDay = this.getServerDay()
             Promise.all([
                 fetch('./assets/domains.json').then(r => r.json()),
@@ -208,6 +209,53 @@ document.addEventListener('alpine:init', () => {
                 this.setFiltersFromUrl()
                 this.resolveWikiImages().catch(() => {})
             })
+        },
+
+        // Info buttons are rendered inside x-html strings, so their behavior is
+        // delegated: hover shows the tooltip, tap/click pins it open. Tooltips are
+        // position: fixed to escape the table wrapper's overflow clipping.
+        initInfoTooltips() {
+            const hide = tooltip => {
+                tooltip.classList.remove('open')
+                tooltip.style.display = 'none'
+            }
+            const hideAll = except => {
+                document.querySelectorAll('.info-tooltip').forEach(el => {
+                    if (el !== except) hide(el)
+                })
+            }
+            const show = (button, tooltip) => {
+                tooltip.style.display = 'block'
+                const margin = 8
+                const rect = button.getBoundingClientRect()
+                const left = Math.min(rect.left, window.innerWidth - tooltip.offsetWidth - margin)
+                let top = rect.bottom + 6
+                if (top + tooltip.offsetHeight > window.innerHeight - margin) {
+                    top = Math.max(margin, rect.top - tooltip.offsetHeight - 6)
+                }
+                tooltip.style.left = `${Math.max(margin, left)}px`
+                tooltip.style.top = `${top}px`
+            }
+            document.addEventListener('click', e => {
+                if (e.target.closest('.info-tooltip')) return
+                const button = e.target.closest('.info-button')
+                const tooltip = button && button.nextElementSibling
+                hideAll(tooltip)
+                if (!tooltip) return
+                if (tooltip.classList.toggle('open')) show(button, tooltip)
+                else tooltip.style.display = 'none'
+            })
+            document.addEventListener('mouseover', e => {
+                const button = e.target.closest('.info-button')
+                const tooltip = button && button.nextElementSibling
+                if (tooltip && !tooltip.classList.contains('open')) show(button, tooltip)
+            })
+            document.addEventListener('mouseout', e => {
+                const button = e.target.closest('.info-button')
+                const tooltip = button && button.nextElementSibling
+                if (tooltip && !tooltip.classList.contains('open')) tooltip.style.display = 'none'
+            })
+            window.addEventListener('scroll', () => hideAll(null), { passive: true })
         },
 
         // Resolve real image filenames from the wiki API, for items and for
@@ -657,13 +705,24 @@ document.addEventListener('alpine:init', () => {
                 text += `${DOMAIN_TYPES[reward.type].icon} `
             }
             text += `${this.itemThumbHtml(reward.name)} ${this.wikiLinkHtml(reward.name)}`
+            if (reward.effect_4pc) {
+                text += ` ${this.setEffectsButtonHtml(reward)}`
+            }
             if (reward.characters && reward.characters.length > 0) {
                 const chips = reward.characters.map(c => this.characterChipHtml(c))
                 text += ` (${chips.join(', ')})`
-            } else if (reward.effect) {
+            } else if (reward.effect && !reward.effect_4pc) {
                 text += ` (${this.highlight(reward.effect)})`
             }
             return text
+        },
+
+        // Info button revealing the full set description, on tap or hover
+        setEffectsButtonHtml(reward) {
+            const content = `<span class="pc-badge">2</span> ${this.highlight(reward.effect)}`
+                + `<br><span class="pc-badge">4</span> ${this.highlight(reward.effect_4pc)}`
+            return `<span class="info-button" role="button" tabindex="0" aria-label="Full set description">i</span>`
+                + `<span class="info-tooltip">${content}</span>`
         },
 
         matchesQuery(s) {
@@ -694,6 +753,7 @@ document.addEventListener('alpine:init', () => {
                 if (this.matchesQuery(reward.name)) return true
                 if (this.matchesQuery(WIKI_ALT_NAMES[reward.name])) return true
                 if (this.matchesQuery(reward.effect)) return true
+                if (this.matchesQuery(reward.effect_4pc)) return true
                 if (!reward.characters) return false
                 return reward.characters.some(c => this.characterMatchesQuery(c))
             })
