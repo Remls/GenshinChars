@@ -574,29 +574,35 @@ document.addEventListener('alpine:init', () => {
             return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip">${chip}</a>`
         },
 
-        domainNameHtml(domain) {
-            const info = this.domainImages[domain.name] || {}
+        wikiTitleLink(html, title) {
+            return `<a href="${GENSHIN_WIKI + encodeURIComponent(title.replaceAll(' ', '_'))}" class="clickable">${html}</a>`
+        },
+
+        // Thumbnail plus linked name(s) for a domain, by its name in the data.
+        // Boss rows render as "[thumb] Boss name" with the domain below in grey.
+        domainLabelHtml(domainName, suffix = '') {
+            const info = this.domainImages[domainName] || {}
             const thumbClass = (info.image && info.image.startsWith('Domain_')) ? 'domain-shot' : 'item-thumb'
             const src = info.image ? this.wikiFileUrl(info.image) : FALLBACK_PHOTO
             const thumb = `<img src="${src}" class="${thumbClass}" height="20" loading="lazy"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
-            const icon = DOMAIN_TYPES[domain.type].icon
-            const linkify = (html, title) =>
-                `<a href="${GENSHIN_WIKI + encodeURIComponent(title.replaceAll(' ', '_'))}" class="clickable">${html}</a>`
 
-            // Boss rows: "[thumb] Boss name", domain name below in grey
             if (info.boss) {
                 let bossHtml = `<span class="gi-font">${this.highlight(info.boss.name)}</span>`
-                if (info.boss.hasPage) bossHtml = linkify(bossHtml, info.boss.name)
-                const domainName = domain.name.replace(/\s*\([^)]*\)$/, '')
-                let domainHtml = `<span class="gi-font">${this.highlight(domainName)}</span>`
-                if (info.link) domainHtml = linkify(domainHtml, info.link)
-                return `${icon} ${thumb} ${bossHtml}<br><span class="domain-paren">${domainHtml}</span>`
+                if (info.boss.hasPage) bossHtml = this.wikiTitleLink(bossHtml, info.boss.name)
+                const strippedName = domainName.replace(/\s*\([^)]*\)$/, '')
+                let domainHtml = `<span class="gi-font">${this.highlight(strippedName)}</span>`
+                if (info.link) domainHtml = this.wikiTitleLink(domainHtml, info.link)
+                return `${thumb} ${bossHtml}${suffix}<br><span class="domain-paren">${domainHtml}</span>`
             }
 
-            let name = `<span class="gi-font">${this.highlight(domain.name)}</span>`
-            if (info.link) name = linkify(name, info.link)
-            return `${icon} ${thumb} ${name}`
+            let name = `<span class="gi-font">${this.highlight(domainName)}</span>`
+            if (info.link) name = this.wikiTitleLink(name, info.link)
+            return `${thumb} ${name}${suffix}`
+        },
+
+        domainNameHtml(domain) {
+            return `${DOMAIN_TYPES[domain.type].icon} ${this.domainLabelHtml(domain.name)}`
         },
 
         locationHtml(domain) {
@@ -616,10 +622,10 @@ document.addEventListener('alpine:init', () => {
         rewardSourceHtml(rewardKey) {
             const sources = this.rewardSources[rewardKey] || []
             return sources.map(source => {
-                const icon = this.regionIconHtml(source.region)
-                let text = `${icon} <span class="gi-font">${this.escapeHtml(source.name)}</span>`
-                if (source.days) text += ` <span class="source-days">(${this.formatDays(source.days)})</span>`
-                return text
+                const days = source.days
+                    ? ` <span class="source-days">(${this.formatDays(source.days)})</span>`
+                    : ''
+                return `${this.regionIconHtml(source.region)} ${this.domainLabelHtml(source.name, days)}`
             }).join('<br>')
         },
 
