@@ -1,6 +1,6 @@
 {
-    "version": "7b170ea",
-    "last_updated": "2026-07-30T12:46:54.569386Z",
+    "version": "bbb40c6",
+    "last_updated": "2026-07-30T13:21:57.851519Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1194,6 +1194,7 @@
             "characters": [
                 "Gepard",
                 "Herta",
+                "March 7th",
                 "Pela"
             ]
         },
@@ -1417,7 +1418,8 @@
             "type": "calyx_crimson",
             "characters": [
                 "Fu Xuan",
-                "Gepard"
+                "Gepard",
+                "March 7th"
             ]
         },
         "cr_flower_of_laya": {
@@ -1458,6 +1460,7 @@
                 "Archer",
                 "Boothill",
                 "Feixiao",
+                "March 7th (Hunt)",
                 "Moze"
             ]
         },
@@ -1679,6 +1682,7 @@
                 "Herta",
                 "Himeko",
                 "Jing Yuan",
+                "March 7th",
                 "Rin Tohsaka",
                 "Saber",
                 "Silver Wolf",
