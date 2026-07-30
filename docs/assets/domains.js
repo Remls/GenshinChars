@@ -323,14 +323,17 @@ document.addEventListener('alpine:init', () => {
             }
             const iconTitles = [...new Set([...bossTitles].map(iconFileFor))]
             const pages4 = await batched(iconTitles.map(t => `File:${t}`), {})
-            const iconExists = {}
+            // File pages can be redirects, so keep the real filename they resolve to
+            const iconFile = {}
             iconTitles.forEach(t => {
                 const page = pages4[`File:${t}`]
-                iconExists[t] = !!(page && !('missing' in page))
+                if (page && !('missing' in page)) {
+                    iconFile[t] = page.title.replace('File:', '')
+                }
             })
             const bossImageOf = title => {
-                const iconFile = iconFileFor(title)
-                if (iconExists[iconFile]) return iconFile.replaceAll(' ', '_')
+                const resolved = iconFile[iconFileFor(title)]
+                if (resolved) return resolved.replaceAll(' ', '_')
                 return imageOf(title)
             }
 

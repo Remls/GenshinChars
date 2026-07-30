@@ -5,10 +5,10 @@ const HSR_FALLBACK = '../assets/images/Fallback.png'
 
 const HSR_DOMAIN_TYPES = {
     calyx_crimson: {
-        short: 'c',
+        short: 't',
         icon: 'Icon Calyx Crimson.png',
-        string: 'Crimson calyxes',
-        title: 'Crimson calyxes',
+        string: 'Trace mats',
+        title: 'Crimson Calyxes',
         page_prefix: 'Calyx (Crimson)',
         description: 'Provides trace materials',
     },
@@ -16,9 +16,16 @@ const HSR_DOMAIN_TYPES = {
         short: 'r',
         icon: 'Icon Cavern of Corrosion.png',
         string: 'Relics',
-        title: 'Relics',
+        title: 'Caverns of Corrosion',
         page_prefix: 'Cavern of Corrosion',
         description: 'Provides relic sets',
+    },
+    planar_ornament: {
+        short: 'p',
+        icon: 'Icon Divergent Universe Protean Hero.png',
+        string: 'Planar ornaments',
+        title: 'Divergent Universe',
+        description: 'Provides planar ornament sets',
     },
     stagnant_shadow: {
         short: 'nb',
@@ -34,7 +41,7 @@ const HSR_DOMAIN_TYPES = {
         string: 'Weekly bosses',
         title: 'Weekly bosses',
         page_prefix: 'Echo of War',
-        description: 'Provides trace materials for the strongest traces',
+        description: 'Provides trace level-up materials (Lv9+ and bonus abilities)',
     },
 }
 const HSR_DOMAIN_WORLDS = [
@@ -212,6 +219,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         wikiPageFor(domain) {
+            if (domain.page) return domain.page
             const prefix = HSR_DOMAIN_TYPES[domain.type].page_prefix
             if (domain.type === 'calyx_crimson') {
                 return `${prefix}: ${domain.name} (${domain.location})`
@@ -230,6 +238,11 @@ document.addEventListener('alpine:init', () => {
             const thumb = this.thumbHtml(file, thumbClass)
             let name = `<span class="gi-font">${this.highlight(domain.name)}</span>`
             name = this.wikiTitleLink(name, this.wikiPageFor(domain))
+            if (domain.type === 'planar_ornament') {
+                const boss = domain.boss[0]
+                const bossHtml = this.wikiTitleLink(`<span class="gi-font">${this.highlight(boss)}</span>`, boss)
+                return `${thumb} ${bossHtml}${suffix}`
+            }
             if (domain.boss && domain.boss.length > 0) {
                 const bosses = domain.boss
                     .map(b => this.wikiTitleLink(`<span class="gi-font">${this.highlight(b)}</span>`, b))
@@ -252,6 +265,10 @@ document.addEventListener('alpine:init', () => {
         },
 
         locationHtml(domain) {
+            if (domain.type === 'planar_ornament') {
+                const name = `<span class="gi-font">${this.highlight(domain.name)}</span>`
+                return this.wikiTitleLink(name, this.wikiPageFor(domain))
+            }
             const segments = domain.location ? domain.location.split(', ') : []
             segments.push(domain.region)
             return segments.map(s => this.highlight(s)).join(',<br>')
@@ -260,7 +277,9 @@ document.addEventListener('alpine:init', () => {
         rewardSourceHtml(rewardKey) {
             const sources = this.rewardSources[rewardKey] || []
             return sources.map(source => {
-                const locationText = source.location ? `${source.location}, ${source.region}` : source.region
+                const locationText = source.type === 'planar_ornament'
+                    ? `${source.name}, ${source.location}`
+                    : (source.location ? `${source.location}, ${source.region}` : source.region)
                 return `${this.domainLabelHtml(source)}`
                     + `<br><span class="domain-paren">${this.highlight(locationText)}</span>`
             }).join('<br>')
@@ -282,7 +301,7 @@ document.addEventListener('alpine:init', () => {
                 text += `${this.typeIconHtml(reward.type)} `
             }
             text += `${this.itemThumbHtml(reward)} ${this.wikiLinkHtml(reward.name)}`
-            if (reward.effect_4pc) {
+            if (reward.effect) {
                 text += ` ${this.setEffectsButtonHtml(reward)}`
             }
             if (reward.characters && reward.characters.length > 0) {
@@ -291,16 +310,16 @@ document.addEventListener('alpine:init', () => {
                     .join('')
             } else if (reward.characters) {
                 text += ' <span class="text-unknown">(not used by any character yet)</span>'
-            } else if (reward.effect && !reward.effect_4pc) {
-                text += ` (${this.highlight(reward.effect)})`
             }
             return text
         },
 
         // Info button revealing the full set description, on tap or hover
         setEffectsButtonHtml(reward) {
-            const content = `<span class="pc-badge">2</span> ${this.highlight(reward.effect)}`
-                + `<br><span class="pc-badge">4</span> ${this.highlight(reward.effect_4pc)}`
+            let content = `<span class="pc-badge">2</span> ${this.highlight(reward.effect)}`
+            if (reward.effect_4pc) {
+                content += `<br><span class="pc-badge">4</span> ${this.highlight(reward.effect_4pc)}`
+            }
             return `<span class="info-button" role="button" tabindex="0" aria-label="Full set description">i</span>`
                 + `<span class="info-tooltip">${content}</span>`
         },

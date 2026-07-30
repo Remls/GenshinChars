@@ -398,7 +398,7 @@ sup {
 .icon-button .icon-button-label {
     font-size: 0.85em;
 }
-.icon-button .region-icon {
+.icon-button img {
     display: block;
 }
 .icon-button.selected {

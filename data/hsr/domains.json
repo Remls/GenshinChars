@@ -289,6 +289,146 @@
             "rewards": ["cc_as_navigator_isee_sees_it", "cc_divine_querying_master_smith"]
         },
         {
+            "name": "Untoppled Walls",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Gepard.png",
+            "page": "Divergent Universe#Untoppled Walls",
+            "boss": ["Gepard (Complete)"],
+            "rewards": ["po_space_sealing_station", "po_fleet_of_the_ageless"]
+        },
+        {
+            "name": "Smelted Heart",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Svarog.png",
+            "page": "Divergent Universe#Smelted Heart",
+            "boss": ["Svarog (Complete)"],
+            "rewards": ["po_talia_kingdom_of_banditry", "po_sprightly_vonwacq"]
+        },
+        {
+            "name": "Gentle Words",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Stellaron Hunter Kafka.png",
+            "page": "Divergent Universe#Gentle Words",
+            "boss": ["Stellaron Hunter: Kafka (Complete)"],
+            "rewards": ["po_pan_cosmic_commercial_enterprise", "po_celestial_differentiator"]
+        },
+        {
+            "name": "Permafrost",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Cocolia.png",
+            "page": "Divergent Universe#Permafrost",
+            "boss": ["Cocolia (Complete)"],
+            "rewards": ["po_belobog_of_the_architects", "po_inert_salsotto"]
+        },
+        {
+            "name": "Fruit of Evil",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Abundant Ebon Deer.png",
+            "page": "Divergent Universe#Fruit of Evil",
+            "boss": ["Abundant Ebon Deer (Complete)"],
+            "rewards": ["po_rutilant_arena", "po_broken_keel"]
+        },
+        {
+            "name": "Pouring Blades",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Cloud Knight Lieutenant Yanqing.png",
+            "page": "Divergent Universe#Pouring Blades",
+            "boss": ["Cloud Knight Lieutenant: Yanqing (Complete)"],
+            "rewards": ["po_firmament_frontline_glamoth", "po_penacony_land_of_the_dreams"]
+        },
+        {
+            "name": "To Sweet Dreams",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Memory Zone Meme Something Unto Death.png",
+            "page": "Divergent Universe#To Sweet Dreams",
+            "boss": ["Memory Zone Meme \"Something Unto Death\" (Complete)"],
+            "rewards": ["po_sigonia_the_unclaimed_desolation", "po_izumo_gensei_and_takama_divine_realm"]
+        },
+        {
+            "name": "Eternal Comedy",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy The Past, Present, and Eternal Show.png",
+            "page": "Divergent Universe#Eternal Comedy",
+            "boss": ["The Past, Present, and Eternal Show (Complete)"],
+            "rewards": ["po_duran_dynasty_of_running_wolves", "po_forge_of_the_kalpagni_lantern"]
+        },
+        {
+            "name": "Famished Worker",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Swarm True Sting (Complete).png",
+            "page": "Divergent Universe#Famished Worker",
+            "boss": ["Swarm: True Sting (Complete)"],
+            "rewards": ["po_lushaka_the_sunken_seas", "po_the_wondrous_bananamusement_park"]
+        },
+        {
+            "name": "Unceasing Strife",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy The Giver, Master of Legions, Lance of Fury.png",
+            "page": "Divergent Universe#Unceasing Strife",
+            "boss": ["The Giver, Master of Legions, Lance of Fury (Complete)"],
+            "rewards": ["po_bone_collection_s_serene_demesne", "po_giant_tree_of_rapt_brooding"]
+        },
+        {
+            "name": "Moonlit Blood",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Borisin Warhead Hoolay.png",
+            "page": "Divergent Universe#Moonlit Blood",
+            "boss": ["Borisin Warhead: Hoolay (Complete)"],
+            "rewards": ["po_arcadia_of_woven_dreams", "po_revelry_by_the_sea"]
+        },
+        {
+            "name": "Within the West Wind",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Pollux, Netherwing Husk, Ferry of Souls.png",
+            "page": "Divergent Universe#Within the West Wind",
+            "boss": ["Pollux, Netherwing Husk, Ferry of Souls (Complete)"],
+            "rewards": ["po_amphoreus_the_eternal_land", "po_tengoku_livestream"]
+        },
+        {
+            "name": "Gilded Recollection",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Ichor Memosprite Judge of Oblivion.png",
+            "page": "Divergent Universe#Gilded Recollection",
+            "boss": ["Ichor Memosprite: Judge of Oblivion (Complete)"],
+            "rewards": ["po_punklorde_stage_zero", "po_city_of_converging_stars"]
+        },
+        {
+            "name": "Bugs Incoming",
+            "location": "Divergent Universe",
+            "region": "Herta Space Station",
+            "type": "planar_ornament",
+            "image": "Enemy Harbinger of Death Swarm Nightmare.png",
+            "page": "Divergent Universe#Bugs Incoming",
+            "boss": ["Harbinger of Death: Swarm Nightmare (Complete)"],
+            "rewards": ["po_fallen_star_anchorage", "po_cosmic_life_sciences_institute"]
+        },
+        {
             "name": "Shape of Blaze",
             "location": "Silvermane Guard Restricted Zone",
             "region": "Jarilo-VI",
@@ -692,6 +832,34 @@
         "ew_auspice_sliver": {"name": "Auspice Sliver", "type": "echo_of_war", "characters": ["Aglaea", "Castorice", "Lingsha", "Moze", "Mydei", "The Herta"]},
         "ew_vanquished_flow_s_reticence": {"name": "Vanquished Flow's Reticence", "type": "echo_of_war", "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Silver Wolf LV.999", "Sparxie", "The Dahlia", "Yao Guang"]},
         "ew_lost_echo_of_the_shared_wish": {"name": "Lost Echo of the Shared Wish", "type": "echo_of_war", "characters": ["Anaxa", "Boothill", "Firefly", "Hyacine", "Jade", "Rappa", "Sunday", "Tribbie"]},
-        "ew_high_hopes_of_the_falsely_enlightened": {"name": "High Hopes of the Falsely Enlightened", "type": "echo_of_war", "characters": ["Aventurine • Waveflair", "Robin • Summeretto"]}
+        "ew_high_hopes_of_the_falsely_enlightened": {"name": "High Hopes of the Falsely Enlightened", "type": "echo_of_war", "characters": ["Aventurine • Waveflair", "Robin • Summeretto"]},
+        "po_amphoreus_the_eternal_land": {"name": "Amphoreus, The Eternal Land", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked."},
+        "po_arcadia_of_woven_dreams": {"name": "Arcadia of Woven Dreams", "type": "planar_ornament", "effect": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by 9%/12%, up to a maximum of 4/3 stacks."},
+        "po_belobog_of_the_architects": {"name": "Belobog of the Architects", "type": "planar_ornament", "effect": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF."},
+        "po_bone_collection_s_serene_demesne": {"name": "Bone Collection's Serene Demesne", "type": "planar_ornament", "effect": "Increases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%."},
+        "po_broken_keel": {"name": "Broken Keel", "type": "planar_ornament", "effect": "Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%."},
+        "po_celestial_differentiator": {"name": "Celestial Differentiator", "type": "planar_ornament", "effect": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."},
+        "po_city_of_converging_stars": {"name": "City of Converging Stars", "type": "planar_ornament", "effect": "When the wearer uses a Follow-Up ATK, increases their ATK by 24% for 2 turns. When an enemy target is defeated, increases CRIT DMG for all allies by 12% for the rest of the current battle. This effect cannot stack"},
+        "po_cosmic_life_sciences_institute": {"name": "Cosmic Life Sciences Institute", "type": "planar_ornament", "effect": "When entering combat, if the wearer's Max Energy is greater than or equal to 200, for every 1 excess point, increases the wearer's DMG dealt by 0.2%, up to a max increase of 32%."},
+        "po_duran_dynasty_of_running_wolves": {"name": "Duran, Dynasty of Running Wolves", "type": "planar_ornament", "effect": "When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%."},
+        "po_fallen_star_anchorage": {"name": "Fallen Star Anchorage", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. When entering combat, if the wearer and another teammate are both Trailblaze Companions characters, increases the wearer's CRIT DMG by 32%."},
+        "po_firmament_frontline_glamoth": {"name": "Firmament Frontline: Glamoth", "type": "planar_ornament", "effect": "Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG.", "image": "Item Firmament Frontline Glamoth.png"},
+        "po_fleet_of_the_ageless": {"name": "Fleet of the Ageless", "type": "planar_ornament", "effect": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."},
+        "po_forge_of_the_kalpagni_lantern": {"name": "Forge of the Kalpagni Lantern", "type": "planar_ornament", "effect": "Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s)."},
+        "po_giant_tree_of_rapt_brooding": {"name": "Giant Tree of Rapt Brooding", "type": "planar_ornament", "effect": "Increases the wearer's SPD by 6%. When the wearer's Speed is 135/180 or higher, increases the wearer and their memosprite's Outgoing Healing by 12%/20%."},
+        "po_inert_salsotto": {"name": "Inert Salsotto", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%."},
+        "po_izumo_gensei_and_takama_divine_realm": {"name": "Izumo Gensei and Takama Divine Realm", "type": "planar_ornament", "effect": "Increases the wearer's ATK by 12%. When entering battle, if at least one other ally follows the same Path as the wearer, then the wearer's CRIT Rate increases by 12%."},
+        "po_lushaka_the_sunken_seas": {"name": "Lushaka, the Sunken Seas", "type": "planar_ornament", "effect": "Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%."},
+        "po_pan_cosmic_commercial_enterprise": {"name": "Pan-Cosmic Commercial Enterprise", "type": "planar_ornament", "effect": "Increases the wearer's Effect Hit Rate by 10%. Meanwhile, the wearer's ATK increases by an amount that is equal to 25% of the current Effect Hit Rate, up to a maximum of 25%."},
+        "po_penacony_land_of_the_dreams": {"name": "Penacony, Land of the Dreams", "type": "planar_ornament", "effect": "Increases wearer's Energy Regeneration Rate by 5%. Increases DMG by 10% for all other allies that are of the same Type as the wearer."},
+        "po_punklorde_stage_zero": {"name": "Punklorde Stage Zero", "type": "planar_ornament", "effect": "Increases the wearer's Elation by 8%. When Elation reaches 40%/80% for the first time in battle, increases the wearer's CRIT DMG by 20%/32%."},
+        "po_revelry_by_the_sea": {"name": "Revelry by the Sea", "type": "planar_ornament", "effect": "Increases the wearer's ATK by 12%. When the wearer's ATK is higher than or equal to 2,400/3,600, increases the DoT DMG dealt by 12%/24%."},
+        "po_rutilant_arena": {"name": "Rutilant Arena", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%."},
+        "po_sigonia_the_unclaimed_desolation": {"name": "Sigonia, the Unclaimed Desolation", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 4%. When an enemy target gets defeated, the wearer's CRIT DMG increases by 4%, stacking up to 10 time(s)."},
+        "po_space_sealing_station": {"name": "Space Sealing Station", "type": "planar_ornament", "effect": "Increases the wearer's ATK by 12%. When the wearer's SPD reaches 120 or higher, the wearer's ATK increases by an extra 12%."},
+        "po_sprightly_vonwacq": {"name": "Sprightly Vonwacq", "type": "planar_ornament", "effect": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle."},
+        "po_talia_kingdom_of_banditry": {"name": "Talia: Kingdom of Banditry", "type": "planar_ornament", "effect": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%.", "image": "Item Talia Kingdom of Banditry.png"},
+        "po_tengoku_livestream": {"name": "Tengoku Livestream", "type": "planar_ornament", "effect": "Increases the wearer's CRIT DMG by 16%, If 3 or more Skill Points are consumed in the same turn, additionally increases the wearer's CRIT DMG by 32% for 3 turns."},
+        "po_the_wondrous_bananamusement_park": {"name": "The Wondrous BananAmusement Park", "type": "planar_ornament", "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."}
     }
 }

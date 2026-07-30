@@ -106,8 +106,8 @@
             <table class="domain-table">
                 <thead>
                     <tr>
-                        <th>Domain</th>
-                        <th>Location</th>
+                        <th x-text="['stagnant_shadow', 'echo_of_war', 'planar_ornament'].includes(selectedType) ? 'Boss' : 'Domain'"></th>
+                        <th x-text="selectedType === 'planar_ornament' ? 'Stage' : 'Location'"></th>
                         <th>Drops</th>
                     </tr>
                 </thead>
