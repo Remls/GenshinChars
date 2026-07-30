@@ -83,7 +83,16 @@ html.hsr-font {
 }
 @media screen and (max-width : 1023px){
     .site-nav {
-        gap: 1.25rem;
+        justify-content: space-evenly;
+        gap: 0;
+        padding: 0.25rem 0;
+    }
+    .site-nav a {
+        padding: 8px 12px;
+    }
+    .site-nav a img {
+        width: 40px;
+        height: 40px;
     }
     .site-nav a:not(.current) span {
         display: none;
