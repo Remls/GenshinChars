@@ -28,6 +28,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if git diff --quiet -I'^ *"(version|last_updated)":' -- docs; then
+            echo "Only version/timestamp changes, skipping commit"
+            exit 0
+          fi
           git add docs/characters.html \
             docs/index.html \
             docs/domains.html \
