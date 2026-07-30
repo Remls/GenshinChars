@@ -77,23 +77,24 @@
                         </td>
                         <td>
                             <div class="icon-buttons">
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedRarity === null }" title="All"
-                                    @click="selectedRarity = null; updateCharacterData()">
-                                    <span class="icon-button-label">All</span>
+                                <button :class="{ 'selected': selectedRarity === null }" @click="selectedRarity = null; updateCharacterData()" class="icon-button" title="All" type="button">
+                                    <span class="icon-button-label">
+                                        All
+                                    </span>
                                 </button>
-                                <template x-for="rarity in ['4', '5']" :key="rarity">
-                                    <button type="button" class="icon-button"
-                                        :class="{ 'selected': selectedRarity === rarity }" :title="`${rarity}-star`"
-                                        @click="selectedRarity = rarity; updateCharacterData()">
-                                        <span x-text="`${rarity}★`"></span>
+                                <template :key="rarity" x-for="rarity in ['4', '5']">
+                                    <button :class="{ 'selected': selectedRarity === rarity }" :title="`${rarity}-star`" @click="selectedRarity = rarity; updateCharacterData()" class="icon-button" type="button">
+                                        <span x-text="`${rarity}★`">
+                                        </span>
                                     </button>
                                 </template>
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedRarity === 'Unknown' }" title="Unknown"
-                                    @click="selectedRarity = 'Unknown'; updateCharacterData()">
-                                    <span>?</span>
-                                    <span class="icon-button-label" x-show="selectedRarity === 'Unknown'">Unknown</span>
+                                <button :class="{ 'selected': selectedRarity === 'Unknown' }" @click="selectedRarity = 'Unknown'; updateCharacterData()" class="icon-button" title="Unknown" type="button">
+                                    <span>
+                                        ?
+                                    </span>
+                                    <span class="icon-button-label" x-show="selectedRarity === 'Unknown'">
+                                        Unknown
+                                    </span>
                                 </button>
                             </div>
                         </td>
@@ -106,24 +107,26 @@
                         </td>
                         <td>
                             <div class="icon-buttons">
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedGender === null }" title="All"
-                                    @click="selectedGender = null; updateCharacterData()">
-                                    <span class="icon-button-label">All</span>
+                                <button :class="{ 'selected': selectedGender === null }" @click="selectedGender = null; updateCharacterData()" class="icon-button" title="All" type="button">
+                                    <span class="icon-button-label">
+                                        All
+                                    </span>
                                 </button>
-                                <template x-for="gender in ['Female', 'Male']" :key="gender">
-                                    <button type="button" class="icon-button"
-                                        :class="{ 'selected': selectedGender === gender }" :title="gender"
-                                        @click="selectedGender = gender; updateCharacterData()">
-                                        <span x-text="gender === 'Female' ? '♀' : '♂'"></span>
-                                        <span class="icon-button-label" x-show="selectedGender === gender" x-text="gender"></span>
+                                <template :key="gender" x-for="gender in ['Female', 'Male']">
+                                    <button :class="{ 'selected': selectedGender === gender }" :title="gender" @click="selectedGender = gender; updateCharacterData()" class="icon-button" type="button">
+                                        <span x-text="gender === 'Female' ? '♀' : '♂'">
+                                        </span>
+                                        <span class="icon-button-label" x-show="selectedGender === gender" x-text="gender">
+                                        </span>
                                     </button>
                                 </template>
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedGender === 'Unknown' }" title="Unknown"
-                                    @click="selectedGender = 'Unknown'; updateCharacterData()">
-                                    <span>?</span>
-                                    <span class="icon-button-label" x-show="selectedGender === 'Unknown'">Unknown</span>
+                                <button :class="{ 'selected': selectedGender === 'Unknown' }" @click="selectedGender = 'Unknown'; updateCharacterData()" class="icon-button" title="Unknown" type="button">
+                                    <span>
+                                        ?
+                                    </span>
+                                    <span class="icon-button-label" x-show="selectedGender === 'Unknown'">
+                                        Unknown
+                                    </span>
                                 </button>
                             </div>
                         </td>
@@ -136,24 +139,26 @@
                         </td>
                         <td>
                             <div class="icon-buttons">
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedRegion === null }" title="All"
-                                    @click="selectedRegion = null; updateCharacterData()">
-                                    <span class="icon-button-label">All</span>
+                                <button :class="{ 'selected': selectedRegion === null }" @click="selectedRegion = null; updateCharacterData()" class="icon-button" title="All" type="button">
+                                    <span class="icon-button-label">
+                                        All
+                                    </span>
                                 </button>
-                                <template x-for="region in REGIONS" :key="region">
-                                    <button type="button" class="icon-button"
-                                        :class="{ 'selected': selectedRegion === region }" :title="region"
-                                        @click="selectedRegion = region; updateCharacterData()">
-                                        <span x-html="regionIconHtml(region)"></span>
-                                        <span class="icon-button-label" x-show="selectedRegion === region" x-text="region"></span>
+                                <template :key="region" x-for="region in REGIONS">
+                                    <button :class="{ 'selected': selectedRegion === region }" :title="region" @click="selectedRegion = region; updateCharacterData()" class="icon-button" type="button">
+                                        <span x-html="regionIconHtml(region)">
+                                        </span>
+                                        <span class="icon-button-label" x-show="selectedRegion === region" x-text="region">
+                                        </span>
                                     </button>
                                 </template>
-                                <button type="button" class="icon-button"
-                                    :class="{ 'selected': selectedRegion === 'Unknown' }" title="Unknown"
-                                    @click="selectedRegion = 'Unknown'; updateCharacterData()">
-                                    <span>?</span>
-                                    <span class="icon-button-label" x-show="selectedRegion === 'Unknown'">Unknown</span>
+                                <button :class="{ 'selected': selectedRegion === 'Unknown' }" @click="selectedRegion = 'Unknown'; updateCharacterData()" class="icon-button" title="Unknown" type="button">
+                                    <span>
+                                        ?
+                                    </span>
+                                    <span class="icon-button-label" x-show="selectedRegion === 'Unknown'">
+                                        Unknown
+                                    </span>
                                 </button>
                             </div>
                         </td>
