@@ -547,7 +547,7 @@ document.addEventListener('alpine:init', () => {
             if (specialty.characters.length === 0) {
                 return '<span class="text-unknown">Not used by any character yet</span>'
             }
-            return specialty.characters.map(c => this.characterChipHtml(c)).join(', ')
+            return specialty.characters.map(c => `<div>${this.characterChipHtml(c)}</div>`).join('')
         },
 
         allRewardKeysFor(domain) {
@@ -709,8 +709,9 @@ document.addEventListener('alpine:init', () => {
                 text += ` ${this.setEffectsButtonHtml(reward)}`
             }
             if (reward.characters && reward.characters.length > 0) {
-                const chips = reward.characters.map(c => this.characterChipHtml(c))
-                text += ` (${chips.join(', ')})`
+                text += reward.characters
+                    .map(c => `<div class="reward-char">${this.characterChipHtml(c)}</div>`)
+                    .join('')
             } else if (reward.effect && !reward.effect_4pc) {
                 text += ` (${this.highlight(reward.effect)})`
             }

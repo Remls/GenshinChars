@@ -128,8 +128,8 @@
             <table class="domain-table">
                 <thead>
                     <tr>
-                        <th width="30%">Specialty</th>
-                        <th width="22%">Region</th>
+                        <th>Specialty</th>
+                        <th>Region</th>
                         <th>Used by</th>
                     </tr>
                 </thead>
@@ -151,15 +151,15 @@
             <table class="domain-table">
                 <thead>
                     <tr>
-                        <th width="30%">Domain</th>
-                        <th width="22%">Location</th>
+                        <th>Domain</th>
+                        <th>Location</th>
                         <th x-text="typeHasChangingRewards() ? `Drops (${DOMAIN_DAYS[selectedDay]})` : 'Drops'"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <template x-for="(domain, idx) in filteredDomains()" :key="idx">
                         <tr>
-                            <td x-html="domainNameHtml(domain)"></td>
+                            <td x-html="domainLabelHtml(domain.name)"></td>
                             <td x-html="locationHtml(domain)"></td>
                             <td>
                                 <ul class="domain-rewards">
@@ -189,8 +189,8 @@
                     <table class="domain-table">
                         <thead>
                             <tr>
-                                <th width="30%">Domain/boss</th>
-                                <th width="22%">Location</th>
+                                <th>Domain/boss</th>
+                                <th>Location</th>
                                 <th>Drops</th>
                             </tr>
                         </thead>
@@ -222,7 +222,7 @@
                     <table class="domain-table">
                         <thead>
                             <tr>
-                                <th width="55%">Drop</th>
+                                <th>Drop</th>
                                 <th>Where to get it</th>
                             </tr>
                         </thead>
@@ -247,8 +247,8 @@
                     <table class="domain-table">
                         <thead>
                             <tr>
-                                <th width="30%">Specialty</th>
-                                <th width="22%">Region</th>
+                                <th>Specialty</th>
+                                <th>Region</th>
                                 <th>Used by</th>
                             </tr>
                         </thead>

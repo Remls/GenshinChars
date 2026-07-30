@@ -263,10 +263,14 @@ sup {
 }
 .domain-rewards {
     margin: 0;
-    padding-left: 1.25em;
+    padding-left: 0;
+    list-style: none;
 }
 .domain-rewards li {
     padding: 2px 0;
+}
+.domain-rewards li + li {
+    margin-top: 0.5em;
 }
 
 .day-buttons, .icon-buttons {
@@ -346,6 +350,10 @@ h2.with-hint + .filter-hint {
     object-fit: cover;
     border-radius: 2px;
     vertical-align: text-bottom;
+}
+
+.reward-char {
+    margin-left: 25px;
 }
 
 .char-chip {
