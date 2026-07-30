@@ -331,6 +331,11 @@ a[href*=".fandom.com"]:not(.char-chip):not(.character-links):hover {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+/* Except in the footer, where they are labeled links like any other */
+.page-footer a[href*=".fandom.com"]:link, .page-footer a[href*=".fandom.com"]:visited {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 
 /* Character chip links underline via the name span only, in its own color */
 a.character-links, a.character-links:visited, a.character-links:hover {

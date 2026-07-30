@@ -253,6 +253,11 @@ document.addEventListener('alpine:init', () => {
             return v
         },
 
+        resetCache() {
+            localStorage.clear()
+            location.reload()
+        },
+
         zeroPad(n) {
             return String(n).padStart(2, '0')
         },

@@ -239,6 +239,11 @@ document.addEventListener('alpine:init', () => {
             return sortedObj
         },
 
+        resetCache() {
+            localStorage.clear()
+            location.reload()
+        },
+
         zeroPad(n) {
             return String(n).padStart(2, '0')
         },

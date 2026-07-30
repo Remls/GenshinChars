@@ -97,4 +97,7 @@ def prettify_characters_page():
     output = read_characters_file()
     soup = BeautifulSoup(output, "html.parser")
     formatter = HTMLFormatter(indent=4)
-    write_characters_file(soup.prettify(formatter=formatter))
+    output = soup.prettify(formatter=formatter)
+    # Keep punctuation attached to links instead of on its own line (a space would render)
+    output = re.sub(r'</a>\n\s*\.', '</a>.', output)
+    write_characters_file(output)

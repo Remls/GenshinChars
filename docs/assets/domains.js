@@ -464,7 +464,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         resetCache() {
-            localStorage.removeItem('domains_wiki_images')
+            localStorage.clear()
             location.reload()
         },
 
