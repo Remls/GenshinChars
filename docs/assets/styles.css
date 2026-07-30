@@ -81,6 +81,14 @@ html.hsr-font {
 .site-nav .hsr span {
     transform: translateY(-1px);
 }
+@media screen and (max-width : 1023px){
+    .site-nav {
+        gap: 1.25rem;
+    }
+    .site-nav a:not(.current) span {
+        display: none;
+    }
+}
 .site-nav a:link, .site-nav a:visited, .site-nav a:hover {
     color: var(--txt-secondary-color);
     text-decoration: none;
