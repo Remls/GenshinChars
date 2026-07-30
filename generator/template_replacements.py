@@ -100,4 +100,5 @@ def prettify_characters_page():
     output = soup.prettify(formatter=formatter)
     # Keep punctuation attached to links instead of on its own line (a space would render)
     output = re.sub(r'</a>\n\s*\.', '</a>.', output)
+    output = re.sub(r'(<a [^>]*>)\n\s*([^<\n]+?)\s*\n\s*(</a>\.)', r'\1\2\3', output)
     write_characters_file(output)
