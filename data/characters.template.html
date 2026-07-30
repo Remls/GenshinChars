@@ -32,6 +32,12 @@
 </head>
 
 <body x-data="charSheet" x-init="fetchAllData">
+    <nav class="site-nav">
+        <a href="characters" class="current"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>Genshin Characters</span></a>
+        <a href="domains"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>Genshin Domains</span></a>
+        <a href="hsr/characters" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>HSR Characters</span></a>
+        <a href="hsr/domains" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/1/10/Icon_Calyx_Golden.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>HSR Domains</span></a>
+    </nav>
     <section>
         [HEADER Filters;filters]
         <div class="table-wrapper" x-show="showSection.filters" x-collapse>
@@ -431,7 +437,6 @@
             Info for unreleased characters are subject to change.<br>
             Above tables do not include the Traveler.<br>
             Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a><br>
-            Also see: <a href="domains" class="clickable">Domains</a><br>
             <br>
             <b>KEYS:</b><br>
             <b>Pn</b> Characters who have an innate Pneuma alignment.<br>

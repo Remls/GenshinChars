@@ -32,6 +32,12 @@
 </head>
 
 <body x-data="domainSheet" x-init="fetchAllData">
+    <nav class="site-nav">
+        <a href="characters"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>Genshin Characters</span></a>
+        <a href="domains" class="current"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>Genshin Domains</span></a>
+        <a href="hsr/characters" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>HSR Characters</span></a>
+        <a href="hsr/domains" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/1/10/Icon_Calyx_Golden.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'"><span>HSR Domains</span></a>
+    </nav>
     <section>
         <h2 class="collapsible-header" @click="showSection.filters = !showSection.filters">
             Filters
@@ -277,7 +283,6 @@
             Last updated <span x-text="lastUpdatedFormatted()"></span><br>
             Days are based on the Asia server (daily reset at 04:00, UTC+8).<br>
             Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a> and the <a href="https://genshin-impact.fandom.com" class="clickable">Genshin Impact Wiki</a><br>
-            Also see: <a href="characters" class="clickable">Characters</a><br>
             <a href="#" @click.prevent="resetCache()" class="clickable">Reset cache</a>
         </div>
         <div class="icons">

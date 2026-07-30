@@ -50,6 +50,49 @@ html.hsr-font {
     font-family: var(--game-font, Genshin), Arial, Helvetica, sans-serif;
 }
 
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0.75rem 0;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--secondary-color);
+    font-family: Genshin, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.site-nav .hsr {
+    font-family: HSR, Arial, Helvetica, sans-serif;
+    font-size: 1.125em;
+}
+.site-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+/* The two fonts carry their ink at different heights within the line box */
+.site-nav span {
+    transform: translateY(1px);
+}
+.site-nav .hsr span {
+    transform: translateY(-1px);
+}
+.site-nav a:link, .site-nav a:visited, .site-nav a:hover {
+    color: var(--txt-secondary-color);
+    text-decoration: none;
+}
+.site-nav a:hover {
+    color: var(--txt-color);
+}
+.site-nav a.current {
+    color: var(--txt-color);
+    cursor: default;
+}
+
 /** Resetting default styles */
 select {
     appearance: none;
