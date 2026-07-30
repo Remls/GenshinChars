@@ -266,6 +266,10 @@ document.addEventListener('alpine:init', () => {
             }).join('<br>')
         },
 
+        rewardListHtml(rewardKeys) {
+            return rewardKeys.map(key => `<li>${this.formatRewardByKey(key)}</li>`).join('')
+        },
+
         formatRewardByKey(rewardKey) {
             const reward = this.allData.rewards[rewardKey]
             if (!reward) return `<span class="text-unknown">${this.escapeHtml(rewardKey)}</span>`

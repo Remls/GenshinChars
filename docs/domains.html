@@ -169,11 +169,7 @@
                             <td x-html="domainLabelHtml(domain.name)"></td>
                             <td x-html="locationHtml(domain)"></td>
                             <td>
-                                <ul class="domain-rewards">
-                                    <template x-for="rewardKey in rewardKeysFor(domain)" :key="rewardKey">
-                                        <li x-html="formatRewardByKey(rewardKey)"></li>
-                                    </template>
-                                </ul>
+                                <ul class="domain-rewards" x-html="rewardListHtml(rewardKeysFor(domain))"></ul>
                             </td>
                         </tr>
                     </template>
@@ -207,11 +203,7 @@
                                     <td x-html="domainNameHtml(domain)"></td>
                                     <td x-html="locationHtml(domain)"></td>
                                     <td>
-                                        <ul class="domain-rewards">
-                                            <template x-for="rewardKey in allRewardKeysFor(domain)" :key="rewardKey">
-                                                <li x-html="formatRewardByKey(rewardKey)"></li>
-                                            </template>
-                                        </ul>
+                                        <ul class="domain-rewards" x-html="rewardListHtml(allRewardKeysFor(domain))"></ul>
                                     </td>
                                 </tr>
                             </template>
