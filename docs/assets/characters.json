@@ -1,6 +1,6 @@
 {
-    "version": "fe946e6",
-    "last_updated": "2026-07-30T07:36:20.390465Z",
+    "version": "7b170ea",
+    "last_updated": "2026-07-30T12:46:54.551888Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -266,9 +266,9 @@
             "is_outdated": false,
             "notes": null
         },
-        "Nicole Reeyn": {
-            "name": "Nicole Reeyn",
-            "display_name": "Nicole",
+        "Nicole": {
+            "name": "Nicole",
+            "display_name": null,
             "rarity": "5",
             "element": "Pyro",
             "arkhe": null,
@@ -282,9 +282,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nicole.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "A member of the Hexenzirkel (codename N)"
-            ]
+            "notes": null
         },
         "Prune": {
             "name": "Prune",
@@ -376,9 +374,9 @@
             "is_outdated": false,
             "notes": null
         },
-        "Columbina Hyposelenia": {
-            "name": "Columbina Hyposelenia",
-            "display_name": "Columbina",
+        "Columbina": {
+            "name": "Columbina",
+            "display_name": null,
             "rarity": "5",
             "element": "Hydro",
             "arkhe": null,
@@ -392,10 +390,7 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/columbina.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": [
-                "3rd of the Fatui Harbingers",
-                "Moon Maiden"
-            ]
+            "notes": null
         },
         "Durin": {
             "name": "Durin",
@@ -451,9 +446,9 @@
             "is_outdated": false,
             "notes": null
         },
-        "Kyryll Chudomirovich Flins": {
-            "name": "Kyryll Chudomirovich Flins",
-            "display_name": "Flins",
+        "Flins": {
+            "name": "Flins",
+            "display_name": null,
             "rarity": "5",
             "element": "Electro",
             "arkhe": null,

@@ -1,6 +1,6 @@
 {
-    "version": "fe946e6",
-    "last_updated": "2026-07-30T07:36:20.397503Z",
+    "version": "7b170ea",
+    "last_updated": "2026-07-30T12:46:54.557757Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1392,7 +1392,7 @@
                 "Aloy",
                 "Amber",
                 "Barbara",
-                "Childe",
+                "Tartaglia",
                 "Diona",
                 "Klee",
                 "Sucrose",
@@ -1449,7 +1449,7 @@
                 "Chongyun",
                 "Ganyu",
                 "Hu Tao",
-                "Kazuha",
+                "Kaedehara Kazuha",
                 "Lan Yan",
                 "Xiangling",
                 "Yaoyao",
@@ -1474,10 +1474,10 @@
             "name": "Transience",
             "type": "talent_upgrade_mats",
             "characters": [
-                "Heizou",
+                "Shikanoin Heizou",
                 "Kirara",
-                "Kokomi",
-                "Mizuki",
+                "Sangonomiya Kokomi",
+                "Yumemizuki Mizuki",
                 "Thoma",
                 "Yoimiya"
             ]
@@ -1486,11 +1486,11 @@
             "name": "Elegance",
             "type": "talent_upgrade_mats",
             "characters": [
-                "Ayaka",
-                "Ayato",
-                "Itto",
-                "Sara",
-                "Shinobu"
+                "Kamisato Ayaka",
+                "Kamisato Ayato",
+                "Arataki Itto",
+                "Kujou Sara",
+                "Kuki Shinobu"
             ]
         },
         "t_light": {
@@ -1498,9 +1498,9 @@
             "type": "talent_upgrade_mats",
             "characters": [
                 "Chiori",
-                "Ei",
+                "Raiden Shogun",
                 "Gorou",
-                "Miko",
+                "Yae Miko",
                 "Sayu"
             ]
         },
@@ -2046,7 +2046,7 @@
             "type": "normal_bosses",
             "characters": [
                 "Barbara",
-                "Childe",
+                "Tartaglia",
                 "Mona",
                 "Xingqiu"
             ]
@@ -2055,8 +2055,8 @@
             "name": "Runic Fang",
             "type": "normal_bosses",
             "characters": [
-                "Heizou",
-                "Shinobu",
+                "Shikanoin Heizou",
+                "Kuki Shinobu",
                 "Yelan"
             ]
         },
@@ -2064,7 +2064,7 @@
             "name": "Dragonheir's False Fin",
             "type": "normal_bosses",
             "characters": [
-                "Miko",
+                "Yae Miko",
                 "Shenhe"
             ]
         },
@@ -2072,7 +2072,7 @@
             "name": "Riftborn Regalia",
             "type": "normal_bosses",
             "characters": [
-                "Itto",
+                "Arataki Itto",
                 "Yun Jin"
             ]
         },
@@ -2080,15 +2080,15 @@
             "name": "Dew of Repudiation",
             "type": "normal_bosses",
             "characters": [
-                "Ayato",
-                "Kokomi"
+                "Kamisato Ayato",
+                "Sangonomiya Kokomi"
             ]
         },
         "nb_marionette_core": {
             "name": "Marionette Core",
             "type": "normal_bosses",
             "characters": [
-                "Kazuha",
+                "Kaedehara Kazuha",
                 "Sayu"
             ]
         },
@@ -2096,7 +2096,7 @@
             "name": "Perpetual Heart",
             "type": "normal_bosses",
             "characters": [
-                "Ayaka",
+                "Kamisato Ayaka",
                 "Gorou"
             ]
         },
@@ -2112,8 +2112,8 @@
             "name": "Storm Beads",
             "type": "normal_bosses",
             "characters": [
-                "Ei",
-                "Sara"
+                "Raiden Shogun",
+                "Kujou Sara"
             ]
         },
         "nb_hooked_beak": {
@@ -2279,7 +2279,7 @@
             "type": "normal_bosses",
             "characters": [
                 "Citlali",
-                "Mizuki"
+                "Yumemizuki Mizuki"
             ]
         },
         "nb_sparkless_statue_core": {
@@ -2440,7 +2440,7 @@
             "name": "Shard of a Foul Legacy",
             "type": "weekly_bosses",
             "characters": [
-                "Childe",
+                "Tartaglia",
                 "Diona",
                 "Hu Tao"
             ]
@@ -2466,7 +2466,7 @@
             "name": "Bloodjade Branch",
             "type": "weekly_bosses",
             "characters": [
-                "Ayaka",
+                "Kamisato Ayaka",
                 "Dori",
                 "Yanfei"
             ]
@@ -2475,7 +2475,7 @@
             "name": "Gilded Scale",
             "type": "weekly_bosses",
             "characters": [
-                "Kazuha",
+                "Kaedehara Kazuha",
                 "Sayu",
                 "Yelan"
             ]
@@ -2485,7 +2485,7 @@
             "type": "weekly_bosses",
             "characters": [
                 "Aloy",
-                "Ei",
+                "Raiden Shogun",
                 "Gorou"
             ]
         },
@@ -2493,7 +2493,7 @@
             "name": "Hellfire Butterfly",
             "type": "weekly_bosses",
             "characters": [
-                "Kokomi",
+                "Sangonomiya Kokomi",
                 "Shenhe",
                 "Thoma"
             ]
@@ -2502,8 +2502,8 @@
             "name": "Ashen Heart",
             "type": "weekly_bosses",
             "characters": [
-                "Itto",
-                "Sara",
+                "Arataki Itto",
+                "Kujou Sara",
                 "Yun Jin"
             ]
         },
@@ -2511,8 +2511,8 @@
             "name": "The Meaning of Aeons",
             "type": "weekly_bosses",
             "characters": [
-                "Heizou",
-                "Miko",
+                "Shikanoin Heizou",
+                "Yae Miko",
                 "Tighnari"
             ]
         },
@@ -2520,7 +2520,7 @@
             "name": "Mudra of the Malefic General",
             "type": "weekly_bosses",
             "characters": [
-                "Ayato",
+                "Kamisato Ayato",
                 "Cyno"
             ]
         },
@@ -2531,7 +2531,7 @@
                 "Candace",
                 "Collei",
                 "Nilou",
-                "Shinobu"
+                "Kuki Shinobu"
             ]
         },
         "wb_puppet_strings": {
@@ -2623,7 +2623,7 @@
             "characters": [
                 "Arlecchino",
                 "Kachina",
-                "Mizuki"
+                "Yumemizuki Mizuki"
             ]
         },
         "wb_silken_feather": {
@@ -2865,7 +2865,7 @@
             "region": "Liyue",
             "characters": [
                 "Gaming",
-                "Childe",
+                "Tartaglia",
                 "Yelan"
             ]
         },
@@ -2899,16 +2899,16 @@
             "name": "Onikabuto",
             "region": "Inazuma",
             "characters": [
-                "Itto",
-                "Heizou"
+                "Arataki Itto",
+                "Shikanoin Heizou"
             ]
         },
         "s_sakura_bloom": {
             "name": "Sakura Bloom",
             "region": "Inazuma",
             "characters": [
-                "Ayaka",
-                "Ayato"
+                "Kamisato Ayaka",
+                "Kamisato Ayato"
             ]
         },
         "s_crystal_marrow": {
@@ -2924,14 +2924,14 @@
             "region": "Inazuma",
             "characters": [
                 "Chiori",
-                "Sara"
+                "Kujou Sara"
             ]
         },
         "s_naku_weed": {
             "name": "Naku Weed",
             "region": "Inazuma",
             "characters": [
-                "Shinobu",
+                "Kuki Shinobu",
                 "Yoimiya"
             ]
         },
@@ -2939,9 +2939,9 @@
             "name": "Sea Ganoderma",
             "region": "Inazuma",
             "characters": [
-                "Kazuha",
-                "Miko",
-                "Mizuki"
+                "Kaedehara Kazuha",
+                "Yae Miko",
+                "Yumemizuki Mizuki"
             ]
         },
         "s_sango_pearl": {
@@ -2949,7 +2949,7 @@
             "region": "Inazuma",
             "characters": [
                 "Gorou",
-                "Kokomi"
+                "Sangonomiya Kokomi"
             ]
         },
         "s_amakumo_fruit": {
@@ -2957,7 +2957,7 @@
             "region": "Inazuma",
             "characters": [
                 "Kirara",
-                "Ei"
+                "Raiden Shogun"
             ]
         },
         "s_fluorescent_fungus": {
