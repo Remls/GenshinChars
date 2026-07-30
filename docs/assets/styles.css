@@ -310,7 +310,7 @@ sup {
     display: block;
 }
 .icon-button.selected {
-    flex: none;
+    flex: 1 0 auto;
     padding: 0.25em 0.5em;
 }
 .day-button.selected, .icon-button.selected {

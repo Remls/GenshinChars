@@ -26,6 +26,8 @@
             </script>
             <script defer="" src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js">
             </script>
+            <script src="assets/common.js">
+            </script>
             <script src="assets/scripts.js">
             </script>
         </meta>
@@ -69,69 +71,91 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="rarity-select">
+                            <label>
                                 Filter by rarity
                             </label>
                         </td>
                         <td>
-                            <select @change="updateCharacterData()" id="rarity-select" x-model="selectedRarity">
-                                <option :value="null">
-                                    All
-                                </option>
-                                <option value="4">
-                                    4-star
-                                </option>
-                                <option value="5">
-                                    5-star
-                                </option>
-                                <option value="Unknown">
-                                    Unknown
-                                </option>
-                            </select>
+                            <div class="icon-buttons">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRarity === null }" title="All"
+                                    @click="selectedRarity = null; updateCharacterData()">
+                                    <span class="icon-button-label">All</span>
+                                </button>
+                                <template x-for="rarity in ['4', '5']" :key="rarity">
+                                    <button type="button" class="icon-button"
+                                        :class="{ 'selected': selectedRarity === rarity }" :title="`${rarity}-star`"
+                                        @click="selectedRarity = rarity; updateCharacterData()">
+                                        <span x-text="`${rarity}★`"></span>
+                                    </button>
+                                </template>
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRarity === 'Unknown' }" title="Unknown"
+                                    @click="selectedRarity = 'Unknown'; updateCharacterData()">
+                                    <span>?</span>
+                                    <span class="icon-button-label" x-show="selectedRarity === 'Unknown'">Unknown</span>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="gender-select">
+                            <label>
                                 Filter by gender
                             </label>
                         </td>
                         <td>
-                            <select @change="updateCharacterData()" id="gender-select" x-model="selectedGender">
-                                <option :value="null">
-                                    All
-                                </option>
-                                <option value="Female">
-                                    Female
-                                </option>
-                                <option value="Male">
-                                    Male
-                                </option>
-                                <option value="Unknown">
-                                    Unknown
-                                </option>
-                            </select>
+                            <div class="icon-buttons">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedGender === null }" title="All"
+                                    @click="selectedGender = null; updateCharacterData()">
+                                    <span class="icon-button-label">All</span>
+                                </button>
+                                <template x-for="gender in ['Female', 'Male']" :key="gender">
+                                    <button type="button" class="icon-button"
+                                        :class="{ 'selected': selectedGender === gender }" :title="gender"
+                                        @click="selectedGender = gender; updateCharacterData()">
+                                        <span x-text="gender === 'Female' ? '♀' : '♂'"></span>
+                                        <span class="icon-button-label" x-show="selectedGender === gender" x-text="gender"></span>
+                                    </button>
+                                </template>
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedGender === 'Unknown' }" title="Unknown"
+                                    @click="selectedGender = 'Unknown'; updateCharacterData()">
+                                    <span>?</span>
+                                    <span class="icon-button-label" x-show="selectedGender === 'Unknown'">Unknown</span>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="region-select">
+                            <label>
                                 Filter by region
                             </label>
                         </td>
                         <td>
-                            <select @change="updateCharacterData()" id="region-select" x-model="selectedRegion">
-                                <option :value="null">
-                                    All
-                                </option>
-                                <template :key="region" x-for="region in REGIONS">
-                                    <option :value="region" x-text="region">
-                                    </option>
+                            <div class="icon-buttons">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRegion === null }" title="All"
+                                    @click="selectedRegion = null; updateCharacterData()">
+                                    <span class="icon-button-label">All</span>
+                                </button>
+                                <template x-for="region in REGIONS" :key="region">
+                                    <button type="button" class="icon-button"
+                                        :class="{ 'selected': selectedRegion === region }" :title="region"
+                                        @click="selectedRegion = region; updateCharacterData()">
+                                        <span x-html="regionIconHtml(region)"></span>
+                                        <span class="icon-button-label" x-show="selectedRegion === region" x-text="region"></span>
+                                    </button>
                                 </template>
-                                <option value="Unknown">
-                                    Unknown
-                                </option>
-                            </select>
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRegion === 'Unknown' }" title="Unknown"
+                                    @click="selectedRegion = 'Unknown'; updateCharacterData()">
+                                    <span>?</span>
+                                    <span class="icon-button-label" x-show="selectedRegion === 'Unknown'">Unknown</span>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                 </table>

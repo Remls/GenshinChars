@@ -24,7 +24,7 @@ document.addEventListener('alpine:init', () => {
 
         // Section collapses
         showSection: {
-            filters: false,
+            filters: true,
             weaponElementTable: true,
             releaseOrderTable: true,
             birthdayOrderTable: true,
