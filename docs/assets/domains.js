@@ -1,7 +1,7 @@
 const DOMAIN_TYPES = {
     weapon_ascension_mats: {
         button_label: 'Weapon mats',
-        icon: '🏹',
+        icon: 'Icon Inventory Weapons.png',
         short: 'w',
         string: 'Weapon ascension materials',
         title: 'Domains of Forgery',
@@ -10,7 +10,7 @@ const DOMAIN_TYPES = {
     },
     talent_upgrade_mats: {
         button_label: 'Talent mats',
-        icon: '📖',
+        icon: 'Icon Archive Books.png',
         short: 't',
         string: 'Talent upgrade materials',
         title: 'Domains of Mastery',
@@ -19,7 +19,7 @@ const DOMAIN_TYPES = {
     },
     artifacts: {
         button_label: 'Artifacts',
-        icon: '🏺',
+        icon: 'Icon Inventory Artifacts.png',
         short: 'a',
         string: 'Artifacts',
         title: 'Domains of Blessing',
@@ -28,7 +28,7 @@ const DOMAIN_TYPES = {
     },
     normal_bosses: {
         button_label: 'Normal bosses',
-        icon: '🐲',
+        icon: 'Icon Archive Living Beings.png',
         short: 'nb',
         string: 'Normal bosses',
         title: 'Normal bosses',
@@ -37,7 +37,7 @@ const DOMAIN_TYPES = {
     },
     weekly_bosses: {
         button_label: 'Weekly bosses',
-        icon: '🐉',
+        icon: 'Icon Tutorial Monster.png',
         short: 'wb',
         string: 'Weekly bosses',
         title: 'Weekly bosses',
@@ -46,7 +46,7 @@ const DOMAIN_TYPES = {
     },
     regional_specialties: {
         button_label: 'Specialties',
-        icon: '🌸',
+        icon: 'Icon Inventory Materials.png',
         short: 's',
         string: 'Regional specialties',
         title: 'Regional specialties',
@@ -609,8 +609,15 @@ document.addEventListener('alpine:init', () => {
             return `${thumb} ${name}${suffix}`
         },
 
+        typeIconHtml(type) {
+            const icon = DOMAIN_TYPES[type].icon
+            const invertClass = icon.startsWith('Item ') ? '' : ' type-icon'
+            return `<img src="${wikiFileUrl(icon)}" class="item-thumb${invertClass}" width="20" height="20" loading="lazy"`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
+        },
+
         domainNameHtml(domain) {
-            return `${DOMAIN_TYPES[domain.type].icon} ${this.domainLabelHtml(domain.name)}`
+            return `${this.typeIconHtml(domain.type)} ${this.domainLabelHtml(domain.name)}`
         },
 
         locationHtml(domain) {
@@ -648,7 +655,7 @@ document.addEventListener('alpine:init', () => {
         formatReward(reward, withRewardType = false) {
             let text = ''
             if (withRewardType && reward.type) {
-                text += `${DOMAIN_TYPES[reward.type].icon} `
+                text += `${this.typeIconHtml(reward.type)} `
             }
             text += `${this.itemThumbHtml(reward.name)} ${this.wikiLinkHtml(reward.name)}`
             if (reward.effect_4pc) {

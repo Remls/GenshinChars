@@ -73,7 +73,7 @@
                                     :class="{ 'selected': selectedType === key }"
                                     :title="type.string"
                                     @click="selectedType = key">
-                                    <span x-text="type.icon"></span>
+                                    <span x-html="typeIconHtml(key)"></span>
                                     <span class="icon-button-label" x-show="selectedType === key" x-text="type.button_label"></span>
                                 </button>
                             </template>
@@ -143,7 +143,7 @@
                 <tbody>
                     <template x-for="(specialty, idx) in filteredSpecialties()" :key="idx">
                         <tr>
-                            <td x-html="`${typeDetails().icon} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
+                            <td x-html="`${typeIconHtml(selectedType)} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
                             <td x-html="`${regionIconHtml(specialty.region)} ${highlight(specialty.region)}`"></td>
                             <td x-html="specialtyCharactersHtml(specialty)"></td>
                         </tr>

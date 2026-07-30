@@ -392,6 +392,13 @@ sup {
 .icon-button.selected .region-icon {
     filter: invert(1);
 }
+/* Genshin menu icons are dark glyphs; invert them for the dark theme instead */
+.type-icon {
+    filter: invert(0.85);
+}
+.icon-button.selected .type-icon {
+    filter: none;
+}
 .day-button.today span {
     text-decoration: underline;
     text-underline-offset: 3px;
