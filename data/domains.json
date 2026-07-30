@@ -841,7 +841,7 @@
         "w_spiritual_nectar": {"name": "Measured Pour of the Cellared Spiritual Nectar", "type": "weapon_ascension_mats"},
         "w_frost_emperor": {"name": "The Frost Emperor's Revival", "type": "weapon_ascension_mats"},
         "t_freedom": {"name": "Freedom", "type": "talent_upgrade_mats", "characters": [
-            "Aloy", "Amber", "Barbara", "Childe", "Diona", "Klee", "Sucrose", "Varka"
+            "Aloy", "Amber", "Barbara", "Tartaglia", "Diona", "Klee", "Sucrose", "Varka"
         ]},
         "t_resistance": {"name": "Resistance", "type": "talent_upgrade_mats", "characters": [
             "Bennett", "Diluc", "Eula", "Jean", "Lohen", "Mona", "Noelle", "Prune", "Razor"
@@ -853,19 +853,19 @@
             "Gaming", "Keqing", "Ningguang", "Qiqi", "Shenhe", "Xiao", "Yelan"
         ]},
         "t_diligence": {"name": "Diligence", "type": "talent_upgrade_mats", "characters": [
-            "Chongyun", "Ganyu", "Hu Tao", "Kazuha", "Lan Yan", "Xiangling", "Yaoyao", "Yun Jin"
+            "Chongyun", "Ganyu", "Hu Tao", "Kaedehara Kazuha", "Lan Yan", "Xiangling", "Yaoyao", "Yun Jin"
         ]},
         "t_gold": {"name": "Gold", "type": "talent_upgrade_mats", "characters": [
             "Baizhu", "Beidou", "Xianyun", "Xingqiu", "Xinyan", "Yanfei", "Zhongli", "Zibai"
         ]},
         "t_transience": {"name": "Transience", "type": "talent_upgrade_mats", "characters": [
-            "Heizou", "Kirara", "Kokomi", "Mizuki", "Thoma", "Yoimiya"
+            "Shikanoin Heizou", "Kirara", "Sangonomiya Kokomi", "Yumemizuki Mizuki", "Thoma", "Yoimiya"
         ]},
         "t_elegance": {"name": "Elegance", "type": "talent_upgrade_mats", "characters": [
-            "Ayaka", "Ayato", "Itto", "Sara", "Shinobu"
+            "Kamisato Ayaka", "Kamisato Ayato", "Arataki Itto", "Kujou Sara", "Kuki Shinobu"
         ]},
         "t_light": {"name": "Light", "type": "talent_upgrade_mats", "characters": [
-            "Chiori", "Ei", "Gorou", "Miko", "Sayu"
+            "Chiori", "Raiden Shogun", "Gorou", "Yae Miko", "Sayu"
         ]},
         "t_admonition": {"name": "Admonition", "type": "talent_upgrade_mats", "characters": [
             "Candace", "Cyno", "Faruzan", "Tighnari"
@@ -988,31 +988,31 @@
             "Amber", "Bennett", "Diluc", "Klee", "Xiangling", "Xinyan"
         ]},
         "nb_cleansing_heart": {"name": "Cleansing Heart", "type": "normal_bosses", "characters": [
-            "Barbara", "Childe", "Mona", "Xingqiu"
+            "Barbara", "Tartaglia", "Mona", "Xingqiu"
         ]},
         "nb_runic_fang": {"name": "Runic Fang", "type": "normal_bosses", "characters": [
-            "Heizou", "Shinobu", "Yelan"
+            "Shikanoin Heizou", "Kuki Shinobu", "Yelan"
         ]},
         "nb_dragonheir": {"name": "Dragonheir's False Fin", "type": "normal_bosses", "characters": [
-            "Miko", "Shenhe"
+            "Yae Miko", "Shenhe"
         ]},
         "nb_riftborn_regalia": {"name": "Riftborn Regalia", "type": "normal_bosses", "characters": [
-            "Itto", "Yun Jin"
+            "Arataki Itto", "Yun Jin"
         ]},
         "nb_dew_of_repudiation": {"name": "Dew of Repudiation", "type": "normal_bosses", "characters": [
-            "Ayato", "Kokomi"
+            "Kamisato Ayato", "Sangonomiya Kokomi"
         ]},
         "nb_marionette_core": {"name": "Marionette Core", "type": "normal_bosses", "characters": [
-            "Kazuha", "Sayu"
+            "Kaedehara Kazuha", "Sayu"
         ]},
         "nb_perpetual_heart": {"name": "Perpetual Heart", "type": "normal_bosses", "characters": [
-            "Ayaka", "Gorou"
+            "Kamisato Ayaka", "Gorou"
         ]},
         "nb_smoldering_pearl": {"name": "Smoldering Pearl", "type": "normal_bosses", "characters": [
             "Thoma", "Yoimiya"
         ]},
         "nb_storm_beads": {"name": "Storm Beads", "type": "normal_bosses", "characters": [
-            "Ei", "Sara"
+            "Raiden Shogun", "Kujou Sara"
         ]},
         "nb_hooked_beak": {"name": "Majestic Hooked Beak", "type": "normal_bosses", "characters": [
             "Collei", "Tighnari"
@@ -1072,7 +1072,7 @@
             "Chasca", "Iansan", "Skirk"
         ]},
         "nb_talisman": {"name": "Talisman of the Enigmatic Land", "type": "normal_bosses", "characters": [
-            "Citlali", "Mizuki"
+            "Citlali", "Yumemizuki Mizuki"
         ]},
         "nb_sparkless_statue_core": {"name": "Sparkless Statue Core", "type": "normal_bosses", "characters": [
             "Ifa", "Varesa"
@@ -1129,7 +1129,7 @@
             "Albedo", "Xinyan", "Zhongli"
         ]},
         "wb_shard_of_foul_legacy": {"name": "Shard of a Foul Legacy", "type": "weekly_bosses", "characters": [
-            "Childe", "Diona", "Hu Tao"
+            "Tartaglia", "Diona", "Hu Tao"
         ]},
         "wb_shadow_of_warrior": {"name": "Shadow of the Warrior", "type": "weekly_bosses", "characters": [
             "Ganyu", "Rosaria", "Xiao"
@@ -1138,28 +1138,28 @@
             "Eula", "Yoimiya"
         ]},
         "wb_bloodjade_branch": {"name": "Bloodjade Branch", "type": "weekly_bosses", "characters": [
-            "Ayaka", "Dori", "Yanfei"
+            "Kamisato Ayaka", "Dori", "Yanfei"
         ]},
         "wb_gilded_scale": {"name": "Gilded Scale", "type": "weekly_bosses", "characters": [
-            "Kazuha", "Sayu", "Yelan"
+            "Kaedehara Kazuha", "Sayu", "Yelan"
         ]},
         "wb_molten_moment": {"name": "Molten Moment", "type": "weekly_bosses", "characters": [
-            "Aloy", "Ei", "Gorou"
+            "Aloy", "Raiden Shogun", "Gorou"
         ]},
         "wb_hellfire_butterfly": {"name": "Hellfire Butterfly", "type": "weekly_bosses", "characters": [
-            "Kokomi", "Shenhe", "Thoma"
+            "Sangonomiya Kokomi", "Shenhe", "Thoma"
         ]},
         "wb_ashen_heart": {"name": "Ashen Heart", "type": "weekly_bosses", "characters": [
-            "Itto", "Sara", "Yun Jin"
+            "Arataki Itto", "Kujou Sara", "Yun Jin"
         ]},
         "wb_meaning_of_aeons": {"name": "The Meaning of Aeons", "type": "weekly_bosses", "characters": [
-            "Heizou", "Miko", "Tighnari"
+            "Shikanoin Heizou", "Yae Miko", "Tighnari"
         ]},
         "wb_mudra_of_malefic_general": {"name": "Mudra of the Malefic General", "type": "weekly_bosses", "characters": [
-            "Ayato", "Cyno"
+            "Kamisato Ayato", "Cyno"
         ]},
         "wb_tears_of_calamitous_god": {"name": "Tears of the Calamitous God", "type": "weekly_bosses", "characters": [
-            "Candace", "Collei", "Nilou", "Shinobu"
+            "Candace", "Collei", "Nilou", "Kuki Shinobu"
         ]},
         "wb_puppet_strings": {"name": "Puppet Strings", "type": "weekly_bosses", "characters": [
             "Dehya", "Faruzan", "Nahida"
@@ -1189,7 +1189,7 @@
 		    "Furina", "Gaming", "Mualani"
         ]},
         "wb_fading_candle": {"name": "Fading Candle", "type": "weekly_bosses", "characters": [
-            "Arlecchino", "Kachina", "Mizuki"
+            "Arlecchino", "Kachina", "Yumemizuki Mizuki"
         ]},
         "wb_silken_feather": {"name": "Silken Feather", "type": "weekly_bosses", "characters": [
             "Aino", "Chasca", "Emilie"
@@ -1278,7 +1278,7 @@
             "Ganyu", "Shenhe", "Xiao"
         ]},
         "s_starconch": {"name": "Starconch", "region": "Liyue", "characters": [
-            "Gaming", "Childe", "Yelan"
+            "Gaming", "Tartaglia", "Yelan"
         ]},
         "s_violetgrass": {"name": "Violetgrass", "region": "Liyue", "characters": [
             "Baizhu", "Qiqi", "Xinyan"
@@ -1290,28 +1290,28 @@
             "Lan Yan", "Xianyun"
         ]},
         "s_onikabuto": {"name": "Onikabuto", "region": "Inazuma", "characters": [
-            "Itto", "Heizou"
+            "Arataki Itto", "Shikanoin Heizou"
         ]},
         "s_sakura_bloom": {"name": "Sakura Bloom", "region": "Inazuma", "characters": [
-            "Ayaka", "Ayato"
+            "Kamisato Ayaka", "Kamisato Ayato"
         ]},
         "s_crystal_marrow": {"name": "Crystal Marrow", "region": "Inazuma", "characters": [
             "Aloy", "Sayu"
         ]},
         "s_dendrobium": {"name": "Dendrobium", "region": "Inazuma", "characters": [
-            "Chiori", "Sara"
+            "Chiori", "Kujou Sara"
         ]},
         "s_naku_weed": {"name": "Naku Weed", "region": "Inazuma", "characters": [
-            "Shinobu", "Yoimiya"
+            "Kuki Shinobu", "Yoimiya"
         ]},
         "s_sea_ganoderma": {"name": "Sea Ganoderma", "region": "Inazuma", "characters": [
-            "Kazuha", "Miko", "Mizuki"
+            "Kaedehara Kazuha", "Yae Miko", "Yumemizuki Mizuki"
         ]},
         "s_sango_pearl": {"name": "Sango Pearl", "region": "Inazuma", "characters": [
-            "Gorou", "Kokomi"
+            "Gorou", "Sangonomiya Kokomi"
         ]},
         "s_amakumo_fruit": {"name": "Amakumo Fruit", "region": "Inazuma", "characters": [
-            "Kirara", "Ei"
+            "Kirara", "Raiden Shogun"
         ]},
         "s_fluorescent_fungus": {"name": "Fluorescent Fungus", "region": "Inazuma", "characters": [
             "Thoma"

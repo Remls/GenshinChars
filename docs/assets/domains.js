@@ -580,7 +580,8 @@ document.addEventListener('alpine:init', () => {
                 chip += `<img src="${info.photo}" width="20" height="20" loading="lazy"`
                     + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
             }
-            chip += `<span class="gi-font ${elementClass}">${this.highlight(name)}</span>`
+            const displayName = info ? info.displayName : name
+            chip += `<span class="gi-font ${elementClass}">${this.highlight(displayName)}</span>`
             if (name === '???') return `<span class="char-chip">${chip}</span>`
             return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip">${chip}</a>`
         },
