@@ -35,6 +35,8 @@ document.addEventListener('alpine:init', () => {
         selectedRarity: null,
         selectedGender: null,
         selectedRegion: null,
+        defaultVersion: null,
+        urlSyncReady: false,
 
         // Character details modal
         modalOpen: false,
@@ -63,10 +65,18 @@ document.addEventListener('alpine:init', () => {
                     this.setSelectedGenderFromUrl()
                     this.setSelectedRegionFromUrl()
                     this.updateCharacterData()
+                    this.urlSyncReady = true
                 })
         },
 
         setSelectedVersionFromUrl() {
+            // Default is the first version with a name
+            Object.values(this.versionData).forEach(v => {
+                if (v.version_name) {
+                    this.defaultVersion = v.version_number
+                }
+            })
+
             // Check if value passed in URL
             const urlParams = new URLSearchParams(window.location.search)
             let versionPassedInUrl = urlParams.get('v')
@@ -82,14 +92,7 @@ document.addEventListener('alpine:init', () => {
             }
 
             // No valid value passed in URL; use default
-            // (first version with a name)
-            let defaultVersion = null
-            Object.values(this.versionData).forEach(v => {
-                if (v.version_name) {
-                    defaultVersion = v.version_number
-                }
-            })
-            this.selectedVersion = defaultVersion
+            this.selectedVersion = this.defaultVersion
         },
 
         setSelectedRarityFromUrl() {
@@ -189,6 +192,20 @@ document.addEventListener('alpine:init', () => {
                 characterDataAsObj[c.name] = c
             })
             this.characterData = characterDataAsObj
+            this.syncFiltersToUrl()
+        },
+
+        syncFiltersToUrl() {
+            if (!this.urlSyncReady) return
+            const params = new URLSearchParams()
+            if (this.selectedVersion !== this.defaultVersion) {
+                params.set('v', this.selectedVersion || 'all')
+            }
+            if (this.selectedRarity) params.set('r', this.selectedRarity.toLowerCase())
+            if (this.selectedGender) params.set('g', this.selectedGender.toLowerCase())
+            if (this.selectedRegion) params.set('re', this.selectedRegion.toLowerCase())
+            const query = params.toString()
+            history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
         },
 
         filterCharacterData(filters) {

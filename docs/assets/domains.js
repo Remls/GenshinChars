@@ -47,7 +47,7 @@ const DOMAIN_TYPES = {
     regional_specialties: {
         button_label: 'Specialties',
         icon: '🌸',
-        short: 'rs',
+        short: 's',
         string: 'Regional specialties',
         title: 'Regional specialties',
         description: 'Provides character ascension materials',
@@ -55,17 +55,10 @@ const DOMAIN_TYPES = {
         overworld: true,
     },
 }
-const DOMAIN_REGIONS = {
-    'All':       { short: 'a' },
-    'Mondstadt': { short: 'm' },
-    'Liyue':     { short: 'l' },
-    'Inazuma':   { short: 'i' },
-    'Sumeru':    { short: 'su' },
-    'Fontaine':  { short: 'f' },
-    'Natlan':    { short: 'n' },
-    'Nod-Krai':  { short: 'nk' },
-    'Snezhnaya': { short: 'sn' },
-}
+const DOMAIN_REGIONS = [
+    'All', 'Mondstadt', 'Liyue', 'Inazuma', 'Sumeru',
+    'Fontaine', 'Natlan', 'Nod-Krai', 'Snezhnaya',
+]
 const DOMAIN_DAYS = {
     sun: 'Sunday',
     mon: 'Monday',
@@ -207,6 +200,9 @@ document.addEventListener('alpine:init', () => {
                 // Set here (not on init) so all bindings exist by the time this runs
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
+                ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay'].forEach(prop => {
+                    this.$watch(prop, () => this.syncFiltersToUrl())
+                })
                 this.resolveWikiImages().catch(() => {})
             })
         },
@@ -486,13 +482,29 @@ document.addEventListener('alpine:init', () => {
                 if (type === details.short) this.selectedType = key
             })
             const region = urlParams.get('re')
-            Object.entries(DOMAIN_REGIONS).forEach(([key, details]) => {
-                if (region === details.short) this.selectedRegion = key
+            DOMAIN_REGIONS.forEach(key => {
+                if (region === key.toLowerCase()) this.selectedRegion = key
             })
             const day = urlParams.get('d')
             if (DAY_KEYS.includes(day)) this.selectedDay = day
             const query = urlParams.get('q')
             if (query) this.searchQuery = query
+        },
+
+        syncFiltersToUrl() {
+            const params = new URLSearchParams()
+            if (this.searching()) {
+                params.set('q', this.searchQuery)
+            } else {
+                params.set('t', DOMAIN_TYPES[this.selectedType].short)
+                if (this.selectedRegion !== 'All') {
+                    params.set('re', this.selectedRegion.toLowerCase())
+                }
+                if (this.typeHasChangingRewards()) {
+                    params.set('d', this.selectedDay)
+                }
+            }
+            history.replaceState(null, '', `?${params.toString()}`)
         },
 
         // Comma-separated search terms, lowercased

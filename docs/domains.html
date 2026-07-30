@@ -79,7 +79,7 @@
                     </td>
                     <td>
                         <div class="icon-buttons">
-                            <template x-for="key in Object.keys(DOMAIN_REGIONS)" :key="key">
+                            <template x-for="key in DOMAIN_REGIONS" :key="key">
                                 <button type="button" class="icon-button"
                                     :class="{ 'selected': selectedRegion === key }"
                                     :title="key"
