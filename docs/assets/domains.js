@@ -404,7 +404,7 @@ document.addEventListener('alpine:init', () => {
                 if (!sources[rewardKey]) sources[rewardKey] = []
                 let entry = sources[rewardKey].find(s => s.name === domain.name)
                 if (!entry) {
-                    entry = { name: domain.name, region: domain.region, days: day ? [] : null }
+                    entry = { name: domain.name, location: domain.location, region: domain.region, days: day ? [] : null }
                     sources[rewardKey].push(entry)
                 }
                 if (day && entry.days && !entry.days.includes(day)) entry.days.push(day)
@@ -453,10 +453,9 @@ document.addEventListener('alpine:init', () => {
             history.replaceState(null, '', `?${params.toString()}`)
         },
 
-        // Comma-separated search terms, lowercased
         searchTerms() {
             return this.searchQuery.split(',')
-                .map(term => term.trim().toLowerCase())
+                .map(term => foldedText(term).text.trim())
                 .filter(term => term !== '')
         },
 
@@ -528,11 +527,13 @@ document.addEventListener('alpine:init', () => {
 
         // Escape, and mark the parts matching the current search terms
         highlight(s) {
-            const lower = s.toLowerCase()
+            const folded = foldedText(s)
             const ranges = []
             this.searchTerms().forEach(term => {
-                const index = lower.indexOf(term)
-                if (index !== -1) ranges.push([index, index + term.length])
+                const index = folded.text.indexOf(term)
+                if (index !== -1) {
+                    ranges.push([folded.map[index], folded.map[index + term.length - 1] + 1])
+                }
             })
             ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1])  // longest first on ties
             let html = ''
@@ -632,7 +633,9 @@ document.addEventListener('alpine:init', () => {
                 const days = source.days
                     ? ` <span class="source-days">(${this.formatDays(source.days)})</span>`
                     : ''
+                const locationText = source.location ? `${source.location}, ${source.region}` : source.region
                 return `${regionIconHtml(source.region)} ${this.domainLabelHtml(source.name, days)}`
+                    + `<br><span class="domain-paren">${this.highlight(locationText)}</span>`
             }).join('<br>')
         },
 
@@ -671,8 +674,8 @@ document.addEventListener('alpine:init', () => {
 
         matchesQuery(s) {
             if (!s) return false
-            const lower = s.toLowerCase()
-            return this.searchTerms().some(term => lower.includes(term))
+            const folded = foldedText(s).text
+            return this.searchTerms().some(term => folded.includes(term))
         },
 
         characterMatchesQuery(name) {

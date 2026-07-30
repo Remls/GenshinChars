@@ -126,10 +126,9 @@ document.addEventListener('alpine:init', () => {
             history.replaceState(null, '', `?${params.toString()}`)
         },
 
-        // Comma-separated search terms, lowercased
         searchTerms() {
             return this.searchQuery.split(',')
-                .map(term => term.trim().toLowerCase())
+                .map(term => foldedText(term).text.trim())
                 .filter(term => term !== '')
         },
 
@@ -158,11 +157,13 @@ document.addEventListener('alpine:init', () => {
 
         // Escape, and mark the parts matching the current search terms
         highlight(s) {
-            const lower = s.toLowerCase()
+            const folded = foldedText(s)
             const ranges = []
             this.searchTerms().forEach(term => {
-                const index = lower.indexOf(term)
-                if (index !== -1) ranges.push([index, index + term.length])
+                const index = folded.text.indexOf(term)
+                if (index !== -1) {
+                    ranges.push([folded.map[index], folded.map[index + term.length - 1] + 1])
+                }
             })
             ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1])
             let html = ''
@@ -258,7 +259,11 @@ document.addEventListener('alpine:init', () => {
 
         rewardSourceHtml(rewardKey) {
             const sources = this.rewardSources[rewardKey] || []
-            return sources.map(source => this.domainLabelHtml(source)).join('<br>')
+            return sources.map(source => {
+                const locationText = source.location ? `${source.location}, ${source.region}` : source.region
+                return `${this.domainLabelHtml(source)}`
+                    + `<br><span class="domain-paren">${this.highlight(locationText)}</span>`
+            }).join('<br>')
         },
 
         formatRewardByKey(rewardKey) {
@@ -345,8 +350,8 @@ document.addEventListener('alpine:init', () => {
 
         matchesQuery(s) {
             if (!s) return false
-            const lower = s.toLowerCase()
-            return this.searchTerms().some(term => lower.includes(term))
+            const folded = foldedText(s).text
+            return this.searchTerms().some(term => folded.includes(term))
         },
 
         characterMatchesQuery(name) {

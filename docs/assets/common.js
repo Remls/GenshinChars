@@ -55,6 +55,30 @@ function md5Hex(str) {
 
 const FALLBACK_PHOTO = 'assets/images/Fallback.png'
 
+function foldedText(s) {
+    const chars = []
+    const map = []
+    for (let i = 0; i < s.length; i++) {
+        let n = s[i].normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase()
+        if (n === '•') n = ' '
+        for (const ch of n) {
+            chars.push(ch)
+            map.push(i)
+        }
+    }
+    const text = []
+    const indexes = []
+    let prevSpace = false
+    for (let j = 0; j < chars.length; j++) {
+        const isSpace = /\s/.test(chars[j])
+        if (isSpace && prevSpace) continue
+        text.push(isSpace ? ' ' : chars[j])
+        indexes.push(map[j])
+        prevSpace = isSpace
+    }
+    return { text: text.join(''), map: indexes }
+}
+
 // Bare wiki image URLs (no /revision/... suffix) are served regardless of referer;
 // the scaled-thumbnail URLs are not, so use the full-size images (5-20 KB each).
 function wikiFileUrl(filename, wiki = 'gensin-impact') {
