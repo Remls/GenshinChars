@@ -1,4 +1,4 @@
 {
-  "ignore": ["docs/characters.html", "docs/index.html", "docs/assets/characters.json", "docs/assets/domains.json", "docs/hsr/assets/characters.json", "README.md"],
+  "ignore": ["docs/characters.html", "docs/index.html", "docs/assets/characters.json", "docs/assets/domains.json", "docs/hsr/assets/characters.json", "docs/hsr/assets/domains.json", "README.md"],
   "ext": "py, html, css, js"
 }

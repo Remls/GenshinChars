@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="hsr-font">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
+    <title>Honkai: Star Rail Domains</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="../icons/favicon.ico">
+
+    <meta property="og:title" content="Honkai: Star Rail Domains">
+    <meta property="og:description" content="Survival Index farming locations and drops in Honkai: Star Rail">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chars.remls.io/hsr/domains">
+
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.10.5/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+    <script src="../assets/common.js"></script>
+    <script src="assets/domains.js"></script>
+</head>
+
+<body x-data="hsrDomainSheet" x-init="fetchAllData">
+    <nav class="site-nav">
+        <a href="../characters"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Characters</span></a>
+        <a href="../domains"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Domains</span></a>
+        <a href="characters" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Characters</span></a>
+        <a href="domains" class="current hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/1/10/Icon_Calyx_Golden.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Domains</span></a>
+    </nav>
+    <section>
+        <h2 class="collapsible-header" @click="showSection.filters = !showSection.filters">
+            Filters
+            <svg x-show="showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+            </svg>
+            <svg x-show="!showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+            </svg>
+        </h2>
+        <div class="table-wrapper" x-show="showSection.filters" x-collapse>
+            <table class="filter-table table-40 no-border">
+                <tr>
+                    <td width="10%">
+                        <label for="search-input">Search</label>
+                    </td>
+                    <td>
+                        <input type="search" id="search-input" placeholder="Domain, boss, drop, set, or character name"
+                            x-model.debounce.250ms="searchQuery">
+                        <div class="filter-hint" x-show="searching()">Separate terms with commas to search for multiple things at once.</div>
+                    </td>
+                </tr>
+                <tr x-show="!searching()">
+                    <td>
+                        <label>Filter by type</label>
+                    </td>
+                    <td>
+                        <div class="icon-buttons">
+                            <template x-for="[key, type] in Object.entries(HSR_DOMAIN_TYPES)" :key="key">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedType === key }"
+                                    :title="type.string"
+                                    @click="selectedType = key">
+                                    <span x-html="typeIconHtml(key)"></span>
+                                    <span class="icon-button-label" x-show="selectedType === key" x-text="type.string"></span>
+                                </button>
+                            </template>
+                        </div>
+                    </td>
+                </tr>
+                <tr x-show="!searching()">
+                    <td>
+                        <label>Filter by world</label>
+                    </td>
+                    <td>
+                        <div class="icon-buttons">
+                            <template x-for="world in HSR_DOMAIN_WORLDS" :key="world">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedWorld === world }"
+                                    :title="world"
+                                    @click="selectedWorld = world">
+                                    <template x-if="world !== 'All'">
+                                        <span x-html="worldIconHtml(world)"></span>
+                                    </template>
+                                    <span class="icon-button-label" x-show="world === 'All' || selectedWorld === world" x-text="world"></span>
+                                </button>
+                            </template>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section x-show="!searching()">
+        <h2 class="with-hint" x-text="typeDetails().title"></h2>
+        <div class="center filter-hint">
+            <span x-text="typeDetails().description"></span>
+        </div>
+        <div class="table-wrapper">
+            <table class="domain-table">
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Location</th>
+                        <th>Drops</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="(domain, idx) in filteredDomains()" :key="idx">
+                        <tr>
+                            <td x-html="domainLabelHtml(domain)"></td>
+                            <td x-html="locationHtml(domain)"></td>
+                            <td>
+                                <ul class="domain-rewards">
+                                    <template x-for="rewardKey in domain.rewards" :key="rewardKey">
+                                        <li x-html="formatRewardByKey(rewardKey)"></li>
+                                    </template>
+                                </ul>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr x-show="filteredDomains().length === 0">
+                        <td class="center" colspan="3">No matching data yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section x-show="searching()">
+        <h2>Search results</h2>
+        <template x-if="searchedDomains().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in domains/bosses (<span x-text="searchedDomains().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table class="domain-table">
+                        <thead>
+                            <tr>
+                                <th>Domain/boss</th>
+                                <th>Location</th>
+                                <th>Drops</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(domain, idx) in searchedDomains()" :key="idx">
+                                <tr>
+                                    <td x-html="domainNameHtml(domain)"></td>
+                                    <td x-html="locationHtml(domain)"></td>
+                                    <td>
+                                        <ul class="domain-rewards">
+                                            <template x-for="rewardKey in domain.rewards" :key="rewardKey">
+                                                <li x-html="formatRewardByKey(rewardKey)"></li>
+                                            </template>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <template x-if="searchedRewardEntries().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in drops (<span x-text="searchedRewardEntries().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table class="domain-table">
+                        <thead>
+                            <tr>
+                                <th>Drop</th>
+                                <th>Where to get it</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="[rewardKey, reward] in searchedRewardEntries()" :key="rewardKey">
+                                <tr>
+                                    <td x-html="formatReward(reward, true)"></td>
+                                    <td x-html="rewardSourceHtml(rewardKey)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+        <div class="results-caption center"
+            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0">
+            No results found for your query. Make sure there are no misspellings, and try again.
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div>
+            Last updated <span x-text="lastUpdatedFormatted()"></span><br>
+            Pictures sourced from the <a href="https://honkai-star-rail.fandom.com/">Honkai: Star Rail Wiki</a>.
+        </div>
+        <div class="icons">
+            <a href="https://t.me/Remls">
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+                </svg>
+            </a>
+            <a href="https://github.com/Remls/GenshinChars">
+                <svg width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

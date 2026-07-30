@@ -47,7 +47,7 @@ def generate_characters_file():
 
     # Write to JSON file
     with open("docs/assets/characters.json", "w") as f:
-        f.write(json.dumps(data, indent=4, default=vars))
+        f.write(json.dumps(data, indent=4, default=vars, ensure_ascii=False))
 
 
 def generate_hsr_characters_file():
@@ -102,7 +102,19 @@ def generate_hsr_characters_file():
         "versions": versions,
     }
     with open("docs/hsr/assets/characters.json", "w") as f:
-        f.write(json.dumps(data, indent=4))
+        f.write(json.dumps(data, indent=4, ensure_ascii=False))
+
+
+def generate_hsr_domains_file():
+    with open('data/hsr/domains.json') as f:
+        domains_data = json.load(f)
+    data = {
+        "version": get_version(),
+        "last_updated": get_current_timestamp(),
+        **domains_data,
+    }
+    with open("docs/hsr/assets/domains.json", "w") as f:
+        f.write(json.dumps(data, indent=4, ensure_ascii=False))
 
 
 def generate_domains_file():
@@ -114,4 +126,4 @@ def generate_domains_file():
         **domains_data,
     }
     with open("docs/assets/domains.json", "w") as f:
-        f.write(json.dumps(data, indent=4))
+        f.write(json.dumps(data, indent=4, ensure_ascii=False))

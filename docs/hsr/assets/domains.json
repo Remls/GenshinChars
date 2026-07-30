@@ -1,0 +1,1586 @@
+{
+    "version": "817f3d8",
+    "last_updated": "2026-07-30T11:39:40.185980+05:00",
+    "domains": [
+        {
+            "name": "Bud of Abundance",
+            "location": "Backwater Pass",
+            "region": "Jarilo-VI",
+            "type": "calyx_crimson",
+            "image": "Item Flower of Eternity.png",
+            "rewards": [
+                "cr_flower_of_eternity"
+            ]
+        },
+        {
+            "name": "Bud of Destruction",
+            "location": "Storage Zone",
+            "region": "Herta Space Station",
+            "type": "calyx_crimson",
+            "image": "Item Worldbreaker Blade.png",
+            "rewards": [
+                "cr_worldbreaker_blade"
+            ]
+        },
+        {
+            "name": "Bud of Erudition",
+            "location": "Rivet Town",
+            "region": "Jarilo-VI",
+            "type": "calyx_crimson",
+            "image": "Item Key of Wisdom.png",
+            "rewards": [
+                "cr_key_of_wisdom"
+            ]
+        },
+        {
+            "name": "Bud of Harmony",
+            "location": "Robot Settlement",
+            "region": "Jarilo-VI",
+            "type": "calyx_crimson",
+            "image": "Item Stellaris Symphony.png",
+            "rewards": [
+                "cr_stellaris_symphony"
+            ]
+        },
+        {
+            "name": "Bud of Nihility",
+            "location": "Great Mine",
+            "region": "Jarilo-VI",
+            "type": "calyx_crimson",
+            "image": "Item Obsidian of Obsession.png",
+            "rewards": [
+                "cr_obsidian_of_obsession"
+            ]
+        },
+        {
+            "name": "Bud of Preservation",
+            "location": "Supply Zone",
+            "region": "Herta Space Station",
+            "type": "calyx_crimson",
+            "image": "Item Safeguard of Amber.png",
+            "rewards": [
+                "cr_safeguard_of_amber"
+            ]
+        },
+        {
+            "name": "Bud of The Hunt",
+            "location": "Outlying Snow Plains",
+            "region": "Jarilo-VI",
+            "type": "calyx_crimson",
+            "image": "Item Arrow of the Starchaser.png",
+            "rewards": [
+                "cr_arrow_of_the_starchaser"
+            ]
+        },
+        {
+            "name": "Bud of Destruction",
+            "location": "Scalegorge Waterscape",
+            "region": "The Xianzhou Luofu",
+            "type": "calyx_crimson",
+            "image": "Item Moon Rage Fang.png",
+            "rewards": [
+                "cr_moon_rage_fang"
+            ]
+        },
+        {
+            "name": "Bud of Harmony",
+            "location": "The Reverie (Dreamscape)",
+            "region": "Penacony",
+            "type": "calyx_crimson",
+            "image": "Item Heavenly Melody.png",
+            "rewards": [
+                "cr_heavenly_melody"
+            ]
+        },
+        {
+            "name": "Bud of Nihility",
+            "location": "Alchemy Commission",
+            "region": "The Xianzhou Luofu",
+            "type": "calyx_crimson",
+            "image": "Item Heaven Incinerator.png",
+            "rewards": [
+                "cr_heaven_incinerator"
+            ]
+        },
+        {
+            "name": "Bud of Abundance",
+            "location": "Fyxestroll Garden",
+            "region": "The Xianzhou Luofu",
+            "type": "calyx_crimson",
+            "image": "Item Myriad Fruit.png",
+            "rewards": [
+                "cr_myriad_fruit"
+            ]
+        },
+        {
+            "name": "Bud of Preservation",
+            "location": "Clock Studios Theme Park",
+            "region": "Penacony",
+            "type": "calyx_crimson",
+            "image": "Item Divine Amber.png",
+            "rewards": [
+                "cr_divine_amber"
+            ]
+        },
+        {
+            "name": "Bud of The Hunt",
+            "location": "SoulGlad™ Scorchsand Audition Venue",
+            "region": "Penacony",
+            "type": "calyx_crimson",
+            "image": "Item Countertemporal Shot.png",
+            "rewards": [
+                "cr_countertemporal_shot"
+            ]
+        },
+        {
+            "name": "Bud of Erudition",
+            "location": "Penacony Grand Theater",
+            "region": "Penacony",
+            "type": "calyx_crimson",
+            "image": "Item Exquisite Colored Draft.png",
+            "rewards": [
+                "cr_exquisite_colored_draft"
+            ]
+        },
+        {
+            "name": "Bud of Remembrance",
+            "location": "\"Strife Ruins\" Castrum Kremnos",
+            "region": "Amphoreus",
+            "type": "calyx_crimson",
+            "image": "Item Flower of Ālaya.png",
+            "rewards": [
+                "cr_flower_of_laya"
+            ]
+        },
+        {
+            "name": "Bud of Elation",
+            "location": "\"World's End\" Tavern",
+            "region": "Planarcadia",
+            "type": "calyx_crimson",
+            "image": "Item The Fluffy Hand-drawn Storyboards.png",
+            "rewards": [
+                "cr_the_fluffy_collector_s_edition"
+            ]
+        },
+        {
+            "name": "Bud of The Hunt",
+            "location": "\"Memortis Shore\" Ruins of Time",
+            "region": "Amphoreus",
+            "type": "calyx_crimson",
+            "image": "Item Lance of Retribution.png",
+            "rewards": [
+                "cr_lance_of_retribution"
+            ]
+        },
+        {
+            "name": "Bud of Nihility",
+            "location": "\"Radiant Scarwood\" Grove of Epiphany",
+            "region": "Amphoreus",
+            "type": "calyx_crimson",
+            "image": "Item Heart of Phagousa.png",
+            "rewards": [
+                "cr_heart_of_phagousa"
+            ]
+        },
+        {
+            "name": "Bud of Destruction",
+            "location": "Inkford Hermitage",
+            "region": "Planarcadia",
+            "type": "calyx_crimson",
+            "image": "Item Omnicolor, Fool's Own.png",
+            "rewards": [
+                "cr_omnicolor_fool_s_own"
+            ]
+        },
+        {
+            "name": "Bud of Erudition",
+            "location": "Seafeld TV Tower",
+            "region": "Planarcadia",
+            "type": "calyx_crimson",
+            "image": "Item Cosmic Sandpit.png",
+            "rewards": [
+                "cr_cosmic_sandpit"
+            ]
+        },
+        {
+            "name": "Path of Conflagration",
+            "location": "Stargazer Navalia",
+            "region": "The Xianzhou Luofu",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Conflagration.png",
+            "rewards": [
+                "cc_firesmith_of_lava_forging",
+                "cc_wastelander_of_banditry_desert"
+            ]
+        },
+        {
+            "name": "Path of Drifting",
+            "location": "Corridor of Fading Echoes",
+            "region": "Jarilo-VI",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Drifting.png",
+            "rewards": [
+                "cc_passerby_of_wandering_cloud",
+                "cc_musketeer_of_wild_wheat"
+            ]
+        },
+        {
+            "name": "Path of Gelid Wind",
+            "location": "Storage Zone",
+            "region": "Herta Space Station",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Gelid Wind.png",
+            "rewards": [
+                "cc_hunter_of_glacial_forest",
+                "cc_eagle_of_twilight_line"
+            ]
+        },
+        {
+            "name": "Path of Holy Hymn",
+            "location": "Cloudford",
+            "region": "The Xianzhou Luofu",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Holy Hymn.png",
+            "rewards": [
+                "cc_knight_of_purity_palace",
+                "cc_band_of_sizzling_thunder"
+            ]
+        },
+        {
+            "name": "Path of Jabbing Punch",
+            "location": "Silvermane Guard Restricted Zone",
+            "region": "Jarilo-VI",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Jabbing Punch.png",
+            "rewards": [
+                "cc_champion_of_streetwise_boxing",
+                "cc_thief_of_shooting_meteor"
+            ]
+        },
+        {
+            "name": "Path of Providence",
+            "location": "Everwinter Hill",
+            "region": "Jarilo-VI",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Providence.png",
+            "rewards": [
+                "cc_guard_of_wuthering_snow",
+                "cc_genius_of_brilliant_stars"
+            ]
+        },
+        {
+            "name": "Path of Elixir Seekers",
+            "location": "Alchemy Commission",
+            "region": "The Xianzhou Luofu",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Elixir Seekers.png",
+            "rewards": [
+                "cc_longevous_disciple",
+                "cc_messenger_traversing_hackerspace"
+            ]
+        },
+        {
+            "name": "Path of Darkness",
+            "location": "Fyxestroll Garden",
+            "region": "The Xianzhou Luofu",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Darkness.png",
+            "rewards": [
+                "cc_the_ashblazing_grand_duke",
+                "cc_prisoner_in_deep_confinement"
+            ]
+        },
+        {
+            "name": "Path of Dreamdive",
+            "location": "The Reverie (Dreamscape)",
+            "region": "Penacony",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Dreamdive.png",
+            "rewards": [
+                "cc_pioneer_diver_of_dead_waters",
+                "cc_watchmaker_master_of_dream_machinations"
+            ]
+        },
+        {
+            "name": "Path of Cavalier",
+            "location": "Penacony Grand Theater",
+            "region": "Penacony",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Cavalier.png",
+            "rewards": [
+                "cc_iron_cavalry_against_the_scourge",
+                "cc_the_wind_soaring_valorous"
+            ]
+        },
+        {
+            "name": "Path of Uncertainty",
+            "location": "The Shackling Prison",
+            "region": "The Xianzhou Luofu",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Uncertainty.png",
+            "rewards": [
+                "cc_scholar_lost_in_erudition",
+                "cc_sacerdos_relived_ordeal"
+            ]
+        },
+        {
+            "name": "Path of Aria",
+            "location": "\"Bloodbathed Battlefront\" Castrum Kremnos",
+            "region": "Amphoreus",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Aria.png",
+            "rewards": [
+                "cc_hero_of_triumphant_song",
+                "cc_poet_of_mourning_collapse"
+            ]
+        },
+        {
+            "name": "Path of Thundersurge",
+            "location": "\"Cloudedge Bastion Ruins\" Eye of Twilight",
+            "region": "Amphoreus",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Thundersurge.png",
+            "rewards": [
+                "cc_warrior_goddess_of_sun_and_thunder",
+                "cc_wavestrider_captain"
+            ]
+        },
+        {
+            "name": "Path of Hidden Salvation",
+            "location": "\"Universal Matrix\" Great Tomb of the Nameless Titan",
+            "region": "Amphoreus",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Hidden Salvation.png",
+            "rewards": [
+                "cc_world_remaking_deliverer",
+                "cc_self_enshrouded_recluse"
+            ]
+        },
+        {
+            "name": "Path of Possession",
+            "location": "Graphia Academy",
+            "region": "Planarcadia",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Possession.png",
+            "rewards": [
+                "cc_ever_glorious_magical_girl",
+                "cc_diviner_of_distant_reach"
+            ]
+        },
+        {
+            "name": "Path of Insight",
+            "location": "Lookout Cloud Station",
+            "region": "Planarcadia",
+            "type": "cavern_of_corrosion",
+            "image": "Cavern of Corrosion - Path of Insight.png",
+            "rewards": [
+                "cc_as_navigator_isee_sees_it",
+                "cc_divine_querying_master_smith"
+            ]
+        },
+        {
+            "name": "Shape of Blaze",
+            "location": "Silvermane Guard Restricted Zone",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Endotherm Chitin.png",
+            "rewards": [
+                "ss_endotherm_chitin"
+            ]
+        },
+        {
+            "name": "Shape of Doom",
+            "location": "Stargazer Navalia",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Shape Shifter's Lightning Staff.png",
+            "rewards": [
+                "ss_shape_shifter_s_lightning_staff"
+            ]
+        },
+        {
+            "name": "Shape of Fulmination",
+            "location": "Corridor of Fading Echoes",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Lightning Crown of the Past Shadow.png",
+            "rewards": [
+                "ss_lightning_crown_of_the_past_shadow"
+            ]
+        },
+        {
+            "name": "Shape of Gust",
+            "location": "Rivet Town",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Storm Eye.png",
+            "rewards": [
+                "ss_storm_eye"
+            ]
+        },
+        {
+            "name": "Shape of Icicle",
+            "location": "Cloudford",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Gelid Chitin.png",
+            "rewards": [
+                "ss_gelid_chitin"
+            ]
+        },
+        {
+            "name": "Shape of Mirage",
+            "location": "Backwater Pass",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Golden Crown of the Past Shadow.png",
+            "rewards": [
+                "ss_golden_crown_of_the_past_shadow"
+            ]
+        },
+        {
+            "name": "Shape of Quanta",
+            "location": "Base Zone",
+            "region": "Herta Space Station",
+            "type": "stagnant_shadow",
+            "image": "Item Void Cast Iron.png",
+            "rewards": [
+                "ss_void_cast_iron"
+            ]
+        },
+        {
+            "name": "Shape of Rime",
+            "location": "Corridor of Fading Echoes",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Horn of Snow.png",
+            "rewards": [
+                "ss_horn_of_snow"
+            ]
+        },
+        {
+            "name": "Shape of Spike",
+            "location": "Great Mine",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Broken Teeth of Iron Wolf.png",
+            "rewards": [
+                "ss_broken_teeth_of_iron_wolf"
+            ]
+        },
+        {
+            "name": "Shape of Celestial",
+            "location": "Alchemy Commission",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Ascendant Debris.png",
+            "rewards": [
+                "ss_ascendant_debris"
+            ]
+        },
+        {
+            "name": "Shape of Abomination",
+            "location": "Scalegorge Waterscape",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Nail of the Ape.png",
+            "rewards": [
+                "ss_nail_of_the_ape"
+            ]
+        },
+        {
+            "name": "Shape of Puppetry",
+            "location": "Artisanship Commission (Location)",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Suppressing Edict.png",
+            "rewards": [
+                "ss_suppressing_edict"
+            ]
+        },
+        {
+            "name": "Shape of Scorch",
+            "location": "Great Mine",
+            "region": "Jarilo-VI",
+            "type": "stagnant_shadow",
+            "image": "Item Searing Steel Blade.png",
+            "rewards": [
+                "ss_searing_steel_blade"
+            ]
+        },
+        {
+            "name": "Shape of Perdition",
+            "location": "Fyxestroll Garden",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Netherworld Token.png",
+            "rewards": [
+                "ss_netherworld_token"
+            ]
+        },
+        {
+            "name": "Shape of Nectar",
+            "location": "The Reverie (Dreamscape)",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item Dream Fridge.png",
+            "rewards": [
+                "ss_dream_fridge"
+            ]
+        },
+        {
+            "name": "Shape of Roast",
+            "location": "Dream's Edge",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item Dream Flamer.png",
+            "rewards": [
+                "ss_dream_flamer"
+            ]
+        },
+        {
+            "name": "Shape of Ire",
+            "location": "Dewlight Pavilion",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item Raging Heart.png",
+            "rewards": [
+                "ss_raging_heart"
+            ]
+        },
+        {
+            "name": "Shape of Duty",
+            "location": "Clock Studios Theme Park",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item IPC Work Permit.png",
+            "rewards": [
+                "ss_ipc_work_permit"
+            ]
+        },
+        {
+            "name": "Shape of Gloam",
+            "location": "Penacony Grand Theater",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item A Glass of the Besotted Era.png",
+            "rewards": [
+                "ss_a_glass_of_the_besotted_era"
+            ]
+        },
+        {
+            "name": "Shape of Mechwolf",
+            "location": "The Shackling Prison",
+            "region": "The Xianzhou Luofu",
+            "type": "stagnant_shadow",
+            "image": "Item Nail of the Beast Coffin.png",
+            "rewards": [
+                "ss_nail_of_the_beast_coffin"
+            ]
+        },
+        {
+            "name": "Shape of Timbre",
+            "location": "Penacony Grand Theater",
+            "region": "Penacony",
+            "type": "stagnant_shadow",
+            "image": "Item Chordal Mirage.png",
+            "rewards": [
+                "ss_chordal_mirage"
+            ]
+        },
+        {
+            "name": "Shape of Gelidmoon",
+            "location": "\"Murmuring Woods\" Grove of Epiphany",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Darkveil Moonlight.png",
+            "rewards": [
+                "ss_darkveil_moonlight"
+            ]
+        },
+        {
+            "name": "Shape of Sloggyre",
+            "location": "\"Abyss of Fate\" Janusopolis",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Harbinger of Strife.png",
+            "rewards": [
+                "ss_harbinger_of_strife"
+            ]
+        },
+        {
+            "name": "Shape of Deepsheaf",
+            "location": "\"Dragonbone City\" Styxia",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Invasive Clot.png",
+            "rewards": [
+                "ss_invasive_clot"
+            ]
+        },
+        {
+            "name": "Shape of Cinders",
+            "location": "\"Fortress of Dome\" Eye of Twilight",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Charred Bud of Twilight.png",
+            "rewards": [
+                "ss_charred_bud_of_twilight"
+            ]
+        },
+        {
+            "name": "Shape of Sirens",
+            "location": "\"Warbling Shores\" Styxia",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Sea Siren's Torn Fin.png",
+            "rewards": [
+                "ss_sea_siren_s_torn_fin"
+            ]
+        },
+        {
+            "name": "Shape of Ashes",
+            "location": "\"Sanctum of Prophecy\" Janusopolis",
+            "region": "Amphoreus",
+            "type": "stagnant_shadow",
+            "image": "Item Radiant Prominence.png",
+            "rewards": [
+                "ss_radiant_prominence"
+            ]
+        },
+        {
+            "name": "Shape of Soundburst",
+            "location": "Dovebrook District",
+            "region": "Planarcadia",
+            "type": "stagnant_shadow",
+            "image": "Item Thunder Strum.png",
+            "rewards": [
+                "ss_thunder_strum"
+            ]
+        },
+        {
+            "name": "Shape of Devour",
+            "location": "Inkford Hermitage",
+            "region": "Planarcadia",
+            "type": "stagnant_shadow",
+            "image": "Item Sneering Harlequin.png",
+            "rewards": [
+                "ss_sneering_harlequin"
+            ]
+        },
+        {
+            "name": "Destruction's Beginning",
+            "location": "Supply Zone",
+            "region": "Herta Space Station",
+            "type": "echo_of_war",
+            "image": "Echo of War - Destruction's Beginning.png",
+            "boss": [
+                "Doomsday Beast"
+            ],
+            "rewards": [
+                "ew_destroyer_s_final_road"
+            ]
+        },
+        {
+            "name": "End of the Eternal Freeze",
+            "location": "Everwinter Hill",
+            "region": "Jarilo-VI",
+            "type": "echo_of_war",
+            "image": "Echo of War - End of the Eternal Freeze.png",
+            "boss": [
+                "Cocolia, Mother of Deception"
+            ],
+            "rewards": [
+                "ew_guardian_s_lament"
+            ]
+        },
+        {
+            "name": "Divine Seed",
+            "location": "Scalegorge Waterscape",
+            "region": "The Xianzhou Luofu",
+            "type": "echo_of_war",
+            "image": "Echo of War - Divine Seed.png",
+            "boss": [
+                "Phantylia the Undying"
+            ],
+            "rewards": [
+                "ew_regret_of_infinite_ochema"
+            ]
+        },
+        {
+            "name": "Borehole Planet's Past Nightmares",
+            "location": "Seclusion Zone",
+            "region": "Herta Space Station",
+            "type": "echo_of_war",
+            "image": "Echo of War - Borehole Planet's Past Nightmares.png",
+            "boss": [
+                "Starcrusher Swarm King: Skaracabaz (Synthetic)"
+            ],
+            "rewards": [
+                "ew_past_evils_of_the_borehole_planet_disaster"
+            ]
+        },
+        {
+            "name": "Salutations of Ashen Dreams",
+            "location": "Penacony Grand Theater",
+            "region": "Penacony",
+            "type": "echo_of_war",
+            "image": "Echo of War - Salutations of Ashen Dreams.png",
+            "boss": [
+                "\"Harmonious Choir\" The Great Septimus"
+            ],
+            "rewards": [
+                "ew_lost_echo_of_the_shared_wish"
+            ]
+        },
+        {
+            "name": "Inner Beast's Battlefield",
+            "location": "Skysplitter",
+            "region": "The Xianzhou Luofu",
+            "type": "echo_of_war",
+            "image": "Echo of War - Inner Beast's Battlefield.png",
+            "boss": [
+                "Shadow of \"Feixiao\""
+            ],
+            "rewards": [
+                "ew_auspice_sliver"
+            ]
+        },
+        {
+            "name": "Glance of Twilight",
+            "location": "\"Fortress of Dome\" Eye of Twilight",
+            "region": "Amphoreus",
+            "type": "echo_of_war",
+            "image": "Echo of War - Glance of Twilight.png",
+            "boss": [
+                "Sublime, Radiant, Avatar of the Sky"
+            ],
+            "rewards": [
+                "ew_daythunder_anamnesis"
+            ]
+        },
+        {
+            "name": "Rusted Crypt of the Iron Carcass",
+            "location": "\"Memortis Shore\" Ruins of Time",
+            "region": "Amphoreus",
+            "type": "echo_of_war",
+            "image": "Echo of War - Rusted Crypt of the Iron Carcass.png",
+            "boss": [
+                "Anti-Creator, Hatred Inundate"
+            ],
+            "rewards": [
+                "ew_vanquished_flow_s_reticence"
+            ]
+        },
+        {
+            "name": "The Comedy of Doom",
+            "location": "Desolate Maw's Demonhold",
+            "region": "Planarcadia",
+            "type": "echo_of_war",
+            "image": "Echo of War - The Comedy of Doom.png",
+            "boss": [
+                "Lord of Saṃvartasthāyi, Asat Pramad"
+            ],
+            "rewards": [
+                "ew_high_hopes_of_the_falsely_enlightened"
+            ]
+        }
+    ],
+    "rewards": {
+        "ss_nail_of_the_ape": {
+            "name": "Nail of the Ape",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Fu Xuan",
+                "Lynx",
+                "Xueyi"
+            ]
+        },
+        "ss_radiant_prominence": {
+            "name": "Radiant Prominence",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Himeko • Nova",
+                "Mortenax Blade",
+                "Sparxie",
+                "The Dahlia"
+            ]
+        },
+        "ss_endotherm_chitin": {
+            "name": "Endotherm Chitin",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Asta",
+                "Himeko",
+                "Hook"
+            ]
+        },
+        "ss_ascendant_debris": {
+            "name": "Ascendant Debris",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Black Swan",
+                "Blade",
+                "Huohuo"
+            ]
+        },
+        "ss_charred_bud_of_twilight": {
+            "name": "Charred Bud of Twilight",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Cerydra",
+                "Robin • Summeretto"
+            ]
+        },
+        "ss_invasive_clot": {
+            "name": "Invasive Clot",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Dan Heng • Permansor Terrae",
+                "Evanescia",
+                "Hysilens",
+                "Phainon",
+                "Yao Guang"
+            ]
+        },
+        "ss_sneering_harlequin": {
+            "name": "Sneering Harlequin",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Aventurine • Waveflair",
+                "Rin Tohsaka"
+            ]
+        },
+        "ss_shape_shifter_s_lightning_staff": {
+            "name": "Shape Shifter's Lightning Staff",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Acheron",
+                "Jing Yuan",
+                "Kafka"
+            ]
+        },
+        "ss_ipc_work_permit": {
+            "name": "IPC Work Permit",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Boothill",
+                "Robin",
+                "Yunli"
+            ]
+        },
+        "ss_lightning_crown_of_the_past_shadow": {
+            "name": "Lightning Crown of the Past Shadow",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Arlan",
+                "Bailu",
+                "Serval",
+                "Tingyun"
+            ]
+        },
+        "ss_darkveil_moonlight": {
+            "name": "Darkveil Moonlight",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Archer",
+                "Castorice",
+                "Cipher",
+                "Tribbie"
+            ]
+        },
+        "ss_a_glass_of_the_besotted_era": {
+            "name": "A Glass of the Besotted Era",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Anaxa",
+                "Feixiao",
+                "Hyacine",
+                "Saber"
+            ]
+        },
+        "ss_storm_eye": {
+            "name": "Storm Eye",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Bronya",
+                "Dan Heng",
+                "Sampo"
+            ]
+        },
+        "ss_gelid_chitin": {
+            "name": "Gelid Chitin",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Jingliu",
+                "Ruan Mei",
+                "Yanqing"
+            ]
+        },
+        "ss_raging_heart": {
+            "name": "Raging Heart",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Firefly",
+                "Gallagher",
+                "Jiaoqiu",
+                "Lingsha"
+            ]
+        },
+        "ss_nail_of_the_beast_coffin": {
+            "name": "Nail of the Beast Coffin",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Aglaea",
+                "Moze"
+            ]
+        },
+        "ss_golden_crown_of_the_past_shadow": {
+            "name": "Golden Crown of the Past Shadow",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Luocha",
+                "Welt",
+                "Yukong"
+            ]
+        },
+        "ss_dream_fridge": {
+            "name": "Dream Fridge",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Misha",
+                "The Herta"
+            ]
+        },
+        "ss_netherworld_token": {
+            "name": "Netherworld Token",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Argenti",
+                "Hanya"
+            ]
+        },
+        "ss_suppressing_edict": {
+            "name": "Suppressing Edict",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Aventurine",
+                "Dan Heng • Imbibitor Lunae",
+                "Dr. Ratio"
+            ]
+        },
+        "ss_void_cast_iron": {
+            "name": "Void Cast Iron",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Qingque",
+                "Seele",
+                "Silver Wolf"
+            ]
+        },
+        "ss_horn_of_snow": {
+            "name": "Horn of Snow",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Gepard",
+                "Herta",
+                "Pela"
+            ]
+        },
+        "ss_dream_flamer": {
+            "name": "Dream Flamer",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Jade",
+                "Sparkle"
+            ]
+        },
+        "ss_searing_steel_blade": {
+            "name": "Searing Steel Blade",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Fugue",
+                "Guinaifen",
+                "Topaz & Numby"
+            ]
+        },
+        "ss_sea_siren_s_torn_fin": {
+            "name": "Sea Siren's Torn Fin",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Cyrene",
+                "Evernight"
+            ]
+        },
+        "ss_harbinger_of_strife": {
+            "name": "Harbinger of Strife",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Mydei",
+                "Silver Wolf LV.999"
+            ]
+        },
+        "ss_thunder_strum": {
+            "name": "Thunder Strum",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Ashveil",
+                "Gilgamesh"
+            ]
+        },
+        "ss_broken_teeth_of_iron_wolf": {
+            "name": "Broken Teeth of Iron Wolf",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Clara",
+                "Luka",
+                "Natasha",
+                "Sushang"
+            ]
+        },
+        "ss_chordal_mirage": {
+            "name": "Chordal Mirage",
+            "type": "stagnant_shadow",
+            "characters": [
+                "Rappa",
+                "Sunday"
+            ]
+        },
+        "cr_flower_of_eternity": {
+            "name": "Flower of Eternity",
+            "type": "calyx_crimson",
+            "characters": [
+                "Bailu",
+                "Huohuo",
+                "Luocha",
+                "Lynx",
+                "Natasha"
+            ]
+        },
+        "cr_myriad_fruit": {
+            "name": "Myriad Fruit",
+            "type": "calyx_crimson",
+            "characters": [
+                "Gallagher",
+                "Lingsha"
+            ]
+        },
+        "cr_omnicolor_fool_s_own": {
+            "name": "Omnicolor, Fool's Own",
+            "type": "calyx_crimson",
+            "characters": [
+                "Gilgamesh"
+            ]
+        },
+        "cr_moon_rage_fang": {
+            "name": "Moon Rage Fang",
+            "type": "calyx_crimson",
+            "characters": [
+                "Firefly",
+                "Misha",
+                "Mydei",
+                "Phainon",
+                "Saber",
+                "Yunli"
+            ]
+        },
+        "cr_worldbreaker_blade": {
+            "name": "Worldbreaker Blade",
+            "type": "calyx_crimson",
+            "characters": [
+                "Arlan",
+                "Blade",
+                "Clara",
+                "Dan Heng • Imbibitor Lunae",
+                "Hook",
+                "Jingliu",
+                "Xueyi"
+            ]
+        },
+        "cr_the_fluffy_collector_s_edition": {
+            "name": "The Fluffy Collector's Edition",
+            "type": "calyx_crimson",
+            "characters": [
+                "Aventurine • Waveflair",
+                "Evanescia",
+                "Silver Wolf LV.999",
+                "Sparxie",
+                "Yao Guang"
+            ]
+        },
+        "cr_exquisite_colored_draft": {
+            "name": "Exquisite Colored Draft",
+            "type": "calyx_crimson",
+            "characters": [
+                "Anaxa",
+                "Jade",
+                "Rappa",
+                "The Herta"
+            ]
+        },
+        "cr_key_of_wisdom": {
+            "name": "Key of Wisdom",
+            "type": "calyx_crimson",
+            "characters": [
+                "Argenti",
+                "Herta",
+                "Himeko",
+                "Jing Yuan",
+                "Qingque",
+                "Serval"
+            ]
+        },
+        "cr_cosmic_sandpit": {
+            "name": "Cosmic Sandpit",
+            "type": "calyx_crimson",
+            "characters": [
+                "Himeko • Nova",
+                "Rin Tohsaka"
+            ]
+        },
+        "cr_stellaris_symphony": {
+            "name": "Stellaris Symphony",
+            "type": "calyx_crimson",
+            "characters": [
+                "Asta",
+                "Bronya",
+                "Hanya",
+                "Ruan Mei",
+                "Tingyun",
+                "Yukong"
+            ]
+        },
+        "cr_heavenly_melody": {
+            "name": "Heavenly Melody",
+            "type": "calyx_crimson",
+            "characters": [
+                "Cerydra",
+                "Robin",
+                "Sparkle",
+                "Sunday",
+                "Tribbie"
+            ]
+        },
+        "cr_heart_of_phagousa": {
+            "name": "Heart of Phagousa",
+            "type": "calyx_crimson",
+            "characters": [
+                "Mortenax Blade"
+            ]
+        },
+        "cr_heaven_incinerator": {
+            "name": "Heaven Incinerator",
+            "type": "calyx_crimson",
+            "characters": [
+                "Acheron",
+                "Black Swan",
+                "Cipher",
+                "Fugue",
+                "Hysilens",
+                "Jiaoqiu",
+                "The Dahlia"
+            ]
+        },
+        "cr_obsidian_of_obsession": {
+            "name": "Obsidian of Obsession",
+            "type": "calyx_crimson",
+            "characters": [
+                "Guinaifen",
+                "Kafka",
+                "Luka",
+                "Pela",
+                "Sampo",
+                "Silver Wolf",
+                "Welt"
+            ]
+        },
+        "cr_divine_amber": {
+            "name": "Divine Amber",
+            "type": "calyx_crimson",
+            "characters": [
+                "Aventurine",
+                "Dan Heng • Permansor Terrae"
+            ]
+        },
+        "cr_safeguard_of_amber": {
+            "name": "Safeguard of Amber",
+            "type": "calyx_crimson",
+            "characters": [
+                "Fu Xuan",
+                "Gepard"
+            ]
+        },
+        "cr_flower_of_laya": {
+            "name": "Flower of Ālaya",
+            "type": "calyx_crimson",
+            "characters": [
+                "Aglaea",
+                "Castorice",
+                "Cyrene",
+                "Evernight",
+                "Hyacine",
+                "Robin • Summeretto"
+            ]
+        },
+        "cr_lance_of_retribution": {
+            "name": "Lance of Retribution",
+            "type": "calyx_crimson",
+            "characters": [
+                "Ashveil"
+            ]
+        },
+        "cr_arrow_of_the_starchaser": {
+            "name": "Arrow of the Starchaser",
+            "type": "calyx_crimson",
+            "characters": [
+                "Dan Heng",
+                "Dr. Ratio",
+                "Seele",
+                "Sushang",
+                "Topaz & Numby",
+                "Yanqing"
+            ]
+        },
+        "cr_countertemporal_shot": {
+            "name": "Countertemporal Shot",
+            "type": "calyx_crimson",
+            "characters": [
+                "Archer",
+                "Boothill",
+                "Feixiao",
+                "Moze"
+            ]
+        },
+        "cc_hero_of_triumphant_song": {
+            "name": "Hero of Triumphant Song",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases ATK by 12%.",
+            "effect_4pc": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s)."
+        },
+        "cc_poet_of_mourning_collapse": {
+            "name": "Poet of Mourning Collapse",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Quantum DMG by 10%.",
+            "effect_4pc": "Decreases the wearer's SPD by 8%. Before entering battle, if the wearer's SPD is lower than 110/95, increases the wearer's CRIT Rate by 20%/32%. This effect applies to the wearer's memosprite at the same time."
+        },
+        "cc_iron_cavalry_against_the_scourge": {
+            "name": "Iron Cavalry Against the Scourge",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Break Effect by 16%.",
+            "effect_4pc": "If the wearer's Break Effect is 150% or higher, the Break DMG dealt to the enemy target ignores 10% of their DEF. If the wearer's Break Effect is 250% or higher, the Super Break DMG dealt to the enemy target additionally ignores 15% of their DEF."
+        },
+        "cc_the_wind_soaring_valorous": {
+            "name": "The Wind-Soaring Valorous",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases ATK by 12%.",
+            "effect_4pc": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s)."
+        },
+        "cc_firesmith_of_lava_forging": {
+            "name": "Firesmith of Lava-Forging",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Fire DMG by 10%.",
+            "effect_4pc": "Increases the wearer's Skill DMG by 12%. After unleashing Ultimate, increases the wearer's Fire DMG by 12% for the next attack."
+        },
+        "cc_wastelander_of_banditry_desert": {
+            "name": "Wastelander of Banditry Desert",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Imaginary DMG by 10%.",
+            "effect_4pc": "When attacking debuffed enemies, the wearer's CRIT Rate increases by 10%, and their CRIT DMG increases by 20% against Imprisoned enemies."
+        },
+        "cc_the_ashblazing_grand_duke": {
+            "name": "The Ashblazing Grand Duke",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases the DMG dealt by follow-up attacks by 20%.",
+            "effect_4pc": "When the wearer uses follow-up attacks, increases the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a follow-up attack."
+        },
+        "cc_prisoner_in_deep_confinement": {
+            "name": "Prisoner in Deep Confinement",
+            "type": "cavern_of_corrosion",
+            "effect": "ATK increases by 12%.",
+            "effect_4pc": "For every DoT the target enemy is afflicted with, the wearer will ignore 6% of its DEF when dealing DMG to it. This effect is valid for a max of 3 DoTs."
+        },
+        "cc_pioneer_diver_of_dead_waters": {
+            "name": "Pioneer Diver of Dead Waters",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases DMG dealt to enemies with debuffs by 12%.",
+            "effect_4pc": "Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn(s)."
+        },
+        "cc_watchmaker_master_of_dream_machinations": {
+            "name": "Watchmaker, Master of Dream Machinations",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Break Effect by 16%.",
+            "effect_4pc": "When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked."
+        },
+        "cc_passerby_of_wandering_cloud": {
+            "name": "Passerby of Wandering Cloud",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Outgoing Healing by 10%.",
+            "effect_4pc": "At the start of the battle, immediately regenerates 1 Skill Point."
+        },
+        "cc_musketeer_of_wild_wheat": {
+            "name": "Musketeer of Wild Wheat",
+            "type": "cavern_of_corrosion",
+            "effect": "ATK increases by 12%.",
+            "effect_4pc": "The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%."
+        },
+        "cc_longevous_disciple": {
+            "name": "Longevous Disciple",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Max HP by 12%.",
+            "effect_4pc": "When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks."
+        },
+        "cc_messenger_traversing_hackerspace": {
+            "name": "Messenger Traversing Hackerspace",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases SPD by 6%.",
+            "effect_4pc": "When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked."
+        },
+        "cc_hunter_of_glacial_forest": {
+            "name": "Hunter of Glacial Forest",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Ice DMG by 10%.",
+            "effect_4pc": "After the wearer uses their Ultimate, their CRIT DMG increases by 25% for 2 turn(s)."
+        },
+        "cc_eagle_of_twilight_line": {
+            "name": "Eagle of Twilight Line",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Wind DMG by 10%.",
+            "effect_4pc": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%."
+        },
+        "cc_world_remaking_deliverer": {
+            "name": "World-Remaking Deliverer",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases CRIT Rate by 8%.",
+            "effect_4pc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by 24%, and increases all allies' DMG by 15% until the wearer's next Basic ATK or Skill."
+        },
+        "cc_self_enshrouded_recluse": {
+            "name": "Self-Enshrouded Recluse",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Shield Effect by 10%.",
+            "effect_4pc": "Increases Shield Effect provided by the wearer by 12%. When an ally target has a Shield provided by the wearer, the ally target's CRIT DMG increases by 15%."
+        },
+        "cc_knight_of_purity_palace": {
+            "name": "Knight of Purity Palace",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases DEF by 15%.",
+            "effect_4pc": "Increases the max DMG that can be absorbed by the Shield created by the wearer by 20%."
+        },
+        "cc_band_of_sizzling_thunder": {
+            "name": "Band of Sizzling Thunder",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Lightning DMG by 10%.",
+            "effect_4pc": "When the wearer uses their Skill, increases the wearer's ATK by 20% for 1 turn(s)."
+        },
+        "cc_as_navigator_isee_sees_it": {
+            "name": "As Navigator Isee Sees It",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases ATK by 12%.",
+            "effect_4pc": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effect."
+        },
+        "cc_divine_querying_master_smith": {
+            "name": "Divine-Querying Master Smith",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Max HP by 12%.",
+            "effect_4pc": "Increases the wearer's CRIT DMG dealt to enemy targets in the DEF reduction state by 28%. After the wearer inflicts the DEF reduction state on an enemy target, all allies gain \"Comburent\" for 2 turns. This effect cannot be stacked. DMG dealt by ally targets with \"Comburent\" increases by 15%. This effect can be triggered again after the wearer uses an attack."
+        },
+        "cc_champion_of_streetwise_boxing": {
+            "name": "Champion of Streetwise Boxing",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Physical DMG by 10%.",
+            "effect_4pc": "After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s)."
+        },
+        "cc_thief_of_shooting_meteor": {
+            "name": "Thief of Shooting Meteor",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Break Effect by 16%.",
+            "effect_4pc": "Increases the wearer's Break Effect by 16%. After the wearer inflicts Weakness Break on an enemy, regenerates 3 Energy."
+        },
+        "cc_ever_glorious_magical_girl": {
+            "name": "Ever-Glorious Magical Girl",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases CRIT DMG by 16%.",
+            "effect_4pc": "The Elation DMG dealt by the wearer and their memosprites ignores 10% of targets' DEF. For every 5 accumulated Punchline allies gain, the Elation DMG dealt additionally ignores 1% of targets' DEF, stacking up to 10 time(s)."
+        },
+        "cc_diviner_of_distant_reach": {
+            "name": "Diviner of Distant Reach",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases SPD by 6%.",
+            "effect_4pc": "Before entering combat, if the wearer's SPD is greater than or equal to 120/160, increases the wearer's CRIT Rate by 10%/18%. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by 10%. This effect cannot stack."
+        },
+        "cc_guard_of_wuthering_snow": {
+            "name": "Guard of Wuthering Snow",
+            "type": "cavern_of_corrosion",
+            "effect": "Reduces DMG taken by 8%.",
+            "effect_4pc": "At the beginning of the turn, if the wearer's HP is equal to or less than 50%, restores HP equal to 8% of their Max HP and regenerates 5 Energy."
+        },
+        "cc_genius_of_brilliant_stars": {
+            "name": "Genius of Brilliant Stars",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases Quantum DMG by 10%.",
+            "effect_4pc": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF."
+        },
+        "cc_warrior_goddess_of_sun_and_thunder": {
+            "name": "Warrior Goddess of Sun and Thunder",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases SPD by 6%.",
+            "effect_4pc": "When the wearer or their memosprite provides healing to ally targets other than themselves, the wearer gains \"Gentle Rain,\" which lasts for 2 turn(s) and can only trigger once per turn. While the wearer has \"Gentle Rain,\" SPD increases by 6% and all allies' CRIT DMG increases by 15%. This effect cannot stack."
+        },
+        "cc_wavestrider_captain": {
+            "name": "Wavestrider Captain",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases CRIT DMG by 16%.",
+            "effect_4pc": "When the wearer becomes the target of another ally target's ability, gains 1 stack of \"Help,\" stacking up to 2 time(s). If there are 2 stack(s) of \"Help\" when the wearer uses their Ultimate, consumes all \"Help\" to increase the wearer's ATK by 48% for 1 turn(s)."
+        },
+        "cc_scholar_lost_in_erudition": {
+            "name": "Scholar Lost in Erudition",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases CRIT Rate by 8%.",
+            "effect_4pc": "Increases DMG dealt by Skill and Ultimate by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%."
+        },
+        "cc_sacerdos_relived_ordeal": {
+            "name": "Sacerdos' Relived Ordeal",
+            "type": "cavern_of_corrosion",
+            "effect": "Increases SPD by 6%.",
+            "effect_4pc": "When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turn(s). This effect can stack up to 2 time(s)."
+        },
+        "ew_past_evils_of_the_borehole_planet_disaster": {
+            "name": "Past Evils of the Borehole Planet Disaster",
+            "type": "echo_of_war",
+            "characters": [
+                "Acheron",
+                "Aventurine",
+                "Black Swan",
+                "Dr. Ratio",
+                "Gallagher",
+                "Misha",
+                "Robin",
+                "Ruan Mei",
+                "Sparkle",
+                "Xueyi"
+            ]
+        },
+        "ew_destroyer_s_final_road": {
+            "name": "Destroyer's Final Road",
+            "type": "echo_of_war",
+            "characters": [
+                "Arlan",
+                "Asta",
+                "Dan Heng",
+                "Herta",
+                "Himeko",
+                "Jing Yuan",
+                "Rin Tohsaka",
+                "Saber",
+                "Silver Wolf",
+                "Tingyun",
+                "Welt",
+                "Yukong"
+            ]
+        },
+        "ew_regret_of_infinite_ochema": {
+            "name": "Regret of Infinite Ochema",
+            "type": "echo_of_war",
+            "characters": [
+                "Argenti",
+                "Blade",
+                "Dan Heng • Imbibitor Lunae",
+                "Feixiao",
+                "Fu Xuan",
+                "Fugue",
+                "Guinaifen",
+                "Hanya",
+                "Huohuo",
+                "Jiaoqiu",
+                "Jingliu",
+                "Kafka",
+                "Luka",
+                "Lynx",
+                "Topaz & Numby",
+                "Yunli"
+            ]
+        },
+        "ew_guardian_s_lament": {
+            "name": "Guardian's Lament",
+            "type": "echo_of_war",
+            "characters": [
+                "Archer",
+                "Bailu",
+                "Bronya",
+                "Clara",
+                "Gepard",
+                "Gilgamesh",
+                "Hook",
+                "Luocha",
+                "Natasha",
+                "Pela",
+                "Qingque",
+                "Sampo",
+                "Seele",
+                "Serval",
+                "Sushang",
+                "Yanqing"
+            ]
+        },
+        "ew_daythunder_anamnesis": {
+            "name": "Daythunder Anamnesis",
+            "type": "echo_of_war",
+            "characters": [
+                "Cerydra",
+                "Cipher",
+                "Cyrene",
+                "Dan Heng • Permansor Terrae",
+                "Evernight",
+                "Hysilens",
+                "Phainon"
+            ]
+        },
+        "ew_auspice_sliver": {
+            "name": "Auspice Sliver",
+            "type": "echo_of_war",
+            "characters": [
+                "Aglaea",
+                "Castorice",
+                "Lingsha",
+                "Moze",
+                "Mydei",
+                "The Herta"
+            ]
+        },
+        "ew_vanquished_flow_s_reticence": {
+            "name": "Vanquished Flow's Reticence",
+            "type": "echo_of_war",
+            "characters": [
+                "Ashveil",
+                "Evanescia",
+                "Himeko • Nova",
+                "Mortenax Blade",
+                "Silver Wolf LV.999",
+                "Sparxie",
+                "The Dahlia",
+                "Yao Guang"
+            ]
+        },
+        "ew_lost_echo_of_the_shared_wish": {
+            "name": "Lost Echo of the Shared Wish",
+            "type": "echo_of_war",
+            "characters": [
+                "Anaxa",
+                "Boothill",
+                "Firefly",
+                "Hyacine",
+                "Jade",
+                "Rappa",
+                "Sunday",
+                "Tribbie"
+            ]
+        },
+        "ew_high_hopes_of_the_falsely_enlightened": {
+            "name": "High Hopes of the Falsely Enlightened",
+            "type": "echo_of_war",
+            "characters": [
+                "Aventurine • Waveflair",
+                "Robin • Summeretto"
+            ]
+        }
+    }
+}

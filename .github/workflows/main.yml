@@ -33,6 +33,7 @@ jobs:
             docs/domains.html \
             docs/assets/characters.json \
             docs/assets/domains.json \
-            docs/hsr/assets/characters.json
+            docs/hsr/assets/characters.json \
+            docs/hsr/assets/domains.json
           git commit -m "Update data"
           git push

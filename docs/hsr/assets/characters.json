@@ -2,8 +2,8 @@
     "version": "4890c17",
     "last_updated": "2026-07-30T10:33:08.414021+05:00",
     "characters": {
-        "Robin \u2022 Summeretto": {
-            "name": "Robin \u2022 Summeretto",
+        "Robin • Summeretto": {
+            "name": "Robin • Summeretto",
             "display_name": "Robin Summeretto",
             "rarity": "5",
             "forms": [
@@ -18,8 +18,8 @@
             "release_date": null,
             "is_released": false
         },
-        "Aventurine \u2022 Waveflair": {
-            "name": "Aventurine \u2022 Waveflair",
+        "Aventurine • Waveflair": {
+            "name": "Aventurine • Waveflair",
             "display_name": "Aventurine Waveflair",
             "rarity": "5",
             "forms": [
@@ -66,8 +66,8 @@
             "release_date": "2026-07-24",
             "is_released": true
         },
-        "Himeko \u2022 Nova": {
-            "name": "Himeko \u2022 Nova",
+        "Himeko • Nova": {
+            "name": "Himeko • Nova",
             "display_name": "Himeko Nova",
             "rarity": "5",
             "forms": [
@@ -210,8 +210,8 @@
             "release_date": "2025-11-05",
             "is_released": true
         },
-        "Dan Heng \u2022 Permansor Terrae": {
-            "name": "Dan Heng \u2022 Permansor Terrae",
+        "Dan Heng • Permansor Terrae": {
+            "name": "Dan Heng • Permansor Terrae",
             "display_name": "Dan Heng PT",
             "rarity": "5",
             "forms": [
@@ -914,8 +914,8 @@
             "release_date": "2023-09-20",
             "is_released": true
         },
-        "Dan Heng \u2022 Imbibitor Lunae": {
-            "name": "Dan Heng \u2022 Imbibitor Lunae",
+        "Dan Heng • Imbibitor Lunae": {
+            "name": "Dan Heng • Imbibitor Lunae",
             "display_name": "Dan Heng IL",
             "rarity": "5",
             "forms": [
