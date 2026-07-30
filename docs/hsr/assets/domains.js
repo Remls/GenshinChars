@@ -89,6 +89,17 @@ document.addEventListener('alpine:init', () => {
                     displayName: c.display_name || c.name,
                     combatType: c.forms[0].combat_type,
                 }
+                // Multi-path forms can be referenced by their form display name
+                c.forms.forEach(f => {
+                    if (!f.display_name || f.display_name === (c.display_name || c.name)) return
+                    const pathLabel = f.path === 'Hunt' ? 'The Hunt' : f.path
+                    lookup[f.display_name] = {
+                        displayName: f.display_name,
+                        combatType: f.combat_type,
+                        iconName: `Character ${c.name} (${pathLabel}) Icon.png`,
+                        wikiName: `${c.name}/${pathLabel}`,
+                    }
+                })
             })
             this.characterLookup = lookup
         },
@@ -211,11 +222,13 @@ document.addEventListener('alpine:init', () => {
             const info = this.characterLookup[name]
             const displayName = info ? info.displayName : name
             const colorClass = info && info.combatType ? `ct-${info.combatType.toLowerCase()}` : 'el-unknown'
-            const src = wikiFileUrl(`Character ${name} Icon.png`, HSR_WIKI_IMAGES)
+            const iconName = (info && info.iconName) || `Character ${name} Icon.png`
+            const src = wikiFileUrl(iconName, HSR_WIKI_IMAGES)
             let chip = `<img src="${src}" width="20" height="20" loading="lazy"`
                 + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
             chip += `<span class="gi-font ${colorClass}">${this.highlight(displayName)}</span>`
-            return `<a href="${this.wikiUrl(name)}" class="char-chip">${chip}</a>`
+            const wikiName = (info && info.wikiName) || name
+            return `<a href="${this.wikiUrl(wikiName)}" class="char-chip">${chip}</a>`
         },
 
         wikiPageFor(domain) {

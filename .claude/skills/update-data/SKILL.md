@@ -202,7 +202,9 @@ filenames yourself and store them.
   windows, cross-check the `Released in Version X.Y` category.
 - HSR character usage of materials: page categories `Ascends with {item}`
   (stagnant shadow stones) and `Traces Leveled with {item}` (crimson calyx
-  tiers and weekly materials).
+  tiers and weekly materials). Multi-path characters carry these categories on
+  their per-path SUBPAGES (`March 7th/Preservation`, `March 7th/The Hunt`),
+  their main page has none, so scrape the subpages for them.
 - Divergent Universe stages: the `==Stages==` table on the `Divergent Universe`
   page (Stage, Boss, Rewards columns; note some rows lack the `id=` attribute,
   so do not anchor parsing on it).
