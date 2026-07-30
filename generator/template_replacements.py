@@ -2,29 +2,29 @@ from bs4 import BeautifulSoup
 from bs4.formatter import HTMLFormatter
 import re
 
-THUMBNAIL_IMAGE = "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Splashscreen_Truth_Amongst_the_Pages_of_Purana.png"
+THUMBNAIL_IMAGE = "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Splashscreen_Sunny_Summer_Fontinalia.png"
 
 
 def read_template_file():
     file_contents = ""
-    with open('data/template.html') as f:
+    with open('data/characters.template.html') as f:
         file_contents = f.read()
     return file_contents
 
 
-def read_index_file():
+def read_characters_file():
     file_contents = ""
-    with open('docs/index.html') as f:
+    with open('docs/characters.html') as f:
         file_contents = f.read()
     return file_contents
 
 
-def write_index_file(s: str):
-    with open("docs/index.html", "w") as f:
+def write_characters_file(s: str):
+    with open("docs/characters.html", "w") as f:
         f.write(s)
 
 
-def generate_index_file():
+def generate_characters_page():
     output = read_template_file()
 
     # 1. Thumbnail
@@ -73,11 +73,28 @@ def generate_index_file():
     </template>"""
     output = re.sub(search, replace, output)
 
-    write_index_file(output)
+    write_characters_file(output)
 
 
-def prettify():
-    output = read_index_file()
+def generate_index_page():
+    with open('data/index.template.html') as f:
+        output = f.read()
+    output = re.sub(r"\[THUMB\]", THUMBNAIL_IMAGE, output)
+    with open("docs/index.html", "w") as f:
+        f.write(output)
+
+
+def update_domains_page():
+    with open('docs/domains.html') as f:
+        output = f.read()
+    search = r'(<meta (?:property="og:image"|name="twitter:card") content=")[^"]*(">)'
+    output = re.sub(search, r"\g<1>" + THUMBNAIL_IMAGE + r"\g<2>", output)
+    with open("docs/domains.html", "w") as f:
+        f.write(output)
+
+
+def prettify_characters_page():
+    output = read_characters_file()
     soup = BeautifulSoup(output, "html.parser")
     formatter = HTMLFormatter(indent=4)
-    write_index_file(soup.prettify(formatter=formatter))
+    write_characters_file(soup.prettify(formatter=formatter))

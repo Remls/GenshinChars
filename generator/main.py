@@ -1,8 +1,10 @@
-from template_replacements import generate_index_file, prettify
-from json_generator import generate_data_file, generate_domains_file
+from template_replacements import generate_characters_page, generate_index_page, update_domains_page, prettify_characters_page
+from json_generator import generate_characters_file, generate_domains_file
 
 if __name__ == '__main__':
-    generate_index_file()
-    prettify()
-    generate_data_file()
+    generate_characters_page()
+    prettify_characters_page()
+    generate_index_page()
+    update_domains_page()
+    generate_characters_file()
     generate_domains_file()

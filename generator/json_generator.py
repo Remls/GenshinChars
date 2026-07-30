@@ -14,10 +14,10 @@ def empty_strings_to_null(data):
     return data
 
 
-def generate_data_file():
+def generate_characters_file():
     # Read and sort character data
     character_version_data = []
-    with open('data/chars.csv', newline='') as f:
+    with open('data/characters.csv', newline='') as f:
         reader = csv.DictReader(f)
         for row in reader:
             char = Character(row)
@@ -45,7 +45,7 @@ def generate_data_file():
     }
 
     # Write to JSON file
-    with open("docs/assets/data.json", "w") as f:
+    with open("docs/assets/characters.json", "w") as f:
         f.write(json.dumps(data, indent=4, default=vars))
 
 

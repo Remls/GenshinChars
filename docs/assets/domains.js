@@ -149,7 +149,7 @@ document.addEventListener('alpine:init', () => {
             this.serverDay = this.getServerDay()
             Promise.all([
                 fetch('./assets/domains.json').then(r => r.json()),
-                fetch('./assets/data.json').then(r => r.json()),
+                fetch('./assets/characters.json').then(r => r.json()),
             ]).then(([domainsData, charactersData]) => {
                 this.allData = domainsData
                 this.buildCharacterLookup(charactersData)
@@ -387,7 +387,7 @@ document.addEventListener('alpine:init', () => {
             return DAY_KEYS[serverTime.getDay()]
         },
 
-        // Index characters from data.json by both full name and display name,
+        // Index characters from characters.json by both full name and display name,
         // so short names used in domain data ("Childe", "Flins") resolve
         buildCharacterLookup(charactersData) {
             const lookup = {}

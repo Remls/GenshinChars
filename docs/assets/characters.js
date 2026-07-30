@@ -55,7 +55,7 @@ document.addEventListener('alpine:init', () => {
         notes: null,
 
         fetchAllData() {
-            fetch('./assets/data.json')
+            fetch('./assets/characters.json')
                 .then(r => r.json())
                 .then(d => {
                     this.allData = d
