@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="hsr-font">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.5" />
+    <title>Honkai: Star Rail Characters</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="../icons/favicon.ico">
+
+    <meta property="og:title" content="Honkai: Star Rail Characters">
+    <meta property="og:description" content="List of current and future characters in Honkai: Star Rail">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chars.remls.io/hsr/characters">
+
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.10.5/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+    <script src="../assets/common.js"></script>
+    <script src="assets/characters.js"></script>
+</head>
+
+<body x-data="hsrCharSheet" x-init="fetchAllData">
+    <section>
+        <h2 class="collapsible-header" @click="showSection.filters = !showSection.filters">
+            Filters
+            <svg x-show="showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+            </svg>
+            <svg x-show="!showSection.filters" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+            </svg>
+        </h2>
+        <div class="table-wrapper" x-show="showSection.filters" x-collapse>
+            <table class="filter-table table-40 no-border">
+                <tr>
+                    <td width="10%">
+                        <label for="version-select">Filter by version</label>
+                    </td>
+                    <td>
+                        <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
+                            <template x-for="version in Object.values(versionData)" :key="version.version_number">
+                                <option :value="version.version_number" x-text="formatVersion(version.version_number, true)"></option>
+                            </template>
+                            <option :value="null">All known playable characters</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Filter by rarity</label>
+                    </td>
+                    <td>
+                        <div class="icon-buttons">
+                            <button type="button" class="icon-button"
+                                :class="{ 'selected': selectedRarity === null }" title="All"
+                                @click="selectedRarity = null; updateCharacterData()">
+                                <span class="icon-button-label">All</span>
+                            </button>
+                            <template x-for="rarity in ['4', '5']" :key="rarity">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedRarity === rarity }" :title="`${rarity}-star`"
+                                    @click="selectedRarity = rarity; updateCharacterData()">
+                                    <span x-text="`${rarity}★`"></span>
+                                </button>
+                            </template>
+                            <button type="button" class="icon-button"
+                                :class="{ 'selected': selectedRarity === 'Unknown' }" title="Unknown"
+                                @click="selectedRarity = 'Unknown'; updateCharacterData()">
+                                <span>?</span>
+                                <span class="icon-button-label" x-show="selectedRarity === 'Unknown'">Unknown</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Filter by gender</label>
+                    </td>
+                    <td>
+                        <div class="icon-buttons">
+                            <button type="button" class="icon-button"
+                                :class="{ 'selected': selectedGender === null }" title="All"
+                                @click="selectedGender = null; updateCharacterData()">
+                                <span class="icon-button-label">All</span>
+                            </button>
+                            <template x-for="gender in ['Female', 'Male']" :key="gender">
+                                <button type="button" class="icon-button"
+                                    :class="{ 'selected': selectedGender === gender }" :title="gender"
+                                    @click="selectedGender = gender; updateCharacterData()">
+                                    <span x-text="gender === 'Female' ? '♀' : '♂'"></span>
+                                    <span class="icon-button-label" x-show="selectedGender === gender" x-text="gender"></span>
+                                </button>
+                            </template>
+                            <button type="button" class="icon-button"
+                                :class="{ 'selected': selectedGender === 'Unknown' }" title="Unknown"
+                                @click="selectedGender = 'Unknown'; updateCharacterData()">
+                                <span>?</span>
+                                <span class="icon-button-label" x-show="selectedGender === 'Unknown'">Unknown</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="world-select">Filter by world</label>
+                    </td>
+                    <td>
+                        <select id="world-select" x-model="selectedWorld" @change="updateCharacterData()">
+                            <option :value="null">All</option>
+                            <template x-for="world in HSR_WORLDS" :key="world">
+                                <option :value="world" x-text="world"></option>
+                            </template>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="collapsible-header" @click="showSection.pathTypeTable = !showSection.pathTypeTable">
+            Characters by path/combat type
+            <svg x-show="showSection.pathTypeTable" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+            </svg>
+            <svg x-show="!showSection.pathTypeTable" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+            </svg>
+        </h2>
+        <div class="table-wrapper" x-show="showSection.pathTypeTable" x-collapse>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <template x-for="combatType in HSR_COMBAT_TYPES" :key="combatType">
+                            <th>
+                                <span x-html="combatTypeIconHtml(combatType)"></span>
+                                <div x-text="combatType"></div>
+                            </th>
+                        </template>
+                        <th>Unknown</th>
+                        <th>RARITY</th>
+                        <th>GENDER</th>
+                        <th>WORLD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="path in visiblePaths()" :key="path">
+                        <tr>
+                            <td class="label-column">
+                                <template x-if="path !== 'Unknown'">
+                                    <span x-html="pathIconHtml(path)"></span>
+                                </template>
+                                <div x-text="path === 'Unknown' ? path : pathLabel(path)"></div>
+                            </td>
+                            <template x-for="combatType in HSR_COMBAT_TYPES" :key="combatType">
+                                <td x-html="cellHtml(path, combatType)"></td>
+                            </template>
+                            <td x-html="cellHtml(path, 'Unknown')"></td>
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({path}, 'rarity'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({path}, 'gender'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({path}, 'world'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr>
+                        <td class="label-column"><b>RARITY</b></td>
+                        <template x-for="combatType in [...HSR_COMBAT_TYPES, 'Unknown']" :key="combatType">
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({combatType}, 'rarity'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                        </template>
+                        <td class="transparent-rb totals-cells center">
+                            <template x-for="[key, value] in Object.entries(countBy(null, 'rarity'))" :key="key">
+                                <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                            </template>
+                        </td>
+                        <td class="transparent-rb totals-cells"></td>
+                        <td class="transparent-b totals-cells"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-column"><b>GENDER</b></td>
+                        <template x-for="combatType in [...HSR_COMBAT_TYPES, 'Unknown']" :key="combatType">
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({combatType}, 'gender'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                        </template>
+                        <td class="transparent-rb totals-cells"></td>
+                        <td class="transparent-rb totals-cells center">
+                            <template x-for="[key, value] in Object.entries(countBy(null, 'gender'))" :key="key">
+                                <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                            </template>
+                        </td>
+                        <td class="transparent-b totals-cells"></td>
+                    </tr>
+                    <tr>
+                        <td class="label-column"><b>WORLD</b></td>
+                        <template x-for="combatType in [...HSR_COMBAT_TYPES, 'Unknown']" :key="combatType">
+                            <td class="totals-cells center">
+                                <template x-for="[key, value] in Object.entries(countBy({combatType}, 'world'))" :key="key">
+                                    <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                                </template>
+                            </td>
+                        </template>
+                        <td class="transparent-r totals-cells"></td>
+                        <td class="transparent-r totals-cells"></td>
+                        <td class="totals-cells center">
+                            <template x-for="[key, value] in Object.entries(countBy(null, 'world'))" :key="key">
+                                <div><b x-text="key"></b> - <span x-text="value"></span></div>
+                            </template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="collapsible-header" @click="showSection.releaseOrderTable = !showSection.releaseOrderTable">
+            Characters in order of release
+            <svg x-show="showSection.releaseOrderTable" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+            </svg>
+            <svg x-show="!showSection.releaseOrderTable" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="#c9d1d9" fill="#c9d1d9" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)" />
+            </svg>
+        </h2>
+        <div class="table-wrapper" x-show="showSection.releaseOrderTable" x-collapse>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Character</th>
+                        <th>Release Version</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="char in Object.values(characterData)" :key="char.name">
+                        <tr>
+                            <td x-html="chipHtml(char, char.forms[0].combat_type)"></td>
+                            <td x-show="releaseUnknown(char)" colspan="2" class="center">
+                                <span class="text-unknown">Unknown</span>
+                            </td>
+                            <td x-show="!releaseUnknown(char)" :class="{'center': !char.release_version}">
+                                <span x-text="formatVersion(char.release_version)"
+                                    :class="{'text-unknown': !char.release_version}"></span>
+                            </td>
+                            <td x-show="!releaseUnknown(char)" :class="{'center': !char.release_date}">
+                                <span x-text="formatDate(char.release_date)"
+                                    :class="{'text-unknown': !char.release_date}"></span>
+                            </td>
+                        </tr>
+                    </template>
+                    <tr x-show="noCharacters()">
+                        <td class="center" colspan="3">No characters match your filters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div>
+            Last updated <span x-text="lastUpdatedFormatted()"></span><br>
+            Pictures sourced from the <a href="https://honkai-star-rail.fandom.com/">Honkai: Star Rail Wiki</a>.<br>
+            Also see: <a href="../characters" class="clickable">Genshin Impact Characters</a>,
+            <a href="../domains" class="clickable">Genshin Impact Domains</a>
+        </div>
+    </footer>
+</body>
+
+</html>

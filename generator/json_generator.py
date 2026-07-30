@@ -1,5 +1,6 @@
 from classes import Character, Version, version_data
 from functions import get_version, get_current_timestamp
+from datetime import datetime
 import csv, json
 
 
@@ -47,6 +48,61 @@ def generate_characters_file():
     # Write to JSON file
     with open("docs/assets/characters.json", "w") as f:
         f.write(json.dumps(data, indent=4, default=vars))
+
+
+def generate_hsr_characters_file():
+    versions = {}
+    with open('data/hsr/versions.csv', newline='') as f:
+        for row in csv.DictReader(f):
+            versions[row["version"]] = {
+                "version_number": row["version"],
+                "display_version_number": row["display_version_number"] or "v" + row["version"],
+                "version_name": row["name"] or None,
+                "release_date": row["release_date"] or None,
+            }
+
+    characters = []
+    with open('data/hsr/characters.csv', newline='') as f:
+        for row in csv.DictReader(f):
+            paths = [p.strip() for p in row["path"].split(";") if p.strip()]
+            types = [t.strip() for t in row["combat_type"].split(";") if t.strip()]
+            forms = [
+                {"path": p or None, "combat_type": t or None}
+                for p, t in zip(paths, types)
+            ] or [{"path": None, "combat_type": None}]
+            # A single display_name covers the character; ";"-separated ones map to forms
+            display_parts = [d.strip() for d in row["display_name"].split(";")]
+            display_name = row["display_name"] or None
+            if len(display_parts) > 1:
+                display_name = display_parts[0] or None
+                for i, form in enumerate(forms):
+                    if i < len(display_parts) and display_parts[i]:
+                        form["display_name"] = display_parts[i]
+            release_date = row["release_date"] or None
+            if release_date == "R":
+                release_date = versions[row["release_version"]]["release_date"]
+            characters.append({
+                "name": row["name"],
+                "display_name": display_name,
+                "rarity": row["rarity"] or None,
+                "forms": forms,
+                "gender": row["gender"] or None,
+                "world": row["world"] or None,
+                "release_version": row["release_version"] or None,
+                "release_date": release_date,
+                "is_released": bool(release_date) and release_date <= datetime.now().strftime("%Y-%m-%d"),
+            })
+    # Newest releases first; characters with no known date before those
+    characters.sort(key=lambda c: (c["release_date"] or "9999-12-31", c["name"]), reverse=True)
+
+    data = {
+        "version": get_version(),
+        "last_updated": get_current_timestamp(),
+        "characters": {c["name"]: c for c in characters},
+        "versions": versions,
+    }
+    with open("docs/hsr/assets/characters.json", "w") as f:
+        f.write(json.dumps(data, indent=4))
 
 
 def generate_domains_file():

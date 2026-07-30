@@ -107,17 +107,6 @@ const BOSS_ICON_ALIASES = {
 const DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 // For displaying availability: weekdays first, Sunday (everything drops) last
 const DAY_DISPLAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
-const DOMAIN_MONTHS = [
-    'January', 'February', 'March',
-    'April', 'May', 'June',
-    'July', 'August', 'September',
-    'October', 'November', 'December'
-]
-const DOMAIN_WEEKDAYS = [
-    'Sunday', 'Monday', 'Tuesday',
-    'Wednesday', 'Thursday',
-    'Friday', 'Saturday'
-]
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('domainSheet', () => ({
@@ -731,9 +720,9 @@ document.addEventListener('alpine:init', () => {
             const lastUpdated = this.allData['last_updated']
             if (!lastUpdated) return ''
             const date = new Date(lastUpdated)
-            const wd = DOMAIN_WEEKDAYS[date.getDay()]
+            const wd = WEEKDAYS[date.getDay()]
             const y = date.getFullYear()
-            const m = DOMAIN_MONTHS[date.getMonth()]
+            const m = MONTHS[date.getMonth()]
             const d = date.getDate()
             const h = this.zeroPad(date.getHours())
             const mn = this.zeroPad(date.getMinutes())

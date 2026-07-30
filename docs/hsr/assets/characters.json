@@ -1,0 +1,1588 @@
+{
+    "version": "4890c17",
+    "last_updated": "2026-07-30T10:33:08.414021+05:00",
+    "characters": {
+        "Robin \u2022 Summeretto": {
+            "name": "Robin \u2022 Summeretto",
+            "display_name": "Robin Summeretto",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Penacony",
+            "release_version": "4.5",
+            "release_date": null,
+            "is_released": false
+        },
+        "Aventurine \u2022 Waveflair": {
+            "name": "Aventurine \u2022 Waveflair",
+            "display_name": "Aventurine Waveflair",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Male",
+            "world": "Sigonia-IV",
+            "release_version": "4.5",
+            "release_date": null,
+            "is_released": false
+        },
+        "Rin Tohsaka": {
+            "name": "Rin Tohsaka",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Another World",
+            "release_version": "4.4",
+            "release_date": "2026-07-24",
+            "is_released": true
+        },
+        "Gilgamesh": {
+            "name": "Gilgamesh",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Male",
+            "world": "Another World",
+            "release_version": "4.4",
+            "release_date": "2026-07-24",
+            "is_released": true
+        },
+        "Himeko \u2022 Nova": {
+            "name": "Himeko \u2022 Nova",
+            "display_name": "Himeko Nova",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Astral Express",
+            "release_version": "4.4",
+            "release_date": "2026-07-15",
+            "is_released": true
+        },
+        "Mortenax Blade": {
+            "name": "Mortenax Blade",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Male",
+            "world": null,
+            "release_version": "4.3",
+            "release_date": "2026-06-01",
+            "is_released": true
+        },
+        "Evanescia": {
+            "name": "Evanescia",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Planarcadia",
+            "release_version": "4.2",
+            "release_date": "2026-05-13",
+            "is_released": true
+        },
+        "Silver Wolf LV.999": {
+            "name": "Silver Wolf LV.999",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Female",
+            "world": "Punklorde",
+            "release_version": "4.2",
+            "release_date": "2026-04-22",
+            "is_released": true
+        },
+        "Ashveil": {
+            "name": "Ashveil",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Male",
+            "world": "Planarcadia",
+            "release_version": "4.1",
+            "release_date": "2026-03-25",
+            "is_released": true
+        },
+        "Sparxie": {
+            "name": "Sparxie",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Planarcadia",
+            "release_version": "4.0",
+            "release_date": "2026-03-03",
+            "is_released": true
+        },
+        "Yao Guang": {
+            "name": "Yao Guang",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "4.0",
+            "release_date": "2026-02-13",
+            "is_released": true
+        },
+        "The Dahlia": {
+            "name": "The Dahlia",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Cosmic",
+            "release_version": "3.8",
+            "release_date": "2025-12-17",
+            "is_released": true
+        },
+        "Cyrene": {
+            "name": "Cyrene",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.7",
+            "release_date": "2025-11-05",
+            "is_released": true
+        },
+        "Dan Heng \u2022 Permansor Terrae": {
+            "name": "Dan Heng \u2022 Permansor Terrae",
+            "display_name": "Dan Heng PT",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Preservation",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Male",
+            "world": "Amphoreus",
+            "release_version": "3.6",
+            "release_date": "2025-10-15",
+            "is_released": true
+        },
+        "Evernight": {
+            "name": "Evernight",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.6",
+            "release_date": "2025-09-24",
+            "is_released": true
+        },
+        "Cerydra": {
+            "name": "Cerydra",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.5",
+            "release_date": "2025-09-02",
+            "is_released": true
+        },
+        "Hysilens": {
+            "name": "Hysilens",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.5",
+            "release_date": "2025-08-13",
+            "is_released": true
+        },
+        "Saber": {
+            "name": "Saber",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Another World",
+            "release_version": "3.4",
+            "release_date": "2025-07-11",
+            "is_released": true
+        },
+        "Archer": {
+            "name": "Archer",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Male",
+            "world": "Another World",
+            "release_version": "3.4",
+            "release_date": "2025-07-11",
+            "is_released": true
+        },
+        "Phainon": {
+            "name": "Phainon",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Male",
+            "world": "Amphoreus",
+            "release_version": "3.4",
+            "release_date": "2025-07-02",
+            "is_released": true
+        },
+        "Cipher": {
+            "name": "Cipher",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.3",
+            "release_date": "2025-06-11",
+            "is_released": true
+        },
+        "Hyacine": {
+            "name": "Hyacine",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.3",
+            "release_date": "2025-05-21",
+            "is_released": true
+        },
+        "Anaxa": {
+            "name": "Anaxa",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Male",
+            "world": "Amphoreus",
+            "release_version": "3.2",
+            "release_date": "2025-04-30",
+            "is_released": true
+        },
+        "Castorice": {
+            "name": "Castorice",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.2",
+            "release_date": "2025-04-09",
+            "is_released": true
+        },
+        "Mydei": {
+            "name": "Mydei",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Amphoreus",
+            "release_version": "3.1",
+            "release_date": "2025-03-19",
+            "is_released": true
+        },
+        "Tribbie": {
+            "name": "Tribbie",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.1",
+            "release_date": "2025-02-26",
+            "is_released": true
+        },
+        "Aglaea": {
+            "name": "Aglaea",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Amphoreus",
+            "release_version": "3.0",
+            "release_date": "2025-02-05",
+            "is_released": true
+        },
+        "The Herta": {
+            "name": "The Herta",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Herta Space Station",
+            "release_version": "3.0",
+            "release_date": "2025-01-15",
+            "is_released": true
+        },
+        "Fugue": {
+            "name": "Fugue",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.7",
+            "release_date": "2024-12-25",
+            "is_released": true
+        },
+        "Sunday": {
+            "name": "Sunday",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Cosmic",
+            "release_version": "2.7",
+            "release_date": "2024-12-04",
+            "is_released": true
+        },
+        "Rappa": {
+            "name": "Rappa",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Female",
+            "world": "Cosmic",
+            "release_version": "2.6",
+            "release_date": "2024-10-23",
+            "is_released": true
+        },
+        "Lingsha": {
+            "name": "Lingsha",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.5",
+            "release_date": "2024-10-02",
+            "is_released": true
+        },
+        "Moze": {
+            "name": "Moze",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.5",
+            "release_date": "2024-09-10",
+            "is_released": true
+        },
+        "Feixiao": {
+            "name": "Feixiao",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.5",
+            "release_date": "2024-09-10",
+            "is_released": true
+        },
+        "Jiaoqiu": {
+            "name": "Jiaoqiu",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.4",
+            "release_date": "2024-08-21",
+            "is_released": true
+        },
+        "Yunli": {
+            "name": "Yunli",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "2.4",
+            "release_date": "2024-07-31",
+            "is_released": true
+        },
+        "Jade": {
+            "name": "Jade",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": null,
+            "release_version": "2.3",
+            "release_date": "2024-07-10",
+            "is_released": true
+        },
+        "Firefly": {
+            "name": "Firefly",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Glamoth",
+            "release_version": "2.3",
+            "release_date": "2024-06-19",
+            "is_released": true
+        },
+        "Boothill": {
+            "name": "Boothill",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Male",
+            "world": "Cosmic",
+            "release_version": "2.2",
+            "release_date": "2024-05-29",
+            "is_released": true
+        },
+        "Robin": {
+            "name": "Robin",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Penacony",
+            "release_version": "2.2",
+            "release_date": "2024-05-08",
+            "is_released": true
+        },
+        "Aventurine": {
+            "name": "Aventurine",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Preservation",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Sigonia-IV",
+            "release_version": "2.1",
+            "release_date": "2024-04-17",
+            "is_released": true
+        },
+        "Gallagher": {
+            "name": "Gallagher",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Male",
+            "world": "Penacony",
+            "release_version": "2.1",
+            "release_date": "2024-03-27",
+            "is_released": true
+        },
+        "Acheron": {
+            "name": "Acheron",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Cosmic",
+            "release_version": "2.1",
+            "release_date": "2024-03-27",
+            "is_released": true
+        },
+        "Sparkle": {
+            "name": "Sparkle",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Cosmic",
+            "release_version": "2.0",
+            "release_date": "2024-02-29",
+            "is_released": true
+        },
+        "Misha": {
+            "name": "Misha",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Male",
+            "world": "Penacony",
+            "release_version": "2.0",
+            "release_date": "2024-02-06",
+            "is_released": true
+        },
+        "Black Swan": {
+            "name": "Black Swan",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Cosmic",
+            "release_version": "2.0",
+            "release_date": "2024-02-06",
+            "is_released": true
+        },
+        "Dr. Ratio": {
+            "name": "Dr. Ratio",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Cosmic",
+            "release_version": "1.6",
+            "release_date": "2024-01-17",
+            "is_released": true
+        },
+        "Xueyi": {
+            "name": "Xueyi",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.6",
+            "release_date": "2023-12-27",
+            "is_released": true
+        },
+        "Ruan Mei": {
+            "name": "Ruan Mei",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Herta Space Station",
+            "release_version": "1.6",
+            "release_date": "2023-12-27",
+            "is_released": true
+        },
+        "Hanya": {
+            "name": "Hanya",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.5",
+            "release_date": "2023-12-06",
+            "is_released": true
+        },
+        "Argenti": {
+            "name": "Argenti",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Male",
+            "world": "Cosmic",
+            "release_version": "1.5",
+            "release_date": "2023-12-06",
+            "is_released": true
+        },
+        "Huohuo": {
+            "name": "Huohuo",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.5",
+            "release_date": "2023-11-15",
+            "is_released": true
+        },
+        "Topaz & Numby": {
+            "name": "Topaz & Numby",
+            "display_name": "Topaz",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": null,
+            "release_version": "1.4",
+            "release_date": "2023-10-27",
+            "is_released": true
+        },
+        "Guinaifen": {
+            "name": "Guinaifen",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.4",
+            "release_date": "2023-10-27",
+            "is_released": true
+        },
+        "Jingliu": {
+            "name": "Jingliu",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.4",
+            "release_date": "2023-10-11",
+            "is_released": true
+        },
+        "Lynx": {
+            "name": "Lynx",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.3",
+            "release_date": "2023-09-20",
+            "is_released": true
+        },
+        "Fu Xuan": {
+            "name": "Fu Xuan",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Preservation",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.3",
+            "release_date": "2023-09-20",
+            "is_released": true
+        },
+        "Dan Heng \u2022 Imbibitor Lunae": {
+            "name": "Dan Heng \u2022 Imbibitor Lunae",
+            "display_name": "Dan Heng IL",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.3",
+            "release_date": "2023-08-30",
+            "is_released": true
+        },
+        "Luka": {
+            "name": "Luka",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Male",
+            "world": "Jarilo-VI",
+            "release_version": "1.2",
+            "release_date": "2023-08-09",
+            "is_released": true
+        },
+        "Kafka": {
+            "name": "Kafka",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Pteruges-V",
+            "release_version": "1.2",
+            "release_date": "2023-08-09",
+            "is_released": true
+        },
+        "Blade": {
+            "name": "Blade",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Male",
+            "world": null,
+            "release_version": "1.2",
+            "release_date": "2023-07-19",
+            "is_released": true
+        },
+        "Yukong": {
+            "name": "Yukong",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.1",
+            "release_date": "2023-06-28",
+            "is_released": true
+        },
+        "Luocha": {
+            "name": "Luocha",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.1",
+            "release_date": "2023-06-28",
+            "is_released": true
+        },
+        "Silver Wolf": {
+            "name": "Silver Wolf",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Punklorde",
+            "release_version": "1.1",
+            "release_date": "2023-06-07",
+            "is_released": true
+        },
+        "Jing Yuan": {
+            "name": "Jing Yuan",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-05-17",
+            "is_released": true
+        },
+        "Yanqing": {
+            "name": "Yanqing",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Male",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Welt": {
+            "name": "Welt",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Imaginary"
+                }
+            ],
+            "gender": "Male",
+            "world": "Astral Express",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Tingyun": {
+            "name": "Tingyun",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Sushang": {
+            "name": "Sushang",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Serval": {
+            "name": "Serval",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Seele": {
+            "name": "Seele",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Sampo": {
+            "name": "Sampo",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Male",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Qingque": {
+            "name": "Qingque",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Quantum"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Pela": {
+            "name": "Pela",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Nihility",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Natasha": {
+            "name": "Natasha",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "March 7th": {
+            "name": "March 7th",
+            "display_name": "March 7th",
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Preservation",
+                    "combat_type": "Ice",
+                    "display_name": "March 7th"
+                },
+                {
+                    "path": "Hunt",
+                    "combat_type": "Imaginary",
+                    "display_name": "March 7th (Hunt)"
+                }
+            ],
+            "gender": "Female",
+            "world": "Astral Express",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Hook": {
+            "name": "Hook",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Himeko": {
+            "name": "Himeko",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Astral Express",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Herta": {
+            "name": "Herta",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Erudition",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Herta Space Station",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Gepard": {
+            "name": "Gepard",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Preservation",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Male",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Dan Heng": {
+            "name": "Dan Heng",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Male",
+            "world": "Astral Express",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Clara": {
+            "name": "Clara",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Physical"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Bronya": {
+            "name": "Bronya",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Jarilo-VI",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Bailu": {
+            "name": "Bailu",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Abundance",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Asta": {
+            "name": "Asta",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Fire"
+                }
+            ],
+            "gender": "Female",
+            "world": "Herta Space Station",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        },
+        "Arlan": {
+            "name": "Arlan",
+            "display_name": null,
+            "rarity": "4",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Lightning"
+                }
+            ],
+            "gender": "Male",
+            "world": "Herta Space Station",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true
+        }
+    },
+    "versions": {
+        "1.0": {
+            "version_number": "1.0",
+            "display_version_number": "v1.0",
+            "version_name": "The Rail Unto the Stars",
+            "release_date": "2023-04-26"
+        },
+        "1.1": {
+            "version_number": "1.1",
+            "display_version_number": "v1.1",
+            "version_name": "Galactic Roaming",
+            "release_date": "2023-06-07"
+        },
+        "1.2": {
+            "version_number": "1.2",
+            "display_version_number": "v1.2",
+            "version_name": "Even Immortality Ends",
+            "release_date": "2023-07-19"
+        },
+        "1.3": {
+            "version_number": "1.3",
+            "display_version_number": "v1.3",
+            "version_name": "Celestial Eyes Above Mortal Ruins",
+            "release_date": "2023-08-30"
+        },
+        "1.4": {
+            "version_number": "1.4",
+            "display_version_number": "v1.4",
+            "version_name": "Jolted Awake From a Winter Dream",
+            "release_date": "2023-10-11"
+        },
+        "1.5": {
+            "version_number": "1.5",
+            "display_version_number": "v1.5",
+            "version_name": "The Crepuscule Zone",
+            "release_date": "2023-11-15"
+        },
+        "1.6": {
+            "version_number": "1.6",
+            "display_version_number": "v1.6",
+            "version_name": "Crown of the Mundane and Divine",
+            "release_date": "2023-12-27"
+        },
+        "2.0": {
+            "version_number": "2.0",
+            "display_version_number": "v2.0",
+            "version_name": "If One Dreams At Midnight",
+            "release_date": "2024-02-06"
+        },
+        "2.1": {
+            "version_number": "2.1",
+            "display_version_number": "v2.1",
+            "version_name": "Into the Yawning Chasm",
+            "release_date": "2024-03-27"
+        },
+        "2.2": {
+            "version_number": "2.2",
+            "display_version_number": "v2.2",
+            "version_name": "Then Wake to Weep",
+            "release_date": "2024-05-08"
+        },
+        "2.3": {
+            "version_number": "2.3",
+            "display_version_number": "v2.3",
+            "version_name": "Farewell, Penacony",
+            "release_date": "2024-06-19"
+        },
+        "2.4": {
+            "version_number": "2.4",
+            "display_version_number": "v2.4",
+            "version_name": "Finest Duel Under the Pristine Blue",
+            "release_date": "2024-07-31"
+        },
+        "2.5": {
+            "version_number": "2.5",
+            "display_version_number": "v2.5",
+            "version_name": "Flying Aureus Shot to Lupine Rue",
+            "release_date": "2024-09-10"
+        },
+        "2.6": {
+            "version_number": "2.6",
+            "display_version_number": "v2.6",
+            "version_name": "Annals of Pinecany's Mappou Age",
+            "release_date": "2024-10-23"
+        },
+        "2.7": {
+            "version_number": "2.7",
+            "display_version_number": "v2.7",
+            "version_name": "A New Venture on the Eighth Dawn",
+            "release_date": "2024-12-04"
+        },
+        "3.0": {
+            "version_number": "3.0",
+            "display_version_number": "v3.0",
+            "version_name": "Paean of Era Nova",
+            "release_date": "2025-01-15"
+        },
+        "3.1": {
+            "version_number": "3.1",
+            "display_version_number": "v3.1",
+            "version_name": "Light Slips the Gate, Shadow Greets the Throne",
+            "release_date": "2025-02-26"
+        },
+        "3.2": {
+            "version_number": "3.2",
+            "display_version_number": "v3.2",
+            "version_name": "Through the Petals in the Land of Repose",
+            "release_date": "2025-04-09"
+        },
+        "3.3": {
+            "version_number": "3.3",
+            "display_version_number": "v3.3",
+            "version_name": "The Fall at Dawn's Rise",
+            "release_date": "2025-05-21"
+        },
+        "3.4": {
+            "version_number": "3.4",
+            "display_version_number": "v3.4",
+            "version_name": "For the Sun is Set to Die",
+            "release_date": "2025-07-02"
+        },
+        "3.5": {
+            "version_number": "3.5",
+            "display_version_number": "v3.5",
+            "version_name": "Before Their Deaths",
+            "release_date": "2025-08-13"
+        },
+        "3.6": {
+            "version_number": "3.6",
+            "display_version_number": "v3.6",
+            "version_name": "Back to Earth in Evernight",
+            "release_date": "2025-09-24"
+        },
+        "3.7": {
+            "version_number": "3.7",
+            "display_version_number": "v3.7",
+            "version_name": "As Tomorrow Became Yesterday",
+            "release_date": "2025-11-05"
+        },
+        "3.8": {
+            "version_number": "3.8",
+            "display_version_number": "v3.8",
+            "version_name": "Memories are the Prelude to Dreams",
+            "release_date": "2025-12-17"
+        },
+        "4.0": {
+            "version_number": "4.0",
+            "display_version_number": "v4.0",
+            "version_name": "No Aha At Full Moon",
+            "release_date": "2026-02-13"
+        },
+        "4.1": {
+            "version_number": "4.1",
+            "display_version_number": "v4.1",
+            "version_name": "Unraveled for Daybreak",
+            "release_date": "2026-03-25"
+        },
+        "4.2": {
+            "version_number": "4.2",
+            "display_version_number": "v4.2",
+            "version_name": "So Laughed the Masses",
+            "release_date": "2026-04-22"
+        },
+        "4.3": {
+            "version_number": "4.3",
+            "display_version_number": "v4.3",
+            "version_name": "The Lethe Below the Living",
+            "release_date": "2026-06-01"
+        },
+        "4.4": {
+            "version_number": "4.4",
+            "display_version_number": "v4.4",
+            "version_name": "In Ravages Does the Whistle Sound",
+            "release_date": "2026-07-15"
+        },
+        "4.5": {
+            "version_number": "4.5",
+            "display_version_number": "v4.5",
+            "version_name": null,
+            "release_date": "2026-08-26"
+        },
+        "4.6": {
+            "version_number": "4.6",
+            "display_version_number": "v4.6",
+            "version_name": null,
+            "release_date": "2026-10-07"
+        },
+        "4.7": {
+            "version_number": "4.7",
+            "display_version_number": "v4.7",
+            "version_name": null,
+            "release_date": "2026-11-18"
+        },
+        "4.8": {
+            "version_number": "4.8",
+            "display_version_number": "v4.8",
+            "version_name": null,
+            "release_date": "2026-12-30"
+        }
+    }
+}

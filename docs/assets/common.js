@@ -1,3 +1,15 @@
+const MONTHS = [
+    'January', 'February', 'March',
+    'April', 'May', 'June',
+    'July', 'August', 'September',
+    'October', 'November', 'December'
+]
+const WEEKDAYS = [
+    'Sunday', 'Monday', 'Tuesday',
+    'Wednesday', 'Thursday',
+    'Friday', 'Saturday'
+]
+
 // Wiki images live at static.wikia.nocookie.net/gensin-impact/images/{h}/{hh}/{filename},
 // where {h}{hh} are the first hex chars of the MD5 of the filename. Computing that here
 // lets us build thumbnail URLs for any item without calling the wiki API.
@@ -45,12 +57,12 @@ const FALLBACK_PHOTO = 'assets/images/Fallback.png'
 
 // Bare wiki image URLs (no /revision/... suffix) are served regardless of referer;
 // the scaled-thumbnail URLs are not, so use the full-size images (5-20 KB each).
-function wikiFileUrl(filename) {
+function wikiFileUrl(filename, wiki = 'gensin-impact') {
     filename = filename.replaceAll(' ', '_')
     const hash = md5Hex(filename)
     const encoded = encodeURIComponent(filename)
         .replaceAll("'", '%27').replaceAll('(', '%28').replaceAll(')', '%29')
-    return `https://static.wikia.nocookie.net/gensin-impact/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
+    return `https://static.wikia.nocookie.net/${wiki}/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
 }
 
 // Wiki region emblem images are named "Emblem {Region}.png".
