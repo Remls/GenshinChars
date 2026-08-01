@@ -1,6 +1,6 @@
 {
-    "version": "991ec8d",
-    "last_updated": "2026-08-01T17:43:50.207152Z",
+    "version": "b5066cc",
+    "last_updated": "2026-08-01T22:03:12.660887Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -714,8 +714,8 @@
             "region": "Snezhnaya",
             "type": "artifacts",
             "rewards": [
-                "a_snezhnaya_1",
-                "a_snezhnaya_2"
+                "a_scarlet_proof",
+                "a_heart_furnace"
             ]
         },
         {
@@ -1958,17 +1958,17 @@
             "effect": "ATK +18%.",
             "effect_4pc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
         },
-        "a_snezhnaya_1": {
-            "name": "???",
-            "type": "artifacts",
-            "effect": "ATK +18%.",
-            "effect_4pc": "When the equipping character triggers Stellar-Conduct or Stellar-Swirl, or directly deals damage from either reaction, they gain 12% ATK and grant nearby party members a 50% DMG Bonus to Stellar-Conduct and Stellar-Swirl for 12s. This effect is unique and does not stack from multiple sets. It can also be triggered while the character is off-field."
-        },
-        "a_snezhnaya_2": {
-            "name": "???",
+        "a_scarlet_proof": {
+            "name": "Scarlet Proof",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "After the equipping character triggers Stellar-Swirl, they gain 16% CRIT Rate and 40% increased Stellar-Swirl DMG for 10s."
+        },
+        "a_heart_furnace": {
+            "name": "Heart of the Furnace",
+            "type": "artifacts",
+            "effect": "ATK +18%.",
+            "effect_4pc": "When the equipping character triggers Stellar-Conduct or Stellar-Swirl, or directly deals damage from either reaction, they gain 12% ATK and grant nearby party members a 50% DMG Bonus to Stellar-Conduct and Stellar-Swirl for 12s. This effect is unique and does not stack from multiple sets. It can also be triggered while the character is off-field."
         },
         "nb_hurricane_seed": {
             "name": "Hurricane Seed",
