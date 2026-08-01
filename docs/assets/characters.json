@@ -1,6 +1,6 @@
 {
-    "version": "bd46cdd",
-    "last_updated": "2026-08-01T17:39:32.850536Z",
+    "version": "991ec8d",
+    "last_updated": "2026-08-01T17:43:50.200719Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -282,7 +282,9 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nicole.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "A member of the Hexenzirkel (codename N)"
+            ]
         },
         "Prune": {
             "name": "Prune",
@@ -390,7 +392,10 @@
             "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/columbina.png",
             "is_released": true,
             "is_outdated": false,
-            "notes": null
+            "notes": [
+                "3rd of the Fatui Harbingers",
+                "Moon Maiden"
+            ]
         },
         "Durin": {
             "name": "Durin",
