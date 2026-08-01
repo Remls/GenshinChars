@@ -1,6 +1,6 @@
 {
-    "version": "cc96f01",
-    "last_updated": "2026-07-31T12:29:07.325666Z",
+    "version": "bd46cdd",
+    "last_updated": "2026-08-01T17:39:32.850536Z",
     "characters": {
         "Dainsleif": {
             "name": "Dainsleif",
@@ -23,42 +23,6 @@
                 "He also has no visible Vision on his body",
                 "Appears in multiple archon quests"
             ]
-        },
-        "Valeriy": {
-            "name": "Valeriy",
-            "display_name": null,
-            "rarity": "4",
-            "element": null,
-            "arkhe": null,
-            "weapon": "Sword",
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/valeriy.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
-        },
-        "Noy": {
-            "name": "Noy",
-            "display_name": null,
-            "rarity": null,
-            "element": "Electro",
-            "arkhe": null,
-            "weapon": null,
-            "region": "Snezhnaya",
-            "gender": "Male",
-            "birthday": null,
-            "release_version": null,
-            "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/noy.png",
-            "is_released": false,
-            "is_outdated": false,
-            "notes": null
         },
         "Pulcinella": {
             "name": "Pulcinella",
@@ -99,6 +63,24 @@
             "notes": [
                 "9th of the Fatui Harbingers"
             ]
+        },
+        "Noy": {
+            "name": "Noy",
+            "display_name": null,
+            "rarity": null,
+            "element": "Dendro",
+            "arkhe": null,
+            "weapon": null,
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "7.5",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/noy.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
         },
         "Danica": {
             "name": "Danica",
@@ -152,6 +134,24 @@
             "release_date": null,
             "photo": "assets/images/Fallback.png",
             "full_photo": "assets/images/full-characters/mitya.png",
+            "is_released": false,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Valeriy": {
+            "name": "Valeriy",
+            "display_name": null,
+            "rarity": "4",
+            "element": "Electro",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": "Snezhnaya",
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "7.2",
+            "release_date": null,
+            "photo": "assets/images/Fallback.png",
+            "full_photo": "assets/images/full-characters/valeriy.png",
             "is_released": false,
             "is_outdated": false,
             "notes": null
