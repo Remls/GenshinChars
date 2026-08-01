@@ -28,16 +28,23 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          if git diff --quiet -I'^ *"(version|last_updated)":' -- docs; then
+          FILES="docs/characters.html
+            docs/index.html
+            docs/domains.html
+            docs/assets/characters.json
+            docs/assets/domains.json
+            docs/hsr/assets/characters.json
+            docs/hsr/assets/domains.json"
+          for f in $FILES; do
+            if git diff --quiet -I'^ *"(version|last_updated)":' -- "$f"; then
+              git checkout -- "$f"
+            else
+              git add "$f"
+            fi
+          done
+          if git diff --cached --quiet; then
             echo "Only version/timestamp changes, skipping commit"
             exit 0
           fi
-          git add docs/characters.html \
-            docs/index.html \
-            docs/domains.html \
-            docs/assets/characters.json \
-            docs/assets/domains.json \
-            docs/hsr/assets/characters.json \
-            docs/hsr/assets/domains.json
           git commit -m "Update data"
           git push
