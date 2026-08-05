@@ -3,6 +3,10 @@ const REGIONS = [
     'Sumeru', 'Fontaine', 'Natlan',
     'Nod-Krai', 'Snezhnaya', 'Khaenri\'ah'
 ]
+// Splashscreen filenames derive from the version name; exceptions go here.
+// null means no file exists (the CDN renders a placeholder for missing files,
+// so they must be skipped, not guessed)
+const SPLASHSCREEN_OVERRIDES = { '1.0': 'Splashscreen Welcome To Teyvat.png' }
 
 document.addEventListener('alpine:init', () => {
     Alpine.data('charSheet', () => ({
@@ -26,6 +30,7 @@ document.addEventListener('alpine:init', () => {
         selectedRegion: null,
         defaultVersion: null,
         urlSyncReady: false,
+        showVersionPicker: false,
 
         // Character details modal
         modalOpen: false,
@@ -340,6 +345,41 @@ document.addEventListener('alpine:init', () => {
             if (version.version_name) v += `: ${version.version_name}`
             if (includeDate && version.release_date) v += ` (${this.formatDate(version.release_date)})`
             return v
+        },
+
+        versionPickerLabel() {
+            if (!this.selectedVersion) return 'All known playable characters'
+            return this.formatVersion(this.selectedVersion, true)
+        },
+
+        versionBannerHtml(version) {
+            if (!version.version_name) return ''
+            let file = `Splashscreen ${version.version_name}.png`
+            if (version.version_number in SPLASHSCREEN_OVERRIDES) {
+                file = SPLASHSCREEN_OVERRIDES[version.version_number]
+                if (!file) return ''
+            }
+            const src = wikiFileUrl(file) + '/revision/latest/scale-to-width-down/720'
+            // The CDN rejects scaled-down URLs when a referer is sent
+            const attrs = `loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"`
+            return `<img class="version-banner-wash" src="${src}" ${attrs}>`
+                + `<img src="${src}" ${attrs}>`
+        },
+
+        toggleVersionPicker() {
+            this.showVersionPicker = !this.showVersionPicker
+            if (!this.showVersionPicker) return
+            this.$nextTick(() => {
+                const popup = this.$refs.versionPopup
+                const selected = popup.querySelector('.version-option.selected')
+                if (selected) popup.scrollTop = selected.offsetTop - 8
+            })
+        },
+
+        selectVersion(versionNumber) {
+            this.selectedVersion = versionNumber
+            this.showVersionPicker = false
+            this.updateCharacterData()
         },
 
         formatDate(date) {

@@ -47,12 +47,28 @@
                         <label for="version-select">Filter by version</label>
                     </td>
                     <td>
-                        <select id="version-select" x-model="selectedVersion" @change="updateCharacterData()">
-                            <template x-for="version in Object.values(versionData)" :key="version.version_number">
-                                <option :value="version.version_number" x-text="formatVersion(version.version_number, true)"></option>
-                            </template>
-                            <option :value="null">All known playable characters</option>
-                        </select>
+                        <button type="button" id="version-select" class="version-picker-toggle" @click="toggleVersionPicker()">
+                            <span x-text="versionPickerLabel()"></span>
+                        </button>
+                        <div class="modal version-modal" x-show="showVersionPicker" x-cloak>
+                            <div class="version-modal-content" x-ref="versionPopup" @click.outside="showVersionPicker = false">
+                                <template x-for="version in Object.values(versionData)" :key="version.version_number">
+                                    <button type="button" class="version-option"
+                                        :class="{ 'selected': selectedVersion === version.version_number }"
+                                        @click="selectVersion(version.version_number)">
+                                        <div class="version-banner" x-html="versionBannerHtml(version)"></div>
+                                        <span class="version-option-number" x-text="version.display_version_number"></span>
+                                        <span class="version-option-name" x-show="version.version_name" x-text="version.version_name"></span>
+                                        <span class="version-option-date" x-text="formatDate(version.release_date)"></span>
+                                    </button>
+                                </template>
+                                <button type="button" class="version-option version-option-all"
+                                    :class="{ 'selected': selectedVersion === null }"
+                                    @click="selectVersion(null)">
+                                    <span>All known playable characters</span>
+                                </button>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 <tr>

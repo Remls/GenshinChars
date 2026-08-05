@@ -10,6 +10,10 @@ const HSR_PATHS = [
 const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
 // The wiki has no path icon for these
 const HSR_MISSING_PATH_ICONS = ['Finality']
+// Splash screen filenames derive from the version name; exceptions go here.
+// null means no file exists (the CDN renders a placeholder for missing files,
+// so they must be skipped, not guessed)
+const HSR_SPLASH_SCREEN_OVERRIDES = {}
 const HSR_COMBAT_TYPES = [
     'Fire', 'Ice', 'Imaginary', 'Lightning', 'Physical', 'Quantum', 'Wind',
 ]
@@ -41,6 +45,7 @@ document.addEventListener('alpine:init', () => {
         selectedWorld: null,
         defaultVersion: null,
         urlSyncReady: false,
+        showVersionPicker: false,
 
         fetchAllData() {
             fetch('./assets/characters.json')
@@ -251,6 +256,42 @@ document.addEventListener('alpine:init', () => {
             if (version.version_name) v += `: ${version.version_name}`
             if (includeDate && version.release_date) v += ` (${this.formatDate(version.release_date)})`
             return v
+        },
+
+        versionPickerLabel() {
+            if (!this.selectedVersion) return 'All known playable characters'
+            return this.formatVersion(this.selectedVersion, true)
+        },
+
+        versionBannerHtml(version) {
+            if (!version.version_name) return ''
+            let file = `Splash Screen ${version.version_name}.png`
+            if (version.version_number in HSR_SPLASH_SCREEN_OVERRIDES) {
+                file = HSR_SPLASH_SCREEN_OVERRIDES[version.version_number]
+                if (!file) return ''
+            }
+            const src = wikiFileUrl(file, HSR_WIKI_IMAGES)
+                + '/revision/latest/scale-to-width-down/720'
+            // The CDN rejects scaled-down URLs when a referer is sent
+            const attrs = `loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"`
+            return `<img class="version-banner-wash" src="${src}" ${attrs}>`
+                + `<img src="${src}" ${attrs}>`
+        },
+
+        toggleVersionPicker() {
+            this.showVersionPicker = !this.showVersionPicker
+            if (!this.showVersionPicker) return
+            this.$nextTick(() => {
+                const popup = this.$refs.versionPopup
+                const selected = popup.querySelector('.version-option.selected')
+                if (selected) popup.scrollTop = selected.offsetTop - 8
+            })
+        },
+
+        selectVersion(versionNumber) {
+            this.selectedVersion = versionNumber
+            this.showVersionPicker = false
+            this.updateCharacterData()
         },
 
         resetCache() {

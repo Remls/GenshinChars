@@ -150,10 +150,20 @@ quotes and tags, collapse whitespace.
   (`static.wikia.nocookie.net/{bucket}/images/{h}/{hh}/{file}` where `h`/`hh`
   are the first MD5 hex chars of the underscored filename; `md5Hex`/
   `wikiFileUrl` in `docs/assets/common.js` compute this).
-- Use bare URLs only. `/revision/...` URLs are referer-protected.
+- Use bare URLs. `/revision/...` URLs are referer-protected: they 404 (or serve
+  the placeholder) when the browser sends a Referer header. Exception: scaled
+  thumbnails (`{bare}/revision/latest/scale-to-width-down/{px}`) may be used
+  with `referrerpolicy="no-referrer"` on the img tag, as the version pickers do.
+- The placeholder 404 is served with `cache-control: public, max-age=3600` and
+  is cached by both the browser and the CDN edge. After fixing a broken image
+  URL scheme, requests can keep returning the cached placeholder for up to an
+  hour; change the URL (e.g. a different thumbnail width) to bust it instead of
+  waiting or blaming the fix.
 - The CDN answers requests for nonexistent files with an HTTP 404 that has a
   valid webp body, so `<img onerror>` never fires and junk renders. Therefore
-  NEVER guess filenames.
+  NEVER guess filenames. Case matters mid-title too: 1.0's splashscreen is
+  `Splashscreen Welcome To Teyvat.png` (capital "To"), not the version's
+  official "Welcome to Teyvat" spelling.
 - A File page existing does not mean the file exists under that name: File
   pages can be redirects. Always resolve to the final title via `redirects=1`
   and use that filename. Real examples: `Item Traveler's Guide.png` is really
@@ -169,8 +179,9 @@ Filename conventions (after redirect resolution):
   `{Boss} Icon.png` with colons dropped plus the `BOSS_ICON_ALIASES` map in
   `docs/assets/domains.js`; region emblems `Emblem {Region}.png` (none for
   Khaenri'ah, override map in common.js); version splashscreens
-  `Splashscreen {Version Name}.png` (THUMBNAIL_IMAGE in
-  `generator/template_replacements.py`, update each patch).
+  `Splashscreen {Version Name}.png` (Genshin) / `Splash Screen {Version Name}.png`
+  (HSR), used by THUMBNAIL_IMAGE in `generator/template_replacements.py`
+  (update each patch) and by the version picker banners on both character pages.
 - HSR: character icons `Character {name} Icon.png`; paths `Path {label}.png`
   (full `The Hunt`; no Finality icon exists, local fallback); combat types
   `Type {name}.png`; items and relic sets `Item {name}.png`; worlds
@@ -233,6 +244,15 @@ New Genshin version: add the version row (or name an existing future row) in
 `data/versions.csv`, extend future projections, update `THUMBNAIL_IMAGE` in
 `generator/template_replacements.py` to the new splashscreen (verify the file
 on the wiki first).
+
+Naming a version (either game) makes the version picker derive and request its
+splashscreen file. Verify the file first (`imageinfo`, exact case). If the name
+differs from the derived one or the wiki has no file yet (the CDN placeholder
+would render instead of a plain text row), add an entry to
+`SPLASHSCREEN_OVERRIDES` (`docs/assets/characters.js`) or
+`HSR_SPLASH_SCREEN_OVERRIDES` (`docs/hsr/assets/characters.js`): the value is
+the real filename, or null for "no file". Genshin 1.0 is the standing example
+(`Splashscreen Welcome To Teyvat.png`, capital "To").
 
 New character (either game): add the CSV row. If released, wiki infobox has
 everything (HSR: `rarity`, `path`, `combatType`, `world`, `release_date`; forms
