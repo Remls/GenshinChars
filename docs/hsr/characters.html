@@ -186,7 +186,8 @@
                                 <div x-text="path === 'Unknown' ? path : pathLabel(path)"></div>
                             </td>
                             <template x-for="combatType in HSR_COMBAT_TYPES" :key="combatType">
-                                <td x-html="cellHtml(path, combatType)"></td>
+                                <td x-html="cellHtml(path, combatType)"
+                                    :class="{ 'ice-elation': path === 'Elation' && combatType === 'Ice' }"></td>
                             </template>
                             <td x-html="cellHtml(path, 'Unknown')"></td>
                             <td class="totals-cells center">

@@ -231,6 +231,11 @@ table.no-border, table.no-border td {
     text-underline-offset: 3px;
     cursor: pointer;
 }
+td.ice-elation {
+    background-image: linear-gradient(#0d1117e6, #0d1117e6), url('images/hsr/Ice-Elation.png');
+    background-size: 100% 100%;
+}
+
 /* Honkai: Star Rail combat types */
 .ct-physical  { color: #c8c8c8; }
 .ct-fire      { color: #f0745c; }
