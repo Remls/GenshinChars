@@ -186,6 +186,18 @@ table {
 .table-40 {
     width: 40%;
 }
+/* Filter controls are fixed-width, so hug them instead of a viewport
+   percentage, keeping the section truly centered at any zoom */
+.filter-table {
+    width: auto;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* Defeat the width="10%" attribute and keep labels glued to their controls */
+.filter-table td:first-child {
+    width: auto;
+    text-align: right;
+}
 
 table, th, td {
     border: 1px solid;
