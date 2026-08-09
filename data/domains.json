@@ -388,8 +388,8 @@
             "rewards": ["a_celestial_gift", "a_deep_shadow"]
         },
         {
-            "name": "???",
-            "location": "???",
+            "name": "Inverted Glacier",
+            "location": "Everfrozen Earth",
             "region": "Snezhnaya",
             "type": "artifacts",
             "rewards": ["a_scarlet_proof", "a_heart_furnace"]
@@ -704,7 +704,7 @@
         },
         {
             "name": "Immortal Construct",
-            "location": "???",
+            "location": "Everfrozen Earth",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": ["nb_unscorched_blossom_branch"]
