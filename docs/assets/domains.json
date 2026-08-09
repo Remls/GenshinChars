@@ -1,6 +1,6 @@
 {
-    "version": "b5066cc",
-    "last_updated": "2026-08-01T22:03:12.660887Z",
+    "version": "f4ee2a7",
+    "last_updated": "2026-08-09T04:11:35.357282Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -709,8 +709,8 @@
             ]
         },
         {
-            "name": "???",
-            "location": "???",
+            "name": "Inverted Glacier",
+            "location": "Everfrozen Earth",
             "region": "Snezhnaya",
             "type": "artifacts",
             "rewards": [
@@ -1117,7 +1117,7 @@
         },
         {
             "name": "Immortal Construct",
-            "location": "???",
+            "location": "Everfrozen Earth",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": [
