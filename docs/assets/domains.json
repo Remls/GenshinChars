@@ -1,6 +1,6 @@
 {
-    "version": "f4ee2a7",
-    "last_updated": "2026-08-09T04:11:35.357282Z",
+    "version": "7a0a1b1",
+    "last_updated": "2026-08-11T16:48:18.538985Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1134,6 +1134,15 @@
             ]
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_snezhnaya_1"
+            ]
+        },
+        {
             "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
@@ -1638,13 +1647,16 @@
             "name": "Fortitude",
             "type": "talent_upgrade_mats",
             "characters": [
-                "Alyosha"
+                "Alyosha",
+                "Vodyanitsa"
             ]
         },
         "t_glory": {
             "name": "Glory",
             "type": "talent_upgrade_mats",
-            "characters": []
+            "characters": [
+                "Vesna"
+            ]
         },
         "a_adventurer": {
             "name": "Adventurer",
@@ -2360,7 +2372,8 @@
             "name": "Unscorched Blossom Branch",
             "type": "normal_bosses",
             "characters": [
-                "Odette"
+                "Odette",
+                "Vodyanitsa"
             ]
         },
         "nb_sky_roamer": {
@@ -2368,6 +2381,13 @@
             "type": "normal_bosses",
             "characters": [
                 "Alyosha"
+            ]
+        },
+        "nb_snezhnaya_1": {
+            "name": "???",
+            "type": "normal_bosses",
+            "characters": [
+                "Vesna"
             ]
         },
         "wb_dvalin_plume": {
@@ -2709,7 +2729,8 @@
             "name": "Madman's Restraint",
             "type": "weekly_bosses",
             "characters": [
-                "Sandrone"
+                "Sandrone",
+                "Vodyanitsa"
             ]
         },
         "wb_doctor_buttplug": {
@@ -2730,7 +2751,9 @@
         "wb_doctor_2_sprout": {
             "name": "Profaned Sprout",
             "type": "weekly_bosses",
-            "characters": []
+            "characters": [
+                "Vesna"
+            ]
         },
         "wb_doctor_2_branch": {
             "name": "Twisted Withered Branch",
@@ -3208,7 +3231,8 @@
             "name": "Frostfairy Flower",
             "region": "Snezhnaya",
             "characters": [
-                "Odette"
+                "Odette",
+                "Vodyanitsa"
             ]
         },
         "s_flockingweed": {
@@ -3217,6 +3241,18 @@
             "characters": [
                 "Alyosha"
             ]
+        },
+        "s_golden_fern": {
+            "name": "Golden Fern",
+            "region": "Snezhnaya",
+            "characters": [
+                "Vesna"
+            ]
+        },
+        "s_glaciafruit": {
+            "name": "Glaciafruit",
+            "region": "Snezhnaya",
+            "characters": []
         }
     }
 }

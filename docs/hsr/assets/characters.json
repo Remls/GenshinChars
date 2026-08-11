@@ -1,6 +1,6 @@
 {
-    "version": "843d56d",
-    "last_updated": "2026-08-10T10:14:30.963270Z",
+    "version": "7a0a1b1",
+    "last_updated": "2026-08-11T16:48:18.545968Z",
     "characters": {
         "Robin • Summeretto": {
             "name": "Robin • Summeretto",
@@ -15,6 +15,22 @@
             "gender": "Female",
             "world": "Penacony",
             "release_version": "4.5",
+            "release_date": null,
+            "is_released": false
+        },
+        "Pearl": {
+            "name": "Pearl",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Ice"
+                }
+            ],
+            "gender": "Female",
+            "world": "Planarcadia",
+            "release_version": "4.6",
             "release_date": null,
             "is_released": false
         },
