@@ -711,7 +711,7 @@
         },
         {
             "name": "Chimeric Winged Lion",
-            "location": "???",
+            "location": "Volkodlak Tundra",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": ["nb_sky_roamer"]
