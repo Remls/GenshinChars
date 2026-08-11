@@ -1,6 +1,6 @@
 {
-    "version": "1d7aab7",
-    "last_updated": "2026-08-11T23:23:58.186656Z",
+    "version": "904889b",
+    "last_updated": "2026-08-11T23:27:17.154868Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -220,7 +220,7 @@
             }
         },
         {
-            "name": "???",
+            "name": "Scars of Cursed Obsession",
             "location": "???",
             "region": "Snezhnaya",
             "type": "weapon_ascension_mats",
@@ -468,7 +468,7 @@
             }
         },
         {
-            "name": "???",
+            "name": "Relics of the Fallen Grace",
             "location": "???",
             "region": "Snezhnaya",
             "type": "talent_upgrade_mats",
