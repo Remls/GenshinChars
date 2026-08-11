@@ -717,6 +717,13 @@
             "rewards": ["nb_sky_roamer"]
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": ["nb_snezhnaya_1"]
+        },
+        {
             "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
@@ -907,10 +914,10 @@
             "Odette"
         ]},
         "t_fortitude": {"name": "Fortitude", "type": "talent_upgrade_mats", "characters": [
-            "Alyosha"
+            "Alyosha", "Vodyanitsa"
         ]},
         "t_glory": {"name": "Glory", "type": "talent_upgrade_mats", "characters": [
-
+            "Vesna"
         ]},
         "a_adventurer": {"name": "Adventurer", "type": "artifacts", "effect": "Max HP increased by 1000.", "effect_4pc": "Opening a chest regenerates 30% Max HP over 5s."},
         "a_sojourner": {"name": "Resolution of Sojourner", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases Charged Attack CRIT Rate by 30%."},
@@ -1102,10 +1109,13 @@
             "Linnea", "Sandrone"
         ]},
         "nb_unscorched_blossom_branch": {"name": "Unscorched Blossom Branch", "type": "normal_bosses", "characters": [
-            "Odette"
+            "Odette", "Vodyanitsa"
         ]},
         "nb_sky_roamer": {"name": "Severed Tail of the Sky-Roamer", "type": "normal_bosses", "characters": [
             "Alyosha"
+        ]},
+        "nb_snezhnaya_1": {"name": "???", "type": "normal_bosses", "characters": [
+            "Vesna"
         ]},
         "wb_dvalin_plume": {"name": "Dvalin's Plume", "type": "weekly_bosses", "characters": [
             "Bennett", "Diluc", "Jean"
@@ -1219,7 +1229,7 @@
             "Columbina", "Prune"
         ]},
         "wb_doctor_belt": {"name": "Madman's Restraint", "type": "weekly_bosses", "characters": [
-            "Sandrone"
+            "Sandrone", "Vodyanitsa"
         ]},
         "wb_doctor_buttplug": {"name": "Elixir of the Heretic", "type": "weekly_bosses", "characters": [
             "Alyosha", "Linnea"
@@ -1228,7 +1238,7 @@
             "Nicole"
         ]},
         "wb_doctor_2_sprout": {"name": "Profaned Sprout", "type": "weekly_bosses", "characters": [
-            
+            "Vesna"
         ]},
         "wb_doctor_2_branch": {"name": "Twisted Withered Branch", "type": "weekly_bosses", "characters": [
             "Odette"
@@ -1410,10 +1420,16 @@
             
         ]},
         "s_frostfairy_flower": {"name": "Frostfairy Flower", "region": "Snezhnaya", "characters": [
-            "Odette"
+            "Odette", "Vodyanitsa"
         ]},
         "s_flockingweed": {"name": "Flockingweed", "region": "Snezhnaya", "characters": [
             "Alyosha"
+        ]},
+        "s_golden_fern": {"name": "Golden Fern", "region": "Snezhnaya", "characters": [
+            "Vesna"
+        ]},
+        "s_glaciafruit": {"name": "Glaciafruit", "region": "Snezhnaya", "characters": [
+
         ]}
     }
 }

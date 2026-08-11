@@ -96,6 +96,10 @@ never remove or rename the original structures.
   (+ `effect_4pc` for artifact sets, official wiki wording).
 - `specialties{}`: `s_` keys with `name`, `region`, `characters`. Unused
   specialties are kept. Ten unused artifact reward entries also exist by choice.
+- Not-yet-revealed content uses `"???"` placeholders: domain `name`/`location`
+  and reward/specialty `name` may all be `"???"` (the site skips image lookups
+  for names starting with `???`). Give such rewards a descriptive key
+  (`nb_snezhnaya_1`, `a_snezhnaya_1`) and rename the `name` once official.
 - Talent material family names use short forms; `WIKI_ALT_NAMES` in
   `docs/assets/domains.js` maps them to wiki titles (`Freedom` to
   `Teachings of Freedom`).
@@ -171,6 +175,12 @@ quotes and tags, collapse whitespace.
   `Character Trailblazer (Destruction) Icon.png`, `Coral Defenders Icon.png`
   is really `Bathysmal Vishap Herd Icon.png`, and enemy images drop colons and
   quotes (`Enemy Borisin Warhead: Hoolay.png` is `Enemy Borisin Warhead Hoolay.png`).
+- The converse also fails: `imageinfo` can return a URL whose file then 404s
+  when fetched (`Item Frostfairy Flower.png` had a File page and an infobox
+  reference but no uploaded file). A returned URL is not proof; fetch it.
+- A just-revealed character has no wiki images at all for the first days
+  (reveal-day Pearl had only her Introduction card); character pages render the
+  fake-404 placeholder until editors upload the icon, then heal on their own.
 
 Filename conventions (after redirect resolution):
 
@@ -237,6 +247,24 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
 - The page mixes in EXP items, Credit, boss mats, and trace tiers; the
   farmable-relevant ones are the ascension stone, the trace family, and the
   weekly material.
+
+## yatta.moe / Project Amber (leaked data)
+
+Second leak source, useful when Honey Hunter lags: `https://gi.yatta.moe/en`
+(Genshin) and `https://sr.yatta.moe/en` (HSR). Per-version changelog pages
+(`/en/changelog?v=70` for 7.0) list new items with names and icons before the
+wiki has pages for them; good for naming items known only from leak images.
+
+## Reading leak material infographics
+
+Farming-total cards (Telegram leakers) carry fixed standard totals: 7.1M mora,
+419 Hero's Wit, 3 crowns, 1/9/9/6 gems, 9/63/114 talent mats, 46 boss drops,
+168 specialties, 18 weekly drops, 36/96/129 common drops. The only information
+is WHICH items appear. Identify them by visually matching tile icons against
+wiki `Item {name}.png` files (crop and zoom the card if needed). Talent family
+emblems persist across tiers, so match the emblem, not the book or scroll
+style; Snezhnaya families are scrolls (Charity cotton bloom, Fortitude
+four-petal star, Glory torch).
 
 ## Common workflows
 
