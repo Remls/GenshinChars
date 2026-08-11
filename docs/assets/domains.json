@@ -1,6 +1,6 @@
 {
-    "version": "7a0a1b1",
-    "last_updated": "2026-08-11T16:48:18.538985Z",
+    "version": "1d7aab7",
+    "last_updated": "2026-08-11T23:23:58.186656Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1126,7 +1126,7 @@
         },
         {
             "name": "Chimeric Winged Lion",
-            "location": "???",
+            "location": "Volkodlak Tundra",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": [
