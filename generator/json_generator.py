@@ -4,6 +4,10 @@ from datetime import datetime
 import csv, json
 
 
+def release_sort_key(release_date, version_release_date, name):
+    return (release_date or version_release_date or "9999-12-31", name)
+
+
 def empty_strings_to_null(data):
     for k in data:
         if isinstance(data[k], Version):
@@ -23,7 +27,11 @@ def generate_characters_file():
         for row in reader:
             char = Character(row)
             character_version_data.append(char)
-        character_version_data.sort(reverse=True)
+        character_version_data.sort(key=lambda c: release_sort_key(
+            c.release_date,
+            c.get_version_data().release_date if c.get_version_data() else None,
+            c.input_row["name"],
+        ), reverse=True)
 
     # Format data for JSON
     chars = {}
@@ -92,8 +100,13 @@ def generate_hsr_characters_file():
                 "release_date": release_date,
                 "is_released": bool(release_date) and release_date <= datetime.now().strftime("%Y-%m-%d"),
             })
-    # Newest releases first; characters with no known date before those
-    characters.sort(key=lambda c: (c["release_date"] or "9999-12-31", c["name"]), reverse=True)
+    # Newest releases first; unreleased characters use their version's
+    # projected date, and characters with no version at all come before those
+    characters.sort(key=lambda c: release_sort_key(
+        c["release_date"],
+        (versions.get(c["release_version"]) or {}).get("release_date"),
+        c["name"],
+    ), reverse=True)
 
     data = {
         "version": get_version(),

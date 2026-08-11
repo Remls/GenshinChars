@@ -190,30 +190,3 @@ class Character:
             prRed(" X")
             return []
 
-    def __eq__(self, other) -> bool:
-        return (self.release_version == other.release_version and
-            self.release_date == other.release_date)
-    
-    def __lt__(self, other) -> bool:
-        if self.release_version:
-            if other.release_version:
-                if self.release_date:
-                    if other.release_date:
-                        return self.release_date < other.release_date
-                    else:
-                        # other is bigger because it is None
-                        return True
-                else:
-                    if other.release_date:
-                        # self is bigger because it is None
-                        return False
-                    else:
-                        # they are both None, so compare versions now
-                        return self.release_version < other.release_version
-            else:
-                # other is bigger because it is None
-                return True
-        else:
-            # self is bigger because it is None, or
-            # they are both None and therefore equal
-            return False
