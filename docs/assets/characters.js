@@ -246,6 +246,7 @@ document.addEventListener('alpine:init', () => {
 
         resetCache() {
             localStorage.clear()
+            bumpImageCacheToken()
             location.reload()
         },
 
@@ -359,7 +360,7 @@ document.addEventListener('alpine:init', () => {
                 file = SPLASHSCREEN_OVERRIDES[version.version_number]
                 if (!file) return ''
             }
-            const src = wikiFileUrl(file) + '/revision/latest/scale-to-width-down/720'
+            const src = wikiFileUrl(file, 'gensin-impact', 720)
             // The CDN rejects scaled-down URLs when a referer is sent
             const attrs = `loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"`
             return `<img class="version-banner-wash" src="${src}" ${attrs}>`

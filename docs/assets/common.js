@@ -79,14 +79,30 @@ function foldedText(s) {
     return { text: text.join(''), map: indexes }
 }
 
+// The CDN can pin a placeholder 404 for a file that was uploaded later, and it does
+// not expire on its own (Item Frostfairy Flower.png served a 21-day-old placeholder
+// under max-age=3600). A query string is a separate cache key at the edge, so bumping
+// this token refetches every image from origin. Absent until the first reset, and
+// stable after it, so normal caching still applies between resets.
+const IMAGE_CACHE_TOKEN_KEY = 'imageCacheToken'
+
+function bumpImageCacheToken() {
+    const next = Number(localStorage.getItem(IMAGE_CACHE_TOKEN_KEY) || 0) + 1
+    localStorage.setItem(IMAGE_CACHE_TOKEN_KEY, String(next))
+}
+
 // Bare wiki image URLs (no /revision/... suffix) are served regardless of referer;
-// the scaled-thumbnail URLs are not, so use the full-size images (5-20 KB each).
-function wikiFileUrl(filename, wiki = 'gensin-impact') {
+// the scaled-thumbnail URLs are not, so thumbWidth callers need referrerpolicy="no-referrer".
+function wikiFileUrl(filename, wiki = 'gensin-impact', thumbWidth = null) {
     filename = filename.replaceAll(' ', '_')
     const hash = md5Hex(filename)
     const encoded = encodeURIComponent(filename)
         .replaceAll("'", '%27').replaceAll('(', '%28').replaceAll(')', '%29')
-    return `https://static.wikia.nocookie.net/${wiki}/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
+    let url = `https://static.wikia.nocookie.net/${wiki}/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
+    if (thumbWidth) url += `/revision/latest/scale-to-width-down/${thumbWidth}`
+    const token = localStorage.getItem(IMAGE_CACHE_TOKEN_KEY)
+    if (token) url += `?cb=${token}`
+    return url
 }
 
 // Wiki region emblem images are named "Emblem {Region}.png".
