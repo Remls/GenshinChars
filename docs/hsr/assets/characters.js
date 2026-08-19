@@ -13,7 +13,9 @@ const HSR_MISSING_PATH_ICONS = ['Finality']
 // Splash screen filenames derive from the version name; exceptions go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
-const HSR_SPLASH_SCREEN_OVERRIDES = {}
+const HSR_SPLASH_SCREEN_OVERRIDES = {
+    '4.5': null,
+}
 const HSR_COMBAT_TYPES = [
     'Fire', 'Ice', 'Imaginary', 'Lightning', 'Physical', 'Quantum', 'Wind',
 ]
