@@ -141,7 +141,7 @@
                 <tbody>
                     <template x-for="(specialty, idx) in filteredSpecialties()" :key="idx">
                         <tr>
-                            <td x-html="`${typeIconHtml(selectedType)} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
+                            <td x-html="`${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
                             <td x-html="`${regionIconHtml(specialty.region)} ${highlight(specialty.region)}`"></td>
                             <td x-html="specialtyCharactersHtml(specialty)"></td>
                         </tr>
@@ -252,7 +252,7 @@
                         <tbody>
                             <template x-for="(specialty, idx) in searchedSpecialties()" :key="idx">
                                 <tr>
-                                    <td x-html="`${DOMAIN_TYPES.regional_specialties.icon} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
+                                    <td x-html="`${typeIconHtml('regional_specialties')} ${itemThumbHtml(specialty.name)} ${wikiLinkHtml(specialty.name)}`"></td>
                                     <td x-html="`${regionIconHtml(specialty.region)} ${highlight(specialty.region)}`"></td>
                                     <td x-html="specialtyCharactersHtml(specialty)"></td>
                                 </tr>
