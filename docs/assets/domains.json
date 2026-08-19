@@ -1,6 +1,6 @@
 {
-    "version": "904889b",
-    "last_updated": "2026-08-11T23:27:17.154868Z",
+    "version": "80e7d60",
+    "last_updated": "2026-08-19T13:59:23.776571Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -221,7 +221,7 @@
         },
         {
             "name": "Scars of Cursed Obsession",
-            "location": "???",
+            "location": "Everfrozen Earth",
             "region": "Snezhnaya",
             "type": "weapon_ascension_mats",
             "rewards": {
@@ -469,7 +469,7 @@
         },
         {
             "name": "Relics of the Fallen Grace",
-            "location": "???",
+            "location": "Fellfrost Peak",
             "region": "Snezhnaya",
             "type": "talent_upgrade_mats",
             "rewards": {
@@ -1974,13 +1974,13 @@
             "name": "Scarlet Proof",
             "type": "artifacts",
             "effect": "ATK +18%.",
-            "effect_4pc": "After the equipping character triggers Stellar-Swirl, they gain 16% CRIT Rate and 40% increased Stellar-Swirl DMG for 10s."
+            "effect_4pc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG by 40%, for 10s after they trigger a Stellar Swirl reaction."
         },
         "a_heart_furnace": {
             "name": "Heart of the Furnace",
             "type": "artifacts",
             "effect": "ATK +18%.",
-            "effect_4pc": "When the equipping character triggers Stellar-Conduct or Stellar-Swirl, or directly deals damage from either reaction, they gain 12% ATK and grant nearby party members a 50% DMG Bonus to Stellar-Conduct and Stellar-Swirl for 12s. This effect is unique and does not stack from multiple sets. It can also be triggered while the character is off-field."
+            "effect_4pc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
         },
         "nb_hurricane_seed": {
             "name": "Hurricane Seed",
@@ -3248,11 +3248,6 @@
             "characters": [
                 "Vesna"
             ]
-        },
-        "s_glaciafruit": {
-            "name": "Glaciafruit",
-            "region": "Snezhnaya",
-            "characters": []
         }
     }
 }
