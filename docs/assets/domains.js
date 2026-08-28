@@ -467,8 +467,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         resetCache() {
-            localStorage.clear()
-            bumpImageCacheToken()
+            resetImageCache()
             location.reload()
         },
 

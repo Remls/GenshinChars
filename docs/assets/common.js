@@ -83,11 +83,12 @@ function foldedText(s) {
 // not expire on its own (Item Frostfairy Flower.png served a 21-day-old placeholder
 // under max-age=3600). A query string is a separate cache key at the edge, so bumping
 // this token refetches every image from origin. Absent until the first reset, and
-// stable after it, so normal caching still applies between resets.
+// stable between resets, so normal caching still applies.
 const IMAGE_CACHE_TOKEN_KEY = 'imageCacheToken'
 
-function bumpImageCacheToken() {
+function resetImageCache() {
     const next = Number(localStorage.getItem(IMAGE_CACHE_TOKEN_KEY) || 0) + 1
+    localStorage.clear()
     localStorage.setItem(IMAGE_CACHE_TOKEN_KEY, String(next))
 }
 
