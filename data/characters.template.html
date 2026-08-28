@@ -109,11 +109,11 @@
                                 @click="selectedGender = null; updateCharacterData()">
                                 <span class="icon-button-label">All</span>
                             </button>
-                            <template x-for="gender in ['Female', 'Male']" :key="gender">
+                            <template x-for="[gender, glyph] in Object.entries(GENDERS)" :key="gender">
                                 <button type="button" class="icon-button"
                                     :class="{ 'selected': selectedGender === gender }" :title="gender"
                                     @click="selectedGender = gender; updateCharacterData()">
-                                    <span x-text="gender === 'Female' ? '♀' : '♂'"></span>
+                                    <span x-text="glyph"></span>
                                     <span class="icon-button-label" x-show="selectedGender === gender" x-text="gender"></span>
                                 </button>
                             </template>

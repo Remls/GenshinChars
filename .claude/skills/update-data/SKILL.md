@@ -85,7 +85,10 @@ a version only once it is official.
   character with them once none are left.
 - Path is stored as `Hunt`, not `The Hunt` (display and wiki filenames map it
   back via `HSR_PATH_LABELS` in `docs/hsr/assets/domains.js` and characters.js).
-- Gender is hand-maintained. The HSR wiki records no genders anywhere.
+- Gender is hand-maintained. The HSR wiki records no genders anywhere. Values
+  are `Male`, `Female`, `Either` for characters whose gender the player picks,
+  or blank. The filter buttons and their glyphs come from `GENDERS` in
+  `docs/assets/common.js`, shared by both games.
 - The Trailblazer is excluded, like the Traveler on the Genshin side.
 
 ### domains.json (Genshin)

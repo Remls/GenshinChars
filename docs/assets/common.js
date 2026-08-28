@@ -79,6 +79,10 @@ function foldedText(s) {
     return { text: text.join(''), map: indexes }
 }
 
+// Gender values and the glyphs the filter buttons show. "Either" is for
+// characters whose gender the player picks, like the Traveler and the Trailblazer
+const GENDERS = { Female: '♀', Male: '♂', Either: '⚥' }
+
 // The CDN can pin a placeholder 404 for a file that was uploaded later, and it does
 // not expire on its own (Item Frostfairy Flower.png served a 21-day-old placeholder
 // under max-age=3600). A query string is a separate cache key at the edge, so bumping
