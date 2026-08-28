@@ -717,11 +717,11 @@
             "rewards": ["nb_sky_roamer"]
         },
         {
-            "name": "???",
+            "name": "Guardian Blade of Drifting Snow",
             "location": "???",
             "region": "Snezhnaya",
             "type": "normal_bosses",
-            "rewards": ["nb_snezhnaya_1"]
+            "rewards": ["nb_vagabonds_cracked_armor"]
         },
         {
             "name": "Confront Stormterror (Stormterror Dvalin)",
@@ -1114,7 +1114,7 @@
         "nb_sky_roamer": {"name": "Severed Tail of the Sky-Roamer", "type": "normal_bosses", "characters": [
             "Alyosha"
         ]},
-        "nb_snezhnaya_1": {"name": "???", "type": "normal_bosses", "characters": [
+        "nb_vagabonds_cracked_armor": {"name": "Vagabond's Cracked Armor", "type": "normal_bosses", "characters": [
             "Vesna"
         ]},
         "wb_dvalin_plume": {"name": "Dvalin's Plume", "type": "weekly_bosses", "characters": [
