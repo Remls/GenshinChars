@@ -52,6 +52,9 @@ then reload, or use the "Reset picture cache" footer link (clears localStorage).
   redirect to it. Prefer the canonical page name (see the Columbina incident
   below). `domains.json` character lists must use these exact names.
 - `display_name` is what the UI shows; blank when identical to `name`.
+- `arkhe` is `Pneuma`, `Ousia`, `Pneumousia`, or blank for the characters that
+  have none, which is everyone outside Fontaine. It is a per-form column, since
+  the wiki gives an arkhe to individual Traveler elements, not to the Traveler.
 - `release_date`: `R` means "same day as the version's release date",
   blank means unknown.
 - Leaked characters may leave any field blank; the UI buckets blanks under

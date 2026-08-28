@@ -70,22 +70,14 @@ with open('data/versions.csv', newline='') as f:
 class Character:
     # A ";"-separated column defines the form count; shorter columns fall back to
     # their first value, so a single weapon or release covers every form
-    FORM_COLUMNS = ['element', 'weapon', 'display_name', 'release_version', 'release_date']
+    FORM_COLUMNS = ['element', 'weapon', 'arkhe', 'display_name', 'release_version', 'release_date']
 
     def __init__(self, row: dict):
         self.input_row = row
         self.forms = self.build_forms(row)
         self.release_version = self.forms[0]['release_version']
-
-        if self.input_row['arkhe']:
-            if self.input_row['arkhe'] == 'N/A':
-                self.arkhe = None
-            else:
-                self.arkhe = self.input_row['arkhe']
-        else:
-            self.arkhe = 'Unknown'
-
         self.release_date = self.forms[0]['release_date']
+        self.arkhe = self.forms[0]['arkhe']
         # A split display_name names the forms, not the character
         raw_display_name = row['display_name'] or ''
         self.display_name = None if ';' in raw_display_name else (raw_display_name or None)
@@ -120,19 +112,6 @@ class Character:
             return version_data[self.release_version]
         return None
 
-    def get_formatted_char_name(self) -> str:
-        char_name = self.input_row['name']
-        display_name = self.input_row['display_name'] or char_name
-        element = self.input_row['element'].lower() if self.input_row['element'] else "unknown"
-        return f"""<div @click="showCharSheet('{char_name}')" class="character-links">
-                {self.get_character_image()} <span class="gi-font el-{element} clickable">{display_name}</span>
-                {'<sup>†</sup>' if self.is_outdated() else ''}
-                {'<sup>Pn</sup>' if self.arkhe == 'Pneuma' else ''}
-                {'<sup>Ou</sup>' if self.arkhe == 'Ousia' else ''}
-                {'<sup>PnOu</sup>' if self.arkhe == 'Pneumousia' else ''}
-                {'<sup>??</sup>' if self.arkhe == 'Unknown' else ''}
-            </div>"""
-
     def get_char_slug(self) -> str:
         return self.input_row['name'].replace(" ", "_").lower()
 
@@ -151,9 +130,6 @@ class Character:
         if outdated_characters:
             return self.get_char_slug() in outdated_characters
         return False
-
-    def get_character_image(self) -> str:
-        return f"<img width=\"20\" height=\"20\" src=\"{self.get_character_image_link()}\">"
 
     def get_character_image_link(self) -> str:
         char_name = self.get_char_slug()

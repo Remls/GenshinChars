@@ -56,10 +56,9 @@ def generate_characters_page():
                 x-text="form.display_name || char.display_name || char.name">
             </span>
             <template x-if="char.is_outdated"><sup>†</sup></template>
-            <template x-if="char.arkhe === 'Pneuma'"><sup>Pn</sup></template>
-            <template x-if="char.arkhe === 'Ousia'"><sup>Ou</sup></template>
-            <template x-if="char.arkhe === 'Pneumousia'"><sup>PnOu</sup></template>
-            <template x-if="char.arkhe === 'Unknown'"><sup>??</sup></template>
+            <template x-if="form.arkhe === 'Pneuma'"><sup>Pn</sup></template>
+            <template x-if="form.arkhe === 'Ousia'"><sup>Ou</sup></template>
+            <template x-if="form.arkhe === 'Pneumousia'"><sup>PnOu</sup></template>
         </div>
     </template>"""
     output = re.sub(search, replace, output)
