@@ -108,9 +108,16 @@ document.addEventListener('alpine:init', () => {
             if (this.selectedWorld === 'null') this.selectedWorld = null
             let characterData = Object.values(this.allData['characters'] || {})
             if (this.selectedVersion) {
-                characterData = characterData.filter(
-                    c => this.versionAIsBeforeOrEqualToVersionB(c.release_version, this.selectedVersion)
-                )
+                // Forms release separately, so a character keeps only the forms that
+                // existed by the selected version, and drops out once none are left
+                characterData = characterData
+                    .map(c => ({
+                        ...c,
+                        forms: c.forms.filter(f => this.versionAIsBeforeOrEqualToVersionB(
+                            f.release_version, this.selectedVersion
+                        )),
+                    }))
+                    .filter(c => c.forms.length > 0)
             }
             if (this.selectedRarity) {
                 if (this.selectedRarity === 'Unknown') {

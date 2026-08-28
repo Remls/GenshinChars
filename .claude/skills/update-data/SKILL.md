@@ -73,7 +73,13 @@ a version only once it is official.
 
 - Multi-form characters (March 7th) put `; `-separated values in `path`,
   `combat_type`, and optionally `display_name` (mapped per form:
-  `March 7th; March 7th (Hunt)`).
+  `March 7th; March 7th (Hunt)`), `release_version` and `release_date`
+  (`1.0; 2.4` and `R; R`, each form resolving `R` against its own version).
+  Forms are zipped by position, and a shorter list falls back to its first
+  value. The character's own `release_version`/`release_date` are the first
+  form's, so sorting and released/unreleased state follow the debut. The
+  version filter drops forms released after the selected version, and the
+  character with them once none are left.
 - Path is stored as `Hunt`, not `The Hunt` (display and wiki filenames map it
   back via `HSR_PATH_LABELS` in `docs/hsr/assets/domains.js` and characters.js).
 - Gender is hand-maintained. The HSR wiki records no genders anywhere.

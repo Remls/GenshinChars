@@ -86,9 +86,20 @@ def generate_hsr_characters_file():
                 for i, form in enumerate(forms):
                     if i < len(display_parts) and display_parts[i]:
                         form["display_name"] = display_parts[i]
-            release_date = row["release_date"] or None
+            # A single release covers every form; ";"-separated ones map to forms
+            release_versions = [v.strip() for v in row["release_version"].split(";")]
+            release_dates = [d.strip() for d in row["release_date"].split(";")]
+            for i, form in enumerate(forms):
+                form_version = release_versions[i if i < len(release_versions) else 0]
+                form_date = release_dates[i if i < len(release_dates) else 0]
+                if form_date == "R":
+                    form_date = versions[form_version]["release_date"]
+                form["release_version"] = form_version or None
+                form["release_date"] = form_date or None
+            release_version = release_versions[0]
+            release_date = release_dates[0] or None
             if release_date == "R":
-                release_date = versions[row["release_version"]]["release_date"]
+                release_date = versions[release_version]["release_date"]
             characters.append({
                 "name": row["name"],
                 "display_name": display_name,
@@ -96,7 +107,7 @@ def generate_hsr_characters_file():
                 "forms": forms,
                 "gender": row["gender"] or None,
                 "world": row["world"] or None,
-                "release_version": row["release_version"] or None,
+                "release_version": release_version or None,
                 "release_date": release_date,
                 "is_released": bool(release_date) and release_date <= datetime.now().strftime("%Y-%m-%d"),
             })
