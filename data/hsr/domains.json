@@ -861,5 +861,6 @@
         "po_talia_kingdom_of_banditry": {"name": "Talia: Kingdom of Banditry", "type": "planar_ornament", "effect": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%.", "image": "Item Talia Kingdom of Banditry.png"},
         "po_tengoku_livestream": {"name": "Tengoku Livestream", "type": "planar_ornament", "effect": "Increases the wearer's CRIT DMG by 16%, If 3 or more Skill Points are consumed in the same turn, additionally increases the wearer's CRIT DMG by 32% for 3 turns."},
         "po_the_wondrous_bananamusement_park": {"name": "The Wondrous BananAmusement Park", "type": "planar_ornament", "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."}
-    }
+    },
+    "other_materials": {}
 }

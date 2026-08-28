@@ -43,6 +43,16 @@ const HSR_DOMAIN_TYPES = {
         page_prefix: 'Echo of War',
         description: 'Provides trace level-up materials (Lv9+ and bonus abilities)',
     },
+    other_materials: {
+        short: 'o',
+        icon: 'Icon Other Materials.png',
+        light_glyph: true,
+        string: 'Other materials',
+        title: 'Other materials',
+        description: 'Other miscellaneous ascension materials that are not farmable',
+        source: 'other_materials',
+        no_worlds: true,
+    },
 }
 const HSR_DOMAIN_WORLDS = [
     'All', 'Herta Space Station', 'Jarilo-VI', 'The Xianzhou Luofu',
@@ -158,12 +168,34 @@ document.addEventListener('alpine:init', () => {
             return HSR_DOMAIN_TYPES[this.selectedType]
         },
 
+        // Which top-level key of the data the selected type renders from
+        typeSource() {
+            return this.typeDetails().source || 'domains'
+        },
+
+        typeHasWorlds() {
+            return !this.typeDetails().no_worlds
+        },
+
         filteredDomains() {
             return (this.allData.domains || []).filter(domain => {
                 if (domain.type !== this.selectedType) return false
                 if (this.selectedWorld !== 'All' && domain.region !== this.selectedWorld) return false
                 return true
             })
+        },
+
+        filteredOtherMaterials() {
+            return Object.values(this.allData.other_materials || {})
+        },
+
+        materialCharactersHtml(material) {
+            if (!material.characters || material.characters.length === 0) {
+                return '<span class="text-unknown">Not used by any character yet</span>'
+            }
+            return material.characters
+                .map(c => `<div class="reward-char">${this.characterChipHtml(c)}</div>`)
+                .join('')
         },
 
         escapeHtml(s) {
@@ -270,7 +302,9 @@ document.addEventListener('alpine:init', () => {
         },
 
         typeIconHtml(type) {
-            return this.thumbHtml(HSR_DOMAIN_TYPES[type].icon)
+            const details = HSR_DOMAIN_TYPES[type]
+            const cssClass = details.light_glyph ? 'item-thumb light-glyph' : 'item-thumb'
+            return this.thumbHtml(details.icon, cssClass)
         },
 
         worldIconHtml(world) {
@@ -403,6 +437,14 @@ document.addEventListener('alpine:init', () => {
                 || this.matchesQuery(domain.location)
                 || this.matchesQuery(domain.region)
                 || (domain.boss || []).some(b => this.matchesQuery(b))
+            )
+        },
+
+        searchedOtherMaterials() {
+            if (!this.searching()) return []
+            return Object.values(this.allData.other_materials || {}).filter(material =>
+                this.matchesQuery(material.name)
+                || (material.characters || []).some(c => this.characterMatchesQuery(c))
             )
         },
 

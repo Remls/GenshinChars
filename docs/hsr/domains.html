@@ -73,7 +73,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr x-show="!searching()">
+                <tr x-show="typeHasWorlds() && !searching()">
                     <td>
                         <label>Filter by world</label>
                     </td>
@@ -102,7 +102,28 @@
         <div class="center filter-hint">
             <span x-text="typeDetails().description"></span>
         </div>
-        <div class="table-wrapper">
+        <div class="table-wrapper" x-show="typeSource() === 'other_materials'">
+            <table class="domain-table">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Used by</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="(material, idx) in filteredOtherMaterials()" :key="idx">
+                        <tr>
+                            <td x-html="`${itemThumbHtml(material)} ${wikiLinkHtml(material.name)}`"></td>
+                            <td x-html="materialCharactersHtml(material)"></td>
+                        </tr>
+                    </template>
+                    <tr x-show="filteredOtherMaterials().length === 0">
+                        <td class="center" colspan="2">No matching data yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-wrapper" x-show="typeSource() === 'domains'">
             <table class="domain-table">
                 <thead>
                     <tr>
@@ -185,8 +206,33 @@
                 </div>
             </div>
         </template>
+        <template x-if="searchedOtherMaterials().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in other materials (<span x-text="searchedOtherMaterials().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table class="domain-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Used by</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(material, idx) in searchedOtherMaterials()" :key="idx">
+                                <tr>
+                                    <td x-html="`${typeIconHtml('other_materials')} ${itemThumbHtml(material)} ${wikiLinkHtml(material.name)}`"></td>
+                                    <td x-html="materialCharactersHtml(material)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
         <div class="results-caption center"
-            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0">
+            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0 && searchedOtherMaterials().length === 0">
             No results found for your query. Make sure there are no misspellings, and try again.
         </div>
     </section>

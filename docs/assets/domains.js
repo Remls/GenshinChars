@@ -52,7 +52,18 @@ const DOMAIN_TYPES = {
         title: 'Regional specialties',
         description: 'Provides character ascension materials',
         changing_rewards: false,
-        overworld: true,
+        source: 'specialties',
+    },
+    other_materials: {
+        button_label: 'Other mats',
+        icon: 'Icon Inventory Precious Items.png',
+        short: 'o',
+        string: 'Other materials',
+        title: 'Other materials',
+        description: 'Other miscellaneous ascension materials that are not farmable',
+        changing_rewards: false,
+        source: 'other_materials',
+        no_regions: true,
     },
 }
 const DOMAIN_REGIONS = [
@@ -115,7 +126,7 @@ document.addEventListener('alpine:init', () => {
         DOMAIN_DAYS,
 
         // Data
-        allData: { domains: [], rewards: {}, specialties: {} },
+        allData: { domains: [], rewards: {}, specialties: {}, other_materials: {} },
         characterLookup: {},
         rewardSources: {},
         itemImages: {},
@@ -479,8 +490,13 @@ document.addEventListener('alpine:init', () => {
             return this.typeDetails().changing_rewards
         },
 
-        typeIsOverworld() {
-            return !!this.typeDetails().overworld
+        // Which top-level key of the data the selected type renders from
+        typeSource() {
+            return this.typeDetails().source || 'domains'
+        },
+
+        typeHasRegions() {
+            return !this.typeDetails().no_regions
         },
 
         filteredDomains() {
@@ -508,6 +524,10 @@ document.addEventListener('alpine:init', () => {
                 return '<span class="text-unknown">Not used by any character yet</span>'
             }
             return specialty.characters.map(c => `<div>${this.characterChipHtml(c)}</div>`).join('')
+        },
+
+        filteredOtherMaterials() {
+            return Object.values(this.allData.other_materials || {})
         },
 
         allRewardKeysFor(domain) {
@@ -727,6 +747,14 @@ document.addEventListener('alpine:init', () => {
                 this.matchesQuery(specialty.name)
                 || this.matchesQuery(specialty.region)
                 || specialty.characters.some(c => this.characterMatchesQuery(c))
+            )
+        },
+
+        searchedOtherMaterials() {
+            if (!this.searching()) return []
+            return Object.values(this.allData.other_materials || {}).filter(material =>
+                this.matchesQuery(material.name)
+                || material.characters.some(c => this.characterMatchesQuery(c))
             )
         },
 

@@ -427,8 +427,9 @@ sup {
     color: var(--bg-color);
     cursor: default;
 }
-/* Emblems are light-colored; invert them on the inverted selected background */
-.icon-button.selected .region-icon {
+/* Emblems and flat light glyphs vanish on the inverted selected background */
+.icon-button.selected .region-icon,
+.icon-button.selected .light-glyph {
     filter: invert(1);
 }
 /* Genshin menu icons are dark glyphs; invert them for the dark theme instead */
