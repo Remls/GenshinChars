@@ -66,7 +66,7 @@ def generate_characters_page():
 
     # 4. Counter template
     search = r"\[COUNTER (.+)\]"
-    replace = r"""<template x-for="[key, value] in Object.entries(groupCharacterData(\1))" :key="key">
+    replace = r"""<template x-for="[key, value] in Object.entries(countBy(\1))" :key="key">
         <div>
             <b x-text="key"></b> - <span x-text="value"></span>
         </div>

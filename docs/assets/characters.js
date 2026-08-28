@@ -3,6 +3,13 @@ const REGIONS = [
     'Sumeru', 'Fontaine', 'Natlan',
     'Nod-Krai', 'Snezhnaya', 'Khaenri\'ah'
 ]
+// Row and column axes of the weapon/element table. "?" is the Unknown bucket,
+// matching the sentinel filterCharacterData maps back to null
+const ELEMENTS = [
+    'Anemo', 'Geo', 'Electro',
+    'Dendro', 'Hydro', 'Pyro', 'Cryo'
+]
+const WEAPONS = ['Bow', 'Catalyst', 'Claymore', 'Polearm', 'Sword']
 // Splashscreen filenames derive from the version name; exceptions go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
@@ -214,34 +221,24 @@ document.addEventListener('alpine:init', () => {
             let data = Object.values( this.characterData )
             for (let [key, value] of Object.entries(filters)) {
                 if (!value) continue
-                if (value === '?') value = null
-                data = data.filter(c => c[key] === value)
+                data = data.filter(c => value === 'Unknown' ? !c[key] : c[key] === value)
             }
             return data
         },
 
-        groupCharacterData(filters, groupBy) {
-            let filteredCharacterData = this.filterCharacterData(filters)
-            const groupFn = (existingGroupings, character) => {
-                const key = character[groupBy]
-                if (key in existingGroupings) {
-                    existingGroupings[key] += 1
-                } else {
-                    existingGroupings[key] = 1
-                }
-                return existingGroupings
-            }
-            const groupedCharacterData = filteredCharacterData.reduce(groupFn, {})
-            const sortedKeys = Object.keys(groupedCharacterData).sort()
-            let sortedObj = {}
-            sortedKeys.forEach(k => {
-                let presentableKey = k
-                // Presentable keys
-                if (k === 'null') presentableKey = 'Unknown'
-                else if (groupBy === 'rarity') presentableKey += '-star'
-                sortedObj[presentableKey] = groupedCharacterData[k]
+        countBy(filters, field) {
+            const groups = {}
+            this.filterCharacterData(filters).forEach(c => {
+                const key = c[field] || 'Unknown'
+                groups[key] = (groups[key] || 0) + 1
             })
-            return sortedObj
+            const sorted = {}
+            Object.keys(groups).sort().forEach(k => {
+                let presentable = k
+                if (field === 'rarity' && k !== 'Unknown') presentable = `${k}-star`
+                sorted[presentable] = groups[k]
+            })
+            return sorted
         },
 
         resetCache() {
