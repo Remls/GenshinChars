@@ -39,6 +39,12 @@ def generate_characters_file():
         el: Character = el
         char_data = el.input_row
         char_data["arkhe"] = el.arkhe
+        char_data["forms"] = el.forms
+        # Character-level values are the debut form's, so sorting and the
+        # character sheet keep working on single-form characters
+        for column in ("element", "weapon", "release_version"):
+            char_data[column] = el.forms[0][column]
+        char_data["display_name"] = el.display_name
         char_data["release_date"] = el.release_date
         char_data["photo"] = el.get_character_image_link()
         char_data["full_photo"] = el.get_character_full_image_link()
@@ -80,9 +86,9 @@ def generate_hsr_characters_file():
             ] or [{"path": None, "combat_type": None}]
             # A single display_name covers the character; ";"-separated ones map to forms
             display_parts = [d.strip() for d in row["display_name"].split(";")]
-            display_name = row["display_name"] or None
+            # A split display_name names the forms, not the character
+            display_name = None if len(display_parts) > 1 else (row["display_name"] or None)
             if len(display_parts) > 1:
-                display_name = display_parts[0] or None
                 for i, form in enumerate(forms):
                     if i < len(display_parts) and display_parts[i]:
                         form["display_name"] = display_parts[i]

@@ -166,12 +166,16 @@ document.addEventListener('alpine:init', () => {
                 }
             })
             if (this.selectedVersion) {
-                characterData = characterData.filter(
-                    c => this.versionAIsBeforeOrEqualToVersionB(
-                        c.release_version,
-                        this.selectedVersion
-                    )
-                )
+                // Forms release separately, so a character keeps only the forms that
+                // existed by the selected version, and drops out once none are left
+                characterData = characterData
+                    .map(c => ({
+                        ...c,
+                        forms: c.forms.filter(f => this.versionAIsBeforeOrEqualToVersionB(
+                            f.release_version, this.selectedVersion
+                        )),
+                    }))
+                    .filter(c => c.forms.length > 0)
             }
             const filters2 = ['rarity', 'gender', 'region']
             filters2.forEach(f => {
@@ -209,6 +213,19 @@ document.addEventListener('alpine:init', () => {
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
         },
 
+        formMatches(form, element, weapon) {
+            const elementOk = element === 'Unknown' ? !form.element : form.element === element
+            const weaponOk = weapon === 'Unknown' ? !form.weapon : form.weapon === weapon
+            return elementOk && weaponOk
+        },
+
+        // One entry per form, so a character with several forms fills several cells
+        cellRows(element, weapon) {
+            return Object.values(this.characterData)
+                .map(char => ({ char, form: char.forms.find(f => this.formMatches(f, element, weapon)) }))
+                .filter(row => row.form)
+        },
+
         filterCharacterData(filters) {
             const defaultFilters = {
                 element: null,
@@ -218,10 +235,17 @@ document.addEventListener('alpine:init', () => {
                 weapon: null,
             }
             filters = {...defaultFilters, ...filters}
+            const formKeys = ['element', 'weapon']
             let data = Object.values( this.characterData )
             for (let [key, value] of Object.entries(filters)) {
                 if (!value) continue
-                data = data.filter(c => value === 'Unknown' ? !c[key] : c[key] === value)
+                if (formKeys.includes(key)) {
+                    data = data.filter(c => c.forms.some(
+                        f => value === 'Unknown' ? !f[key] : f[key] === value
+                    ))
+                } else {
+                    data = data.filter(c => value === 'Unknown' ? !c[key] : c[key] === value)
+                }
             }
             return data
         },
@@ -290,9 +314,26 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.characterData).length === 0
         },
 
-        releaseUnknown(char) {
-            const noReleaseVersion = char.release_version === null
-            const noReleaseDate = !char.release_date
+        // One row per form, so a character that gained a form later appears once
+        // per release. Mirrors release_sort_key in the generator: a form with no
+        // date falls back to its version's projected one, and undated forms sort last
+        releaseOrderRows() {
+            return Object.values(this.characterData)
+                .flatMap(char => char.forms.map(form => ({ char, form })))
+                .sort((a, b) => {
+                    const ka = this.releaseOrderKey(a), kb = this.releaseOrderKey(b)
+                    return ka < kb ? 1 : ka > kb ? -1 : 0
+                })
+        },
+
+        releaseOrderKey({ char, form }) {
+            const projected = (this.versionData[form.release_version] || {}).release_date
+            return `${form.release_date || projected || '9999-12-31'}|${char.name}`
+        },
+
+        releaseUnknown(form) {
+            const noReleaseVersion = !form.release_version
+            const noReleaseDate = !form.release_date
             return noReleaseVersion && noReleaseDate
         },
 

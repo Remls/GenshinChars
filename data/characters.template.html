@@ -244,13 +244,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <template x-for="char in Object.values( characterData )">
+                    <template x-for="{ char, form } in releaseOrderRows()"
+                        :key="char.name + '|' + (form.element || '')">
                         <tr>
                             <td>
                                 <div @click="showCharSheet(char.name)" class="character-links">
                                     <img width="20" height="20" :src="char.photo">
-                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
-                                        x-text="char.display_name || char.name">
+                                    <span class="gi-font clickable" :class="form.element ? `el-${form.element.toLowerCase()}` : 'el-unknown'"
+                                        x-text="form.display_name || char.display_name || char.name">
                                     </span>
                                     <template x-if="char.is_outdated"><sup>†</sup></template>
                                     <template x-if="char.arkhe === 'Pneuma'"><sup>Pn</sup></template>
@@ -259,20 +260,20 @@
                                     <template x-if="char.arkhe === 'Unknown'"><sup>??</sup></template>
                                 </div>
                             </td>
-                            <td x-show="releaseUnknown(char)"
+                            <td x-show="releaseUnknown(form)"
                                 colspan="2" class="center">
                                 <span class="text-unknown">Unknown</span>
                             </td>
-                            <td x-show="!releaseUnknown(char)"
-                                :class="{'center': !char.release_version}">
-                                <span x-text="formatVersion(char.release_version)"
-                                    :class="{'text-unknown': !char.release_version}">
+                            <td x-show="!releaseUnknown(form)"
+                                :class="{'center': !form.release_version}">
+                                <span x-text="formatVersion(form.release_version)"
+                                    :class="{'text-unknown': !form.release_version}">
                                 </span>
                             </td>
-                            <td x-show="!releaseUnknown(char)"
-                                :class="{'center': !char.release_date}">
-                                <span x-text="formatDate(char.release_date)"
-                                    :class="{'text-unknown': !char.release_date}">
+                            <td x-show="!releaseUnknown(form)"
+                                :class="{'center': !form.release_date}">
+                                <span x-text="formatDate(form.release_date)"
+                                    :class="{'text-unknown': !form.release_date}">
                                 </span>
                             </td>
                         </tr>

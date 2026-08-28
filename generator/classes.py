@@ -68,9 +68,14 @@ with open('data/versions.csv', newline='') as f:
 
 
 class Character:
+    # A ";"-separated column defines the form count; shorter columns fall back to
+    # their first value, so a single weapon or release covers every form
+    FORM_COLUMNS = ['element', 'weapon', 'display_name', 'release_version', 'release_date']
+
     def __init__(self, row: dict):
         self.input_row = row
-        self.release_version = row['release_version'] or None
+        self.forms = self.build_forms(row)
+        self.release_version = self.forms[0]['release_version']
 
         if self.input_row['arkhe']:
             if self.input_row['arkhe'] == 'N/A':
@@ -80,18 +85,35 @@ class Character:
         else:
             self.arkhe = 'Unknown'
 
-        if self.release_version:
-            # release version known, exact date unknown
-            if not row['release_date']:
-                self.release_date = None
-            # release on same date as version
-            elif row['release_date'] == 'R':
-                self.release_date = self.get_version_data().release_date
-            # released during the version but sometime after the version release date
-            else:
-                self.release_date = row['release_date']
-        else:
-            self.release_date = None
+        self.release_date = self.forms[0]['release_date']
+        # A split display_name names the forms, not the character
+        raw_display_name = row['display_name'] or ''
+        self.display_name = None if ';' in raw_display_name else (raw_display_name or None)
+
+    def build_forms(self, row: dict) -> list:
+        split = {c: [v.strip() for v in (row[c] or '').split(';')] for c in self.FORM_COLUMNS}
+        count = max(len(parts) for parts in split.values())
+        forms = []
+        for i in range(count):
+            form = {}
+            for column, parts in split.items():
+                form[column] = parts[i if i < len(parts) else 0] or None
+            form['release_date'] = self.resolve_release_date(
+                form['release_version'], form['release_date']
+            )
+            forms.append(form)
+        return forms
+
+    @staticmethod
+    def resolve_release_date(version, date):
+        # release version known, exact date unknown
+        if not version or not date:
+            return None
+        # release on same date as version
+        if date == 'R':
+            return version_data[version].release_date
+        # released during the version but sometime after the version release date
+        return date
 
     def get_version_data(self) -> Version:
         if self.release_version:
