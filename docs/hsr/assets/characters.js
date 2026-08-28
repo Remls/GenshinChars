@@ -252,8 +252,25 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.characterData).length === 0
         },
 
-        releaseUnknown(char) {
-            return !char.release_version && !char.release_date
+        // One row per form, so a character that gained a form later appears once
+        // per release. Mirrors release_sort_key in the generator: a form with no
+        // date falls back to its version's projected one, and undated forms sort last
+        releaseOrderRows() {
+            return Object.values(this.characterData)
+                .flatMap(char => char.forms.map(form => ({ char, form })))
+                .sort((a, b) => {
+                    const ka = this.releaseOrderKey(a), kb = this.releaseOrderKey(b)
+                    return ka < kb ? 1 : ka > kb ? -1 : 0
+                })
+        },
+
+        releaseOrderKey({ char, form }) {
+            const projected = (this.versionData[form.release_version] || {}).release_date
+            return `${form.release_date || projected || '9999-12-31'}|${char.name}`
+        },
+
+        releaseUnknown(form) {
+            return !form.release_version && !form.release_date
         },
 
         formatVersion(version, includeDate = false) {

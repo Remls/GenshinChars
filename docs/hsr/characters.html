@@ -285,19 +285,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <template x-for="char in Object.values(characterData)" :key="char.name">
+                    <template x-for="row in releaseOrderRows()" :key="row.char.name + '|' + (row.form.path || '')">
                         <tr>
-                            <td x-html="chipHtml(char, char.forms[0].combat_type)"></td>
-                            <td x-show="releaseUnknown(char)" colspan="2" class="center">
+                            <td x-html="chipHtml(row.char, row.form.combat_type, row.form.display_name)"></td>
+                            <td x-show="releaseUnknown(row.form)" colspan="2" class="center">
                                 <span class="text-unknown">Unknown</span>
                             </td>
-                            <td x-show="!releaseUnknown(char)" :class="{'center': !char.release_version}">
-                                <span x-text="formatVersion(char.release_version)"
-                                    :class="{'text-unknown': !char.release_version}"></span>
+                            <td x-show="!releaseUnknown(row.form)" :class="{'center': !row.form.release_version}">
+                                <span x-text="formatVersion(row.form.release_version)"
+                                    :class="{'text-unknown': !row.form.release_version}"></span>
                             </td>
-                            <td x-show="!releaseUnknown(char)" :class="{'center': !char.release_date}">
-                                <span x-text="formatDate(char.release_date)"
-                                    :class="{'text-unknown': !char.release_date}"></span>
+                            <td x-show="!releaseUnknown(row.form)" :class="{'center': !row.form.release_date}">
+                                <span x-text="formatDate(row.form.release_date)"
+                                    :class="{'text-unknown': !row.form.release_date}"></span>
                             </td>
                         </tr>
                     </template>
