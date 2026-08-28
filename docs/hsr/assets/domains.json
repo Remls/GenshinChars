@@ -1,6 +1,6 @@
 {
-    "version": "991ec8d",
-    "last_updated": "2026-08-01T17:43:50.219143Z",
+    "version": "76dd99f",
+    "last_updated": "2026-08-28T20:47:36.754715Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1220,7 +1220,8 @@
             "type": "stagnant_shadow",
             "characters": [
                 "Cyrene",
-                "Evernight"
+                "Evernight",
+                "Pearl"
             ]
         },
         "ss_harbinger_of_strife": {
@@ -1314,6 +1315,7 @@
             "characters": [
                 "Aventurine • Waveflair",
                 "Evanescia",
+                "Pearl",
                 "Silver Wolf LV.999",
                 "Sparxie",
                 "Yao Guang"
@@ -1793,6 +1795,7 @@
             "type": "echo_of_war",
             "characters": [
                 "Aventurine • Waveflair",
+                "Pearl",
                 "Robin • Summeretto"
             ]
         },

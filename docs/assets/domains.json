@@ -1,6 +1,6 @@
 {
-    "version": "80e7d60",
-    "last_updated": "2026-08-19T13:59:23.776571Z",
+    "version": "76dd99f",
+    "last_updated": "2026-08-28T20:47:36.749465Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1134,12 +1134,12 @@
             ]
         },
         {
-            "name": "???",
+            "name": "Guardian Blade of Drifting Snow",
             "location": "???",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": [
-                "nb_snezhnaya_1"
+                "nb_vagabonds_cracked_armor"
             ]
         },
         {
@@ -2383,8 +2383,8 @@
                 "Alyosha"
             ]
         },
-        "nb_snezhnaya_1": {
-            "name": "???",
+        "nb_vagabonds_cracked_armor": {
+            "name": "Vagabond's Cracked Armor",
             "type": "normal_bosses",
             "characters": [
                 "Vesna"

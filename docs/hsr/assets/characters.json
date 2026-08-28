@@ -1,6 +1,6 @@
 {
-    "version": "5cdaeb3",
-    "last_updated": "2026-08-11T17:07:41.177161Z",
+    "version": "76dd99f",
+    "last_updated": "2026-08-28T20:47:36.752599Z",
     "characters": {
         "Pearl": {
             "name": "Pearl",
@@ -18,22 +18,6 @@
             "release_date": null,
             "is_released": false
         },
-        "Robin • Summeretto": {
-            "name": "Robin • Summeretto",
-            "display_name": "Robin Summeretto",
-            "rarity": "5",
-            "forms": [
-                {
-                    "path": "Remembrance",
-                    "combat_type": "Wind"
-                }
-            ],
-            "gender": "Female",
-            "world": "Penacony",
-            "release_version": "4.5",
-            "release_date": null,
-            "is_released": false
-        },
         "Aventurine • Waveflair": {
             "name": "Aventurine • Waveflair",
             "display_name": "Aventurine Waveflair",
@@ -47,8 +31,24 @@
             "gender": "Male",
             "world": "Sigonia-IV",
             "release_version": "4.5",
-            "release_date": null,
+            "release_date": "2026-09-12",
             "is_released": false
+        },
+        "Robin • Summeretto": {
+            "name": "Robin • Summeretto",
+            "display_name": "Robin Summeretto",
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Wind"
+                }
+            ],
+            "gender": "Female",
+            "world": "Penacony",
+            "release_version": "4.5",
+            "release_date": "2026-08-26",
+            "is_released": true
         },
         "Rin Tohsaka": {
             "name": "Rin Tohsaka",
