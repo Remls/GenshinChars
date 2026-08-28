@@ -1,6 +1,6 @@
 {
-    "version": "76dd99f",
-    "last_updated": "2026-08-28T20:47:36.752599Z",
+    "version": "9f2e3d7",
+    "last_updated": "2026-08-28T21:02:27.899921Z",
     "characters": {
         "Pearl": {
             "name": "Pearl",
@@ -9,7 +9,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "4.6",
+                    "release_date": null
                 }
             ],
             "gender": "Female",
@@ -25,7 +27,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "4.5",
+                    "release_date": "2026-09-12"
                 }
             ],
             "gender": "Male",
@@ -41,7 +45,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "4.5",
+                    "release_date": "2026-08-26"
                 }
             ],
             "gender": "Female",
@@ -57,7 +63,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "4.4",
+                    "release_date": "2026-07-24"
                 }
             ],
             "gender": "Female",
@@ -73,7 +81,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "4.4",
+                    "release_date": "2026-07-24"
                 }
             ],
             "gender": "Male",
@@ -89,7 +99,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "4.4",
+                    "release_date": "2026-07-15"
                 }
             ],
             "gender": "Female",
@@ -105,7 +117,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "4.3",
+                    "release_date": "2026-06-01"
                 }
             ],
             "gender": "Male",
@@ -121,7 +135,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "4.2",
+                    "release_date": "2026-05-13"
                 }
             ],
             "gender": "Female",
@@ -137,7 +153,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "4.2",
+                    "release_date": "2026-04-22"
                 }
             ],
             "gender": "Female",
@@ -153,7 +171,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "4.1",
+                    "release_date": "2026-03-25"
                 }
             ],
             "gender": "Male",
@@ -169,7 +189,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "4.0",
+                    "release_date": "2026-03-03"
                 }
             ],
             "gender": "Female",
@@ -185,7 +207,9 @@
             "forms": [
                 {
                     "path": "Elation",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "4.0",
+                    "release_date": "2026-02-13"
                 }
             ],
             "gender": "Female",
@@ -201,7 +225,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "3.8",
+                    "release_date": "2025-12-17"
                 }
             ],
             "gender": "Female",
@@ -217,7 +243,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "3.7",
+                    "release_date": "2025-11-05"
                 }
             ],
             "gender": "Female",
@@ -233,7 +261,9 @@
             "forms": [
                 {
                     "path": "Preservation",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "3.6",
+                    "release_date": "2025-10-15"
                 }
             ],
             "gender": "Male",
@@ -249,7 +279,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "3.6",
+                    "release_date": "2025-09-24"
                 }
             ],
             "gender": "Female",
@@ -265,7 +297,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "3.5",
+                    "release_date": "2025-09-02"
                 }
             ],
             "gender": "Female",
@@ -281,7 +315,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "3.5",
+                    "release_date": "2025-08-13"
                 }
             ],
             "gender": "Female",
@@ -297,7 +333,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "3.4",
+                    "release_date": "2025-07-11"
                 }
             ],
             "gender": "Female",
@@ -313,7 +351,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "3.4",
+                    "release_date": "2025-07-11"
                 }
             ],
             "gender": "Male",
@@ -329,7 +369,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "3.4",
+                    "release_date": "2025-07-02"
                 }
             ],
             "gender": "Male",
@@ -345,7 +387,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "3.3",
+                    "release_date": "2025-06-11"
                 }
             ],
             "gender": "Female",
@@ -361,7 +405,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "3.3",
+                    "release_date": "2025-05-21"
                 }
             ],
             "gender": "Female",
@@ -377,7 +423,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "3.2",
+                    "release_date": "2025-04-30"
                 }
             ],
             "gender": "Male",
@@ -393,7 +441,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "3.2",
+                    "release_date": "2025-04-09"
                 }
             ],
             "gender": "Female",
@@ -409,7 +459,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "3.1",
+                    "release_date": "2025-03-19"
                 }
             ],
             "gender": "Male",
@@ -425,7 +477,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "3.1",
+                    "release_date": "2025-02-26"
                 }
             ],
             "gender": "Female",
@@ -441,7 +495,9 @@
             "forms": [
                 {
                     "path": "Remembrance",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "3.0",
+                    "release_date": "2025-02-05"
                 }
             ],
             "gender": "Female",
@@ -457,7 +513,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "3.0",
+                    "release_date": "2025-01-15"
                 }
             ],
             "gender": "Female",
@@ -473,7 +531,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "2.7",
+                    "release_date": "2024-12-25"
                 }
             ],
             "gender": "Female",
@@ -489,7 +549,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "2.7",
+                    "release_date": "2024-12-04"
                 }
             ],
             "gender": "Male",
@@ -505,7 +567,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "2.6",
+                    "release_date": "2024-10-23"
                 }
             ],
             "gender": "Female",
@@ -521,7 +585,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "2.5",
+                    "release_date": "2024-10-02"
                 }
             ],
             "gender": "Female",
@@ -537,7 +603,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "2.5",
+                    "release_date": "2024-09-10"
                 }
             ],
             "gender": "Male",
@@ -553,7 +621,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "2.5",
+                    "release_date": "2024-09-10"
                 }
             ],
             "gender": "Female",
@@ -569,7 +639,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "2.4",
+                    "release_date": "2024-08-21"
                 }
             ],
             "gender": "Male",
@@ -585,7 +657,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "2.4",
+                    "release_date": "2024-07-31"
                 }
             ],
             "gender": "Female",
@@ -601,7 +675,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "2.3",
+                    "release_date": "2024-07-10"
                 }
             ],
             "gender": "Female",
@@ -617,7 +693,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "2.3",
+                    "release_date": "2024-06-19"
                 }
             ],
             "gender": "Female",
@@ -633,7 +711,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "2.2",
+                    "release_date": "2024-05-29"
                 }
             ],
             "gender": "Male",
@@ -649,7 +729,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "2.2",
+                    "release_date": "2024-05-08"
                 }
             ],
             "gender": "Female",
@@ -665,7 +747,9 @@
             "forms": [
                 {
                     "path": "Preservation",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "2.1",
+                    "release_date": "2024-04-17"
                 }
             ],
             "gender": "Male",
@@ -681,7 +765,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "2.1",
+                    "release_date": "2024-03-27"
                 }
             ],
             "gender": "Male",
@@ -697,7 +783,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "2.1",
+                    "release_date": "2024-03-27"
                 }
             ],
             "gender": "Female",
@@ -713,7 +801,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "2.0",
+                    "release_date": "2024-02-29"
                 }
             ],
             "gender": "Female",
@@ -729,7 +819,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "2.0",
+                    "release_date": "2024-02-06"
                 }
             ],
             "gender": "Male",
@@ -745,7 +837,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "2.0",
+                    "release_date": "2024-02-06"
                 }
             ],
             "gender": "Female",
@@ -761,7 +855,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "1.6",
+                    "release_date": "2024-01-17"
                 }
             ],
             "gender": "Male",
@@ -777,7 +873,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.6",
+                    "release_date": "2023-12-27"
                 }
             ],
             "gender": "Female",
@@ -793,7 +891,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.6",
+                    "release_date": "2023-12-27"
                 }
             ],
             "gender": "Female",
@@ -809,7 +909,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.5",
+                    "release_date": "2023-12-06"
                 }
             ],
             "gender": "Female",
@@ -825,7 +927,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.5",
+                    "release_date": "2023-12-06"
                 }
             ],
             "gender": "Male",
@@ -841,7 +945,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "1.5",
+                    "release_date": "2023-11-15"
                 }
             ],
             "gender": "Female",
@@ -857,7 +963,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "1.4",
+                    "release_date": "2023-10-27"
                 }
             ],
             "gender": "Female",
@@ -873,7 +981,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "1.4",
+                    "release_date": "2023-10-27"
                 }
             ],
             "gender": "Female",
@@ -889,7 +999,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.4",
+                    "release_date": "2023-10-11"
                 }
             ],
             "gender": "Female",
@@ -905,7 +1017,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.3",
+                    "release_date": "2023-09-20"
                 }
             ],
             "gender": "Female",
@@ -921,7 +1035,9 @@
             "forms": [
                 {
                     "path": "Preservation",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.3",
+                    "release_date": "2023-09-20"
                 }
             ],
             "gender": "Female",
@@ -937,7 +1053,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "1.3",
+                    "release_date": "2023-08-30"
                 }
             ],
             "gender": "Male",
@@ -953,7 +1071,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.2",
+                    "release_date": "2023-08-09"
                 }
             ],
             "gender": "Male",
@@ -969,7 +1089,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.2",
+                    "release_date": "2023-08-09"
                 }
             ],
             "gender": "Female",
@@ -985,7 +1107,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "1.2",
+                    "release_date": "2023-07-19"
                 }
             ],
             "gender": "Male",
@@ -1001,7 +1125,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "1.1",
+                    "release_date": "2023-06-28"
                 }
             ],
             "gender": "Female",
@@ -1017,7 +1143,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "1.1",
+                    "release_date": "2023-06-28"
                 }
             ],
             "gender": "Male",
@@ -1033,7 +1161,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.1",
+                    "release_date": "2023-06-07"
                 }
             ],
             "gender": "Female",
@@ -1049,7 +1179,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.0",
+                    "release_date": "2023-05-17"
                 }
             ],
             "gender": "Male",
@@ -1065,7 +1197,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
@@ -1081,7 +1215,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Imaginary"
+                    "combat_type": "Imaginary",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
@@ -1097,7 +1233,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1113,7 +1251,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1129,7 +1269,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1145,7 +1287,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1161,7 +1305,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
@@ -1177,7 +1323,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Quantum"
+                    "combat_type": "Quantum",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1193,7 +1341,9 @@
             "forms": [
                 {
                     "path": "Nihility",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1209,7 +1359,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1226,12 +1378,16 @@
                 {
                     "path": "Preservation",
                     "combat_type": "Ice",
-                    "display_name": "March 7th"
+                    "display_name": "March 7th",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 },
                 {
                     "path": "Hunt",
                     "combat_type": "Imaginary",
-                    "display_name": "March 7th (Hunt)"
+                    "display_name": "March 7th (Hunt)",
+                    "release_version": "2.4",
+                    "release_date": "2024-07-31"
                 }
             ],
             "gender": "Female",
@@ -1247,7 +1403,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1263,7 +1421,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1279,7 +1439,9 @@
             "forms": [
                 {
                     "path": "Erudition",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1295,7 +1457,9 @@
             "forms": [
                 {
                     "path": "Preservation",
-                    "combat_type": "Ice"
+                    "combat_type": "Ice",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
@@ -1311,7 +1475,9 @@
             "forms": [
                 {
                     "path": "Hunt",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
@@ -1327,7 +1493,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Physical"
+                    "combat_type": "Physical",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1343,7 +1511,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Wind"
+                    "combat_type": "Wind",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1359,7 +1529,9 @@
             "forms": [
                 {
                     "path": "Abundance",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1375,7 +1547,9 @@
             "forms": [
                 {
                     "path": "Harmony",
-                    "combat_type": "Fire"
+                    "combat_type": "Fire",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Female",
@@ -1391,7 +1565,9 @@
             "forms": [
                 {
                     "path": "Destruction",
-                    "combat_type": "Lightning"
+                    "combat_type": "Lightning",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26"
                 }
             ],
             "gender": "Male",
