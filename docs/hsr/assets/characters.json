@@ -1,6 +1,6 @@
 {
-    "version": "f710bf0",
-    "last_updated": "2026-08-29T05:18:15.711495Z",
+    "version": "0c6b06f",
+    "last_updated": "2026-08-29T07:33:17.762292Z",
     "characters": {
         "Pearl": {
             "name": "Pearl",
@@ -2700,7 +2700,7 @@
                 {
                     "path": "Preservation",
                     "combat_type": "Ice",
-                    "display_name": "March 7th",
+                    "display_name": "March 7th (Preservation)",
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
@@ -2723,7 +2723,7 @@
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character March 7th (Preservation) Splash Art.png"
+                            "wiki": "Character March 7th (The Hunt) Splash Art.png"
                         }
                     ]
                 }

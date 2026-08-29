@@ -1,6 +1,6 @@
 {
-    "version": "f710bf0",
-    "last_updated": "2026-08-29T05:18:15.716759Z",
+    "version": "0c6b06f",
+    "last_updated": "2026-08-29T07:33:17.767296Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1194,7 +1194,8 @@
             "characters": [
                 "Gepard",
                 "Herta",
-                "March 7th",
+                "March 7th (Hunt)",
+                "March 7th (Preservation)",
                 "Pela"
             ]
         },
@@ -1424,7 +1425,7 @@
             "characters": [
                 "Fu Xuan",
                 "Gepard",
-                "March 7th",
+                "March 7th (Preservation)",
                 "Trailblazer (Preservation)"
             ]
         },
@@ -1690,7 +1691,8 @@
                 "Herta",
                 "Himeko",
                 "Jing Yuan",
-                "March 7th",
+                "March 7th (Hunt)",
+                "March 7th (Preservation)",
                 "Rin Tohsaka",
                 "Saber",
                 "Silver Wolf",
