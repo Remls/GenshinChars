@@ -9,42 +9,44 @@ USER_AGENT = "GenshinChars image resolver (https://chars.remls.io)"
 BATCH_SIZE = 50
 
 
-def resolve(api: str, filenames: list) -> dict:
-    """Map each requested filename to the filename it really lives under.
+def query(api: str, titles: list, params: dict) -> dict:
+    """Map each requested title to the page the API answered with, or None.
 
-    Missing files are absent from the result. A File page can be a redirect, and
-    the CDN answers a redirect's name with a placeholder image rather than an
-    error, so the resolved name is the only safe one to store.
+    Redirect and normalisation chains are followed, so the page carries the title
+    the wiki really uses. That matters for files: a File page can be a redirect,
+    and the CDN answers a redirect's name with a placeholder image rather than an
+    error.
     """
-    resolved = {}
-    unique = sorted(set(filenames))
+    pages = {}
+    unique = sorted(set(titles))
     for i in range(0, len(unique), BATCH_SIZE):
-        batch = unique[i:i + BATCH_SIZE]
-        resolved.update(_resolve_batch(api, batch))
-    return resolved
+        pages.update(_query_batch(api, unique[i:i + BATCH_SIZE], params))
+    return {title: pages.get(title) for title in titles}
 
 
-def _resolve_batch(api: str, batch: list) -> dict:
-    params = {
+def _query_batch(api: str, batch: list, params: dict) -> dict:
+    search = urllib.parse.urlencode({
         "action": "query",
         "format": "json",
-        "prop": "imageinfo",
-        "iiprop": "url",
         "redirects": 1,
-        "titles": "|".join(f"File:{name}" for name in batch),
-    }
+        "titles": "|".join(batch),
+        **params,
+    })
     request = urllib.request.Request(
-        f"{api}?{urllib.parse.urlencode(params)}",
-        headers={"User-Agent": USER_AGENT},
+        f"{api}?{search}", headers={"User-Agent": USER_AGENT}
     )
     with urllib.request.urlopen(request, timeout=60) as response:
         data = json.load(response)
-    query = data.get("query", {})
+    # An error, including throttling, comes back as HTTP 200 with no "query".
+    # Treating that as an empty answer would silently blank every image in the
+    # batch and hand the result to CI as a real change.
+    if "query" not in data:
+        raise RuntimeError(f"Wiki API returned no results: {data}")
+    result = data["query"]
 
-    # Requested title -> title the API answered under, following both chains
     aliases = {}
     for step in ("normalized", "redirects"):
-        for entry in query.get(step, []):
+        for entry in result.get(step, []):
             aliases[entry["from"]] = entry["to"]
 
     def final_title(title):
@@ -54,16 +56,26 @@ def _resolve_batch(api: str, batch: list) -> dict:
             title = aliases[title]
         return title
 
-    existing = {
-        page["title"]
-        for page in query.get("pages", {}).values()
-        if "imageinfo" in page
-    }
+    by_title = {page["title"]: page for page in result.get("pages", {}).values()}
+    pages = {}
+    for title in batch:
+        page = by_title.get(final_title(title))
+        pages[title] = None if page is None or "missing" in page else page
+    return pages
+
+
+def resolve(api: str, filenames: list) -> dict:
+    """Map each requested filename to the filename it really lives under.
+
+    Missing files are absent from the result.
+    """
+    titles = [f"File:{name}" for name in filenames]
+    pages = query(api, titles, {"prop": "imageinfo", "iiprop": "url"})
     resolved = {}
-    for name in batch:
-        title = final_title(f"File:{name}")
-        if title in existing:
-            resolved[name] = title[len("File:"):]
+    for name in filenames:
+        page = pages.get(f"File:{name}")
+        if page and "imageinfo" in page:
+            resolved[name] = page["title"][len("File:"):]
     return resolved
 
 

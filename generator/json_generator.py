@@ -2,6 +2,7 @@ from classes import Character, Version, version_data
 from functions import get_version, get_current_timestamp
 from datetime import datetime
 import csv, json
+import domain_images
 import wiki_images
 
 
@@ -290,6 +291,22 @@ def generate_hsr_domains_file():
 def generate_domains_file():
     with open('data/domains.json') as f:
         domains_data = json.load(f)
+
+    # Image filenames are resolved here rather than in the browser, the way the
+    # HSR data already carries them
+    print("Resolving domain images ...")
+    groups = [domains_data["rewards"],
+              domains_data.get("specialties", {}),
+              domains_data.get("other_materials", {})]
+    images = domain_images.item_images(*groups)
+    for group in groups:
+        for entry in group.values():
+            entry["image"] = images.get(entry["name"])
+    for domain, resolved in domain_images.domain_images(domains_data["domains"]).items():
+        for entry in domains_data["domains"]:
+            if entry["name"] == domain:
+                entry.update(resolved)
+
     data = {
         "version": get_version(),
         "last_updated": get_current_timestamp(),

@@ -107,14 +107,6 @@ const WIKI_ALT_NAMES = {
     'Fortitude':    'Teachings of Fortitude',
     'Glory':        'Teachings of Glory',
 }
-// Bosses whose archive icon file ("{name} Icon.png") uses a different base name
-// than their wiki page
-const BOSS_ICON_ALIASES = {
-    'Stormterror Dvalin': 'Stormterror',
-    'Childe':             'Childe P3',
-    'Rhodeia of Loch':    'Oceanid',
-}
-
 const DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 // For displaying availability: weekdays first, Sunday (everything drops) last
 const DAY_DISPLAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
@@ -155,13 +147,13 @@ document.addEventListener('alpine:init', () => {
                 this.allData = domainsData
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
+                this.buildImageMaps()
                 // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
                 ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
-                this.resolveWikiImages().catch(() => {})
             })
         },
 
@@ -212,174 +204,19 @@ document.addEventListener('alpine:init', () => {
             window.addEventListener('scroll', () => hideAll(null), { passive: true })
         },
 
-        // Resolve real image filenames from the wiki API, for items and for
-        // domains/bosses. Guessing filenames is not enough: artifact sets have no
-        // image of their own (we use their flower piece), some filenames drop
-        // characters like ":", and the CDN answers requests for nonexistent files
-        // with a placeholder image instead of an error. Results are cached per
-        // data version.
-        async resolveWikiImages() {
-            const cacheKey = 'domains_wiki_images'
-            const version = this.allData.last_updated
-            try {
-                const cached = JSON.parse(localStorage.getItem(cacheKey))
-                if (cached && cached.version === version) {
-                    this.itemImages = cached.items
-                    this.domainImages = cached.domains
-                    return
-                }
-            } catch (e) {}
-
-            const titleOf = name => WIKI_ALT_NAMES[name] || name
-            const names = new Set()
-            Object.values(this.allData.rewards).forEach(r => names.add(r.name))
-            Object.values(this.allData.specialties || {}).forEach(s => names.add(s.name))
-            const queryable = [...names].filter(n => !n.startsWith('???'))
-
-            // Batched API query, returning requested-title -> page object
-            const apiQuery = async (titles, params) => {
-                const search = new URLSearchParams({
-                    action: 'query', format: 'json', origin: '*', redirects: '1',
-                    titles: titles.join('|'), ...params,
-                })
-                const data = await fetch(`https://genshin-impact.fandom.com/api.php?${search}`)
-                    .then(r => r.json())
-                const rename = {}
-                ;(data.query.normalized || []).forEach(x => { rename[x.from] = x.to })
-                ;(data.query.redirects || []).forEach(x => { rename[x.from] = x.to })
-                const byTitle = {}
-                Object.values(data.query.pages || {}).forEach(p => { byTitle[p.title] = p })
-                const result = {}
-                titles.forEach(t => {
-                    let final = t
-                    const seen = new Set()
-                    while (rename[final] && !seen.has(final)) { seen.add(final); final = rename[final] }
-                    result[t] = byTitle[final]
-                })
-                return result
-            }
-            const batched = async (items, params) => {
-                let pages = {}
-                for (let i = 0; i < items.length; i += 50) {
-                    const part = await apiQuery(items.slice(i, i + 50), params)
-                    pages = { ...pages, ...part }
-                }
-                return pages
-            }
-
-            // Phase 1: the page's own image (drops, specialties)
-            const map = {}
-            const noImage = []
-            const pages = await batched(queryable.map(titleOf), { prop: 'pageimages', piprop: 'name' })
-            queryable.forEach(name => {
-                const page = pages[titleOf(name)]
-                if (!page || 'missing' in page) map[name] = null
-                // Only trust item images. A page's lead image can be something
-                // else entirely (e.g. a version promo on artifact set pages)
-                else if (page.pageimage && page.pageimage.startsWith('Item_')) map[name] = page.pageimage
-                else noImage.push(name)
+        // Thumbnails come from the data, resolved by the generator. Indexed by
+        // name here because that is what the reward and domain rows carry.
+        buildImageMaps() {
+            const items = {}
+            ;[this.allData.rewards, this.allData.specialties, this.allData.other_materials]
+                .forEach(group => Object.values(group || {})
+                    .forEach(entry => { items[entry.name] = entry.image }))
+            this.itemImages = items
+            const domains = {}
+            this.allData.domains.forEach(d => {
+                domains[d.name] = { image: d.image, link: d.link, boss: d.boss }
             })
-
-            // Phase 2: pages without an own image are artifact sets, so use a piece
-            // (flower where available) from the set infobox
-            const PIECE_SLOTS = ['flower', 'plume', 'sands', 'goblet', 'circlet']
-            const pages2 = await batched(noImage.map(titleOf), { prop: 'revisions', rvprop: 'content', rvslots: 'main' })
-            noImage.forEach(name => {
-                const page = pages2[titleOf(name)]
-                const wikitext = page?.revisions?.[0]?.slots?.main?.['*'] || ''
-                let piece = null
-                for (const slot of PIECE_SLOTS) {
-                    const m = wikitext.match(new RegExp(`\\|\\s*${slot}\\s*=\\s*([^\\n|}]+)`))
-                    if (m) { piece = m[1].trim(); break }
-                }
-                map[name] = piece ? `Item_${piece.replaceAll(' ', '_')}.png` : null
-            })
-
-            // Domains and bosses: the parenthetical part of weekly boss names is
-            // the boss, whose page has a portrait. The stripped name is the page
-            // the row should link to
-            const strip = name => name.replace(/\s*\([^)]*\)$/, '')
-            const paren = name => {
-                const m = name.match(/\(([^)]*)\)$/)
-                return m ? m[1] : null
-            }
-            const domainEntries = []
-            const seenDomains = new Set()
-            this.allData.domains.forEach(dm => {
-                if (dm.name.startsWith('???') || seenDomains.has(dm.name)) return
-                seenDomains.add(dm.name)
-                domainEntries.push({ name: dm.name, type: dm.type })
-            })
-            const titles = new Set()
-            const bossTitles = new Set()
-            domainEntries.forEach(({ name, type }) => {
-                titles.add(strip(name))
-                const bossLabel = paren(name)
-                if (bossLabel) { titles.add(bossLabel); bossTitles.add(bossLabel) }
-                else if (type === 'normal_bosses') bossTitles.add(strip(name))
-            })
-            const pages3 = await batched([...titles], { prop: 'pageimages', piprop: 'name' })
-            const imageOf = title => {
-                const page = pages3[title]
-                if (!page || 'missing' in page) return null
-                return page.pageimage || null
-            }
-
-            // Bosses have in-game archive icons named "{Boss} Icon.png" (colons
-            // dropped), which look better than the pageimages artwork
-            const iconFileFor = title => {
-                const page = pages3[title]
-                const finalTitle = (page && page.title) || title
-                const base = BOSS_ICON_ALIASES[title] || BOSS_ICON_ALIASES[finalTitle] || finalTitle
-                return `${base.replaceAll(':', '')} Icon.png`
-            }
-            const iconTitles = [...new Set([...bossTitles].map(iconFileFor))]
-            const pages4 = await batched(iconTitles.map(t => `File:${t}`), {})
-            // File pages can be redirects, so keep the real filename they resolve to
-            const iconFile = {}
-            iconTitles.forEach(t => {
-                const page = pages4[`File:${t}`]
-                if (page && !('missing' in page)) {
-                    iconFile[t] = page.title.replace('File:', '')
-                }
-            })
-            const bossImageOf = title => {
-                const resolved = iconFile[iconFileFor(title)]
-                if (resolved) return resolved.replaceAll(' ', '_')
-                return imageOf(title)
-            }
-
-            const domainMap = {}
-            domainEntries.forEach(({ name, type }) => {
-                const linkTitle = strip(name)
-                const linkPage = pages3[linkTitle]
-                const bossLabel = paren(name)
-                let image = null
-                let boss = null
-                if (bossLabel) {
-                    // Boss rows always show a boss portrait, never the domain
-                    boss = {
-                        name: bossLabel,
-                        hasPage: !!(pages3[bossLabel] && !('missing' in pages3[bossLabel])),
-                    }
-                    image = bossImageOf(bossLabel)
-                } else if (type === 'normal_bosses') {
-                    image = bossImageOf(linkTitle)
-                } else {
-                    image = imageOf(linkTitle)
-                }
-                domainMap[name] = {
-                    image,
-                    link: linkPage && !('missing' in linkPage) ? linkTitle : null,
-                    boss,
-                }
-            })
-
-            this.itemImages = map
-            this.domainImages = domainMap
-            try {
-                localStorage.setItem(cacheKey, JSON.stringify({ version, items: map, domains: domainMap }))
-            } catch (e) {}
+            this.domainImages = domains
         },
 
         // In-game day rolls over at 04:00 server time (Asia server, UTC+8)
@@ -674,7 +511,7 @@ document.addEventListener('alpine:init', () => {
 
             if (info.boss) {
                 let bossHtml = `<span class="gi-font">${this.highlight(info.boss.name)}</span>`
-                if (info.boss.hasPage) bossHtml = this.wikiTitleLink(bossHtml, info.boss.name)
+                if (info.boss.has_page) bossHtml = this.wikiTitleLink(bossHtml, info.boss.name)
                 const strippedName = domainName.replace(/\s*\([^)]*\)$/, '')
                 let domainHtml = `<span class="gi-font">${this.highlight(strippedName)}</span>`
                 if (info.link) domainHtml = this.wikiTitleLink(domainHtml, info.link)
