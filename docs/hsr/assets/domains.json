@@ -1,6 +1,6 @@
 {
-    "version": "76dd99f",
-    "last_updated": "2026-08-28T20:47:36.754715Z",
+    "version": "f710bf0",
+    "last_updated": "2026-08-29T05:18:15.716759Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1306,6 +1306,7 @@
                 "Dan Heng • Imbibitor Lunae",
                 "Hook",
                 "Jingliu",
+                "Trailblazer (Destruction)",
                 "Xueyi"
             ]
         },
@@ -1318,6 +1319,7 @@
                 "Pearl",
                 "Silver Wolf LV.999",
                 "Sparxie",
+                "Trailblazer (Elation)",
                 "Yao Guang"
             ]
         },
@@ -1371,6 +1373,7 @@
                 "Robin",
                 "Sparkle",
                 "Sunday",
+                "Trailblazer (Harmony)",
                 "Tribbie"
             ]
         },
@@ -1421,7 +1424,8 @@
             "characters": [
                 "Fu Xuan",
                 "Gepard",
-                "March 7th"
+                "March 7th",
+                "Trailblazer (Preservation)"
             ]
         },
         "cr_flower_of_laya": {
@@ -1433,7 +1437,8 @@
                 "Cyrene",
                 "Evernight",
                 "Hyacine",
-                "Robin • Summeretto"
+                "Robin • Summeretto",
+                "Trailblazer (Remembrance)"
             ]
         },
         "cr_lance_of_retribution": {
@@ -1671,6 +1676,7 @@
                 "Robin",
                 "Ruan Mei",
                 "Sparkle",
+                "Trailblazer (Harmony)",
                 "Xueyi"
             ]
         },
@@ -1689,6 +1695,8 @@
                 "Saber",
                 "Silver Wolf",
                 "Tingyun",
+                "Trailblazer (Destruction)",
+                "Trailblazer (Preservation)",
                 "Welt",
                 "Yukong"
             ]
@@ -1759,7 +1767,8 @@
                 "Lingsha",
                 "Moze",
                 "Mydei",
-                "The Herta"
+                "The Herta",
+                "Trailblazer (Remembrance)"
             ]
         },
         "ew_vanquished_flow_s_reticence": {
@@ -1773,6 +1782,7 @@
                 "Silver Wolf LV.999",
                 "Sparxie",
                 "The Dahlia",
+                "Trailblazer (Elation)",
                 "Yao Guang"
             ]
         },
@@ -1940,6 +1950,15 @@
             "name": "The Wondrous BananAmusement Park",
             "type": "planar_ornament",
             "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."
+        }
+    },
+    "other_materials": {
+        "o_enigmatic_ectostella": {
+            "name": "Enigmatic Ectostella",
+            "type": "other_materials",
+            "characters": [
+                "Trailblazer"
+            ]
         }
     }
 }

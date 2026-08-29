@@ -1,6 +1,6 @@
 {
-    "version": "76dd99f",
-    "last_updated": "2026-08-28T20:47:36.749465Z",
+    "version": "f710bf0",
+    "last_updated": "2026-08-29T05:18:12.487176Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1405,6 +1405,8 @@
                 "Diona",
                 "Klee",
                 "Sucrose",
+                "Traveler (Anemo)",
+                "Traveler (Geo)",
                 "Varka"
             ]
         },
@@ -1420,7 +1422,9 @@
                 "Mona",
                 "Noelle",
                 "Prune",
-                "Razor"
+                "Razor",
+                "Traveler (Anemo)",
+                "Traveler (Geo)"
             ]
         },
         "t_ballad": {
@@ -1435,6 +1439,8 @@
                 "Lisa",
                 "Mika",
                 "Rosaria",
+                "Traveler (Anemo)",
+                "Traveler (Geo)",
                 "Venti"
             ]
         },
@@ -1447,6 +1453,7 @@
                 "Ningguang",
                 "Qiqi",
                 "Shenhe",
+                "Traveler (Geo)",
                 "Xiao",
                 "Yelan"
             ]
@@ -1460,6 +1467,7 @@
                 "Hu Tao",
                 "Kaedehara Kazuha",
                 "Lan Yan",
+                "Traveler (Geo)",
                 "Xiangling",
                 "Yaoyao",
                 "Yun Jin"
@@ -1471,6 +1479,7 @@
             "characters": [
                 "Baizhu",
                 "Beidou",
+                "Traveler (Geo)",
                 "Xianyun",
                 "Xingqiu",
                 "Xinyan",
@@ -1488,6 +1497,7 @@
                 "Sangonomiya Kokomi",
                 "Yumemizuki Mizuki",
                 "Thoma",
+                "Traveler (Electro)",
                 "Yoimiya"
             ]
         },
@@ -1499,7 +1509,8 @@
                 "Kamisato Ayato",
                 "Arataki Itto",
                 "Kujou Sara",
-                "Kuki Shinobu"
+                "Kuki Shinobu",
+                "Traveler (Electro)"
             ]
         },
         "t_light": {
@@ -1510,7 +1521,8 @@
                 "Raiden Shogun",
                 "Gorou",
                 "Yae Miko",
-                "Sayu"
+                "Sayu",
+                "Traveler (Electro)"
             ]
         },
         "t_admonition": {
@@ -1520,7 +1532,8 @@
                 "Candace",
                 "Cyno",
                 "Faruzan",
-                "Tighnari"
+                "Tighnari",
+                "Traveler (Dendro)"
             ]
         },
         "t_ingenuity": {
@@ -1531,7 +1544,8 @@
                 "Dori",
                 "Kaveh",
                 "Layla",
-                "Nahida"
+                "Nahida",
+                "Traveler (Dendro)"
             ]
         },
         "t_praxis": {
@@ -1542,6 +1556,7 @@
                 "Dehya",
                 "Nilou",
                 "Sethos",
+                "Traveler (Dendro)",
                 "Wanderer"
             ]
         },
@@ -1552,7 +1567,8 @@
                 "Lyney",
                 "Navia",
                 "Neuvillette",
-                "Sigewinne"
+                "Sigewinne",
+                "Traveler (Hydro)"
             ]
         },
         "t_justice": {
@@ -1563,7 +1579,8 @@
                 "Clorinde",
                 "Escoffier",
                 "Freminet",
-                "Furina"
+                "Furina",
+                "Traveler (Hydro)"
             ]
         },
         "t_order": {
@@ -1574,6 +1591,7 @@
                 "Chevreuse",
                 "Emilie",
                 "Lynette",
+                "Traveler (Hydro)",
                 "Wriothesley"
             ]
         },
@@ -1584,7 +1602,8 @@
                 "Iansan",
                 "Mavuika",
                 "Mualani",
-                "Skirk"
+                "Skirk",
+                "Traveler (Pyro)"
             ]
         },
         "t_kindling": {
@@ -1594,6 +1613,7 @@
                 "Citlali",
                 "Kinich",
                 "Ororon",
+                "Traveler (Pyro)",
                 "Xilonen"
             ]
         },
@@ -1605,6 +1625,7 @@
                 "Ifa",
                 "Ineffa",
                 "Kachina",
+                "Traveler (Pyro)",
                 "Varesa"
             ]
         },
@@ -1640,7 +1661,8 @@
             "name": "Charity",
             "type": "talent_upgrade_mats",
             "characters": [
-                "Odette"
+                "Odette",
+                "Traveler (Cryo)"
             ]
         },
         "t_fortitude": {
@@ -1648,6 +1670,7 @@
             "type": "talent_upgrade_mats",
             "characters": [
                 "Alyosha",
+                "Traveler (Cryo)",
                 "Vodyanitsa"
             ]
         },
@@ -1655,6 +1678,7 @@
             "name": "Glory",
             "type": "talent_upgrade_mats",
             "characters": [
+                "Traveler (Cryo)",
                 "Vesna"
             ]
         },
@@ -2415,7 +2439,9 @@
             "characters": [
                 "Amber",
                 "Beidou",
-                "Chongyun"
+                "Chongyun",
+                "Traveler (Anemo)",
+                "Traveler (Geo)"
             ]
         },
         "wb_boreas_tail": {
@@ -2423,6 +2449,7 @@
             "type": "weekly_bosses",
             "characters": [
                 "Qiqi",
+                "Traveler (Geo)",
                 "Venti",
                 "Xingqiu"
             ]
@@ -2479,6 +2506,7 @@
             "type": "weekly_bosses",
             "characters": [
                 "Eula",
+                "Traveler (Electro)",
                 "Yoimiya"
             ]
         },
@@ -2541,7 +2569,8 @@
             "type": "weekly_bosses",
             "characters": [
                 "Kamisato Ayato",
-                "Cyno"
+                "Cyno",
+                "Traveler (Dendro)"
             ]
         },
         "wb_tears_of_calamitous_god": {
@@ -2587,7 +2616,8 @@
             "type": "weekly_bosses",
             "characters": [
                 "Baizhu",
-                "Freminet"
+                "Freminet",
+                "Traveler (Hydro)"
             ]
         },
         "wb_primordial_greenbloom": {
@@ -2714,6 +2744,7 @@
             "type": "weekly_bosses",
             "characters": [
                 "Flins",
+                "Traveler (Cryo)",
                 "Zibai"
             ]
         },
@@ -2804,7 +2835,8 @@
             "region": "Mondstadt",
             "characters": [
                 "Bennett",
-                "Sucrose"
+                "Sucrose",
+                "Traveler"
             ]
         },
         "s_philanemo_mushroom": {
@@ -3247,6 +3279,15 @@
             "region": "Snezhnaya",
             "characters": [
                 "Vesna"
+            ]
+        }
+    },
+    "other_materials": {
+        "o_cornerstone_of_stars_and_flames": {
+            "name": "The Cornerstone of Stars and Flames",
+            "type": "other_materials",
+            "characters": [
+                "Traveler (Pyro)"
             ]
         }
     }

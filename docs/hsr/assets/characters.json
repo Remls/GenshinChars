@@ -1,6 +1,6 @@
 {
-    "version": "9f2e3d7",
-    "last_updated": "2026-08-28T21:02:27.899921Z",
+    "version": "f710bf0",
+    "last_updated": "2026-08-29T05:18:15.711495Z",
     "characters": {
         "Pearl": {
             "name": "Pearl",
@@ -11,14 +11,30 @@
                     "path": "Elation",
                     "combat_type": "Ice",
                     "release_version": "4.6",
-                    "release_date": null
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Character Pearl Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Pearl Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Planarcadia",
             "release_version": "4.6",
             "release_date": null,
-            "is_released": false
+            "is_released": false,
+            "photo": {
+                "wiki": "Character Pearl Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Pearl Splash Art.png"
+                }
+            ]
         },
         "Aventurine • Waveflair": {
             "name": "Aventurine • Waveflair",
@@ -29,14 +45,30 @@
                     "path": "Elation",
                     "combat_type": "Quantum",
                     "release_version": "4.5",
-                    "release_date": "2026-09-12"
+                    "release_date": "2026-09-12",
+                    "photo": {
+                        "wiki": "Character Aventurine • Waveflair Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Aventurine • Waveflair Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Sigonia-IV",
             "release_version": "4.5",
             "release_date": "2026-09-12",
-            "is_released": false
+            "is_released": false,
+            "photo": {
+                "wiki": "Character Aventurine • Waveflair Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Aventurine • Waveflair Splash Art.png"
+                }
+            ]
         },
         "Robin • Summeretto": {
             "name": "Robin • Summeretto",
@@ -47,14 +79,30 @@
                     "path": "Remembrance",
                     "combat_type": "Wind",
                     "release_version": "4.5",
-                    "release_date": "2026-08-26"
+                    "release_date": "2026-08-26",
+                    "photo": {
+                        "wiki": "Character Robin • Summeretto Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Robin • Summeretto Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Penacony",
             "release_version": "4.5",
             "release_date": "2026-08-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Robin • Summeretto Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Robin • Summeretto Splash Art.png"
+                }
+            ]
         },
         "Rin Tohsaka": {
             "name": "Rin Tohsaka",
@@ -65,14 +113,30 @@
                     "path": "Erudition",
                     "combat_type": "Quantum",
                     "release_version": "4.4",
-                    "release_date": "2026-07-24"
+                    "release_date": "2026-07-24",
+                    "photo": {
+                        "wiki": "Character Rin Tohsaka Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Rin Tohsaka Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Another World",
             "release_version": "4.4",
             "release_date": "2026-07-24",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Rin Tohsaka Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Rin Tohsaka Splash Art.png"
+                }
+            ]
         },
         "Gilgamesh": {
             "name": "Gilgamesh",
@@ -83,14 +147,30 @@
                     "path": "Destruction",
                     "combat_type": "Lightning",
                     "release_version": "4.4",
-                    "release_date": "2026-07-24"
+                    "release_date": "2026-07-24",
+                    "photo": {
+                        "wiki": "Character Gilgamesh Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Gilgamesh Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Another World",
             "release_version": "4.4",
             "release_date": "2026-07-24",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Gilgamesh Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Gilgamesh Splash Art.png"
+                }
+            ]
         },
         "Himeko • Nova": {
             "name": "Himeko • Nova",
@@ -101,14 +181,30 @@
                     "path": "Erudition",
                     "combat_type": "Fire",
                     "release_version": "4.4",
-                    "release_date": "2026-07-15"
+                    "release_date": "2026-07-15",
+                    "photo": {
+                        "wiki": "Character Himeko • Nova Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Himeko • Nova Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Astral Express",
             "release_version": "4.4",
             "release_date": "2026-07-15",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Himeko • Nova Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Himeko • Nova Splash Art.png"
+                }
+            ]
         },
         "Mortenax Blade": {
             "name": "Mortenax Blade",
@@ -119,14 +215,30 @@
                     "path": "Nihility",
                     "combat_type": "Fire",
                     "release_version": "4.3",
-                    "release_date": "2026-06-01"
+                    "release_date": "2026-06-01",
+                    "photo": {
+                        "wiki": "Character Mortenax Blade Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mortenax Blade Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": null,
             "release_version": "4.3",
             "release_date": "2026-06-01",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Mortenax Blade Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mortenax Blade Splash Art.png"
+                }
+            ]
         },
         "Evanescia": {
             "name": "Evanescia",
@@ -137,14 +249,30 @@
                     "path": "Elation",
                     "combat_type": "Physical",
                     "release_version": "4.2",
-                    "release_date": "2026-05-13"
+                    "release_date": "2026-05-13",
+                    "photo": {
+                        "wiki": "Character Evanescia Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Evanescia Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Planarcadia",
             "release_version": "4.2",
             "release_date": "2026-05-13",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Evanescia Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Evanescia Splash Art.png"
+                }
+            ]
         },
         "Silver Wolf LV.999": {
             "name": "Silver Wolf LV.999",
@@ -155,14 +283,30 @@
                     "path": "Elation",
                     "combat_type": "Imaginary",
                     "release_version": "4.2",
-                    "release_date": "2026-04-22"
+                    "release_date": "2026-04-22",
+                    "photo": {
+                        "wiki": "Character Silver Wolf LV.999 Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Silver Wolf LV.999 Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Punklorde",
             "release_version": "4.2",
             "release_date": "2026-04-22",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Silver Wolf LV.999 Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Silver Wolf LV.999 Splash Art.png"
+                }
+            ]
         },
         "Ashveil": {
             "name": "Ashveil",
@@ -173,14 +317,30 @@
                     "path": "Hunt",
                     "combat_type": "Lightning",
                     "release_version": "4.1",
-                    "release_date": "2026-03-25"
+                    "release_date": "2026-03-25",
+                    "photo": {
+                        "wiki": "Character Ashveil Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ashveil Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Planarcadia",
             "release_version": "4.1",
             "release_date": "2026-03-25",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Ashveil Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ashveil Splash Art.png"
+                }
+            ]
         },
         "Sparxie": {
             "name": "Sparxie",
@@ -191,14 +351,30 @@
                     "path": "Elation",
                     "combat_type": "Fire",
                     "release_version": "4.0",
-                    "release_date": "2026-03-03"
+                    "release_date": "2026-03-03",
+                    "photo": {
+                        "wiki": "Character Sparxie Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sparxie Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Planarcadia",
             "release_version": "4.0",
             "release_date": "2026-03-03",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Sparxie Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sparxie Splash Art.png"
+                }
+            ]
         },
         "Yao Guang": {
             "name": "Yao Guang",
@@ -209,14 +385,30 @@
                     "path": "Elation",
                     "combat_type": "Physical",
                     "release_version": "4.0",
-                    "release_date": "2026-02-13"
+                    "release_date": "2026-02-13",
+                    "photo": {
+                        "wiki": "Character Yao Guang Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yao Guang Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "4.0",
             "release_date": "2026-02-13",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Yao Guang Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yao Guang Splash Art.png"
+                }
+            ]
         },
         "The Dahlia": {
             "name": "The Dahlia",
@@ -227,14 +419,30 @@
                     "path": "Nihility",
                     "combat_type": "Fire",
                     "release_version": "3.8",
-                    "release_date": "2025-12-17"
+                    "release_date": "2025-12-17",
+                    "photo": {
+                        "wiki": "Character The Dahlia Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character The Dahlia Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Cosmic",
             "release_version": "3.8",
             "release_date": "2025-12-17",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character The Dahlia Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character The Dahlia Splash Art.png"
+                }
+            ]
         },
         "Cyrene": {
             "name": "Cyrene",
@@ -245,14 +453,30 @@
                     "path": "Remembrance",
                     "combat_type": "Ice",
                     "release_version": "3.7",
-                    "release_date": "2025-11-05"
+                    "release_date": "2025-11-05",
+                    "photo": {
+                        "wiki": "Character Cyrene Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Cyrene Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.7",
             "release_date": "2025-11-05",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Cyrene Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Cyrene Splash Art.png"
+                }
+            ]
         },
         "Dan Heng • Permansor Terrae": {
             "name": "Dan Heng • Permansor Terrae",
@@ -263,14 +487,30 @@
                     "path": "Preservation",
                     "combat_type": "Physical",
                     "release_version": "3.6",
-                    "release_date": "2025-10-15"
+                    "release_date": "2025-10-15",
+                    "photo": {
+                        "wiki": "Character Dan Heng • Permansor Terrae Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Amphoreus",
             "release_version": "3.6",
             "release_date": "2025-10-15",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Dan Heng • Permansor Terrae Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png"
+                }
+            ]
         },
         "Evernight": {
             "name": "Evernight",
@@ -281,14 +521,30 @@
                     "path": "Remembrance",
                     "combat_type": "Ice",
                     "release_version": "3.6",
-                    "release_date": "2025-09-24"
+                    "release_date": "2025-09-24",
+                    "photo": {
+                        "wiki": "Character Evernight Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Evernight Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.6",
             "release_date": "2025-09-24",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Evernight Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Evernight Splash Art.png"
+                }
+            ]
         },
         "Cerydra": {
             "name": "Cerydra",
@@ -299,14 +555,30 @@
                     "path": "Harmony",
                     "combat_type": "Wind",
                     "release_version": "3.5",
-                    "release_date": "2025-09-02"
+                    "release_date": "2025-09-02",
+                    "photo": {
+                        "wiki": "Character Cerydra Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Cerydra Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.5",
             "release_date": "2025-09-02",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Cerydra Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Cerydra Splash Art.png"
+                }
+            ]
         },
         "Hysilens": {
             "name": "Hysilens",
@@ -317,14 +589,30 @@
                     "path": "Nihility",
                     "combat_type": "Physical",
                     "release_version": "3.5",
-                    "release_date": "2025-08-13"
+                    "release_date": "2025-08-13",
+                    "photo": {
+                        "wiki": "Character Hysilens Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Hysilens Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.5",
             "release_date": "2025-08-13",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Hysilens Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Hysilens Splash Art.png"
+                }
+            ]
         },
         "Saber": {
             "name": "Saber",
@@ -335,14 +623,30 @@
                     "path": "Destruction",
                     "combat_type": "Wind",
                     "release_version": "3.4",
-                    "release_date": "2025-07-11"
+                    "release_date": "2025-07-11",
+                    "photo": {
+                        "wiki": "Character Saber Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Saber Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Another World",
             "release_version": "3.4",
             "release_date": "2025-07-11",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Saber Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Saber Splash Art.png"
+                }
+            ]
         },
         "Archer": {
             "name": "Archer",
@@ -353,14 +657,30 @@
                     "path": "Hunt",
                     "combat_type": "Quantum",
                     "release_version": "3.4",
-                    "release_date": "2025-07-11"
+                    "release_date": "2025-07-11",
+                    "photo": {
+                        "wiki": "Character Archer Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Archer Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Another World",
             "release_version": "3.4",
             "release_date": "2025-07-11",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Archer Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Archer Splash Art.png"
+                }
+            ]
         },
         "Phainon": {
             "name": "Phainon",
@@ -371,14 +691,30 @@
                     "path": "Destruction",
                     "combat_type": "Physical",
                     "release_version": "3.4",
-                    "release_date": "2025-07-02"
+                    "release_date": "2025-07-02",
+                    "photo": {
+                        "wiki": "Character Phainon Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Phainon Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Amphoreus",
             "release_version": "3.4",
             "release_date": "2025-07-02",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Phainon Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Phainon Splash Art.png"
+                }
+            ]
         },
         "Cipher": {
             "name": "Cipher",
@@ -389,14 +725,30 @@
                     "path": "Nihility",
                     "combat_type": "Quantum",
                     "release_version": "3.3",
-                    "release_date": "2025-06-11"
+                    "release_date": "2025-06-11",
+                    "photo": {
+                        "wiki": "Character Cipher Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Cipher Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.3",
             "release_date": "2025-06-11",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Cipher Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Cipher Splash Art.png"
+                }
+            ]
         },
         "Hyacine": {
             "name": "Hyacine",
@@ -407,14 +759,30 @@
                     "path": "Remembrance",
                     "combat_type": "Wind",
                     "release_version": "3.3",
-                    "release_date": "2025-05-21"
+                    "release_date": "2025-05-21",
+                    "photo": {
+                        "wiki": "Character Hyacine Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Hyacine Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.3",
             "release_date": "2025-05-21",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Hyacine Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Hyacine Splash Art.png"
+                }
+            ]
         },
         "Anaxa": {
             "name": "Anaxa",
@@ -425,14 +793,30 @@
                     "path": "Erudition",
                     "combat_type": "Wind",
                     "release_version": "3.2",
-                    "release_date": "2025-04-30"
+                    "release_date": "2025-04-30",
+                    "photo": {
+                        "wiki": "Character Anaxa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Anaxa Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Amphoreus",
             "release_version": "3.2",
             "release_date": "2025-04-30",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Anaxa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Anaxa Splash Art.png"
+                }
+            ]
         },
         "Castorice": {
             "name": "Castorice",
@@ -443,14 +827,30 @@
                     "path": "Remembrance",
                     "combat_type": "Quantum",
                     "release_version": "3.2",
-                    "release_date": "2025-04-09"
+                    "release_date": "2025-04-09",
+                    "photo": {
+                        "wiki": "Character Castorice Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Castorice Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.2",
             "release_date": "2025-04-09",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Castorice Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Castorice Splash Art.png"
+                }
+            ]
         },
         "Mydei": {
             "name": "Mydei",
@@ -461,14 +861,30 @@
                     "path": "Destruction",
                     "combat_type": "Imaginary",
                     "release_version": "3.1",
-                    "release_date": "2025-03-19"
+                    "release_date": "2025-03-19",
+                    "photo": {
+                        "wiki": "Character Mydei Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mydei Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Amphoreus",
             "release_version": "3.1",
             "release_date": "2025-03-19",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Mydei Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mydei Splash Art.png"
+                }
+            ]
         },
         "Tribbie": {
             "name": "Tribbie",
@@ -479,14 +895,30 @@
                     "path": "Harmony",
                     "combat_type": "Quantum",
                     "release_version": "3.1",
-                    "release_date": "2025-02-26"
+                    "release_date": "2025-02-26",
+                    "photo": {
+                        "wiki": "Character Tribbie Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Tribbie Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.1",
             "release_date": "2025-02-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Tribbie Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Tribbie Splash Art.png"
+                }
+            ]
         },
         "Aglaea": {
             "name": "Aglaea",
@@ -497,14 +929,30 @@
                     "path": "Remembrance",
                     "combat_type": "Lightning",
                     "release_version": "3.0",
-                    "release_date": "2025-02-05"
+                    "release_date": "2025-02-05",
+                    "photo": {
+                        "wiki": "Character Aglaea Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Aglaea Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Amphoreus",
             "release_version": "3.0",
             "release_date": "2025-02-05",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Aglaea Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Aglaea Splash Art.png"
+                }
+            ]
         },
         "The Herta": {
             "name": "The Herta",
@@ -515,14 +963,30 @@
                     "path": "Erudition",
                     "combat_type": "Ice",
                     "release_version": "3.0",
-                    "release_date": "2025-01-15"
+                    "release_date": "2025-01-15",
+                    "photo": {
+                        "wiki": "Character The Herta Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character The Herta Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Herta Space Station",
             "release_version": "3.0",
             "release_date": "2025-01-15",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character The Herta Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character The Herta Splash Art.png"
+                }
+            ]
         },
         "Fugue": {
             "name": "Fugue",
@@ -533,14 +997,30 @@
                     "path": "Nihility",
                     "combat_type": "Fire",
                     "release_version": "2.7",
-                    "release_date": "2024-12-25"
+                    "release_date": "2024-12-25",
+                    "photo": {
+                        "wiki": "Character Fugue Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Fugue Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "2.7",
             "release_date": "2024-12-25",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Fugue Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Fugue Splash Art.png"
+                }
+            ]
         },
         "Sunday": {
             "name": "Sunday",
@@ -551,14 +1031,30 @@
                     "path": "Harmony",
                     "combat_type": "Imaginary",
                     "release_version": "2.7",
-                    "release_date": "2024-12-04"
+                    "release_date": "2024-12-04",
+                    "photo": {
+                        "wiki": "Character Sunday Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sunday Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Cosmic",
             "release_version": "2.7",
             "release_date": "2024-12-04",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Sunday Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sunday Splash Art.png"
+                }
+            ]
         },
         "Rappa": {
             "name": "Rappa",
@@ -569,14 +1065,30 @@
                     "path": "Erudition",
                     "combat_type": "Imaginary",
                     "release_version": "2.6",
-                    "release_date": "2024-10-23"
+                    "release_date": "2024-10-23",
+                    "photo": {
+                        "wiki": "Character Rappa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Rappa Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Cosmic",
             "release_version": "2.6",
             "release_date": "2024-10-23",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Rappa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Rappa Splash Art.png"
+                }
+            ]
         },
         "Lingsha": {
             "name": "Lingsha",
@@ -587,14 +1099,30 @@
                     "path": "Abundance",
                     "combat_type": "Fire",
                     "release_version": "2.5",
-                    "release_date": "2024-10-02"
+                    "release_date": "2024-10-02",
+                    "photo": {
+                        "wiki": "Character Lingsha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lingsha Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "2.5",
             "release_date": "2024-10-02",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Lingsha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lingsha Splash Art.png"
+                }
+            ]
         },
         "Moze": {
             "name": "Moze",
@@ -605,14 +1133,30 @@
                     "path": "Hunt",
                     "combat_type": "Lightning",
                     "release_version": "2.5",
-                    "release_date": "2024-09-10"
+                    "release_date": "2024-09-10",
+                    "photo": {
+                        "wiki": "Character Moze Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Moze Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "2.5",
             "release_date": "2024-09-10",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Moze Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Moze Splash Art.png"
+                }
+            ]
         },
         "Feixiao": {
             "name": "Feixiao",
@@ -623,14 +1167,30 @@
                     "path": "Hunt",
                     "combat_type": "Wind",
                     "release_version": "2.5",
-                    "release_date": "2024-09-10"
+                    "release_date": "2024-09-10",
+                    "photo": {
+                        "wiki": "Character Feixiao Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Feixiao Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "2.5",
             "release_date": "2024-09-10",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Feixiao Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Feixiao Splash Art.png"
+                }
+            ]
         },
         "Jiaoqiu": {
             "name": "Jiaoqiu",
@@ -641,14 +1201,30 @@
                     "path": "Nihility",
                     "combat_type": "Fire",
                     "release_version": "2.4",
-                    "release_date": "2024-08-21"
+                    "release_date": "2024-08-21",
+                    "photo": {
+                        "wiki": "Character Jiaoqiu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jiaoqiu Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "2.4",
             "release_date": "2024-08-21",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Jiaoqiu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jiaoqiu Splash Art.png"
+                }
+            ]
         },
         "Yunli": {
             "name": "Yunli",
@@ -659,14 +1235,30 @@
                     "path": "Destruction",
                     "combat_type": "Physical",
                     "release_version": "2.4",
-                    "release_date": "2024-07-31"
+                    "release_date": "2024-07-31",
+                    "photo": {
+                        "wiki": "Character Yunli Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yunli Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "2.4",
             "release_date": "2024-07-31",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Yunli Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yunli Splash Art.png"
+                }
+            ]
         },
         "Jade": {
             "name": "Jade",
@@ -677,14 +1269,30 @@
                     "path": "Erudition",
                     "combat_type": "Quantum",
                     "release_version": "2.3",
-                    "release_date": "2024-07-10"
+                    "release_date": "2024-07-10",
+                    "photo": {
+                        "wiki": "Character Jade Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jade Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": null,
             "release_version": "2.3",
             "release_date": "2024-07-10",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Jade Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jade Splash Art.png"
+                }
+            ]
         },
         "Firefly": {
             "name": "Firefly",
@@ -695,14 +1303,30 @@
                     "path": "Destruction",
                     "combat_type": "Fire",
                     "release_version": "2.3",
-                    "release_date": "2024-06-19"
+                    "release_date": "2024-06-19",
+                    "photo": {
+                        "wiki": "Character Firefly Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Firefly Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Glamoth",
             "release_version": "2.3",
             "release_date": "2024-06-19",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Firefly Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Firefly Splash Art.png"
+                }
+            ]
         },
         "Boothill": {
             "name": "Boothill",
@@ -713,14 +1337,30 @@
                     "path": "Hunt",
                     "combat_type": "Physical",
                     "release_version": "2.2",
-                    "release_date": "2024-05-29"
+                    "release_date": "2024-05-29",
+                    "photo": {
+                        "wiki": "Character Boothill Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Boothill Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Cosmic",
             "release_version": "2.2",
             "release_date": "2024-05-29",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Boothill Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Boothill Splash Art.png"
+                }
+            ]
         },
         "Robin": {
             "name": "Robin",
@@ -731,14 +1371,30 @@
                     "path": "Harmony",
                     "combat_type": "Physical",
                     "release_version": "2.2",
-                    "release_date": "2024-05-08"
+                    "release_date": "2024-05-08",
+                    "photo": {
+                        "wiki": "Character Robin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Robin Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Penacony",
             "release_version": "2.2",
             "release_date": "2024-05-08",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Robin Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Robin Splash Art.png"
+                }
+            ]
         },
         "Aventurine": {
             "name": "Aventurine",
@@ -749,14 +1405,30 @@
                     "path": "Preservation",
                     "combat_type": "Imaginary",
                     "release_version": "2.1",
-                    "release_date": "2024-04-17"
+                    "release_date": "2024-04-17",
+                    "photo": {
+                        "wiki": "Character Aventurine Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Aventurine Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Sigonia-IV",
             "release_version": "2.1",
             "release_date": "2024-04-17",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Aventurine Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Aventurine Splash Art.png"
+                }
+            ]
         },
         "Gallagher": {
             "name": "Gallagher",
@@ -767,14 +1439,30 @@
                     "path": "Abundance",
                     "combat_type": "Fire",
                     "release_version": "2.1",
-                    "release_date": "2024-03-27"
+                    "release_date": "2024-03-27",
+                    "photo": {
+                        "wiki": "Character Gallagher Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Gallagher Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Penacony",
             "release_version": "2.1",
             "release_date": "2024-03-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Gallagher Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Gallagher Splash Art.png"
+                }
+            ]
         },
         "Acheron": {
             "name": "Acheron",
@@ -785,14 +1473,30 @@
                     "path": "Nihility",
                     "combat_type": "Lightning",
                     "release_version": "2.1",
-                    "release_date": "2024-03-27"
+                    "release_date": "2024-03-27",
+                    "photo": {
+                        "wiki": "Character Acheron Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Acheron Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Cosmic",
             "release_version": "2.1",
             "release_date": "2024-03-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Acheron Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Acheron Splash Art.png"
+                }
+            ]
         },
         "Sparkle": {
             "name": "Sparkle",
@@ -803,14 +1507,30 @@
                     "path": "Harmony",
                     "combat_type": "Quantum",
                     "release_version": "2.0",
-                    "release_date": "2024-02-29"
+                    "release_date": "2024-02-29",
+                    "photo": {
+                        "wiki": "Character Sparkle Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sparkle Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Cosmic",
             "release_version": "2.0",
             "release_date": "2024-02-29",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Sparkle Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sparkle Splash Art.png"
+                }
+            ]
         },
         "Misha": {
             "name": "Misha",
@@ -821,14 +1541,30 @@
                     "path": "Destruction",
                     "combat_type": "Ice",
                     "release_version": "2.0",
-                    "release_date": "2024-02-06"
+                    "release_date": "2024-02-06",
+                    "photo": {
+                        "wiki": "Character Misha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Misha Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Penacony",
             "release_version": "2.0",
             "release_date": "2024-02-06",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Misha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Misha Splash Art.png"
+                }
+            ]
         },
         "Black Swan": {
             "name": "Black Swan",
@@ -839,14 +1575,30 @@
                     "path": "Nihility",
                     "combat_type": "Wind",
                     "release_version": "2.0",
-                    "release_date": "2024-02-06"
+                    "release_date": "2024-02-06",
+                    "photo": {
+                        "wiki": "Character Black Swan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Black Swan Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Cosmic",
             "release_version": "2.0",
             "release_date": "2024-02-06",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Black Swan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Black Swan Splash Art.png"
+                }
+            ]
         },
         "Dr. Ratio": {
             "name": "Dr. Ratio",
@@ -857,14 +1609,30 @@
                     "path": "Hunt",
                     "combat_type": "Imaginary",
                     "release_version": "1.6",
-                    "release_date": "2024-01-17"
+                    "release_date": "2024-01-17",
+                    "photo": {
+                        "wiki": "Character Dr. Ratio Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dr. Ratio Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Cosmic",
             "release_version": "1.6",
             "release_date": "2024-01-17",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Dr. Ratio Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dr. Ratio Splash Art.png"
+                }
+            ]
         },
         "Xueyi": {
             "name": "Xueyi",
@@ -875,14 +1643,30 @@
                     "path": "Destruction",
                     "combat_type": "Quantum",
                     "release_version": "1.6",
-                    "release_date": "2023-12-27"
+                    "release_date": "2023-12-27",
+                    "photo": {
+                        "wiki": "Character Xueyi Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xueyi Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.6",
             "release_date": "2023-12-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Xueyi Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xueyi Splash Art.png"
+                }
+            ]
         },
         "Ruan Mei": {
             "name": "Ruan Mei",
@@ -893,14 +1677,30 @@
                     "path": "Harmony",
                     "combat_type": "Ice",
                     "release_version": "1.6",
-                    "release_date": "2023-12-27"
+                    "release_date": "2023-12-27",
+                    "photo": {
+                        "wiki": "Character Ruan Mei Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ruan Mei Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Herta Space Station",
             "release_version": "1.6",
             "release_date": "2023-12-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Ruan Mei Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ruan Mei Splash Art.png"
+                }
+            ]
         },
         "Hanya": {
             "name": "Hanya",
@@ -911,14 +1711,30 @@
                     "path": "Harmony",
                     "combat_type": "Physical",
                     "release_version": "1.5",
-                    "release_date": "2023-12-06"
+                    "release_date": "2023-12-06",
+                    "photo": {
+                        "wiki": "Character Hanya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Hanya Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.5",
             "release_date": "2023-12-06",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Hanya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Hanya Splash Art.png"
+                }
+            ]
         },
         "Argenti": {
             "name": "Argenti",
@@ -929,14 +1745,30 @@
                     "path": "Erudition",
                     "combat_type": "Physical",
                     "release_version": "1.5",
-                    "release_date": "2023-12-06"
+                    "release_date": "2023-12-06",
+                    "photo": {
+                        "wiki": "Character Argenti Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Argenti Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Cosmic",
             "release_version": "1.5",
             "release_date": "2023-12-06",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Argenti Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Argenti Splash Art.png"
+                }
+            ]
         },
         "Huohuo": {
             "name": "Huohuo",
@@ -947,14 +1779,30 @@
                     "path": "Abundance",
                     "combat_type": "Wind",
                     "release_version": "1.5",
-                    "release_date": "2023-11-15"
+                    "release_date": "2023-11-15",
+                    "photo": {
+                        "wiki": "Character Huohuo Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Huohuo Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.5",
             "release_date": "2023-11-15",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Huohuo Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Huohuo Splash Art.png"
+                }
+            ]
         },
         "Topaz & Numby": {
             "name": "Topaz & Numby",
@@ -965,14 +1813,30 @@
                     "path": "Hunt",
                     "combat_type": "Fire",
                     "release_version": "1.4",
-                    "release_date": "2023-10-27"
+                    "release_date": "2023-10-27",
+                    "photo": {
+                        "wiki": "Character Topaz & Numby Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Topaz and Numby Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": null,
             "release_version": "1.4",
             "release_date": "2023-10-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Topaz & Numby Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Topaz and Numby Splash Art.png"
+                }
+            ]
         },
         "Guinaifen": {
             "name": "Guinaifen",
@@ -983,14 +1847,30 @@
                     "path": "Nihility",
                     "combat_type": "Fire",
                     "release_version": "1.4",
-                    "release_date": "2023-10-27"
+                    "release_date": "2023-10-27",
+                    "photo": {
+                        "wiki": "Character Guinaifen Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Guinaifen Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.4",
             "release_date": "2023-10-27",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Guinaifen Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Guinaifen Splash Art.png"
+                }
+            ]
         },
         "Jingliu": {
             "name": "Jingliu",
@@ -1001,14 +1881,30 @@
                     "path": "Destruction",
                     "combat_type": "Ice",
                     "release_version": "1.4",
-                    "release_date": "2023-10-11"
+                    "release_date": "2023-10-11",
+                    "photo": {
+                        "wiki": "Character Jingliu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jingliu Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.4",
             "release_date": "2023-10-11",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Jingliu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jingliu Splash Art.png"
+                }
+            ]
         },
         "Lynx": {
             "name": "Lynx",
@@ -1019,14 +1915,30 @@
                     "path": "Abundance",
                     "combat_type": "Quantum",
                     "release_version": "1.3",
-                    "release_date": "2023-09-20"
+                    "release_date": "2023-09-20",
+                    "photo": {
+                        "wiki": "Character Lynx Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lynx Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.3",
             "release_date": "2023-09-20",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Lynx Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lynx Splash Art.png"
+                }
+            ]
         },
         "Fu Xuan": {
             "name": "Fu Xuan",
@@ -1037,14 +1949,30 @@
                     "path": "Preservation",
                     "combat_type": "Quantum",
                     "release_version": "1.3",
-                    "release_date": "2023-09-20"
+                    "release_date": "2023-09-20",
+                    "photo": {
+                        "wiki": "Character Fu Xuan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Fu Xuan Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.3",
             "release_date": "2023-09-20",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Fu Xuan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Fu Xuan Splash Art.png"
+                }
+            ]
         },
         "Dan Heng • Imbibitor Lunae": {
             "name": "Dan Heng • Imbibitor Lunae",
@@ -1055,14 +1983,30 @@
                     "path": "Destruction",
                     "combat_type": "Imaginary",
                     "release_version": "1.3",
-                    "release_date": "2023-08-30"
+                    "release_date": "2023-08-30",
+                    "photo": {
+                        "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "1.3",
             "release_date": "2023-08-30",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png"
+                }
+            ]
         },
         "Luka": {
             "name": "Luka",
@@ -1073,14 +2017,30 @@
                     "path": "Nihility",
                     "combat_type": "Physical",
                     "release_version": "1.2",
-                    "release_date": "2023-08-09"
+                    "release_date": "2023-08-09",
+                    "photo": {
+                        "wiki": "Character Luka Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Luka Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Jarilo-VI",
             "release_version": "1.2",
             "release_date": "2023-08-09",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Luka Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Luka Splash Art.png"
+                }
+            ]
         },
         "Kafka": {
             "name": "Kafka",
@@ -1091,14 +2051,30 @@
                     "path": "Nihility",
                     "combat_type": "Lightning",
                     "release_version": "1.2",
-                    "release_date": "2023-08-09"
+                    "release_date": "2023-08-09",
+                    "photo": {
+                        "wiki": "Character Kafka Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kafka Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Pteruges-V",
             "release_version": "1.2",
             "release_date": "2023-08-09",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Kafka Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kafka Splash Art.png"
+                }
+            ]
         },
         "Blade": {
             "name": "Blade",
@@ -1109,14 +2085,30 @@
                     "path": "Destruction",
                     "combat_type": "Wind",
                     "release_version": "1.2",
-                    "release_date": "2023-07-19"
+                    "release_date": "2023-07-19",
+                    "photo": {
+                        "wiki": "Character Blade Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Blade Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": null,
             "release_version": "1.2",
             "release_date": "2023-07-19",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Blade Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Blade Splash Art.png"
+                }
+            ]
         },
         "Yukong": {
             "name": "Yukong",
@@ -1127,14 +2119,30 @@
                     "path": "Harmony",
                     "combat_type": "Imaginary",
                     "release_version": "1.1",
-                    "release_date": "2023-06-28"
+                    "release_date": "2023-06-28",
+                    "photo": {
+                        "wiki": "Character Yukong Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yukong Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.1",
             "release_date": "2023-06-28",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Yukong Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yukong Splash Art.png"
+                }
+            ]
         },
         "Luocha": {
             "name": "Luocha",
@@ -1145,14 +2153,30 @@
                     "path": "Abundance",
                     "combat_type": "Imaginary",
                     "release_version": "1.1",
-                    "release_date": "2023-06-28"
+                    "release_date": "2023-06-28",
+                    "photo": {
+                        "wiki": "Character Luocha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Luocha Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "1.1",
             "release_date": "2023-06-28",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Luocha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Luocha Splash Art.png"
+                }
+            ]
         },
         "Silver Wolf": {
             "name": "Silver Wolf",
@@ -1163,14 +2187,30 @@
                     "path": "Nihility",
                     "combat_type": "Quantum",
                     "release_version": "1.1",
-                    "release_date": "2023-06-07"
+                    "release_date": "2023-06-07",
+                    "photo": {
+                        "wiki": "Character Silver Wolf Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Silver Wolf Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Punklorde",
             "release_version": "1.1",
             "release_date": "2023-06-07",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Silver Wolf Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Silver Wolf Splash Art.png"
+                }
+            ]
         },
         "Jing Yuan": {
             "name": "Jing Yuan",
@@ -1181,14 +2221,30 @@
                     "path": "Erudition",
                     "combat_type": "Lightning",
                     "release_version": "1.0",
-                    "release_date": "2023-05-17"
+                    "release_date": "2023-05-17",
+                    "photo": {
+                        "wiki": "Character Jing Yuan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jing Yuan Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-05-17",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Jing Yuan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jing Yuan Splash Art.png"
+                }
+            ]
         },
         "Yanqing": {
             "name": "Yanqing",
@@ -1199,14 +2255,30 @@
                     "path": "Hunt",
                     "combat_type": "Ice",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Yanqing Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yanqing Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Yanqing Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yanqing Splash Art.png"
+                }
+            ]
         },
         "Welt": {
             "name": "Welt",
@@ -1217,14 +2289,136 @@
                     "path": "Nihility",
                     "combat_type": "Imaginary",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Welt Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Welt Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Astral Express",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Welt Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Welt Splash Art.png"
+                }
+            ]
+        },
+        "Trailblazer": {
+            "name": "Trailblazer",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Destruction",
+                    "combat_type": "Physical",
+                    "display_name": "Trailblazer (Destruction)",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Trailblazer (Destruction) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Trailblazer (F) Destruction Splash Art.png"
+                        },
+                        {
+                            "wiki": "Character Trailblazer (M) Destruction Splash Art.png"
+                        }
+                    ]
+                },
+                {
+                    "path": "Preservation",
+                    "combat_type": "Fire",
+                    "display_name": "Trailblazer (Preservation)",
+                    "release_version": "1.0",
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Trailblazer (Preservation) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Trailblazer (F) Preservation Splash Art.png"
+                        },
+                        {
+                            "wiki": "Character Trailblazer (M) Preservation Splash Art.png"
+                        }
+                    ]
+                },
+                {
+                    "path": "Harmony",
+                    "combat_type": "Imaginary",
+                    "display_name": "Trailblazer (Harmony)",
+                    "release_version": "2.2",
+                    "release_date": "2024-05-08",
+                    "photo": {
+                        "wiki": "Character Trailblazer (Harmony) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Trailblazer (F) Harmony Splash Art.png"
+                        },
+                        {
+                            "wiki": "Character Trailblazer (M) Harmony Splash Art.png"
+                        }
+                    ]
+                },
+                {
+                    "path": "Remembrance",
+                    "combat_type": "Ice",
+                    "display_name": "Trailblazer (Remembrance)",
+                    "release_version": "3.0",
+                    "release_date": "2025-01-15",
+                    "photo": {
+                        "wiki": "Character Trailblazer (Remembrance) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Trailblazer (F) Remembrance Splash Art.png"
+                        },
+                        {
+                            "wiki": "Character Trailblazer (M) Remembrance Splash Art.png"
+                        }
+                    ]
+                },
+                {
+                    "path": "Elation",
+                    "combat_type": "Lightning",
+                    "display_name": "Trailblazer (Elation)",
+                    "release_version": "4.2",
+                    "release_date": "2026-04-22",
+                    "photo": {
+                        "wiki": "Character Trailblazer (Elation) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Trailblazer (F) Elation Splash Art.png"
+                        },
+                        {
+                            "wiki": "Character Trailblazer (M) Elation Splash Art.png"
+                        }
+                    ]
+                }
+            ],
+            "gender": "Either",
+            "world": "Astral Express",
+            "release_version": "1.0",
+            "release_date": "2023-04-26",
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Trailblazer (Destruction) Icon.png"
+            },
+            "full_photo": []
         },
         "Tingyun": {
             "name": "Tingyun",
@@ -1235,14 +2429,30 @@
                     "path": "Harmony",
                     "combat_type": "Lightning",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Tingyun Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Tingyun Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Tingyun Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Tingyun Splash Art.png"
+                }
+            ]
         },
         "Sushang": {
             "name": "Sushang",
@@ -1253,14 +2463,30 @@
                     "path": "Hunt",
                     "combat_type": "Physical",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Sushang Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sushang Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Sushang Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sushang Splash Art.png"
+                }
+            ]
         },
         "Serval": {
             "name": "Serval",
@@ -1271,14 +2497,30 @@
                     "path": "Erudition",
                     "combat_type": "Lightning",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Serval Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Serval Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Serval Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Serval Splash Art.png"
+                }
+            ]
         },
         "Seele": {
             "name": "Seele",
@@ -1289,14 +2531,30 @@
                     "path": "Hunt",
                     "combat_type": "Quantum",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Seele Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Seele Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Seele Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Seele Splash Art.png"
+                }
+            ]
         },
         "Sampo": {
             "name": "Sampo",
@@ -1307,14 +2565,30 @@
                     "path": "Nihility",
                     "combat_type": "Wind",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Sampo Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sampo Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Sampo Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sampo Splash Art.png"
+                }
+            ]
         },
         "Qingque": {
             "name": "Qingque",
@@ -1325,14 +2599,30 @@
                     "path": "Erudition",
                     "combat_type": "Quantum",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Qingque Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Qingque Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Qingque Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Qingque Splash Art.png"
+                }
+            ]
         },
         "Pela": {
             "name": "Pela",
@@ -1343,14 +2633,30 @@
                     "path": "Nihility",
                     "combat_type": "Ice",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Pela Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Pela Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Pela Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Pela Splash Art.png"
+                }
+            ]
         },
         "Natasha": {
             "name": "Natasha",
@@ -1361,18 +2667,34 @@
                     "path": "Abundance",
                     "combat_type": "Physical",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Natasha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Natasha Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Natasha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Natasha Splash Art.png"
+                }
+            ]
         },
         "March 7th": {
             "name": "March 7th",
-            "display_name": "March 7th",
+            "display_name": null,
             "rarity": "4",
             "forms": [
                 {
@@ -1380,21 +2702,45 @@
                     "combat_type": "Ice",
                     "display_name": "March 7th",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character March 7th Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character March 7th (Preservation) Splash Art.png"
+                        }
+                    ]
                 },
                 {
                     "path": "Hunt",
                     "combat_type": "Imaginary",
                     "display_name": "March 7th (Hunt)",
                     "release_version": "2.4",
-                    "release_date": "2024-07-31"
+                    "release_date": "2024-07-31",
+                    "photo": {
+                        "wiki": "Character March 7th (The Hunt) Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character March 7th (Preservation) Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Astral Express",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character March 7th Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character March 7th (Preservation) Splash Art.png"
+                }
+            ]
         },
         "Hook": {
             "name": "Hook",
@@ -1405,14 +2751,30 @@
                     "path": "Destruction",
                     "combat_type": "Fire",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Hook Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Hook Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Hook Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Hook Splash Art.png"
+                }
+            ]
         },
         "Himeko": {
             "name": "Himeko",
@@ -1423,14 +2785,30 @@
                     "path": "Erudition",
                     "combat_type": "Fire",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Himeko Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Himeko Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Astral Express",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Himeko Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Himeko Splash Art.png"
+                }
+            ]
         },
         "Herta": {
             "name": "Herta",
@@ -1441,14 +2819,30 @@
                     "path": "Erudition",
                     "combat_type": "Ice",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Herta Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Herta Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Herta Space Station",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Herta Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Herta Splash Art.png"
+                }
+            ]
         },
         "Gepard": {
             "name": "Gepard",
@@ -1459,14 +2853,30 @@
                     "path": "Preservation",
                     "combat_type": "Ice",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Gepard Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Gepard Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Gepard Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Gepard Splash Art.png"
+                }
+            ]
         },
         "Dan Heng": {
             "name": "Dan Heng",
@@ -1477,14 +2887,30 @@
                     "path": "Hunt",
                     "combat_type": "Wind",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Dan Heng Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dan Heng Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Astral Express",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Dan Heng Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dan Heng Splash Art.png"
+                }
+            ]
         },
         "Clara": {
             "name": "Clara",
@@ -1495,14 +2921,30 @@
                     "path": "Destruction",
                     "combat_type": "Physical",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Clara Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Clara Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Clara Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Clara Splash Art.png"
+                }
+            ]
         },
         "Bronya": {
             "name": "Bronya",
@@ -1513,14 +2955,30 @@
                     "path": "Harmony",
                     "combat_type": "Wind",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Bronya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Bronya Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Jarilo-VI",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Bronya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Bronya Splash Art.png"
+                }
+            ]
         },
         "Bailu": {
             "name": "Bailu",
@@ -1531,14 +2989,30 @@
                     "path": "Abundance",
                     "combat_type": "Lightning",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Bailu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Bailu Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Xianzhou Alliance",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Bailu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Bailu Splash Art.png"
+                }
+            ]
         },
         "Asta": {
             "name": "Asta",
@@ -1549,14 +3023,30 @@
                     "path": "Harmony",
                     "combat_type": "Fire",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Asta Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Asta Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Female",
             "world": "Herta Space Station",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Asta Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Asta Splash Art.png"
+                }
+            ]
         },
         "Arlan": {
             "name": "Arlan",
@@ -1567,14 +3057,30 @@
                     "path": "Destruction",
                     "combat_type": "Lightning",
                     "release_version": "1.0",
-                    "release_date": "2023-04-26"
+                    "release_date": "2023-04-26",
+                    "photo": {
+                        "wiki": "Character Arlan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Arlan Splash Art.png"
+                        }
+                    ]
                 }
             ],
             "gender": "Male",
             "world": "Herta Space Station",
             "release_version": "1.0",
             "release_date": "2023-04-26",
-            "is_released": true
+            "is_released": true,
+            "photo": {
+                "wiki": "Character Arlan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Arlan Splash Art.png"
+                }
+            ]
         }
     },
     "versions": {

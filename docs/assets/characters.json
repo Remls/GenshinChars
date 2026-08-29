@@ -1,6 +1,6 @@
 {
-    "version": "80e7d60",
-    "last_updated": "2026-08-19T13:59:23.773215Z",
+    "version": "f710bf0",
+    "last_updated": "2026-08-29T05:18:12.479863Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -14,8 +14,32 @@
             "birthday": null,
             "release_version": null,
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/pulcinella.png",
+            "forms": [
+                {
+                    "element": null,
+                    "weapon": null,
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Pulcinella Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Pulcinella Game.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Pulcinella Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Pulcinella Game.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -34,8 +58,32 @@
             "birthday": null,
             "release_version": null,
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/pantalone.png",
+            "forms": [
+                {
+                    "element": null,
+                    "weapon": null,
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Pantalone Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "pantalone.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Pantalone Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "pantalone.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -54,8 +102,32 @@
             "birthday": null,
             "release_version": null,
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/dainsleif.png",
+            "forms": [
+                {
+                    "element": null,
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Dainsleif Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "dainsleif.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Dainsleif Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "dainsleif.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -76,8 +148,32 @@
             "birthday": null,
             "release_version": "7.5",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/noy.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": null,
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.5",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Noy Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "noy.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Noy Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "noy.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -94,8 +190,32 @@
             "birthday": null,
             "release_version": "7.3",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/tsaritsa.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": "Anastasya",
+                    "release_version": "7.3",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Tsaritsa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "tsaritsa.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Tsaritsa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "tsaritsa.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": [
@@ -114,8 +234,32 @@
             "birthday": null,
             "release_version": "7.3",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/danica.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.3",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Danica Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "danica.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Danica Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "danica.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -132,8 +276,32 @@
             "birthday": null,
             "release_version": "7.2",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/valeriy.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.2",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Valeriy Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "valeriy.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Valeriy Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "valeriy.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -150,8 +318,32 @@
             "birthday": null,
             "release_version": "7.2",
             "release_date": null,
-            "photo": "assets/images/Fallback.png",
-            "full_photo": "assets/images/full-characters/mitya.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.2",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Mitya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "mitya.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Mitya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "local": "mitya.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -168,8 +360,32 @@
             "birthday": null,
             "release_version": "7.1",
             "release_date": null,
-            "photo": "assets/images/characters/vodyanitsa.png",
-            "full_photo": "assets/images/full-characters/vodyanitsa.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.1",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Vodyanitsa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Vodyanitsa Game.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Vodyanitsa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Vodyanitsa Game.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -186,8 +402,32 @@
             "birthday": null,
             "release_version": "7.1",
             "release_date": null,
-            "photo": "assets/images/characters/vesna.png",
-            "full_photo": "assets/images/full-characters/vesna.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.1",
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Vesna Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Vesna Game.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Vesna Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Vesna Game.png"
+                }
+            ],
             "is_released": false,
             "is_outdated": false,
             "notes": null
@@ -204,8 +444,32 @@
             "birthday": "02-20",
             "release_version": "7.0",
             "release_date": "2026-08-12",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/odette.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/odette.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.0",
+                    "release_date": "2026-08-12",
+                    "photo": {
+                        "wiki": "Odette Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Odette Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Odette Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Odette Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -222,8 +486,32 @@
             "birthday": "02-09",
             "release_version": "7.0",
             "release_date": "2026-08-12",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/alyosha.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/alyosha.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "7.0",
+                    "release_date": "2026-08-12",
+                    "photo": {
+                        "wiki": "Alyosha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Alyosha Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Alyosha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Alyosha Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -240,8 +528,32 @@
             "birthday": "01-13",
             "release_version": "6.7",
             "release_date": "2026-07-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sandrone.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sandrone.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.7",
+                    "release_date": "2026-07-01",
+                    "photo": {
+                        "wiki": "Sandrone Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sandrone Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sandrone Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sandrone Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -260,8 +572,32 @@
             "birthday": "04-03",
             "release_version": "6.6",
             "release_date": "2026-06-09",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lohen.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lohen.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.6",
+                    "release_date": "2026-06-09",
+                    "photo": {
+                        "wiki": "Lohen Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lohen Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lohen Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lohen Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -278,8 +614,32 @@
             "birthday": "11-20",
             "release_version": "6.6",
             "release_date": "2026-05-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/prune.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/prune.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.6",
+                    "release_date": "2026-05-20",
+                    "photo": {
+                        "wiki": "Prune Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Prune Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Prune Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Prune Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -296,8 +656,32 @@
             "birthday": "09-29",
             "release_version": "6.6",
             "release_date": "2026-05-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nicole.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nicole.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.6",
+                    "release_date": "2026-05-20",
+                    "photo": {
+                        "wiki": "Nicole Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Nicole Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Nicole Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Nicole Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -316,8 +700,32 @@
             "birthday": "05-23",
             "release_version": "6.5",
             "release_date": "2026-04-08",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/linnea.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/linnea.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.5",
+                    "release_date": "2026-04-08",
+                    "photo": {
+                        "wiki": "Linnea Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Linnea Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Linnea Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Linnea Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -334,8 +742,32 @@
             "birthday": "02-17",
             "release_version": "6.4",
             "release_date": "2026-02-25",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/varka.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/varka.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.4",
+                    "release_date": "2026-02-25",
+                    "photo": {
+                        "wiki": "Varka Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Varka Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Varka Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Varka Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -352,8 +784,32 @@
             "birthday": "05-15",
             "release_version": "6.3",
             "release_date": "2026-02-03",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zibai.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zibai.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.3",
+                    "release_date": "2026-02-03",
+                    "photo": {
+                        "wiki": "Zibai Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Zibai Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Zibai Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Zibai Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -370,8 +826,32 @@
             "birthday": "12-23",
             "release_version": "6.3",
             "release_date": "2026-02-03",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/illuga.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/illuga.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.3",
+                    "release_date": "2026-02-03",
+                    "photo": {
+                        "wiki": "Illuga Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Illuga Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Illuga Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Illuga Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -388,8 +868,32 @@
             "birthday": "01-14",
             "release_version": "6.3",
             "release_date": "2026-01-14",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/columbina.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/columbina.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.3",
+                    "release_date": "2026-01-14",
+                    "photo": {
+                        "wiki": "Columbina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Columbina Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Columbina Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Columbina Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -409,8 +913,32 @@
             "birthday": "01-05",
             "release_version": "6.2",
             "release_date": "2025-12-03",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jahoda.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/jahoda.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.2",
+                    "release_date": "2025-12-03",
+                    "photo": {
+                        "wiki": "Jahoda Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jahoda Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Jahoda Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jahoda Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -427,8 +955,32 @@
             "birthday": "03-14",
             "release_version": "6.2",
             "release_date": "2025-12-03",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/durin.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/durin.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.2",
+                    "release_date": "2025-12-03",
+                    "photo": {
+                        "wiki": "Durin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Durin Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Durin Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Durin Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -445,8 +997,308 @@
             "birthday": "05-09",
             "release_version": "6.1",
             "release_date": "2025-10-22",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nefer.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nefer.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Nefer Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Nefer Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Nefer Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Nefer Full Wish.png"
+                }
+            ],
+            "is_released": true,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Manekina": {
+            "name": "Manekina",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": null,
+            "gender": "Female",
+            "birthday": null,
+            "release_version": "6.1",
+            "release_date": "2025-10-22",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Anemo)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Geo)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Electro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Dendro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Dendro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Hydro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Pyro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Pyro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekina (Cryo)",
+                    "release_version": "7.0",
+                    "release_date": "2026-08-12",
+                    "photo": {
+                        "wiki": "Manekina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekina Game.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Manekina Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Manekina Game.png"
+                }
+            ],
+            "is_released": true,
+            "is_outdated": false,
+            "notes": null
+        },
+        "Manekin": {
+            "name": "Manekin",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": null,
+            "gender": "Male",
+            "birthday": null,
+            "release_version": "6.1",
+            "release_date": "2025-10-22",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Anemo)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Geo)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Electro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Dendro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Dendro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Hydro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Pyro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Pyro)",
+                    "release_version": "6.1",
+                    "release_date": "2025-10-22",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Manekin (Cryo)",
+                    "release_version": "7.0",
+                    "release_date": "2026-08-12",
+                    "photo": {
+                        "wiki": "Manekin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Manekin Game.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Manekin Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Manekin Game.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -463,8 +1315,32 @@
             "birthday": "10-31",
             "release_version": "6.0",
             "release_date": "2025-09-30",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/flins.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/flins.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.0",
+                    "release_date": "2025-09-30",
+                    "photo": {
+                        "wiki": "Flins Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Flins Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Flins Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Flins Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -481,8 +1357,32 @@
             "birthday": "03-01",
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lauma.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lauma.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.0",
+                    "release_date": "2025-09-10",
+                    "photo": {
+                        "wiki": "Lauma Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lauma Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lauma Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lauma Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -499,8 +1399,32 @@
             "birthday": "09-21",
             "release_version": "6.0",
             "release_date": "2025-09-10",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aino.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aino.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "6.0",
+                    "release_date": "2025-09-10",
+                    "photo": {
+                        "wiki": "Aino Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Aino Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Aino Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Aino Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -517,8 +1441,32 @@
             "birthday": "04-02",
             "release_version": "5.8",
             "release_date": "2025-07-30",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ineffa.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ineffa.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.8",
+                    "release_date": "2025-07-30",
+                    "photo": {
+                        "wiki": "Ineffa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ineffa Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Ineffa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ineffa Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -535,8 +1483,32 @@
             "birthday": "11-05",
             "release_version": "5.7",
             "release_date": "2025-06-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/skirk.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/skirk.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.7",
+                    "release_date": "2025-06-18",
+                    "photo": {
+                        "wiki": "Skirk Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Skirk Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Skirk Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Skirk Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -553,8 +1525,32 @@
             "birthday": "05-25",
             "release_version": "5.7",
             "release_date": "2025-06-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dahlia.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dahlia.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.7",
+                    "release_date": "2025-06-18",
+                    "photo": {
+                        "wiki": "Dahlia Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dahlia Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Dahlia Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dahlia Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -571,8 +1567,32 @@
             "birthday": "03-23",
             "release_version": "5.6",
             "release_date": "2025-05-07",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ifa.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ifa.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.6",
+                    "release_date": "2025-05-07",
+                    "photo": {
+                        "wiki": "Ifa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ifa Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Ifa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ifa Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -589,8 +1609,32 @@
             "birthday": "06-08",
             "release_version": "5.6",
             "release_date": "2025-05-07",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/escoffier.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/escoffier.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Polearm",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "5.6",
+                    "release_date": "2025-05-07",
+                    "photo": {
+                        "wiki": "Escoffier Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Escoffier Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Escoffier Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Escoffier Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -607,8 +1651,32 @@
             "birthday": "11-15",
             "release_version": "5.5",
             "release_date": "2025-03-26",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/varesa.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/varesa.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.5",
+                    "release_date": "2025-03-26",
+                    "photo": {
+                        "wiki": "Varesa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Varesa Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Varesa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Varesa Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -625,8 +1693,32 @@
             "birthday": "08-08",
             "release_version": "5.5",
             "release_date": "2025-03-26",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/iansan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/iansan.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.5",
+                    "release_date": "2025-03-26",
+                    "photo": {
+                        "wiki": "Iansan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Iansan Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Iansan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Iansan Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -643,8 +1735,32 @@
             "birthday": "03-16",
             "release_version": "5.4",
             "release_date": "2025-02-12",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yumemizuki_mizuki.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yumemizuki_mizuki.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": "Mizuki",
+                    "release_version": "5.4",
+                    "release_date": "2025-02-12",
+                    "photo": {
+                        "wiki": "Yumemizuki Mizuki Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yumemizuki Mizuki Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yumemizuki Mizuki Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yumemizuki Mizuki Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -661,8 +1777,32 @@
             "birthday": "01-06",
             "release_version": "5.3",
             "release_date": "2025-01-21",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lan_yan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lan_yan.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.3",
+                    "release_date": "2025-01-21",
+                    "photo": {
+                        "wiki": "Lan Yan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lan Yan Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lan Yan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lan Yan Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -679,8 +1819,32 @@
             "birthday": "08-28",
             "release_version": "5.3",
             "release_date": "2025-01-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mavuika.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mavuika.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.3",
+                    "release_date": "2025-01-01",
+                    "photo": {
+                        "wiki": "Mavuika Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mavuika Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Mavuika Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mavuika Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -699,8 +1863,32 @@
             "birthday": "01-20",
             "release_version": "5.3",
             "release_date": "2025-01-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/citlali.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/citlali.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.3",
+                    "release_date": "2025-01-01",
+                    "photo": {
+                        "wiki": "Citlali Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Citlali Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Citlali Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Citlali Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -717,8 +1905,32 @@
             "birthday": "10-14",
             "release_version": "5.2",
             "release_date": "2024-11-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ororon.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ororon.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.2",
+                    "release_date": "2024-11-20",
+                    "photo": {
+                        "wiki": "Ororon Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ororon Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Ororon Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ororon Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -735,8 +1947,32 @@
             "birthday": "12-10",
             "release_version": "5.2",
             "release_date": "2024-11-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chasca.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chasca.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.2",
+                    "release_date": "2024-11-20",
+                    "photo": {
+                        "wiki": "Chasca Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Chasca Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Chasca Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Chasca Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -753,8 +1989,32 @@
             "birthday": "03-13",
             "release_version": "5.1",
             "release_date": "2024-10-09",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xilonen.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xilonen.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.1",
+                    "release_date": "2024-10-09",
+                    "photo": {
+                        "wiki": "Xilonen Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xilonen Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xilonen Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xilonen Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -771,8 +2031,32 @@
             "birthday": "11-11",
             "release_version": "5.0",
             "release_date": "2024-09-17",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kinich.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kinich.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.0",
+                    "release_date": "2024-09-17",
+                    "photo": {
+                        "wiki": "Kinich Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kinich Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kinich Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kinich Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -789,8 +2073,32 @@
             "birthday": "08-03",
             "release_version": "5.0",
             "release_date": "2024-08-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mualani.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mualani.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.0",
+                    "release_date": "2024-08-28",
+                    "photo": {
+                        "wiki": "Mualani Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mualani Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Mualani Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mualani Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -807,8 +2115,32 @@
             "birthday": "04-22",
             "release_version": "5.0",
             "release_date": "2024-08-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kachina.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kachina.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "5.0",
+                    "release_date": "2024-08-28",
+                    "photo": {
+                        "wiki": "Kachina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kachina Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kachina Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kachina Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -825,8 +2157,32 @@
             "birthday": "09-22",
             "release_version": "4.8",
             "release_date": "2024-08-06",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/emilie.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/emilie.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Polearm",
+                    "arkhe": "Pneuma",
+                    "display_name": null,
+                    "release_version": "4.8",
+                    "release_date": "2024-08-06",
+                    "photo": {
+                        "wiki": "Emilie Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Emilie Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Emilie Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Emilie Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -843,8 +2199,32 @@
             "birthday": "03-30",
             "release_version": "4.7",
             "release_date": "2024-06-25",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sigewinne.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sigewinne.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Bow",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.7",
+                    "release_date": "2024-06-25",
+                    "photo": {
+                        "wiki": "Sigewinne Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sigewinne Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sigewinne Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sigewinne Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -861,8 +2241,32 @@
             "birthday": "05-31",
             "release_version": "4.7",
             "release_date": "2024-06-05",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sethos.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sethos.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "4.7",
+                    "release_date": "2024-06-05",
+                    "photo": {
+                        "wiki": "Sethos Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sethos Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sethos Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sethos Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -879,8 +2283,32 @@
             "birthday": "09-20",
             "release_version": "4.7",
             "release_date": "2024-06-05",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/clorinde.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/clorinde.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.7",
+                    "release_date": "2024-06-05",
+                    "photo": {
+                        "wiki": "Clorinde Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Clorinde Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Clorinde Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Clorinde Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -897,8 +2325,32 @@
             "birthday": "08-22",
             "release_version": "4.6",
             "release_date": "2024-04-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arlecchino.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arlecchino.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "4.6",
+                    "release_date": "2024-04-24",
+                    "photo": {
+                        "wiki": "Arlecchino Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Arlecchino Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Arlecchino Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Arlecchino Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -917,8 +2369,32 @@
             "birthday": "08-17",
             "release_version": "4.5",
             "release_date": "2024-03-13",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chiori.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chiori.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "4.5",
+                    "release_date": "2024-03-13",
+                    "photo": {
+                        "wiki": "Chiori Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Chiori Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Chiori Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Chiori Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -935,8 +2411,32 @@
             "birthday": "04-11",
             "release_version": "4.4",
             "release_date": "2024-01-31",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xianyun.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xianyun.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "4.4",
+                    "release_date": "2024-01-31",
+                    "photo": {
+                        "wiki": "Xianyun Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xianyun Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xianyun Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xianyun Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -953,8 +2453,32 @@
             "birthday": "12-22",
             "release_version": "4.4",
             "release_date": "2024-01-31",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gaming.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/gaming.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "4.4",
+                    "release_date": "2024-01-31",
+                    "photo": {
+                        "wiki": "Gaming Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Gaming Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Gaming Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Gaming Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -971,8 +2495,32 @@
             "birthday": "01-10",
             "release_version": "4.3",
             "release_date": "2024-01-09",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chevreuse.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chevreuse.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Polearm",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.3",
+                    "release_date": "2024-01-09",
+                    "photo": {
+                        "wiki": "Chevreuse Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Chevreuse Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Chevreuse Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Chevreuse Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -989,8 +2537,32 @@
             "birthday": "08-16",
             "release_version": "4.3",
             "release_date": "2023-12-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/navia.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/navia.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Claymore",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.3",
+                    "release_date": "2023-12-20",
+                    "photo": {
+                        "wiki": "Navia Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Navia Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Navia Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Navia Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1007,8 +2579,32 @@
             "birthday": "10-13",
             "release_version": "4.2",
             "release_date": "2023-11-08",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/furina.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/furina.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": "Pneumousia",
+                    "display_name": null,
+                    "release_version": "4.2",
+                    "release_date": "2023-11-08",
+                    "photo": {
+                        "wiki": "Furina Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Furina Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Furina Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Furina Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1027,8 +2623,32 @@
             "birthday": "04-10",
             "release_version": "4.2",
             "release_date": "2023-11-08",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/charlotte.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/charlotte.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Catalyst",
+                    "arkhe": "Pneuma",
+                    "display_name": null,
+                    "release_version": "4.2",
+                    "release_date": "2023-11-08",
+                    "photo": {
+                        "wiki": "Charlotte Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Charlotte Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Charlotte Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Charlotte Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1045,8 +2665,32 @@
             "birthday": "11-23",
             "release_version": "4.1",
             "release_date": "2023-10-17",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/wriothesley.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/wriothesley.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Catalyst",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.1",
+                    "release_date": "2023-10-17",
+                    "photo": {
+                        "wiki": "Wriothesley Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Wriothesley Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Wriothesley Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Wriothesley Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1063,8 +2707,32 @@
             "birthday": "12-18",
             "release_version": "4.1",
             "release_date": "2023-09-27",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/neuvillette.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/neuvillette.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": "Pneuma",
+                    "display_name": null,
+                    "release_version": "4.1",
+                    "release_date": "2023-09-27",
+                    "photo": {
+                        "wiki": "Neuvillette Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Neuvillette Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Neuvillette Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Neuvillette Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1083,8 +2751,32 @@
             "birthday": "09-24",
             "release_version": "4.0",
             "release_date": "2023-09-05",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/freminet.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/freminet.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Claymore",
+                    "arkhe": "Pneuma",
+                    "display_name": null,
+                    "release_version": "4.0",
+                    "release_date": "2023-09-05",
+                    "photo": {
+                        "wiki": "Freminet Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Freminet Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Freminet Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Freminet Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1101,8 +2793,32 @@
             "birthday": "02-02",
             "release_version": "4.0",
             "release_date": "2023-08-16",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lyney.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lyney.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Bow",
+                    "arkhe": "Pneuma",
+                    "display_name": null,
+                    "release_version": "4.0",
+                    "release_date": "2023-08-16",
+                    "photo": {
+                        "wiki": "Lyney Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lyney Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lyney Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lyney Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1119,8 +2835,32 @@
             "birthday": "02-02",
             "release_version": "4.0",
             "release_date": "2023-08-16",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lynette.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lynette.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": "Ousia",
+                    "display_name": null,
+                    "release_version": "4.0",
+                    "release_date": "2023-08-16",
+                    "photo": {
+                        "wiki": "Lynette Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lynette Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lynette Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lynette Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1137,8 +2877,32 @@
             "birthday": "01-22",
             "release_version": "3.7",
             "release_date": "2023-05-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kirara.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kirara.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.7",
+                    "release_date": "2023-05-24",
+                    "photo": {
+                        "wiki": "Kirara Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kirara Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kirara Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kirara Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1155,8 +2919,32 @@
             "birthday": "07-09",
             "release_version": "3.6",
             "release_date": "2023-05-02",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaveh.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaveh.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.6",
+                    "release_date": "2023-05-02",
+                    "photo": {
+                        "wiki": "Kaveh Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kaveh Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kaveh Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kaveh Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1173,8 +2961,32 @@
             "birthday": "04-25",
             "release_version": "3.6",
             "release_date": "2023-05-02",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/baizhu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/baizhu.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.6",
+                    "release_date": "2023-05-02",
+                    "photo": {
+                        "wiki": "Baizhu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Baizhu Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Baizhu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Baizhu Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1191,8 +3003,32 @@
             "birthday": "08-11",
             "release_version": "3.5",
             "release_date": "2023-03-21",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mika.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mika.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.5",
+                    "release_date": "2023-03-21",
+                    "photo": {
+                        "wiki": "Mika Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mika Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Mika Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mika Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1209,8 +3045,32 @@
             "birthday": "04-07",
             "release_version": "3.5",
             "release_date": "2023-03-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dehya.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dehya.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.5",
+                    "release_date": "2023-03-01",
+                    "photo": {
+                        "wiki": "Dehya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dehya Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Dehya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dehya Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1227,8 +3087,32 @@
             "birthday": "03-06",
             "release_version": "3.4",
             "release_date": "2023-01-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yaoyao.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yaoyao.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.4",
+                    "release_date": "2023-01-18",
+                    "photo": {
+                        "wiki": "Yaoyao Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yaoyao Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yaoyao Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yaoyao Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1245,8 +3129,32 @@
             "birthday": "02-11",
             "release_version": "3.4",
             "release_date": "2023-01-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/alhaitham.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/alhaitham.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.4",
+                    "release_date": "2023-01-18",
+                    "photo": {
+                        "wiki": "Alhaitham Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Alhaitham Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Alhaitham Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Alhaitham Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1263,8 +3171,32 @@
             "birthday": "01-03",
             "release_version": "3.3",
             "release_date": "2022-12-07",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/wanderer.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/wanderer.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.3",
+                    "release_date": "2022-12-07",
+                    "photo": {
+                        "wiki": "Wanderer Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Wanderer Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Wanderer Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Wanderer Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1283,8 +3215,32 @@
             "birthday": "08-20",
             "release_version": "3.3",
             "release_date": "2022-12-07",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/faruzan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/faruzan.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.3",
+                    "release_date": "2022-12-07",
+                    "photo": {
+                        "wiki": "Faruzan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Faruzan Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Faruzan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Faruzan Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1301,8 +3257,32 @@
             "birthday": "12-19",
             "release_version": "3.2",
             "release_date": "2022-11-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/layla.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/layla.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.2",
+                    "release_date": "2022-11-18",
+                    "photo": {
+                        "wiki": "Layla Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Layla Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Layla Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Layla Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1319,8 +3299,32 @@
             "birthday": "10-27",
             "release_version": "3.2",
             "release_date": "2022-11-02",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nahida.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nahida.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.2",
+                    "release_date": "2022-11-02",
+                    "photo": {
+                        "wiki": "Nahida Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Nahida Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Nahida Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Nahida Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1339,8 +3343,32 @@
             "birthday": "12-03",
             "release_version": "3.1",
             "release_date": "2022-10-14",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/nilou.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/nilou.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.1",
+                    "release_date": "2022-10-14",
+                    "photo": {
+                        "wiki": "Nilou Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Nilou Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Nilou Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Nilou Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1357,8 +3385,32 @@
             "birthday": "06-23",
             "release_version": "3.1",
             "release_date": "2022-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/cyno.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/cyno.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.1",
+                    "release_date": "2022-09-28",
+                    "photo": {
+                        "wiki": "Cyno Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Cyno Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Cyno Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Cyno Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1375,8 +3427,32 @@
             "birthday": "05-03",
             "release_version": "3.1",
             "release_date": "2022-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/candace.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/candace.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.1",
+                    "release_date": "2022-09-28",
+                    "photo": {
+                        "wiki": "Candace Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Candace Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Candace Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Candace Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1393,8 +3469,32 @@
             "birthday": "12-21",
             "release_version": "3.0",
             "release_date": "2022-09-09",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/dori.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/dori.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.0",
+                    "release_date": "2022-09-09",
+                    "photo": {
+                        "wiki": "Dori Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Dori Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Dori Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Dori Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1411,8 +3511,32 @@
             "birthday": "12-29",
             "release_version": "3.0",
             "release_date": "2022-08-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tighnari.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tighnari.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.0",
+                    "release_date": "2022-08-24",
+                    "photo": {
+                        "wiki": "Tighnari Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Tighnari Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Tighnari Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Tighnari Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1429,8 +3553,32 @@
             "birthday": "05-08",
             "release_version": "3.0",
             "release_date": "2022-08-24",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/collei.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/collei.png",
+            "forms": [
+                {
+                    "element": "Dendro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "3.0",
+                    "release_date": "2022-08-24",
+                    "photo": {
+                        "wiki": "Collei Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Collei Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Collei Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Collei Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1447,8 +3595,32 @@
             "birthday": "07-24",
             "release_version": "2.8",
             "release_date": "2022-07-13",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shikanoin_heizou.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shikanoin_heizou.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": "Heizou",
+                    "release_version": "2.8",
+                    "release_date": "2022-07-13",
+                    "photo": {
+                        "wiki": "Shikanoin Heizou Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Shikanoin Heizou Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Shikanoin Heizou Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Shikanoin Heizou Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1465,8 +3637,32 @@
             "birthday": "07-27",
             "release_version": "2.7",
             "release_date": "2022-06-21",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kuki_shinobu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kuki_shinobu.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Shinobu",
+                    "release_version": "2.7",
+                    "release_date": "2022-06-21",
+                    "photo": {
+                        "wiki": "Kuki Shinobu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kuki Shinobu Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kuki Shinobu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kuki Shinobu Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1483,8 +3679,32 @@
             "birthday": "04-20",
             "release_version": "2.7",
             "release_date": "2022-05-31",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yelan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yelan.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.7",
+                    "release_date": "2022-05-31",
+                    "photo": {
+                        "wiki": "Yelan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yelan Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yelan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yelan Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1501,8 +3721,32 @@
             "birthday": "03-26",
             "release_version": "2.6",
             "release_date": "2022-03-30",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayato.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayato.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Ayato",
+                    "release_version": "2.6",
+                    "release_date": "2022-03-30",
+                    "photo": {
+                        "wiki": "Kamisato Ayato Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kamisato Ayato Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kamisato Ayato Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kamisato Ayato Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1519,8 +3763,32 @@
             "birthday": "06-27",
             "release_version": "2.5",
             "release_date": "2022-02-16",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yae_miko.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yae_miko.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": "Miko",
+                    "release_version": "2.5",
+                    "release_date": "2022-02-16",
+                    "photo": {
+                        "wiki": "Yae Miko Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yae Miko Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yae Miko Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yae Miko Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1537,8 +3805,32 @@
             "birthday": "05-21",
             "release_version": "2.4",
             "release_date": "2022-01-05",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yun_jin.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yun_jin.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.4",
+                    "release_date": "2022-01-05",
+                    "photo": {
+                        "wiki": "Yun Jin Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yun Jin Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yun Jin Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yun Jin Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1555,8 +3847,32 @@
             "birthday": "03-10",
             "release_version": "2.4",
             "release_date": "2022-01-05",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/shenhe.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/shenhe.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.4",
+                    "release_date": "2022-01-05",
+                    "photo": {
+                        "wiki": "Shenhe Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Shenhe Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Shenhe Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Shenhe Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1573,8 +3889,32 @@
             "birthday": "05-18",
             "release_version": "2.3",
             "release_date": "2021-12-14",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/gorou.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/gorou.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.3",
+                    "release_date": "2021-12-14",
+                    "photo": {
+                        "wiki": "Gorou Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Gorou Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Gorou Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Gorou Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1591,8 +3931,32 @@
             "birthday": "06-01",
             "release_version": "2.3",
             "release_date": "2021-12-14",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/arataki_itto.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/arataki_itto.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": "Itto",
+                    "release_version": "2.3",
+                    "release_date": "2021-12-14",
+                    "photo": {
+                        "wiki": "Arataki Itto Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Arataki Itto Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Arataki Itto Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Arataki Itto Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1609,8 +3973,32 @@
             "birthday": "01-09",
             "release_version": "2.2",
             "release_date": "2021-11-02",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/thoma.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/thoma.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.2",
+                    "release_date": "2021-11-02",
+                    "photo": {
+                        "wiki": "Thoma Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Thoma Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Thoma Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Thoma Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1627,8 +4015,32 @@
             "birthday": "02-22",
             "release_version": "2.1",
             "release_date": "2021-09-21",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sangonomiya_kokomi.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sangonomiya_kokomi.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": "Kokomi",
+                    "release_version": "2.1",
+                    "release_date": "2021-09-21",
+                    "photo": {
+                        "wiki": "Sangonomiya Kokomi Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sangonomiya Kokomi Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sangonomiya Kokomi Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sangonomiya Kokomi Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1645,8 +4057,32 @@
             "birthday": "06-26",
             "release_version": "2.1",
             "release_date": "2021-09-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/raiden_shogun.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/raiden_shogun.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": "Ei",
+                    "release_version": "2.1",
+                    "release_date": "2021-09-01",
+                    "photo": {
+                        "wiki": "Raiden Shogun Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Raiden Shogun Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Raiden Shogun Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Raiden Shogun Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1665,8 +4101,32 @@
             "birthday": "07-14",
             "release_version": "2.1",
             "release_date": "2021-09-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kujou_sara.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kujou_sara.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": "Sara",
+                    "release_version": "2.1",
+                    "release_date": "2021-09-01",
+                    "photo": {
+                        "wiki": "Kujou Sara Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kujou Sara Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kujou Sara Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kujou Sara Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1683,8 +4143,32 @@
             "birthday": "04-04",
             "release_version": "2.1",
             "release_date": "2021-09-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/aloy.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/aloy.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.1",
+                    "release_date": "2021-09-01",
+                    "photo": {
+                        "wiki": "Aloy Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Aloy Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Aloy Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Aloy Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1704,8 +4188,32 @@
             "birthday": "06-21",
             "release_version": "2.0",
             "release_date": "2021-08-10",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yoimiya.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yoimiya.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.0",
+                    "release_date": "2021-08-10",
+                    "photo": {
+                        "wiki": "Yoimiya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yoimiya Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yoimiya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yoimiya Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1722,8 +4230,32 @@
             "birthday": "10-19",
             "release_version": "2.0",
             "release_date": "2021-08-10",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sayu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sayu.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "2.0",
+                    "release_date": "2021-08-10",
+                    "photo": {
+                        "wiki": "Sayu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sayu Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sayu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sayu Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1740,8 +4272,32 @@
             "birthday": "09-28",
             "release_version": "2.0",
             "release_date": "2021-07-21",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kamisato_ayaka.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kamisato_ayaka.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Ayaka",
+                    "release_version": "2.0",
+                    "release_date": "2021-07-21",
+                    "photo": {
+                        "wiki": "Kamisato Ayaka Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kamisato Ayaka Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kamisato Ayaka Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kamisato Ayaka Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1758,8 +4314,32 @@
             "birthday": "10-29",
             "release_version": "1.6",
             "release_date": "2021-06-29",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaedehara_kazuha.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaedehara_kazuha.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Kazuha",
+                    "release_version": "1.6",
+                    "release_date": "2021-06-29",
+                    "photo": {
+                        "wiki": "Kaedehara Kazuha Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kaedehara Kazuha Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kaedehara Kazuha Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kaedehara Kazuha Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1776,8 +4356,32 @@
             "birthday": "10-25",
             "release_version": "1.5",
             "release_date": "2021-05-18",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/eula.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/eula.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.5",
+                    "release_date": "2021-05-18",
+                    "photo": {
+                        "wiki": "Eula Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Eula Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Eula Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Eula Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1794,8 +4398,32 @@
             "birthday": "07-28",
             "release_version": "1.5",
             "release_date": "2021-04-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/yanfei.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/yanfei.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.5",
+                    "release_date": "2021-04-28",
+                    "photo": {
+                        "wiki": "Yanfei Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Yanfei Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Yanfei Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Yanfei Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1812,8 +4440,32 @@
             "birthday": "01-24",
             "release_version": "1.4",
             "release_date": "2021-04-06",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/rosaria.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/rosaria.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.4",
+                    "release_date": "2021-04-06",
+                    "photo": {
+                        "wiki": "Rosaria Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Rosaria Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Rosaria Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Rosaria Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1830,8 +4482,32 @@
             "birthday": "07-15",
             "release_version": "1.3",
             "release_date": "2021-03-02",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/hu_tao.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/hu_tao.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.3",
+                    "release_date": "2021-03-02",
+                    "photo": {
+                        "wiki": "Hu Tao Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Hu Tao Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Hu Tao Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Hu Tao Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1848,8 +4524,32 @@
             "birthday": "04-17",
             "release_version": "1.3",
             "release_date": "2021-02-03",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiao.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiao.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.3",
+                    "release_date": "2021-02-03",
+                    "photo": {
+                        "wiki": "Xiao Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xiao Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xiao Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xiao Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1866,8 +4566,32 @@
             "birthday": "12-02",
             "release_version": "1.2",
             "release_date": "2021-01-12",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ganyu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ganyu.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.2",
+                    "release_date": "2021-01-12",
+                    "photo": {
+                        "wiki": "Ganyu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ganyu Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Ganyu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ganyu Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1884,8 +4608,32 @@
             "birthday": "09-13",
             "release_version": "1.2",
             "release_date": "2020-12-23",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/albedo.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/albedo.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.2",
+                    "release_date": "2020-12-23",
+                    "photo": {
+                        "wiki": "Albedo Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Albedo Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Albedo Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Albedo Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1902,8 +4650,32 @@
             "birthday": "12-31",
             "release_version": "1.1",
             "release_date": "2020-12-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/zhongli.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/zhongli.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.1",
+                    "release_date": "2020-12-01",
+                    "photo": {
+                        "wiki": "Zhongli Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Zhongli Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Zhongli Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Zhongli Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1922,8 +4694,32 @@
             "birthday": "10-16",
             "release_version": "1.1",
             "release_date": "2020-12-01",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xinyan.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xinyan.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.1",
+                    "release_date": "2020-12-01",
+                    "photo": {
+                        "wiki": "Xinyan Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xinyan Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xinyan Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xinyan Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1940,8 +4736,32 @@
             "birthday": "07-20",
             "release_version": "1.1",
             "release_date": "2020-11-11",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/tartaglia.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/tartaglia.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": "Childe",
+                    "release_version": "1.1",
+                    "release_date": "2020-11-11",
+                    "photo": {
+                        "wiki": "Childe P3 Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Tartaglia Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Childe P3 Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Tartaglia Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
@@ -1960,8 +4780,32 @@
             "birthday": "01-18",
             "release_version": "1.1",
             "release_date": "2020-11-11",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diona.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diona.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.1",
+                    "release_date": "2020-11-11",
+                    "photo": {
+                        "wiki": "Diona Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Diona Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Diona Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Diona Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1978,8 +4822,32 @@
             "birthday": "07-27",
             "release_version": "1.0",
             "release_date": "2020-10-20",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/klee.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/klee.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-10-20",
+                    "photo": {
+                        "wiki": "Klee Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Klee Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Klee Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Klee Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -1996,8 +4864,32 @@
             "birthday": "10-09",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xingqiu.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xingqiu.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Xingqiu Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xingqiu Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xingqiu Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xingqiu Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2014,8 +4906,32 @@
             "birthday": "11-02",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/xiangling.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/xiangling.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Polearm",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Xiangling Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Xiangling Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Xiangling Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Xiangling Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2032,13 +4948,185 @@
             "birthday": "06-16",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/venti.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/venti.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Venti Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Venti Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Venti Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Venti Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": [
                 "Archon of Mondstadt"
             ]
+        },
+        "Traveler": {
+            "name": "Traveler",
+            "display_name": null,
+            "rarity": "5",
+            "element": "Anemo",
+            "arkhe": null,
+            "weapon": "Sword",
+            "region": null,
+            "gender": "Either",
+            "birthday": null,
+            "release_version": "1.0",
+            "release_date": "2020-09-28",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Anemo)",
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Anemo.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Anemo.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Geo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Geo)",
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Geo.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Geo.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Electro)",
+                    "release_version": "2.0",
+                    "release_date": "2021-07-21",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Electro.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Electro.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Dendro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Dendro)",
+                    "release_version": "3.0",
+                    "release_date": "2022-08-24",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Dendro.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Dendro.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Hydro",
+                    "weapon": "Sword",
+                    "arkhe": "Pneuma",
+                    "display_name": "Traveler (Hydro)",
+                    "release_version": "4.0",
+                    "release_date": "2023-08-16",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Hydro.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Hydro.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Pyro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Pyro)",
+                    "release_version": "5.3",
+                    "release_date": "2025-01-01",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lumine Game Pyro.png"
+                        },
+                        {
+                            "wiki": "Character Aether Game Pyro.png"
+                        }
+                    ]
+                },
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": "Traveler (Cryo)",
+                    "release_version": "7.0",
+                    "release_date": "2026-08-12",
+                    "photo": {
+                        "wiki": "Traveler Icon.png"
+                    },
+                    "full_photo": []
+                }
+            ],
+            "photo": {
+                "wiki": "Traveler Icon.png"
+            },
+            "full_photo": null,
+            "is_released": true,
+            "is_outdated": false,
+            "notes": null
         },
         "Sucrose": {
             "name": "Sucrose",
@@ -2052,8 +5140,32 @@
             "birthday": "11-26",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/sucrose.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/sucrose.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Sucrose Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Sucrose Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Sucrose Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Sucrose Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2070,8 +5182,32 @@
             "birthday": "09-09",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/razor.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/razor.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Razor Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Razor Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Razor Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Razor Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2088,8 +5224,32 @@
             "birthday": "03-03",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/qiqi.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/qiqi.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Qiqi Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Qiqi Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Qiqi Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Qiqi Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2106,8 +5266,32 @@
             "birthday": "03-21",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/noelle.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/noelle.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Noelle Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Noelle Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Noelle Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Noelle Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2124,8 +5308,32 @@
             "birthday": "08-26",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/ningguang.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/ningguang.png",
+            "forms": [
+                {
+                    "element": "Geo",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Ningguang Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Ningguang Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Ningguang Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Ningguang Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2142,8 +5350,32 @@
             "birthday": "08-31",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/mona.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/mona.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Mona Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Mona Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Mona Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Mona Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2160,8 +5392,32 @@
             "birthday": "06-09",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/lisa.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/lisa.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Lisa Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Lisa Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Lisa Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Lisa Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2178,8 +5434,32 @@
             "birthday": "11-20",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/keqing.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/keqing.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Keqing Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Keqing Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Keqing Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Keqing Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2196,8 +5476,32 @@
             "birthday": "11-30",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/kaeya.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/kaeya.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Kaeya Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Kaeya Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Kaeya Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Kaeya Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2214,8 +5518,32 @@
             "birthday": "03-14",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/jean.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/jean.png",
+            "forms": [
+                {
+                    "element": "Anemo",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Jean Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Jean Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Jean Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Jean Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2232,8 +5560,32 @@
             "birthday": "05-27",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/fischl.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/fischl.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Fischl Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Fischl Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Fischl Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Fischl Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2250,8 +5602,32 @@
             "birthday": "04-30",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/diluc.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/diluc.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Diluc Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Diluc Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Diluc Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Diluc Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2268,8 +5644,32 @@
             "birthday": "09-07",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/chongyun.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/chongyun.png",
+            "forms": [
+                {
+                    "element": "Cryo",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Chongyun Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Chongyun Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Chongyun Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Chongyun Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2286,8 +5686,32 @@
             "birthday": "02-29",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/bennett.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/bennett.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Sword",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Bennett Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Bennett Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Bennett Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Bennett Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2304,8 +5728,32 @@
             "birthday": "02-14",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/beidou.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/beidou.png",
+            "forms": [
+                {
+                    "element": "Electro",
+                    "weapon": "Claymore",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Beidou Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Beidou Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Beidou Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Beidou Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2322,8 +5770,32 @@
             "birthday": "07-05",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/barbara.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/barbara.png",
+            "forms": [
+                {
+                    "element": "Hydro",
+                    "weapon": "Catalyst",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Barbara Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Barbara Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Barbara Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Barbara Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
@@ -2340,8 +5812,32 @@
             "birthday": "08-10",
             "release_version": "1.0",
             "release_date": "2020-09-28",
-            "photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/amber.png",
-            "full_photo": "https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/amber.png",
+            "forms": [
+                {
+                    "element": "Pyro",
+                    "weapon": "Bow",
+                    "arkhe": null,
+                    "display_name": null,
+                    "release_version": "1.0",
+                    "release_date": "2020-09-28",
+                    "photo": {
+                        "wiki": "Amber Icon.png"
+                    },
+                    "full_photo": [
+                        {
+                            "wiki": "Character Amber Full Wish.png"
+                        }
+                    ]
+                }
+            ],
+            "photo": {
+                "wiki": "Amber Icon.png"
+            },
+            "full_photo": [
+                {
+                    "wiki": "Character Amber Full Wish.png"
+                }
+            ],
             "is_released": true,
             "is_outdated": false,
             "notes": null
