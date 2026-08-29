@@ -121,6 +121,8 @@ document.addEventListener('alpine:init', () => {
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
                 this.buildImageMaps()
+                configureCharSheet('genshin', charactersData.versions,
+                    buildCharacterMaterials(domainsData))
                 // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
@@ -213,6 +215,8 @@ document.addEventListener('alpine:init', () => {
                     element: c.element,
                     colours: elements.map(e => `el-${e.toLowerCase()}`),
                     photo: characterImageUrl(c.photo, 'gensin-impact', 'assets/images/characters', 40),
+                    record: c,
+                    form: null,
                 }
                 lookup[c.name.toLowerCase()] = info
                 if (c.display_name) lookup[c.display_name.toLowerCase()] = info
@@ -227,6 +231,8 @@ document.addEventListener('alpine:init', () => {
                         photo: characterImageUrl(
                             f.photo || c.photo, 'gensin-impact', 'assets/images/characters', 40
                         ),
+                        record: c,
+                        form: f,
                     }
                 })
             })
@@ -464,7 +470,19 @@ document.addEventListener('alpine:init', () => {
             chip += `<span class="gi-font ${elementClass}"${formColourStyle(colours)}>`
                 + `${this.highlight(displayName)}</span>`
             if (name === '???') return `<span class="char-chip">${chip}</span>`
-            return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip">${chip}</a>`
+            // The chip stays a wiki link; a plain left click opens the sheet. The
+            // name travels as a data attribute, since the markup is a string
+            return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip"`
+                + ` data-char="${this.escapeHtml(name)}"`
+                + ` @click="openCharSheetFromChip($event)">${chip}</a>`
+        },
+
+        // A name the CSV does not carry resolves to nothing, so its chip stays a
+        // plain link to the wiki
+        openCharSheetFromChip(event) {
+            const info = this.resolveCharacter(event.currentTarget.dataset.char)
+            if (!info) return
+            charSheetChipClick(event, info.record, info.form)
         },
 
         wikiTitleLink(html, title) {
