@@ -1,8 +1,9 @@
 const HSR_DOMAIN_TYPES = {
     calyx_crimson: {
+        button_label: 'Trace mats',
         short: 't',
         icon: 'Icon Calyx Crimson.png',
-        string: 'Trace mats',
+        string: 'Trace materials',
         title: 'Crimson Calyxes',
         page_prefix: 'Calyx (Crimson)',
         description: 'Provides trace materials',
@@ -22,6 +23,17 @@ const HSR_DOMAIN_TYPES = {
         title: 'Divergent Universe',
         description: 'Provides planar ornament sets',
     },
+    common_enemy_drops: {
+        button_label: 'Common enemies',
+        short: 'c',
+        icon: 'Icon Enemy.png',
+        light_glyph: true,
+        string: 'Common enemy drops',
+        title: 'Common enemy drops',
+        description: 'Provides character ascension and trace level-up materials',
+        source: 'common_enemy_drops',
+        no_worlds: true,
+    },
     stagnant_shadow: {
         short: 'nb',
         icon: 'Icon Stagnant Shadow.png',
@@ -39,6 +51,7 @@ const HSR_DOMAIN_TYPES = {
         description: 'Provides trace level-up materials (Lv9+ and bonus abilities)',
     },
     other_materials: {
+        button_label: 'Other mats',
         short: 'o',
         icon: 'Icon Other Materials.png',
         light_glyph: true,
@@ -232,6 +245,10 @@ document.addEventListener('alpine:init', () => {
 
         filteredOtherMaterials() {
             return Object.values(this.allData.other_materials || {})
+        },
+
+        filteredCommonDrops() {
+            return Object.values(this.allData.common_enemy_drops || {})
         },
 
         // Enemy names, linked, as one line each
@@ -533,6 +550,15 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.allData.other_materials || {}).filter(material =>
                 this.matchesQuery(material.name)
                 || this.visibleCharacters(material.characters).some(c => this.characterMatchesQuery(c))
+            )
+        },
+
+        searchedCommonDrops() {
+            if (!this.searching()) return []
+            return Object.values(this.allData.common_enemy_drops || {}).filter(drop =>
+                this.matchesQuery(drop.name)
+                || (drop.enemies || []).some(enemy => this.matchesQuery(enemy))
+                || this.visibleCharacters(drop.characters).some(c => this.characterMatchesQuery(c))
             )
         },
 

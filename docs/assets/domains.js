@@ -27,7 +27,7 @@ const DOMAIN_TYPES = {
         changing_rewards: false,
     },
     common_enemy_drops: {
-        button_label: 'Common drops',
+        button_label: 'Common enemies',
         icon: 'Icon Archive Living Beings.png',
         short: 'c',
         string: 'Common enemy drops',
@@ -39,7 +39,7 @@ const DOMAIN_TYPES = {
     },
     normal_bosses: {
         button_label: 'Normal bosses',
-        icon: 'Icon Tutorial Monster.png',
+        icon: 'Icon Rolling Crossfire.png',
         short: 'nb',
         string: 'Normal bosses',
         title: 'Normal bosses',
