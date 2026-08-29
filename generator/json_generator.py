@@ -306,6 +306,7 @@ def generate_domains_file():
     # HSR data already carries them
     print("Resolving domain images ...")
     groups = [domains_data["rewards"],
+              domains_data.get("common_enemy_drops", {}),
               domains_data.get("specialties", {}),
               domains_data.get("other_materials", {})]
     images = domain_images.item_images(*groups)

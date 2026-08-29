@@ -26,9 +26,20 @@ const DOMAIN_TYPES = {
         description: 'Provides artifacts',
         changing_rewards: false,
     },
+    common_enemy_drops: {
+        button_label: 'Common drops',
+        icon: 'Icon Archive Living Beings.png',
+        short: 'c',
+        string: 'Common enemy drops',
+        title: 'Common enemy drops',
+        description: 'Provides character ascension and talent level-up materials',
+        changing_rewards: false,
+        source: 'common_enemy_drops',
+        no_regions: true,
+    },
     normal_bosses: {
         button_label: 'Normal bosses',
-        icon: 'Icon Archive Living Beings.png',
+        icon: 'Icon Tutorial Monster.png',
         short: 'nb',
         string: 'Normal bosses',
         title: 'Normal bosses',
@@ -79,6 +90,8 @@ const DOMAIN_DAYS = {
     fri: 'Friday',
     sat: 'Saturday',
 }
+// Enemy groups the wiki files under a different page title
+const ENEMY_WIKI_ALT_NAMES = {}
 const GENSHIN_WIKI = 'https://genshin-impact.fandom.com/wiki/'
 const DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 // For displaying availability: weekdays first, Sunday (everything drops) last
@@ -91,7 +104,7 @@ document.addEventListener('alpine:init', () => {
         DOMAIN_DAYS,
 
         // Data
-        allData: { domains: [], rewards: {}, specialties: {}, other_materials: {} },
+        allData: { domains: [], rewards: {}, common_enemy_drops: {}, specialties: {}, other_materials: {} },
         includedSpecials: [],
         characterLookup: {},
         rewardSources: {},
@@ -183,7 +196,8 @@ document.addEventListener('alpine:init', () => {
         // name here because that is what the reward and domain rows carry.
         buildImageMaps() {
             const items = {}
-            ;[this.allData.rewards, this.allData.specialties, this.allData.other_materials]
+            ;[this.allData.rewards, this.allData.common_enemy_drops,
+              this.allData.specialties, this.allData.other_materials]
                 .forEach(group => Object.values(group || {})
                     .forEach(entry => { items[entry.name] = entry.image }))
             this.itemImages = items
@@ -399,6 +413,23 @@ document.addEventListener('alpine:init', () => {
 
         filteredOtherMaterials() {
             return Object.values(this.allData.other_materials || {})
+        },
+
+        filteredCommonDrops() {
+            return Object.values(this.allData.common_enemy_drops || {})
+        },
+
+        // Enemy names, linked, as one line each
+        enemiesHtml(entry) {
+            return (entry.enemies || [])
+                .map(enemy => this.enemyLinkHtml(enemy))
+                .join('<br>')
+        },
+
+        enemyLinkHtml(enemy) {
+            const title = ENEMY_WIKI_ALT_NAMES[enemy] || enemy
+            const href = GENSHIN_WIKI + encodeURIComponent(title.replaceAll(' ', '_'))
+            return `<a href="${href}" class="clickable">${this.highlight(enemy)}</a>`
         },
 
         allRewardKeysFor(domain) {
@@ -647,6 +678,15 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.allData.other_materials || {}).filter(material =>
                 this.matchesQuery(material.name)
                 || this.visibleCharacters(material.characters).some(c => this.characterMatchesQuery(c))
+            )
+        },
+
+        searchedCommonDrops() {
+            if (!this.searching()) return []
+            return Object.values(this.allData.common_enemy_drops || {}).filter(drop =>
+                this.matchesQuery(drop.name)
+                || (drop.enemies || []).some(enemy => this.matchesQuery(enemy))
+                || this.visibleCharacters(drop.characters).some(c => this.characterMatchesQuery(c))
             )
         },
 

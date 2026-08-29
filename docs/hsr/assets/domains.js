@@ -49,6 +49,10 @@ const HSR_DOMAIN_TYPES = {
         no_worlds: true,
     },
 }
+// Enemy groups the wiki files under a different page title
+const HSR_ENEMY_WIKI_ALT_NAMES = {
+    'Entranced Ingenia': 'The Xianzhou Luofu (Enemy Faction)',
+}
 const HSR_DOMAIN_WORLDS = [
     'All', 'Herta Space Station', 'Jarilo-VI', 'The Xianzhou Luofu',
     'Penacony', 'Amphoreus', 'Planarcadia',
@@ -228,6 +232,19 @@ document.addEventListener('alpine:init', () => {
 
         filteredOtherMaterials() {
             return Object.values(this.allData.other_materials || {})
+        },
+
+        // Enemy names, linked, as one line each
+        enemiesHtml(entry) {
+            return (entry.enemies || [])
+                .map(enemy => this.enemyLinkHtml(enemy))
+                .join('<br>')
+        },
+
+        enemyLinkHtml(enemy) {
+            const title = HSR_ENEMY_WIKI_ALT_NAMES[enemy] || enemy
+            return this.wikiTitleLink(
+                `<span class="gi-font">${this.highlight(enemy)}</span>`, title)
         },
 
         materialCharactersHtml(material) {

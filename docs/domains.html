@@ -169,6 +169,29 @@
                 </tbody>
             </table>
         </div>
+        <div class="table-wrapper" x-show="typeSource() === 'common_enemy_drops'">
+            <table class="domain-table">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Dropped by</th>
+                        <th>Used by</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="(drop, idx) in filteredCommonDrops()" :key="idx">
+                        <tr>
+                            <td x-html="`${itemThumbHtml(drop.name)} ${wikiLinkHtml(drop.name)}`"></td>
+                            <td x-html="enemiesHtml(drop)"></td>
+                            <td x-html="specialtyCharactersHtml(drop)"></td>
+                        </tr>
+                    </template>
+                    <tr x-show="filteredCommonDrops().length === 0">
+                        <td class="center" colspan="3">No matching data yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="table-wrapper" x-show="typeSource() === 'other_materials'">
             <table class="domain-table">
                 <thead>
@@ -300,6 +323,33 @@
                 </div>
             </div>
         </template>
+        <template x-if="searchedCommonDrops().length > 0">
+            <div>
+                <div class="results-caption">
+                    ... in common enemy drops (<span x-text="searchedCommonDrops().length"></span>):
+                </div>
+                <div class="table-wrapper">
+                    <table class="domain-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Dropped by</th>
+                                <th>Used by</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="(drop, idx) in searchedCommonDrops()" :key="idx">
+                                <tr>
+                                    <td x-html="`${typeIconHtml('common_enemy_drops')} ${itemThumbHtml(drop.name)} ${wikiLinkHtml(drop.name)}`"></td>
+                                    <td x-html="enemiesHtml(drop)"></td>
+                                    <td x-html="specialtyCharactersHtml(drop)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
         <template x-if="searchedOtherMaterials().length > 0">
             <div>
                 <div class="results-caption">
@@ -326,7 +376,7 @@
             </div>
         </template>
         <div class="center domain-note"
-            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0 && searchedSpecialties().length === 0 && searchedOtherMaterials().length === 0">
+            x-show="searchedDomains().length === 0 && searchedRewardEntries().length === 0 && searchedCommonDrops().length === 0 && searchedSpecialties().length === 0 && searchedOtherMaterials().length === 0">
             No results found for your query. Make sure there are no misspellings, and try again.
         </div>
     </section>
