@@ -186,6 +186,25 @@ document.addEventListener('alpine:init', () => {
             ))
         },
 
+        // A character whose element the player picks cycles through every form's
+        // colour rather than showing the debut form's
+        formElements(char) {
+            return [...new Set(char.forms.map(f => f.element).filter(Boolean))]
+        },
+
+        elementClass(char) {
+            const elements = this.formElements(char)
+            if (elements.length > 1) return 'el-multi'
+            return elements.length === 1 ? `el-${elements[0].toLowerCase()}` : 'el-unknown'
+        },
+
+        formColourVars(char) {
+            const elements = this.formElements(char)
+            if (elements.length < 2) return ''
+            return Array.from({ length: 7 }, (_, i) =>
+                `--form-${i + 1}: var(--el-${elements[i % elements.length].toLowerCase()})`).join('; ')
+        },
+
         formMatches(form, element, weapon) {
             const elementOk = element === 'Unknown' ? !form.element : form.element === element
             const weaponOk = weapon === 'Unknown' ? !form.weapon : form.weapon === weapon
@@ -336,11 +355,15 @@ document.addEventListener('alpine:init', () => {
             return char.birthday === `${m}-${d}`
         },
 
+        // Characters with no birthday come first, then the year in order
         sortCharactersByBirthday() {
             return Object.values( this.characterData ).sort((a, b) => {
+                if (!a.birthday && !b.birthday) return 0
+                if (!a.birthday) return -1
+                if (!b.birthday) return 1
                 if (a.birthday > b.birthday) return 1
                 if (a.birthday < b.birthday) return -1
-                if (a.birthday === b.birthday) return 0
+                return 0
             })
         },
 

@@ -89,6 +89,15 @@ function characterImageUrl(image, wiki, localDir, thumbWidth = null) {
     return `${localDir}/${image.local}`
 }
 
+// Colour variables for a character with several forms, filling seven slots by
+// repeating the list. Paired with .el-multi, which cycles through them
+function formColourStyle(colourVars) {
+    if (colourVars.length < 2) return ''
+    const slots = Array.from({ length: 7 }, (_, i) =>
+        `--form-${i + 1}: var(--${colourVars[i % colourVars.length]})`)
+    return ` style="${slots.join('; ')}"`
+}
+
 // Characters excluded from the tables unless the reader opts in, because their
 // element or path is a player choice rather than a property of the character
 const SPECIAL_CHARACTERS = {

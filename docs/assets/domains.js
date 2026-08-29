@@ -127,6 +127,7 @@ document.addEventListener('alpine:init', () => {
 
         // Data
         allData: { domains: [], rewards: {}, specialties: {}, other_materials: {} },
+        includedSpecials: [],
         characterLookup: {},
         rewardSources: {},
         itemImages: {},
@@ -157,7 +158,7 @@ document.addEventListener('alpine:init', () => {
                 // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
-                ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay'].forEach(prop => {
+                ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
                 this.resolveWikiImages().catch(() => {})
@@ -395,20 +396,54 @@ document.addEventListener('alpine:init', () => {
         buildCharacterLookup(charactersData) {
             const lookup = {}
             Object.values(charactersData.characters || {}).forEach(c => {
+                const elements = [...new Set(c.forms.map(f => f.element).filter(Boolean))]
                 const info = {
                     fullName: c.name,
                     displayName: c.display_name || c.name,
                     element: c.element,
+                    colours: elements.map(e => `el-${e.toLowerCase()}`),
                     photo: characterImageUrl(c.photo, 'gensin-impact', 'assets/images/characters', 40),
                 }
                 lookup[c.name.toLowerCase()] = info
                 if (c.display_name) lookup[c.display_name.toLowerCase()] = info
+                // Multi-form characters are named per form in the reward lists, and
+                // each form carries its own element and art
+                c.forms.forEach(f => {
+                    if (!f.display_name || f.display_name === info.displayName) return
+                    lookup[f.display_name.toLowerCase()] = {
+                        fullName: c.name,
+                        displayName: f.display_name,
+                        element: f.element,
+                        photo: characterImageUrl(
+                            f.photo || c.photo, 'gensin-impact', 'assets/images/characters', 40
+                        ),
+                    }
+                })
             })
             this.characterLookup = lookup
         },
 
         resolveCharacter(name) {
             return this.characterLookup[name.toLowerCase()] || null
+        },
+
+        // Special characters stay out of every list until the reader opts in.
+        // Their entries are either the plain name or one form of it
+        isSpecial(name, special) {
+            return name === special || name.startsWith(`${special} (`)
+        },
+
+        visibleCharacters(names) {
+            return (names || []).filter(name => {
+                const special = SPECIAL_CHARACTERS.genshin.find(s => this.isSpecial(name, s))
+                return !special || this.includedSpecials.includes(special)
+            })
+        },
+
+        toggleSpecial(name) {
+            this.includedSpecials = this.includedSpecials.includes(name)
+                ? this.includedSpecials.filter(n => n !== name)
+                : [...this.includedSpecials, name]
         },
 
         // Map each reward key to the domains that drop it, with days if rotating
@@ -449,6 +484,10 @@ document.addEventListener('alpine:init', () => {
             }
             const day = urlParams.get('d')
             if (DAY_KEYS.includes(day)) this.selectedDay = day
+            const specials = (urlParams.get('s') || '').split(',')
+            this.includedSpecials = SPECIAL_CHARACTERS.genshin.filter(
+                name => specials.some(x => x.toLowerCase() === name.toLowerCase())
+            )
             const query = urlParams.get('q')
             if (query) this.searchQuery = query
         },
@@ -465,6 +504,9 @@ document.addEventListener('alpine:init', () => {
                 if (this.typeHasChangingRewards()) {
                     params.set('d', this.selectedDay)
                 }
+            }
+            if (this.includedSpecials.length > 0) {
+                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
             }
             history.replaceState(null, '', `?${params.toString()}`)
         },
@@ -522,10 +564,11 @@ document.addEventListener('alpine:init', () => {
         },
 
         specialtyCharactersHtml(specialty) {
-            if (specialty.characters.length === 0) {
+            const characters = this.visibleCharacters(specialty.characters)
+            if (characters.length === 0) {
                 return '<span class="text-unknown">Not used by any character yet</span>'
             }
-            return specialty.characters.map(c => `<div>${this.characterChipHtml(c)}</div>`).join('')
+            return characters.map(c => `<div>${this.characterChipHtml(c)}</div>`).join('')
         },
 
         filteredOtherMaterials() {
@@ -597,9 +640,10 @@ document.addEventListener('alpine:init', () => {
 
         characterChipHtml(name) {
             const info = this.resolveCharacter(name)
-            const elementClass = (info && info.element)
-                ? `el-${info.element.toLowerCase()}`
-                : 'el-unknown'
+            const colours = (info && info.colours) || []
+            const elementClass = colours.length > 1
+                ? 'el-multi'
+                : ((info && info.element) ? `el-${info.element.toLowerCase()}` : 'el-unknown')
             let chip = ''
             if (info) {
                 chip += `<img src="${info.photo}" width="20" height="20" loading="lazy"`
@@ -607,7 +651,8 @@ document.addEventListener('alpine:init', () => {
                     + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
             }
             const displayName = info ? info.displayName : name
-            chip += `<span class="gi-font ${elementClass}">${this.highlight(displayName)}</span>`
+            chip += `<span class="gi-font ${elementClass}"${formColourStyle(colours)}>`
+                + `${this.highlight(displayName)}</span>`
             if (name === '???') return `<span class="char-chip">${chip}</span>`
             return `<a href="${this.wikiLink(info ? info.fullName : name)}" class="char-chip">${chip}</a>`
         },
@@ -698,8 +743,8 @@ document.addEventListener('alpine:init', () => {
             if (reward.effect_4pc) {
                 text += ` ${this.setEffectsButtonHtml(reward)}`
             }
-            if (reward.characters && reward.characters.length > 0) {
-                text += reward.characters
+            if (reward.characters && this.visibleCharacters(reward.characters).length > 0) {
+                text += this.visibleCharacters(reward.characters)
                     .map(c => `<div class="reward-char">${this.characterChipHtml(c)}</div>`)
                     .join('')
             } else if (reward.effect && !reward.effect_4pc) {
@@ -746,7 +791,7 @@ document.addEventListener('alpine:init', () => {
                 if (this.matchesQuery(reward.effect)) return true
                 if (this.matchesQuery(reward.effect_4pc)) return true
                 if (!reward.characters) return false
-                return reward.characters.some(c => this.characterMatchesQuery(c))
+                return this.visibleCharacters(reward.characters).some(c => this.characterMatchesQuery(c))
             })
         },
 
@@ -755,7 +800,7 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.allData.specialties || {}).filter(specialty =>
                 this.matchesQuery(specialty.name)
                 || this.matchesQuery(specialty.region)
-                || specialty.characters.some(c => this.characterMatchesQuery(c))
+                || this.visibleCharacters(specialty.characters).some(c => this.characterMatchesQuery(c))
             )
         },
 
@@ -763,7 +808,7 @@ document.addEventListener('alpine:init', () => {
             if (!this.searching()) return []
             return Object.values(this.allData.other_materials || {}).filter(material =>
                 this.matchesQuery(material.name)
-                || material.characters.some(c => this.characterMatchesQuery(c))
+                || this.visibleCharacters(material.characters).some(c => this.characterMatchesQuery(c))
             )
         },
 

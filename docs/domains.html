@@ -120,6 +120,23 @@
                         </div>
                     </td>
                 </tr>
+                <tr x-show="!searching()">
+                    <td>
+                        <label>Include special characters</label>
+                    </td>
+                    <td>
+                        <div class="checkbox-list">
+                            <template x-for="name in SPECIAL_CHARACTERS.genshin" :key="name">
+                                <label>
+                                    <input type="checkbox"
+                                        :checked="includedSpecials.includes(name)"
+                                        @change="toggleSpecial(name)">
+                                    <span x-text="name"></span>
+                                </label>
+                            </template>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
     </section>

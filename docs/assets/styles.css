@@ -277,22 +277,63 @@ td.ice-elation {
 }
 
 /* Honkai: Star Rail combat types */
-.ct-physical  { color: #c8c8c8; }
-.ct-fire      { color: #f0745c; }
-.ct-ice       { color: #66c5ec; }
-.ct-lightning { color: #b18ef0; }
-.ct-wind      { color: #6fd8ac; }
-.ct-quantum   { color: #6f5fe0; }
-.ct-imaginary { color: #f0d766; }
+:root {
+    --ct-physical:  #c8c8c8;
+    --ct-fire:      #f0745c;
+    --ct-ice:       #66c5ec;
+    --ct-lightning: #b18ef0;
+    --ct-wind:      #6fd8ac;
+    --ct-quantum:   #6f5fe0;
+    --ct-imaginary: #f0d766;
 
-.el-anemo     { color: #74c2a8; }
-.el-geo       { color: #fab632; }
-.el-electro   { color: #af8ec1; }
-.el-dendro    { color: #a5c83b; }
-.el-hydro     { color: #4cc2f1; }
-.el-pyro      { color: #ef7938; }
-.el-cryo      { color: #9fd6e3; }
-.el-unknown   { color: grey; }
+    --el-anemo:     #74c2a8;
+    --el-geo:       #fab632;
+    --el-electro:   #af8ec1;
+    --el-dendro:    #a5c83b;
+    --el-hydro:     #4cc2f1;
+    --el-pyro:      #ef7938;
+    --el-cryo:      #9fd6e3;
+    --el-unknown:   grey;
+}
+.ct-physical  { color: var(--ct-physical); }
+.ct-fire      { color: var(--ct-fire); }
+.ct-ice       { color: var(--ct-ice); }
+.ct-lightning { color: var(--ct-lightning); }
+.ct-wind      { color: var(--ct-wind); }
+.ct-quantum   { color: var(--ct-quantum); }
+.ct-imaginary { color: var(--ct-imaginary); }
+
+.el-anemo     { color: var(--el-anemo); }
+.el-geo       { color: var(--el-geo); }
+.el-electro   { color: var(--el-electro); }
+.el-dendro    { color: var(--el-dendro); }
+.el-hydro     { color: var(--el-hydro); }
+.el-pyro      { color: var(--el-pyro); }
+.el-cryo      { color: var(--el-cryo); }
+.el-unknown   { color: var(--el-unknown); }
+
+/* A character whose element or path the player picks has no single colour, so
+   the unsuffixed name cycles through every form's. The tag supplies --form-1
+   onwards, repeating when a character has fewer than seven forms */
+.el-multi {
+    animation: form-colours 14s linear infinite;
+}
+@keyframes form-colours {
+    0%      { color: var(--form-1); }
+    14.29%  { color: var(--form-2); }
+    28.57%  { color: var(--form-3); }
+    42.86%  { color: var(--form-4); }
+    57.14%  { color: var(--form-5); }
+    71.43%  { color: var(--form-6); }
+    85.71%  { color: var(--form-7); }
+    100%    { color: var(--form-1); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .el-multi {
+        animation: none;
+        color: var(--form-1);
+    }
+}
 
 /* Remove borders for the "totals" cells */
 .transparent-r {

@@ -319,7 +319,8 @@
                             <td>
                                 <div @click="showCharSheet(char.name)" class="character-links">
                                     <img width="20" height="20" referrerpolicy="no-referrer" :src="photoUrl(char.photo)">
-                                    <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
+                                    <span class="gi-font clickable" :class="elementClass(char)"
+                                        :style="formColourVars(char)"
                                         x-text="char.display_name || char.name">
                                     </span>
                                     <template x-if="char.is_outdated"><sup>†</sup></template>

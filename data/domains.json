@@ -848,58 +848,58 @@
         "w_spiritual_nectar": {"name": "Measured Pour of the Cellared Spiritual Nectar", "type": "weapon_ascension_mats"},
         "w_frost_emperor": {"name": "The Frost Emperor's Revival", "type": "weapon_ascension_mats"},
         "t_freedom": {"name": "Freedom", "type": "talent_upgrade_mats", "characters": [
-            "Aloy", "Amber", "Barbara", "Tartaglia", "Diona", "Klee", "Sucrose", "Varka"
+            "Aloy", "Amber", "Barbara", "Tartaglia", "Diona", "Klee", "Sucrose", "Traveler (Anemo)", "Traveler (Geo)", "Varka"
         ]},
         "t_resistance": {"name": "Resistance", "type": "talent_upgrade_mats", "characters": [
-            "Bennett", "Diluc", "Eula", "Jean", "Lohen", "Mona", "Noelle", "Prune", "Razor"
+            "Bennett", "Diluc", "Eula", "Jean", "Lohen", "Mona", "Noelle", "Prune", "Razor", "Traveler (Anemo)", "Traveler (Geo)"
         ]},
         "t_ballad": {"name": "Ballad", "type": "talent_upgrade_mats", "characters": [
-            "Albedo", "Dahlia", "Durin", "Fischl", "Kaeya", "Lisa", "Mika", "Rosaria", "Venti"
+            "Albedo", "Dahlia", "Durin", "Fischl", "Kaeya", "Lisa", "Mika", "Rosaria", "Traveler (Anemo)", "Traveler (Geo)", "Venti"
         ]},
         "t_prosperity": {"name": "Prosperity", "type": "talent_upgrade_mats", "characters": [
-            "Gaming", "Keqing", "Ningguang", "Qiqi", "Shenhe", "Xiao", "Yelan"
+            "Gaming", "Keqing", "Ningguang", "Qiqi", "Shenhe", "Traveler (Geo)", "Xiao", "Yelan"
         ]},
         "t_diligence": {"name": "Diligence", "type": "talent_upgrade_mats", "characters": [
-            "Chongyun", "Ganyu", "Hu Tao", "Kaedehara Kazuha", "Lan Yan", "Xiangling", "Yaoyao", "Yun Jin"
+            "Chongyun", "Ganyu", "Hu Tao", "Kaedehara Kazuha", "Lan Yan", "Traveler (Geo)", "Xiangling", "Yaoyao", "Yun Jin"
         ]},
         "t_gold": {"name": "Gold", "type": "talent_upgrade_mats", "characters": [
-            "Baizhu", "Beidou", "Xianyun", "Xingqiu", "Xinyan", "Yanfei", "Zhongli", "Zibai"
+            "Baizhu", "Beidou", "Traveler (Geo)", "Xianyun", "Xingqiu", "Xinyan", "Yanfei", "Zhongli", "Zibai"
         ]},
         "t_transience": {"name": "Transience", "type": "talent_upgrade_mats", "characters": [
-            "Shikanoin Heizou", "Kirara", "Sangonomiya Kokomi", "Yumemizuki Mizuki", "Thoma", "Yoimiya"
+            "Shikanoin Heizou", "Kirara", "Sangonomiya Kokomi", "Yumemizuki Mizuki", "Thoma", "Traveler (Electro)", "Yoimiya"
         ]},
         "t_elegance": {"name": "Elegance", "type": "talent_upgrade_mats", "characters": [
-            "Kamisato Ayaka", "Kamisato Ayato", "Arataki Itto", "Kujou Sara", "Kuki Shinobu"
+            "Kamisato Ayaka", "Kamisato Ayato", "Arataki Itto", "Kujou Sara", "Kuki Shinobu", "Traveler (Electro)"
         ]},
         "t_light": {"name": "Light", "type": "talent_upgrade_mats", "characters": [
-            "Chiori", "Raiden Shogun", "Gorou", "Yae Miko", "Sayu"
+            "Chiori", "Raiden Shogun", "Gorou", "Yae Miko", "Sayu", "Traveler (Electro)"
         ]},
         "t_admonition": {"name": "Admonition", "type": "talent_upgrade_mats", "characters": [
-            "Candace", "Cyno", "Faruzan", "Tighnari"
+            "Candace", "Cyno", "Faruzan", "Tighnari", "Traveler (Dendro)"
         ]},
         "t_ingenuity": {"name": "Ingenuity", "type": "talent_upgrade_mats", "characters": [
-            "Alhaitham", "Dori", "Kaveh", "Layla", "Nahida"
+            "Alhaitham", "Dori", "Kaveh", "Layla", "Nahida", "Traveler (Dendro)"
         ]},
         "t_praxis": {"name": "Praxis", "type": "talent_upgrade_mats", "characters": [
-            "Collei", "Dehya", "Nilou", "Sethos", "Wanderer"
+            "Collei", "Dehya", "Nilou", "Sethos", "Traveler (Dendro)", "Wanderer"
         ]},
         "t_equity": {"name": "Equity", "type": "talent_upgrade_mats", "characters": [
-            "Lyney", "Navia", "Neuvillette", "Sigewinne"
+            "Lyney", "Navia", "Neuvillette", "Sigewinne", "Traveler (Hydro)"
         ]},
         "t_justice": {"name": "Justice", "type": "talent_upgrade_mats", "characters": [
-            "Charlotte", "Clorinde", "Escoffier", "Freminet", "Furina"
+            "Charlotte", "Clorinde", "Escoffier", "Freminet", "Furina", "Traveler (Hydro)"
         ]},
         "t_order": {"name": "Order", "type": "talent_upgrade_mats", "characters": [
-           "Arlecchino", "Chevreuse", "Emilie", "Lynette", "Wriothesley"
+            "Arlecchino", "Chevreuse", "Emilie", "Lynette", "Traveler (Hydro)", "Wriothesley"
         ]},
         "t_contention": {"name": "Contention", "type": "talent_upgrade_mats", "characters": [
-            "Iansan", "Mavuika", "Mualani", "Skirk"
+            "Iansan", "Mavuika", "Mualani", "Skirk", "Traveler (Pyro)"
         ]},
         "t_kindling": {"name": "Kindling", "type": "talent_upgrade_mats", "characters": [
-            "Citlali", "Kinich", "Ororon", "Xilonen"
+            "Citlali", "Kinich", "Ororon", "Traveler (Pyro)", "Xilonen"
         ]},
         "t_conflict": {"name": "Conflict", "type": "talent_upgrade_mats", "characters": [
-            "Chasca", "Ifa", "Ineffa", "Kachina", "Varesa"
+            "Chasca", "Ifa", "Ineffa", "Kachina", "Traveler (Pyro)", "Varesa"
         ]},
         "t_moonlight": {"name": "Moonlight", "type": "talent_upgrade_mats", "characters": [
             "Columbina", "Lauma"
@@ -911,13 +911,13 @@
             "Flins", "Jahoda", "Linnea", "Sandrone"
         ]},
         "t_charity": {"name": "Charity", "type": "talent_upgrade_mats", "characters": [
-            "Odette"
+            "Odette", "Traveler (Cryo)"
         ]},
         "t_fortitude": {"name": "Fortitude", "type": "talent_upgrade_mats", "characters": [
-            "Alyosha", "Vodyanitsa"
+            "Alyosha", "Traveler (Cryo)", "Vodyanitsa"
         ]},
         "t_glory": {"name": "Glory", "type": "talent_upgrade_mats", "characters": [
-            "Vesna"
+            "Traveler (Cryo)", "Vesna"
         ]},
         "a_adventurer": {"name": "Adventurer", "type": "artifacts", "effect": "Max HP increased by 1000.", "effect_4pc": "Opening a chest regenerates 30% Max HP over 5s."},
         "a_sojourner": {"name": "Resolution of Sojourner", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases Charged Attack CRIT Rate by 30%."},
@@ -1124,10 +1124,10 @@
             "Lisa", "Noelle", "Razor", "Xiangling"
         ]},
         "wb_dvalin_sigh": {"name": "Dvalin's Sigh", "type": "weekly_bosses", "characters": [
-            "Amber", "Beidou", "Chongyun"
+            "Amber", "Beidou", "Chongyun", "Traveler (Anemo)", "Traveler (Geo)"
         ]},
         "wb_boreas_tail": {"name": "Tail of Boreas", "type": "weekly_bosses", "characters": [
-            "Qiqi", "Venti", "Xingqiu"
+            "Qiqi", "Traveler (Geo)", "Venti", "Xingqiu"
         ]},
         "wb_boreas_ring": {"name": "Ring of Boreas", "type": "weekly_bosses", "characters": [
             "Barbara", "Keqing", "Klee", "Mona"
@@ -1145,7 +1145,7 @@
             "Ganyu", "Rosaria", "Xiao"
         ]},
         "wb_dragon_lord_crown": {"name": "Dragon Lord's Crown", "type": "weekly_bosses", "characters": [
-            "Eula", "Yoimiya"
+            "Eula", "Traveler (Electro)", "Yoimiya"
         ]},
         "wb_bloodjade_branch": {"name": "Bloodjade Branch", "type": "weekly_bosses", "characters": [
             "Kamisato Ayaka", "Dori", "Yanfei"
@@ -1166,7 +1166,7 @@
             "Shikanoin Heizou", "Yae Miko", "Tighnari"
         ]},
         "wb_mudra_of_malefic_general": {"name": "Mudra of the Malefic General", "type": "weekly_bosses", "characters": [
-            "Kamisato Ayato", "Cyno"
+            "Kamisato Ayato", "Cyno", "Traveler (Dendro)"
         ]},
         "wb_tears_of_calamitous_god": {"name": "Tears of the Calamitous God", "type": "weekly_bosses", "characters": [
             "Candace", "Collei", "Nilou", "Kuki Shinobu"
@@ -1181,7 +1181,7 @@
             "Alhaitham", "Mika", "Wanderer", "Xilonen"
         ]},
         "wb_worldspan_fern": {"name": "Worldspan Fern", "type": "weekly_bosses", "characters": [
-            "Baizhu", "Freminet"
+            "Baizhu", "Freminet", "Traveler (Hydro)"
         ]},
         "wb_primordial_greenbloom": {"name": "Primordial Greenbloom", "type": "weekly_bosses", "characters": [
             "Kaveh", "Lyney", "Wriothesley"
@@ -1223,7 +1223,7 @@
             "Ifa", "Nefer", "Varka"
         ]},
         "wb_chess_queen": {"name": "Ascended Sample: Queen", "type": "weekly_bosses", "characters": [
-            "Flins", "Zibai"
+            "Flins", "Traveler (Cryo)", "Zibai"
         ]},
         "wb_doctor_mask": {"name": "Mask of the Virtuous Doctor", "type": "weekly_bosses", "characters": [
             "Columbina", "Prune"
@@ -1258,7 +1258,7 @@
             "Albedo", "Venti"
         ]},
         "s_windwheel_aster": {"name": "Windwheel Aster", "region": "Mondstadt", "characters": [
-            "Bennett", "Sucrose"
+            "Bennett", "Sucrose", "Traveler"
         ]},
         "s_philanemo_mushroom": {"name": "Philanemo Mushroom", "region": "Mondstadt", "characters": [
             "Barbara", "Klee", "Mona"
@@ -1429,5 +1429,9 @@
             "Vesna"
         ]}
     },
-    "other_materials": {}
+    "other_materials": {
+        "o_cornerstone_of_stars_and_flames": {"name": "The Cornerstone of Stars and Flames", "type": "other_materials", "characters": [
+            "Traveler (Pyro)"
+        ]}
+    }
 }

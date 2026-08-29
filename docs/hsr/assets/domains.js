@@ -65,6 +65,7 @@ document.addEventListener('alpine:init', () => {
 
         allData: {},
         characterLookup: {},
+        includedSpecials: [],
         rewardSources: {},
 
         showSection: {
@@ -85,7 +86,7 @@ document.addEventListener('alpine:init', () => {
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
                 this.setFiltersFromUrl()
-                ;['searchQuery', 'selectedType', 'selectedWorld'].forEach(prop => {
+                ;['searchQuery', 'selectedType', 'selectedWorld', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
             })
@@ -94,9 +95,11 @@ document.addEventListener('alpine:init', () => {
         buildCharacterLookup(charactersData) {
             const lookup = {}
             Object.values(charactersData['characters'] || {}).forEach(c => {
+                const types = [...new Set(c.forms.map(f => f.combat_type).filter(Boolean))]
                 lookup[c.name] = {
                     displayName: c.display_name || c.name,
                     combatType: c.forms[0].combat_type,
+                    colours: types.map(t => `ct-${t.toLowerCase()}`),
                     photo: c.photo,
                 }
                 // Multi-path forms can be referenced by their form display name
@@ -139,6 +142,10 @@ document.addEventListener('alpine:init', () => {
             }
             const query = urlParams.get('q')
             if (query) this.searchQuery = query
+            const specials = (urlParams.get('s') || '').split(',')
+            this.includedSpecials = SPECIAL_CHARACTERS.hsr.filter(
+                name => specials.some(x => x.toLowerCase() === name.toLowerCase())
+            )
         },
 
         syncFiltersToUrl() {
@@ -151,6 +158,9 @@ document.addEventListener('alpine:init', () => {
                     params.set('w', this.selectedWorld.toLowerCase())
                 }
             }
+            if (this.includedSpecials.length > 0) {
+                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+            }
             history.replaceState(null, '', `?${params.toString()}`)
         },
 
@@ -162,6 +172,25 @@ document.addEventListener('alpine:init', () => {
 
         searching() {
             return this.searchTerms().length > 0
+        },
+
+        // Special characters stay out of every list until the reader opts in.
+        // Their entries are either the plain name or one form of it
+        isSpecial(name, special) {
+            return name === special || name.startsWith(`${special} (`)
+        },
+
+        visibleCharacters(names) {
+            return (names || []).filter(name => {
+                const special = SPECIAL_CHARACTERS.hsr.find(s => this.isSpecial(name, s))
+                return !special || this.includedSpecials.includes(special)
+            })
+        },
+
+        toggleSpecial(name) {
+            this.includedSpecials = this.includedSpecials.includes(name)
+                ? this.includedSpecials.filter(n => n !== name)
+                : [...this.includedSpecials, name]
         },
 
         typeDetails() {
@@ -190,11 +219,12 @@ document.addEventListener('alpine:init', () => {
         },
 
         materialCharactersHtml(material) {
-            if (!material.characters || material.characters.length === 0) {
+            const characters = this.visibleCharacters(material.characters)
+            if (characters.length === 0) {
                 return '<span class="text-unknown">Not used by any character yet</span>'
             }
-            return material.characters
-                .map(c => `<div class="reward-char">${this.characterChipHtml(c)}</div>`)
+            return characters
+                .map(c => `<div>${this.characterChipHtml(c)}</div>`)
                 .join('')
         },
 
@@ -257,14 +287,18 @@ document.addEventListener('alpine:init', () => {
         characterChipHtml(name) {
             const info = this.characterLookup[name]
             const displayName = info ? info.displayName : name
-            const colorClass = info && info.combatType ? `ct-${info.combatType.toLowerCase()}` : 'el-unknown'
+            const colours = (info && info.colours) || []
+            const colorClass = colours.length > 1
+                ? 'el-multi'
+                : (info && info.combatType ? `ct-${info.combatType.toLowerCase()}` : 'el-unknown')
             const src = characterImageUrl(
                 info && info.photo, HSR_WIKI_IMAGES, 'assets/images/characters', 40
             )
             let chip = `<img src="${src}" width="20" height="20" loading="lazy"`
                 + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
-            chip += `<span class="gi-font ${colorClass}">${this.highlight(displayName)}</span>`
+            chip += `<span class="gi-font ${colorClass}"${formColourStyle(colours)}>`
+                + `${this.highlight(displayName)}</span>`
             const wikiName = (info && info.wikiName) || name
             return `<a href="${this.wikiUrl(wikiName)}" class="char-chip">${chip}</a>`
         },
@@ -364,8 +398,8 @@ document.addEventListener('alpine:init', () => {
             if (reward.effect) {
                 text += ` ${this.setEffectsButtonHtml(reward)}`
             }
-            if (reward.characters && reward.characters.length > 0) {
-                text += reward.characters
+            if (reward.characters && this.visibleCharacters(reward.characters).length > 0) {
+                text += this.visibleCharacters(reward.characters)
                     .map(c => `<div class="reward-char">${this.characterChipHtml(c)}</div>`)
                     .join('')
             } else if (reward.characters) {
@@ -457,7 +491,7 @@ document.addEventListener('alpine:init', () => {
             if (!this.searching()) return []
             return Object.values(this.allData.other_materials || {}).filter(material =>
                 this.matchesQuery(material.name)
-                || (material.characters || []).some(c => this.characterMatchesQuery(c))
+                || this.visibleCharacters(material.characters).some(c => this.characterMatchesQuery(c))
             )
         },
 
@@ -468,7 +502,7 @@ document.addEventListener('alpine:init', () => {
                 if (this.matchesQuery(reward.effect)) return true
                 if (this.matchesQuery(reward.effect_4pc)) return true
                 if (!reward.characters) return false
-                return reward.characters.some(c => this.characterMatchesQuery(c))
+                return this.visibleCharacters(reward.characters).some(c => this.characterMatchesQuery(c))
             })
         },
 
