@@ -304,7 +304,7 @@
                 <tbody>
                     <template x-for="row in releaseOrderRows()" :key="row.char.name + '|' + (row.form.path || '')">
                         <tr>
-                            <td x-html="chipHtml(row.char, row.form.combat_type, row.form.display_name)"></td>
+                            <td x-html="chipHtml(row.char, row.form.combat_type, row.form.display_name, row.form)"></td>
                             <td x-show="releaseUnknown(row.form)" colspan="2" class="center">
                                 <span class="text-unknown">Unknown</span>
                             </td>

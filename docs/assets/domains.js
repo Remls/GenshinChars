@@ -399,7 +399,7 @@ document.addEventListener('alpine:init', () => {
                     fullName: c.name,
                     displayName: c.display_name || c.name,
                     element: c.element,
-                    photo: c.photo,
+                    photo: characterImageUrl(c.photo, 'gensin-impact', 'assets/images/characters'),
                 }
                 lookup[c.name.toLowerCase()] = info
                 if (c.display_name) lookup[c.display_name.toLowerCase()] = info

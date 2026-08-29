@@ -59,9 +59,15 @@ then reload, or use the "Reset picture cache" footer link (clears localStorage).
   blank means unknown.
 - Leaked characters may leave any field blank; the UI buckets blanks under
   Unknown filters, rows, and columns. This is intentional and fully supported.
-- Photos come from paimon.moe by `name`, with local overrides in
-  `docs/assets/images/characters/` and `full-characters/` (lowercase filenames),
-  and Fallback.png otherwise. Renaming a character invalidates its photo lookup.
+- Photos come from the wiki, resolved at generate time by `generator/wiki_images.py`
+  and stored as `{"wiki": filename}` or `{"local": filename}`. Chip icons are
+  `{name} Icon.png` on Genshin and `Character {name} Icon.png` on HSR, tried per
+  form first so multi-form characters get their own art. Full art is
+  `Character {name} Full Wish.png` then `Character {name} Game.png` on Genshin,
+  `Character {name} Splash Art.png` on HSR. A local override in the game's
+  `assets/images/characters/` or `full-characters/` (lowercase filenames) is used
+  when the wiki has nothing, and Fallback.png otherwise. Renaming a character
+  invalidates its photo lookup.
 
 ### versions.csv (both games)
 

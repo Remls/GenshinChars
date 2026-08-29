@@ -1,7 +1,6 @@
 const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
 // The wiki is honkai-star-rail.fandom.com but its image CDN bucket is "houkai"
 const HSR_WIKI_IMAGES = 'houkai-star-rail'
-const HSR_FALLBACK = '../assets/images/Fallback.png'
 const HSR_PATHS = [
     'Abundance', 'Destruction', 'Elation', 'Erudition', 'Finality', 'Harmony',
     'Hunt', 'Nihility', 'Preservation', 'Remembrance',
@@ -10,16 +9,6 @@ const HSR_PATHS = [
 const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
 // The wiki has no path icon for these
 const HSR_MISSING_PATH_ICONS = ['Finality']
-// Character icons are named "Character {name} Icon.png". Forms whose icon sits
-// under a different name go here; the bare name can be a redirect, which the CDN
-// answers with a placeholder rather than an error
-const HSR_CHARACTER_ICON_OVERRIDES = {
-    'Trailblazer (Destruction)': 'Character Trailblazer (Destruction) Icon.png',
-    'Trailblazer (Preservation)': 'Character Trailblazer (Preservation) Icon.png',
-    'Trailblazer (Harmony)': 'Character Trailblazer (Harmony) Icon.png',
-    'Trailblazer (Remembrance)': 'Character Trailblazer (Remembrance) Icon.png',
-    'Trailblazer (Elation)': 'Character Trailblazer (Elation) Icon.png',
-}
 // Splash screen filenames derive from the version name. Exceptions to that rule go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
@@ -205,10 +194,8 @@ document.addEventListener('alpine:init', () => {
             return combatType ? `ct-${combatType.toLowerCase()}` : 'el-unknown'
         },
 
-        characterIconUrl(char, displayName = null) {
-            const file = HSR_CHARACTER_ICON_OVERRIDES[displayName || char.name]
-                || `Character ${char.name} Icon.png`
-            return wikiFileUrl(file, HSR_WIKI_IMAGES)
+        photoUrl(image) {
+            return characterImageUrl(image, HSR_WIKI_IMAGES, 'assets/images/characters')
         },
 
         pathLabel(path) {
@@ -217,26 +204,26 @@ document.addEventListener('alpine:init', () => {
 
         pathIconHtml(path) {
             const src = HSR_MISSING_PATH_ICONS.includes(path)
-                ? HSR_FALLBACK
+                ? FALLBACK_PHOTO
                 : wikiFileUrl(`Path ${this.pathLabel(path)}.png`, HSR_WIKI_IMAGES)
             return `<img src="${src}" class="region-icon" width="20" height="20" loading="lazy"`
-                + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
         combatTypeIconHtml(combatType) {
             const src = wikiFileUrl(`Type ${combatType}.png`, HSR_WIKI_IMAGES)
             return `<img src="${src}" class="region-icon" width="20" height="20" loading="lazy"`
-                + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
         wikiLink(char) {
             return HSR_WIKI + encodeURIComponent(char.name.replaceAll(' ', '_'))
         },
 
-        chipHtml(char, combatType, displayName = null) {
+        chipHtml(char, combatType, displayName = null, form = null) {
             return `<a class="character-links" href="${this.wikiLink(char)}">`
-                + `<img width="20" height="20" loading="lazy" src="${this.characterIconUrl(char, displayName)}"`
-                + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
+                + `<img width="20" height="20" loading="lazy" src="${this.photoUrl((form && form.photo) || char.photo)}"`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
                 + `<span class="gi-font clickable ${this.combatTypeClass(combatType)}">${displayName || char.display_name || char.name}</span>`
                 + `</a>`
         },
@@ -245,7 +232,7 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.characterData)
                 .map(c => ({ char: c, form: c.forms.find(f => this.formMatches(f, path, combatType)) }))
                 .filter(x => x.form)
-                .map(x => this.chipHtml(x.char, combatType === 'Unknown' ? null : combatType, x.form.display_name))
+                .map(x => this.chipHtml(x.char, combatType === 'Unknown' ? null : combatType, x.form.display_name, x.form))
                 .join('')
         },
 

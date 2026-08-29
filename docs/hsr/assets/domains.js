@@ -1,7 +1,6 @@
 const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
 // The wiki is honkai-star-rail.fandom.com but its image CDN bucket is "houkai"
 const HSR_WIKI_IMAGES = 'houkai-star-rail'
-const HSR_FALLBACK = '../assets/images/Fallback.png'
 
 const HSR_DOMAIN_TYPES = {
     calyx_crimson: {
@@ -98,6 +97,7 @@ document.addEventListener('alpine:init', () => {
                 lookup[c.name] = {
                     displayName: c.display_name || c.name,
                     combatType: c.forms[0].combat_type,
+                    photo: c.photo,
                 }
                 // Multi-path forms can be referenced by their form display name
                 c.forms.forEach(f => {
@@ -106,7 +106,7 @@ document.addEventListener('alpine:init', () => {
                     lookup[f.display_name] = {
                         displayName: f.display_name,
                         combatType: f.combat_type,
-                        iconName: `Character ${c.name} (${pathLabel}) Icon.png`,
+                        photo: f.photo,
                         wikiName: `${c.name}/${pathLabel}`,
                     }
                 })
@@ -238,7 +238,7 @@ document.addEventListener('alpine:init', () => {
         thumbHtml(filename, cssClass = 'item-thumb') {
             const src = wikiFileUrl(filename, HSR_WIKI_IMAGES)
             return `<img src="${src}" class="${cssClass}" height="20" loading="lazy"`
-                + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
         itemThumbHtml(reward) {
@@ -254,10 +254,11 @@ document.addEventListener('alpine:init', () => {
             const info = this.characterLookup[name]
             const displayName = info ? info.displayName : name
             const colorClass = info && info.combatType ? `ct-${info.combatType.toLowerCase()}` : 'el-unknown'
-            const iconName = (info && info.iconName) || `Character ${name} Icon.png`
-            const src = wikiFileUrl(iconName, HSR_WIKI_IMAGES)
+            const src = characterImageUrl(
+                info && info.photo, HSR_WIKI_IMAGES, 'assets/images/characters'
+            )
             let chip = `<img src="${src}" width="20" height="20" loading="lazy"`
-                + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
+                + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
             chip += `<span class="gi-font ${colorClass}">${this.highlight(displayName)}</span>`
             const wikiName = (info && info.wikiName) || name
             return `<a href="${this.wikiUrl(wikiName)}" class="char-chip">${chip}</a>`

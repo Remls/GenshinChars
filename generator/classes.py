@@ -1,11 +1,7 @@
 from datetime import datetime
-from functools import cache
-from functions import load_photo_cache_from_file, add_to_photo_cache_file, load_outdated_characters_list
+from functions import load_outdated_characters_list
 import csv
 import os
-import requests
-
-FALLBACK_PHOTO = "assets/images/Fallback.png"
 
 def prGreen(s):
     print(f"\033[92m {s}\033[00m")
@@ -14,40 +10,7 @@ def prRed(s):
     print(f"\033[91m {s}\033[00m")
 
 
-photo_cache = load_photo_cache_from_file()
 outdated_characters = load_outdated_characters_list()
-
-@cache
-def has_official_photo(char_name: str) -> bool:
-    print(f"Loading {char_name} (official) ...", end='')
-    if photo_cache:
-        if char_name in photo_cache:
-            prGreen(" O (cache)")
-            return True
-        else:
-            prRed(" X (cache)")
-            return False
-    url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
-    r = requests.get(url)
-    if r.ok:
-        prGreen(" O")
-        add_to_photo_cache_file(char_name)
-        return True
-    else:
-        prRed(" X")
-        return False
-
-@cache
-def has_custom_photo(char_name: str, full_photo = False) -> bool:
-    print(f"Loading {char_name} (custom {'full' if full_photo else 'portrait'}) ...", end='')
-    folder_name = "full-characters" if full_photo else "characters"
-    expected_filename = f"docs/assets/images/{folder_name}/{char_name}.png"
-    if os.path.isfile(expected_filename):
-        prGreen(" O")
-        return True
-    else:
-        prRed(" X")
-        return False
 
 class Version:
     def __init__(self, row: dict):
@@ -131,31 +94,6 @@ class Character:
             return self.get_char_slug() in outdated_characters
         return False
 
-    def get_character_image_link(self) -> str:
-        char_name = self.get_char_slug()
-        char_display_name = self.get_char_slug_display_name()
-        if has_official_photo(char_name):
-            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_name}.png"
-        elif char_display_name and has_official_photo(char_display_name):
-            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/{char_display_name}.png"
-        elif has_custom_photo(char_name):
-            url = f"assets/images/characters/{char_name}.png"
-        else:
-            url = FALLBACK_PHOTO
-        return url
-        
-    def get_character_full_image_link(self) -> str:
-        char_name = self.get_char_slug()
-        char_display_name = self.get_char_slug_display_name()
-        if has_official_photo(char_name):
-            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_name}.png"
-        elif char_display_name and has_official_photo(char_display_name):
-            url = f"https://raw.githubusercontent.com/MadeBaruna/paimon-moe/main/static/images/characters/full/{char_display_name}.png"
-        elif has_custom_photo(char_name, True):
-            url = f"assets/images/full-characters/{char_name}.png"
-        else:
-            url = FALLBACK_PHOTO
-        return url
 
     def get_formatted_release_date(self) -> str:
         if self.release_date:

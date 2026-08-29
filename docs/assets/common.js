@@ -79,6 +79,16 @@ function foldedText(s) {
     return { text: text.join(''), map: indexes }
 }
 
+// A character image is either a file on the wiki or one in the game's own
+// override directory. The CDN downsizes a bare wiki URL to about 200px when the
+// browser sends a Referer, so anything displayed larger asks for an explicit
+// width, which in turn needs referrerpolicy="no-referrer" on the tag
+function characterImageUrl(image, wiki, localDir, thumbWidth = null) {
+    if (!image) return FALLBACK_PHOTO
+    if (image.wiki) return wikiFileUrl(image.wiki, wiki, thumbWidth)
+    return `${localDir}/${image.local}`
+}
+
 // Characters excluded from the tables unless the reader opts in, because their
 // element or path is a player choice rather than a property of the character
 const SPECIAL_CHARACTERS = {

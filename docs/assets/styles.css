@@ -346,10 +346,18 @@ td.ice-elation {
     align-items: center;
     gap: 5px;
 }
+.full-photos {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding-right: 2em;
+    min-width: 0;
+}
 .full-photo {
     max-height: 300px;
-    max-width: 300px;
-    padding-right: 2em;
+    min-width: 0;
+    flex: 0 1 auto;
+    object-fit: contain;
 }
 
 .modal-content .label-column {

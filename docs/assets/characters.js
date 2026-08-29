@@ -53,7 +53,7 @@ document.addEventListener('alpine:init', () => {
         releaseVersion: null,
         releaseDate: null,
         photo: null,
-        fullPhoto: null,
+        fullPhotos: [],
         notes: null,
 
         fetchAllData() {
@@ -173,6 +173,18 @@ document.addEventListener('alpine:init', () => {
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
         },
 
+        photoUrl(image) {
+            return characterImageUrl(image, 'gensin-impact', 'assets/images/characters')
+        },
+
+        // Full art loads unscaled, so it needs referrerpolicy="no-referrer" on the
+        // tag: the CDN downsizes a bare URL to about 200px when a Referer arrives
+        fullPhotoUrls(images) {
+            return (images || []).map(image => characterImageUrl(
+                image, 'gensin-impact', 'assets/images/full-characters'
+            ))
+        },
+
         formMatches(form, element, weapon) {
             const elementOk = element === 'Unknown' ? !form.element : form.element === element
             const weaponOk = weapon === 'Unknown' ? !form.weapon : form.weapon === weapon
@@ -252,7 +264,7 @@ document.addEventListener('alpine:init', () => {
             return `${wd}, ${d} ${m} ${y} ${h}:${mn}:${s}`
         },
 
-        showCharSheet(char) {
+        showCharSheet(char, form = null) {
             const selectedChar = this.allData['characters'][char]
             this.name = selectedChar.name
             this.birthday = this.formatDate(selectedChar.birthday)
@@ -264,8 +276,10 @@ document.addEventListener('alpine:init', () => {
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
             this.releaseDate = this.formatDate(selectedChar.release_date)
-            this.photo = selectedChar.photo
-            this.fullPhoto = selectedChar.full_photo
+            this.photo = this.photoUrl(selectedChar.photo)
+            this.fullPhotos = this.fullPhotoUrls(
+                (form && form.full_photo) || selectedChar.full_photo
+            )
             this.notes = selectedChar.notes
             this.modalOpen = true
         },

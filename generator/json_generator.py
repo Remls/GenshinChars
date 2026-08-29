@@ -2,6 +2,7 @@ from classes import Character, Version, version_data
 from functions import get_version, get_current_timestamp
 from datetime import datetime
 import csv, json
+import wiki_images
 
 
 def release_sort_key(release_date, version_release_date, name):
@@ -19,6 +20,123 @@ def empty_strings_to_null(data):
     return data
 
 
+
+# Characters whose gender the player picks have art per twin. Female first, so
+# the modal shows them in the order the names sort
+GENSHIN_TWINS = {"Traveler": ("Lumine", "Aether")}
+
+
+def genshin_form_art(name: str, form: dict) -> list:
+    twins = GENSHIN_TWINS.get(name)
+    if not twins or not form.get("element"):
+        return []
+    return [f"Character {twin} Game {form['element']}.png" for twin in twins]
+
+
+def genshin_images(characters: list) -> dict:
+    """Resolve every Genshin character's chip icon and full art against the wiki.
+
+    Icon candidates are tried per form first, so a character whose forms have
+    their own art gets it; full art has no per-form variants.
+    """
+    wanted = []
+    for char in characters:
+        name = char.input_row["name"]
+        wanted.append(f"{name} Icon.png")
+        wanted.append(f"Character {name} Full Wish.png")
+        wanted.append(f"Character {name} Game.png")
+        for form in char.forms:
+            if form["display_name"]:
+                wanted.append(f"{form['display_name']} Icon.png")
+            wanted.extend(genshin_form_art(name, form))
+    resolved = wiki_images.resolve(wiki_images.GENSHIN_API, wanted)
+
+    images = {}
+    for char in characters:
+        name = char.input_row["name"]
+        slug = wiki_images.slugify(name)
+        photos, form_art = [], []
+        for form in char.forms:
+            candidates = []
+            if form["display_name"]:
+                candidates.append(f"{form['display_name']} Icon.png")
+            candidates.append(f"{name} Icon.png")
+            photos.append(wiki_images.pick(
+                candidates, resolved, "docs/assets/images/characters", slug
+            ))
+            form_art.append([
+                {"wiki": resolved[c]}
+                for c in genshin_form_art(name, form) if c in resolved
+            ])
+        images[name] = {
+            "photo": photos[0],
+            "form_photos": photos,
+            "form_art": form_art,
+            "full_photo": wiki_images.pick_all(
+                [f"Character {name} Full Wish.png", f"Character {name} Game.png"],
+                resolved, "docs/assets/images/full-characters", slug,
+            ),
+        }
+    return images
+
+
+# The wiki spells the path out where the data uses the short name
+HSR_PATH_LABELS = {"Hunt": "The Hunt"}
+
+
+def hsr_icon_candidates(name: str, form: dict) -> list:
+    candidates = []
+    if form.get("display_name"):
+        candidates.append(f"Character {form['display_name']} Icon.png")
+    if form.get("path"):
+        label = HSR_PATH_LABELS.get(form["path"], form["path"])
+        candidates.append(f"Character {name} ({label}) Icon.png")
+    candidates.append(f"Character {name} Icon.png")
+    return candidates
+
+
+def hsr_form_art(name: str, form: dict, gender: str) -> list:
+    """Either-gendered characters have splash art per gender and per path."""
+    if gender != "Either" or not form.get("path"):
+        return []
+    label = HSR_PATH_LABELS.get(form["path"], form["path"])
+    return [f"Character {name} ({letter}) {label} Splash Art.png" for letter in ("F", "M")]
+
+
+def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
+    wanted = []
+    for name, forms in forms_by_name.items():
+        wanted.append(f"Character {name} Splash Art.png")
+        for form in forms:
+            wanted.extend(hsr_icon_candidates(name, form))
+            wanted.extend(hsr_form_art(name, form, genders.get(name)))
+    resolved = wiki_images.resolve(wiki_images.HSR_API, wanted)
+
+    images = {}
+    for name, forms in forms_by_name.items():
+        slug = wiki_images.slugify(name)
+        photos, form_art = [], []
+        for form in forms:
+            photos.append(wiki_images.pick(
+                hsr_icon_candidates(name, form), resolved,
+                "docs/hsr/assets/images/characters", slug,
+            ))
+            form_art.append([
+                {"wiki": resolved[c]}
+                for c in hsr_form_art(name, form, genders.get(name)) if c in resolved
+            ])
+        images[name] = {
+            "photo": photos[0],
+            "form_photos": photos,
+            "form_art": form_art,
+            "full_photo": wiki_images.pick_all(
+                [f"Character {name} Splash Art.png"],
+                resolved, "docs/hsr/assets/images/full-characters", slug,
+            ),
+        }
+    return images
+
+
 def generate_characters_file():
     # Read and sort character data
     character_version_data = []
@@ -33,6 +151,8 @@ def generate_characters_file():
             c.input_row["name"],
         ), reverse=True)
 
+    images = genshin_images(character_version_data)
+
     # Format data for JSON
     chars = {}
     for el in character_version_data:
@@ -46,8 +166,14 @@ def generate_characters_file():
             char_data[column] = el.forms[0][column]
         char_data["display_name"] = el.display_name
         char_data["release_date"] = el.release_date
-        char_data["photo"] = el.get_character_image_link()
-        char_data["full_photo"] = el.get_character_full_image_link()
+        resolved_images = images[el.input_row["name"]]
+        char_data["photo"] = resolved_images["photo"]
+        char_data["full_photo"] = resolved_images["full_photo"]
+        for form, photo, art in zip(
+            el.forms, resolved_images["form_photos"], resolved_images["form_art"]
+        ):
+            form["photo"] = photo
+            form["full_photo"] = art or resolved_images["full_photo"]
         char_data["is_released"] = el.is_released()
         char_data["is_outdated"] = el.is_outdated()
         char_data["notes"] = el.get_notes()
@@ -116,6 +242,21 @@ def generate_hsr_characters_file():
                 "release_date": release_date,
                 "is_released": bool(release_date) and release_date <= datetime.now().strftime("%Y-%m-%d"),
             })
+    images = hsr_images(
+        characters,
+        {c["name"]: c["forms"] for c in characters},
+        {c["name"]: c["gender"] for c in characters},
+    )
+    for character in characters:
+        resolved = images[character["name"]]
+        character["photo"] = resolved["photo"]
+        character["full_photo"] = resolved["full_photo"]
+        for form, photo, art in zip(
+            character["forms"], resolved["form_photos"], resolved["form_art"]
+        ):
+            form["photo"] = photo
+            form["full_photo"] = art or resolved["full_photo"]
+
     # Newest releases first. Unreleased characters use their version's projected
     # date, and characters with no version at all come before those
     characters.sort(key=lambda c: release_sort_key(

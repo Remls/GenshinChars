@@ -265,8 +265,8 @@
                         :key="char.name + '|' + (form.element || '')">
                         <tr>
                             <td>
-                                <div @click="showCharSheet(char.name)" class="character-links">
-                                    <img width="20" height="20" :src="char.photo">
+                                <div @click="showCharSheet(char.name, form)" class="character-links">
+                                    <img width="20" height="20" :src="photoUrl(form.photo || char.photo)">
                                     <span class="gi-font clickable" :class="form.element ? `el-${form.element.toLowerCase()}` : 'el-unknown'"
                                         x-text="form.display_name || char.display_name || char.name">
                                     </span>
@@ -318,7 +318,7 @@
                         <tr>
                             <td>
                                 <div @click="showCharSheet(char.name)" class="character-links">
-                                    <img width="20" height="20" :src="char.photo">
+                                    <img width="20" height="20" :src="photoUrl(char.photo)">
                                     <span class="gi-font clickable" :class="char.element ? `el-${char.element.toLowerCase()}` : 'el-unknown'"
                                         x-text="char.display_name || char.name">
                                     </span>
@@ -353,7 +353,7 @@
             Last updated <span x-text="lastUpdatedFormatted()"></span><br>
             Info for unreleased characters are subject to change.<br>
             Above tables do not include the Traveler.<br>
-            Pictures sourced from <a href="https://paimon.moe" class="clickable">Paimon.moe</a>.<br>
+            Pictures sourced from the <a href="https://genshin-impact.fandom.com/" class="clickable">Genshin Impact Wiki</a>.<br>
             <a href="#" @click.prevent="resetCache()" class="clickable">Reset picture cache</a><br>
             <br>
             <b>KEYS:</b><br>
@@ -384,7 +384,11 @@
     <div class="modal" x-show="modalOpen" x-transition x-transition.duration.500ms>
         <div class="modal-content" @click.outside="modalOpen = false">
             <div class="modal-content-flex">
-                <img class="full-photo" x-show="photo" :src="fullPhoto">
+                <div class="full-photos" x-show="fullPhotos.length > 0">
+                    <template x-for="src in fullPhotos" :key="src">
+                        <img class="full-photo" :src="src" referrerpolicy="no-referrer">
+                    </template>
+                </div>
                 <div class="table-wrapper">
                     <table>
                         <tbody>
