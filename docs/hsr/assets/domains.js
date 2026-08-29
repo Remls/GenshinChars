@@ -1,7 +1,3 @@
-const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
-// The wiki is honkai-star-rail.fandom.com but its image CDN bucket is "houkai"
-const HSR_WIKI_IMAGES = 'houkai-star-rail'
-
 const HSR_DOMAIN_TYPES = {
     calyx_crimson: {
         short: 't',

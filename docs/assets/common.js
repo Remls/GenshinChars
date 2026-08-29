@@ -91,11 +91,15 @@ function characterImageUrl(image, wiki, localDir, thumbWidth = null) {
 
 // Colour variables for a character with several forms, filling seven slots by
 // repeating the list. Paired with .el-multi, which cycles through them
-function formColourStyle(colourVars) {
+function formColourSlots(colourVars) {
     if (colourVars.length < 2) return ''
-    const slots = Array.from({ length: 7 }, (_, i) =>
-        `--form-${i + 1}: var(--${colourVars[i % colourVars.length]})`)
-    return ` style="${slots.join('; ')}"`
+    return Array.from({ length: 7 }, (_, i) =>
+        `--form-${i + 1}: var(--${colourVars[i % colourVars.length]})`).join('; ')
+}
+
+function formColourStyle(colourVars) {
+    const slots = formColourSlots(colourVars)
+    return slots ? ` style="${slots}"` : ''
 }
 
 // Characters excluded from the tables unless the reader opts in, because their
@@ -216,6 +220,20 @@ function buildCharacterMaterials(domainsData) {
     return materials
 }
 
+const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
+// The wiki is honkai-star-rail.fandom.com but its image CDN bucket is "houkai"
+const HSR_WIKI_IMAGES = 'houkai-star-rail'
+// Data uses the short name. The wiki and the grid label use the full one
+const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
+
+// A chip stays a wiki link, so middle click, modifier click and long press still
+// reach the wiki. Only a plain left click is taken over.
+function charSheetChipClick(event, character, form = null) {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    event.preventDefault()
+    openCharSheet(character, form)
+}
+
 // Character sheet. One component for both games and every page, holding all of
 // its own state, so a page's loop variables cannot shadow the fields it shows.
 //
@@ -228,6 +246,8 @@ const CHAR_SHEET_GAMES = {
         wikiImages: 'gensin-impact',
         artDir: 'assets/images/full-characters',
         itemAltNames: WIKI_ALT_NAMES,
+        colourKey: 'element',
+        colourPrefix: 'el',
         fields: [
             { label: 'Birthday', from: 'char', key: 'birthday', format: 'date' },
             { label: 'Element', from: 'form', key: 'element' },
@@ -236,6 +256,23 @@ const CHAR_SHEET_GAMES = {
             { label: 'Rarity', from: 'char', key: 'rarity', format: 'rarity' },
             { label: 'Region', from: 'char', key: 'region' },
             { label: 'Weapon', from: 'form', key: 'weapon' },
+            { label: 'Release Version', from: 'form', key: 'release_version', format: 'version' },
+            { label: 'Release Date', from: 'form', key: 'release_date', format: 'date' },
+        ],
+    },
+    hsr: {
+        wiki: HSR_WIKI,
+        wikiImages: HSR_WIKI_IMAGES,
+        artDir: 'assets/images/full-characters',
+        itemFile: 'Item {name}.png',
+        colourKey: 'combat_type',
+        colourPrefix: 'ct',
+        fields: [
+            { label: 'Path', from: 'form', key: 'path', labels: HSR_PATH_LABELS },
+            { label: 'Combat Type', from: 'form', key: 'combat_type' },
+            { label: 'Gender', from: 'char', key: 'gender' },
+            { label: 'Rarity', from: 'char', key: 'rarity', format: 'rarity' },
+            { label: 'World', from: 'char', key: 'world' },
             { label: 'Release Version', from: 'form', key: 'release_version', format: 'version' },
             { label: 'Release Date', from: 'form', key: 'release_date', format: 'date' },
         ],
@@ -270,7 +307,8 @@ const CHAR_SHEET_MARKUP = `
         </div>
         <div class="char-sheet-body">
             <div class="char-sheet-title">
-                <span class="gi-font" x-text="title"></span>
+                <span class="gi-font" :class="titleClass" :style="titleStyle"
+                    x-text="title"></span>
                 <a class="char-sheet-wiki" :href="wikiLink" title="Open the wiki article"
                     >${EXTERNAL_LINK_ICON}</a>
             </div>
@@ -320,6 +358,8 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('charModal', () => ({
         open: false,
         title: null,
+        titleClass: '',
+        titleStyle: '',
         wikiLink: '',
         art: [],
         fields: [],
@@ -328,7 +368,9 @@ document.addEventListener('alpine:init', () => {
 
         show({ character, form }) {
             const config = charSheetConfig
-            const details = form || character
+            // Without a form the debut one stands in, since a character record
+            // carries no path or combat type of its own
+            const details = form || character.forms[0] || character
             this.title = (form && form.display_name)
                 || character.display_name || character.name
             // The primary name is the one that matches a wiki page. A form's
@@ -343,9 +385,22 @@ document.addEventListener('alpine:init', () => {
             this.fields = config.fields
                 .map(field => this.buildField(field, character, details, config))
                 .filter(Boolean)
+            this.setTitleColour(character, form, config)
             this.notes = character.notes
             this.materials = this.buildMaterials(character, form, config)
             this.open = true
+        },
+
+        // The name takes its form's colour. Without a form it cycles through every
+        // colour the character has, which is how the grid renders them too.
+        setTitleColour(character, form, config) {
+            const values = form
+                ? [form[config.colourKey]].filter(Boolean)
+                : [...new Set(character.forms
+                    .map(f => f[config.colourKey]).filter(Boolean))]
+            const vars = values.map(v => `${config.colourPrefix}-${v.toLowerCase()}`)
+            this.titleClass = vars.length > 1 ? 'el-multi' : (vars[0] || 'el-unknown')
+            this.titleStyle = formColourSlots(vars)
         },
 
         // A form's materials sit under its own name, and what every form needs
@@ -363,10 +418,16 @@ document.addEventListener('alpine:init', () => {
                     href: config.wiki + encodeURIComponent(
                         ((config.itemAltNames || {})[item.name] || item.name)
                             .replaceAll(' ', '_')),
-                    src: item.image
-                        ? wikiFileUrl(item.image, config.wikiImages, 128)
-                        : FALLBACK_PHOTO,
+                    src: this.itemImageUrl(item, config),
                 }))
+        },
+
+        // HSR names its item files after the item; Genshin's are resolved by the
+        // generator and stored, so an unresolved one has no file at all
+        itemImageUrl(item, config) {
+            const file = item.image
+                || (config.itemFile && config.itemFile.replace('{name}', item.name))
+            return file ? wikiFileUrl(file, config.wikiImages, 128) : FALLBACK_PHOTO
         },
 
         buildField(field, character, details, config) {
@@ -374,7 +435,7 @@ document.addEventListener('alpine:init', () => {
             if (!raw) {
                 return field.optional ? null : { label: field.label, value: 'Unknown', unknown: true }
             }
-            let value = raw
+            let value = field.labels ? (field.labels[raw] || raw) : raw
             if (field.format === 'date') value = formatDateLong(raw)
             if (field.format === 'version') value = formatVersionLabel(raw, config.versionData)
             if (field.format === 'rarity') value = `${raw}-star`

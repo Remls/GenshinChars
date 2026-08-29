@@ -1,12 +1,7 @@
-const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
-// The wiki is honkai-star-rail.fandom.com but its image CDN bucket is "houkai"
-const HSR_WIKI_IMAGES = 'houkai-star-rail'
 const HSR_PATHS = [
     'Abundance', 'Destruction', 'Elation', 'Erudition', 'Finality', 'Harmony',
     'Hunt', 'Nihility', 'Preservation', 'Remembrance',
 ]
-// Data uses the short name. The wiki and the grid label use the full one
-const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
 // The wiki has no path icon for these
 const HSR_MISSING_PATH_ICONS = ['Finality']
 // Splash screen filenames derive from the version name. Exceptions to that rule go here.
@@ -48,11 +43,15 @@ document.addEventListener('alpine:init', () => {
         showVersionPicker: false,
 
         fetchAllData() {
-            fetch('./assets/characters.json')
-                .then(r => r.json())
-                .then(d => {
+            Promise.all([
+                fetch('./assets/characters.json').then(r => r.json()),
+                fetch('./assets/domains.json').then(r => r.json()),
+            ])
+                .then(([d, domainsData]) => {
                     this.allData = d
                     this.versionData = d['versions']
+                    configureCharSheet('hsr', this.versionData,
+                        buildCharacterMaterials(domainsData))
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true
@@ -222,13 +221,29 @@ document.addEventListener('alpine:init', () => {
             return HSR_WIKI + encodeURIComponent(char.name.replaceAll(' ', '_'))
         },
 
+        // The chip stays a wiki link; a plain left click opens the sheet instead.
+        // The character and form travel as data attributes, since the markup is a
+        // string rather than a template Alpine can pass objects through.
         chipHtml(char, combatType, displayName = null, form = null) {
-            return `<a class="character-links" href="${this.wikiLink(char)}">`
+            return `<a class="character-links" href="${this.wikiLink(char)}"`
+                + ` data-char="${this.escapeAttribute(char.name)}"`
+                + ` data-form="${form ? char.forms.indexOf(form) : ''}"`
+                + ` @click="openCharSheetFromChip($event)">`
                 + `<img width="20" height="20" loading="lazy" referrerpolicy="no-referrer"`
                 + ` src="${this.photoUrl((form && form.photo) || char.photo)}"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
                 + `<span class="gi-font clickable ${this.combatTypeClass(combatType)}">${displayName || char.display_name || char.name}</span>`
                 + `</a>`
+        },
+
+        escapeAttribute(s) {
+            return s.replaceAll('&', '&amp;').replaceAll('"', '&quot;')
+        },
+
+        openCharSheetFromChip(event) {
+            const { char, form } = event.currentTarget.dataset
+            const character = this.allData.characters[char]
+            charSheetChipClick(event, character, form === '' ? null : character.forms[form])
         },
 
         cellHtml(path, combatType) {
@@ -292,12 +307,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         formatVersion(version, includeDate = false) {
-            if (!version) return 'Unknown'
-            version = this.versionData[version]
-            let v = version.display_version_number
-            if (version.version_name) v += `: ${version.version_name}`
-            if (includeDate && version.release_date) v += ` (${this.formatDate(version.release_date)})`
-            return v
+            return formatVersionLabel(version, this.versionData, includeDate)
         },
 
         versionPickerLabel() {
@@ -342,12 +352,6 @@ document.addEventListener('alpine:init', () => {
 
         zeroPad(n) {
             return String(n).padStart(2, '0')
-        },
-
-        formatDate(date) {
-            if (!date) return 'Unknown'
-            const [y, m, d] = date.split('-')
-            return `${parseInt(d)} ${MONTHS[parseInt(m) - 1]} ${y}`
         },
 
         upperCaseFirst(s) {

@@ -233,9 +233,18 @@ table {
     width: fit-content;
     margin: 0 auto;
 }
-/* Defeat the width="10%" attribute and keep labels glued to their controls */
+/* Defeat the width="10%" attribute so the labels sit beside their controls */
 .filter-table td:first-child {
     width: auto;
+    text-align: right;
+    padding-right: 1rem;
+}
+/* A label longer than the widest "Filter by ..." wraps rather than widening
+   the column past the controls beside it */
+.filter-table td:first-child label {
+    display: inline-block;
+    max-width: 160px;
+    white-space: normal;
     text-align: right;
 }
 

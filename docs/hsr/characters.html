@@ -62,7 +62,7 @@
                                         <div class="version-banner" x-html="versionBannerHtml(version)"></div>
                                         <span class="version-option-number" x-text="version.display_version_number"></span>
                                         <span class="version-option-name" x-show="version.version_name" x-text="version.version_name"></span>
-                                        <span class="version-option-date" x-text="formatDate(version.release_date)"></span>
+                                        <span class="version-option-date" x-text="formatDateLong(version.release_date)"></span>
                                     </button>
                                 </template>
                                 <button type="button" class="version-option version-option-all"
@@ -313,7 +313,7 @@
                                     :class="{'text-unknown': !row.form.release_version}"></span>
                             </td>
                             <td x-show="!releaseUnknown(row.form)" :class="{'center': !row.form.release_date}">
-                                <span x-text="formatDate(row.form.release_date)"
+                                <span x-text="formatDateLong(row.form.release_date)"
                                     :class="{'text-unknown': !row.form.release_date}"></span>
                             </td>
                         </tr>
