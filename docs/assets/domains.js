@@ -442,9 +442,11 @@ document.addEventListener('alpine:init', () => {
                 if (type === details.short) this.selectedType = key
             })
             const region = urlParams.get('re')
-            DOMAIN_REGIONS.forEach(key => {
-                if (region === key.toLowerCase()) this.selectedRegion = key
-            })
+            if (region) {
+                DOMAIN_REGIONS.forEach(r => {
+                    if (region.toLowerCase() === r.toLowerCase()) this.selectedRegion = r
+                })
+            }
             const day = urlParams.get('d')
             if (DAY_KEYS.includes(day)) this.selectedDay = day
             const query = urlParams.get('q')

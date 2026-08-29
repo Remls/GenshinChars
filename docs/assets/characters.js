@@ -61,98 +61,40 @@ document.addEventListener('alpine:init', () => {
                 .then(d => {
                     this.allData = d
                     this.versionData = d['versions']
-                    this.setSelectedVersionFromUrl()
-                    this.setSelectedRarityFromUrl()
-                    this.setSelectedGenderFromUrl()
-                    this.setSelectedRegionFromUrl()
+                    this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true
                 })
         },
 
-        setSelectedVersionFromUrl() {
-            // Default is the first version with a name
+        setFiltersFromUrl() {
+            // Default is the last version with a name
             Object.values(this.versionData).forEach(v => {
-                if (v.version_name) {
-                    this.defaultVersion = v.version_number
-                }
+                if (v.version_name) this.defaultVersion = v.version_number
             })
-
-            // Check if value passed in URL
-            const urlParams = new URLSearchParams(window.location.search)
-            let versionPassedInUrl = urlParams.get('v')
-            if (versionPassedInUrl) {
-                versionPassedInUrl = versionPassedInUrl.toLowerCase()
-                if (versionPassedInUrl === 'all') {
-                    this.selectedVersion = null
-                    return
-                } else if (Object.keys(this.versionData).includes(versionPassedInUrl)) {
-                    this.selectedVersion = versionPassedInUrl
-                    return
-                }
-            }
-
-            // Fall back to the default
             this.selectedVersion = this.defaultVersion
-        },
 
-        setSelectedRarityFromUrl() {
-            // Check if value passed in URL
             const urlParams = new URLSearchParams(window.location.search)
-            let rarityPassedInUrl = urlParams.get('r')
-            if (rarityPassedInUrl) {
-                rarityPassedInUrl = rarityPassedInUrl.toLowerCase()
-                if (rarityPassedInUrl === 'all') {
-                    this.selectedRarity = null
-                    return
-                } else if (['4', '5', 'unknown'].includes(rarityPassedInUrl)) {
-                    this.selectedRarity = this.upperCaseFirst(rarityPassedInUrl)
-                    return
-                }
+            const version = urlParams.get('v')
+            if (version) {
+                if (version.toLowerCase() === 'all') this.selectedVersion = null
+                else if (this.versionData[version]) this.selectedVersion = version
             }
-
-            // Fall back to the default
-            this.selectedRarity = null
-        },
-
-        setSelectedGenderFromUrl() {
-            // Check if value passed in URL
-            const urlParams = new URLSearchParams(window.location.search)
-            let genderPassedInUrl = urlParams.get('g')
-            if (genderPassedInUrl) {
-                genderPassedInUrl = genderPassedInUrl.toLowerCase()
-                if (genderPassedInUrl === 'all') {
-                    this.selectedGender = null
-                    return
-                } else if (['female', 'male', 'unknown'].includes(genderPassedInUrl)) {
-                    this.selectedGender = this.upperCaseFirst(genderPassedInUrl)
-                    return
-                }
+            const rarity = urlParams.get('r')
+            if (['4', '5', 'unknown'].includes(rarity)) {
+                this.selectedRarity = this.upperCaseFirst(rarity)
             }
-
-            // Fall back to the default
-            this.selectedGender = null
-        },
-
-        setSelectedRegionFromUrl() {
-            // Check if value passed in URL
-            const urlParams = new URLSearchParams(window.location.search)
-            let regionPassedInUrl = urlParams.get('re')
-            if (regionPassedInUrl) {
-                regionPassedInUrl = regionPassedInUrl.toLowerCase()
-                selectableRegions = REGIONS.map(r => r.toLowerCase())
-                selectableRegions.push('unknown')
-                if (regionPassedInUrl === 'all') {
-                    this.selectedRegion = null
-                    return
-                } else if (selectableRegions.includes(regionPassedInUrl)) {
-                    this.selectedRegion = this.upperCaseFirst(regionPassedInUrl)
-                    return
-                }
+            const gender = urlParams.get('g')
+            if (Object.keys(GENDERS).concat('Unknown').some(g => g.toLowerCase() === gender)) {
+                this.selectedGender = this.upperCaseFirst(gender)
             }
-
-            // Fall back to the default
-            this.selectedRegion = null
+            const region = urlParams.get('re')
+            if (region) {
+                REGIONS.forEach(r => {
+                    if (region.toLowerCase() === r.toLowerCase()) this.selectedRegion = r
+                })
+                if (region.toLowerCase() === 'unknown') this.selectedRegion = 'Unknown'
+            }
         },
 
         updateCharacterData() {

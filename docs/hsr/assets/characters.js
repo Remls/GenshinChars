@@ -77,7 +77,7 @@ document.addEventListener('alpine:init', () => {
                 this.selectedRarity = this.upperCaseFirst(rarity)
             }
             const gender = urlParams.get('g')
-            if (['female', 'male', 'unknown'].includes(gender)) {
+            if (Object.keys(GENDERS).concat('Unknown').some(g => g.toLowerCase() === gender)) {
                 this.selectedGender = this.upperCaseFirst(gender)
             }
             const world = urlParams.get('w')
