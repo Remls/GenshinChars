@@ -1,82 +1,3 @@
-const DOMAIN_TYPES = {
-    weapon_ascension_mats: {
-        button_label: 'Weapon mats',
-        icon: 'Icon Inventory Weapons.png',
-        short: 'w',
-        string: 'Weapon ascension materials',
-        title: 'Domains of Forgery',
-        description: 'Provides weapon ascension materials',
-        changing_rewards: true,
-    },
-    talent_upgrade_mats: {
-        button_label: 'Talent mats',
-        icon: 'Icon Archive Books.png',
-        short: 't',
-        string: 'Talent upgrade materials',
-        title: 'Domains of Mastery',
-        description: 'Provides character talent level-up materials',
-        changing_rewards: true,
-    },
-    artifacts: {
-        button_label: 'Artifacts',
-        icon: 'Icon Inventory Artifacts.png',
-        short: 'a',
-        string: 'Artifacts',
-        title: 'Domains of Blessing',
-        description: 'Provides artifacts',
-        changing_rewards: false,
-    },
-    common_enemy_drops: {
-        button_label: 'Common enemies',
-        icon: 'Icon Archive Living Beings.png',
-        short: 'c',
-        string: 'Common enemy drops',
-        title: 'Common enemy drops',
-        description: 'Provides character ascension and talent level-up materials',
-        changing_rewards: false,
-        source: 'common_enemy_drops',
-        no_regions: true,
-    },
-    normal_bosses: {
-        button_label: 'Normal bosses',
-        icon: 'Icon Rolling Crossfire.png',
-        short: 'nb',
-        string: 'Normal bosses',
-        title: 'Normal bosses',
-        description: 'Provides character ascension materials',
-        changing_rewards: false,
-    },
-    weekly_bosses: {
-        button_label: 'Weekly bosses',
-        icon: 'Icon Tutorial Monster.png',
-        short: 'wb',
-        string: 'Weekly bosses',
-        title: 'Weekly bosses',
-        description: 'Provides character talent level-up materials (Lv7+)',
-        changing_rewards: false,
-    },
-    regional_specialties: {
-        button_label: 'Specialties',
-        icon: 'Icon Inventory Materials.png',
-        short: 's',
-        string: 'Regional specialties',
-        title: 'Regional specialties',
-        description: 'Provides character ascension materials',
-        changing_rewards: false,
-        source: 'specialties',
-    },
-    other_materials: {
-        button_label: 'Other mats',
-        icon: 'Icon Inventory Precious Items.png',
-        short: 'o',
-        string: 'Other materials',
-        title: 'Other materials',
-        description: 'Other miscellaneous ascension materials that are not farmable',
-        changing_rewards: false,
-        source: 'other_materials',
-        no_regions: true,
-    },
-}
 const DOMAIN_REGIONS = [
     'All', 'Mondstadt', 'Liyue', 'Inazuma', 'Sumeru',
     'Fontaine', 'Natlan', 'Nod-Krai', 'Snezhnaya',
@@ -135,7 +56,7 @@ document.addEventListener('alpine:init', () => {
                 this.buildRewardSources()
                 this.buildImageMaps()
                 configureCharSheet('genshin', charactersData.versions,
-                    buildCharacterMaterials(domainsData))
+                    buildCharacterMaterials(domainsData, 'genshin'))
                 // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()

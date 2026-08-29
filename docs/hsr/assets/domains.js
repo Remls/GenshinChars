@@ -1,67 +1,3 @@
-const HSR_DOMAIN_TYPES = {
-    calyx_crimson: {
-        button_label: 'Trace mats',
-        short: 't',
-        icon: 'Icon Calyx Crimson.png',
-        string: 'Trace materials',
-        title: 'Crimson Calyxes',
-        page_prefix: 'Calyx (Crimson)',
-        description: 'Provides trace materials',
-    },
-    cavern_of_corrosion: {
-        short: 'r',
-        icon: 'Icon Cavern of Corrosion.png',
-        string: 'Relics',
-        title: 'Caverns of Corrosion',
-        page_prefix: 'Cavern of Corrosion',
-        description: 'Provides relic sets',
-    },
-    planar_ornament: {
-        short: 'p',
-        icon: 'Icon Divergent Universe Protean Hero.png',
-        string: 'Planar ornaments',
-        title: 'Divergent Universe',
-        description: 'Provides planar ornament sets',
-    },
-    common_enemy_drops: {
-        button_label: 'Common enemies',
-        short: 'c',
-        icon: 'Icon Enemy.png',
-        light_glyph: true,
-        string: 'Common enemy drops',
-        title: 'Common enemy drops',
-        description: 'Provides character ascension and trace level-up materials',
-        source: 'common_enemy_drops',
-        no_worlds: true,
-    },
-    stagnant_shadow: {
-        short: 'nb',
-        icon: 'Icon Stagnant Shadow.png',
-        string: 'Normal bosses',
-        title: 'Normal bosses',
-        page_prefix: 'Stagnant Shadow',
-        description: 'Provides character ascension materials',
-    },
-    echo_of_war: {
-        short: 'wb',
-        icon: 'Icon Echo of War Enemy.png',
-        string: 'Weekly bosses',
-        title: 'Weekly bosses',
-        page_prefix: 'Echo of War',
-        description: 'Provides trace level-up materials (Lv9+ and bonus abilities)',
-    },
-    other_materials: {
-        button_label: 'Other mats',
-        short: 'o',
-        icon: 'Icon Other Materials.png',
-        light_glyph: true,
-        string: 'Other materials',
-        title: 'Other materials',
-        description: 'Other miscellaneous ascension materials that are not farmable',
-        source: 'other_materials',
-        no_worlds: true,
-    },
-}
 // Enemy groups the wiki files under a different page title
 const HSR_ENEMY_WIKI_ALT_NAMES = {
     'Entranced Ingenia': 'The Xianzhou Luofu (Enemy Faction)',
@@ -99,7 +35,7 @@ document.addEventListener('alpine:init', () => {
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
                 configureCharSheet('hsr', charactersData.versions,
-                    buildCharacterMaterials(domainsData))
+                    buildCharacterMaterials(domainsData, 'hsr'))
                 this.setFiltersFromUrl()
                 ;['searchQuery', 'selectedType', 'selectedWorld', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())

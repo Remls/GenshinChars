@@ -49,7 +49,7 @@ document.addEventListener('alpine:init', () => {
                     this.allData = d
                     this.versionData = d['versions']
                     configureCharSheet('genshin', this.versionData,
-                        buildCharacterMaterials(domainsData))
+                        buildCharacterMaterials(domainsData, 'genshin'))
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true

@@ -16,10 +16,10 @@ Source files (hand-edited, the only files you normally touch):
 |---|---|
 | `data/characters.csv` | Genshin characters |
 | `data/versions.csv` | Genshin versions |
-| `data/domains.json` | Genshin domains, rewards, specialties |
+| `data/domains.json` | Genshin domains, rewards, enemy drops, specialties, other materials |
 | `data/hsr/characters.csv` | HSR characters |
 | `data/hsr/versions.csv` | HSR versions |
-| `data/hsr/domains.json` | HSR domains and rewards |
+| `data/hsr/domains.json` | HSR domains, rewards, enemy drops, other materials |
 | `data/characters.template.html` | Genshin characters page markup |
 | `data/index.template.html` | / redirect page |
 
@@ -76,6 +76,12 @@ with projected dates (both games run 6-week patches). Future versions have no
 name; the version filter's default is the LAST version that has a name, so name
 a version only once it is official.
 
+`version` is always the number. `display_version_number` is the marketing name
+when one exists: Genshin's 6.0 through 6.7 are `Luna I` through `Luna VIII`.
+The Genshin wiki's `Category:Released in Version X` uses that display name, not
+the number, so mapping a wiki category back to a sortable version means going
+through the roman numeral.
+
 ### hsr/characters.csv
 
 `name,display_name,rarity,path,combat_type,gender,world,release_version,release_date`
@@ -90,19 +96,42 @@ a version only once it is official.
   version filter drops forms released after the selected version, and the
   character with them once none are left.
 - Path is stored as `Hunt`, not `The Hunt` (display and wiki filenames map it
-  back via `HSR_PATH_LABELS` in `docs/hsr/assets/domains.js` and characters.js).
+  back via `HSR_PATH_LABELS`, defined in both `docs/assets/common.js` and
+  `generator/json_generator.py`).
 - Gender is hand-maintained. The HSR wiki records no genders anywhere. Values
   are `Male`, `Female`, `Either` for characters whose gender the player picks,
   or blank. The filter buttons and their glyphs come from `GENDERS` in
   `docs/assets/common.js`, shared by both games.
 - The Trailblazer is excluded, like the Traveler on the Genshin side.
 
+### Which tier names a material family (both games)
+
+Many materials come in a family of tiers sharing one drop source: Genshin weapon
+mats run 2/3/4/5 star, its talent books and enemy drops 1/2/3, HSR's trace and
+enemy families 2/3/4. One name stands for the whole family, and in both games it
+is the **highest** tier: `Scattered Piece of Decarabian's Dream`, not
+`Tile of Decarabian's Tower`; `Flower of Eternity`, not `Seed of Abundance`.
+
+Two exceptions. Genshin talent books display the bare family name (`Freedom`),
+which carries no tier, and only the wiki link and thumbnail resolve to one, via
+`WIKI_ALT_NAMES` pointing at `Philosophies of X`. Single-drop sources, boss
+materials and regional specialties, have no family and no choice to make.
+
+A reward key is an opaque id, not a slug of the name. Several were coined from a
+lower tier and were deliberately left alone when the names moved up (`w_tile`
+now names a Dream, `w_tooth` a Nostalgia), so do not rename a key to chase its
+name. Renaming one means editing every `domains[].rewards` day array that cites
+it, which is the only thing that reads a key.
+
 ### domains.json (Genshin)
 
-Top-level keys: `domains`, `rewards`, `specialties`. The old Telegram bot also
-reads this file and only knows `domains` and `rewards` with the original five
-types, so: new keys must be additive, `effect` must stay a plain string, and
-never remove or rename the original structures.
+Top-level keys: `domains`, `rewards`, `common_enemy_drops`, `specialties`,
+`other_materials`. The old Telegram bot also reads this file and only knows
+`domains` and `rewards` with the original five types, so: new keys must be
+additive, `effect` must stay a plain string, and never remove or rename the
+original structures. Anything that is not a domain, and so has no location,
+belongs in its own top-level key rather than as an extra type inside `domains[]`,
+which is what `common_enemy_drops`, `specialties` and `other_materials` do.
 
 - `domains[]`: `name`, `location` ("Subarea, Area" from the wiki's Domain/Enemy
   Infobox), `region`, `type`, `rewards` (list if static, or per-day dict
@@ -112,21 +141,34 @@ never remove or rename the original structures.
   `a_` artifacts, `nb_` normal boss, `wb_` weekly boss. Entries carry `name`
   plus either `characters` (list of characters.csv names) or `effect`
   (+ `effect_4pc` for artifact sets, official wiki wording).
+- `common_enemy_drops{}`: `c_` keys with `name`, `type`, `enemies`,
+  `characters`. The materials ordinary overworld enemies drop, 19 families of
+  three tiers. `enemies` is a list because a few families drop from more than
+  one group. No region, so no `region` field and `no_regions` on the type.
 - `specialties{}`: `s_` keys with `name`, `region`, `characters`. Unused
   specialties are kept. Ten unused artifact reward entries also exist by choice.
+- `other_materials{}`: `o_` keys with `name`, `type`, `characters`. For
+  ascension materials that are not farmable at all. Rendered from its own filter
+  button with no region filter (`no_regions` on the type).
 - Not-yet-revealed content uses `"???"` placeholders: domain `name`/`location`
   and reward/specialty `name` may all be `"???"` (the site skips image lookups
   for names starting with `???`). Give such rewards a descriptive key
   (`nb_snezhnaya_1`, `a_snezhnaya_1`) and rename the `name` once official.
-- Talent material family names use short forms; `WIKI_ALT_NAMES` in
-  `docs/assets/domains.js` maps them to wiki titles (`Freedom` to
-  `Teachings of Freedom`).
+- Talent material family names use short forms; `WIKI_ALT_NAMES` maps them to
+  wiki titles (`Freedom` to the tier page). It is duplicated in
+  `docs/assets/common.js` (link targets on the domains page and in the character
+  sheet) and `generator/domain_images.py` (which page the thumbnail is read
+  from). Edit both or the icon and the link disagree.
 
 ### hsr/domains.json
 
-Top-level: `domains`, `rewards`. Types and reward prefixes:
-`calyx_crimson`/`cr_`, `cavern_of_corrosion`/`cc_`, `planar_ornament`/`po_`,
-`stagnant_shadow`/`ss_`, `echo_of_war`/`ew_`.
+Top-level: `domains`, `rewards`, `common_enemy_drops`, `other_materials`. Types
+and reward prefixes: `calyx_crimson`/`cr_`, `cavern_of_corrosion`/`cc_`,
+`planar_ornament`/`po_`, `common_enemy_drops`/`c_`, `stagnant_shadow`/`ss_`,
+`echo_of_war`/`ew_`, `other_materials`/`o_`.
+
+- `common_enemy_drops{}` mirrors the Genshin group: `name`, `type`, `enemies`,
+  `characters`, 11 families of three tiers, no world.
 
 - `domains[]`: `name`, `location`, `region` (world), `type`, `image` (exact wiki
   filename shown as the row thumbnail), optional `page` (overrides the wiki link
@@ -205,7 +247,7 @@ Filename conventions (after redirect resolution):
 - Genshin: items `Item {name}.png`; artifact sets have no own image, use the
   flower piece from the set page's `|flower =` param; boss archive icons
   `{Boss} Icon.png` with colons dropped plus the `BOSS_ICON_ALIASES` map in
-  `docs/assets/domains.js`; region emblems `Emblem {Region}.png` (none for
+  `generator/domain_images.py`; region emblems `Emblem {Region}.png` (none for
   Khaenri'ah, override map in common.js); version splashscreens
   `Splashscreen {Version Name}.png` (Genshin) / `Splash Screen {Version Name}.png`
   (HSR), used by THUMBNAIL_IMAGE in `generator/template_replacements.py`
@@ -216,11 +258,18 @@ Filename conventions (after redirect resolution):
   `Icon {World}.png`; weekly boss thumbs `Icon Echo of War {name}.png`; DivU
   stage boss thumbs come from each enemy page's infobox `image` param.
 
-The Genshin domains page resolves item/boss images at runtime through the API
-and caches the result in localStorage keyed by the data's `last_updated` (so
-caches refresh whenever CI commits new data). The HSR pages use filenames baked
-into the data at authoring time instead; when adding HSR entries, resolve the
-filenames yourself and store them.
+Both games ship filenames in the data, but by different routes. Genshin resolves
+them at generate time: `generator/domain_images.py` queries the wiki and writes
+an `image` onto every entry of `rewards`, `specialties` and `other_materials`,
+plus `image`/`link`/`boss` onto each domain, and the page just reads them. So a
+Genshin entry is authored with no `image` at all. HSR has no such generator step,
+`generate_hsr_domains_file()` copies the file straight through, so HSR entries
+carry hand-resolved filenames: resolve them yourself and store them. HSR rewards
+may omit `image` when the computed `Item {name}.png` is already right.
+
+No frontend code calls the wiki API. The only localStorage use is the
+image-cache-busting token in `docs/assets/common.js`, which the "Reset picture
+cache" footer link bumps.
 
 ### Where each kind of data lives on the wikis
 
@@ -230,6 +279,32 @@ filenames yourself and store them.
   disambiguation titles: strip them.
 - Genshin weekly boss official names: the `==Enemies==` section of the Trounce
   Domain page.
+- Genshin character usage of materials: page categories `Ascends with {item}`
+  and `Talents Leveled with {item}`, the mirror of the HSR ones below. Every
+  tier of a family carries the same categories, so any tier resolves the same
+  character list.
+- The Traveler splits two ways, and the data follows the wiki. Ascension is
+  element-independent, so only the main `Traveler` page carries `Ascends with`
+  and the entry uses the bare name, as `s_windwheel_aster` already does. Talents
+  are per element, carried on the `Traveler (Anemo)`-style pages, and those
+  entries use the form name. One element can appear under two families. Reading
+  the main page alone gives the union of all eight and is wrong for both uses.
+- Item rarity: Genshin's `{{Item Infobox}}` calls it `quality`, HSR's calls it
+  `rarity`. Genshin also has `group`/`group2` params naming the item's family
+  (`Slime Materials`), which HSR has no equivalent for.
+- Genshin enemy drops: `Category:General Enemy Drops` (19 families of 3) and
+  `Category:Elite Enemy Drops` (~33 families). Elite drops are weapon ascension
+  materials only, no playable character uses one, so a character site cares only
+  about the general set. The `... Enemy Drops by Group` subcategories are
+  miscategorized and cannot be trusted (`Frostnight Scion Materials` and others
+  sit under *General* while their items are all *Elite*): enumerate from the
+  item categories instead. The dropping enemy comes from the item infobox's
+  `source1..N`, at enemy-group level; the `{{Dropped By}}` section is a DPL
+  table of individual variants and is far too granular (`Damaged Mask` lists 28).
+- HSR common enemy drops, the equivalent set: items in both
+  `Category:Trace Material` and `Category:Character Ascension Material`, 11
+  families of 3 plus `Tears of Souls`, which is a universal substitute with no
+  family and no characters.
 - Artifact and relic set bonuses: `|2pcBonus =` / `|4pcBonus =` in the set
   page infobox.
 - HSR domains: `{{Domain Infobox}}` (`title`, `world`, `area`, `drops` with
@@ -254,24 +329,59 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
 
 - HSR: `https://starrail.honeyhunterworld.com/?lang=EN`. Genshin:
   `https://gensh.honeyhunterworld.com/?lang=EN`.
-- Plain curl with a browser User-Agent works, no JS needed for what we use.
-- Character index at `/characters/?lang=EN`; find slugs like
-  `robin-summeretto-character` in the HTML.
-- A character page's HTML contains `/{slug}-item/` links for every material.
-  Match those against our reward names by slugifying both sides, and beware
-  that Honey Hunter drops apostrophes (`the-fluffy-collectors-edition` is
-  "The Fluffy Collector's Edition") and diacritics (`flower-of-laya` is
-  "Flower of Ālaya").
-- The page mixes in EXP items, Credit, boss mats, and trace tiers; the
-  farmable-relevant ones are the ascension stone, the trace family, and the
-  weekly material.
+- **curl no longer works.** Every request answers 403, including with a full
+  browser header set (User-Agent, Accept, Sec-Fetch-*). Use Claude in Chrome:
+  navigate the tab, then read the page with `javascript_tool`. The pages are
+  server-rendered, so one `javascript_tool` call per page is enough.
+- The two sites use different URL schemes, and only HSR matches the older docs:
+  - HSR: index at `/characters/?lang=EN`, slugs like `pearl-character`,
+    `screwllum-character`. Item links are `/{slug}-item/`. Match those against
+    our reward names by slugifying both sides, and beware that Honey Hunter
+    drops apostrophes (`the-fluffy-collectors-edition` is "The Fluffy
+    Collector's Edition") and diacritics (`flower-of-laya` is "Flower of Ālaya").
+  - Genshin: index at `/fam_chars/?lang=EN`, slugs are
+    `{internal codename}_{id}` (`vesna_143`, `columbina_904`, and for older
+    characters the HoYo codename rather than the English name: `qin_017` is
+    Jean, `ambor_008` is Amber). Item links are `/i_{id}/` or `/i_n{id}/`, and
+    the link text is the item's display name, so names come straight off the
+    page with no slug matching.
+- The Genshin `/fam_chars/` index renders only part of its list into the DOM.
+  For a character that has not released, go through `/new-in-{version}/?lang=EN`
+  instead, dashed (`/new-in-7-1/?lang=EN`), which links every new character,
+  weapon and item for that version.
+- Reading a Genshin character page's materials. The item name is in the `img`
+  alt, NOT the link text: some pages label the link with the item name, others
+  leave it empty and put the quantity there instead, so filtering on link text
+  silently returns nothing and reads as "no data yet".
+
+  ```js
+  [...new Set([...document.querySelectorAll('a[href*="/i_"] img')]
+      .map(i => i.getAttribute('alt') || i.getAttribute('title') || ''))]
+      .filter(Boolean)
+  ```
+
+- The page mixes in EXP items, Mora/Credit, boss mats, and book tiers; the
+  farmable-relevant ones are the ascension stone, the talent or trace family,
+  the local specialty, the common enemy drop family, and the weekly material.
+- A character appearing on a "New in" page does not mean its build is known.
+  The row's Ascension Materials column is empty until the data lands, and the
+  character page then has no material tables at all, only the card and talents.
+  Check both characters of a patch separately rather than assuming one stands
+  for the version.
 
 ## yatta.moe / Project Amber (leaked data)
 
 Second leak source, useful when Honey Hunter lags: `https://gi.yatta.moe/en`
-(Genshin) and `https://sr.yatta.moe/en` (HSR). Per-version changelog pages
-(`/en/changelog?v=70` for 7.0) list new items with names and icons before the
-wiki has pages for them; good for naming items known only from leak images.
+(Genshin) and `https://sr.yatta.moe/en` (HSR). Plain curl still works here.
+
+- Character list: `https://gi.yatta.moe/api/v2/en/avatar` returns JSON with
+  `data.items` keyed by avatar id, each carrying `name` and a `release`
+  timestamp. Detail is at `/api/v2/en/avatar/{id}`.
+- The `/api/v2/en/changelog` endpoint 404s, and the per-version changelog page
+  route documented previously (`/en/changelog?v=70`) no longer resolves.
+- Amber trails Honey Hunter on unreleased characters: as of Genshin 7.0 its
+  avatar list stops at the current live version and carries no beta characters
+  at all. Treat it as a naming source for items, not a build source.
 
 ## Reading leak material infographics
 
@@ -283,6 +393,38 @@ wiki `Item {name}.png` files (crop and zoom the card if needed). Talent family
 emblems persist across tiers, so match the emblem, not the book or scroll
 style; Snezhnaya families are scrolls (Charity cotton bloom, Fortitude
 four-petal star, Glory torch).
+
+## Where the front end reads the data from
+
+Both games' type tables, `DOMAIN_TYPES` and `HSR_DOMAIN_TYPES`, live in
+`docs/assets/common.js`, which all four pages load. Each entry carries
+`button_label` (the short label on the selected filter button), `string` (its
+tooltip), `title` (the section heading), `icon`, `short` (the `?t=` code, and
+by convention the reward key prefix), and for a type rendered from its own
+top-level key, `source` plus `no_regions`/`no_worlds`. `button_label` is
+optional on HSR, which falls back to `string`.
+
+Object key order in those tables is the order of the filter buttons, and now
+also the order of the character sheet's material grid: `buildCharacterMaterials`
+ranks each entry by its type's position, then by position within the group. So
+the order of keys inside `rewards` no longer has to be maintained to match the
+buttons, which the HSR file had never done.
+
+Genshin type icons take an `invert` filter unless the filename starts with
+`Item `, since the menu glyphs are dark and the site is not. Check a new icon is
+actually a monochrome glyph before using it.
+
+Character lists are stored sorted by the primary name and re-sorted for display
+by `sortedByDisplayName` in each game's `domains.js`, keyed on
+`foldedText(displayName)`, so accents and separators sort as letters. Keep the
+file sorted by the stored name; the page handles the rest.
+
+Enemy names in `common_enemy_drops` are link targets, so each must be a real
+page title. Plural forms usually resolve through a wiki redirect but not always
+(`Landcruisers` and `Automatons` do not). Where the label and the page title
+genuinely differ, add to `ENEMY_WIKI_ALT_NAMES` in `docs/assets/domains.js` or
+`HSR_ENEMY_WIKI_ALT_NAMES` in `docs/hsr/assets/domains.js`, the same pattern
+`WIKI_ALT_NAMES` uses for talent books.
 
 ## Common workflows
 

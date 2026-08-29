@@ -202,21 +202,179 @@ const WIKI_ALT_NAMES = {
     'Glory':        'Philosophies of Glory',
 }
 
+const DOMAIN_TYPES = {
+    weapon_ascension_mats: {
+        button_label: 'Weapon mats',
+        icon: 'Icon Inventory Weapons.png',
+        short: 'w',
+        string: 'Weapon ascension materials',
+        title: 'Domains of Forgery',
+        description: 'Provides weapon ascension materials',
+        changing_rewards: true,
+    },
+    talent_upgrade_mats: {
+        button_label: 'Talent mats',
+        icon: 'Icon Archive Books.png',
+        short: 't',
+        string: 'Talent upgrade materials',
+        title: 'Domains of Mastery',
+        description: 'Provides character talent level-up materials',
+        changing_rewards: true,
+    },
+    artifacts: {
+        button_label: 'Artifacts',
+        icon: 'Icon Inventory Artifacts.png',
+        short: 'a',
+        string: 'Artifacts',
+        title: 'Domains of Blessing',
+        description: 'Provides artifacts',
+        changing_rewards: false,
+    },
+    common_enemy_drops: {
+        button_label: 'Common enemies',
+        icon: 'Icon Archive Living Beings.png',
+        short: 'c',
+        string: 'Common enemy drops',
+        title: 'Common enemy drops',
+        description: 'Provides character ascension and talent level-up materials',
+        changing_rewards: false,
+        source: 'common_enemy_drops',
+        no_regions: true,
+    },
+    normal_bosses: {
+        button_label: 'Normal bosses',
+        icon: 'Icon Rolling Crossfire.png',
+        short: 'nb',
+        string: 'Normal bosses',
+        title: 'Normal bosses',
+        description: 'Provides character ascension materials',
+        changing_rewards: false,
+    },
+    weekly_bosses: {
+        button_label: 'Weekly bosses',
+        icon: 'Icon Tutorial Monster.png',
+        short: 'wb',
+        string: 'Weekly bosses',
+        title: 'Weekly bosses',
+        description: 'Provides character talent level-up materials (Lv7+)',
+        changing_rewards: false,
+    },
+    regional_specialties: {
+        button_label: 'Specialties',
+        icon: 'Icon Inventory Materials.png',
+        short: 's',
+        string: 'Regional specialties',
+        title: 'Regional specialties',
+        description: 'Provides character ascension materials',
+        changing_rewards: false,
+        source: 'specialties',
+    },
+    other_materials: {
+        button_label: 'Other mats',
+        icon: 'Icon Inventory Precious Items.png',
+        short: 'o',
+        string: 'Other materials',
+        title: 'Other materials',
+        description: 'Other miscellaneous ascension materials that are not farmable',
+        changing_rewards: false,
+        source: 'other_materials',
+        no_regions: true,
+    },
+}
+
+const HSR_DOMAIN_TYPES = {
+    calyx_crimson: {
+        button_label: 'Trace mats',
+        short: 't',
+        icon: 'Icon Calyx Crimson.png',
+        string: 'Trace materials',
+        title: 'Crimson Calyxes',
+        page_prefix: 'Calyx (Crimson)',
+        description: 'Provides trace materials',
+    },
+    cavern_of_corrosion: {
+        short: 'r',
+        icon: 'Icon Cavern of Corrosion.png',
+        string: 'Relics',
+        title: 'Caverns of Corrosion',
+        page_prefix: 'Cavern of Corrosion',
+        description: 'Provides relic sets',
+    },
+    planar_ornament: {
+        short: 'p',
+        icon: 'Icon Divergent Universe Protean Hero.png',
+        string: 'Planar ornaments',
+        title: 'Divergent Universe',
+        description: 'Provides planar ornament sets',
+    },
+    common_enemy_drops: {
+        button_label: 'Common enemies',
+        short: 'c',
+        icon: 'Icon Enemy.png',
+        light_glyph: true,
+        string: 'Common enemy drops',
+        title: 'Common enemy drops',
+        description: 'Provides character ascension and trace level-up materials',
+        source: 'common_enemy_drops',
+        no_worlds: true,
+    },
+    stagnant_shadow: {
+        short: 'nb',
+        icon: 'Icon Stagnant Shadow.png',
+        string: 'Normal bosses',
+        title: 'Normal bosses',
+        page_prefix: 'Stagnant Shadow',
+        description: 'Provides character ascension materials',
+    },
+    echo_of_war: {
+        short: 'wb',
+        icon: 'Icon Echo of War Enemy.png',
+        string: 'Weekly bosses',
+        title: 'Weekly bosses',
+        page_prefix: 'Echo of War',
+        description: 'Provides trace level-up materials (Lv9+ and bonus abilities)',
+    },
+    other_materials: {
+        button_label: 'Other mats',
+        short: 'o',
+        icon: 'Icon Other Materials.png',
+        light_glyph: true,
+        string: 'Other materials',
+        title: 'Other materials',
+        description: 'Other miscellaneous ascension materials that are not farmable',
+        source: 'other_materials',
+        no_worlds: true,
+    },
+}
+
 // The reverse of the domains data: what each character needs, keyed by the name
 // the reward lists use. Multi-form characters are named both plainly, for what
-// every form needs, and per form. "order" is the position in the data, so a
-// character and one of its forms merge back into the data's own order.
-function buildCharacterMaterials(domainsData) {
+// every form needs, and per form. "order" runs in domain type order, then in
+// data order within a type.
+function buildCharacterMaterials(domainsData, game) {
+    const types = game === 'hsr' ? HSR_DOMAIN_TYPES : DOMAIN_TYPES
+    const typeKeys = Object.keys(types)
+    // Every group but "rewards" is named by the type that renders it
+    const groupTypes = {}
+    typeKeys.forEach(key => {
+        if (types[key].source) groupTypes[types[key].source] = key
+    })
+    const groups = ['rewards', ...Object.keys(groupTypes)]
+    const entries = []
+    groups.forEach(group => {
+        Object.values(domainsData[group] || {}).forEach((entry, index) => {
+            const rank = typeKeys.indexOf(entry.type || groupTypes[group])
+            entries.push({ entry, rank: rank === -1 ? typeKeys.length : rank, index })
+        })
+    })
+    entries.sort((a, b) => a.rank - b.rank || a.index - b.index)
     const materials = {}
-    let order = 0
-    ;[domainsData.rewards, domainsData.specialties, domainsData.other_materials]
-        .forEach(group => Object.values(group || {}).forEach(entry => {
-            order += 1
-            ;(entry.characters || []).forEach(name => {
-                if (!materials[name]) materials[name] = []
-                materials[name].push({ name: entry.name, image: entry.image, order })
-            })
-        }))
+    entries.forEach(({ entry }, order) => {
+        (entry.characters || []).forEach(name => {
+            if (!materials[name]) materials[name] = []
+            materials[name].push({ name: entry.name, image: entry.image, order })
+        })
+    })
     return materials
 }
 

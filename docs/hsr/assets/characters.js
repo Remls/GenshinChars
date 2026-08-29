@@ -49,7 +49,7 @@ document.addEventListener('alpine:init', () => {
                     this.allData = d
                     this.versionData = d['versions']
                     configureCharSheet('hsr', this.versionData,
-                        buildCharacterMaterials(domainsData))
+                        buildCharacterMaterials(domainsData, 'hsr'))
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true
