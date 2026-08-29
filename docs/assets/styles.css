@@ -380,6 +380,10 @@ td.ice-elation {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    /* On top of the dim, so the page behind reads as out of focus rather than
+       merely darker */
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
 }
 
 /* The character sheet centres a dialog over the dimmed page, with the art above
@@ -396,7 +400,7 @@ td.ice-elation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: min(860px, 100%);
+    width: min(860px, 92vw);
     max-height: 100%;
     overflow-y: auto;
 }
@@ -416,10 +420,16 @@ td.ice-elation {
     pointer-events: none;
     z-index: 5;
 }
+/* Sized by both edges of its box, so a pair of pictures shares the width rather
+   than spilling past the dialog. The box tracks the picture, so the mask lands
+   on the picture rather than on empty letterbox space. */
 .char-sheet-art img {
     display: block;
-    height: 100%;
     width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
     -webkit-mask-image: linear-gradient(to bottom, #000 56%, transparent 100%);
     mask-image: linear-gradient(to bottom, #000 56%, transparent 100%);
 }
@@ -489,7 +499,7 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
 }
 .char-sheet-fields table {
     width: auto;
-    flex: 1 1 0;
+    flex: 1 1 300px;
     min-width: 0;
     margin: 0;
 }
@@ -524,6 +534,26 @@ a.char-sheet-material, a.char-sheet-material:visited, a.char-sheet-material:hove
     width: 64px;
     height: 64px;
 }
+/* Too narrow for two columns of label and value, so the halves stack and the
+   1px overlap joins them back into one table */
+@media screen and (max-width: 640px) {
+    .char-sheet-fields {
+        display: block;
+    }
+    .char-sheet-fields table {
+        width: 100%;
+    }
+    .char-sheet-fields table + table {
+        margin-top: -1px;
+    }
+    .char-sheet-fields .label-column {
+        width: 40%;
+    }
+    .char-sheet-title {
+        font-size: 26px;
+    }
+}
+
 .char-sheet-notes {
     width: 95%;
     margin: 0 auto;
