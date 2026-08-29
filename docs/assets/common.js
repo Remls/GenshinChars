@@ -404,7 +404,7 @@ document.addEventListener('alpine:init', () => {
             const character = this.character
             this.formIndex = index
             const form = this.forms[index] || character
-            this.title = form.display_name || character.display_name || character.name
+            this.title = character.name
             // The primary name is the one that matches a wiki page. A form's
             // display name need not.
             this.wikiLink = config.wiki
