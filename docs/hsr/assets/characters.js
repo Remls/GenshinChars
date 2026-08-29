@@ -6,11 +6,11 @@ const HSR_PATHS = [
     'Abundance', 'Destruction', 'Elation', 'Erudition', 'Finality', 'Harmony',
     'Hunt', 'Nihility', 'Preservation', 'Remembrance',
 ]
-// Data uses the short name; the wiki (and the grid label) uses the full one
+// Data uses the short name. The wiki and the grid label use the full one
 const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
 // The wiki has no path icon for these
 const HSR_MISSING_PATH_ICONS = ['Finality']
-// Splash screen filenames derive from the version name; exceptions go here.
+// Splash screen filenames derive from the version name. Exceptions to that rule go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
 const HSR_SPLASH_SCREEN_OVERRIDES = {}
@@ -146,10 +146,8 @@ document.addEventListener('alpine:init', () => {
             this.syncFiltersToUrl()
         },
 
-        /**
-         * Checks if version A came before (or is equal to) version B.
-         * Assumes both versions are in the format `x.y`
-         */
+        // Checks if version A came before (or is equal to) version B.
+        // Assumes both versions are in the format `x.y`
         versionAIsBeforeOrEqualToVersionB(a, b) {
             if (a === null) return false
             if (b === null) return true
@@ -252,9 +250,9 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.characterData).length === 0
         },
 
-        // One row per form, so a character that gained a form later appears once
-        // per release. Mirrors release_sort_key in the generator: a form with no
-        // date falls back to its version's projected one, and undated forms sort last
+        // One row per form, so a character that gained a form later appears once per
+        // release. A form with no date falls back to its version's projected one,
+        // and undated forms sort last
         releaseOrderRows() {
             return Object.values(this.characterData)
                 .flatMap(char => char.forms.map(form => ({ char, form })))

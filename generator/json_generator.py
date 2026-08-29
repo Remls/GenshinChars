@@ -84,7 +84,6 @@ def generate_hsr_characters_file():
                 {"path": p or None, "combat_type": t or None}
                 for p, t in zip(paths, types)
             ] or [{"path": None, "combat_type": None}]
-            # A single display_name covers the character; ";"-separated ones map to forms
             display_parts = [d.strip() for d in row["display_name"].split(";")]
             # A split display_name names the forms, not the character
             display_name = None if len(display_parts) > 1 else (row["display_name"] or None)
@@ -92,7 +91,7 @@ def generate_hsr_characters_file():
                 for i, form in enumerate(forms):
                     if i < len(display_parts) and display_parts[i]:
                         form["display_name"] = display_parts[i]
-            # A single release covers every form; ";"-separated ones map to forms
+            # A single release covers every form. ";"-separated ones map to forms
             release_versions = [v.strip() for v in row["release_version"].split(";")]
             release_dates = [d.strip() for d in row["release_date"].split(";")]
             for i, form in enumerate(forms):
@@ -117,8 +116,8 @@ def generate_hsr_characters_file():
                 "release_date": release_date,
                 "is_released": bool(release_date) and release_date <= datetime.now().strftime("%Y-%m-%d"),
             })
-    # Newest releases first; unreleased characters use their version's
-    # projected date, and characters with no version at all come before those
+    # Newest releases first. Unreleased characters use their version's projected
+    # date, and characters with no version at all come before those
     characters.sort(key=lambda c: release_sort_key(
         c["release_date"],
         (versions.get(c["release_version"]) or {}).get("release_date"),

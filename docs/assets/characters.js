@@ -3,14 +3,14 @@ const REGIONS = [
     'Sumeru', 'Fontaine', 'Natlan',
     'Nod-Krai', 'Snezhnaya', 'Khaenri\'ah'
 ]
-// Row and column axes of the weapon/element table. "?" is the Unknown bucket,
-// matching the sentinel filterCharacterData maps back to null
+// Row and column axes of the weapon/element table. "Unknown" is the bucket for
+// characters with no element or no weapon
 const ELEMENTS = [
     'Anemo', 'Geo', 'Electro',
     'Dendro', 'Hydro', 'Pyro', 'Cryo'
 ]
 const WEAPONS = ['Bow', 'Catalyst', 'Claymore', 'Polearm', 'Sword']
-// Splashscreen filenames derive from the version name; exceptions go here.
+// Splashscreen filenames derive from the version name. Exceptions to that rule go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
 const SPLASHSCREEN_OVERRIDES = { '1.0': 'Splashscreen Welcome To Teyvat.png' }
@@ -92,7 +92,7 @@ document.addEventListener('alpine:init', () => {
                 }
             }
 
-            // No valid value passed in URL; use default
+            // Fall back to the default
             this.selectedVersion = this.defaultVersion
         },
 
@@ -111,7 +111,7 @@ document.addEventListener('alpine:init', () => {
                 }
             }
 
-            // No valid value passed in URL; use default
+            // Fall back to the default
             this.selectedRarity = null
         },
 
@@ -130,7 +130,7 @@ document.addEventListener('alpine:init', () => {
                 }
             }
 
-            // No valid value passed in URL; use default
+            // Fall back to the default
             this.selectedGender = null
         },
 
@@ -151,7 +151,7 @@ document.addEventListener('alpine:init', () => {
                 }
             }
 
-            // No valid value passed in URL; use default
+            // Fall back to the default
             this.selectedRegion = null
         },
 
@@ -314,9 +314,9 @@ document.addEventListener('alpine:init', () => {
             return Object.values(this.characterData).length === 0
         },
 
-        // One row per form, so a character that gained a form later appears once
-        // per release. Mirrors release_sort_key in the generator: a form with no
-        // date falls back to its version's projected one, and undated forms sort last
+        // One row per form, so a character that gained a form later appears once per
+        // release. A form with no date falls back to its version's projected one,
+        // and undated forms sort last
         releaseOrderRows() {
             return Object.values(this.characterData)
                 .flatMap(char => char.forms.map(form => ({ char, form })))
@@ -337,14 +337,8 @@ document.addEventListener('alpine:init', () => {
             return noReleaseVersion && noReleaseDate
         },
 
-        /**
-         * Checks if version A came before (or is equal to) version B.
-         * Assumes both versions are in the format `x.y`
-         * 
-         * @param {string} a Version A
-         * @param {string} b Version B
-         * @returns bool
-         */
+        // Checks if version A came before (or is equal to) version B.
+        // Assumes both versions are in the format `x.y`
         versionAIsBeforeOrEqualToVersionB(a, b) {
             if (a === null) return false
             if (b === null) return true

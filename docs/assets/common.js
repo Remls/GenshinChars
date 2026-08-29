@@ -96,8 +96,8 @@ function resetImageCache() {
     localStorage.setItem(IMAGE_CACHE_TOKEN_KEY, String(next))
 }
 
-// Bare wiki image URLs (no /revision/... suffix) are served regardless of referer;
-// the scaled-thumbnail URLs are not, so thumbWidth callers need referrerpolicy="no-referrer".
+// Bare wiki image URLs (no /revision/... suffix) are served regardless of referer.
+// The scaled-thumbnail URLs are not, and need referrerpolicy="no-referrer".
 function wikiFileUrl(filename, wiki = 'gensin-impact', thumbWidth = null) {
     filename = filename.replaceAll(' ', '_')
     const hash = md5Hex(filename)

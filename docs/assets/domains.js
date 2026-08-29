@@ -154,7 +154,7 @@ document.addEventListener('alpine:init', () => {
                 this.allData = domainsData
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
-                // Set here (not on init) so all bindings exist by the time this runs
+                // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
                 ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay'].forEach(prop => {
@@ -235,7 +235,7 @@ document.addEventListener('alpine:init', () => {
             Object.values(this.allData.specialties || {}).forEach(s => names.add(s.name))
             const queryable = [...names].filter(n => !n.startsWith('???'))
 
-            // Batched API query; returns requested-title -> page object
+            // Batched API query, returning requested-title -> page object
             const apiQuery = async (titles, params) => {
                 const search = new URLSearchParams({
                     action: 'query', format: 'json', origin: '*', redirects: '1',
@@ -273,13 +273,13 @@ document.addEventListener('alpine:init', () => {
             queryable.forEach(name => {
                 const page = pages[titleOf(name)]
                 if (!page || 'missing' in page) map[name] = null
-                // Only trust item images; a page's lead image can be something
+                // Only trust item images. A page's lead image can be something
                 // else entirely (e.g. a version promo on artifact set pages)
                 else if (page.pageimage && page.pageimage.startsWith('Item_')) map[name] = page.pageimage
                 else noImage.push(name)
             })
 
-            // Phase 2: pages without an own image are artifact sets; use a piece
+            // Phase 2: pages without an own image are artifact sets, so use a piece
             // (flower where available) from the set infobox
             const PIECE_SLOTS = ['flower', 'plume', 'sands', 'goblet', 'circlet']
             const pages2 = await batched(noImage.map(titleOf), { prop: 'revisions', rvprop: 'content', rvslots: 'main' })
@@ -295,7 +295,7 @@ document.addEventListener('alpine:init', () => {
             })
 
             // Domains and bosses: the parenthetical part of weekly boss names is
-            // the boss, whose page has a portrait; the stripped name is the page
+            // the boss, whose page has a portrait. The stripped name is the page
             // the row should link to
             const strip = name => name.replace(/\s*\([^)]*\)$/, '')
             const paren = name => {

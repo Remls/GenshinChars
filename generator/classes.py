@@ -59,7 +59,7 @@ class Version:
         self.version_name = row['name']
         self.release_date = row['release_date'] or None
 
-# List of version data, for use with Character.get_version_data()
+# Version data keyed by version number
 version_data = {}
 with open('data/versions.csv', newline='') as f:
     reader = csv.DictReader(f)
@@ -68,7 +68,7 @@ with open('data/versions.csv', newline='') as f:
 
 
 class Character:
-    # A ";"-separated column defines the form count; shorter columns fall back to
+    # A ";"-separated column defines the form count. Shorter columns fall back to
     # their first value, so a single weapon or release covers every form
     FORM_COLUMNS = ['element', 'weapon', 'arkhe', 'display_name', 'release_version', 'release_date']
 
