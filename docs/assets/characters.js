@@ -41,12 +41,15 @@ document.addEventListener('alpine:init', () => {
         showVersionPicker: false,
 
         fetchAllData() {
-            fetch('./assets/characters.json')
-                .then(r => r.json())
-                .then(d => {
+            Promise.all([
+                fetch('./assets/characters.json').then(r => r.json()),
+                fetch('./assets/domains.json').then(r => r.json()),
+            ])
+                .then(([d, domainsData]) => {
                     this.allData = d
                     this.versionData = d['versions']
-                    configureCharSheet('genshin', this.versionData)
+                    configureCharSheet('genshin', this.versionData,
+                        buildCharacterMaterials(domainsData))
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true

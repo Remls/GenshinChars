@@ -468,6 +468,31 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
 .char-sheet-fields .label-column {
     width: 160px;
 }
+.char-sheet-materials {
+    width: 95%;
+    margin: 1.5rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 28px;
+}
+a.char-sheet-material, a.char-sheet-material:visited, a.char-sheet-material:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+.char-sheet-material:hover span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.char-sheet-material img {
+    width: 64px;
+    height: 64px;
+}
 .char-sheet-notes {
     width: 95%;
     margin: 0 auto;

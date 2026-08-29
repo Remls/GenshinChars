@@ -169,6 +169,53 @@ function formatVersionLabel(version, versionData, includeDate = false) {
     return v
 }
 
+// Talent materials are stored under the family name; the wiki files them under
+// the tier page they share
+const WIKI_ALT_NAMES = {
+    'Freedom':      'Teachings of Freedom',
+    'Resistance':   'Teachings of Resistance',
+    'Ballad':       'Teachings of Ballad',
+    'Prosperity':   'Teachings of Prosperity',
+    'Diligence':    'Teachings of Diligence',
+    'Gold':         'Teachings of Gold',
+    'Transience':   'Teachings of Transience',
+    'Elegance':     'Teachings of Elegance',
+    'Light':        'Teachings of Light',
+    'Admonition':   'Teachings of Admonition',
+    'Ingenuity':    'Teachings of Ingenuity',
+    'Praxis':       'Teachings of Praxis',
+    'Equity':       'Teachings of Equity',
+    'Justice':      'Teachings of Justice',
+    'Order':        'Teachings of Order',
+    'Contention':   'Teachings of Contention',
+    'Kindling':     'Teachings of Kindling',
+    'Conflict':     'Teachings of Conflict',
+    'Moonlight':    'Teachings of Moonlight',
+    'Elysium':      'Teachings of Elysium',
+    'Vagrancy':     'Teachings of Vagrancy',
+    'Charity':      'Teachings of Charity',
+    'Fortitude':    'Teachings of Fortitude',
+    'Glory':        'Teachings of Glory',
+}
+
+// The reverse of the domains data: what each character needs, keyed by the name
+// the reward lists use. Multi-form characters are named both plainly, for what
+// every form needs, and per form. "order" is the position in the data, so a
+// character and one of its forms merge back into the data's own order.
+function buildCharacterMaterials(domainsData) {
+    const materials = {}
+    let order = 0
+    ;[domainsData.rewards, domainsData.specialties, domainsData.other_materials]
+        .forEach(group => Object.values(group || {}).forEach(entry => {
+            order += 1
+            ;(entry.characters || []).forEach(name => {
+                if (!materials[name]) materials[name] = []
+                materials[name].push({ name: entry.name, image: entry.image, order })
+            })
+        }))
+    return materials
+}
+
 // Character sheet. One component for both games and every page, holding all of
 // its own state, so a page's loop variables cannot shadow the fields it shows.
 //
@@ -180,6 +227,7 @@ const CHAR_SHEET_GAMES = {
         wiki: 'https://genshin-impact.fandom.com/wiki/',
         wikiImages: 'gensin-impact',
         artDir: 'assets/images/full-characters',
+        itemAltNames: WIKI_ALT_NAMES,
         fields: [
             { label: 'Birthday', from: 'char', key: 'birthday', format: 'date' },
             { label: 'Element', from: 'form', key: 'element' },
@@ -196,8 +244,8 @@ const CHAR_SHEET_GAMES = {
 
 let charSheetConfig = null
 
-function configureCharSheet(game, versionData) {
-    charSheetConfig = { ...CHAR_SHEET_GAMES[game], versionData }
+function configureCharSheet(game, versionData, materials = {}) {
+    charSheetConfig = { ...CHAR_SHEET_GAMES[game], versionData, materials }
 }
 
 function openCharSheet(character, form = null) {
@@ -243,6 +291,18 @@ const CHAR_SHEET_MARKUP = `
                     </table>
                 </template>
             </div>
+            <template x-if="materials.length">
+                <div class="char-sheet-materials">
+                    <template x-for="item in materials" :key="item.name">
+                        <a class="char-sheet-material" :href="item.href">
+                            <img :src="item.src" width="64" height="64" loading="lazy"
+                                referrerpolicy="no-referrer"
+                                onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">
+                            <span class="gi-font" x-text="item.name"></span>
+                        </a>
+                    </template>
+                </div>
+            </template>
             <template x-if="notes">
                 <div class="char-sheet-notes">
                     <ul>
@@ -264,6 +324,7 @@ document.addEventListener('alpine:init', () => {
         art: [],
         fields: [],
         notes: null,
+        materials: [],
 
         show({ character, form }) {
             const config = charSheetConfig
@@ -283,7 +344,29 @@ document.addEventListener('alpine:init', () => {
                 .map(field => this.buildField(field, character, details, config))
                 .filter(Boolean)
             this.notes = character.notes
+            this.materials = this.buildMaterials(character, form, config)
             this.open = true
+        },
+
+        // A form's materials sit under its own name, and what every form needs
+        // sits under the character's, so the sheet shows both
+        buildMaterials(character, form, config) {
+            const own = config.materials[character.name] || []
+            const perForm = (form && form.display_name
+                && config.materials[form.display_name]) || []
+            const seen = new Set()
+            return [...own, ...perForm]
+                .filter(item => !seen.has(item.name) && seen.add(item.name))
+                .sort((a, b) => a.order - b.order)
+                .map(item => ({
+                    name: item.name,
+                    href: config.wiki + encodeURIComponent(
+                        ((config.itemAltNames || {})[item.name] || item.name)
+                            .replaceAll(' ', '_')),
+                    src: item.image
+                        ? wikiFileUrl(item.image, config.wikiImages, 128)
+                        : FALLBACK_PHOTO,
+                }))
         },
 
         buildField(field, character, details, config) {

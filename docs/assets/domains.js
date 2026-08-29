@@ -80,33 +80,6 @@ const DOMAIN_DAYS = {
     sat: 'Saturday',
 }
 const GENSHIN_WIKI = 'https://genshin-impact.fandom.com/wiki/'
-const WIKI_ALT_NAMES = {
-    // Talent materials
-    'Freedom':      'Teachings of Freedom',
-    'Resistance':   'Teachings of Resistance',
-    'Ballad':       'Teachings of Ballad',
-    'Prosperity':   'Teachings of Prosperity',
-    'Diligence':    'Teachings of Diligence',
-    'Gold':         'Teachings of Gold',
-    'Transience':   'Teachings of Transience',
-    'Elegance':     'Teachings of Elegance',
-    'Light':        'Teachings of Light',
-    'Admonition':   'Teachings of Admonition',
-    'Ingenuity':    'Teachings of Ingenuity',
-    'Praxis':       'Teachings of Praxis',
-    'Equity':       'Teachings of Equity',
-    'Justice':      'Teachings of Justice',
-    'Order':        'Teachings of Order',
-    'Contention':   'Teachings of Contention',
-    'Kindling':     'Teachings of Kindling',
-    'Conflict':     'Teachings of Conflict',
-    'Moonlight':    'Teachings of Moonlight',
-    'Elysium':      'Teachings of Elysium',
-    'Vagrancy':     'Teachings of Vagrancy',
-    'Charity':      'Teachings of Charity',
-    'Fortitude':    'Teachings of Fortitude',
-    'Glory':        'Teachings of Glory',
-}
 const DAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 // For displaying availability: weekdays first, Sunday (everything drops) last
 const DAY_DISPLAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
