@@ -140,6 +140,46 @@ input[type="search"] {
     font-family: var(--game-font, Genshin), Arial, Helvetica, sans-serif;
 }
 
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 40ch;
+    font-family: var(--game-font, Genshin), Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.1;
+}
+.checkbox-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.checkbox-list input[type="checkbox"] {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    flex: none;
+    background-color: var(--secondary-color-muted);
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+.checkbox-list input[type="checkbox"]:checked {
+    background-color: var(--txt-color);
+}
+.checkbox-list input[type="checkbox"]:checked::after {
+    content: '\2713';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--bg-color);
+    font-size: 0.8em;
+    line-height: 1;
+}
+
 .all-selects-wrapper {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,6 @@
 name,display_name,rarity,path,combat_type,gender,world,release_version,release_date
+Trailblazer,Trailblazer (Destruction); Trailblazer (Preservation); Trailblazer (Harmony); Trailblazer (Remembrance); Trailblazer (Elation),5,Destruction; Preservation; Harmony; Remembrance; Elation,Physical; Fire; Imaginary; Ice; Lightning,Either,Astral Express,1.0; 1.0; 2.2; 3.0; 4.2,R
+
 Acheron,,5,Nihility,Lightning,Female,Cosmic,2.1,R
 Aglaea,,5,Remembrance,Lightning,Female,Amphoreus,3.0,2025-02-05
 Anaxa,,5,Erudition,Wind,Male,Amphoreus,3.2,2025-04-30

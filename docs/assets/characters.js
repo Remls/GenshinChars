@@ -35,6 +35,7 @@ document.addEventListener('alpine:init', () => {
         selectedRarity: null,
         selectedGender: null,
         selectedRegion: null,
+        includedSpecials: [],
         defaultVersion: null,
         urlSyncReady: false,
         showVersionPicker: false,
@@ -95,10 +96,24 @@ document.addEventListener('alpine:init', () => {
                 })
                 if (region.toLowerCase() === 'unknown') this.selectedRegion = 'Unknown'
             }
+            const specials = (urlParams.get('s') || '').split(',')
+            this.includedSpecials = SPECIAL_CHARACTERS.genshin.filter(
+                name => specials.some(s => s.toLowerCase() === name.toLowerCase())
+            )
+        },
+
+        toggleSpecial(name) {
+            this.includedSpecials = this.includedSpecials.includes(name)
+                ? this.includedSpecials.filter(n => n !== name)
+                : [...this.includedSpecials, name]
+            this.updateCharacterData()
         },
 
         updateCharacterData() {
-            let characterData = Object.values( this.allData['characters'] )
+            let characterData = Object.values( this.allData['characters'] ).filter(
+                c => !SPECIAL_CHARACTERS.genshin.includes(c.name)
+                    || this.includedSpecials.includes(c.name)
+            )
             // <select> can change this to a string, so change it back
             const filters1 = ['version', 'rarity', 'gender', 'region']
             filters1.forEach(f => {
@@ -151,6 +166,9 @@ document.addEventListener('alpine:init', () => {
             if (this.selectedRarity) params.set('r', this.selectedRarity.toLowerCase())
             if (this.selectedGender) params.set('g', this.selectedGender.toLowerCase())
             if (this.selectedRegion) params.set('re', this.selectedRegion.toLowerCase())
+            if (this.includedSpecials.length > 0) {
+                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+            }
             const query = params.toString()
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
         },

@@ -1,4 +1,8 @@
 name,display_name,rarity,element,arkhe,weapon,region,gender,birthday,release_version,release_date
+Traveler,Traveler (Anemo); Traveler (Geo); Traveler (Electro); Traveler (Dendro); Traveler (Hydro); Traveler (Pyro); Traveler (Cryo),5,Anemo; Geo; Electro; Dendro; Hydro; Pyro; Cryo,;;;;Pneuma;;,Sword,,Either,,1.0; 1.0; 2.0; 3.0; 4.0; 5.3; 7.0,R
+Manekin,Manekin (Anemo); Manekin (Geo); Manekin (Electro); Manekin (Dendro); Manekin (Hydro); Manekin (Pyro); Manekin (Cryo),5,Anemo; Geo; Electro; Dendro; Hydro; Pyro; Cryo,,Sword,,Male,,6.1; 6.1; 6.1; 6.1; 6.1; 6.1; 7.0,R
+Manekina,Manekina (Anemo); Manekina (Geo); Manekina (Electro); Manekina (Dendro); Manekina (Hydro); Manekina (Pyro); Manekina (Cryo),5,Anemo; Geo; Electro; Dendro; Hydro; Pyro; Cryo,,Sword,,Female,,6.1; 6.1; 6.1; 6.1; 6.1; 6.1; 7.0,R
+
 Albedo,,5,Geo,,Sword,Mondstadt,Male,09-13,1.2,R
 Alhaitham,,5,Dendro,,Sword,Sumeru,Male,02-11,3.4,R
 Aloy,,5,Cryo,,Bow,,Female,04-04,2.1,R

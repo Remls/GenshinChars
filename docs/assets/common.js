@@ -79,6 +79,13 @@ function foldedText(s) {
     return { text: text.join(''), map: indexes }
 }
 
+// Characters excluded from the tables unless the reader opts in, because their
+// element or path is a player choice rather than a property of the character
+const SPECIAL_CHARACTERS = {
+    genshin: ['Traveler', 'Manekin', 'Manekina'],
+    hsr: ['Trailblazer'],
+}
+
 // Gender values and the glyphs the filter buttons show. "Either" is for
 // characters whose gender the player picks, like the Traveler and the Trailblazer
 const GENDERS = { Female: '♀', Male: '♂', Either: '⚥' }

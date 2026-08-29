@@ -10,6 +10,16 @@ const HSR_PATHS = [
 const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
 // The wiki has no path icon for these
 const HSR_MISSING_PATH_ICONS = ['Finality']
+// Character icons are named "Character {name} Icon.png". Forms whose icon sits
+// under a different name go here; the bare name can be a redirect, which the CDN
+// answers with a placeholder rather than an error
+const HSR_CHARACTER_ICON_OVERRIDES = {
+    'Trailblazer (Destruction)': 'Character Trailblazer (Destruction) Icon.png',
+    'Trailblazer (Preservation)': 'Character Trailblazer (Preservation) Icon.png',
+    'Trailblazer (Harmony)': 'Character Trailblazer (Harmony) Icon.png',
+    'Trailblazer (Remembrance)': 'Character Trailblazer (Remembrance) Icon.png',
+    'Trailblazer (Elation)': 'Character Trailblazer (Elation) Icon.png',
+}
 // Splash screen filenames derive from the version name. Exceptions to that rule go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)
@@ -43,6 +53,7 @@ document.addEventListener('alpine:init', () => {
         selectedRarity: null,
         selectedGender: null,
         selectedWorld: null,
+        includedSpecials: [],
         defaultVersion: null,
         urlSyncReady: false,
         showVersionPicker: false,
@@ -87,6 +98,10 @@ document.addEventListener('alpine:init', () => {
                 })
                 if (world.toLowerCase() === 'unknown') this.selectedWorld = 'Unknown'
             }
+            const specials = (urlParams.get('s') || '').split(',')
+            this.includedSpecials = SPECIAL_CHARACTERS.hsr.filter(
+                name => specials.some(s => s.toLowerCase() === name.toLowerCase())
+            )
         },
 
         syncFiltersToUrl() {
@@ -98,15 +113,28 @@ document.addEventListener('alpine:init', () => {
             if (this.selectedRarity) params.set('r', this.selectedRarity.toLowerCase())
             if (this.selectedGender) params.set('g', this.selectedGender.toLowerCase())
             if (this.selectedWorld) params.set('w', this.selectedWorld.toLowerCase())
+            if (this.includedSpecials.length > 0) {
+                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+            }
             const query = params.toString()
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
+        },
+
+        toggleSpecial(name) {
+            this.includedSpecials = this.includedSpecials.includes(name)
+                ? this.includedSpecials.filter(n => n !== name)
+                : [...this.includedSpecials, name]
+            this.updateCharacterData()
         },
 
         updateCharacterData() {
             // <select> can change this to a string, so change it back
             if (this.selectedVersion === 'null') this.selectedVersion = null
             if (this.selectedWorld === 'null') this.selectedWorld = null
-            let characterData = Object.values(this.allData['characters'] || {})
+            let characterData = Object.values(this.allData['characters'] || {}).filter(
+                c => !SPECIAL_CHARACTERS.hsr.includes(c.name)
+                    || this.includedSpecials.includes(c.name)
+            )
             if (this.selectedVersion) {
                 // Forms release separately, so a character keeps only the forms that
                 // existed by the selected version, and drops out once none are left
@@ -177,8 +205,10 @@ document.addEventListener('alpine:init', () => {
             return combatType ? `ct-${combatType.toLowerCase()}` : 'el-unknown'
         },
 
-        characterIconUrl(char) {
-            return wikiFileUrl(`Character ${char.name} Icon.png`, HSR_WIKI_IMAGES)
+        characterIconUrl(char, displayName = null) {
+            const file = HSR_CHARACTER_ICON_OVERRIDES[displayName || char.name]
+                || `Character ${char.name} Icon.png`
+            return wikiFileUrl(file, HSR_WIKI_IMAGES)
         },
 
         pathLabel(path) {
@@ -205,7 +235,7 @@ document.addEventListener('alpine:init', () => {
 
         chipHtml(char, combatType, displayName = null) {
             return `<a class="character-links" href="${this.wikiLink(char)}">`
-                + `<img width="20" height="20" loading="lazy" src="${this.characterIconUrl(char)}"`
+                + `<img width="20" height="20" loading="lazy" src="${this.characterIconUrl(char, displayName)}"`
                 + ` onerror="this.onerror=null;this.src='${HSR_FALLBACK}'">`
                 + `<span class="gi-font clickable ${this.combatTypeClass(combatType)}">${displayName || char.display_name || char.name}</span>`
                 + `</a>`
