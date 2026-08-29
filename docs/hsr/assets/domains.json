@@ -1,6 +1,6 @@
 {
-    "version": "0c6b06f",
-    "last_updated": "2026-08-29T07:33:17.767296Z",
+    "version": "a9f78b6",
+    "last_updated": "2026-08-29T12:35:37.262058Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1952,6 +1952,203 @@
             "name": "The Wondrous BananAmusement Park",
             "type": "planar_ornament",
             "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."
+        }
+    },
+    "common_enemy_drops": {
+        "c_ancient": {
+            "name": "Ancient Engine",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Automaton"
+            ],
+            "characters": [
+                "Clara",
+                "Hook",
+                "Luka",
+                "Natasha",
+                "Sampo",
+                "Silver Wolf"
+            ]
+        },
+        "c_artifex": {
+            "name": "Artifex's Gyreheart",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Entranced Ingenia"
+            ],
+            "characters": [
+                "Feixiao",
+                "Fu Xuan",
+                "Guinaifen",
+                "Hanya",
+                "Luocha",
+                "Moze",
+                "Sushang",
+                "Yukong",
+                "Yunli"
+            ]
+        },
+        "c_antimatter": {
+            "name": "Conqueror's Will",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Antimatter Legion"
+            ],
+            "characters": [
+                "Dr. Ratio",
+                "Kafka",
+                "March 7th (Hunt)",
+                "March 7th (Preservation)",
+                "Qingque",
+                "Rin Tohsaka",
+                "Saber",
+                "Seele",
+                "Trailblazer (Destruction)",
+                "Trailblazer (Elation)",
+                "Trailblazer (Harmony)",
+                "Trailblazer (Preservation)",
+                "Trailblazer (Remembrance)",
+                "Yanqing"
+            ]
+        },
+        "c_core": {
+            "name": "Squirming Core",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Fragmentum Monsters"
+            ],
+            "characters": [
+                "Archer",
+                "Argenti",
+                "Arlan",
+                "Bailu",
+                "Black Swan",
+                "Dan Heng",
+                "Gilgamesh",
+                "Herta",
+                "Himeko",
+                "Lynx",
+                "Pela",
+                "The Herta",
+                "Xueyi"
+            ]
+        },
+        "c_immortal": {
+            "name": "Immortal Lumintwig",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Abominations of Abundance"
+            ],
+            "characters": [
+                "Blade",
+                "Dan Heng • Imbibitor Lunae",
+                "Fugue",
+                "Huohuo",
+                "Jiaoqiu",
+                "Jing Yuan",
+                "Jingliu",
+                "Lingsha",
+                "Ruan Mei",
+                "Tingyun"
+            ]
+        },
+        "c_silvermane": {
+            "name": "Silvermane Medal",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Everwinter Shadewalker",
+                "Incineration Shadewalker",
+                "Silvermane Guards",
+                "Vagrant"
+            ],
+            "characters": [
+                "Asta",
+                "Bronya",
+                "Gepard",
+                "Serval",
+                "Topaz & Numby",
+                "Welt"
+            ]
+        },
+        "c_dream": {
+            "name": "Dream Making Engine",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Dreamjolt Troupe"
+            ],
+            "characters": [
+                "Acheron",
+                "Gallagher",
+                "Jade",
+                "Misha",
+                "Rappa",
+                "Robin",
+                "Robin • Summeretto"
+            ]
+        },
+        "c_desires": {
+            "name": "Shards of Desires",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Memory Zone Meme"
+            ],
+            "characters": [
+                "Aventurine",
+                "Aventurine • Waveflair",
+                "Boothill",
+                "Firefly",
+                "Sparkle",
+                "Sunday",
+                "The Dahlia"
+            ]
+        },
+        "c_titankin": {
+            "name": "Glory-Aspersed Torso",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Titankin",
+                "Crepuscular Beast"
+            ],
+            "characters": [
+                "Aglaea",
+                "Cyrene",
+                "Dan Heng • Permansor Terrae",
+                "Hyacine",
+                "Hysilens",
+                "Mydei",
+                "Tribbie"
+            ]
+        },
+        "c_black_tide": {
+            "name": "Eternal Lament",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Black Tide Creature"
+            ],
+            "characters": [
+                "Anaxa",
+                "Castorice",
+                "Cerydra",
+                "Cipher",
+                "Evernight",
+                "Phainon"
+            ]
+        },
+        "c_imagenated": {
+            "name": "Lucid Awl",
+            "type": "common_enemy_drops",
+            "enemies": [
+                "Imagenated Creature"
+            ],
+            "characters": [
+                "Ashveil",
+                "Evanescia",
+                "Himeko • Nova",
+                "Mortenax Blade",
+                "Silver Wolf LV.999",
+                "Sparxie",
+                "Yao Guang"
+            ]
         }
     },
     "other_materials": {
