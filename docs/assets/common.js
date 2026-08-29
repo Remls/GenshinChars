@@ -149,3 +149,162 @@ function regionIconHtml(region) {
         + ` referrerpolicy="no-referrer"`
         + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
 }
+
+// "2022 November 2" for a full date, "November 2" for a birthday, which has no year
+function formatDateLong(date) {
+    if (!date) return 'Unknown'
+    const parts = date.split('-')
+    if (parts.length === 2) {
+        return [MONTHS[parseInt(parts[0]) - 1], parseInt(parts[1])].join(' ')
+    }
+    return [parts[0], MONTHS[parseInt(parts[1]) - 1], parseInt(parts[2])].join(' ')
+}
+
+function formatVersionLabel(version, versionData, includeDate = false) {
+    if (!version) return 'Unknown'
+    version = versionData[version]
+    let v = version.display_version_number
+    if (version.version_name) v += `: ${version.version_name}`
+    if (includeDate && version.release_date) v += ` (${formatDateLong(version.release_date)})`
+    return v
+}
+
+// Character sheet. One component for both games and every page, holding all of
+// its own state, so a page's loop variables cannot shadow the fields it shows.
+//
+// A field reads from the form when the value varies between forms and from the
+// character when it does not. "optional" fields drop their row when empty;
+// every other empty value shows as a grey Unknown.
+const CHAR_SHEET_GAMES = {
+    genshin: {
+        wiki: 'https://genshin-impact.fandom.com/wiki/',
+        wikiImages: 'gensin-impact',
+        artDir: 'assets/images/full-characters',
+        fields: [
+            { label: 'Birthday', from: 'char', key: 'birthday', format: 'date' },
+            { label: 'Element', from: 'form', key: 'element' },
+            { label: 'Arkhe', from: 'form', key: 'arkhe', optional: true },
+            { label: 'Gender', from: 'char', key: 'gender' },
+            { label: 'Rarity', from: 'char', key: 'rarity', format: 'rarity' },
+            { label: 'Region', from: 'char', key: 'region' },
+            { label: 'Weapon', from: 'form', key: 'weapon' },
+            { label: 'Release Version', from: 'form', key: 'release_version', format: 'version' },
+            { label: 'Release Date', from: 'form', key: 'release_date', format: 'date' },
+        ],
+    },
+}
+
+let charSheetConfig = null
+
+function configureCharSheet(game, versionData) {
+    charSheetConfig = { ...CHAR_SHEET_GAMES[game], versionData }
+}
+
+function openCharSheet(character, form = null) {
+    window.dispatchEvent(new CustomEvent('char-sheet', { detail: { character, form } }))
+}
+
+const EXTERNAL_LINK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"'
+    + ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+    + '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
+    + '<polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
+
+const CHAR_SHEET_MARKUP = `
+<div class="modal char-sheet" x-data="charModal" x-cloak x-show="open"
+    x-transition x-transition.duration.500ms
+    @char-sheet.window="show($event.detail)"
+    @keydown.escape.window="open = false">
+    <div class="char-sheet-dialog" @click.outside="open = false">
+        <div class="char-sheet-art">
+            <template x-for="src in art" :key="src">
+                <img :src="src" referrerpolicy="no-referrer">
+            </template>
+        </div>
+        <div class="char-sheet-body">
+            <div class="char-sheet-title">
+                <span class="gi-font" x-text="title"></span>
+                <a class="char-sheet-wiki" :href="wikiLink" title="Open the wiki article"
+                    >${EXTERNAL_LINK_ICON}</a>
+            </div>
+            <div class="char-sheet-fields">
+                <template x-for="(half, i) in fieldHalves()" :key="i">
+                    <table>
+                        <tbody>
+                            <template x-for="field in half" :key="field.label">
+                                <tr>
+                                    <td class="label-column" x-text="field.label"></td>
+                                    <td>
+                                        <span :class="{ 'text-unknown': field.unknown }"
+                                            x-text="field.value"></span>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+            <template x-if="notes">
+                <div class="char-sheet-notes">
+                    <ul>
+                        <template x-for="note in notes" :key="note">
+                            <li x-text="note"></li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>`
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('charModal', () => ({
+        open: false,
+        title: null,
+        wikiLink: '',
+        art: [],
+        fields: [],
+        notes: null,
+
+        show({ character, form }) {
+            const config = charSheetConfig
+            const details = form || character
+            this.title = (form && form.display_name)
+                || character.display_name || character.name
+            // The primary name is the one that matches a wiki page. A form's
+            // display name need not.
+            this.wikiLink = config.wiki
+                + encodeURIComponent(character.name.replaceAll(' ', '_'))
+            // Full art loads unscaled, so the tag needs referrerpolicy="no-referrer":
+            // the CDN downsizes a bare URL to about 200px when a Referer arrives
+            this.art = (details.full_photo || []).map(image => characterImageUrl(
+                image, config.wikiImages, config.artDir
+            ))
+            this.fields = config.fields
+                .map(field => this.buildField(field, character, details, config))
+                .filter(Boolean)
+            this.notes = character.notes
+            this.open = true
+        },
+
+        buildField(field, character, details, config) {
+            const raw = (field.from === 'form' ? details : character)[field.key]
+            if (!raw) {
+                return field.optional ? null : { label: field.label, value: 'Unknown', unknown: true }
+            }
+            let value = raw
+            if (field.format === 'date') value = formatDateLong(raw)
+            if (field.format === 'version') value = formatVersionLabel(raw, config.versionData)
+            if (field.format === 'rarity') value = `${raw}-star`
+            return { label: field.label, value, unknown: false }
+        },
+
+        // Two tables side by side cost half the height of one. An odd count puts
+        // the extra row in the left half.
+        fieldHalves() {
+            const half = Math.ceil(this.fields.length / 2)
+            return [this.fields.slice(0, half), this.fields.slice(half)]
+        },
+    }))
+
+    document.body.insertAdjacentHTML('beforeend', CHAR_SHEET_MARKUP)
+})

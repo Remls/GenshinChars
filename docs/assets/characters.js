@@ -40,27 +40,13 @@ document.addEventListener('alpine:init', () => {
         urlSyncReady: false,
         showVersionPicker: false,
 
-        // Character details modal
-        modalOpen: false,
-        name: null,
-        birthday: null,
-        element: null,
-        arkhe: null,
-        gender: null,
-        rarity: null,
-        region: null,
-        weapon: null,
-        releaseVersion: null,
-        releaseDate: null,
-        fullPhotos: [],
-        notes: null,
-
         fetchAllData() {
             fetch('./assets/characters.json')
                 .then(r => r.json())
                 .then(d => {
                     this.allData = d
                     this.versionData = d['versions']
+                    configureCharSheet('genshin', this.versionData)
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true
@@ -178,14 +164,6 @@ document.addEventListener('alpine:init', () => {
             return characterImageUrl(image, 'gensin-impact', 'assets/images/characters', 40)
         },
 
-        // Full art loads unscaled, so it needs referrerpolicy="no-referrer" on the
-        // tag: the CDN downsizes a bare URL to about 200px when a Referer arrives
-        fullPhotoUrls(images) {
-            return (images || []).map(image => characterImageUrl(
-                image, 'gensin-impact', 'assets/images/full-characters'
-            ))
-        },
-
         // A character whose element the player picks cycles through every form's
         // colour rather than showing the debut form's
         formElements(char) {
@@ -284,28 +262,6 @@ document.addEventListener('alpine:init', () => {
             return `${wd}, ${d} ${m} ${y} ${h}:${mn}:${s}`
         },
 
-        // Element, weapon, arkhe and release differ per form, so a click that knows
-        // which form it came from shows that one. Without a form the character's
-        // own values stand in, which are the debut form's
-        showCharSheet(char, form = null) {
-            const selectedChar = this.allData['characters'][char]
-            const details = form || selectedChar
-            this.name = (form && form.display_name)
-                || selectedChar.display_name || selectedChar.name
-            this.birthday = this.formatDate(selectedChar.birthday)
-            this.element = details.element || 'Unknown'
-            this.arkhe = details.arkhe // Null if non-Fontaine
-            this.gender = selectedChar.gender || 'Unknown'
-            this.rarity = selectedChar.rarity ? `${selectedChar.rarity}-star` : 'Unknown'
-            this.region = selectedChar.region || 'Unknown'
-            this.weapon = details.weapon || 'Unknown'
-            this.releaseVersion = this.formatVersion(details.release_version)
-            this.releaseDate = this.formatDate(details.release_date)
-            this.fullPhotos = this.fullPhotoUrls(details.full_photo)
-            this.notes = selectedChar.notes
-            this.modalOpen = true
-        },
-
         noCharacters() {
             return Object.values(this.characterData).length === 0
         },
@@ -370,13 +326,8 @@ document.addEventListener('alpine:init', () => {
             })
         },
 
-        formatVersion(version, includeDate=false) {
-            if (!version) return 'Unknown'
-            version = this.versionData[version]
-            let v = version.display_version_number
-            if (version.version_name) v += `: ${version.version_name}`
-            if (includeDate && version.release_date) v += ` (${this.formatDate(version.release_date)})`
-            return v
+        formatVersion(version, includeDate = false) {
+            return formatVersionLabel(version, this.versionData, includeDate)
         },
 
         versionPickerLabel() {
@@ -413,31 +364,5 @@ document.addEventListener('alpine:init', () => {
             this.showVersionPicker = false
             this.updateCharacterData()
         },
-
-        formatDate(date) {
-            if (!date) return 'Unknown'
-            date = date.split('-')
-            let dateParts = []
-            if (date.length === 2) {
-                dateParts = [
-                    MONTHS[parseInt(date[0])-1],
-                    parseInt(date[1])
-                ]
-            } else {
-                dateParts = [
-                    date[0],
-                    MONTHS[parseInt(date[1])-1],
-                    parseInt(date[2])
-                ]
-            }
-            return dateParts.join(' ')
-        },
-
-        getWikiLink() {
-            if (this.name) {
-                return `https://genshin-impact.fandom.com/wiki/${encodeURIComponent(this.name.replaceAll(' ', '_'))}`
-            }
-            return ''
-        }
     }))
 })

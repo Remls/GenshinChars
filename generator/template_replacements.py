@@ -50,7 +50,7 @@ def generate_characters_page():
     # 3. Character display template
     search = r"\[CHAR (.+)\]"
     replace = r"""<template x-for="{ char, form } in cellRows(\1)">
-        <div @click="showCharSheet(char.name, form)" class="character-links">
+        <div @click="openCharSheet(char, form)" class="character-links">
             <img width="20" height="20" referrerpolicy="no-referrer" :src="photoUrl(form.photo || char.photo)">
             <span class="gi-font clickable" :class="form.element ? `el-${form.element.toLowerCase()}` : 'el-unknown'"
                 x-text="form.display_name || char.display_name || char.name">
