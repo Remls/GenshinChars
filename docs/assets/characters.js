@@ -52,7 +52,6 @@ document.addEventListener('alpine:init', () => {
         weapon: null,
         releaseVersion: null,
         releaseDate: null,
-        photo: null,
         fullPhotos: [],
         notes: null,
 
@@ -173,8 +172,10 @@ document.addEventListener('alpine:init', () => {
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
         },
 
+        // Chips render at 20px. The tags need referrerpolicy="no-referrer": the CDN
+        // refuses scaled URLs when a Referer arrives
         photoUrl(image) {
-            return characterImageUrl(image, 'gensin-impact', 'assets/images/characters')
+            return characterImageUrl(image, 'gensin-impact', 'assets/images/characters', 40)
         },
 
         // Full art loads unscaled, so it needs referrerpolicy="no-referrer" on the
@@ -276,7 +277,6 @@ document.addEventListener('alpine:init', () => {
             this.weapon = selectedChar.weapon || 'Unknown'
             this.releaseVersion = this.formatVersion(selectedChar.release_version)
             this.releaseDate = this.formatDate(selectedChar.release_date)
-            this.photo = this.photoUrl(selectedChar.photo)
             this.fullPhotos = this.fullPhotoUrls(
                 (form && form.full_photo) || selectedChar.full_photo
             )

@@ -194,8 +194,10 @@ document.addEventListener('alpine:init', () => {
             return combatType ? `ct-${combatType.toLowerCase()}` : 'el-unknown'
         },
 
+        // Chips render at 20px. The tags need referrerpolicy="no-referrer": the CDN
+        // refuses scaled URLs when a Referer arrives
         photoUrl(image) {
-            return characterImageUrl(image, HSR_WIKI_IMAGES, 'assets/images/characters')
+            return characterImageUrl(image, HSR_WIKI_IMAGES, 'assets/images/characters', 40)
         },
 
         pathLabel(path) {
@@ -222,7 +224,8 @@ document.addEventListener('alpine:init', () => {
 
         chipHtml(char, combatType, displayName = null, form = null) {
             return `<a class="character-links" href="${this.wikiLink(char)}">`
-                + `<img width="20" height="20" loading="lazy" src="${this.photoUrl((form && form.photo) || char.photo)}"`
+                + `<img width="20" height="20" loading="lazy" referrerpolicy="no-referrer"`
+                + ` src="${this.photoUrl((form && form.photo) || char.photo)}"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
                 + `<span class="gi-font clickable ${this.combatTypeClass(combatType)}">${displayName || char.display_name || char.name}</span>`
                 + `</a>`
