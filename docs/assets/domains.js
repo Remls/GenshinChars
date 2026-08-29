@@ -250,6 +250,8 @@ document.addEventListener('alpine:init', () => {
         },
 
         visibleCharacters(names) {
+            // A search reaches past every filter, this one included
+            if (this.searching()) return names || []
             return (names || []).filter(name => {
                 const special = SPECIAL_CHARACTERS.genshin.find(s => this.isSpecial(name, s))
                 return !special || this.includedSpecials.includes(special)
