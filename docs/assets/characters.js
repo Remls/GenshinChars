@@ -284,21 +284,24 @@ document.addEventListener('alpine:init', () => {
             return `${wd}, ${d} ${m} ${y} ${h}:${mn}:${s}`
         },
 
+        // Element, weapon, arkhe and release differ per form, so a click that knows
+        // which form it came from shows that one. Without a form the character's
+        // own values stand in, which are the debut form's
         showCharSheet(char, form = null) {
             const selectedChar = this.allData['characters'][char]
-            this.name = selectedChar.name
+            const details = form || selectedChar
+            this.name = (form && form.display_name)
+                || selectedChar.display_name || selectedChar.name
             this.birthday = this.formatDate(selectedChar.birthday)
-            this.element = selectedChar.element || 'Unknown'
-            this.arkhe = selectedChar.arkhe // Null if non-Fontaine
+            this.element = details.element || 'Unknown'
+            this.arkhe = details.arkhe // Null if non-Fontaine
             this.gender = selectedChar.gender || 'Unknown'
             this.rarity = selectedChar.rarity ? `${selectedChar.rarity}-star` : 'Unknown'
             this.region = selectedChar.region || 'Unknown'
-            this.weapon = selectedChar.weapon || 'Unknown'
-            this.releaseVersion = this.formatVersion(selectedChar.release_version)
-            this.releaseDate = this.formatDate(selectedChar.release_date)
-            this.fullPhotos = this.fullPhotoUrls(
-                (form && form.full_photo) || selectedChar.full_photo
-            )
+            this.weapon = details.weapon || 'Unknown'
+            this.releaseVersion = this.formatVersion(details.release_version)
+            this.releaseDate = this.formatDate(details.release_date)
+            this.fullPhotos = this.fullPhotoUrls(details.full_photo)
             this.notes = selectedChar.notes
             this.modalOpen = true
         },

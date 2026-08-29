@@ -184,11 +184,11 @@
                         <th>
                             <!-- Empty first header -->
                         </th>
-                        <template x-for="weapon in WEAPONS" :key="weapon">
+                        <template x-for="col in WEAPONS" :key="col">
                             <th width="12%">
-                                <img width="50" height="50" :src="`assets/images/${weapon}.webp`">
+                                <img width="50" height="50" :src="`assets/images/${col}.webp`">
                                 <br>
-                                <span x-text="weapon"></span>
+                                <span x-text="col"></span>
                             </th>
                         </template>
                         <th width="12%">Unknown</th>
@@ -198,29 +198,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <template x-for="element in [...ELEMENTS, 'Unknown']" :key="element">
+                    <template x-for="row in [...ELEMENTS, 'Unknown']" :key="row">
                         <tr>
                             <td class="label-column">
-                                <template x-if="element !== 'Unknown'">
+                                <template x-if="row !== 'Unknown'">
                                     <span>
-                                        <img width="50" height="50" :src="`assets/images/${element}.svg`">
+                                        <img width="50" height="50" :src="`assets/images/${row}.svg`">
                                         <br>
                                     </span>
                                 </template>
-                                <span x-text="element"></span>
+                                <span x-text="row"></span>
                             </td>
-                            <template x-for="weapon in [...WEAPONS, 'Unknown']" :key="weapon">
-                                <td>[CHAR element,weapon]</td>
+                            <template x-for="col in [...WEAPONS, 'Unknown']" :key="col">
+                                <td>[CHAR row,col]</td>
                             </template>
-                            <td class="totals-cells center">[COUNTER {element},'rarity']</td>
-                            <td class="totals-cells center">[COUNTER {element},'gender']</td>
-                            <td class="totals-cells center">[COUNTER {element},'region']</td>
+                            <td class="totals-cells center">[COUNTER {element: row},'rarity']</td>
+                            <td class="totals-cells center">[COUNTER {element: row},'gender']</td>
+                            <td class="totals-cells center">[COUNTER {element: row},'region']</td>
                         </tr>
                     </template>
                     <tr>
                         <td class="label-column"><b>RARITY</b></td>
-                        <template x-for="weapon in [...WEAPONS, 'Unknown']" :key="weapon">
-                            <td class="totals-cells center">[COUNTER {weapon},'rarity']</td>
+                        <template x-for="col in [...WEAPONS, 'Unknown']" :key="col">
+                            <td class="totals-cells center">[COUNTER {weapon: col},'rarity']</td>
                         </template>
                         <td class="transparent-rb totals-cells center">[COUNTER null,'rarity']</td>
                         <td class="transparent-rb totals-cells"></td>
@@ -228,8 +228,8 @@
                     </tr>
                     <tr>
                         <td class="label-column"><b>GENDER</b></td>
-                        <template x-for="weapon in [...WEAPONS, 'Unknown']" :key="weapon">
-                            <td class="totals-cells center">[COUNTER {weapon},'gender']</td>
+                        <template x-for="col in [...WEAPONS, 'Unknown']" :key="col">
+                            <td class="totals-cells center">[COUNTER {weapon: col},'gender']</td>
                         </template>
                         <td class="transparent-rb totals-cells"></td>
                         <td class="transparent-rb totals-cells center">[COUNTER null,'gender']</td>
@@ -237,8 +237,8 @@
                     </tr>
                     <tr>
                         <td class="label-column"><b>REGION</b></td>
-                        <template x-for="weapon in [...WEAPONS, 'Unknown']" :key="weapon">
-                            <td class="totals-cells center">[COUNTER {weapon},'region']</td>
+                        <template x-for="col in [...WEAPONS, 'Unknown']" :key="col">
+                            <td class="totals-cells center">[COUNTER {weapon: col},'region']</td>
                         </template>
                         <td class="transparent-r totals-cells"></td>
                         <td class="transparent-r totals-cells"></td>
