@@ -135,7 +135,8 @@ function regionIconHtml(region) {
     if (REGION_ICON_OVERRIDES[region]) {
         return `<span>${REGION_ICON_OVERRIDES[region]}</span>`
     }
-    const src = wikiFileUrl(`Emblem ${region}.png`)
+    const src = wikiFileUrl(`Emblem ${region}.png`, 'gensin-impact', 40)
     return `<img src="${src}" class="region-icon" width="20" height="20" loading="lazy"`
+        + ` referrerpolicy="no-referrer"`
         + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
 }

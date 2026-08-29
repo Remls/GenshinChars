@@ -235,9 +235,13 @@ document.addEventListener('alpine:init', () => {
             return `<a href="${this.wikiUrl(title)}">${html}</a>`
         },
 
+        // Thumbnails render at 20px tall, domain shots at 36x20. The CDN refuses
+        // scaled URLs when a Referer arrives, so the tags opt out of sending one
         thumbHtml(filename, cssClass = 'item-thumb') {
-            const src = wikiFileUrl(filename, HSR_WIKI_IMAGES)
+            const width = cssClass === 'domain-art' ? 120 : 40
+            const src = wikiFileUrl(filename, HSR_WIKI_IMAGES, width)
             return `<img src="${src}" class="${cssClass}" height="20" loading="lazy"`
+                + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
@@ -255,9 +259,10 @@ document.addEventListener('alpine:init', () => {
             const displayName = info ? info.displayName : name
             const colorClass = info && info.combatType ? `ct-${info.combatType.toLowerCase()}` : 'el-unknown'
             const src = characterImageUrl(
-                info && info.photo, HSR_WIKI_IMAGES, 'assets/images/characters'
+                info && info.photo, HSR_WIKI_IMAGES, 'assets/images/characters', 40
             )
             let chip = `<img src="${src}" width="20" height="20" loading="lazy"`
+                + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
             chip += `<span class="gi-font ${colorClass}">${this.highlight(displayName)}</span>`
             const wikiName = (info && info.wikiName) || name
@@ -278,24 +283,31 @@ document.addEventListener('alpine:init', () => {
             return domain.image
         },
 
-        domainLabelHtml(domain, suffix = '') {
+        // "Item" and "Icon" files are icons and read fine at 20px. Enemy portraits
+        // and cavern art are illustrations, so the main table gives them a larger
+        // square box, while search results and drop lists keep everything small
+        domainLabelHtml(domain, suffix = '', large = false) {
             const file = this.domainThumbFile(domain)
-            const thumbClass = file.startsWith('Item') || file.startsWith('Icon') ? 'item-thumb' : 'domain-shot'
-            const thumb = this.thumbHtml(file, thumbClass)
+            const illustration = file.startsWith('Enemy') || file.startsWith('Cavern of Corrosion')
+            const big = illustration && large
+            const thumb = this.thumbHtml(file, big ? 'domain-art' : 'item-thumb')
+            const wrap = html => big
+                ? `<span class="domain-art-row">${thumb}<span>${html}</span></span>`
+                : `${thumb} ${html}`
             let name = `<span class="gi-font">${this.highlight(domain.name)}</span>`
             name = this.wikiTitleLink(name, this.wikiPageFor(domain))
             if (domain.type === 'planar_ornament') {
                 const boss = domain.boss[0]
                 const bossHtml = this.wikiTitleLink(`<span class="gi-font">${this.highlight(boss)}</span>`, boss)
-                return `${thumb} ${bossHtml}${suffix}`
+                return wrap(`${bossHtml}${suffix}`)
             }
             if (domain.boss && domain.boss.length > 0) {
                 const bosses = domain.boss
                     .map(b => this.wikiTitleLink(`<span class="gi-font">${this.highlight(b)}</span>`, b))
                     .join(', ')
-                return `${thumb} ${bosses}${suffix}<br><span class="domain-paren">${name}</span>`
+                return wrap(`${bosses}${suffix}<br><span class="domain-paren">${name}</span>`)
             }
-            return `${thumb} ${name}${suffix}`
+            return wrap(`${name}${suffix}`)
         },
 
         domainNameHtml(domain) {

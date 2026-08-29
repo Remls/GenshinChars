@@ -26,10 +26,10 @@
 
 <body x-data="hsrDomainSheet" x-init="fetchAllData">
     <nav class="site-nav">
-        <a href="../characters"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Characters</span></a>
-        <a href="../domains"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Domains</span></a>
-        <a href="characters" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Characters</span></a>
-        <a href="domains" class="current hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/1/10/Icon_Calyx_Golden.png" width="20" height="20" loading="lazy" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Domains</span></a>
+        <a href="../characters"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Characters</span></a>
+        <a href="../domains"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Domains</span></a>
+        <a href="characters" class="hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Character_Trailblazer_%28Destruction%29_Icon.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Characters</span></a>
+        <a href="domains" class="current hsr"><img src="https://static.wikia.nocookie.net/houkai-star-rail/images/1/10/Icon_Calyx_Golden.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>HSR Domains</span></a>
     </nav>
     <section>
         <h2 class="collapsible-header" @click="showSection.filters = !showSection.filters">
@@ -135,7 +135,7 @@
                 <tbody>
                     <template x-for="(domain, idx) in filteredDomains()" :key="idx">
                         <tr>
-                            <td x-html="domainLabelHtml(domain)"></td>
+                            <td x-html="domainLabelHtml(domain, '', true)"></td>
                             <td x-html="locationHtml(domain)"></td>
                             <td>
                                 <ul class="domain-rewards" x-html="rewardListHtml(domain.rewards)"></ul>

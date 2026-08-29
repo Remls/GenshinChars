@@ -399,7 +399,7 @@ document.addEventListener('alpine:init', () => {
                     fullName: c.name,
                     displayName: c.display_name || c.name,
                     element: c.element,
-                    photo: characterImageUrl(c.photo, 'gensin-impact', 'assets/images/characters'),
+                    photo: characterImageUrl(c.photo, 'gensin-impact', 'assets/images/characters', 40),
                 }
                 lookup[c.name.toLowerCase()] = info
                 if (c.display_name) lookup[c.display_name.toLowerCase()] = info
@@ -578,10 +578,13 @@ document.addEventListener('alpine:init', () => {
         },
 
 
+        // Thumbnails render at 20px, domain shots at 36x20. The CDN refuses scaled
+        // URLs when a Referer arrives, so the tags opt out of sending one
         itemThumbHtml(item) {
             const filename = this.itemImages[item]
-            const src = filename ? wikiFileUrl(filename) : FALLBACK_PHOTO
+            const src = filename ? wikiFileUrl(filename, 'gensin-impact', 40) : FALLBACK_PHOTO
             return `<img src="${src}" class="item-thumb" width="20" height="20" loading="lazy"`
+                + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
@@ -600,6 +603,7 @@ document.addEventListener('alpine:init', () => {
             let chip = ''
             if (info) {
                 chip += `<img src="${info.photo}" width="20" height="20" loading="lazy"`
+                    + ` referrerpolicy="no-referrer"`
                     + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
             }
             const displayName = info ? info.displayName : name
@@ -617,8 +621,10 @@ document.addEventListener('alpine:init', () => {
         domainLabelHtml(domainName, suffix = '') {
             const info = this.domainImages[domainName] || {}
             const thumbClass = (info.image && info.image.startsWith('Domain_')) ? 'domain-shot' : 'item-thumb'
-            const src = info.image ? wikiFileUrl(info.image) : FALLBACK_PHOTO
+            const width = thumbClass === 'domain-shot' ? 80 : 40
+            const src = info.image ? wikiFileUrl(info.image, 'gensin-impact', width) : FALLBACK_PHOTO
             const thumb = `<img src="${src}" class="${thumbClass}" height="20" loading="lazy"`
+                + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
 
             if (info.boss) {
@@ -638,7 +644,8 @@ document.addEventListener('alpine:init', () => {
         typeIconHtml(type) {
             const icon = DOMAIN_TYPES[type].icon
             const invertClass = icon.startsWith('Item ') ? '' : ' type-icon'
-            return `<img src="${wikiFileUrl(icon)}" class="item-thumb${invertClass}" width="20" height="20" loading="lazy"`
+            return `<img src="${wikiFileUrl(icon, 'gensin-impact', 40)}" class="item-thumb${invertClass}" width="20" height="20" loading="lazy"`
+                + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
