@@ -184,11 +184,19 @@ document.addEventListener('alpine:init', () => {
 
         visibleCharacters(names) {
             // A search reaches past every filter, this one included
-            if (this.searching()) return names || []
-            return (names || []).filter(name => {
+            if (this.searching()) return this.sortedByDisplayName(names || [])
+            return this.sortedByDisplayName((names || []).filter(name => {
                 const special = SPECIAL_CHARACTERS.hsr.find(s => this.isSpecial(name, s))
                 return !special || this.includedSpecials.includes(special)
-            })
+            }))
+        },
+
+        // Ordered by the folded display name
+        sortedByDisplayName(names) {
+            const key = name => foldedText(
+                (this.characterLookup[name] || {}).displayName || name
+            ).text
+            return [...names].sort((a, b) => key(a).localeCompare(key(b)))
         },
 
         toggleSpecial(name) {

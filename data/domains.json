@@ -848,7 +848,7 @@
         "w_spiritual_nectar": {"name": "Revelry of the Cellared Spiritual Nectar", "type": "weapon_ascension_mats"},
         "w_frost_emperor": {"name": "The Frost Emperor's Farewell", "type": "weapon_ascension_mats"},
         "t_freedom": {"name": "Freedom", "type": "talent_upgrade_mats", "characters": [
-            "Aloy", "Amber", "Barbara", "Tartaglia", "Diona", "Klee", "Sucrose", "Traveler (Anemo)", "Traveler (Geo)", "Varka"
+            "Aloy", "Amber", "Barbara", "Diona", "Klee", "Sucrose", "Tartaglia", "Traveler (Anemo)", "Traveler (Geo)", "Varka"
         ]},
         "t_resistance": {"name": "Resistance", "type": "talent_upgrade_mats", "characters": [
             "Bennett", "Diluc", "Eula", "Jean", "Lohen", "Mona", "Noelle", "Prune", "Razor", "Traveler (Anemo)", "Traveler (Geo)"
@@ -866,13 +866,13 @@
             "Baizhu", "Beidou", "Traveler (Geo)", "Xianyun", "Xingqiu", "Xinyan", "Yanfei", "Zhongli", "Zibai"
         ]},
         "t_transience": {"name": "Transience", "type": "talent_upgrade_mats", "characters": [
-            "Shikanoin Heizou", "Kirara", "Sangonomiya Kokomi", "Yumemizuki Mizuki", "Thoma", "Traveler (Electro)", "Yoimiya"
+            "Kirara", "Sangonomiya Kokomi", "Shikanoin Heizou", "Thoma", "Traveler (Electro)", "Yoimiya", "Yumemizuki Mizuki"
         ]},
         "t_elegance": {"name": "Elegance", "type": "talent_upgrade_mats", "characters": [
-            "Kamisato Ayaka", "Kamisato Ayato", "Arataki Itto", "Kujou Sara", "Kuki Shinobu", "Traveler (Electro)"
+            "Arataki Itto", "Kamisato Ayaka", "Kamisato Ayato", "Kujou Sara", "Kuki Shinobu", "Traveler (Electro)"
         ]},
         "t_light": {"name": "Light", "type": "talent_upgrade_mats", "characters": [
-            "Chiori", "Raiden Shogun", "Gorou", "Yae Miko", "Sayu", "Traveler (Electro)"
+            "Chiori", "Gorou", "Raiden Shogun", "Sayu", "Traveler (Electro)", "Yae Miko"
         ]},
         "t_admonition": {"name": "Admonition", "type": "talent_upgrade_mats", "characters": [
             "Candace", "Cyno", "Faruzan", "Tighnari", "Traveler (Dendro)"
@@ -995,13 +995,13 @@
             "Amber", "Bennett", "Diluc", "Klee", "Xiangling", "Xinyan"
         ]},
         "nb_cleansing_heart": {"name": "Cleansing Heart", "type": "normal_bosses", "characters": [
-            "Barbara", "Tartaglia", "Mona", "Xingqiu"
+            "Barbara", "Mona", "Tartaglia", "Xingqiu"
         ]},
         "nb_runic_fang": {"name": "Runic Fang", "type": "normal_bosses", "characters": [
-            "Shikanoin Heizou", "Kuki Shinobu", "Yelan"
+            "Kuki Shinobu", "Shikanoin Heizou", "Yelan"
         ]},
         "nb_dragonheir": {"name": "Dragonheir's False Fin", "type": "normal_bosses", "characters": [
-            "Yae Miko", "Shenhe"
+            "Shenhe", "Yae Miko"
         ]},
         "nb_riftborn_regalia": {"name": "Riftborn Regalia", "type": "normal_bosses", "characters": [
             "Arataki Itto", "Yun Jin"
@@ -1013,13 +1013,13 @@
             "Kaedehara Kazuha", "Sayu"
         ]},
         "nb_perpetual_heart": {"name": "Perpetual Heart", "type": "normal_bosses", "characters": [
-            "Kamisato Ayaka", "Gorou"
+            "Gorou", "Kamisato Ayaka"
         ]},
         "nb_smoldering_pearl": {"name": "Smoldering Pearl", "type": "normal_bosses", "characters": [
             "Thoma", "Yoimiya"
         ]},
         "nb_storm_beads": {"name": "Storm Beads", "type": "normal_bosses", "characters": [
-            "Raiden Shogun", "Kujou Sara"
+            "Kujou Sara", "Raiden Shogun"
         ]},
         "nb_hooked_beak": {"name": "Majestic Hooked Beak", "type": "normal_bosses", "characters": [
             "Collei", "Tighnari"
@@ -1031,7 +1031,7 @@
             "Candace", "Dehya", "Faruzan"
         ]},
         "nb_perpetual_caliber": {"name": "Perpetual Caliber", "type": "normal_bosses", "characters": [
-            "Nilou", "Layla", "Wanderer"
+            "Layla", "Nilou", "Wanderer"
         ]},
         "nb_quelled_creeper": {"name": "Quelled Creeper", "type": "normal_bosses", "characters": [
             "Kaveh", "Nahida", "Yaoyao"
@@ -1091,7 +1091,7 @@
             "Jahoda", "Lauma"
         ]},
         "nb_stamping_die": {"name": "Precision Kuuvahki Stamping Die", "type": "normal_bosses", "characters": [
-            "Flins", "Aino"
+            "Aino", "Flins"
         ]},
         "nb_radiant_antler": {"name": "Radiant Antler", "type": "normal_bosses", "characters": [
             "Columbina", "Nefer", "Prune"
@@ -1139,7 +1139,7 @@
             "Albedo", "Xinyan", "Zhongli"
         ]},
         "wb_shard_of_foul_legacy": {"name": "Shard of a Foul Legacy", "type": "weekly_bosses", "characters": [
-            "Tartaglia", "Diona", "Hu Tao"
+            "Diona", "Hu Tao", "Tartaglia"
         ]},
         "wb_shadow_of_warrior": {"name": "Shadow of the Warrior", "type": "weekly_bosses", "characters": [
             "Ganyu", "Rosaria", "Xiao"
@@ -1148,13 +1148,13 @@
             "Eula", "Traveler (Electro)", "Yoimiya"
         ]},
         "wb_bloodjade_branch": {"name": "Bloodjade Branch", "type": "weekly_bosses", "characters": [
-            "Kamisato Ayaka", "Dori", "Yanfei"
+            "Dori", "Kamisato Ayaka", "Yanfei"
         ]},
         "wb_gilded_scale": {"name": "Gilded Scale", "type": "weekly_bosses", "characters": [
             "Kaedehara Kazuha", "Sayu", "Yelan"
         ]},
         "wb_molten_moment": {"name": "Molten Moment", "type": "weekly_bosses", "characters": [
-            "Aloy", "Raiden Shogun", "Gorou"
+            "Aloy", "Gorou", "Raiden Shogun"
         ]},
         "wb_hellfire_butterfly": {"name": "Hellfire Butterfly", "type": "weekly_bosses", "characters": [
             "Sangonomiya Kokomi", "Shenhe", "Thoma"
@@ -1163,13 +1163,13 @@
             "Arataki Itto", "Kujou Sara", "Yun Jin"
         ]},
         "wb_meaning_of_aeons": {"name": "The Meaning of Aeons", "type": "weekly_bosses", "characters": [
-            "Shikanoin Heizou", "Yae Miko", "Tighnari"
+            "Shikanoin Heizou", "Tighnari", "Yae Miko"
         ]},
         "wb_mudra_of_malefic_general": {"name": "Mudra of the Malefic General", "type": "weekly_bosses", "characters": [
-            "Kamisato Ayato", "Cyno", "Traveler (Dendro)"
+            "Cyno", "Kamisato Ayato", "Traveler (Dendro)"
         ]},
         "wb_tears_of_calamitous_god": {"name": "Tears of the Calamitous God", "type": "weekly_bosses", "characters": [
-            "Candace", "Collei", "Nilou", "Kuki Shinobu"
+            "Candace", "Collei", "Kuki Shinobu", "Nilou"
         ]},
         "wb_puppet_strings": {"name": "Puppet Strings", "type": "weekly_bosses", "characters": [
             "Dehya", "Faruzan", "Nahida"
@@ -1242,6 +1242,65 @@
         ]},
         "wb_doctor_2_branch": {"name": "Twisted Withered Branch", "type": "weekly_bosses", "characters": [
             "Odette"
+        ]}
+    },
+    "common_enemy_drops": {
+        "c_nectar": {"name": "Energy Nectar", "type": "common_enemy_drops", "enemies": ["Whopperflowers"], "characters": [
+            "Furina", "Ganyu", "Hu Tao", "Keqing", "Lan Yan", "Mona", "Sayu", "Shenhe", "Sucrose"
+        ]},
+        "c_scroll": {"name": "Forbidden Curse Scroll", "type": "common_enemy_drops", "enemies": ["Samachurls"], "characters": [
+            "Albedo", "Barbara", "Cyno", "Klee", "Layla", "Qiqi", "Traveler (Anemo)", "Traveler (Geo)", "Xianyun", "Yoimiya"
+        ]},
+        "c_raven_insignia": {"name": "Golden Raven Insignia", "type": "common_enemy_drops", "enemies": ["Treasure Hoarders"], "characters": [
+            "Beidou", "Bennett", "Kaedehara Kazuha", "Kaeya", "Prune", "Shikanoin Heizou", "Thoma", "Xinyan", "Yanfei"
+        ]},
+        "c_fatui_insignia": {"name": "Lieutenant's Insignia", "type": "common_enemy_drops", "enemies": ["Fatui Skirmishers", "Fatui Cicin Mages", "Fatui Pyro Agents"], "characters": [
+            "Arlecchino", "Diluc", "Lyney", "Mika", "Ningguang", "Rosaria", "Tartaglia", "Yelan"
+        ]},
+        "c_mask": {"name": "Ominous Mask", "type": "common_enemy_drops", "enemies": ["Hilichurls"], "characters": [
+            "Chongyun", "Eula", "Jean", "Kujou Sara", "Noelle", "Razor", "Traveler", "Xingqiu", "Yun Jin"
+        ]},
+        "c_slime": {"name": "Slime Concentrate", "type": "common_enemy_drops", "enemies": ["Slimes"], "characters": [
+            "Arataki Itto", "Columbina", "Gaming", "Lisa", "Venti", "Xiangling", "Xiao", "Yaoyao", "Zhongli"
+        ]},
+        "c_arrowhead": {"name": "Weathered Arrowhead", "type": "common_enemy_drops", "enemies": ["Hilichurl Shooters"], "characters": [
+            "Amber", "Collei", "Dahlia", "Diona", "Fischl", "Lohen", "Traveler (Geo)"
+        ]},
+        "c_handguard": {"name": "Famed Handguard", "type": "common_enemy_drops", "enemies": ["Nobushi", "Kairagi"], "characters": [
+            "Kamisato Ayaka", "Kamisato Ayato", "Raiden Shogun", "Traveler (Electro)", "Wanderer", "Yae Miko", "Yumemizuki Mizuki"
+        ]},
+        "c_spectral": {"name": "Spectral Nucleus", "type": "common_enemy_drops", "enemies": ["Specters"], "characters": [
+            "Aloy", "Chiori", "Gorou", "Kirara", "Kuki Shinobu", "Sangonomiya Kokomi"
+        ]},
+        "c_fungus": {"name": "Crystalline Cyst Dust", "type": "common_enemy_drops", "enemies": ["Fungi"], "characters": [
+            "Baizhu", "Kaveh", "Nahida", "Nilou", "Tighnari", "Traveler (Dendro)"
+        ]},
+        "c_brocade": {"name": "Rich Red Brocade", "type": "common_enemy_drops", "enemies": ["The Eremites"], "characters": [
+            "Alhaitham", "Candace", "Dehya", "Dori", "Faruzan", "Sethos"
+        ]},
+        "c_gear": {"name": "Artificed Dynamic Gear", "type": "common_enemy_drops", "enemies": ["Clockwork Meka"], "characters": [
+            "Charlotte", "Chevreuse", "Emilie", "Escoffier", "Lynette", "Skirk", "Wriothesley"
+        ]},
+        "c_xenochromatic": {"name": "Xenochromatic Crystal", "type": "common_enemy_drops", "enemies": ["Fontemer Aberrants"], "characters": [
+            "Clorinde", "Freminet", "Navia", "Neuvillette", "Sigewinne", "Traveler (Hydro)"
+        ]},
+        "c_whistle": {"name": "Saurian-Crowned Warrior's Golden Whistle", "type": "common_enemy_drops", "enemies": ["Sauroform Tribal Warriors"], "characters": [
+            "Iansan", "Ineffa", "Kachina", "Mavuika", "Mualani", "Traveler (Pyro)", "Xilonen"
+        ]},
+        "c_fang": {"name": "Tyrant's Fang", "type": "common_enemy_drops", "enemies": ["Natlan Saurians"], "characters": [
+            "Chasca", "Citlali", "Ifa", "Kinich", "Ororon", "Varesa"
+        ]},
+        "c_warrant": {"name": "Frost-Etched Warrant", "type": "common_enemy_drops", "enemies": ["Fatui Oprichniki"], "characters": [
+            "Durin", "Lauma", "Linnea", "Nefer", "Nicole", "Zibai"
+        ]},
+        "c_drive_shaft": {"name": "Precision Drive Shaft", "type": "common_enemy_drops", "enemies": ["Landcruiser"], "characters": [
+            "Aino", "Flins", "Illuga", "Jahoda", "Sandrone", "Varka"
+        ]},
+        "c_ethereal": {"name": "Ethereal Crystalscale Stone", "type": "common_enemy_drops", "enemies": ["Snowland Fae"], "characters": [
+            "Odette", "Vesna"
+        ]},
+        "c_chimeric": {"name": "Prime Chimeric Nexus", "type": "common_enemy_drops", "enemies": ["Aberrant Chimeric Monsters"], "characters": [
+            "Alyosha", "Traveler (Cryo)", "Vodyanitsa"
         ]}
     },
     "specialties": {
