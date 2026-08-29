@@ -96,12 +96,20 @@ def hsr_icon_candidates(name: str, form: dict) -> list:
     return candidates
 
 
-def hsr_form_art(name: str, form: dict, gender: str) -> list:
-    """Either-gendered characters have splash art per gender and per path."""
-    if gender != "Either" or not form.get("path"):
+def hsr_form_art(name: str, form: dict, gender: str, multi_form: bool) -> list:
+    """Splash art for a character whose forms have their own.
+
+    A character with several paths has one per path, and an either-gendered one
+    has that per gender as well. A single-path character has none, so asking
+    would be a lookup that always misses.
+    """
+    if not form.get("path") or not multi_form:
         return []
     label = HSR_PATH_LABELS.get(form["path"], form["path"])
-    return [f"Character {name} ({letter}) {label} Splash Art.png" for letter in ("F", "M")]
+    if gender == "Either":
+        return [f"Character {name} ({letter}) {label} Splash Art.png"
+                for letter in ("F", "M")]
+    return [f"Character {name} ({label}) Splash Art.png"]
 
 
 def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
@@ -110,7 +118,8 @@ def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
         wanted.append(f"Character {name} Splash Art.png")
         for form in forms:
             wanted.extend(hsr_icon_candidates(name, form))
-            wanted.extend(hsr_form_art(name, form, genders.get(name)))
+            wanted.extend(
+                hsr_form_art(name, form, genders.get(name), len(forms) > 1))
     resolved = wiki_images.resolve(wiki_images.HSR_API, wanted)
 
     images = {}
@@ -124,7 +133,8 @@ def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
             ))
             form_art.append([
                 {"wiki": resolved[c]}
-                for c in hsr_form_art(name, form, genders.get(name)) if c in resolved
+                for c in hsr_form_art(name, form, genders.get(name), len(forms) > 1)
+                if c in resolved
             ])
         images[name] = {
             "photo": photos[0],
