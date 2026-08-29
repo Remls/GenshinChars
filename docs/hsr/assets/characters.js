@@ -2,8 +2,6 @@ const HSR_PATHS = [
     'Abundance', 'Destruction', 'Elation', 'Erudition', 'Finality', 'Harmony',
     'Hunt', 'Nihility', 'Preservation', 'Remembrance',
 ]
-// The wiki has no path icon for these
-const HSR_MISSING_PATH_ICONS = ['Finality']
 // Splash screen filenames derive from the version name. Exceptions to that rule go here.
 // null means no file exists (the CDN renders a placeholder for missing files,
 // so they must be skipped, not guessed)

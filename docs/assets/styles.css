@@ -457,6 +457,28 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
 }
 /* Two tables side by side. A fixed label width keeps the two grey columns the
    same size, which auto layout would not do with different labels on each side. */
+/* One button per form, reusing the filter buttons' look. Sized to content and a
+   fixed padding, so a button does not resize when it becomes the selected one. */
+.char-sheet-forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    width: 95%;
+    margin: 0 auto 1.2rem;
+    font-family: var(--game-font, Genshin), Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+.char-sheet-forms .icon-button,
+.char-sheet-forms .icon-button.selected {
+    flex: 0 0 auto;
+    padding: 0.25em 0.6em;
+}
+/* Genshin's element icons carry their own colour and HSR's path icons are flat
+   white, and both wash out on the inverted selected background */
+.char-sheet-forms .icon-button.selected img {
+    filter: brightness(0);
+}
 .char-sheet-fields {
     width: 95%;
     margin: 0 auto;

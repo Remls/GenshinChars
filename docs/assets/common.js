@@ -225,6 +225,8 @@ const HSR_WIKI = 'https://honkai-star-rail.fandom.com/wiki/'
 const HSR_WIKI_IMAGES = 'houkai-star-rail'
 // Data uses the short name. The wiki and the grid label use the full one
 const HSR_PATH_LABELS = { 'Hunt': 'The Hunt' }
+// The wiki has no path icon for these
+const HSR_MISSING_PATH_ICONS = ['Finality']
 
 // A chip stays a wiki link, so middle click, modifier click and long press still
 // reach the wiki. Only a plain left click is taken over.
@@ -248,6 +250,8 @@ const CHAR_SHEET_GAMES = {
         itemAltNames: WIKI_ALT_NAMES,
         colourKey: 'element',
         colourPrefix: 'el',
+        formKey: 'element',
+        formIconLocal: 'assets/images/{label}.svg',
         fields: [
             { label: 'Birthday', from: 'char', key: 'birthday', format: 'date' },
             { label: 'Element', from: 'form', key: 'element' },
@@ -267,6 +271,10 @@ const CHAR_SHEET_GAMES = {
         itemFile: 'Item {name}.png',
         colourKey: 'combat_type',
         colourPrefix: 'ct',
+        formKey: 'path',
+        formLabels: HSR_PATH_LABELS,
+        formIconWiki: 'Path {label}.png',
+        formIconMissing: HSR_MISSING_PATH_ICONS,
         fields: [
             { label: 'Path', from: 'form', key: 'path', labels: HSR_PATH_LABELS },
             { label: 'Combat Type', from: 'form', key: 'combat_type' },
@@ -307,11 +315,24 @@ const CHAR_SHEET_MARKUP = `
         </div>
         <div class="char-sheet-body">
             <div class="char-sheet-title">
-                <span class="gi-font" :class="titleClass" :style="titleStyle"
-                    x-text="title"></span>
+                <span class="gi-font" :class="titleClass" x-text="title"></span>
                 <a class="char-sheet-wiki" :href="wikiLink" title="Open the wiki article"
                     >${EXTERNAL_LINK_ICON}</a>
             </div>
+            <template x-if="forms.length > 1">
+                <div class="char-sheet-forms">
+                    <template x-for="option in formOptions()" :key="option.index">
+                        <button type="button" class="icon-button"
+                            :class="{ selected: option.index === formIndex }"
+                            @click="selectForm(option.index)">
+                            <img :src="option.icon" width="20" height="20" loading="lazy"
+                                referrerpolicy="no-referrer"
+                                onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">
+                            <span class="icon-button-label" x-text="option.label"></span>
+                        </button>
+                    </template>
+                </div>
+            </template>
             <div class="char-sheet-fields">
                 <template x-for="(half, i) in fieldHalves()" :key="i">
                     <table>
@@ -357,9 +378,11 @@ const CHAR_SHEET_MARKUP = `
 document.addEventListener('alpine:init', () => {
     Alpine.data('charModal', () => ({
         open: false,
+        character: null,
+        forms: [],
+        formIndex: 0,
         title: null,
         titleClass: '',
-        titleStyle: '',
         wikiLink: '',
         art: [],
         fields: [],
@@ -367,47 +390,69 @@ document.addEventListener('alpine:init', () => {
         materials: [],
 
         show({ character, form }) {
-            const config = charSheetConfig
+            this.character = character
+            this.forms = character.forms || []
+            this.notes = character.notes
             // Without a form the debut one stands in, since a character record
             // carries no path or combat type of its own
-            const details = form || character.forms[0] || character
-            this.title = (form && form.display_name)
-                || character.display_name || character.name
+            this.selectForm(Math.max(0, this.forms.indexOf(form)))
+            this.open = true
+        },
+
+        selectForm(index) {
+            const config = charSheetConfig
+            const character = this.character
+            this.formIndex = index
+            const form = this.forms[index] || character
+            this.title = form.display_name || character.display_name || character.name
             // The primary name is the one that matches a wiki page. A form's
             // display name need not.
             this.wikiLink = config.wiki
                 + encodeURIComponent(character.name.replaceAll(' ', '_'))
             // Full art loads unscaled, so the tag needs referrerpolicy="no-referrer":
             // the CDN downsizes a bare URL to about 200px when a Referer arrives
-            this.art = (details.full_photo || []).map(image => characterImageUrl(
+            this.art = (form.full_photo || []).map(image => characterImageUrl(
                 image, config.wikiImages, config.artDir
             ))
             this.fields = config.fields
-                .map(field => this.buildField(field, character, details, config))
+                .map(field => this.buildField(field, character, form, config))
                 .filter(Boolean)
-            this.setTitleColour(character, form, config)
-            this.notes = character.notes
+            // The name takes the selected form's colour
+            const colour = form[config.colourKey]
+            this.titleClass = colour
+                ? `${config.colourPrefix}-${colour.toLowerCase()}`
+                : 'el-unknown'
             this.materials = this.buildMaterials(character, form, config)
-            this.open = true
         },
 
-        // The name takes its form's colour. Without a form it cycles through every
-        // colour the character has, which is how the grid renders them too.
-        setTitleColour(character, form, config) {
-            const values = form
-                ? [form[config.colourKey]].filter(Boolean)
-                : [...new Set(character.forms
-                    .map(f => f[config.colourKey]).filter(Boolean))]
-            const vars = values.map(v => `${config.colourPrefix}-${v.toLowerCase()}`)
-            this.titleClass = vars.length > 1 ? 'el-multi' : (vars[0] || 'el-unknown')
-            this.titleStyle = formColourSlots(vars)
+        // One entry per form, labelled by whatever distinguishes them: the element
+        // in Genshin, the path in HSR
+        formOptions() {
+            const config = charSheetConfig
+            return this.forms.map((form, index) => {
+                const value = form[config.formKey]
+                const label = (config.formLabels && config.formLabels[value])
+                    || value || 'Unknown'
+                return { index, label, icon: this.formIconUrl(value, label, config) }
+            })
+        },
+
+        formIconUrl(value, label, config) {
+            if (!value) return FALLBACK_PHOTO
+            if (config.formIconLocal) {
+                return config.formIconLocal.replace('{label}', label)
+            }
+            if ((config.formIconMissing || []).includes(value)) return FALLBACK_PHOTO
+            return wikiFileUrl(
+                config.formIconWiki.replace('{label}', label), config.wikiImages, 40
+            )
         },
 
         // A form's materials sit under its own name, and what every form needs
         // sits under the character's, so the sheet shows both
         buildMaterials(character, form, config) {
             const own = config.materials[character.name] || []
-            const perForm = (form && form.display_name
+            const perForm = (form.display_name
                 && config.materials[form.display_name]) || []
             const seen = new Set()
             return [...own, ...perForm]
