@@ -1,7 +1,63 @@
 {
-    "version": "0c6b06f",
-    "last_updated": "2026-08-29T07:33:17.762292Z",
+    "version": "62bcfaf",
+    "last_updated": "2026-08-31T05:58:02.924888Z",
     "characters": {
+        "Nihilux": {
+            "name": "Nihilux",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Elation",
+                    "combat_type": "Quantum",
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": {
+                        "local": "nihilux.png"
+                    },
+                    "full_photo": [
+                        {
+                            "local": "nihilux.png"
+                        }
+                    ]
+                }
+            ],
+            "gender": "Female",
+            "world": "Planarcadia",
+            "release_version": null,
+            "release_date": null,
+            "is_released": false,
+            "photo": {
+                "local": "nihilux.png"
+            },
+            "full_photo": [
+                {
+                    "local": "nihilux.png"
+                }
+            ]
+        },
+        "Firefly SP": {
+            "name": "Firefly SP",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Finality",
+                    "combat_type": "Fire",
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Glamoth",
+            "release_version": null,
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
         "Pearl": {
             "name": "Pearl",
             "display_name": null,
@@ -2408,6 +2464,17 @@
                             "wiki": "Character Trailblazer (M) Elation Splash Art.png"
                         }
                     ]
+                },
+                {
+                    "path": "Finality",
+                    "combat_type": "Imaginary",
+                    "display_name": "Trailblazer (Finality)",
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": {
+                        "wiki": "Character Trailblazer (Destruction) Icon.png"
+                    },
+                    "full_photo": []
                 }
             ],
             "gender": "Either",

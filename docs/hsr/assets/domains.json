@@ -1,6 +1,6 @@
 {
-    "version": "a9f78b6",
-    "last_updated": "2026-08-29T12:35:37.262058Z",
+    "version": "62bcfaf",
+    "last_updated": "2026-08-31T05:58:02.930485Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -593,7 +593,7 @@
             "location": "Silvermane Guard Restricted Zone",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Endotherm Chitin.png",
+            "image": "Stagnant Shadow - Shape of Blaze.png",
             "rewards": [
                 "ss_endotherm_chitin"
             ]
@@ -603,7 +603,7 @@
             "location": "Stargazer Navalia",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Shape Shifter's Lightning Staff.png",
+            "image": "Stagnant Shadow - Shape of Doom.png",
             "rewards": [
                 "ss_shape_shifter_s_lightning_staff"
             ]
@@ -613,7 +613,7 @@
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Lightning Crown of the Past Shadow.png",
+            "image": "Stagnant Shadow - Shape of Fulmination.png",
             "rewards": [
                 "ss_lightning_crown_of_the_past_shadow"
             ]
@@ -623,7 +623,7 @@
             "location": "Rivet Town",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Storm Eye.png",
+            "image": "Stagnant Shadow - Shape of Gust.png",
             "rewards": [
                 "ss_storm_eye"
             ]
@@ -633,7 +633,7 @@
             "location": "Cloudford",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Gelid Chitin.png",
+            "image": "Stagnant Shadow - Shape of Icicle.png",
             "rewards": [
                 "ss_gelid_chitin"
             ]
@@ -643,7 +643,7 @@
             "location": "Backwater Pass",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Golden Crown of the Past Shadow.png",
+            "image": "Stagnant Shadow - Shape of Mirage.png",
             "rewards": [
                 "ss_golden_crown_of_the_past_shadow"
             ]
@@ -653,7 +653,7 @@
             "location": "Base Zone",
             "region": "Herta Space Station",
             "type": "stagnant_shadow",
-            "image": "Item Void Cast Iron.png",
+            "image": "Stagnant Shadow - Shape of Quanta.png",
             "rewards": [
                 "ss_void_cast_iron"
             ]
@@ -663,7 +663,7 @@
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Horn of Snow.png",
+            "image": "Stagnant Shadow - Shape of Rime.png",
             "rewards": [
                 "ss_horn_of_snow"
             ]
@@ -673,7 +673,7 @@
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Broken Teeth of Iron Wolf.png",
+            "image": "Stagnant Shadow - Shape of Spike.png",
             "rewards": [
                 "ss_broken_teeth_of_iron_wolf"
             ]
@@ -683,7 +683,7 @@
             "location": "Alchemy Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Ascendant Debris.png",
+            "image": "Stagnant Shadow - Shape of Celestial.png",
             "rewards": [
                 "ss_ascendant_debris"
             ]
@@ -693,7 +693,7 @@
             "location": "Scalegorge Waterscape",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Nail of the Ape.png",
+            "image": "Stagnant Shadow - Shape of Abomination.png",
             "rewards": [
                 "ss_nail_of_the_ape"
             ]
@@ -703,7 +703,7 @@
             "location": "Artisanship Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Suppressing Edict.png",
+            "image": "Stagnant Shadow - Shape of Puppetry.png",
             "rewards": [
                 "ss_suppressing_edict"
             ]
@@ -713,7 +713,7 @@
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Item Searing Steel Blade.png",
+            "image": "Stagnant Shadow - Shape of Scorch.png",
             "rewards": [
                 "ss_searing_steel_blade"
             ]
@@ -723,7 +723,7 @@
             "location": "Fyxestroll Garden",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Netherworld Token.png",
+            "image": "Stagnant Shadow - Shape of Perdition.png",
             "rewards": [
                 "ss_netherworld_token"
             ]
@@ -733,7 +733,7 @@
             "location": "The Reverie (Dreamscape)",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item Dream Fridge.png",
+            "image": "Stagnant Shadow - Shape of Nectar.png",
             "rewards": [
                 "ss_dream_fridge"
             ]
@@ -743,7 +743,7 @@
             "location": "Dream's Edge",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item Dream Flamer.png",
+            "image": "Stagnant Shadow - Shape of Roast.png",
             "rewards": [
                 "ss_dream_flamer"
             ]
@@ -753,7 +753,7 @@
             "location": "Dewlight Pavilion",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item Raging Heart.png",
+            "image": "Stagnant Shadow - Shape of Ire.png",
             "rewards": [
                 "ss_raging_heart"
             ]
@@ -763,7 +763,7 @@
             "location": "Clock Studios Theme Park",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item IPC Work Permit.png",
+            "image": "Stagnant Shadow - Shape of Duty.png",
             "rewards": [
                 "ss_ipc_work_permit"
             ]
@@ -773,7 +773,7 @@
             "location": "Penacony Grand Theater",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item A Glass of the Besotted Era.png",
+            "image": "Stagnant Shadow - Shape of Gloam.png",
             "rewards": [
                 "ss_a_glass_of_the_besotted_era"
             ]
@@ -783,7 +783,7 @@
             "location": "The Shackling Prison",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Item Nail of the Beast Coffin.png",
+            "image": "Stagnant Shadow - Shape of Mechwolf.png",
             "rewards": [
                 "ss_nail_of_the_beast_coffin"
             ]
