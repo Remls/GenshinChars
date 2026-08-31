@@ -1,6 +1,6 @@
 {
-    "version": "f710bf0",
-    "last_updated": "2026-08-29T05:18:12.479863Z",
+    "version": "e2e5d82",
+    "last_updated": "2026-08-31T10:28:28.846579Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -357,7 +357,7 @@
             "weapon": "Catalyst",
             "region": "Snezhnaya",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "03-29",
             "release_version": "7.1",
             "release_date": null,
             "forms": [
@@ -399,7 +399,7 @@
             "weapon": "Sword",
             "region": "Snezhnaya",
             "gender": "Female",
-            "birthday": null,
+            "birthday": "02-04",
             "release_version": "7.1",
             "release_date": null,
             "forms": [
