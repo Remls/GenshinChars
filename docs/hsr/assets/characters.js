@@ -49,10 +49,11 @@ document.addEventListener('alpine:init', () => {
                     this.allData = d
                     this.versionData = d['versions']
                     configureCharSheet('hsr', this.versionData,
-                        buildCharacterMaterials(domainsData, 'hsr'))
+                        buildCharacterMaterials(domainsData, 'hsr'), d.characters)
                     this.setFiltersFromUrl()
                     this.updateCharacterData()
                     this.urlSyncReady = true
+                    openCharSheetFromUrl()
                 })
                 .finally(() => this.$nextTick(finishPageLoading))
         },
@@ -65,27 +66,27 @@ document.addEventListener('alpine:init', () => {
             this.selectedVersion = this.defaultVersion
 
             const urlParams = new URLSearchParams(window.location.search)
-            const version = urlParams.get('v')
+            const version = urlParams.get('version')
             if (version) {
                 if (version.toLowerCase() === 'all') this.selectedVersion = null
                 else if (this.versionData[version]) this.selectedVersion = version
             }
-            const rarity = urlParams.get('r')
+            const rarity = urlParams.get('rarity')
             if (['4', '5', 'unknown'].includes(rarity)) {
                 this.selectedRarity = this.upperCaseFirst(rarity)
             }
-            const gender = urlParams.get('g')
+            const gender = urlParams.get('gender')
             if (Object.keys(GENDERS).concat('Unknown').some(g => g.toLowerCase() === gender)) {
                 this.selectedGender = this.upperCaseFirst(gender)
             }
-            const world = urlParams.get('w')
+            const world = urlParams.get('world')
             if (world) {
                 HSR_WORLDS.forEach(w => {
                     if (world.toLowerCase() === w.toLowerCase()) this.selectedWorld = w
                 })
                 if (world.toLowerCase() === 'unknown') this.selectedWorld = 'Unknown'
             }
-            const specials = (urlParams.get('s') || '').split(',')
+            const specials = (urlParams.get('specials') || '').split(',')
             this.includedSpecials = SPECIAL_CHARACTERS.hsr.filter(
                 name => specials.some(s => s.toLowerCase() === name.toLowerCase())
             )
@@ -95,13 +96,13 @@ document.addEventListener('alpine:init', () => {
             if (!this.urlSyncReady) return
             const params = new URLSearchParams()
             if (this.selectedVersion !== this.defaultVersion) {
-                params.set('v', this.selectedVersion || 'all')
+                params.set('version', this.selectedVersion || 'all')
             }
-            if (this.selectedRarity) params.set('r', this.selectedRarity.toLowerCase())
-            if (this.selectedGender) params.set('g', this.selectedGender.toLowerCase())
-            if (this.selectedWorld) params.set('w', this.selectedWorld.toLowerCase())
+            if (this.selectedRarity) params.set('rarity', this.selectedRarity.toLowerCase())
+            if (this.selectedGender) params.set('gender', this.selectedGender.toLowerCase())
+            if (this.selectedWorld) params.set('world', this.selectedWorld.toLowerCase())
             if (this.includedSpecials.length > 0) {
-                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+                params.set('specials', this.includedSpecials.map(n => n.toLowerCase()).join(','))
             }
             const query = params.toString()
             history.replaceState(null, '', query ? `?${query}` : window.location.pathname)

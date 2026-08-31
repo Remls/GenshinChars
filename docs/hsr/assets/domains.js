@@ -35,11 +35,12 @@ document.addEventListener('alpine:init', () => {
                 this.buildCharacterLookup(charactersData)
                 this.buildRewardSources()
                 configureCharSheet('hsr', charactersData.versions,
-                    buildCharacterMaterials(domainsData, 'hsr'))
+                    buildCharacterMaterials(domainsData, 'hsr'), charactersData.characters)
                 this.setFiltersFromUrl()
                 ;['searchQuery', 'selectedType', 'selectedWorld', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
+                openCharSheetFromUrl()
             }).finally(() => this.$nextTick(finishPageLoading))
         },
 
@@ -85,19 +86,17 @@ document.addEventListener('alpine:init', () => {
 
         setFiltersFromUrl() {
             const urlParams = new URLSearchParams(window.location.search)
-            const type = urlParams.get('t')
-            Object.entries(HSR_DOMAIN_TYPES).forEach(([key, details]) => {
-                if (type === details.short) this.selectedType = key
-            })
-            const world = urlParams.get('w')
+            const type = (urlParams.get('type') || '').replaceAll('-', '_')
+            if (HSR_DOMAIN_TYPES[type]) this.selectedType = type
+            const world = urlParams.get('world')
             if (world) {
                 HSR_DOMAIN_WORLDS.forEach(w => {
                     if (world.toLowerCase() === w.toLowerCase()) this.selectedWorld = w
                 })
             }
-            const query = urlParams.get('q')
+            const query = urlParams.get('search')
             if (query) this.searchQuery = query
-            const specials = (urlParams.get('s') || '').split(',')
+            const specials = (urlParams.get('specials') || '').split(',')
             this.includedSpecials = SPECIAL_CHARACTERS.hsr.filter(
                 name => specials.some(x => x.toLowerCase() === name.toLowerCase())
             )
@@ -106,15 +105,15 @@ document.addEventListener('alpine:init', () => {
         syncFiltersToUrl() {
             const params = new URLSearchParams()
             if (this.searching()) {
-                params.set('q', this.searchQuery)
+                params.set('search', this.searchQuery)
             } else {
-                params.set('t', HSR_DOMAIN_TYPES[this.selectedType].short)
+                params.set('type', this.selectedType.replaceAll('_', '-'))
                 if (this.selectedWorld !== 'All') {
-                    params.set('w', this.selectedWorld.toLowerCase())
+                    params.set('world', this.selectedWorld.toLowerCase())
                 }
             }
             if (this.includedSpecials.length > 0) {
-                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+                params.set('specials', this.includedSpecials.map(n => n.toLowerCase()).join(','))
             }
             history.replaceState(null, '', `?${params.toString()}`)
         },

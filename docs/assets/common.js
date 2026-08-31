@@ -206,7 +206,6 @@ const DOMAIN_TYPES = {
     weapon_ascension_mats: {
         button_label: 'Weapon mats',
         icon: 'Icon Inventory Weapons.png',
-        short: 'w',
         string: 'Weapon ascension materials',
         title: 'Domains of Forgery',
         description: 'Provides weapon ascension materials',
@@ -215,7 +214,6 @@ const DOMAIN_TYPES = {
     talent_upgrade_mats: {
         button_label: 'Talent mats',
         icon: 'Icon Archive Books.png',
-        short: 't',
         string: 'Talent upgrade materials',
         title: 'Domains of Mastery',
         description: 'Provides character talent level-up materials',
@@ -224,7 +222,6 @@ const DOMAIN_TYPES = {
     artifacts: {
         button_label: 'Artifacts',
         icon: 'Icon Inventory Artifacts.png',
-        short: 'a',
         string: 'Artifacts',
         title: 'Domains of Blessing',
         description: 'Provides artifacts',
@@ -233,7 +230,6 @@ const DOMAIN_TYPES = {
     common_enemy_drops: {
         button_label: 'Common enemies',
         icon: 'Icon Archive Living Beings.png',
-        short: 'c',
         string: 'Common enemy drops',
         title: 'Common enemy drops',
         description: 'Provides character ascension and talent level-up materials',
@@ -244,7 +240,6 @@ const DOMAIN_TYPES = {
     normal_bosses: {
         button_label: 'Normal bosses',
         icon: 'Icon Rolling Crossfire.png',
-        short: 'nb',
         string: 'Normal bosses',
         title: 'Normal bosses',
         description: 'Provides character ascension materials',
@@ -253,7 +248,6 @@ const DOMAIN_TYPES = {
     weekly_bosses: {
         button_label: 'Weekly bosses',
         icon: 'Icon Tutorial Monster.png',
-        short: 'wb',
         string: 'Weekly bosses',
         title: 'Weekly bosses',
         description: 'Provides character talent level-up materials (Lv7+)',
@@ -262,7 +256,6 @@ const DOMAIN_TYPES = {
     regional_specialties: {
         button_label: 'Specialties',
         icon: 'Icon Inventory Materials.png',
-        short: 's',
         string: 'Regional specialties',
         title: 'Regional specialties',
         description: 'Provides character ascension materials',
@@ -272,7 +265,6 @@ const DOMAIN_TYPES = {
     other_materials: {
         button_label: 'Other mats',
         icon: 'Icon Inventory Precious Items.png',
-        short: 'o',
         string: 'Other materials',
         title: 'Other materials',
         description: 'Other miscellaneous ascension materials that are not farmable',
@@ -285,7 +277,6 @@ const DOMAIN_TYPES = {
 const HSR_DOMAIN_TYPES = {
     calyx_crimson: {
         button_label: 'Trace mats',
-        short: 't',
         icon: 'Icon Calyx Crimson.png',
         string: 'Trace materials',
         title: 'Crimson Calyxes',
@@ -293,7 +284,6 @@ const HSR_DOMAIN_TYPES = {
         description: 'Provides trace materials',
     },
     cavern_of_corrosion: {
-        short: 'r',
         icon: 'Icon Cavern of Corrosion.png',
         string: 'Relics',
         title: 'Caverns of Corrosion',
@@ -301,7 +291,6 @@ const HSR_DOMAIN_TYPES = {
         description: 'Provides relic sets',
     },
     planar_ornament: {
-        short: 'p',
         icon: 'Icon Divergent Universe Protean Hero.png',
         string: 'Planar ornaments',
         title: 'Divergent Universe',
@@ -309,7 +298,6 @@ const HSR_DOMAIN_TYPES = {
     },
     common_enemy_drops: {
         button_label: 'Common enemies',
-        short: 'c',
         icon: 'Icon Enemy.png',
         light_glyph: true,
         string: 'Common enemy drops',
@@ -319,7 +307,6 @@ const HSR_DOMAIN_TYPES = {
         no_worlds: true,
     },
     stagnant_shadow: {
-        short: 'nb',
         icon: 'Icon Stagnant Shadow.png',
         string: 'Normal bosses',
         title: 'Normal bosses',
@@ -327,7 +314,6 @@ const HSR_DOMAIN_TYPES = {
         description: 'Provides character ascension materials',
     },
     echo_of_war: {
-        short: 'wb',
         icon: 'Icon Echo of War Enemy.png',
         string: 'Weekly bosses',
         title: 'Weekly bosses',
@@ -336,7 +322,6 @@ const HSR_DOMAIN_TYPES = {
     },
     other_materials: {
         button_label: 'Other mats',
-        short: 'o',
         icon: 'Icon Other Materials.png',
         light_glyph: true,
         string: 'Other materials',
@@ -496,18 +481,67 @@ function finishPageLoading() {
 
 let charSheetConfig = null
 
-function configureCharSheet(game, versionData, materials = {}) {
-    charSheetConfig = { ...CHAR_SHEET_GAMES[game], versionData, materials }
+function configureCharSheet(game, versionData, materials = {}, characters = {}) {
+    charSheetConfig = {
+        ...CHAR_SHEET_GAMES[game], versionData, materials,
+        slugs: buildCharSheetSlugs(characters),
+    }
+}
+
+// The name as it travels in a URL: lowercase, one hyphen per run of anything else
+function charSheetSlug(text) {
+    return (text || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+}
+
+// Every name a link can address, mapped to the sheet it opens. Character names
+// come first, so one that reads like another's form still wins.
+function buildCharSheetSlugs(characters) {
+    const records = Object.values(characters || {})
+    const slugs = {}
+    const add = (text, character, form) => {
+        const slug = charSheetSlug(text)
+        if (slug && !(slug in slugs)) slugs[slug] = { character, form }
+    }
+    records.forEach(character => {
+        add(character.name, character, null)
+        add(character.display_name, character, null)
+    })
+    records.forEach(character => {
+        (character.forms || []).forEach(form => add(form.display_name, character, form))
+    })
+    return slugs
+}
+
+// The slug a sheet writes back, naming the form only when a character has several
+function charSheetSlugFor(character, form) {
+    const forms = character.forms || []
+    if (forms.length > 1 && form && form.display_name) {
+        return charSheetSlug(form.display_name)
+    }
+    return charSheetSlug(character.name)
 }
 
 function openCharSheet(character, form = null) {
     window.dispatchEvent(new CustomEvent('char-sheet', { detail: { character, form } }))
 }
 
+// Opens the sheet a "?character=" link asks for. An unknown name leaves the page
+// as it loaded, the way an unknown filter value does.
+function openCharSheetFromUrl() {
+    const slug = new URLSearchParams(window.location.search).get('character')
+    const match = slug && charSheetConfig.slugs[slug]
+    if (match) openCharSheet(match.character, match.form)
+}
+
 const EXTERNAL_LINK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"'
     + ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
     + '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
     + '<polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
+
+const SHARE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"'
+    + ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+    + '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>'
+    + '<line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg>'
 
 const CHAR_SHEET_MARKUP = `
 <div class="modal char-sheet" x-data="charModal" x-cloak x-show="open"
@@ -525,6 +559,11 @@ const CHAR_SHEET_MARKUP = `
                 <span class="gi-font" :class="titleClass" x-text="title"></span>
                 <a class="char-sheet-wiki" :href="wikiLink" title="Open the wiki article"
                     >${EXTERNAL_LINK_ICON}</a>
+                <button type="button" class="char-sheet-wiki char-sheet-share"
+                    title="Share a link to this character" @click="share()"
+                    >${SHARE_ICON}</button>
+                <span class="char-sheet-shared" x-show="shared" x-transition
+                    >Link copied</span>
             </div>
             <template x-if="forms.length > 1">
                 <div class="char-sheet-forms">
@@ -610,11 +649,42 @@ document.addEventListener('alpine:init', () => {
         fields: [],
         notes: null,
         materials: [],
+        shared: false,
 
         init() {
             this.$watch('open', value => {
                 document.body.classList.toggle('modal-open', value)
+                this.syncToUrl()
             })
+        },
+
+        // The open sheet names itself in the address bar, so the link in it is
+        // the link to what the reader is looking at
+        syncToUrl() {
+            const params = new URLSearchParams(window.location.search)
+            if (this.open) params.set('character', this.slug())
+            else params.delete('character')
+            const query = params.toString()
+            history.replaceState(null, '', query ? `?${query}` : window.location.pathname)
+        },
+
+        slug() {
+            return charSheetSlugFor(this.character, this.forms[this.formIndex])
+        },
+
+        // The native share sheet where there is one, the clipboard otherwise.
+        // Cancelling the native sheet is not a failure, so it copies nothing.
+        share() {
+            const url = `${window.location.origin}${window.location.pathname}`
+                + `?character=${this.slug()}`
+            if (navigator.share) {
+                navigator.share({ title: this.title, url }).catch(() => {})
+                return
+            }
+            navigator.clipboard.writeText(url).then(() => {
+                this.shared = true
+                setTimeout(() => { this.shared = false }, 2000)
+            }).catch(() => {})
         },
 
         show({ character, form }) {
@@ -651,6 +721,7 @@ document.addEventListener('alpine:init', () => {
                 ? `${config.colourPrefix}-${colour.toLowerCase()}`
                 : 'el-unknown'
             this.materials = this.buildMaterials(character, form, config)
+            if (this.open) this.syncToUrl()
         },
 
         // One entry per form, labelled by whatever distinguishes them: the element

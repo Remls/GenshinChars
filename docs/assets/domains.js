@@ -56,13 +56,14 @@ document.addEventListener('alpine:init', () => {
                 this.buildRewardSources()
                 this.buildImageMaps()
                 configureCharSheet('genshin', charactersData.versions,
-                    buildCharacterMaterials(domainsData, 'genshin'))
+                    buildCharacterMaterials(domainsData, 'genshin'), charactersData.characters)
                 // The day filter starts on the current server day
                 this.selectedDay = this.serverDay
                 this.setFiltersFromUrl()
                 ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
+                openCharSheetFromUrl()
             }).finally(() => this.$nextTick(finishPageLoading))
         },
 
@@ -233,41 +234,41 @@ document.addEventListener('alpine:init', () => {
 
         setFiltersFromUrl() {
             const urlParams = new URLSearchParams(window.location.search)
-            const type = urlParams.get('t')
-            Object.entries(DOMAIN_TYPES).forEach(([key, details]) => {
-                if (type === details.short) this.selectedType = key
-            })
-            const region = urlParams.get('re')
+            const type = (urlParams.get('type') || '').replaceAll('-', '_')
+            if (DOMAIN_TYPES[type]) this.selectedType = type
+            const region = urlParams.get('region')
             if (region) {
                 DOMAIN_REGIONS.forEach(r => {
                     if (region.toLowerCase() === r.toLowerCase()) this.selectedRegion = r
                 })
             }
-            const day = urlParams.get('d')
-            if (DAY_KEYS.includes(day)) this.selectedDay = day
-            const specials = (urlParams.get('s') || '').split(',')
+            const day = (urlParams.get('day') || '').toLowerCase()
+            DAY_KEYS.forEach(key => {
+                if (day === DOMAIN_DAYS[key].toLowerCase()) this.selectedDay = key
+            })
+            const specials = (urlParams.get('specials') || '').split(',')
             this.includedSpecials = SPECIAL_CHARACTERS.genshin.filter(
                 name => specials.some(x => x.toLowerCase() === name.toLowerCase())
             )
-            const query = urlParams.get('q')
+            const query = urlParams.get('search')
             if (query) this.searchQuery = query
         },
 
         syncFiltersToUrl() {
             const params = new URLSearchParams()
             if (this.searching()) {
-                params.set('q', this.searchQuery)
+                params.set('search', this.searchQuery)
             } else {
-                params.set('t', DOMAIN_TYPES[this.selectedType].short)
+                params.set('type', this.selectedType.replaceAll('_', '-'))
                 if (this.selectedRegion !== 'All') {
-                    params.set('re', this.selectedRegion.toLowerCase())
+                    params.set('region', this.selectedRegion.toLowerCase())
                 }
                 if (this.typeHasChangingRewards()) {
-                    params.set('d', this.selectedDay)
+                    params.set('day', DOMAIN_DAYS[this.selectedDay].toLowerCase())
                 }
             }
             if (this.includedSpecials.length > 0) {
-                params.set('s', this.includedSpecials.map(n => n.toLowerCase()).join(','))
+                params.set('specials', this.includedSpecials.map(n => n.toLowerCase()).join(','))
             }
             history.replaceState(null, '', `?${params.toString()}`)
         },
