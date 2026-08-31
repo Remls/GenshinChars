@@ -547,6 +547,12 @@ document.addEventListener('alpine:init', () => {
         notes: null,
         materials: [],
 
+        init() {
+            this.$watch('open', value => {
+                document.body.classList.toggle('modal-open', value)
+            })
+        },
+
         show({ character, form }) {
             this.character = character
             this.forms = character.forms || []
