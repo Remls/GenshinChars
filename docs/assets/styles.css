@@ -488,8 +488,6 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
     height: 18px;
     display: block;
 }
-/* Two tables side by side. A fixed label width keeps the two grey columns the
-   same size, which auto layout would not do with different labels on each side. */
 /* One button per form, reusing the filter buttons' look. Sized to content and a
    fixed padding, so a button does not resize when it becomes the selected one. */
 .char-sheet-forms {
@@ -512,6 +510,8 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
 .char-sheet-forms .icon-button.selected img {
     filter: brightness(0);
 }
+/* Two tables side by side. A fixed label width keeps the two grey columns the
+   same size, which auto layout would not do with different labels on each side. */
 .char-sheet-fields {
     width: 95%;
     margin: 0 auto;
@@ -538,24 +538,56 @@ a.char-sheet-wiki, a.char-sheet-wiki:visited, a.char-sheet-wiki:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 28px;
+    gap: 14px 44px;
 }
 a.char-sheet-material, a.char-sheet-material:visited, a.char-sheet-material:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
-    width: 120px;
+    width: 130px;
     text-align: center;
     text-decoration: none;
 }
-.char-sheet-material:hover span {
+.char-sheet-material:hover .char-sheet-material-name {
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+/* The bottom margin clears the boss badge, which hangs below the icon */
+.char-sheet-material-art {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
 }
 .char-sheet-material img {
     width: 64px;
     height: 64px;
+}
+/* The boss the drop comes from, badged onto the corner of the item icon. A boss
+   with no picture keeps the badge, empty. */
+.char-sheet-material-boss {
+    position: absolute;
+    right: -14px;
+    bottom: -8px;
+    box-sizing: border-box;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    border: 1px solid var(--txt-secondary-color);
+}
+.char-sheet-material .char-sheet-material-boss img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.char-sheet-material-boss-name {
+    font-size: 11px;
+    margin-top: -2px;
 }
 /* Too narrow for two columns of label and value, so the halves stack and the
    1px overlap joins them back into one table */

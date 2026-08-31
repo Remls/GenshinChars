@@ -347,6 +347,44 @@ const HSR_DOMAIN_TYPES = {
     },
 }
 
+// Where a drop comes from, per domain type: the boss for boss drops, the domain
+// itself for the rest. A source with no picture keeps its name.
+const BOSS_SOURCE_TYPES = {
+    genshin: {
+        talent_upgrade_mats: domain => ({ name: domain.name, image: domain.image }),
+        normal_bosses: domain => ({ name: domain.name, image: domain.image }),
+        weekly_bosses: domain => ({ name: (domain.boss || {}).name, image: domain.image }),
+    },
+    hsr: {
+        // A stage with no art of its own is filed under the item it drops
+        stagnant_shadow: domain => ({
+            name: domain.name,
+            image: domain.image.startsWith('Item ') ? null : domain.image,
+        }),
+        echo_of_war: domain => ({
+            name: (domain.boss || [])[0],
+            image: `Icon Echo of War ${domain.name}.png`,
+        }),
+    },
+}
+
+// Source per reward key, for the drops that have one
+function buildBossSources(domainsData, game) {
+    const readers = BOSS_SOURCE_TYPES[game] || {}
+    const sources = {}
+    ;(domainsData.domains || []).forEach(domain => {
+        const read = readers[domain.type]
+        if (!read) return
+        const boss = read(domain)
+        if (!boss.name) return
+        const keys = Array.isArray(domain.rewards)
+            ? domain.rewards
+            : Object.values(domain.rewards || {}).flat()
+        keys.forEach(key => { sources[key] = boss })
+    })
+    return sources
+}
+
 // The reverse of the domains data: what each character needs, keyed by the name
 // the reward lists use. Multi-form characters are named both plainly, for what
 // every form needs, and per form. "order" runs in domain type order, then in
@@ -360,19 +398,22 @@ function buildCharacterMaterials(domainsData, game) {
         if (types[key].source) groupTypes[types[key].source] = key
     })
     const groups = ['rewards', ...Object.keys(groupTypes)]
+    const bosses = buildBossSources(domainsData, game)
     const entries = []
     groups.forEach(group => {
-        Object.values(domainsData[group] || {}).forEach((entry, index) => {
+        Object.entries(domainsData[group] || {}).forEach(([key, entry], index) => {
             const rank = typeKeys.indexOf(entry.type || groupTypes[group])
-            entries.push({ entry, rank: rank === -1 ? typeKeys.length : rank, index })
+            entries.push({ key, entry, rank: rank === -1 ? typeKeys.length : rank, index })
         })
     })
     entries.sort((a, b) => a.rank - b.rank || a.index - b.index)
     const materials = {}
-    entries.forEach(({ entry }, order) => {
+    entries.forEach(({ key, entry }, order) => {
         (entry.characters || []).forEach(name => {
             if (!materials[name]) materials[name] = []
-            materials[name].push({ name: entry.name, image: entry.image, order })
+            materials[name].push({
+                name: entry.name, image: entry.image, boss: bosses[key], order,
+            })
         })
     })
     return materials
@@ -520,10 +561,25 @@ const CHAR_SHEET_MARKUP = `
                 <div class="char-sheet-materials">
                     <template x-for="item in materials" :key="item.name">
                         <a class="char-sheet-material" :href="item.href">
-                            <img :src="item.src" width="64" height="64" loading="lazy"
-                                referrerpolicy="no-referrer"
-                                onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">
-                            <span class="gi-font" x-text="item.name"></span>
+                            <span class="char-sheet-material-art">
+                                <img :src="item.src" width="64" height="64" loading="lazy"
+                                    referrerpolicy="no-referrer"
+                                    onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">
+                                <template x-if="item.boss">
+                                    <span class="char-sheet-material-boss" :title="item.boss.name">
+                                        <template x-if="item.boss.src">
+                                            <img :src="item.boss.src" loading="lazy"
+                                                referrerpolicy="no-referrer"
+                                                onerror="this.onerror=null;this.remove()">
+                                        </template>
+                                    </span>
+                                </template>
+                            </span>
+                            <span class="char-sheet-material-name gi-font" x-text="item.name"></span>
+                            <template x-if="item.boss">
+                                <span class="char-sheet-material-boss-name text-unknown"
+                                    x-text="item.boss.name"></span>
+                            </template>
                         </a>
                     </template>
                 </div>
@@ -636,6 +692,11 @@ document.addEventListener('alpine:init', () => {
                         ((config.itemAltNames || {})[item.name] || item.name)
                             .replaceAll(' ', '_')),
                     src: this.itemImageUrl(item, config),
+                    boss: item.boss && {
+                        name: item.boss.name,
+                        src: item.boss.image
+                            && wikiFileUrl(item.boss.image, config.wikiImages, 80),
+                    },
                 }))
         },
 
