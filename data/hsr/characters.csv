@@ -1,5 +1,5 @@
 name,display_name,rarity,path,combat_type,gender,world,release_version,release_date
-Trailblazer,Trailblazer (Destruction); Trailblazer (Preservation); Trailblazer (Harmony); Trailblazer (Remembrance); Trailblazer (Elation),5,Destruction; Preservation; Harmony; Remembrance; Elation,Physical; Fire; Imaginary; Ice; Lightning,Either,Astral Express,1.0; 1.0; 2.2; 3.0; 4.2,R
+Trailblazer,Trailblazer (Destruction); Trailblazer (Preservation); Trailblazer (Harmony); Trailblazer (Remembrance); Trailblazer (Elation); Trailblazer (Finality),5,Destruction; Preservation; Harmony; Remembrance; Elation; Finality,Physical; Fire; Imaginary; Ice; Lightning; Imaginary,Either,Astral Express,1.0; 1.0; 2.2; 3.0; 4.2; ,R; R; R; R; R; 
 
 Acheron,,5,Nihility,Lightning,Female,Cosmic,2.1,R
 Aglaea,,5,Remembrance,Lightning,Female,Amphoreus,3.0,2025-02-05
@@ -29,6 +29,7 @@ Evanescia,,5,Elation,Physical,Female,Planarcadia,4.2,2026-05-13
 Evernight,,5,Remembrance,Ice,Female,Amphoreus,3.6,R
 Feixiao,,5,Hunt,Wind,Female,Xianzhou Alliance,2.5,R
 Firefly,,5,Destruction,Fire,Female,Glamoth,2.3,R
+Firefly SP,,5,Finality,Fire,Female,Glamoth,,
 Fu Xuan,,5,Preservation,Quantum,Female,Xianzhou Alliance,1.3,2023-09-20
 Fugue,,5,Nihility,Fire,Female,Xianzhou Alliance,2.7,2024-12-25
 Gallagher,,4,Abundance,Fire,Male,Penacony,2.1,R
@@ -58,6 +59,7 @@ Mortenax Blade,,5,Nihility,Fire,Male,,4.3,R
 Moze,,4,Hunt,Lightning,Male,Xianzhou Alliance,2.5,R
 Mydei,,5,Destruction,Imaginary,Male,Amphoreus,3.1,2025-03-19
 Natasha,,4,Abundance,Physical,Female,Jarilo-VI,1.0,R
+Nihilux,,5,Elation,Quantum,Female,Planarcadia,,
 Pearl,,5,Elation,Ice,Female,Planarcadia,4.6,
 Pela,,4,Nihility,Ice,Female,Jarilo-VI,1.0,R
 Phainon,,5,Destruction,Physical,Male,Amphoreus,3.4,R
