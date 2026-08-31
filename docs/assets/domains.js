@@ -63,7 +63,7 @@ document.addEventListener('alpine:init', () => {
                 ;['searchQuery', 'selectedType', 'selectedRegion', 'selectedDay', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
-            })
+            }).finally(() => this.$nextTick(finishPageLoading))
         },
 
         // Info buttons are rendered inside x-html strings, so their behavior is

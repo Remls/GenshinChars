@@ -445,6 +445,14 @@ const CHAR_SHEET_GAMES = {
     },
 }
 
+// Removes the overlay that covers a page while its data is in flight
+function finishPageLoading() {
+    const overlay = document.getElementById('page-loading')
+    if (!overlay) return
+    overlay.classList.add('done')
+    setTimeout(() => overlay.remove(), 300)
+}
+
 let charSheetConfig = null
 
 function configureCharSheet(game, versionData, materials = {}) {

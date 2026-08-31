@@ -25,6 +25,10 @@
 </head>
 
 <body x-data="hsrCharSheet" x-init="fetchAllData">
+    <div class="page-loading" id="page-loading">
+        <div class="page-loading-spinner"></div>
+        <span class="gi-font">Loading</span>
+    </div>
     <nav class="site-nav">
         <a href="../characters"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Characters</span></a>
         <a href="../domains"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Emblem_Domains.png/revision/latest/scale-to-width-down/40" width="20" height="20" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='../assets/images/Fallback.png'"><span>Genshin Domains</span></a>

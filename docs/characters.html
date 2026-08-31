@@ -32,6 +32,10 @@
         </script>
     </head>
     <body x-data="charSheet" x-init="fetchAllData">
+        <div class="page-loading" id="page-loading">
+            <div class="page-loading-spinner"></div>
+            <span class="gi-font">Loading</span>
+        </div>
         <nav class="site-nav">
             <a class="current" href="characters">
                 <img height="20" loading="lazy" onerror="this.onerror=null;this.src='assets/images/Fallback.png'" referrerpolicy="no-referrer" src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Character_Archive.png/revision/latest/scale-to-width-down/40" width="20"/>

@@ -40,7 +40,7 @@ document.addEventListener('alpine:init', () => {
                 ;['searchQuery', 'selectedType', 'selectedWorld', 'includedSpecials'].forEach(prop => {
                     this.$watch(prop, () => this.syncFiltersToUrl())
                 })
-            })
+            }).finally(() => this.$nextTick(finishPageLoading))
         },
 
         buildCharacterLookup(charactersData) {

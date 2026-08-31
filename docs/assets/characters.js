@@ -54,6 +54,7 @@ document.addEventListener('alpine:init', () => {
                     this.updateCharacterData()
                     this.urlSyncReady = true
                 })
+                .finally(() => this.$nextTick(finishPageLoading))
         },
 
         setFiltersFromUrl() {
