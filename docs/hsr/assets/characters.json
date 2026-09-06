@@ -1,7 +1,183 @@
 {
-    "version": "62bcfaf",
-    "last_updated": "2026-08-31T05:58:02.924888Z",
+    "version": "c79fde7",
+    "last_updated": "2026-09-06T07:17:05.448880Z",
     "characters": {
+        "Xuanquan": {
+            "name": "Xuanquan",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Xianzhou Alliance",
+            "release_version": null,
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Stephen Lloyd": {
+            "name": "Stephen Lloyd",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": null,
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Male",
+            "world": null,
+            "release_version": null,
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Dan Heng SP3": {
+            "name": "Dan Heng SP3",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": "5.3",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Male",
+            "world": null,
+            "release_version": "5.3",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Obsidian": {
+            "name": "Obsidian",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": "5.2",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": null,
+            "release_version": "5.2",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Kafka SP": {
+            "name": "Kafka SP",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": "5.2",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Pteruges-V",
+            "release_version": "5.2",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Polka Kakamond": {
+            "name": "Polka Kakamond",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": "5.1",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": null,
+            "release_version": "5.1",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Misha SP": {
+            "name": "Misha SP",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": null,
+                    "combat_type": null,
+                    "release_version": "5.0",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Male",
+            "world": "Penacony",
+            "release_version": "5.0",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Firefly SP": {
+            "name": "Firefly SP",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Finality",
+                    "combat_type": "Fire",
+                    "release_version": "5.0",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Glamoth",
+            "release_version": "5.0",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
         "Nihilux": {
             "name": "Nihilux",
             "display_name": null,
@@ -10,7 +186,7 @@
                 {
                     "path": "Elation",
                     "combat_type": "Quantum",
-                    "release_version": null,
+                    "release_version": "4.7",
                     "release_date": null,
                     "photo": {
                         "local": "nihilux.png"
@@ -24,7 +200,7 @@
             ],
             "gender": "Female",
             "world": "Planarcadia",
-            "release_version": null,
+            "release_version": "4.7",
             "release_date": null,
             "is_released": false,
             "photo": {
@@ -35,28 +211,6 @@
                     "local": "nihilux.png"
                 }
             ]
-        },
-        "Firefly SP": {
-            "name": "Firefly SP",
-            "display_name": null,
-            "rarity": "5",
-            "forms": [
-                {
-                    "path": "Finality",
-                    "combat_type": "Fire",
-                    "release_version": null,
-                    "release_date": null,
-                    "photo": null,
-                    "full_photo": []
-                }
-            ],
-            "gender": "Female",
-            "world": "Glamoth",
-            "release_version": null,
-            "release_date": null,
-            "is_released": false,
-            "photo": null,
-            "full_photo": []
         },
         "Pearl": {
             "name": "Pearl",
@@ -3348,6 +3502,30 @@
             "display_version_number": "v4.8",
             "version_name": null,
             "release_date": "2026-12-30"
+        },
+        "5.0": {
+            "version_number": "5.0",
+            "display_version_number": "v5.0",
+            "version_name": null,
+            "release_date": "2027-02-10"
+        },
+        "5.1": {
+            "version_number": "5.1",
+            "display_version_number": "v5.1",
+            "version_name": null,
+            "release_date": "2027-03-24"
+        },
+        "5.2": {
+            "version_number": "5.2",
+            "display_version_number": "v5.2",
+            "version_name": null,
+            "release_date": "2027-05-05"
+        },
+        "5.3": {
+            "version_number": "5.3",
+            "display_version_number": "v5.3",
+            "version_name": null,
+            "release_date": "2027-06-16"
         }
     }
 }
