@@ -22,6 +22,7 @@ Cipher,,5,Nihility,Quantum,Female,Amphoreus,3.3,2025-06-11
 Clara,,5,Destruction,Physical,Female,Jarilo-VI,1.0,R
 Cyrene,,5,Remembrance,Ice,Female,Amphoreus,3.7,R
 Dan Heng,,4,Hunt,Wind,Male,Astral Express,1.0,R
+Dan Heng SP3,,5,,,Male,,5.3,
 Dan Heng • Imbibitor Lunae,Dan Heng IL,5,Destruction,Imaginary,Male,Xianzhou Alliance,1.3,R
 Dan Heng • Permansor Terrae,Dan Heng PT,5,Preservation,Physical,Male,Amphoreus,3.6,2025-10-15
 Dr. Ratio,,5,Hunt,Imaginary,Male,Cosmic,1.6,2024-01-17
@@ -29,7 +30,7 @@ Evanescia,,5,Elation,Physical,Female,Planarcadia,4.2,2026-05-13
 Evernight,,5,Remembrance,Ice,Female,Amphoreus,3.6,R
 Feixiao,,5,Hunt,Wind,Female,Xianzhou Alliance,2.5,R
 Firefly,,5,Destruction,Fire,Female,Glamoth,2.3,R
-Firefly SP,,5,Finality,Fire,Female,Glamoth,,
+Firefly SP,,5,Finality,Fire,Female,Glamoth,5.0,
 Fu Xuan,,5,Preservation,Quantum,Female,Xianzhou Alliance,1.3,2023-09-20
 Fugue,,5,Nihility,Fire,Female,Xianzhou Alliance,2.7,2024-12-25
 Gallagher,,4,Abundance,Fire,Male,Penacony,2.1,R
@@ -49,20 +50,24 @@ Jiaoqiu,,5,Nihility,Fire,Male,Xianzhou Alliance,2.4,2024-08-21
 Jing Yuan,,5,Erudition,Lightning,Male,Xianzhou Alliance,1.0,2023-05-17
 Jingliu,,5,Destruction,Ice,Female,Xianzhou Alliance,1.4,R
 Kafka,,5,Nihility,Lightning,Female,Pteruges-V,1.2,2023-08-09
+Kafka SP,,5,,,Female,Pteruges-V,5.2,
 Lingsha,,5,Abundance,Fire,Female,Xianzhou Alliance,2.5,2024-10-02
 Luka,,4,Nihility,Physical,Male,Jarilo-VI,1.2,2023-08-09
 Luocha,,5,Abundance,Imaginary,Male,Xianzhou Alliance,1.1,2023-06-28
 Lynx,,4,Abundance,Quantum,Female,Jarilo-VI,1.3,2023-09-20
 March 7th,March 7th (Preservation); March 7th (Hunt),4,Preservation; Hunt,Ice; Imaginary,Female,Astral Express,1.0; 2.4,R; R
 Misha,,4,Destruction,Ice,Male,Penacony,2.0,R
+Misha SP,,5,,,Male,Penacony,5.0,
 Mortenax Blade,,5,Nihility,Fire,Male,,4.3,R
 Moze,,4,Hunt,Lightning,Male,Xianzhou Alliance,2.5,R
 Mydei,,5,Destruction,Imaginary,Male,Amphoreus,3.1,2025-03-19
 Natasha,,4,Abundance,Physical,Female,Jarilo-VI,1.0,R
-Nihilux,,5,Elation,Quantum,Female,Planarcadia,,
+Nihilux,,5,Elation,Quantum,Female,Planarcadia,4.7,
+Obsidian,,5,,,Female,,5.2,
 Pearl,,5,Elation,Ice,Female,Planarcadia,4.6,
 Pela,,4,Nihility,Ice,Female,Jarilo-VI,1.0,R
 Phainon,,5,Destruction,Physical,Male,Amphoreus,3.4,R
+Polka Kakamond,,5,,,Female,,5.1,
 Qingque,,4,Erudition,Quantum,Female,Xianzhou Alliance,1.0,R
 Rappa,,5,Erudition,Imaginary,Female,Cosmic,2.6,R
 Rin Tohsaka,,5,Erudition,Quantum,Female,Another World,4.4,2026-07-24
@@ -77,6 +82,7 @@ Silver Wolf,,5,Nihility,Quantum,Female,Punklorde,1.1,R
 Silver Wolf LV.999,,5,Elation,Imaginary,Female,Punklorde,4.2,R
 Sparkle,,5,Harmony,Quantum,Female,Cosmic,2.0,2024-02-29
 Sparxie,,5,Elation,Fire,Female,Planarcadia,4.0,2026-03-03
+Stephen Lloyd,,5,,,Male,,,
 Sunday,,5,Harmony,Imaginary,Male,Cosmic,2.7,R
 Sushang,,4,Hunt,Physical,Female,Xianzhou Alliance,1.0,R
 The Dahlia,,5,Nihility,Fire,Female,Cosmic,3.8,R
@@ -85,6 +91,7 @@ Tingyun,,4,Harmony,Lightning,Female,Xianzhou Alliance,1.0,R
 Topaz & Numby,Topaz,5,Hunt,Fire,Female,,1.4,2023-10-27
 Tribbie,,5,Harmony,Quantum,Female,Amphoreus,3.1,R
 Welt,,5,Nihility,Imaginary,Male,Astral Express,1.0,R
+Xuanquan,,5,,,Female,Xianzhou Alliance,,
 Xueyi,,4,Destruction,Quantum,Female,Xianzhou Alliance,1.6,R
 Yanqing,,5,Hunt,Ice,Male,Xianzhou Alliance,1.0,R
 Yao Guang,,5,Elation,Physical,Female,Xianzhou Alliance,4.0,R
