@@ -1,6 +1,6 @@
 {
-    "version": "c79fde7",
-    "last_updated": "2026-09-06T07:17:05.448880Z",
+    "version": "d496b71",
+    "last_updated": "2026-09-12T13:15:54.877568Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -270,7 +270,7 @@
             "world": "Sigonia-IV",
             "release_version": "4.5",
             "release_date": "2026-09-12",
-            "is_released": false,
+            "is_released": true,
             "photo": {
                 "wiki": "Character Aventurine • Waveflair Icon.png"
             },

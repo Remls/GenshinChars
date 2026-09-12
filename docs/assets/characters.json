@@ -1,6 +1,6 @@
 {
-    "version": "79d2dbf",
-    "last_updated": "2026-09-07T04:20:01.058107Z",
+    "version": "d496b71",
+    "last_updated": "2026-09-12T13:15:49.109053Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -359,7 +359,7 @@
             "gender": "Female",
             "birthday": "03-29",
             "release_version": "7.1",
-            "release_date": null,
+            "release_date": "2026-09-23",
             "forms": [
                 {
                     "element": "Hydro",
@@ -367,7 +367,7 @@
                     "arkhe": null,
                     "display_name": null,
                     "release_version": "7.1",
-                    "release_date": null,
+                    "release_date": "2026-09-23",
                     "photo": {
                         "wiki": "Vodyanitsa Icon.png"
                     },
@@ -401,7 +401,7 @@
             "gender": "Female",
             "birthday": "02-04",
             "release_version": "7.1",
-            "release_date": null,
+            "release_date": "2026-09-23",
             "forms": [
                 {
                     "element": "Anemo",
@@ -409,7 +409,7 @@
                     "arkhe": null,
                     "display_name": null,
                     "release_version": "7.1",
-                    "release_date": null,
+                    "release_date": "2026-09-23",
                     "photo": {
                         "wiki": "Vesna Icon.png"
                     },
