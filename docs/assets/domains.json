@@ -1,6 +1,6 @@
 {
-    "version": "a9f78b6",
-    "last_updated": "2026-08-29T12:35:36.209463Z",
+    "version": "80a6b90",
+    "last_updated": "2026-09-14T11:28:17.284879Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1393,8 +1393,8 @@
             "rewards": [
                 "nb_vagabonds_cracked_armor"
             ],
-            "image": null,
-            "link": null,
+            "image": "Enemy_Guardian_Blade_of_Drifting_Snow.png",
+            "link": "Guardian Blade of Drifting Snow",
             "boss": null
         },
         {
