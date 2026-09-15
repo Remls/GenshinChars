@@ -27,6 +27,12 @@ def empty_strings_to_null(data):
 GENSHIN_TWINS = {"Traveler": ("Lumine", "Aether")}
 
 
+def genshin_full_art(name: str) -> list:
+    """Full art filenames in preference order, best first."""
+    return [f"Character {name} {label}.png"
+            for label in ("Full Wish", "Game", "Card")]
+
+
 def genshin_form_art(name: str, form: dict) -> list:
     twins = GENSHIN_TWINS.get(name)
     if not twins or not form.get("element"):
@@ -44,8 +50,7 @@ def genshin_images(characters: list) -> dict:
     for char in characters:
         name = char.input_row["name"]
         wanted.append(f"{name} Icon.png")
-        wanted.append(f"Character {name} Full Wish.png")
-        wanted.append(f"Character {name} Game.png")
+        wanted.extend(genshin_full_art(name))
         for form in char.forms:
             if form["display_name"]:
                 wanted.append(f"{form['display_name']} Icon.png")
@@ -74,7 +79,7 @@ def genshin_images(characters: list) -> dict:
             "form_photos": photos,
             "form_art": form_art,
             "full_photo": wiki_images.pick_all(
-                [f"Character {name} Full Wish.png", f"Character {name} Game.png"],
+                genshin_full_art(name),
                 resolved, "docs/assets/images/full-characters", slug,
             ),
         }
@@ -112,10 +117,16 @@ def hsr_form_art(name: str, form: dict, gender: str, multi_form: bool) -> list:
     return [f"Character {name} ({label}) Splash Art.png"]
 
 
+def hsr_full_art(name: str) -> list:
+    """Full art filenames in preference order, best first."""
+    return [f"Character {name} {label}.png"
+            for label in ("Splash Art", "Introduction")]
+
+
 def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
     wanted = []
     for name, forms in forms_by_name.items():
-        wanted.append(f"Character {name} Splash Art.png")
+        wanted.extend(hsr_full_art(name))
         for form in forms:
             wanted.extend(hsr_icon_candidates(name, form))
             wanted.extend(
@@ -141,7 +152,7 @@ def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
             "form_photos": photos,
             "form_art": form_art,
             "full_photo": wiki_images.pick_all(
-                [f"Character {name} Splash Art.png"],
+                hsr_full_art(name),
                 resolved, "docs/hsr/assets/images/full-characters", slug,
             ),
         }

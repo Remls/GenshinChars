@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import urllib.parse
 import urllib.request
 
@@ -90,7 +91,7 @@ def pick(candidates: list, resolved: dict, local_dir: str, slug: str):
 
 
 def slugify(name: str) -> str:
-    return name.replace(" ", "_").lower()
+    return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
 
 
 def pick_all(candidates: list, resolved: dict, local_dir: str, slug: str) -> list:

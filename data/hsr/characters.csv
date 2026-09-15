@@ -2,6 +2,7 @@ name,display_name,rarity,path,combat_type,gender,world,release_version,release_d
 Trailblazer,Trailblazer (Destruction); Trailblazer (Preservation); Trailblazer (Harmony); Trailblazer (Remembrance); Trailblazer (Elation); Trailblazer (Finality),5,Destruction; Preservation; Harmony; Remembrance; Elation; Finality,Physical; Fire; Imaginary; Ice; Lightning; Imaginary,Either,Astral Express,1.0; 1.0; 2.2; 3.0; 4.2; ,R; R; R; R; R; 
 
 Acheron,,5,Nihility,Lightning,Female,Cosmic,2.1,R
+Aeon ★ Aha,Aha,5,Elation,Quantum,Female,Planarcadia,4.7,
 Aglaea,,5,Remembrance,Lightning,Female,Amphoreus,3.0,2025-02-05
 Anaxa,,5,Erudition,Wind,Male,Amphoreus,3.2,2025-04-30
 Archer,,5,Hunt,Quantum,Male,Another World,3.4,2025-07-11
@@ -62,7 +63,6 @@ Mortenax Blade,,5,Nihility,Fire,Male,,4.3,R
 Moze,,4,Hunt,Lightning,Male,Xianzhou Alliance,2.5,R
 Mydei,,5,Destruction,Imaginary,Male,Amphoreus,3.1,2025-03-19
 Natasha,,4,Abundance,Physical,Female,Jarilo-VI,1.0,R
-Nihilux,,5,Elation,Quantum,Female,Planarcadia,4.7,
 Obsidian,,5,,,Female,,5.2,
 Pearl,,5,Elation,Ice,Female,Planarcadia,4.6,
 Pela,,4,Nihility,Ice,Female,Jarilo-VI,1.0,R
