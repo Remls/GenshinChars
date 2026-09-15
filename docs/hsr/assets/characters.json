@@ -1,6 +1,6 @@
 {
-    "version": "80a6b90",
-    "last_updated": "2026-09-14T11:28:20.136388Z",
+    "version": "98a3d0d",
+    "last_updated": "2026-09-15T09:23:33.950241Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -178,9 +178,9 @@
             "photo": null,
             "full_photo": []
         },
-        "Nihilux": {
-            "name": "Nihilux",
-            "display_name": null,
+        "Aeon ★ Aha": {
+            "name": "Aeon ★ Aha",
+            "display_name": "Aha",
             "rarity": "5",
             "forms": [
                 {
@@ -188,12 +188,10 @@
                     "combat_type": "Quantum",
                     "release_version": "4.7",
                     "release_date": null,
-                    "photo": {
-                        "local": "nihilux.png"
-                    },
+                    "photo": null,
                     "full_photo": [
                         {
-                            "local": "nihilux.png"
+                            "wiki": "Character Aeon ★ Aha Introduction.png"
                         }
                     ]
                 }
@@ -203,12 +201,10 @@
             "release_version": "4.7",
             "release_date": null,
             "is_released": false,
-            "photo": {
-                "local": "nihilux.png"
-            },
+            "photo": null,
             "full_photo": [
                 {
-                    "local": "nihilux.png"
+                    "wiki": "Character Aeon ★ Aha Introduction.png"
                 }
             ]
         },
@@ -3489,43 +3485,43 @@
             "version_number": "4.6",
             "display_version_number": "v4.6",
             "version_name": "Dance With the Beast Before Moonrise",
-            "release_date": "2026-10-07"
+            "release_date": "2026-09-28"
         },
         "4.7": {
             "version_number": "4.7",
             "display_version_number": "v4.7",
             "version_name": null,
-            "release_date": "2026-11-18"
+            "release_date": "2026-11-11"
         },
         "4.8": {
             "version_number": "4.8",
             "display_version_number": "v4.8",
             "version_name": null,
-            "release_date": "2026-12-30"
+            "release_date": "2026-12-23"
         },
         "5.0": {
             "version_number": "5.0",
             "display_version_number": "v5.0",
             "version_name": null,
-            "release_date": "2027-02-10"
+            "release_date": "2027-02-03"
         },
         "5.1": {
             "version_number": "5.1",
             "display_version_number": "v5.1",
             "version_name": null,
-            "release_date": "2027-03-24"
+            "release_date": "2027-03-17"
         },
         "5.2": {
             "version_number": "5.2",
             "display_version_number": "v5.2",
             "version_name": null,
-            "release_date": "2027-05-05"
+            "release_date": "2027-04-28"
         },
         "5.3": {
             "version_number": "5.3",
             "display_version_number": "v5.3",
             "version_name": null,
-            "release_date": "2027-06-16"
+            "release_date": "2027-06-09"
         }
     }
 }

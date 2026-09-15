@@ -1,6 +1,6 @@
 {
-    "version": "d496b71",
-    "last_updated": "2026-09-12T13:15:49.109053Z",
+    "version": "98a3d0d",
+    "last_updated": "2026-09-15T09:23:28.741920Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -115,7 +115,7 @@
                     },
                     "full_photo": [
                         {
-                            "local": "dainsleif.png"
+                            "wiki": "Dainsleif Card.png"
                         }
                     ]
                 }
@@ -125,7 +125,7 @@
             },
             "full_photo": [
                 {
-                    "local": "dainsleif.png"
+                    "wiki": "Dainsleif Card.png"
                 }
             ],
             "is_released": false,
