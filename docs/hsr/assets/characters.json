@@ -1,6 +1,6 @@
 {
-    "version": "98a3d0d",
-    "last_updated": "2026-09-15T09:23:33.950241Z",
+    "version": "27ba586",
+    "last_updated": "2026-09-19T08:50:32.748394Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -188,10 +188,12 @@
                     "combat_type": "Quantum",
                     "release_version": "4.7",
                     "release_date": null,
-                    "photo": null,
+                    "photo": {
+                        "wiki": "Character Aeon ★ Aha Icon.png"
+                    },
                     "full_photo": [
                         {
-                            "wiki": "Character Aeon ★ Aha Introduction.png"
+                            "wiki": "Character Aeon ★ Aha Splash Art.png"
                         }
                     ]
                 }
@@ -201,10 +203,12 @@
             "release_version": "4.7",
             "release_date": null,
             "is_released": false,
-            "photo": null,
+            "photo": {
+                "wiki": "Character Aeon ★ Aha Icon.png"
+            },
             "full_photo": [
                 {
-                    "wiki": "Character Aeon ★ Aha Introduction.png"
+                    "wiki": "Character Aeon ★ Aha Splash Art.png"
                 }
             ]
         },
