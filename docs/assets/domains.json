@@ -1,6 +1,6 @@
 {
-    "version": "80a6b90",
-    "last_updated": "2026-09-14T11:28:17.284879Z",
+    "version": "88d8089",
+    "last_updated": "2026-09-22T04:30:00.757775Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1393,7 +1393,7 @@
             "rewards": [
                 "nb_vagabonds_cracked_armor"
             ],
-            "image": "Enemy_Guardian_Blade_of_Drifting_Snow.png",
+            "image": "Guardian_Blade_of_Drifting_Snow_Icon.png",
             "link": "Guardian Blade of Drifting Snow",
             "boss": null
         },
@@ -2901,7 +2901,7 @@
             "characters": [
                 "Vesna"
             ],
-            "image": null
+            "image": "Item_Vagabond's_Cracked_Armor.png"
         },
         "wb_dvalin_plume": {
             "name": "Dvalin's Plume",

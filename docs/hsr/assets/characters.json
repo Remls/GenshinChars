@@ -1,6 +1,6 @@
 {
-    "version": "27ba586",
-    "last_updated": "2026-09-19T08:50:32.748394Z",
+    "version": "88d8089",
+    "last_updated": "2026-09-22T04:30:04.086089Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -173,6 +173,50 @@
             "gender": "Female",
             "world": "Glamoth",
             "release_version": "5.0",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Ellen Joe": {
+            "name": "Ellen Joe",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Hunt",
+                    "combat_type": "Ice",
+                    "release_version": "4.8",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Another World",
+            "release_version": "4.8",
+            "release_date": null,
+            "is_released": false,
+            "photo": null,
+            "full_photo": []
+        },
+        "Astra Yao": {
+            "name": "Astra Yao",
+            "display_name": null,
+            "rarity": "5",
+            "forms": [
+                {
+                    "path": "Harmony",
+                    "combat_type": "Quantum",
+                    "release_version": "4.8",
+                    "release_date": null,
+                    "photo": null,
+                    "full_photo": []
+                }
+            ],
+            "gender": "Female",
+            "world": "Another World",
+            "release_version": "4.8",
             "release_date": null,
             "is_released": false,
             "photo": null,
