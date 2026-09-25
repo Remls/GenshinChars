@@ -1,6 +1,6 @@
 {
-    "version": "88d8089",
-    "last_updated": "2026-09-22T04:30:00.757775Z",
+    "version": "a5d442b",
+    "last_updated": "2026-09-25T16:39:02.283288Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -1398,6 +1398,15 @@
             "boss": null
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_stabilizing_anchor"
+            ]
+        },
+        {
             "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
@@ -2045,6 +2054,7 @@
             "name": "Charity",
             "type": "talent_upgrade_mats",
             "characters": [
+                "Mitya",
                 "Odette",
                 "Traveler (Cryo)"
             ],
@@ -2065,6 +2075,7 @@
             "type": "talent_upgrade_mats",
             "characters": [
                 "Traveler (Cryo)",
+                "Valeriy",
                 "Vesna"
             ],
             "image": "Item_Philosophies_of_Glory.png"
@@ -2891,7 +2902,8 @@
             "name": "Severed Tail of the Sky-Roamer",
             "type": "normal_bosses",
             "characters": [
-                "Alyosha"
+                "Alyosha",
+                "Valeriy"
             ],
             "image": "Item_Severed_Tail_of_the_Sky-Roamer.png"
         },
@@ -2902,6 +2914,14 @@
                 "Vesna"
             ],
             "image": "Item_Vagabond's_Cracked_Armor.png"
+        },
+        "nb_stabilizing_anchor": {
+            "name": "Shattered Stabilizing Anchor",
+            "type": "normal_bosses",
+            "characters": [
+                "Mitya"
+            ],
+            "image": null
         },
         "wb_dvalin_plume": {
             "name": "Dvalin's Plume",
@@ -3278,6 +3298,7 @@
             "type": "weekly_bosses",
             "characters": [
                 "Columbina",
+                "Mitya",
                 "Prune"
             ],
             "image": "Item_Mask_of_the_Virtuous_Doctor.png"
@@ -3304,7 +3325,8 @@
             "name": "Counterfeit Resin",
             "type": "weekly_bosses",
             "characters": [
-                "Nicole"
+                "Nicole",
+                "Valeriy"
             ],
             "image": "Item_Counterfeit_Resin.png"
         },
@@ -3631,6 +3653,7 @@
             ],
             "characters": [
                 "Odette",
+                "Valeriy",
                 "Vesna"
             ],
             "image": "Item_Ethereal_Crystalscale_Stone.png"
@@ -3643,6 +3666,7 @@
             ],
             "characters": [
                 "Alyosha",
+                "Mitya",
                 "Traveler (Cryo)",
                 "Vodyanitsa"
             ],
@@ -4196,6 +4220,22 @@
                 "Vesna"
             ],
             "image": "Item_Golden_Fern.png"
+        },
+        "s_fairy_wormwood": {
+            "name": "Fairy Wormwood",
+            "region": "Snezhnaya",
+            "characters": [
+                "Valeriy"
+            ],
+            "image": null
+        },
+        "s_crystalfold": {
+            "name": "Crystalfold",
+            "region": "Snezhnaya",
+            "characters": [
+                "Mitya"
+            ],
+            "image": null
         }
     },
     "other_materials": {

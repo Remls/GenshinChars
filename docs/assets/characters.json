@@ -1,6 +1,6 @@
 {
-    "version": "98a3d0d",
-    "last_updated": "2026-09-15T09:23:28.741920Z",
+    "version": "a5d442b",
+    "last_updated": "2026-09-25T16:38:59.485999Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -142,7 +142,7 @@
             "rarity": null,
             "element": "Dendro",
             "arkhe": null,
-            "weapon": null,
+            "weapon": "Sword",
             "region": "Snezhnaya",
             "gender": "Male",
             "birthday": null,
@@ -151,7 +151,7 @@
             "forms": [
                 {
                     "element": "Dendro",
-                    "weapon": null,
+                    "weapon": "Sword",
                     "arkhe": null,
                     "display_name": null,
                     "release_version": "7.5",
@@ -199,7 +199,7 @@
                     "release_version": "7.3",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Tsaritsa Icon.png"
+                        "wiki": "Anastasya Icon.png"
                     },
                     "full_photo": [
                         {
@@ -209,7 +209,7 @@
                 }
             ],
             "photo": {
-                "wiki": "Tsaritsa Icon.png"
+                "wiki": "Anastasya Icon.png"
             },
             "full_photo": [
                 {
@@ -373,7 +373,7 @@
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Vodyanitsa Game.png"
+                            "wiki": "Character Vodyanitsa Full Wish.png"
                         }
                     ]
                 }
@@ -383,10 +383,10 @@
             },
             "full_photo": [
                 {
-                    "wiki": "Character Vodyanitsa Game.png"
+                    "wiki": "Character Vodyanitsa Full Wish.png"
                 }
             ],
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
@@ -415,7 +415,7 @@
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Vesna Game.png"
+                            "wiki": "Character Vesna Full Wish.png"
                         }
                     ]
                 }
@@ -425,10 +425,10 @@
             },
             "full_photo": [
                 {
-                    "wiki": "Character Vesna Game.png"
+                    "wiki": "Character Vesna Full Wish.png"
                 }
             ],
-            "is_released": false,
+            "is_released": true,
             "is_outdated": false,
             "notes": null
         },
