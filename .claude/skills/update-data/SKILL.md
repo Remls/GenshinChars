@@ -1,6 +1,6 @@
 ---
 name: update-data
-description: Guide for updating GenshinChars data (characters, versions, domains, HSR) from the wikis and Honey Hunter, with data schemas, wiki API recipes, image pitfalls, and verification steps.
+description: Guide for updating GenshinChars data (characters, versions, domains, HSR) from the wikis, gachabase and Honey Hunter, with data schemas, wiki API recipes, image pitfalls, and verification steps.
 ---
 
 # Keeping GenshinChars data up-to-date
@@ -323,6 +323,44 @@ cache" footer link bumps.
   page (Stage, Boss, Rewards columns; note some rows lack the `id=` attribute,
   so do not anchor parsing on it).
 
+## gachabase (leaked data)
+
+`https://gi.gachabase.net`. The first source to carry a new version's beta
+build data, and as of Genshin 7.2 the only one that had it. Try it first.
+
+- Plain curl works and the pages are server-rendered, so no browser is needed.
+- Beta entry point: `/changelog/beta?lang=en`. It lists NEW and UPDATED
+  characters and weapons for the current beta revision, and links each one.
+  It has no items section, so it never tells you which items are new.
+- Character page: `/characters/{id}/{slug}/beta?lang=en` (`10000136/mitya`).
+  Rarity, weapon, element and base stats are in the page text; the ascension
+  and talent material names are in the `img` alt of the materials calculator,
+  the same trap Honey Hunter has. Quantities there match the infographic
+  totals, which makes the two easy to cross-check.
+- Item page: `/inventory/{id}/{id}/beta?lang=en` answers 308 with a Location of
+  `/inventory/{category}/{id}/{slug}/beta?lang=en`. Reading just that header
+  gives the name and category without the body, which is the cheap way to walk
+  an id range. Descriptions often name the area an item comes from
+  (`grows in the Teplo Oasis`), which settles the `region` field.
+- Listing pages render client-side and curl sees only "Loading...", but the
+  SvelteKit payload is inline in the same HTML. Pull records out of it with
+
+  ```
+  \{id:(\d+),hash:.*?slug:"([^"]+)",name:\{key:"\d+",text:"([^"]*)"
+  ```
+
+- Id blocks worth walking: `101xxx` adventure items (local specialties, mixed
+  in with cooking ingredients and dyes), `104xxx` talent books, `112xxx` enemy
+  drops in families of three, `113xxx` boss drops, `114xxx` weapon materials.
+- To find what a version adds, walk the top of each block and diff the names
+  against `domains.json`. The site's Release/Beta toggle is client-side and
+  both URL forms serve the identical payload, so you cannot diff live against
+  beta by fetching two routes.
+- It cannot answer two things. There is no enemy database, so a new boss's own
+  name and location are not there and stay `"???"`. And nothing marks the
+  general/elite enemy drop split, so a new `112xxx` family still needs the
+  wiki's `Category:Elite Enemy Drops` before you decide whether to track it.
+
 ## Honey Hunter (leaked data)
 
 For unreleased characters the wikis lack build data; Honey Hunter has it.
@@ -371,7 +409,7 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
 
 ## yatta.moe / Project Amber (leaked data)
 
-Second leak source, useful when Honey Hunter lags: `https://gi.yatta.moe/en`
+Third leak source, useful when gachabase and Honey Hunter both lag: `https://gi.yatta.moe/en`
 (Genshin) and `https://sr.yatta.moe/en` (HSR). Plain curl still works here.
 
 - Character list: `https://gi.yatta.moe/api/v2/en/avatar` returns JSON with

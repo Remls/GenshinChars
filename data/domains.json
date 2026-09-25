@@ -724,6 +724,13 @@
             "rewards": ["nb_vagabonds_cracked_armor"]
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": ["nb_stabilizing_anchor"]
+        },
+        {
             "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
@@ -911,13 +918,13 @@
             "Flins", "Jahoda", "Linnea", "Sandrone"
         ]},
         "t_charity": {"name": "Charity", "type": "talent_upgrade_mats", "characters": [
-            "Odette", "Traveler (Cryo)"
+            "Mitya", "Odette", "Traveler (Cryo)"
         ]},
         "t_fortitude": {"name": "Fortitude", "type": "talent_upgrade_mats", "characters": [
             "Alyosha", "Traveler (Cryo)", "Vodyanitsa"
         ]},
         "t_glory": {"name": "Glory", "type": "talent_upgrade_mats", "characters": [
-            "Traveler (Cryo)", "Vesna"
+            "Traveler (Cryo)", "Valeriy", "Vesna"
         ]},
         "a_adventurer": {"name": "Adventurer", "type": "artifacts", "effect": "Max HP increased by 1000.", "effect_4pc": "Opening a chest regenerates 30% Max HP over 5s."},
         "a_sojourner": {"name": "Resolution of Sojourner", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases Charged Attack CRIT Rate by 30%."},
@@ -1112,10 +1119,13 @@
             "Odette", "Vodyanitsa"
         ]},
         "nb_sky_roamer": {"name": "Severed Tail of the Sky-Roamer", "type": "normal_bosses", "characters": [
-            "Alyosha"
+            "Alyosha", "Valeriy"
         ]},
         "nb_vagabonds_cracked_armor": {"name": "Vagabond's Cracked Armor", "type": "normal_bosses", "characters": [
             "Vesna"
+        ]},
+        "nb_stabilizing_anchor": {"name": "Shattered Stabilizing Anchor", "type": "normal_bosses", "characters": [
+            "Mitya"
         ]},
         "wb_dvalin_plume": {"name": "Dvalin's Plume", "type": "weekly_bosses", "characters": [
             "Bennett", "Diluc", "Jean"
@@ -1226,7 +1236,7 @@
             "Flins", "Traveler (Cryo)", "Zibai"
         ]},
         "wb_doctor_mask": {"name": "Mask of the Virtuous Doctor", "type": "weekly_bosses", "characters": [
-            "Columbina", "Prune"
+            "Columbina", "Mitya", "Prune"
         ]},
         "wb_doctor_belt": {"name": "Madman's Restraint", "type": "weekly_bosses", "characters": [
             "Sandrone", "Vodyanitsa"
@@ -1235,7 +1245,7 @@
             "Alyosha", "Linnea"
         ]},
         "wb_doctor_2_egg": {"name": "Counterfeit Resin", "type": "weekly_bosses", "characters": [
-            "Nicole"
+            "Nicole", "Valeriy"
         ]},
         "wb_doctor_2_sprout": {"name": "Profaned Sprout", "type": "weekly_bosses", "characters": [
             "Vesna"
@@ -1297,10 +1307,10 @@
             "Aino", "Flins", "Illuga", "Jahoda", "Sandrone", "Varka"
         ]},
         "c_ethereal": {"name": "Ethereal Crystalscale Stone", "type": "common_enemy_drops", "enemies": ["Snowland Fae"], "characters": [
-            "Odette", "Vesna"
+            "Odette", "Valeriy", "Vesna"
         ]},
         "c_chimeric": {"name": "Prime Chimeric Nexus", "type": "common_enemy_drops", "enemies": ["Aberrant Chimeric Monsters"], "characters": [
-            "Alyosha", "Traveler (Cryo)", "Vodyanitsa"
+            "Alyosha", "Mitya", "Traveler (Cryo)", "Vodyanitsa"
         ]}
     },
     "specialties": {
@@ -1486,6 +1496,12 @@
         ]},
         "s_golden_fern": {"name": "Golden Fern", "region": "Snezhnaya", "characters": [
             "Vesna"
+        ]},
+        "s_fairy_wormwood": {"name": "Fairy Wormwood", "region": "Snezhnaya", "characters": [
+            "Valeriy"
+        ]},
+        "s_crystalfold": {"name": "Crystalfold", "region": "Snezhnaya", "characters": [
+            "Mitya"
         ]}
     },
     "other_materials": {
