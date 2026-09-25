@@ -326,7 +326,7 @@ cache" footer link bumps.
 ## gachabase (leaked data)
 
 `https://gi.gachabase.net`. The first source to carry a new version's beta
-build data, and as of Genshin 7.2 the only one that had it. Try it first.
+build data. Try it first.
 
 - Plain curl works and the pages are server-rendered, so no browser is needed.
 - Beta entry point: `/changelog/beta?lang=en`. It lists NEW and UPDATED
@@ -367,8 +367,8 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
 
 - HSR: `https://starrail.honeyhunterworld.com/?lang=EN`. Genshin:
   `https://gensh.honeyhunterworld.com/?lang=EN`.
-- **curl no longer works.** Every request answers 403, including with a full
-  browser header set (User-Agent, Accept, Sec-Fetch-*). Use Claude in Chrome:
+- **Scripted requests are refused.** curl answers 403 whatever headers you
+  send, a full browser set included. Use Claude in Chrome:
   navigate the tab, then read the page with `javascript_tool`. The pages are
   server-rendered, so one `javascript_tool` call per page is enough.
 - The two sites use different URL schemes, and only HSR matches the older docs:
@@ -410,16 +410,14 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
 ## yatta.moe / Project Amber (leaked data)
 
 Third leak source, useful when gachabase and Honey Hunter both lag: `https://gi.yatta.moe/en`
-(Genshin) and `https://sr.yatta.moe/en` (HSR). Plain curl still works here.
+(Genshin) and `https://sr.yatta.moe/en` (HSR). Reachable with plain curl.
 
 - Character list: `https://gi.yatta.moe/api/v2/en/avatar` returns JSON with
   `data.items` keyed by avatar id, each carrying `name` and a `release`
   timestamp. Detail is at `/api/v2/en/avatar/{id}`.
-- The `/api/v2/en/changelog` endpoint 404s, and the per-version changelog page
-  route documented previously (`/en/changelog?v=70`) no longer resolves.
-- Amber trails Honey Hunter on unreleased characters: as of Genshin 7.0 its
-  avatar list stops at the current live version and carries no beta characters
-  at all. Treat it as a naming source for items, not a build source.
+- There is no working changelog endpoint; `/api/v2/en/changelog` 404s.
+- Amber carries no beta characters. Its avatar list stops at the live version,
+  so treat it as a naming source for items, not a build source.
 
 ## Reading leak material infographics
 
