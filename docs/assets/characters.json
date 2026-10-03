@@ -1,6 +1,6 @@
 {
-    "version": "a5d442b",
-    "last_updated": "2026-09-25T16:38:59.485999Z",
+    "version": "b9a3583",
+    "last_updated": "2026-10-03T09:54:44.554985Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -289,7 +289,7 @@
                     },
                     "full_photo": [
                         {
-                            "local": "valeriy.png"
+                            "wiki": "Character Valeriy Game.png"
                         }
                     ]
                 }
@@ -299,7 +299,7 @@
             },
             "full_photo": [
                 {
-                    "local": "valeriy.png"
+                    "wiki": "Character Valeriy Game.png"
                 }
             ],
             "is_released": false,
@@ -331,7 +331,7 @@
                     },
                     "full_photo": [
                         {
-                            "local": "mitya.png"
+                            "wiki": "Character Mitya Game.png"
                         }
                     ]
                 }
@@ -341,7 +341,7 @@
             },
             "full_photo": [
                 {
-                    "local": "mitya.png"
+                    "wiki": "Character Mitya Game.png"
                 }
             ],
             "is_released": false,
