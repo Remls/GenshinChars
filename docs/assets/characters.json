@@ -1,6 +1,6 @@
 {
-    "version": "9185fdc",
-    "last_updated": "2026-10-15T12:59:34.688618Z",
+    "version": "6dee4a9",
+    "last_updated": "2026-10-21T04:05:57.777407Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -6165,7 +6165,7 @@
         "7.2": {
             "version_number": "7.2",
             "display_version_number": "v7.2",
-            "version_name": null,
+            "version_name": "Hour of Ruin",
             "release_date": "2026-11-04"
         },
         "7.3": {
