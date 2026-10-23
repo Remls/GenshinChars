@@ -1,6 +1,6 @@
 {
-    "version": "6dee4a9",
-    "last_updated": "2026-10-21T04:05:57.777407Z",
+    "version": "a11d50a",
+    "last_updated": "2026-10-23T17:27:38.956455Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -275,7 +275,7 @@
             "gender": "Male",
             "birthday": "03-24",
             "release_version": "7.2",
-            "release_date": null,
+            "release_date": "2026-11-04",
             "forms": [
                 {
                     "element": "Electro",
@@ -283,7 +283,7 @@
                     "arkhe": null,
                     "display_name": null,
                     "release_version": "7.2",
-                    "release_date": null,
+                    "release_date": "2026-11-04",
                     "photo": {
                         "wiki": "Valeriy Icon.png"
                     },
@@ -317,7 +317,7 @@
             "gender": "Male",
             "birthday": "02-08",
             "release_version": "7.2",
-            "release_date": null,
+            "release_date": "2026-11-04",
             "forms": [
                 {
                     "element": "Electro",
@@ -325,7 +325,7 @@
                     "arkhe": null,
                     "display_name": null,
                     "release_version": "7.2",
-                    "release_date": null,
+                    "release_date": "2026-11-04",
                     "photo": {
                         "wiki": "Mitya Icon.png"
                     },
