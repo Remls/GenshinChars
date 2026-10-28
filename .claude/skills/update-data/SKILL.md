@@ -48,9 +48,9 @@ then reload, or use the "Reset picture cache" footer link (clears localStorage).
 
 `name,display_name,rarity,element,arkhe,weapon,region,gender,birthday,release_version,release_date`
 
-- `name` is the primary key. It must match the wiki page name, or at least a
-  redirect to it. Prefer the canonical page name (see the Columbina incident
-  below). `domains.json` character lists must use these exact names.
+- `name` is the primary key. It must match the wiki page title, not a redirect:
+  image files are named after the page title, so a name that redirects finds no
+  images. `domains.json` character lists must use these exact names.
 - `display_name` is what the UI shows; blank when identical to `name`.
 - `arkhe` is `Pneuma`, `Ousia`, `Pneumousia`, or blank for the characters that
   have none, which is everyone outside Fontaine. It is a per-form column, since
@@ -86,10 +86,10 @@ through the roman numeral.
 
 `name,display_name,rarity,path,combat_type,gender,world,release_version,release_date`
 
-- Multi-form characters (March 7th) put `; `-separated values in `path`,
-  `combat_type`, and optionally `display_name` (mapped per form:
-  `March 7th; March 7th (Hunt)`), `release_version` and `release_date`
-  (`1.0; 2.4` and `R; R`, each form resolving `R` against its own version).
+- Multi-form characters put `; `-separated values in `path`, `combat_type`,
+  and optionally `display_name` (mapped per form: `{form 1}; {form 2}`),
+  `release_version` and `release_date` (each form resolving `R` against its
+  own version).
   Forms are zipped by position, and a shorter list falls back to its first
   value. The character's own `release_version`/`release_date` are the first
   form's, so sorting and released/unreleased state follow the debut. The
@@ -109,18 +109,15 @@ through the roman numeral.
 Many materials come in a family of tiers sharing one drop source: Genshin weapon
 mats run 2/3/4/5 star, its talent books and enemy drops 1/2/3, HSR's trace and
 enemy families 2/3/4. One name stands for the whole family, and in both games it
-is the **highest** tier: `Scattered Piece of Decarabian's Dream`, not
-`Tile of Decarabian's Tower`; `Flower of Eternity`, not `Seed of Abundance`.
+is the **highest** tier.
 
-Two exceptions. Genshin talent books display the bare family name (`Freedom`),
-which carries no tier, and only the wiki link and thumbnail resolve to one, via
+Two exceptions. Genshin talent books display the bare family name, which carries no tier, and only the wiki link and thumbnail resolve to one, via
 `WIKI_ALT_NAMES` pointing at `Philosophies of X`. Single-drop sources, boss
 materials and regional specialties, have no family and no choice to make.
 
 A reward key is an opaque id, not a slug of the name. Several were coined from a
-lower tier and were deliberately left alone when the names moved up (`w_tile`
-now names a Dream, `w_tooth` a Nostalgia), so do not rename a key to chase its
-name. Renaming one means editing every `domains[].rewards` day array that cites
+lower tier and were deliberately left alone when the names moved up, so do not
+rename a key to chase its name. Renaming one means editing every `domains[].rewards` day array that cites
 it, which is the only thing that reads a key.
 
 ### domains.json (Genshin)
@@ -136,7 +133,7 @@ which is what `common_enemy_drops`, `specialties` and `other_materials` do.
 - `domains[]`: `name`, `location` ("Subarea, Area" from the wiki's Domain/Enemy
   Infobox), `region`, `type`, `rewards` (list if static, or per-day dict
   `{mon: [...], ...}` for rotating types). Weekly boss entries put the official
-  boss name in parentheses in `name`: `Confront Stormterror (Stormterror Dvalin)`.
+  boss name in parentheses in `name`: `{Domain name} ({Boss name})`.
 - `rewards{}`: key prefixes by type: `w_` weapon mats, `t_` talent mats,
   `a_` artifacts, `nb_` normal boss, `wb_` weekly boss. Entries carry `name`
   plus either `characters` (list of characters.csv names) or `effect`
@@ -153,9 +150,9 @@ which is what `common_enemy_drops`, `specialties` and `other_materials` do.
 - Not-yet-revealed content uses `"???"` placeholders: domain `name`/`location`
   and reward/specialty `name` may all be `"???"` (the site skips image lookups
   for names starting with `???`). Give such rewards a descriptive key
-  (`nb_snezhnaya_1`, `a_snezhnaya_1`) and rename the `name` once official.
+  (`{prefix}{region}_{n}`) and rename the `name` once official.
 - Talent material family names use short forms; `WIKI_ALT_NAMES` maps them to
-  wiki titles (`Freedom` to the tier page). It is duplicated in
+  wiki titles (the family name to its `Philosophies of X` page). It is duplicated in
   `docs/assets/common.js` (link targets on the domains page and in the character
   sheet) and `generator/domain_images.py` (which page the thumbnail is read
   from). Edit both or the icon and the link disagree.
@@ -172,7 +169,7 @@ and reward prefixes: `calyx_crimson`/`cr_`, `cavern_of_corrosion`/`cc_`,
 
 - `domains[]`: `name`, `location`, `region` (world), `type`, `image` (exact wiki
   filename shown as the row thumbnail), optional `page` (overrides the wiki link
-  target, used by planar stages: `Divergent Universe#Untoppled Walls`), optional
+  target, used by planar stages: `Divergent Universe#{Stage}`), optional
   `boss` (list; rendered boss-first with the domain name in grey underneath for
   weekly bosses, boss-only for planar stages where `name` is the stage).
 - Keep each type's entries in release order. The introduction version is the
@@ -204,8 +201,8 @@ Useful queries:
   Use small batches (10 pages) and follow `continue`.
 
 Wikitext cleaning recipe for effect/bonus text: strip `<br>` to space, unwrap
-`{{Color|...}}` (keep last argument, repeat for nesting), `{{Electro}}`-style
-element templates to their name, `[[A|B]]` to B, `[[A]]` to A, drop bold
+`{{Color|...}}` (keep last argument, repeat for nesting), single-element
+templates to the element name, `[[A|B]]` to B, `[[A]]` to A, drop bold
 quotes and tags, collapse whitespace.
 
 ### Images: the rules that prevent every past bug
@@ -221,26 +218,21 @@ quotes and tags, collapse whitespace.
 - The placeholder 404 is served with `cache-control: public, max-age=3600` and
   is cached by both the browser and the CDN edge. After fixing a broken image
   URL scheme, requests can keep returning the cached placeholder for up to an
-  hour; change the URL (e.g. a different thumbnail width) to bust it instead of
-  waiting or blaming the fix.
+  hour; change the URL to bust it instead of waiting or blaming the fix.
 - The CDN answers requests for nonexistent files with an HTTP 404 that has a
   valid webp body, so `<img onerror>` never fires and junk renders. Therefore
-  NEVER guess filenames. Case matters mid-title too: 1.0's splashscreen is
-  `Splashscreen Welcome To Teyvat.png` (capital "To"), not the version's
-  official "Welcome to Teyvat" spelling.
+  NEVER guess filenames. Case matters mid-title too, and a file's case can
+  differ from the official spelling of the name it carries.
 - A File page existing does not mean the file exists under that name: File
   pages can be redirects. Always resolve to the final title via `redirects=1`
-  and use that filename. Real examples: `Item Traveler's Guide.png` is really
-  `Item Travelers Guide.png`, `Character Trailblazer Icon.png` is really
-  `Character Trailblazer (Destruction) Icon.png`, `Coral Defenders Icon.png`
-  is really `Bathysmal Vishap Herd Icon.png`, and enemy images drop colons and
-  quotes (`Enemy Borisin Warhead: Hoolay.png` is `Enemy Borisin Warhead Hoolay.png`).
+  and use that filename. Enemy images drop colons and quotes from the enemy
+  name.
 - The converse also fails: `imageinfo` can return a URL whose file then 404s
-  when fetched (`Item Frostfairy Flower.png` had a File page and an infobox
-  reference but no uploaded file). A returned URL is not proof; fetch it.
-- A just-revealed character has no wiki images at all for the first days
-  (reveal-day Pearl had only her Introduction card); character pages render the
-  fake-404 placeholder until editors upload the icon, then heal on their own.
+  when fetched, when a File page exists with no uploaded file. A returned URL
+  is not proof; fetch it.
+- A just-revealed character has no wiki images at all for the first days;
+  character pages render the fake-404 placeholder until editors upload the
+  icon. The site picks the files up on the next CI run after they appear.
 
 Filename conventions (after redirect resolution):
 
@@ -285,22 +277,22 @@ cache" footer link bumps.
   character list.
 - The Traveler splits two ways, and the data follows the wiki. Ascension is
   element-independent, so only the main `Traveler` page carries `Ascends with`
-  and the entry uses the bare name, as `s_windwheel_aster` already does. Talents
-  are per element, carried on the `Traveler (Anemo)`-style pages, and those
+  and the entry uses the bare name. Talents are per element, carried on the
+  `Traveler ({Element})` pages, and those
   entries use the form name. One element can appear under two families. Reading
   the main page alone gives the union of all eight and is wrong for both uses.
 - Item rarity: Genshin's `{{Item Infobox}}` calls it `quality`, HSR's calls it
-  `rarity`. Genshin also has `group`/`group2` params naming the item's family
-  (`Slime Materials`), which HSR has no equivalent for.
+  `rarity`. Genshin also has `group`/`group2` params naming the item's family,
+  which HSR has no equivalent for.
 - Genshin enemy drops: `Category:General Enemy Drops` (19 families of 3) and
   `Category:Elite Enemy Drops` (~33 families). Elite drops are weapon ascension
   materials only, no playable character uses one, so a character site cares only
   about the general set. The `... Enemy Drops by Group` subcategories are
-  miscategorized and cannot be trusted (`Frostnight Scion Materials` and others
-  sit under *General* while their items are all *Elite*): enumerate from the
+  miscategorized and cannot be trusted (some sit under *General* while their
+  items are all *Elite*): enumerate from the
   item categories instead. The dropping enemy comes from the item infobox's
   `source1..N`, at enemy-group level; the `{{Dropped By}}` section is a DPL
-  table of individual variants and is far too granular (`Damaged Mask` lists 28).
+  table of individual variants and is far too granular.
 - HSR common enemy drops, the equivalent set: items in both
   `Category:Trace Material` and `Category:Character Ascension Material`, 11
   families of 3 plus `Tears of Souls`, which is a universal substitute with no
@@ -317,7 +309,7 @@ cache" footer link bumps.
 - HSR character usage of materials: page categories `Ascends with {item}`
   (stagnant shadow stones) and `Traces Leveled with {item}` (crimson calyx
   tiers and weekly materials). Multi-path characters carry these categories on
-  their per-path SUBPAGES (`March 7th/Preservation`, `March 7th/The Hunt`),
+  their per-path SUBPAGES (`{name}/{path label}`),
   their main page has none, so scrape the subpages for them.
 - Divergent Universe stages: the `==Stages==` table on the `Divergent Universe`
   page (Stage, Boss, Rewards columns; note some rows lack the `id=` attribute,
@@ -332,7 +324,7 @@ build data. Try it first.
 - Beta entry point: `/changelog/beta?lang=en`. It lists NEW and UPDATED
   characters and weapons for the current beta revision, and links each one.
   It has no items section, so it never tells you which items are new.
-- Character page: `/characters/{id}/{slug}/beta?lang=en` (`10000136/mitya`).
+- Character page: `/characters/{id}/{slug}/beta?lang=en`.
   Rarity, weapon, element and base stats are in the page text; the ascension
   and talent material names are in the `img` alt of the materials calculator,
   the same trap Honey Hunter has. Quantities there match the infographic
@@ -340,8 +332,8 @@ build data. Try it first.
 - Item page: `/inventory/{id}/{id}/beta?lang=en` answers 308 with a Location of
   `/inventory/{category}/{id}/{slug}/beta?lang=en`. Reading just that header
   gives the name and category without the body, which is the cheap way to walk
-  an id range. Descriptions often name the area an item comes from
-  (`grows in the Teplo Oasis`), which settles the `region` field.
+  an id range. Descriptions often name the area an item comes from, which
+  settles the `region` field.
 - Listing pages render client-side and curl sees only "Loading...", but the
   SvelteKit payload is inline in the same HTML. Pull records out of it with
 
@@ -372,20 +364,18 @@ For unreleased characters the wikis lack build data; Honey Hunter has it.
   navigate the tab, then read the page with `javascript_tool`. The pages are
   server-rendered, so one `javascript_tool` call per page is enough.
 - The two sites use different URL schemes, and only HSR matches the older docs:
-  - HSR: index at `/characters/?lang=EN`, slugs like `pearl-character`,
-    `screwllum-character`. Item links are `/{slug}-item/`. Match those against
-    our reward names by slugifying both sides, and beware that Honey Hunter
-    drops apostrophes (`the-fluffy-collectors-edition` is "The Fluffy
-    Collector's Edition") and diacritics (`flower-of-laya` is "Flower of Ālaya").
+  - HSR: index at `/characters/?lang=EN`, slugs are `{name}-character`. Item
+    links are `/{slug}-item/`. Match those against our reward names by
+    slugifying both sides, and beware that Honey Hunter drops apostrophes and
+    diacritics.
   - Genshin: index at `/fam_chars/?lang=EN`, slugs are
-    `{internal codename}_{id}` (`vesna_143`, `columbina_904`, and for older
-    characters the HoYo codename rather than the English name: `qin_017` is
-    Jean, `ambor_008` is Amber). Item links are `/i_{id}/` or `/i_n{id}/`, and
+    `{internal codename}_{id}`. Older characters use the HoYo codename rather
+    than the English name. Item links are `/i_{id}/` or `/i_n{id}/`, and
     the link text is the item's display name, so names come straight off the
     page with no slug matching.
 - The Genshin `/fam_chars/` index renders only part of its list into the DOM.
-  For a character that has not released, go through `/new-in-{version}/?lang=EN`
-  instead, dashed (`/new-in-7-1/?lang=EN`), which links every new character,
+  For a character that has not released, go through
+  `/new-in-{major}-{minor}/?lang=EN` instead, which links every new character,
   weapon and item for that version.
 - Reading a Genshin character page's materials. The item name is in the `img`
   alt, NOT the link text: some pages label the link with the item name, others
@@ -427,8 +417,7 @@ Farming-total cards (Telegram leakers) carry fixed standard totals: 7.1M mora,
 is WHICH items appear. Identify them by visually matching tile icons against
 wiki `Item {name}.png` files (crop and zoom the card if needed). Talent family
 emblems persist across tiers, so match the emblem, not the book or scroll
-style; Snezhnaya families are scrolls (Charity cotton bloom, Fortitude
-four-petal star, Glory torch).
+style.
 
 ## Where the front end reads the data from
 
@@ -456,8 +445,8 @@ by `sortedByDisplayName` in each game's `domains.js`, keyed on
 file sorted by the stored name; the page handles the rest.
 
 Enemy names in `common_enemy_drops` are link targets, so each must be a real
-page title. Plural forms usually resolve through a wiki redirect but not always
-(`Landcruisers` and `Automatons` do not). Where the label and the page title
+page title. Plural forms usually resolve through a wiki redirect but not
+always. Where the label and the page title
 genuinely differ, add to `ENEMY_WIKI_ALT_NAMES` in `docs/assets/domains.js` or
 `HSR_ENEMY_WIKI_ALT_NAMES` in `docs/hsr/assets/domains.js`, the same pattern
 `WIKI_ALT_NAMES` uses for talent books.
@@ -467,7 +456,9 @@ genuinely differ, add to `ENEMY_WIKI_ALT_NAMES` in `docs/assets/domains.js` or
 New Genshin version: add the version row (or name an existing future row) in
 `data/versions.csv`, extend future projections, update `THUMBNAIL_IMAGE` in
 `generator/template_replacements.py` to the new splashscreen (verify the file
-on the wiki first).
+on the wiki first). The next version's splashscreen is usually uploaded before
+release, so `THUMBNAIL_IMAGE` can change once the file exists. HSR pages have
+no og:image, so this applies to Genshin only.
 
 Naming a version (either game) makes the version picker derive and request its
 splashscreen file. Verify the file first (`imageinfo`, exact case). If the name
@@ -475,8 +466,10 @@ differs from the derived one or the wiki has no file yet (the CDN placeholder
 would render instead of a plain text row), add an entry to
 `SPLASHSCREEN_OVERRIDES` (`docs/assets/characters.js`) or
 `HSR_SPLASH_SCREEN_OVERRIDES` (`docs/hsr/assets/characters.js`): the value is
-the real filename, or null for "no file". Genshin 1.0 is the standing example
-(`Splashscreen Welcome To Teyvat.png`, capital "To").
+the real filename, or null for "no file". `SPLASHSCREEN_OVERRIDES` holds
+`'1.0': 'Splashscreen Welcome To Teyvat.png'`, whose case differs from the
+version name. When naming a version, re-check every existing override and
+remove any whose file now exists on the wiki.
 
 New character (either game): add the CSV row. If released, wiki infobox has
 everything (HSR: `rarity`, `path`, `combatType`, `world`, `release_date`; forms
@@ -487,6 +480,21 @@ character lists (use primary CSV names, not display names).
 New domain/boss/set: fetch the infobox, resolve every image filename through
 `imageinfo`, insert in release order, add reward entries with official effect
 text, and for Genshin remember the bot compatibility rules.
+
+## Routine checks
+
+- New characters: list `Category:Upcoming Characters` on each wiki, then diff
+  `Category:Playable Characters` against the CSV `name` column.
+- Names: resolve every CSV `name` with `redirects=1`. Rename any name that
+  redirects to its target page title.
+- Materials: for each character released in the last six versions, compare
+  the wiki page's `Ascends with` and `Traces Leveled with` (HSR) or
+  `Talents Leveled with` (Genshin) categories against the `characters` lists
+  in that game's `domains.json`. Unreleased characters have no such categories
+  yet and cannot be audited this way.
+- Release dates: once a version is live, fill each of its characters' blank
+  `release_date` from the infobox `release_date`: `R` when it equals the
+  version's release date, the date otherwise.
 
 ## Verification checklist before pushing
 
