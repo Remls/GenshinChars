@@ -830,7 +830,7 @@
         "ew_guardian_s_lament": {"name": "Guardian's Lament", "type": "echo_of_war", "characters": ["Archer", "Bailu", "Bronya", "Clara", "Gepard", "Gilgamesh", "Hook", "Luocha", "Natasha", "Pela", "Qingque", "Sampo", "Seele", "Serval", "Sushang", "Yanqing"]},
         "ew_daythunder_anamnesis": {"name": "Daythunder Anamnesis", "type": "echo_of_war", "characters": ["Cerydra", "Cipher", "Cyrene", "Dan Heng • Permansor Terrae", "Evernight", "Hysilens", "Phainon"]},
         "ew_auspice_sliver": {"name": "Auspice Sliver", "type": "echo_of_war", "characters": ["Aglaea", "Castorice", "Lingsha", "Moze", "Mydei", "The Herta", "Trailblazer (Remembrance)"]},
-        "ew_vanquished_flow_s_reticence": {"name": "Vanquished Flow's Reticence", "type": "echo_of_war", "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Silver Wolf LV.999", "Sparxie", "The Dahlia", "Trailblazer (Elation)", "Yao Guang"]},
+        "ew_vanquished_flow_s_reticence": {"name": "Vanquished Flow's Reticence", "type": "echo_of_war", "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Pearl", "Silver Wolf LV.999", "Sparxie", "The Dahlia", "Trailblazer (Elation)", "Yao Guang"]},
         "ew_lost_echo_of_the_shared_wish": {"name": "Lost Echo of the Shared Wish", "type": "echo_of_war", "characters": ["Anaxa", "Boothill", "Firefly", "Hyacine", "Jade", "Rappa", "Sunday", "Tribbie"]},
         "ew_high_hopes_of_the_falsely_enlightened": {"name": "High Hopes of the Falsely Enlightened", "type": "echo_of_war", "characters": ["Aventurine • Waveflair", "Pearl", "Robin • Summeretto"]},
         "po_amphoreus_the_eternal_land": {"name": "Amphoreus, The Eternal Land", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked."},
@@ -873,7 +873,7 @@
         "c_desires": {"name": "Shards of Desires", "type": "common_enemy_drops", "enemies": ["Memory Zone Meme"], "characters": ["Aventurine", "Aventurine • Waveflair", "Boothill", "Firefly", "Sparkle", "Sunday", "The Dahlia"]},
         "c_titankin": {"name": "Glory-Aspersed Torso", "type": "common_enemy_drops", "enemies": ["Titankin", "Crepuscular Beast"], "characters": ["Aglaea", "Cyrene", "Dan Heng • Permansor Terrae", "Hyacine", "Hysilens", "Mydei", "Tribbie"]},
         "c_black_tide": {"name": "Eternal Lament", "type": "common_enemy_drops", "enemies": ["Black Tide Creature"], "characters": ["Anaxa", "Castorice", "Cerydra", "Cipher", "Evernight", "Phainon"]},
-        "c_imagenated": {"name": "Lucid Awl", "type": "common_enemy_drops", "enemies": ["Imagenated Creature"], "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Silver Wolf LV.999", "Sparxie", "Yao Guang"]}
+        "c_imagenated": {"name": "Lucid Awl", "type": "common_enemy_drops", "enemies": ["Imagenated Creature"], "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Pearl", "Silver Wolf LV.999", "Sparxie", "Yao Guang"]}
     },
     "other_materials": {
         "o_enigmatic_ectostella": {"name": "Enigmatic Ectostella", "type": "other_materials", "characters": ["Trailblazer"]}
