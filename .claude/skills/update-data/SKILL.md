@@ -63,11 +63,17 @@ then reload, or use the "Reset picture cache" footer link (clears localStorage).
   and stored as `{"wiki": filename}` or `{"local": filename}`. Chip icons are
   `{name} Icon.png` on Genshin and `Character {name} Icon.png` on HSR, tried per
   form first so multi-form characters get their own art. Full art is
-  `Character {name} Full Wish.png` then `Character {name} Game.png` on Genshin,
+  `Character {name} Full Wish.png`, then `Game.png`, then `Card.png` on Genshin,
   `Character {name} Splash Art.png` on HSR. A local override in the game's
-  `assets/images/characters/` or `full-characters/` (lowercase filenames) is used
-  when the wiki has nothing, and Fallback.png otherwise. Renaming a character
-  invalidates its photo lookup.
+  `assets/images/characters/` or `full-characters/` (lowercase slug, `.png`)
+  wins over every wiki file. Fallback.png is used when neither exists. Renaming
+  a character invalidates its photo lookup.
+- Leaked splash art: the `Splash Art` image on a gachabase character page is a
+  50%-quality webp from `i.gachabase.net`. The full-quality transparent PNG is
+  at `https://cdn.gachabase.net/gi/assets/{hash}.png`, using the same hash.
+  Splash PNGs carry large semi-transparent glow layers that look broken on a
+  white preview. Judge them composited on a dark background, as the site
+  shows them.
 
 ### versions.csv (both games)
 
@@ -495,6 +501,10 @@ text, and for Genshin remember the bot compatibility rules.
 - Release dates: once a version is live, fill each of its characters' blank
   `release_date` from the infobox `release_date`: `R` when it equals the
   version's release date, the date otherwise.
+- Local images: for every file in each game's `assets/images/characters/` and
+  `full-characters/`, look for the wiki files the generator would otherwise use.
+  A local file always wins, so once the wiki has art of equal or better quality,
+  delete the local file. Delete any local file whose slug matches no character.
 
 ## Verification checklist before pushing
 

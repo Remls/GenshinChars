@@ -81,12 +81,12 @@ def resolve(api: str, filenames: list) -> dict:
 
 
 def pick(candidates: list, resolved: dict, local_dir: str, slug: str):
-    """The wiki file if one exists, else a local override, else nothing."""
+    """A local override if one exists, else the wiki file, else nothing."""
+    if os.path.isfile(os.path.join(local_dir, f"{slug}.png")):
+        return {"local": f"{slug}.png"}
     for name in candidates:
         if name in resolved:
             return {"wiki": resolved[name]}
-    if os.path.isfile(os.path.join(local_dir, f"{slug}.png")):
-        return {"local": f"{slug}.png"}
     return None
 
 
