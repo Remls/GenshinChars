@@ -718,17 +718,17 @@
         },
         {
             "name": "Guardian Blade of Drifting Snow",
-            "location": "???",
+            "location": "Fellfrost Peak",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": ["nb_vagabonds_cracked_armor"]
         },
         {
-            "name": "???",
-            "location": "???",
+            "name": "Wavebinder",
+            "location": "Novokitezhgrad",
             "region": "Snezhnaya",
             "type": "normal_bosses",
-            "rewards": ["nb_stabilizing_anchor"]
+            "rewards": ["nb_stability_anchor"]
         },
         {
             "name": "Confront Stormterror (Stormterror Dvalin)",
@@ -1124,7 +1124,7 @@
         "nb_vagabonds_cracked_armor": {"name": "Vagabond's Cracked Armor", "type": "normal_bosses", "characters": [
             "Vesna"
         ]},
-        "nb_stabilizing_anchor": {"name": "Shattered Stabilizing Anchor", "type": "normal_bosses", "characters": [
+        "nb_stability_anchor": {"name": "Shattered Stability Anchor", "type": "normal_bosses", "characters": [
             "Mitya"
         ]},
         "wb_dvalin_plume": {"name": "Dvalin's Plume", "type": "weekly_bosses", "characters": [
@@ -1500,7 +1500,7 @@
         "s_fairy_wormwood": {"name": "Fairy Wormwood", "region": "Snezhnaya", "characters": [
             "Valeriy"
         ]},
-        "s_crystalfold": {"name": "Crystalfold", "region": "Snezhnaya", "characters": [
+        "s_kristallfold": {"name": "Kristallfold", "region": "Snezhnaya", "characters": [
             "Mitya"
         ]}
     },
