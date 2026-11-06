@@ -1,6 +1,6 @@
 {
-    "version": "11ccd5e",
-    "last_updated": "2026-11-06T05:44:31.840873Z",
+    "version": "7e97c2b",
+    "last_updated": "2026-11-06T06:00:43.393209Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -245,7 +245,7 @@
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Anastasya Game.png"
+                            "local": "anastasya.png"
                         }
                     ]
                 }
@@ -255,7 +255,7 @@
             },
             "full_photo": [
                 {
-                    "wiki": "Character Anastasya Game.png"
+                    "local": "anastasya.png"
                 }
             ],
             "is_released": false,
