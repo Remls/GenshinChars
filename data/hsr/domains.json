@@ -749,7 +749,7 @@
         "ss_ascendant_debris": {"name": "Ascendant Debris", "type": "stagnant_shadow", "characters": ["Black Swan", "Blade", "Huohuo"]},
         "ss_charred_bud_of_twilight": {"name": "Charred Bud of Twilight", "type": "stagnant_shadow", "characters": ["Cerydra", "Robin • Summeretto"]},
         "ss_invasive_clot": {"name": "Invasive Clot", "type": "stagnant_shadow", "characters": ["Dan Heng • Permansor Terrae", "Evanescia", "Hysilens", "Phainon", "Yao Guang"]},
-        "ss_sneering_harlequin": {"name": "Sneering Harlequin", "type": "stagnant_shadow", "characters": ["Aventurine • Waveflair", "Rin Tohsaka"]},
+        "ss_sneering_harlequin": {"name": "Sneering Harlequin", "type": "stagnant_shadow", "characters": ["Aeon ★ Aha", "Aventurine • Waveflair", "Rin Tohsaka"]},
         "ss_shape_shifter_s_lightning_staff": {"name": "Shape Shifter's Lightning Staff", "type": "stagnant_shadow", "characters": ["Acheron", "Jing Yuan", "Kafka"]},
         "ss_ipc_work_permit": {"name": "IPC Work Permit", "type": "stagnant_shadow", "characters": ["Boothill", "Robin", "Yunli"]},
         "ss_lightning_crown_of_the_past_shadow": {"name": "Lightning Crown of the Past Shadow", "type": "stagnant_shadow", "characters": ["Arlan", "Bailu", "Serval", "Tingyun"]},
@@ -777,7 +777,7 @@
         "cr_omnicolor_fool_s_own": {"name": "Omnicolor, Fool's Own", "type": "calyx_crimson", "characters": ["Gilgamesh"]},
         "cr_moon_rage_fang": {"name": "Moon Rage Fang", "type": "calyx_crimson", "characters": ["Firefly", "Misha", "Mydei", "Phainon", "Saber", "Yunli"]},
         "cr_worldbreaker_blade": {"name": "Worldbreaker Blade", "type": "calyx_crimson", "characters": ["Arlan", "Blade", "Clara", "Dan Heng • Imbibitor Lunae", "Hook", "Jingliu", "Trailblazer (Destruction)", "Xueyi"]},
-        "cr_the_fluffy_collector_s_edition": {"name": "The Fluffy Collector's Edition", "type": "calyx_crimson", "characters": ["Aventurine • Waveflair", "Evanescia", "Pearl", "Silver Wolf LV.999", "Sparxie", "Trailblazer (Elation)", "Yao Guang"]},
+        "cr_the_fluffy_collector_s_edition": {"name": "The Fluffy Collector's Edition", "type": "calyx_crimson", "characters": ["Aeon ★ Aha", "Aventurine • Waveflair", "Evanescia", "Pearl", "Silver Wolf LV.999", "Sparxie", "Trailblazer (Elation)", "Yao Guang"]},
         "cr_exquisite_colored_draft": {"name": "Exquisite Colored Draft", "type": "calyx_crimson", "characters": ["Anaxa", "Jade", "Rappa", "The Herta"]},
         "cr_key_of_wisdom": {"name": "Key of Wisdom", "type": "calyx_crimson", "characters": ["Argenti", "Herta", "Himeko", "Jing Yuan", "Qingque", "Serval"]},
         "cr_cosmic_sandpit": {"name": "Cosmic Sandpit", "type": "calyx_crimson", "characters": ["Himeko • Nova", "Rin Tohsaka"]},
@@ -830,9 +830,9 @@
         "ew_guardian_s_lament": {"name": "Guardian's Lament", "type": "echo_of_war", "characters": ["Archer", "Bailu", "Bronya", "Clara", "Gepard", "Gilgamesh", "Hook", "Luocha", "Natasha", "Pela", "Qingque", "Sampo", "Seele", "Serval", "Sushang", "Yanqing"]},
         "ew_daythunder_anamnesis": {"name": "Daythunder Anamnesis", "type": "echo_of_war", "characters": ["Cerydra", "Cipher", "Cyrene", "Dan Heng • Permansor Terrae", "Evernight", "Hysilens", "Phainon"]},
         "ew_auspice_sliver": {"name": "Auspice Sliver", "type": "echo_of_war", "characters": ["Aglaea", "Castorice", "Lingsha", "Moze", "Mydei", "The Herta", "Trailblazer (Remembrance)"]},
-        "ew_vanquished_flow_s_reticence": {"name": "Vanquished Flow's Reticence", "type": "echo_of_war", "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Pearl", "Silver Wolf LV.999", "Sparxie", "The Dahlia", "Trailblazer (Elation)", "Yao Guang"]},
+        "ew_vanquished_flow_s_reticence": {"name": "Vanquished Flow's Reticence", "type": "echo_of_war", "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Silver Wolf LV.999", "Sparxie", "The Dahlia", "Trailblazer (Elation)", "Yao Guang"]},
         "ew_lost_echo_of_the_shared_wish": {"name": "Lost Echo of the Shared Wish", "type": "echo_of_war", "characters": ["Anaxa", "Boothill", "Firefly", "Hyacine", "Jade", "Rappa", "Sunday", "Tribbie"]},
-        "ew_high_hopes_of_the_falsely_enlightened": {"name": "High Hopes of the Falsely Enlightened", "type": "echo_of_war", "characters": ["Aventurine • Waveflair", "Pearl", "Robin • Summeretto"]},
+        "ew_high_hopes_of_the_falsely_enlightened": {"name": "High Hopes of the Falsely Enlightened", "type": "echo_of_war", "characters": ["Aeon ★ Aha", "Aventurine • Waveflair", "Pearl", "Robin • Summeretto"]},
         "po_amphoreus_the_eternal_land": {"name": "Amphoreus, The Eternal Land", "type": "planar_ornament", "effect": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked."},
         "po_arcadia_of_woven_dreams": {"name": "Arcadia of Woven Dreams", "type": "planar_ornament", "effect": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by 9%/12%, up to a maximum of 4/3 stacks."},
         "po_belobog_of_the_architects": {"name": "Belobog of the Architects", "type": "planar_ornament", "effect": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF."},
@@ -873,7 +873,7 @@
         "c_desires": {"name": "Shards of Desires", "type": "common_enemy_drops", "enemies": ["Memory Zone Meme"], "characters": ["Aventurine", "Aventurine • Waveflair", "Boothill", "Firefly", "Sparkle", "Sunday", "The Dahlia"]},
         "c_titankin": {"name": "Glory-Aspersed Torso", "type": "common_enemy_drops", "enemies": ["Titankin", "Crepuscular Beast"], "characters": ["Aglaea", "Cyrene", "Dan Heng • Permansor Terrae", "Hyacine", "Hysilens", "Mydei", "Tribbie"]},
         "c_black_tide": {"name": "Eternal Lament", "type": "common_enemy_drops", "enemies": ["Black Tide Creature"], "characters": ["Anaxa", "Castorice", "Cerydra", "Cipher", "Evernight", "Phainon"]},
-        "c_imagenated": {"name": "Lucid Awl", "type": "common_enemy_drops", "enemies": ["Imagenated Creature"], "characters": ["Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Pearl", "Silver Wolf LV.999", "Sparxie", "Yao Guang"]}
+        "c_imagenated": {"name": "Lucid Awl", "type": "common_enemy_drops", "enemies": ["Imagenated Creature"], "characters": ["Aeon ★ Aha", "Ashveil", "Evanescia", "Himeko • Nova", "Mortenax Blade", "Pearl", "Silver Wolf LV.999", "Sparxie", "Yao Guang"]}
     },
     "other_materials": {
         "o_enigmatic_ectostella": {"name": "Enigmatic Ectostella", "type": "other_materials", "characters": ["Trailblazer"]}
