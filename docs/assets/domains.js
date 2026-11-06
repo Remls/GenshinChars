@@ -121,11 +121,15 @@ document.addEventListener('alpine:init', () => {
             ;[this.allData.rewards, this.allData.common_enemy_drops,
               this.allData.specialties, this.allData.other_materials]
                 .forEach(group => Object.values(group || {})
-                    .forEach(entry => { items[entry.name] = entry.image }))
+                    .forEach(entry => {
+                        items[entry.name] = { image: entry.image, image_ts: entry.image_ts }
+                    }))
             this.itemImages = items
             const domains = {}
             this.allData.domains.forEach(d => {
-                domains[d.name] = { image: d.image, link: d.link, boss: d.boss }
+                domains[d.name] = {
+                    image: d.image, image_ts: d.image_ts, link: d.link, boss: d.boss,
+                }
             })
             this.domainImages = domains
         },
@@ -403,8 +407,10 @@ document.addEventListener('alpine:init', () => {
         // Thumbnails render at 20px, domain shots at 36x20. The CDN refuses scaled
         // URLs when a Referer arrives, so the tags opt out of sending one
         itemThumbHtml(item) {
-            const filename = this.itemImages[item]
-            const src = filename ? wikiFileUrl(filename, 'gensin-impact', 40) : FALLBACK_PHOTO
+            const info = this.itemImages[item] || {}
+            const src = info.image
+                ? wikiFileUrl(info.image, 'gensin-impact', 40, info.image_ts)
+                : FALLBACK_PHOTO
             return `<img src="${src}" class="item-thumb" width="20" height="20" loading="lazy"`
                 + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
@@ -458,7 +464,9 @@ document.addEventListener('alpine:init', () => {
             const info = this.domainImages[domainName] || {}
             const thumbClass = (info.image && info.image.startsWith('Domain_')) ? 'domain-shot' : 'item-thumb'
             const width = thumbClass === 'domain-shot' ? 80 : 40
-            const src = info.image ? wikiFileUrl(info.image, 'gensin-impact', width) : FALLBACK_PHOTO
+            const src = info.image
+                ? wikiFileUrl(info.image, 'gensin-impact', width, info.image_ts)
+                : FALLBACK_PHOTO
             const thumb = `<img src="${src}" class="${thumbClass}" height="20" loading="lazy"`
                 + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`

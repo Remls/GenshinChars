@@ -85,7 +85,7 @@ function foldedText(s) {
 // width, which in turn needs referrerpolicy="no-referrer" on the tag
 function characterImageUrl(image, wiki, localDir, thumbWidth = null) {
     if (!image) return FALLBACK_PHOTO
-    if (image.wiki) return wikiFileUrl(image.wiki, wiki, thumbWidth)
+    if (image.wiki) return wikiFileUrl(image.wiki, wiki, thumbWidth, image.ts)
     return `${localDir}/${image.local}`
 }
 
@@ -128,15 +128,17 @@ function resetImageCache() {
 
 // Bare wiki image URLs (no /revision/... suffix) are served regardless of referer.
 // The scaled-thumbnail URLs are not, and need referrerpolicy="no-referrer".
-function wikiFileUrl(filename, wiki = 'gensin-impact', thumbWidth = null) {
+// "version" is the file's upload time, stored by the generator, so a new upload
+// is a new cache key.
+function wikiFileUrl(filename, wiki = 'gensin-impact', thumbWidth = null, version = null) {
     filename = filename.replaceAll(' ', '_')
     const hash = md5Hex(filename)
     const encoded = encodeURIComponent(filename)
         .replaceAll("'", '%27').replaceAll('(', '%28').replaceAll(')', '%29')
     let url = `https://static.wikia.nocookie.net/${wiki}/images/${hash[0]}/${hash.slice(0, 2)}/${encoded}`
     if (thumbWidth) url += `/revision/latest/scale-to-width-down/${thumbWidth}`
-    const token = localStorage.getItem(IMAGE_CACHE_TOKEN_KEY)
-    if (token) url += `?cb=${token}`
+    const cb = [version, localStorage.getItem(IMAGE_CACHE_TOKEN_KEY)].filter(Boolean)
+    if (cb.length) url += `?cb=${cb.join('-')}`
     return url
 }
 
@@ -336,15 +338,22 @@ const HSR_DOMAIN_TYPES = {
 // itself for the rest. A source with no picture keeps its name.
 const BOSS_SOURCE_TYPES = {
     genshin: {
-        talent_upgrade_mats: domain => ({ name: domain.name, image: domain.image }),
-        normal_bosses: domain => ({ name: domain.name, image: domain.image }),
-        weekly_bosses: domain => ({ name: (domain.boss || {}).name, image: domain.image }),
+        talent_upgrade_mats: domain => ({
+            name: domain.name, image: domain.image, image_ts: domain.image_ts,
+        }),
+        normal_bosses: domain => ({
+            name: domain.name, image: domain.image, image_ts: domain.image_ts,
+        }),
+        weekly_bosses: domain => ({
+            name: (domain.boss || {}).name, image: domain.image, image_ts: domain.image_ts,
+        }),
     },
     hsr: {
         // A stage with no art of its own is filed under the item it drops
         stagnant_shadow: domain => ({
             name: domain.name,
             image: domain.image.startsWith('Item ') ? null : domain.image,
+            image_ts: domain.image_ts,
         }),
         echo_of_war: domain => ({
             name: (domain.boss || [])[0],
@@ -397,7 +406,8 @@ function buildCharacterMaterials(domainsData, game) {
         (entry.characters || []).forEach(name => {
             if (!materials[name]) materials[name] = []
             materials[name].push({
-                name: entry.name, image: entry.image, boss: bosses[key], order,
+                name: entry.name, image: entry.image, image_ts: entry.image_ts,
+                boss: bosses[key], order,
             })
         })
     })
@@ -766,7 +776,8 @@ document.addEventListener('alpine:init', () => {
                     boss: item.boss && {
                         name: item.boss.name,
                         src: item.boss.image
-                            && wikiFileUrl(item.boss.image, config.wikiImages, 80),
+                            && wikiFileUrl(
+                                item.boss.image, config.wikiImages, 80, item.boss.image_ts),
                     },
                 }))
         },
@@ -776,7 +787,9 @@ document.addEventListener('alpine:init', () => {
         itemImageUrl(item, config) {
             const file = item.image
                 || (config.itemFile && config.itemFile.replace('{name}', item.name))
-            return file ? wikiFileUrl(file, config.wikiImages, 128) : FALLBACK_PHOTO
+            return file
+                ? wikiFileUrl(file, config.wikiImages, 128, item.image_ts)
+                : FALLBACK_PHOTO
         },
 
         buildField(field, character, details, config) {

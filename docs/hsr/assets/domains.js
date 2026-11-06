@@ -248,16 +248,17 @@ document.addEventListener('alpine:init', () => {
 
         // Thumbnails render at 20px tall, domain shots at 36x20. The CDN refuses
         // scaled URLs when a Referer arrives, so the tags opt out of sending one
-        thumbHtml(filename, cssClass = 'item-thumb') {
+        thumbHtml(filename, cssClass = 'item-thumb', version = null) {
             const width = cssClass === 'domain-art' ? 120 : 40
-            const src = wikiFileUrl(filename, HSR_WIKI_IMAGES, width)
+            const src = wikiFileUrl(filename, HSR_WIKI_IMAGES, width, version)
             return `<img src="${src}" class="${cssClass}" height="20" loading="lazy"`
                 + ` referrerpolicy="no-referrer"`
                 + ` onerror="this.onerror=null;this.src='${FALLBACK_PHOTO}'">`
         },
 
         itemThumbHtml(reward) {
-            return this.thumbHtml(reward.image || `Item ${reward.name}.png`)
+            return this.thumbHtml(
+                reward.image || `Item ${reward.name}.png`, 'item-thumb', reward.image_ts)
         },
 
         wikiLinkHtml(item) {
@@ -317,7 +318,8 @@ document.addEventListener('alpine:init', () => {
             const file = this.domainThumbFile(domain)
             const illustration = file.startsWith('Enemy') || file.startsWith('Cavern of Corrosion')
             const big = illustration && large
-            const thumb = this.thumbHtml(file, big ? 'domain-art' : 'item-thumb')
+            const thumb = this.thumbHtml(file, big ? 'domain-art' : 'item-thumb',
+                file === domain.image ? domain.image_ts : null)
             const wrap = html => big
                 ? `<span class="domain-art-row">${thumb}<span>${html}</span></span>`
                 : `${thumb} ${html}`
