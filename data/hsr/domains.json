@@ -433,7 +433,7 @@
             "location": "Silvermane Guard Restricted Zone",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Blaze.png",
+            "image": "Icon Enemy Blaze Out of Space.png",
             "rewards": ["ss_endotherm_chitin"]
         },
         {
@@ -441,7 +441,7 @@
             "location": "Stargazer Navalia",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Doom.png",
+            "image": "Icon Enemy Disciples of Sanctus Medicus Shape Shifter.png",
             "rewards": ["ss_shape_shifter_s_lightning_staff"]
         },
         {
@@ -449,7 +449,7 @@
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Fulmination.png",
+            "image": "Icon Enemy Guardian Shadow.png",
             "rewards": ["ss_lightning_crown_of_the_past_shadow"]
         },
         {
@@ -457,7 +457,7 @@
             "location": "Rivet Town",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Gust.png",
+            "image": "Icon Enemy Stormbringer.png",
             "rewards": ["ss_storm_eye"]
         },
         {
@@ -465,7 +465,7 @@
             "location": "Cloudford",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Icicle.png",
+            "image": "Icon Enemy Ice Out of Space.png",
             "rewards": ["ss_gelid_chitin"]
         },
         {
@@ -473,7 +473,7 @@
             "location": "Backwater Pass",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Mirage.png",
+            "image": "Icon Enemy Decaying Shadow.png",
             "rewards": ["ss_golden_crown_of_the_past_shadow"]
         },
         {
@@ -481,7 +481,7 @@
             "location": "Base Zone",
             "region": "Herta Space Station",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Quanta.png",
+            "image": "Icon Enemy Voidranger Trampler.png",
             "rewards": ["ss_void_cast_iron"]
         },
         {
@@ -489,7 +489,7 @@
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Rime.png",
+            "image": "Icon Enemy Frigid Prowler.png",
             "rewards": ["ss_horn_of_snow"]
         },
         {
@@ -497,7 +497,7 @@
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Spike.png",
+            "image": "Icon Enemy Automaton Direwolf.png",
             "rewards": ["ss_broken_teeth_of_iron_wolf"]
         },
         {
@@ -505,7 +505,7 @@
             "location": "Alchemy Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Celestial.png",
+            "image": "Icon Enemy The Ascended.png",
             "rewards": ["ss_ascendant_debris"]
         },
         {
@@ -513,7 +513,7 @@
             "location": "Scalegorge Waterscape",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Abomination.png",
+            "image": "Icon Enemy Abundance Sprite Malefic Ape.png",
             "rewards": ["ss_nail_of_the_ape"]
         },
         {
@@ -521,7 +521,7 @@
             "location": "Artisanship Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Puppetry.png",
+            "image": "Icon Enemy Aurumaton Gatekeeper.png",
             "rewards": ["ss_suppressing_edict"]
         },
         {
@@ -529,7 +529,7 @@
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Scorch.png",
+            "image": "Icon Enemy Searing Prowler.png",
             "rewards": ["ss_searing_steel_blade"]
         },
         {
@@ -537,7 +537,7 @@
             "location": "Fyxestroll Garden",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Perdition.png",
+            "image": "Icon Enemy Aurumaton Spectral Envoy.png",
             "rewards": ["ss_netherworld_token"]
         },
         {
@@ -545,7 +545,7 @@
             "location": "The Reverie (Dreamscape)",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Nectar.png",
+            "image": "Icon Enemy Dreamjolt Troupe's Sweet Gorilla.png",
             "rewards": ["ss_dream_fridge"]
         },
         {
@@ -553,7 +553,7 @@
             "location": "Dream's Edge",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Roast.png",
+            "image": "Icon Enemy Dreamjolt Troupe's Beyond Overcooked.png",
             "rewards": ["ss_dream_flamer"]
         },
         {
@@ -561,7 +561,7 @@
             "location": "Dewlight Pavilion",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Ire.png",
+            "image": "Icon Enemy Memory Zone Meme Shell of Faded Rage.png",
             "rewards": ["ss_raging_heart"]
         },
         {
@@ -569,7 +569,7 @@
             "location": "Clock Studios Theme Park",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Duty.png",
+            "image": "Icon Enemy Senior Staff Team Leader.png",
             "rewards": ["ss_ipc_work_permit"]
         },
         {
@@ -577,7 +577,7 @@
             "location": "Penacony Grand Theater",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Gloam.png",
+            "image": "Icon Enemy Present Inebriated in Revelry.png",
             "rewards": ["ss_a_glass_of_the_besotted_era"]
         },
         {
@@ -585,7 +585,7 @@
             "location": "The Shackling Prison",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Mechwolf.png",
+            "image": "Icon Enemy Howling Casket.png",
             "rewards": ["ss_nail_of_the_beast_coffin"]
         },
         {
@@ -593,7 +593,7 @@
             "location": "Penacony Grand Theater",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item Chordal Mirage.png",
+            "image": "Icon Enemy Tomorrow in Harmonious Chords.png",
             "rewards": ["ss_chordal_mirage"]
         },
         {
@@ -601,7 +601,7 @@
             "location": "\"Murmuring Woods\" Grove of Epiphany",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Darkveil Moonlight.png",
+            "image": "Icon Enemy Moonlit Pegasus.png",
             "rewards": ["ss_darkveil_moonlight"]
         },
         {
@@ -609,7 +609,7 @@
             "location": "\"Abyss of Fate\" Janusopolis",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Harbinger of Strife.png",
+            "image": "Icon Enemy Furiae Praetor.png",
             "rewards": ["ss_harbinger_of_strife"]
         },
         {
@@ -617,7 +617,7 @@
             "location": "\"Dragonbone City\" Styxia",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Invasive Clot.png",
+            "image": "Icon Enemy Black Tide's Corroded Daemon.png",
             "rewards": ["ss_invasive_clot"]
         },
         {
@@ -625,7 +625,7 @@
             "location": "\"Fortress of Dome\" Eye of Twilight",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Charred Bud of Twilight.png",
+            "image": "Icon Enemy Dark Sun Gryphon.png",
             "rewards": ["ss_charred_bud_of_twilight"]
         },
         {
@@ -633,7 +633,7 @@
             "location": "\"Warbling Shores\" Styxia",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Sea Siren's Torn Fin.png",
+            "image": "Icon Enemy Lady of Crashing Waves.png",
             "rewards": ["ss_sea_siren_s_torn_fin"]
         },
         {
@@ -641,7 +641,7 @@
             "location": "\"Sanctum of Prophecy\" Janusopolis",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Radiant Prominence.png",
+            "image": "Icon Enemy Noontide Gryphon.png",
             "rewards": ["ss_radiant_prominence"]
         },
         {
@@ -649,7 +649,7 @@
             "location": "Dovebrook District",
             "region": "Planarcadia",
             "type": "stagnant_shadow",
-            "image": "Item Thunder Strum.png",
+            "image": "Icon Enemy Rocking Rebel.png",
             "rewards": ["ss_thunder_strum"]
         },
         {
@@ -657,7 +657,7 @@
             "location": "Inkford Hermitage",
             "region": "Planarcadia",
             "type": "stagnant_shadow",
-            "image": "Item Sneering Harlequin.png",
+            "image": "Icon Enemy God-Devourer Offspring.png",
             "rewards": ["ss_sneering_harlequin"]
         },
         {

@@ -349,11 +349,8 @@ const BOSS_SOURCE_TYPES = {
         }),
     },
     hsr: {
-        // A stage with no art of its own is filed under the item it drops
         stagnant_shadow: domain => ({
-            name: domain.name,
-            image: domain.image.startsWith('Item ') ? null : domain.image,
-            image_ts: domain.image_ts,
+            name: domain.name, image: domain.image, image_ts: domain.image_ts,
         }),
         echo_of_war: domain => ({
             name: (domain.boss || [])[0],
