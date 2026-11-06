@@ -1,6 +1,6 @@
 {
-    "version": "63a23f0",
-    "last_updated": "2026-11-06T05:46:44.412626Z",
+    "version": "86c863c",
+    "last_updated": "2026-11-06T07:05:27.510244Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -189,11 +189,13 @@
                     "release_version": "4.8",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Character Ellen Icon.png"
+                        "wiki": "Character Ellen Icon.png",
+                        "ts": "20261027052825"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ellen Splash Art.png"
+                            "wiki": "Character Ellen Splash Art.png",
+                            "ts": "20261030060519"
                         }
                     ]
                 }
@@ -204,11 +206,13 @@
             "release_date": null,
             "is_released": false,
             "photo": {
-                "wiki": "Character Ellen Icon.png"
+                "wiki": "Character Ellen Icon.png",
+                "ts": "20261027052825"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ellen Splash Art.png"
+                    "wiki": "Character Ellen Splash Art.png",
+                    "ts": "20261030060519"
                 }
             ]
         },
@@ -223,11 +227,13 @@
                     "release_version": "4.8",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Character Astra Yao Icon.png"
+                        "wiki": "Character Astra Yao Icon.png",
+                        "ts": "20261030060347"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Astra Yao Splash Art.png"
+                            "wiki": "Character Astra Yao Splash Art.png",
+                            "ts": "20261030060435"
                         }
                     ]
                 }
@@ -238,11 +244,13 @@
             "release_date": null,
             "is_released": false,
             "photo": {
-                "wiki": "Character Astra Yao Icon.png"
+                "wiki": "Character Astra Yao Icon.png",
+                "ts": "20261030060347"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Astra Yao Splash Art.png"
+                    "wiki": "Character Astra Yao Splash Art.png",
+                    "ts": "20261030060435"
                 }
             ]
         },
@@ -257,11 +265,13 @@
                     "release_version": "4.7",
                     "release_date": "2026-11-11",
                     "photo": {
-                        "wiki": "Character Aeon ★ Aha Icon.png"
+                        "wiki": "Character Aeon ★ Aha Icon.png",
+                        "ts": "20261030121742"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aeon ★ Aha Splash Art.png"
+                            "wiki": "Character Aeon ★ Aha Splash Art.png",
+                            "ts": "20261030150139"
                         }
                     ]
                 }
@@ -272,11 +282,13 @@
             "release_date": "2026-11-11",
             "is_released": false,
             "photo": {
-                "wiki": "Character Aeon ★ Aha Icon.png"
+                "wiki": "Character Aeon ★ Aha Icon.png",
+                "ts": "20261030121742"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aeon ★ Aha Splash Art.png"
+                    "wiki": "Character Aeon ★ Aha Splash Art.png",
+                    "ts": "20261030150139"
                 }
             ]
         },
@@ -291,11 +303,13 @@
                     "release_version": "4.6",
                     "release_date": "2026-09-28",
                     "photo": {
-                        "wiki": "Character Pearl Icon.png"
+                        "wiki": "Character Pearl Icon.png",
+                        "ts": "20260920120918"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Pearl Splash Art.png"
+                            "wiki": "Character Pearl Splash Art.png",
+                            "ts": "20260928030033"
                         }
                     ]
                 }
@@ -306,11 +320,13 @@
             "release_date": "2026-09-28",
             "is_released": true,
             "photo": {
-                "wiki": "Character Pearl Icon.png"
+                "wiki": "Character Pearl Icon.png",
+                "ts": "20260920120918"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Pearl Splash Art.png"
+                    "wiki": "Character Pearl Splash Art.png",
+                    "ts": "20260928030033"
                 }
             ]
         },
@@ -325,11 +341,13 @@
                     "release_version": "4.5",
                     "release_date": "2026-09-12",
                     "photo": {
-                        "wiki": "Character Aventurine • Waveflair Icon.png"
+                        "wiki": "Character Aventurine • Waveflair Icon.png",
+                        "ts": "20260814121832"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aventurine • Waveflair Splash Art.png"
+                            "wiki": "Character Aventurine • Waveflair Splash Art.png",
+                            "ts": "20260912040648"
                         }
                     ]
                 }
@@ -340,11 +358,13 @@
             "release_date": "2026-09-12",
             "is_released": true,
             "photo": {
-                "wiki": "Character Aventurine • Waveflair Icon.png"
+                "wiki": "Character Aventurine • Waveflair Icon.png",
+                "ts": "20260814121832"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aventurine • Waveflair Splash Art.png"
+                    "wiki": "Character Aventurine • Waveflair Splash Art.png",
+                    "ts": "20260912040648"
                 }
             ]
         },
@@ -359,11 +379,13 @@
                     "release_version": "4.5",
                     "release_date": "2026-08-26",
                     "photo": {
-                        "wiki": "Character Robin • Summeretto Icon.png"
+                        "wiki": "Character Robin • Summeretto Icon.png",
+                        "ts": "20260814121759"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Robin • Summeretto Splash Art.png"
+                            "wiki": "Character Robin • Summeretto Splash Art.png",
+                            "ts": "20260826032839"
                         }
                     ]
                 }
@@ -374,11 +396,13 @@
             "release_date": "2026-08-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Robin • Summeretto Icon.png"
+                "wiki": "Character Robin • Summeretto Icon.png",
+                "ts": "20260814121759"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Robin • Summeretto Splash Art.png"
+                    "wiki": "Character Robin • Summeretto Splash Art.png",
+                    "ts": "20260826032839"
                 }
             ]
         },
@@ -393,11 +417,13 @@
                     "release_version": "4.4",
                     "release_date": "2026-07-24",
                     "photo": {
-                        "wiki": "Character Rin Tohsaka Icon.png"
+                        "wiki": "Character Rin Tohsaka Icon.png",
+                        "ts": "20260703122106"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Rin Tohsaka Splash Art.png"
+                            "wiki": "Character Rin Tohsaka Splash Art.png",
+                            "ts": "20260724102152"
                         }
                     ]
                 }
@@ -408,11 +434,13 @@
             "release_date": "2026-07-24",
             "is_released": true,
             "photo": {
-                "wiki": "Character Rin Tohsaka Icon.png"
+                "wiki": "Character Rin Tohsaka Icon.png",
+                "ts": "20260703122106"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Rin Tohsaka Splash Art.png"
+                    "wiki": "Character Rin Tohsaka Splash Art.png",
+                    "ts": "20260724102152"
                 }
             ]
         },
@@ -427,11 +455,13 @@
                     "release_version": "4.4",
                     "release_date": "2026-07-24",
                     "photo": {
-                        "wiki": "Character Gilgamesh Icon.png"
+                        "wiki": "Character Gilgamesh Icon.png",
+                        "ts": "20260703122145"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Gilgamesh Splash Art.png"
+                            "wiki": "Character Gilgamesh Splash Art.png",
+                            "ts": "20260724102153"
                         }
                     ]
                 }
@@ -442,11 +472,13 @@
             "release_date": "2026-07-24",
             "is_released": true,
             "photo": {
-                "wiki": "Character Gilgamesh Icon.png"
+                "wiki": "Character Gilgamesh Icon.png",
+                "ts": "20260703122145"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Gilgamesh Splash Art.png"
+                    "wiki": "Character Gilgamesh Splash Art.png",
+                    "ts": "20260724102153"
                 }
             ]
         },
@@ -461,11 +493,13 @@
                     "release_version": "4.4",
                     "release_date": "2026-07-15",
                     "photo": {
-                        "wiki": "Character Himeko • Nova Icon.png"
+                        "wiki": "Character Himeko • Nova Icon.png",
+                        "ts": "20260703122022"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Himeko • Nova Splash Art.png"
+                            "wiki": "Character Himeko • Nova Splash Art.png",
+                            "ts": "20260715025512"
                         }
                     ]
                 }
@@ -476,11 +510,13 @@
             "release_date": "2026-07-15",
             "is_released": true,
             "photo": {
-                "wiki": "Character Himeko • Nova Icon.png"
+                "wiki": "Character Himeko • Nova Icon.png",
+                "ts": "20260703122022"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Himeko • Nova Splash Art.png"
+                    "wiki": "Character Himeko • Nova Splash Art.png",
+                    "ts": "20260715025512"
                 }
             ]
         },
@@ -495,11 +531,13 @@
                     "release_version": "4.3",
                     "release_date": "2026-06-01",
                     "photo": {
-                        "wiki": "Character Mortenax Blade Icon.png"
+                        "wiki": "Character Mortenax Blade Icon.png",
+                        "ts": "20260601025954"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mortenax Blade Splash Art.png"
+                            "wiki": "Character Mortenax Blade Splash Art.png",
+                            "ts": "20260601025859"
                         }
                     ]
                 }
@@ -510,11 +548,13 @@
             "release_date": "2026-06-01",
             "is_released": true,
             "photo": {
-                "wiki": "Character Mortenax Blade Icon.png"
+                "wiki": "Character Mortenax Blade Icon.png",
+                "ts": "20260601025954"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mortenax Blade Splash Art.png"
+                    "wiki": "Character Mortenax Blade Splash Art.png",
+                    "ts": "20260601025859"
                 }
             ]
         },
@@ -529,11 +569,13 @@
                     "release_version": "4.2",
                     "release_date": "2026-05-13",
                     "photo": {
-                        "wiki": "Character Evanescia Icon.png"
+                        "wiki": "Character Evanescia Icon.png",
+                        "ts": "20260410130019"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Evanescia Splash Art.png"
+                            "wiki": "Character Evanescia Splash Art.png",
+                            "ts": "20260506070712"
                         }
                     ]
                 }
@@ -544,11 +586,13 @@
             "release_date": "2026-05-13",
             "is_released": true,
             "photo": {
-                "wiki": "Character Evanescia Icon.png"
+                "wiki": "Character Evanescia Icon.png",
+                "ts": "20260410130019"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Evanescia Splash Art.png"
+                    "wiki": "Character Evanescia Splash Art.png",
+                    "ts": "20260506070712"
                 }
             ]
         },
@@ -563,11 +607,13 @@
                     "release_version": "4.2",
                     "release_date": "2026-04-22",
                     "photo": {
-                        "wiki": "Character Silver Wolf LV.999 Icon.png"
+                        "wiki": "Character Silver Wolf LV.999 Icon.png",
+                        "ts": "20260410125943"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Silver Wolf LV.999 Splash Art.png"
+                            "wiki": "Character Silver Wolf LV.999 Splash Art.png",
+                            "ts": "20260417164013"
                         }
                     ]
                 }
@@ -578,11 +624,13 @@
             "release_date": "2026-04-22",
             "is_released": true,
             "photo": {
-                "wiki": "Character Silver Wolf LV.999 Icon.png"
+                "wiki": "Character Silver Wolf LV.999 Icon.png",
+                "ts": "20260410125943"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Silver Wolf LV.999 Splash Art.png"
+                    "wiki": "Character Silver Wolf LV.999 Splash Art.png",
+                    "ts": "20260417164013"
                 }
             ]
         },
@@ -597,11 +645,13 @@
                     "release_version": "4.1",
                     "release_date": "2026-03-25",
                     "photo": {
-                        "wiki": "Character Ashveil Icon.png"
+                        "wiki": "Character Ashveil Icon.png",
+                        "ts": "20260313122242"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ashveil Splash Art.png"
+                            "wiki": "Character Ashveil Splash Art.png",
+                            "ts": "20260313174406"
                         }
                     ]
                 }
@@ -612,11 +662,13 @@
             "release_date": "2026-03-25",
             "is_released": true,
             "photo": {
-                "wiki": "Character Ashveil Icon.png"
+                "wiki": "Character Ashveil Icon.png",
+                "ts": "20260313122242"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ashveil Splash Art.png"
+                    "wiki": "Character Ashveil Splash Art.png",
+                    "ts": "20260313174406"
                 }
             ]
         },
@@ -631,11 +683,13 @@
                     "release_version": "4.0",
                     "release_date": "2026-03-03",
                     "photo": {
-                        "wiki": "Character Sparxie Icon.png"
+                        "wiki": "Character Sparxie Icon.png",
+                        "ts": "20260206123951"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sparxie Splash Art.png"
+                            "wiki": "Character Sparxie Splash Art.png",
+                            "ts": "20260206131556"
                         }
                     ]
                 }
@@ -646,11 +700,13 @@
             "release_date": "2026-03-03",
             "is_released": true,
             "photo": {
-                "wiki": "Character Sparxie Icon.png"
+                "wiki": "Character Sparxie Icon.png",
+                "ts": "20260206123951"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sparxie Splash Art.png"
+                    "wiki": "Character Sparxie Splash Art.png",
+                    "ts": "20260206131556"
                 }
             ]
         },
@@ -665,11 +721,13 @@
                     "release_version": "4.0",
                     "release_date": "2026-02-13",
                     "photo": {
-                        "wiki": "Character Yao Guang Icon.png"
+                        "wiki": "Character Yao Guang Icon.png",
+                        "ts": "20260206123914"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yao Guang Splash Art.png"
+                            "wiki": "Character Yao Guang Splash Art.png",
+                            "ts": "20260213053032"
                         }
                     ]
                 }
@@ -680,11 +738,13 @@
             "release_date": "2026-02-13",
             "is_released": true,
             "photo": {
-                "wiki": "Character Yao Guang Icon.png"
+                "wiki": "Character Yao Guang Icon.png",
+                "ts": "20260206123914"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yao Guang Splash Art.png"
+                    "wiki": "Character Yao Guang Splash Art.png",
+                    "ts": "20260213053032"
                 }
             ]
         },
@@ -699,11 +759,13 @@
                     "release_version": "3.8",
                     "release_date": "2025-12-17",
                     "photo": {
-                        "wiki": "Character The Dahlia Icon.png"
+                        "wiki": "Character The Dahlia Icon.png",
+                        "ts": "20251205121527"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character The Dahlia Splash Art.png"
+                            "wiki": "Character The Dahlia Splash Art.png",
+                            "ts": "20251205121609"
                         }
                     ]
                 }
@@ -714,11 +776,13 @@
             "release_date": "2025-12-17",
             "is_released": true,
             "photo": {
-                "wiki": "Character The Dahlia Icon.png"
+                "wiki": "Character The Dahlia Icon.png",
+                "ts": "20251205121527"
             },
             "full_photo": [
                 {
-                    "wiki": "Character The Dahlia Splash Art.png"
+                    "wiki": "Character The Dahlia Splash Art.png",
+                    "ts": "20251205121609"
                 }
             ]
         },
@@ -733,11 +797,13 @@
                     "release_version": "3.7",
                     "release_date": "2025-11-05",
                     "photo": {
-                        "wiki": "Character Cyrene Icon.png"
+                        "wiki": "Character Cyrene Icon.png",
+                        "ts": "20251024130639"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Cyrene Splash Art.png"
+                            "wiki": "Character Cyrene Splash Art.png",
+                            "ts": "20251105032126"
                         }
                     ]
                 }
@@ -748,11 +814,13 @@
             "release_date": "2025-11-05",
             "is_released": true,
             "photo": {
-                "wiki": "Character Cyrene Icon.png"
+                "wiki": "Character Cyrene Icon.png",
+                "ts": "20251024130639"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Cyrene Splash Art.png"
+                    "wiki": "Character Cyrene Splash Art.png",
+                    "ts": "20251105032126"
                 }
             ]
         },
@@ -767,11 +835,13 @@
                     "release_version": "3.6",
                     "release_date": "2025-10-15",
                     "photo": {
-                        "wiki": "Character Dan Heng • Permansor Terrae Icon.png"
+                        "wiki": "Character Dan Heng • Permansor Terrae Icon.png",
+                        "ts": "20250912121518"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png"
+                            "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png",
+                            "ts": "20250912143415"
                         }
                     ]
                 }
@@ -782,11 +852,13 @@
             "release_date": "2025-10-15",
             "is_released": true,
             "photo": {
-                "wiki": "Character Dan Heng • Permansor Terrae Icon.png"
+                "wiki": "Character Dan Heng • Permansor Terrae Icon.png",
+                "ts": "20250912121518"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png"
+                    "wiki": "Character Dan Heng • Permansor Terrae Splash Art.png",
+                    "ts": "20250912143415"
                 }
             ]
         },
@@ -801,11 +873,13 @@
                     "release_version": "3.6",
                     "release_date": "2025-09-24",
                     "photo": {
-                        "wiki": "Character Evernight Icon.png"
+                        "wiki": "Character Evernight Icon.png",
+                        "ts": "20250912121500"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Evernight Splash Art.png"
+                            "wiki": "Character Evernight Splash Art.png",
+                            "ts": "20250912143541"
                         }
                     ]
                 }
@@ -816,11 +890,13 @@
             "release_date": "2025-09-24",
             "is_released": true,
             "photo": {
-                "wiki": "Character Evernight Icon.png"
+                "wiki": "Character Evernight Icon.png",
+                "ts": "20250912121500"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Evernight Splash Art.png"
+                    "wiki": "Character Evernight Splash Art.png",
+                    "ts": "20250912143541"
                 }
             ]
         },
@@ -835,11 +911,13 @@
                     "release_version": "3.5",
                     "release_date": "2025-09-02",
                     "photo": {
-                        "wiki": "Character Cerydra Icon.png"
+                        "wiki": "Character Cerydra Icon.png",
+                        "ts": "20250802130229"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Cerydra Splash Art.png"
+                            "wiki": "Character Cerydra Splash Art.png",
+                            "ts": "20250725220412"
                         }
                     ]
                 }
@@ -850,11 +928,13 @@
             "release_date": "2025-09-02",
             "is_released": true,
             "photo": {
-                "wiki": "Character Cerydra Icon.png"
+                "wiki": "Character Cerydra Icon.png",
+                "ts": "20250802130229"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Cerydra Splash Art.png"
+                    "wiki": "Character Cerydra Splash Art.png",
+                    "ts": "20250725220412"
                 }
             ]
         },
@@ -869,11 +949,13 @@
                     "release_version": "3.5",
                     "release_date": "2025-08-13",
                     "photo": {
-                        "wiki": "Character Hysilens Icon.png"
+                        "wiki": "Character Hysilens Icon.png",
+                        "ts": "20250802130317"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Hysilens Splash Art.png"
+                            "wiki": "Character Hysilens Splash Art.png",
+                            "ts": "20250720121134"
                         }
                     ]
                 }
@@ -884,11 +966,13 @@
             "release_date": "2025-08-13",
             "is_released": true,
             "photo": {
-                "wiki": "Character Hysilens Icon.png"
+                "wiki": "Character Hysilens Icon.png",
+                "ts": "20250802130317"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Hysilens Splash Art.png"
+                    "wiki": "Character Hysilens Splash Art.png",
+                    "ts": "20250720121134"
                 }
             ]
         },
@@ -903,11 +987,13 @@
                     "release_version": "3.4",
                     "release_date": "2025-07-11",
                     "photo": {
-                        "wiki": "Character Saber Icon.png"
+                        "wiki": "Character Saber Icon.png",
+                        "ts": "20250620124608"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Saber Splash Art.png"
+                            "wiki": "Character Saber Splash Art.png",
+                            "ts": "20250620172940"
                         }
                     ]
                 }
@@ -918,11 +1004,13 @@
             "release_date": "2025-07-11",
             "is_released": true,
             "photo": {
-                "wiki": "Character Saber Icon.png"
+                "wiki": "Character Saber Icon.png",
+                "ts": "20250620124608"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Saber Splash Art.png"
+                    "wiki": "Character Saber Splash Art.png",
+                    "ts": "20250620172940"
                 }
             ]
         },
@@ -937,11 +1025,13 @@
                     "release_version": "3.4",
                     "release_date": "2025-07-11",
                     "photo": {
-                        "wiki": "Character Archer Icon.png"
+                        "wiki": "Character Archer Icon.png",
+                        "ts": "20250620124531"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Archer Splash Art.png"
+                            "wiki": "Character Archer Splash Art.png",
+                            "ts": "20250620172923"
                         }
                     ]
                 }
@@ -952,11 +1042,13 @@
             "release_date": "2025-07-11",
             "is_released": true,
             "photo": {
-                "wiki": "Character Archer Icon.png"
+                "wiki": "Character Archer Icon.png",
+                "ts": "20250620124531"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Archer Splash Art.png"
+                    "wiki": "Character Archer Splash Art.png",
+                    "ts": "20250620172923"
                 }
             ]
         },
@@ -971,11 +1063,13 @@
                     "release_version": "3.4",
                     "release_date": "2025-07-02",
                     "photo": {
-                        "wiki": "Character Phainon Icon.png"
+                        "wiki": "Character Phainon Icon.png",
+                        "ts": "20250620124711"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Phainon Splash Art.png"
+                            "wiki": "Character Phainon Splash Art.png",
+                            "ts": "20250622125151"
                         }
                     ]
                 }
@@ -986,11 +1080,13 @@
             "release_date": "2025-07-02",
             "is_released": true,
             "photo": {
-                "wiki": "Character Phainon Icon.png"
+                "wiki": "Character Phainon Icon.png",
+                "ts": "20250620124711"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Phainon Splash Art.png"
+                    "wiki": "Character Phainon Splash Art.png",
+                    "ts": "20250622125151"
                 }
             ]
         },
@@ -1005,11 +1101,13 @@
                     "release_version": "3.3",
                     "release_date": "2025-06-11",
                     "photo": {
-                        "wiki": "Character Cipher Icon.png"
+                        "wiki": "Character Cipher Icon.png",
+                        "ts": "20250509121146"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Cipher Splash Art.png"
+                            "wiki": "Character Cipher Splash Art.png",
+                            "ts": "20250725220236"
                         }
                     ]
                 }
@@ -1020,11 +1118,13 @@
             "release_date": "2025-06-11",
             "is_released": true,
             "photo": {
-                "wiki": "Character Cipher Icon.png"
+                "wiki": "Character Cipher Icon.png",
+                "ts": "20250509121146"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Cipher Splash Art.png"
+                    "wiki": "Character Cipher Splash Art.png",
+                    "ts": "20250725220236"
                 }
             ]
         },
@@ -1039,11 +1139,13 @@
                     "release_version": "3.3",
                     "release_date": "2025-05-21",
                     "photo": {
-                        "wiki": "Character Hyacine Icon.png"
+                        "wiki": "Character Hyacine Icon.png",
+                        "ts": "20250509121044"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Hyacine Splash Art.png"
+                            "wiki": "Character Hyacine Splash Art.png",
+                            "ts": "20250521031729"
                         }
                     ]
                 }
@@ -1054,11 +1156,13 @@
             "release_date": "2025-05-21",
             "is_released": true,
             "photo": {
-                "wiki": "Character Hyacine Icon.png"
+                "wiki": "Character Hyacine Icon.png",
+                "ts": "20250509121044"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Hyacine Splash Art.png"
+                    "wiki": "Character Hyacine Splash Art.png",
+                    "ts": "20250521031729"
                 }
             ]
         },
@@ -1073,11 +1177,13 @@
                     "release_version": "3.2",
                     "release_date": "2025-04-30",
                     "photo": {
-                        "wiki": "Character Anaxa Icon.png"
+                        "wiki": "Character Anaxa Icon.png",
+                        "ts": "20250328124329"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Anaxa Splash Art.png"
+                            "wiki": "Character Anaxa Splash Art.png",
+                            "ts": "20250409035048"
                         }
                     ]
                 }
@@ -1088,11 +1194,13 @@
             "release_date": "2025-04-30",
             "is_released": true,
             "photo": {
-                "wiki": "Character Anaxa Icon.png"
+                "wiki": "Character Anaxa Icon.png",
+                "ts": "20250328124329"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Anaxa Splash Art.png"
+                    "wiki": "Character Anaxa Splash Art.png",
+                    "ts": "20250409035048"
                 }
             ]
         },
@@ -1107,11 +1215,13 @@
                     "release_version": "3.2",
                     "release_date": "2025-04-09",
                     "photo": {
-                        "wiki": "Character Castorice Icon.png"
+                        "wiki": "Character Castorice Icon.png",
+                        "ts": "20250328124417"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Castorice Splash Art.png"
+                            "wiki": "Character Castorice Splash Art.png",
+                            "ts": "20250409035111"
                         }
                     ]
                 }
@@ -1122,11 +1232,13 @@
             "release_date": "2025-04-09",
             "is_released": true,
             "photo": {
-                "wiki": "Character Castorice Icon.png"
+                "wiki": "Character Castorice Icon.png",
+                "ts": "20250328124417"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Castorice Splash Art.png"
+                    "wiki": "Character Castorice Splash Art.png",
+                    "ts": "20250409035111"
                 }
             ]
         },
@@ -1141,11 +1253,13 @@
                     "release_version": "3.1",
                     "release_date": "2025-03-19",
                     "photo": {
-                        "wiki": "Character Mydei Icon.png"
+                        "wiki": "Character Mydei Icon.png",
+                        "ts": "20250214124624"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mydei Splash Art.png"
+                            "wiki": "Character Mydei Splash Art.png",
+                            "ts": "20250725220512"
                         }
                     ]
                 }
@@ -1156,11 +1270,13 @@
             "release_date": "2025-03-19",
             "is_released": true,
             "photo": {
-                "wiki": "Character Mydei Icon.png"
+                "wiki": "Character Mydei Icon.png",
+                "ts": "20250214124624"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mydei Splash Art.png"
+                    "wiki": "Character Mydei Splash Art.png",
+                    "ts": "20250725220512"
                 }
             ]
         },
@@ -1175,11 +1291,13 @@
                     "release_version": "3.1",
                     "release_date": "2025-02-26",
                     "photo": {
-                        "wiki": "Character Tribbie Icon.png"
+                        "wiki": "Character Tribbie Icon.png",
+                        "ts": "20250214124656"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Tribbie Splash Art.png"
+                            "wiki": "Character Tribbie Splash Art.png",
+                            "ts": "20250309185506"
                         }
                     ]
                 }
@@ -1190,11 +1308,13 @@
             "release_date": "2025-02-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Tribbie Icon.png"
+                "wiki": "Character Tribbie Icon.png",
+                "ts": "20250214124656"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Tribbie Splash Art.png"
+                    "wiki": "Character Tribbie Splash Art.png",
+                    "ts": "20250309185506"
                 }
             ]
         },
@@ -1209,11 +1329,13 @@
                     "release_version": "3.0",
                     "release_date": "2025-02-05",
                     "photo": {
-                        "wiki": "Character Aglaea Icon.png"
+                        "wiki": "Character Aglaea Icon.png",
+                        "ts": "20250101123357"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aglaea Splash Art.png"
+                            "wiki": "Character Aglaea Splash Art.png",
+                            "ts": "20250117063425"
                         }
                     ]
                 }
@@ -1224,11 +1346,13 @@
             "release_date": "2025-02-05",
             "is_released": true,
             "photo": {
-                "wiki": "Character Aglaea Icon.png"
+                "wiki": "Character Aglaea Icon.png",
+                "ts": "20250101123357"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aglaea Splash Art.png"
+                    "wiki": "Character Aglaea Splash Art.png",
+                    "ts": "20250117063425"
                 }
             ]
         },
@@ -1243,11 +1367,13 @@
                     "release_version": "3.0",
                     "release_date": "2025-01-15",
                     "photo": {
-                        "wiki": "Character The Herta Icon.png"
+                        "wiki": "Character The Herta Icon.png",
+                        "ts": "20250101123319"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character The Herta Splash Art.png"
+                            "wiki": "Character The Herta Splash Art.png",
+                            "ts": "20250121214107"
                         }
                     ]
                 }
@@ -1258,11 +1384,13 @@
             "release_date": "2025-01-15",
             "is_released": true,
             "photo": {
-                "wiki": "Character The Herta Icon.png"
+                "wiki": "Character The Herta Icon.png",
+                "ts": "20250101123319"
             },
             "full_photo": [
                 {
-                    "wiki": "Character The Herta Splash Art.png"
+                    "wiki": "Character The Herta Splash Art.png",
+                    "ts": "20250121214107"
                 }
             ]
         },
@@ -1277,11 +1405,13 @@
                     "release_version": "2.7",
                     "release_date": "2024-12-25",
                     "photo": {
-                        "wiki": "Character Fugue Icon.png"
+                        "wiki": "Character Fugue Icon.png",
+                        "ts": "20241122131000"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Fugue Splash Art.png"
+                            "wiki": "Character Fugue Splash Art.png",
+                            "ts": "20241122125941"
                         }
                     ]
                 }
@@ -1292,11 +1422,13 @@
             "release_date": "2024-12-25",
             "is_released": true,
             "photo": {
-                "wiki": "Character Fugue Icon.png"
+                "wiki": "Character Fugue Icon.png",
+                "ts": "20241122131000"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Fugue Splash Art.png"
+                    "wiki": "Character Fugue Splash Art.png",
+                    "ts": "20241122125941"
                 }
             ]
         },
@@ -1311,11 +1443,13 @@
                     "release_version": "2.7",
                     "release_date": "2024-12-04",
                     "photo": {
-                        "wiki": "Character Sunday Icon.png"
+                        "wiki": "Character Sunday Icon.png",
+                        "ts": "20241122130945"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sunday Splash Art.png"
+                            "wiki": "Character Sunday Splash Art.png",
+                            "ts": "20241224161538"
                         }
                     ]
                 }
@@ -1326,11 +1460,13 @@
             "release_date": "2024-12-04",
             "is_released": true,
             "photo": {
-                "wiki": "Character Sunday Icon.png"
+                "wiki": "Character Sunday Icon.png",
+                "ts": "20241122130945"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sunday Splash Art.png"
+                    "wiki": "Character Sunday Splash Art.png",
+                    "ts": "20241224161538"
                 }
             ]
         },
@@ -1345,11 +1481,13 @@
                     "release_version": "2.6",
                     "release_date": "2024-10-23",
                     "photo": {
-                        "wiki": "Character Rappa Icon.png"
+                        "wiki": "Character Rappa Icon.png",
+                        "ts": "20240827130309"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Rappa Splash Art.png"
+                            "wiki": "Character Rappa Splash Art.png",
+                            "ts": "20241120154734"
                         }
                     ]
                 }
@@ -1360,11 +1498,13 @@
             "release_date": "2024-10-23",
             "is_released": true,
             "photo": {
-                "wiki": "Character Rappa Icon.png"
+                "wiki": "Character Rappa Icon.png",
+                "ts": "20240827130309"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Rappa Splash Art.png"
+                    "wiki": "Character Rappa Splash Art.png",
+                    "ts": "20241120154734"
                 }
             ]
         },
@@ -1379,11 +1519,13 @@
                     "release_version": "2.5",
                     "release_date": "2024-10-02",
                     "photo": {
-                        "wiki": "Character Lingsha Icon.png"
+                        "wiki": "Character Lingsha Icon.png",
+                        "ts": "20240719042259"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lingsha Splash Art.png"
+                            "wiki": "Character Lingsha Splash Art.png",
+                            "ts": "20241120224130"
                         }
                     ]
                 }
@@ -1394,11 +1536,13 @@
             "release_date": "2024-10-02",
             "is_released": true,
             "photo": {
-                "wiki": "Character Lingsha Icon.png"
+                "wiki": "Character Lingsha Icon.png",
+                "ts": "20240719042259"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lingsha Splash Art.png"
+                    "wiki": "Character Lingsha Splash Art.png",
+                    "ts": "20241120224130"
                 }
             ]
         },
@@ -1413,11 +1557,13 @@
                     "release_version": "2.5",
                     "release_date": "2024-09-10",
                     "photo": {
-                        "wiki": "Character Moze Icon.png"
+                        "wiki": "Character Moze Icon.png",
+                        "ts": "20240910183040"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Moze Splash Art.png"
+                            "wiki": "Character Moze Splash Art.png",
+                            "ts": "20240910181952"
                         }
                     ]
                 }
@@ -1428,11 +1574,13 @@
             "release_date": "2024-09-10",
             "is_released": true,
             "photo": {
-                "wiki": "Character Moze Icon.png"
+                "wiki": "Character Moze Icon.png",
+                "ts": "20240910183040"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Moze Splash Art.png"
+                    "wiki": "Character Moze Splash Art.png",
+                    "ts": "20240910181952"
                 }
             ]
         },
@@ -1447,11 +1595,13 @@
                     "release_version": "2.5",
                     "release_date": "2024-09-10",
                     "photo": {
-                        "wiki": "Character Feixiao Icon.png"
+                        "wiki": "Character Feixiao Icon.png",
+                        "ts": "20240910182925"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Feixiao Splash Art.png"
+                            "wiki": "Character Feixiao Splash Art.png",
+                            "ts": "20241007220552"
                         }
                     ]
                 }
@@ -1462,11 +1612,13 @@
             "release_date": "2024-09-10",
             "is_released": true,
             "photo": {
-                "wiki": "Character Feixiao Icon.png"
+                "wiki": "Character Feixiao Icon.png",
+                "ts": "20240910182925"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Feixiao Splash Art.png"
+                    "wiki": "Character Feixiao Splash Art.png",
+                    "ts": "20241007220552"
                 }
             ]
         },
@@ -1481,11 +1633,13 @@
                     "release_version": "2.4",
                     "release_date": "2024-08-21",
                     "photo": {
-                        "wiki": "Character Jiaoqiu Icon.png"
+                        "wiki": "Character Jiaoqiu Icon.png",
+                        "ts": "20240910182738"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jiaoqiu Splash Art.png"
+                            "wiki": "Character Jiaoqiu Splash Art.png",
+                            "ts": "20240911023034"
                         }
                     ]
                 }
@@ -1496,11 +1650,13 @@
             "release_date": "2024-08-21",
             "is_released": true,
             "photo": {
-                "wiki": "Character Jiaoqiu Icon.png"
+                "wiki": "Character Jiaoqiu Icon.png",
+                "ts": "20240910182738"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jiaoqiu Splash Art.png"
+                    "wiki": "Character Jiaoqiu Splash Art.png",
+                    "ts": "20240911023034"
                 }
             ]
         },
@@ -1515,11 +1671,13 @@
                     "release_version": "2.4",
                     "release_date": "2024-07-31",
                     "photo": {
-                        "wiki": "Character Yunli Icon.png"
+                        "wiki": "Character Yunli Icon.png",
+                        "ts": "20240724122212"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yunli Splash Art.png"
+                            "wiki": "Character Yunli Splash Art.png",
+                            "ts": "20241007221656"
                         }
                     ]
                 }
@@ -1530,11 +1688,13 @@
             "release_date": "2024-07-31",
             "is_released": true,
             "photo": {
-                "wiki": "Character Yunli Icon.png"
+                "wiki": "Character Yunli Icon.png",
+                "ts": "20240724122212"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yunli Splash Art.png"
+                    "wiki": "Character Yunli Splash Art.png",
+                    "ts": "20241007221656"
                 }
             ]
         },
@@ -1549,11 +1709,13 @@
                     "release_version": "2.3",
                     "release_date": "2024-07-10",
                     "photo": {
-                        "wiki": "Character Jade Icon.png"
+                        "wiki": "Character Jade Icon.png",
+                        "ts": "20240619072848"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jade Splash Art.png"
+                            "wiki": "Character Jade Splash Art.png",
+                            "ts": "20240706170539"
                         }
                     ]
                 }
@@ -1564,11 +1726,13 @@
             "release_date": "2024-07-10",
             "is_released": true,
             "photo": {
-                "wiki": "Character Jade Icon.png"
+                "wiki": "Character Jade Icon.png",
+                "ts": "20240619072848"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jade Splash Art.png"
+                    "wiki": "Character Jade Splash Art.png",
+                    "ts": "20240706170539"
                 }
             ]
         },
@@ -1583,11 +1747,13 @@
                     "release_version": "2.3",
                     "release_date": "2024-06-19",
                     "photo": {
-                        "wiki": "Character Firefly Icon.png"
+                        "wiki": "Character Firefly Icon.png",
+                        "ts": "20240619072408"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Firefly Splash Art.png"
+                            "wiki": "Character Firefly Splash Art.png",
+                            "ts": "20241007220547"
                         }
                     ]
                 }
@@ -1598,11 +1764,13 @@
             "release_date": "2024-06-19",
             "is_released": true,
             "photo": {
-                "wiki": "Character Firefly Icon.png"
+                "wiki": "Character Firefly Icon.png",
+                "ts": "20240619072408"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Firefly Splash Art.png"
+                    "wiki": "Character Firefly Splash Art.png",
+                    "ts": "20241007220547"
                 }
             ]
         },
@@ -1617,11 +1785,13 @@
                     "release_version": "2.2",
                     "release_date": "2024-05-29",
                     "photo": {
-                        "wiki": "Character Boothill Icon.png"
+                        "wiki": "Character Boothill Icon.png",
+                        "ts": "20240525031219"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Boothill Splash Art.png"
+                            "wiki": "Character Boothill Splash Art.png",
+                            "ts": "20240624231026"
                         }
                     ]
                 }
@@ -1632,11 +1802,13 @@
             "release_date": "2024-05-29",
             "is_released": true,
             "photo": {
-                "wiki": "Character Boothill Icon.png"
+                "wiki": "Character Boothill Icon.png",
+                "ts": "20240525031219"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Boothill Splash Art.png"
+                    "wiki": "Character Boothill Splash Art.png",
+                    "ts": "20240624231026"
                 }
             ]
         },
@@ -1651,11 +1823,13 @@
                     "release_version": "2.2",
                     "release_date": "2024-05-08",
                     "photo": {
-                        "wiki": "Character Robin Icon.png"
+                        "wiki": "Character Robin Icon.png",
+                        "ts": "20240525031318"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Robin Splash Art.png"
+                            "wiki": "Character Robin Splash Art.png",
+                            "ts": "20240508021256"
                         }
                     ]
                 }
@@ -1666,11 +1840,13 @@
             "release_date": "2024-05-08",
             "is_released": true,
             "photo": {
-                "wiki": "Character Robin Icon.png"
+                "wiki": "Character Robin Icon.png",
+                "ts": "20240525031318"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Robin Splash Art.png"
+                    "wiki": "Character Robin Splash Art.png",
+                    "ts": "20240508021256"
                 }
             ]
         },
@@ -1685,11 +1861,13 @@
                     "release_version": "2.1",
                     "release_date": "2024-04-17",
                     "photo": {
-                        "wiki": "Character Aventurine Icon.png"
+                        "wiki": "Character Aventurine Icon.png",
+                        "ts": "20240327022115"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aventurine Splash Art.png"
+                            "wiki": "Character Aventurine Splash Art.png",
+                            "ts": "20240327104723"
                         }
                     ]
                 }
@@ -1700,11 +1878,13 @@
             "release_date": "2024-04-17",
             "is_released": true,
             "photo": {
-                "wiki": "Character Aventurine Icon.png"
+                "wiki": "Character Aventurine Icon.png",
+                "ts": "20240327022115"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aventurine Splash Art.png"
+                    "wiki": "Character Aventurine Splash Art.png",
+                    "ts": "20240327104723"
                 }
             ]
         },
@@ -1719,11 +1899,13 @@
                     "release_version": "2.1",
                     "release_date": "2024-03-27",
                     "photo": {
-                        "wiki": "Character Gallagher Icon.png"
+                        "wiki": "Character Gallagher Icon.png",
+                        "ts": "20240325014209"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Gallagher Splash Art.png"
+                            "wiki": "Character Gallagher Splash Art.png",
+                            "ts": "20240327022011"
                         }
                     ]
                 }
@@ -1734,11 +1916,13 @@
             "release_date": "2024-03-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Gallagher Icon.png"
+                "wiki": "Character Gallagher Icon.png",
+                "ts": "20240325014209"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Gallagher Splash Art.png"
+                    "wiki": "Character Gallagher Splash Art.png",
+                    "ts": "20240327022011"
                 }
             ]
         },
@@ -1753,11 +1937,13 @@
                     "release_version": "2.1",
                     "release_date": "2024-03-27",
                     "photo": {
-                        "wiki": "Character Acheron Icon.png"
+                        "wiki": "Character Acheron Icon.png",
+                        "ts": "20240605043757"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Acheron Splash Art.png"
+                            "wiki": "Character Acheron Splash Art.png",
+                            "ts": "20240327021325"
                         }
                     ]
                 }
@@ -1768,11 +1954,13 @@
             "release_date": "2024-03-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Acheron Icon.png"
+                "wiki": "Character Acheron Icon.png",
+                "ts": "20240605043757"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Acheron Splash Art.png"
+                    "wiki": "Character Acheron Splash Art.png",
+                    "ts": "20240327021325"
                 }
             ]
         },
@@ -1787,11 +1975,13 @@
                     "release_version": "2.0",
                     "release_date": "2024-02-29",
                     "photo": {
-                        "wiki": "Character Sparkle Icon.png"
+                        "wiki": "Character Sparkle Icon.png",
+                        "ts": "20240326110835"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sparkle Splash Art.png"
+                            "wiki": "Character Sparkle Splash Art.png",
+                            "ts": "20240327022635"
                         }
                     ]
                 }
@@ -1802,11 +1992,13 @@
             "release_date": "2024-02-29",
             "is_released": true,
             "photo": {
-                "wiki": "Character Sparkle Icon.png"
+                "wiki": "Character Sparkle Icon.png",
+                "ts": "20240326110835"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sparkle Splash Art.png"
+                    "wiki": "Character Sparkle Splash Art.png",
+                    "ts": "20240327022635"
                 }
             ]
         },
@@ -1821,11 +2013,13 @@
                     "release_version": "2.0",
                     "release_date": "2024-02-06",
                     "photo": {
-                        "wiki": "Character Misha Icon.png"
+                        "wiki": "Character Misha Icon.png",
+                        "ts": "20240206104846"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Misha Splash Art.png"
+                            "wiki": "Character Misha Splash Art.png",
+                            "ts": "20240206022717"
                         }
                     ]
                 }
@@ -1836,11 +2030,13 @@
             "release_date": "2024-02-06",
             "is_released": true,
             "photo": {
-                "wiki": "Character Misha Icon.png"
+                "wiki": "Character Misha Icon.png",
+                "ts": "20240206104846"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Misha Splash Art.png"
+                    "wiki": "Character Misha Splash Art.png",
+                    "ts": "20240206022717"
                 }
             ]
         },
@@ -1855,11 +2051,13 @@
                     "release_version": "2.0",
                     "release_date": "2024-02-06",
                     "photo": {
-                        "wiki": "Character Black Swan Icon.png"
+                        "wiki": "Character Black Swan Icon.png",
+                        "ts": "20240206104620"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Black Swan Splash Art.png"
+                            "wiki": "Character Black Swan Splash Art.png",
+                            "ts": "20240220023547"
                         }
                     ]
                 }
@@ -1870,11 +2068,13 @@
             "release_date": "2024-02-06",
             "is_released": true,
             "photo": {
-                "wiki": "Character Black Swan Icon.png"
+                "wiki": "Character Black Swan Icon.png",
+                "ts": "20240206104620"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Black Swan Splash Art.png"
+                    "wiki": "Character Black Swan Splash Art.png",
+                    "ts": "20240220023547"
                 }
             ]
         },
@@ -1889,11 +2089,13 @@
                     "release_version": "1.6",
                     "release_date": "2024-01-17",
                     "photo": {
-                        "wiki": "Character Dr. Ratio Icon.png"
+                        "wiki": "Character Dr. Ratio Icon.png",
+                        "ts": "20231227130912"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dr. Ratio Splash Art.png"
+                            "wiki": "Character Dr. Ratio Splash Art.png",
+                            "ts": "20231227132629"
                         }
                     ]
                 }
@@ -1904,11 +2106,13 @@
             "release_date": "2024-01-17",
             "is_released": true,
             "photo": {
-                "wiki": "Character Dr. Ratio Icon.png"
+                "wiki": "Character Dr. Ratio Icon.png",
+                "ts": "20231227130912"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dr. Ratio Splash Art.png"
+                    "wiki": "Character Dr. Ratio Splash Art.png",
+                    "ts": "20231227132629"
                 }
             ]
         },
@@ -1923,11 +2127,13 @@
                     "release_version": "1.6",
                     "release_date": "2023-12-27",
                     "photo": {
-                        "wiki": "Character Xueyi Icon.png"
+                        "wiki": "Character Xueyi Icon.png",
+                        "ts": "20231227130429"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xueyi Splash Art.png"
+                            "wiki": "Character Xueyi Splash Art.png",
+                            "ts": "20231227045314"
                         }
                     ]
                 }
@@ -1938,11 +2144,13 @@
             "release_date": "2023-12-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Xueyi Icon.png"
+                "wiki": "Character Xueyi Icon.png",
+                "ts": "20231227130429"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xueyi Splash Art.png"
+                    "wiki": "Character Xueyi Splash Art.png",
+                    "ts": "20231227045314"
                 }
             ]
         },
@@ -1957,11 +2165,13 @@
                     "release_version": "1.6",
                     "release_date": "2023-12-27",
                     "photo": {
-                        "wiki": "Character Ruan Mei Icon.png"
+                        "wiki": "Character Ruan Mei Icon.png",
+                        "ts": "20231227130539"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ruan Mei Splash Art.png"
+                            "wiki": "Character Ruan Mei Splash Art.png",
+                            "ts": "20231227021137"
                         }
                     ]
                 }
@@ -1972,11 +2182,13 @@
             "release_date": "2023-12-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Ruan Mei Icon.png"
+                "wiki": "Character Ruan Mei Icon.png",
+                "ts": "20231227130539"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ruan Mei Splash Art.png"
+                    "wiki": "Character Ruan Mei Splash Art.png",
+                    "ts": "20231227021137"
                 }
             ]
         },
@@ -1991,11 +2203,13 @@
                     "release_version": "1.5",
                     "release_date": "2023-12-06",
                     "photo": {
-                        "wiki": "Character Hanya Icon.png"
+                        "wiki": "Character Hanya Icon.png",
+                        "ts": "20231209094526"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Hanya Splash Art.png"
+                            "wiki": "Character Hanya Splash Art.png",
+                            "ts": "20231206232120"
                         }
                     ]
                 }
@@ -2006,11 +2220,13 @@
             "release_date": "2023-12-06",
             "is_released": true,
             "photo": {
-                "wiki": "Character Hanya Icon.png"
+                "wiki": "Character Hanya Icon.png",
+                "ts": "20231209094526"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Hanya Splash Art.png"
+                    "wiki": "Character Hanya Splash Art.png",
+                    "ts": "20231206232120"
                 }
             ]
         },
@@ -2025,11 +2241,13 @@
                     "release_version": "1.5",
                     "release_date": "2023-12-06",
                     "photo": {
-                        "wiki": "Character Argenti Icon.png"
+                        "wiki": "Character Argenti Icon.png",
+                        "ts": "20231209093828"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Argenti Splash Art.png"
+                            "wiki": "Character Argenti Splash Art.png",
+                            "ts": "20231206232011"
                         }
                     ]
                 }
@@ -2040,11 +2258,13 @@
             "release_date": "2023-12-06",
             "is_released": true,
             "photo": {
-                "wiki": "Character Argenti Icon.png"
+                "wiki": "Character Argenti Icon.png",
+                "ts": "20231209093828"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Argenti Splash Art.png"
+                    "wiki": "Character Argenti Splash Art.png",
+                    "ts": "20231206232011"
                 }
             ]
         },
@@ -2059,11 +2279,13 @@
                     "release_version": "1.5",
                     "release_date": "2023-11-15",
                     "photo": {
-                        "wiki": "Character Huohuo Icon.png"
+                        "wiki": "Character Huohuo Icon.png",
+                        "ts": "20231209094156"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Huohuo Splash Art.png"
+                            "wiki": "Character Huohuo Splash Art.png",
+                            "ts": "20250604025217"
                         }
                     ]
                 }
@@ -2074,11 +2296,13 @@
             "release_date": "2023-11-15",
             "is_released": true,
             "photo": {
-                "wiki": "Character Huohuo Icon.png"
+                "wiki": "Character Huohuo Icon.png",
+                "ts": "20231209094156"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Huohuo Splash Art.png"
+                    "wiki": "Character Huohuo Splash Art.png",
+                    "ts": "20250604025217"
                 }
             ]
         },
@@ -2093,11 +2317,13 @@
                     "release_version": "1.4",
                     "release_date": "2023-10-27",
                     "photo": {
-                        "wiki": "Character Topaz & Numby Icon.png"
+                        "wiki": "Character Topaz & Numby Icon.png",
+                        "ts": "20231030000030"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Topaz and Numby Splash Art.png"
+                            "wiki": "Character Topaz and Numby Splash Art.png",
+                            "ts": "20231030040101"
                         }
                     ]
                 }
@@ -2108,11 +2334,13 @@
             "release_date": "2023-10-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Topaz & Numby Icon.png"
+                "wiki": "Character Topaz & Numby Icon.png",
+                "ts": "20231030000030"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Topaz and Numby Splash Art.png"
+                    "wiki": "Character Topaz and Numby Splash Art.png",
+                    "ts": "20231030040101"
                 }
             ]
         },
@@ -2127,11 +2355,13 @@
                     "release_version": "1.4",
                     "release_date": "2023-10-27",
                     "photo": {
-                        "wiki": "Character Guinaifen Icon.png"
+                        "wiki": "Character Guinaifen Icon.png",
+                        "ts": "20231030000303"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Guinaifen Splash Art.png"
+                            "wiki": "Character Guinaifen Splash Art.png",
+                            "ts": "20231030040741"
                         }
                     ]
                 }
@@ -2142,11 +2372,13 @@
             "release_date": "2023-10-27",
             "is_released": true,
             "photo": {
-                "wiki": "Character Guinaifen Icon.png"
+                "wiki": "Character Guinaifen Icon.png",
+                "ts": "20231030000303"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Guinaifen Splash Art.png"
+                    "wiki": "Character Guinaifen Splash Art.png",
+                    "ts": "20231030040741"
                 }
             ]
         },
@@ -2161,11 +2393,13 @@
                     "release_version": "1.4",
                     "release_date": "2023-10-11",
                     "photo": {
-                        "wiki": "Character Jingliu Icon.png"
+                        "wiki": "Character Jingliu Icon.png",
+                        "ts": "20230723081213"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jingliu Splash Art.png"
+                            "wiki": "Character Jingliu Splash Art.png",
+                            "ts": "20240525000314"
                         }
                     ]
                 }
@@ -2176,11 +2410,13 @@
             "release_date": "2023-10-11",
             "is_released": true,
             "photo": {
-                "wiki": "Character Jingliu Icon.png"
+                "wiki": "Character Jingliu Icon.png",
+                "ts": "20230723081213"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jingliu Splash Art.png"
+                    "wiki": "Character Jingliu Splash Art.png",
+                    "ts": "20240525000314"
                 }
             ]
         },
@@ -2195,11 +2431,13 @@
                     "release_version": "1.3",
                     "release_date": "2023-09-20",
                     "photo": {
-                        "wiki": "Character Lynx Icon.png"
+                        "wiki": "Character Lynx Icon.png",
+                        "ts": "20231031113034"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lynx Splash Art.png"
+                            "wiki": "Character Lynx Splash Art.png",
+                            "ts": "20230719101506"
                         }
                     ]
                 }
@@ -2210,11 +2448,13 @@
             "release_date": "2023-09-20",
             "is_released": true,
             "photo": {
-                "wiki": "Character Lynx Icon.png"
+                "wiki": "Character Lynx Icon.png",
+                "ts": "20231031113034"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lynx Splash Art.png"
+                    "wiki": "Character Lynx Splash Art.png",
+                    "ts": "20230719101506"
                 }
             ]
         },
@@ -2229,11 +2469,13 @@
                     "release_version": "1.3",
                     "release_date": "2023-09-20",
                     "photo": {
-                        "wiki": "Character Fu Xuan Icon.png"
+                        "wiki": "Character Fu Xuan Icon.png",
+                        "ts": "20230723080902"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Fu Xuan Splash Art.png"
+                            "wiki": "Character Fu Xuan Splash Art.png",
+                            "ts": "20230928224921"
                         }
                     ]
                 }
@@ -2244,11 +2486,13 @@
             "release_date": "2023-09-20",
             "is_released": true,
             "photo": {
-                "wiki": "Character Fu Xuan Icon.png"
+                "wiki": "Character Fu Xuan Icon.png",
+                "ts": "20230723080902"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Fu Xuan Splash Art.png"
+                    "wiki": "Character Fu Xuan Splash Art.png",
+                    "ts": "20230928224921"
                 }
             ]
         },
@@ -2263,11 +2507,13 @@
                     "release_version": "1.3",
                     "release_date": "2023-08-30",
                     "photo": {
-                        "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png"
+                        "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png",
+                        "ts": "20240326111321"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png"
+                            "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png",
+                            "ts": "20230818234313"
                         }
                     ]
                 }
@@ -2278,11 +2524,13 @@
             "release_date": "2023-08-30",
             "is_released": true,
             "photo": {
-                "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png"
+                "wiki": "Character Dan Heng • Imbibitor Lunae Icon.png",
+                "ts": "20240326111321"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png"
+                    "wiki": "Character Dan Heng • Imbibitor Lunae Splash Art.png",
+                    "ts": "20230818234313"
                 }
             ]
         },
@@ -2297,11 +2545,13 @@
                     "release_version": "1.2",
                     "release_date": "2023-08-09",
                     "photo": {
-                        "wiki": "Character Luka Icon.png"
+                        "wiki": "Character Luka Icon.png",
+                        "ts": "20230723081255"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Luka Splash Art.png"
+                            "wiki": "Character Luka Splash Art.png",
+                            "ts": "20230809042157"
                         }
                     ]
                 }
@@ -2312,11 +2562,13 @@
             "release_date": "2023-08-09",
             "is_released": true,
             "photo": {
-                "wiki": "Character Luka Icon.png"
+                "wiki": "Character Luka Icon.png",
+                "ts": "20230723081255"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Luka Splash Art.png"
+                    "wiki": "Character Luka Splash Art.png",
+                    "ts": "20230809042157"
                 }
             ]
         },
@@ -2331,11 +2583,13 @@
                     "release_version": "1.2",
                     "release_date": "2023-08-09",
                     "photo": {
-                        "wiki": "Character Kafka Icon.png"
+                        "wiki": "Character Kafka Icon.png",
+                        "ts": "20230723081234"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kafka Splash Art.png"
+                            "wiki": "Character Kafka Splash Art.png",
+                            "ts": "20230809042240"
                         }
                     ]
                 }
@@ -2346,11 +2600,13 @@
             "release_date": "2023-08-09",
             "is_released": true,
             "photo": {
-                "wiki": "Character Kafka Icon.png"
+                "wiki": "Character Kafka Icon.png",
+                "ts": "20230723081234"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kafka Splash Art.png"
+                    "wiki": "Character Kafka Splash Art.png",
+                    "ts": "20230809042240"
                 }
             ]
         },
@@ -2365,11 +2621,13 @@
                     "release_version": "1.2",
                     "release_date": "2023-07-19",
                     "photo": {
-                        "wiki": "Character Blade Icon.png"
+                        "wiki": "Character Blade Icon.png",
+                        "ts": "20230723080612"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Blade Splash Art.png"
+                            "wiki": "Character Blade Splash Art.png",
+                            "ts": "20230501004859"
                         }
                     ]
                 }
@@ -2380,11 +2638,13 @@
             "release_date": "2023-07-19",
             "is_released": true,
             "photo": {
-                "wiki": "Character Blade Icon.png"
+                "wiki": "Character Blade Icon.png",
+                "ts": "20230723080612"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Blade Splash Art.png"
+                    "wiki": "Character Blade Splash Art.png",
+                    "ts": "20230501004859"
                 }
             ]
         },
@@ -2399,11 +2659,13 @@
                     "release_version": "1.1",
                     "release_date": "2023-06-28",
                     "photo": {
-                        "wiki": "Character Yukong Icon.png"
+                        "wiki": "Character Yukong Icon.png",
+                        "ts": "20230723082209"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yukong Splash Art.png"
+                            "wiki": "Character Yukong Splash Art.png",
+                            "ts": "20230628090836"
                         }
                     ]
                 }
@@ -2414,11 +2676,13 @@
             "release_date": "2023-06-28",
             "is_released": true,
             "photo": {
-                "wiki": "Character Yukong Icon.png"
+                "wiki": "Character Yukong Icon.png",
+                "ts": "20230723082209"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yukong Splash Art.png"
+                    "wiki": "Character Yukong Splash Art.png",
+                    "ts": "20230628090836"
                 }
             ]
         },
@@ -2433,11 +2697,13 @@
                     "release_version": "1.1",
                     "release_date": "2023-06-28",
                     "photo": {
-                        "wiki": "Character Luocha Icon.png"
+                        "wiki": "Character Luocha Icon.png",
+                        "ts": "20230723081416"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Luocha Splash Art.png"
+                            "wiki": "Character Luocha Splash Art.png",
+                            "ts": "20230628091054"
                         }
                     ]
                 }
@@ -2448,11 +2714,13 @@
             "release_date": "2023-06-28",
             "is_released": true,
             "photo": {
-                "wiki": "Character Luocha Icon.png"
+                "wiki": "Character Luocha Icon.png",
+                "ts": "20230723081416"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Luocha Splash Art.png"
+                    "wiki": "Character Luocha Splash Art.png",
+                    "ts": "20230628091054"
                 }
             ]
         },
@@ -2467,11 +2735,13 @@
                     "release_version": "1.1",
                     "release_date": "2023-06-07",
                     "photo": {
-                        "wiki": "Character Silver Wolf Icon.png"
+                        "wiki": "Character Silver Wolf Icon.png",
+                        "ts": "20230723081754"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Silver Wolf Splash Art.png"
+                            "wiki": "Character Silver Wolf Splash Art.png",
+                            "ts": "20230216230911"
                         }
                     ]
                 }
@@ -2482,11 +2752,13 @@
             "release_date": "2023-06-07",
             "is_released": true,
             "photo": {
-                "wiki": "Character Silver Wolf Icon.png"
+                "wiki": "Character Silver Wolf Icon.png",
+                "ts": "20230723081754"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Silver Wolf Splash Art.png"
+                    "wiki": "Character Silver Wolf Splash Art.png",
+                    "ts": "20230216230911"
                 }
             ]
         },
@@ -2501,11 +2773,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-05-17",
                     "photo": {
-                        "wiki": "Character Jing Yuan Icon.png"
+                        "wiki": "Character Jing Yuan Icon.png",
+                        "ts": "20230723081207"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jing Yuan Splash Art.png"
+                            "wiki": "Character Jing Yuan Splash Art.png",
+                            "ts": "20230210115809"
                         }
                     ]
                 }
@@ -2516,11 +2790,13 @@
             "release_date": "2023-05-17",
             "is_released": true,
             "photo": {
-                "wiki": "Character Jing Yuan Icon.png"
+                "wiki": "Character Jing Yuan Icon.png",
+                "ts": "20230723081207"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jing Yuan Splash Art.png"
+                    "wiki": "Character Jing Yuan Splash Art.png",
+                    "ts": "20230210115809"
                 }
             ]
         },
@@ -2535,11 +2811,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Yanqing Icon.png"
+                        "wiki": "Character Yanqing Icon.png",
+                        "ts": "20230723082139"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yanqing Splash Art.png"
+                            "wiki": "Character Yanqing Splash Art.png",
+                            "ts": "20230210121516"
                         }
                     ]
                 }
@@ -2550,11 +2828,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Yanqing Icon.png"
+                "wiki": "Character Yanqing Icon.png",
+                "ts": "20230723082139"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yanqing Splash Art.png"
+                    "wiki": "Character Yanqing Splash Art.png",
+                    "ts": "20230210121516"
                 }
             ]
         },
@@ -2569,11 +2849,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Welt Icon.png"
+                        "wiki": "Character Welt Icon.png",
+                        "ts": "20230723082022"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Welt Splash Art.png"
+                            "wiki": "Character Welt Splash Art.png",
+                            "ts": "20230525090017"
                         }
                     ]
                 }
@@ -2584,11 +2866,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Welt Icon.png"
+                "wiki": "Character Welt Icon.png",
+                "ts": "20230723082022"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Welt Splash Art.png"
+                    "wiki": "Character Welt Splash Art.png",
+                    "ts": "20230525090017"
                 }
             ]
         },
@@ -2604,14 +2888,17 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Trailblazer (Destruction) Icon.png"
+                        "wiki": "Character Trailblazer (Destruction) Icon.png",
+                        "ts": "20240326135926"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Trailblazer (F) Destruction Splash Art.png"
+                            "wiki": "Character Trailblazer (F) Destruction Splash Art.png",
+                            "ts": "20230501005741"
                         },
                         {
-                            "wiki": "Character Trailblazer (M) Destruction Splash Art.png"
+                            "wiki": "Character Trailblazer (M) Destruction Splash Art.png",
+                            "ts": "20230501005733"
                         }
                     ]
                 },
@@ -2622,14 +2909,17 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Trailblazer (Preservation) Icon.png"
+                        "wiki": "Character Trailblazer (Preservation) Icon.png",
+                        "ts": "20240326131619"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Trailblazer (F) Preservation Splash Art.png"
+                            "wiki": "Character Trailblazer (F) Preservation Splash Art.png",
+                            "ts": "20230501005729"
                         },
                         {
-                            "wiki": "Character Trailblazer (M) Preservation Splash Art.png"
+                            "wiki": "Character Trailblazer (M) Preservation Splash Art.png",
+                            "ts": "20230501005737"
                         }
                     ]
                 },
@@ -2640,14 +2930,17 @@
                     "release_version": "2.2",
                     "release_date": "2024-05-08",
                     "photo": {
-                        "wiki": "Character Trailblazer (Harmony) Icon.png"
+                        "wiki": "Character Trailblazer (Harmony) Icon.png",
+                        "ts": "20240525030520"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Trailblazer (F) Harmony Splash Art.png"
+                            "wiki": "Character Trailblazer (F) Harmony Splash Art.png",
+                            "ts": "20240508064117"
                         },
                         {
-                            "wiki": "Character Trailblazer (M) Harmony Splash Art.png"
+                            "wiki": "Character Trailblazer (M) Harmony Splash Art.png",
+                            "ts": "20240508064008"
                         }
                     ]
                 },
@@ -2658,14 +2951,17 @@
                     "release_version": "3.0",
                     "release_date": "2025-01-15",
                     "photo": {
-                        "wiki": "Character Trailblazer (Remembrance) Icon.png"
+                        "wiki": "Character Trailblazer (Remembrance) Icon.png",
+                        "ts": "20241123044918"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Trailblazer (F) Remembrance Splash Art.png"
+                            "wiki": "Character Trailblazer (F) Remembrance Splash Art.png",
+                            "ts": "20251108103334"
                         },
                         {
-                            "wiki": "Character Trailblazer (M) Remembrance Splash Art.png"
+                            "wiki": "Character Trailblazer (M) Remembrance Splash Art.png",
+                            "ts": "20251108103410"
                         }
                     ]
                 },
@@ -2676,14 +2972,17 @@
                     "release_version": "4.2",
                     "release_date": "2026-04-22",
                     "photo": {
-                        "wiki": "Character Trailblazer (Elation) Icon.png"
+                        "wiki": "Character Trailblazer (Elation) Icon.png",
+                        "ts": "20260422130411"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Trailblazer (F) Elation Splash Art.png"
+                            "wiki": "Character Trailblazer (F) Elation Splash Art.png",
+                            "ts": "20260422043547"
                         },
                         {
-                            "wiki": "Character Trailblazer (M) Elation Splash Art.png"
+                            "wiki": "Character Trailblazer (M) Elation Splash Art.png",
+                            "ts": "20260422043604"
                         }
                     ]
                 },
@@ -2694,7 +2993,8 @@
                     "release_version": null,
                     "release_date": null,
                     "photo": {
-                        "wiki": "Character Trailblazer (Destruction) Icon.png"
+                        "wiki": "Character Trailblazer (Destruction) Icon.png",
+                        "ts": "20240326135926"
                     },
                     "full_photo": []
                 }
@@ -2705,7 +3005,8 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Trailblazer (Destruction) Icon.png"
+                "wiki": "Character Trailblazer (Destruction) Icon.png",
+                "ts": "20240326135926"
             },
             "full_photo": []
         },
@@ -2720,11 +3021,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Tingyun Icon.png"
+                        "wiki": "Character Tingyun Icon.png",
+                        "ts": "20230723081906"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Tingyun Splash Art.png"
+                            "wiki": "Character Tingyun Splash Art.png",
+                            "ts": "20230210115502"
                         }
                     ]
                 }
@@ -2735,11 +3038,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Tingyun Icon.png"
+                "wiki": "Character Tingyun Icon.png",
+                "ts": "20230723081906"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Tingyun Splash Art.png"
+                    "wiki": "Character Tingyun Splash Art.png",
+                    "ts": "20230210115502"
                 }
             ]
         },
@@ -2754,11 +3059,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Sushang Icon.png"
+                        "wiki": "Character Sushang Icon.png",
+                        "ts": "20230723081849"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sushang Splash Art.png"
+                            "wiki": "Character Sushang Splash Art.png",
+                            "ts": "20230210115023"
                         }
                     ]
                 }
@@ -2769,11 +3076,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Sushang Icon.png"
+                "wiki": "Character Sushang Icon.png",
+                "ts": "20230723081849"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sushang Splash Art.png"
+                    "wiki": "Character Sushang Splash Art.png",
+                    "ts": "20230210115023"
                 }
             ]
         },
@@ -2788,11 +3097,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Serval Icon.png"
+                        "wiki": "Character Serval Icon.png",
+                        "ts": "20230723081736"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Serval Splash Art.png"
+                            "wiki": "Character Serval Splash Art.png",
+                            "ts": "20230525090108"
                         }
                     ]
                 }
@@ -2803,11 +3114,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Serval Icon.png"
+                "wiki": "Character Serval Icon.png",
+                "ts": "20230723081736"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Serval Splash Art.png"
+                    "wiki": "Character Serval Splash Art.png",
+                    "ts": "20230525090108"
                 }
             ]
         },
@@ -2822,11 +3135,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Seele Icon.png"
+                        "wiki": "Character Seele Icon.png",
+                        "ts": "20230723081718"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Seele Splash Art.png"
+                            "wiki": "Character Seele Splash Art.png",
+                            "ts": "20240121123334"
                         }
                     ]
                 }
@@ -2837,11 +3152,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Seele Icon.png"
+                "wiki": "Character Seele Icon.png",
+                "ts": "20230723081718"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Seele Splash Art.png"
+                    "wiki": "Character Seele Splash Art.png",
+                    "ts": "20240121123334"
                 }
             ]
         },
@@ -2856,11 +3173,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Sampo Icon.png"
+                        "wiki": "Character Sampo Icon.png",
+                        "ts": "20230723081700"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sampo Splash Art.png"
+                            "wiki": "Character Sampo Splash Art.png",
+                            "ts": "20230525090046"
                         }
                     ]
                 }
@@ -2871,11 +3190,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Sampo Icon.png"
+                "wiki": "Character Sampo Icon.png",
+                "ts": "20230723081700"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sampo Splash Art.png"
+                    "wiki": "Character Sampo Splash Art.png",
+                    "ts": "20230525090046"
                 }
             ]
         },
@@ -2890,11 +3211,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Qingque Icon.png"
+                        "wiki": "Character Qingque Icon.png",
+                        "ts": "20230723081644"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Qingque Splash Art.png"
+                            "wiki": "Character Qingque Splash Art.png",
+                            "ts": "20230210115335"
                         }
                     ]
                 }
@@ -2905,11 +3228,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Qingque Icon.png"
+                "wiki": "Character Qingque Icon.png",
+                "ts": "20230723081644"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Qingque Splash Art.png"
+                    "wiki": "Character Qingque Splash Art.png",
+                    "ts": "20230210115335"
                 }
             ]
         },
@@ -2924,11 +3249,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Pela Icon.png"
+                        "wiki": "Character Pela Icon.png",
+                        "ts": "20230723081559"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Pela Splash Art.png"
+                            "wiki": "Character Pela Splash Art.png",
+                            "ts": "20230525090100"
                         }
                     ]
                 }
@@ -2939,11 +3266,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Pela Icon.png"
+                "wiki": "Character Pela Icon.png",
+                "ts": "20230723081559"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Pela Splash Art.png"
+                    "wiki": "Character Pela Splash Art.png",
+                    "ts": "20230525090100"
                 }
             ]
         },
@@ -2958,11 +3287,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Natasha Icon.png"
+                        "wiki": "Character Natasha Icon.png",
+                        "ts": "20230723081534"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Natasha Splash Art.png"
+                            "wiki": "Character Natasha Splash Art.png",
+                            "ts": "20240525042421"
                         }
                     ]
                 }
@@ -2973,11 +3304,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Natasha Icon.png"
+                "wiki": "Character Natasha Icon.png",
+                "ts": "20230723081534"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Natasha Splash Art.png"
+                    "wiki": "Character Natasha Splash Art.png",
+                    "ts": "20240525042421"
                 }
             ]
         },
@@ -2993,11 +3326,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character March 7th Icon.png"
+                        "wiki": "Character March 7th Icon.png",
+                        "ts": "20230723081458"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character March 7th (Preservation) Splash Art.png"
+                            "wiki": "Character March 7th (Preservation) Splash Art.png",
+                            "ts": "20230525090156"
                         }
                     ]
                 },
@@ -3008,11 +3343,13 @@
                     "release_version": "2.4",
                     "release_date": "2024-07-31",
                     "photo": {
-                        "wiki": "Character March 7th (The Hunt) Icon.png"
+                        "wiki": "Character March 7th (The Hunt) Icon.png",
+                        "ts": "20240724122845"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character March 7th (The Hunt) Splash Art.png"
+                            "wiki": "Character March 7th (The Hunt) Splash Art.png",
+                            "ts": "20240724123019"
                         }
                     ]
                 }
@@ -3023,11 +3360,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character March 7th Icon.png"
+                "wiki": "Character March 7th Icon.png",
+                "ts": "20230723081458"
             },
             "full_photo": [
                 {
-                    "wiki": "Character March 7th (Preservation) Splash Art.png"
+                    "wiki": "Character March 7th (Preservation) Splash Art.png",
+                    "ts": "20230525090156"
                 }
             ]
         },
@@ -3042,11 +3381,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Hook Icon.png"
+                        "wiki": "Character Hook Icon.png",
+                        "ts": "20230723081051"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Hook Splash Art.png"
+                            "wiki": "Character Hook Splash Art.png",
+                            "ts": "20230525090126"
                         }
                     ]
                 }
@@ -3057,11 +3398,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Hook Icon.png"
+                "wiki": "Character Hook Icon.png",
+                "ts": "20230723081051"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Hook Splash Art.png"
+                    "wiki": "Character Hook Splash Art.png",
+                    "ts": "20230525090126"
                 }
             ]
         },
@@ -3076,11 +3419,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Himeko Icon.png"
+                        "wiki": "Character Himeko Icon.png",
+                        "ts": "20230723081029"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Himeko Splash Art.png"
+                            "wiki": "Character Himeko Splash Art.png",
+                            "ts": "20230525090036"
                         }
                     ]
                 }
@@ -3091,11 +3436,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Himeko Icon.png"
+                "wiki": "Character Himeko Icon.png",
+                "ts": "20230723081029"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Himeko Splash Art.png"
+                    "wiki": "Character Himeko Splash Art.png",
+                    "ts": "20230525090036"
                 }
             ]
         },
@@ -3110,11 +3457,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Herta Icon.png"
+                        "wiki": "Character Herta Icon.png",
+                        "ts": "20230723081012"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Herta Splash Art.png"
+                            "wiki": "Character Herta Splash Art.png",
+                            "ts": "20230216231220"
                         }
                     ]
                 }
@@ -3125,11 +3474,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Herta Icon.png"
+                "wiki": "Character Herta Icon.png",
+                "ts": "20230723081012"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Herta Splash Art.png"
+                    "wiki": "Character Herta Splash Art.png",
+                    "ts": "20230216231220"
                 }
             ]
         },
@@ -3144,11 +3495,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Gepard Icon.png"
+                        "wiki": "Character Gepard Icon.png",
+                        "ts": "20230723080948"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Gepard Splash Art.png"
+                            "wiki": "Character Gepard Splash Art.png",
+                            "ts": "20230216232354"
                         }
                     ]
                 }
@@ -3159,11 +3512,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Gepard Icon.png"
+                "wiki": "Character Gepard Icon.png",
+                "ts": "20230723080948"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Gepard Splash Art.png"
+                    "wiki": "Character Gepard Splash Art.png",
+                    "ts": "20230216232354"
                 }
             ]
         },
@@ -3178,11 +3533,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Dan Heng Icon.png"
+                        "wiki": "Character Dan Heng Icon.png",
+                        "ts": "20230723080807"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dan Heng Splash Art.png"
+                            "wiki": "Character Dan Heng Splash Art.png",
+                            "ts": "20230525090149"
                         }
                     ]
                 }
@@ -3193,11 +3550,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Dan Heng Icon.png"
+                "wiki": "Character Dan Heng Icon.png",
+                "ts": "20230723080807"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dan Heng Splash Art.png"
+                    "wiki": "Character Dan Heng Splash Art.png",
+                    "ts": "20230525090149"
                 }
             ]
         },
@@ -3212,11 +3571,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Clara Icon.png"
+                        "wiki": "Character Clara Icon.png",
+                        "ts": "20230723080716"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Clara Splash Art.png"
+                            "wiki": "Character Clara Splash Art.png",
+                            "ts": "20230216231958"
                         }
                     ]
                 }
@@ -3227,11 +3588,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Clara Icon.png"
+                "wiki": "Character Clara Icon.png",
+                "ts": "20230723080716"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Clara Splash Art.png"
+                    "wiki": "Character Clara Splash Art.png",
+                    "ts": "20230216231958"
                 }
             ]
         },
@@ -3246,11 +3609,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Bronya Icon.png"
+                        "wiki": "Character Bronya Icon.png",
+                        "ts": "20230723080648"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Bronya Splash Art.png"
+                            "wiki": "Character Bronya Splash Art.png",
+                            "ts": "20240121130128"
                         }
                     ]
                 }
@@ -3261,11 +3626,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Bronya Icon.png"
+                "wiki": "Character Bronya Icon.png",
+                "ts": "20230723080648"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Bronya Splash Art.png"
+                    "wiki": "Character Bronya Splash Art.png",
+                    "ts": "20240121130128"
                 }
             ]
         },
@@ -3280,11 +3647,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Bailu Icon.png"
+                        "wiki": "Character Bailu Icon.png",
+                        "ts": "20230723080553"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Bailu Splash Art.png"
+                            "wiki": "Character Bailu Splash Art.png",
+                            "ts": "20230210120736"
                         }
                     ]
                 }
@@ -3295,11 +3664,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Bailu Icon.png"
+                "wiki": "Character Bailu Icon.png",
+                "ts": "20230723080553"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Bailu Splash Art.png"
+                    "wiki": "Character Bailu Splash Art.png",
+                    "ts": "20230210120736"
                 }
             ]
         },
@@ -3314,11 +3685,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Asta Icon.png"
+                        "wiki": "Character Asta Icon.png",
+                        "ts": "20230723080506"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Asta Splash Art.png"
+                            "wiki": "Character Asta Splash Art.png",
+                            "ts": "20230216231122"
                         }
                     ]
                 }
@@ -3329,11 +3702,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Asta Icon.png"
+                "wiki": "Character Asta Icon.png",
+                "ts": "20230723080506"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Asta Splash Art.png"
+                    "wiki": "Character Asta Splash Art.png",
+                    "ts": "20230216231122"
                 }
             ]
         },
@@ -3348,11 +3723,13 @@
                     "release_version": "1.0",
                     "release_date": "2023-04-26",
                     "photo": {
-                        "wiki": "Character Arlan Icon.png"
+                        "wiki": "Character Arlan Icon.png",
+                        "ts": "20230723080444"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Arlan Splash Art.png"
+                            "wiki": "Character Arlan Splash Art.png",
+                            "ts": "20230216231038"
                         }
                     ]
                 }
@@ -3363,11 +3740,13 @@
             "release_date": "2023-04-26",
             "is_released": true,
             "photo": {
-                "wiki": "Character Arlan Icon.png"
+                "wiki": "Character Arlan Icon.png",
+                "ts": "20230723080444"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Arlan Splash Art.png"
+                    "wiki": "Character Arlan Splash Art.png",
+                    "ts": "20230216231038"
                 }
             ]
         }

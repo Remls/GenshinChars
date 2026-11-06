@@ -1,6 +1,6 @@
 {
-    "version": "11ccd5e",
-    "last_updated": "2026-11-06T05:44:39.843324Z",
+    "version": "86c863c",
+    "last_updated": "2026-11-06T07:05:28.755201Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -10,7 +10,8 @@
             "image": "Item Flower of Eternity.png",
             "rewards": [
                 "cr_flower_of_eternity"
-            ]
+            ],
+            "image_ts": "20230501222635"
         },
         {
             "name": "Bud of Destruction",
@@ -20,7 +21,8 @@
             "image": "Item Worldbreaker Blade.png",
             "rewards": [
                 "cr_worldbreaker_blade"
-            ]
+            ],
+            "image_ts": "20230501021024"
         },
         {
             "name": "Bud of Erudition",
@@ -30,7 +32,8 @@
             "image": "Item Key of Wisdom.png",
             "rewards": [
                 "cr_key_of_wisdom"
-            ]
+            ],
+            "image_ts": "20230501020059"
         },
         {
             "name": "Bud of Harmony",
@@ -40,7 +43,8 @@
             "image": "Item Stellaris Symphony.png",
             "rewards": [
                 "cr_stellaris_symphony"
-            ]
+            ],
+            "image_ts": "20230501213421"
         },
         {
             "name": "Bud of Nihility",
@@ -50,7 +54,8 @@
             "image": "Item Obsidian of Obsession.png",
             "rewards": [
                 "cr_obsidian_of_obsession"
-            ]
+            ],
+            "image_ts": "20230501221744"
         },
         {
             "name": "Bud of Preservation",
@@ -60,7 +65,8 @@
             "image": "Item Safeguard of Amber.png",
             "rewards": [
                 "cr_safeguard_of_amber"
-            ]
+            ],
+            "image_ts": "20230501221253"
         },
         {
             "name": "Bud of The Hunt",
@@ -70,7 +76,8 @@
             "image": "Item Arrow of the Starchaser.png",
             "rewards": [
                 "cr_arrow_of_the_starchaser"
-            ]
+            ],
+            "image_ts": "20230501220533"
         },
         {
             "name": "Bud of Destruction",
@@ -80,7 +87,8 @@
             "image": "Item Moon Rage Fang.png",
             "rewards": [
                 "cr_moon_rage_fang"
-            ]
+            ],
+            "image_ts": "20240206053823"
         },
         {
             "name": "Bud of Harmony",
@@ -90,7 +98,8 @@
             "image": "Item Heavenly Melody.png",
             "rewards": [
                 "cr_heavenly_melody"
-            ]
+            ],
+            "image_ts": "20240209012503"
         },
         {
             "name": "Bud of Nihility",
@@ -100,7 +109,8 @@
             "image": "Item Heaven Incinerator.png",
             "rewards": [
                 "cr_heaven_incinerator"
-            ]
+            ],
+            "image_ts": "20240206054643"
         },
         {
             "name": "Bud of Abundance",
@@ -110,7 +120,8 @@
             "image": "Item Myriad Fruit.png",
             "rewards": [
                 "cr_myriad_fruit"
-            ]
+            ],
+            "image_ts": "20240327041938"
         },
         {
             "name": "Bud of Preservation",
@@ -120,7 +131,8 @@
             "image": "Item Divine Amber.png",
             "rewards": [
                 "cr_divine_amber"
-            ]
+            ],
+            "image_ts": "20240327041835"
         },
         {
             "name": "Bud of The Hunt",
@@ -130,7 +142,8 @@
             "image": "Item Countertemporal Shot.png",
             "rewards": [
                 "cr_countertemporal_shot"
-            ]
+            ],
+            "image_ts": "20240508195535"
         },
         {
             "name": "Bud of Erudition",
@@ -140,7 +153,8 @@
             "image": "Item Exquisite Colored Draft.png",
             "rewards": [
                 "cr_exquisite_colored_draft"
-            ]
+            ],
+            "image_ts": "20240607171505"
         },
         {
             "name": "Bud of Remembrance",
@@ -150,7 +164,8 @@
             "image": "Item Flower of Ālaya.png",
             "rewards": [
                 "cr_flower_of_laya"
-            ]
+            ],
+            "image_ts": "20250117061300"
         },
         {
             "name": "Bud of Elation",
@@ -160,7 +175,8 @@
             "image": "Item The Fluffy Hand-drawn Storyboards.png",
             "rewards": [
                 "cr_the_fluffy_collector_s_edition"
-            ]
+            ],
+            "image_ts": "20260213133328"
         },
         {
             "name": "Bud of The Hunt",
@@ -170,7 +186,8 @@
             "image": "Item Lance of Retribution.png",
             "rewards": [
                 "cr_lance_of_retribution"
-            ]
+            ],
+            "image_ts": "20260213133315"
         },
         {
             "name": "Bud of Nihility",
@@ -180,7 +197,8 @@
             "image": "Item Heart of Phagousa.png",
             "rewards": [
                 "cr_heart_of_phagousa"
-            ]
+            ],
+            "image_ts": "20260422040251"
         },
         {
             "name": "Bud of Destruction",
@@ -190,7 +208,8 @@
             "image": "Item Omnicolor, Fool's Own.png",
             "rewards": [
                 "cr_omnicolor_fool_s_own"
-            ]
+            ],
+            "image_ts": "20260601110030"
         },
         {
             "name": "Bud of Erudition",
@@ -200,7 +219,8 @@
             "image": "Item Cosmic Sandpit.png",
             "rewards": [
                 "cr_cosmic_sandpit"
-            ]
+            ],
+            "image_ts": "20260601110022"
         },
         {
             "name": "Path of Conflagration",
@@ -211,7 +231,8 @@
             "rewards": [
                 "cc_firesmith_of_lava_forging",
                 "cc_wastelander_of_banditry_desert"
-            ]
+            ],
+            "image_ts": "20250803065513"
         },
         {
             "name": "Path of Drifting",
@@ -222,7 +243,8 @@
             "rewards": [
                 "cc_passerby_of_wandering_cloud",
                 "cc_musketeer_of_wild_wheat"
-            ]
+            ],
+            "image_ts": "20250803065002"
         },
         {
             "name": "Path of Gelid Wind",
@@ -233,7 +255,8 @@
             "rewards": [
                 "cc_hunter_of_glacial_forest",
                 "cc_eagle_of_twilight_line"
-            ]
+            ],
+            "image_ts": "20250803070050"
         },
         {
             "name": "Path of Holy Hymn",
@@ -244,7 +267,8 @@
             "rewards": [
                 "cc_knight_of_purity_palace",
                 "cc_band_of_sizzling_thunder"
-            ]
+            ],
+            "image_ts": "20250803070227"
         },
         {
             "name": "Path of Jabbing Punch",
@@ -255,7 +279,8 @@
             "rewards": [
                 "cc_champion_of_streetwise_boxing",
                 "cc_thief_of_shooting_meteor"
-            ]
+            ],
+            "image_ts": "20250803065930"
         },
         {
             "name": "Path of Providence",
@@ -266,7 +291,8 @@
             "rewards": [
                 "cc_guard_of_wuthering_snow",
                 "cc_genius_of_brilliant_stars"
-            ]
+            ],
+            "image_ts": "20250621194250"
         },
         {
             "name": "Path of Elixir Seekers",
@@ -277,7 +303,8 @@
             "rewards": [
                 "cc_longevous_disciple",
                 "cc_messenger_traversing_hackerspace"
-            ]
+            ],
+            "image_ts": "20230719175100"
         },
         {
             "name": "Path of Darkness",
@@ -288,7 +315,8 @@
             "rewards": [
                 "cc_the_ashblazing_grand_duke",
                 "cc_prisoner_in_deep_confinement"
-            ]
+            ],
+            "image_ts": "20250621184642"
         },
         {
             "name": "Path of Dreamdive",
@@ -299,7 +327,8 @@
             "rewards": [
                 "cc_pioneer_diver_of_dead_waters",
                 "cc_watchmaker_master_of_dream_machinations"
-            ]
+            ],
+            "image_ts": "20250803065259"
         },
         {
             "name": "Path of Cavalier",
@@ -310,7 +339,8 @@
             "rewards": [
                 "cc_iron_cavalry_against_the_scourge",
                 "cc_the_wind_soaring_valorous"
-            ]
+            ],
+            "image_ts": "20250803065339"
         },
         {
             "name": "Path of Uncertainty",
@@ -321,7 +351,8 @@
             "rewards": [
                 "cc_scholar_lost_in_erudition",
                 "cc_sacerdos_relived_ordeal"
-            ]
+            ],
+            "image_ts": "20250621212418"
         },
         {
             "name": "Path of Aria",
@@ -332,7 +363,8 @@
             "rewards": [
                 "cc_hero_of_triumphant_song",
                 "cc_poet_of_mourning_collapse"
-            ]
+            ],
+            "image_ts": "20250621211640"
         },
         {
             "name": "Path of Thundersurge",
@@ -343,7 +375,8 @@
             "rewards": [
                 "cc_warrior_goddess_of_sun_and_thunder",
                 "cc_wavestrider_captain"
-            ]
+            ],
+            "image_ts": "20250621194308"
         },
         {
             "name": "Path of Hidden Salvation",
@@ -354,7 +387,8 @@
             "rewards": [
                 "cc_world_remaking_deliverer",
                 "cc_self_enshrouded_recluse"
-            ]
+            ],
+            "image_ts": "20250924130804"
         },
         {
             "name": "Path of Possession",
@@ -365,7 +399,8 @@
             "rewards": [
                 "cc_ever_glorious_magical_girl",
                 "cc_diviner_of_distant_reach"
-            ]
+            ],
+            "image_ts": "20260323205929"
         },
         {
             "name": "Path of Insight",
@@ -376,7 +411,8 @@
             "rewards": [
                 "cc_as_navigator_isee_sees_it",
                 "cc_divine_querying_master_smith"
-            ]
+            ],
+            "image_ts": "20260711223728"
         },
         {
             "name": "Untoppled Walls",
@@ -391,7 +427,8 @@
             "rewards": [
                 "po_space_sealing_station",
                 "po_fleet_of_the_ageless"
-            ]
+            ],
+            "image_ts": "20260725081508"
         },
         {
             "name": "Smelted Heart",
@@ -406,7 +443,8 @@
             "rewards": [
                 "po_talia_kingdom_of_banditry",
                 "po_sprightly_vonwacq"
-            ]
+            ],
+            "image_ts": "20260725083301"
         },
         {
             "name": "Gentle Words",
@@ -421,7 +459,8 @@
             "rewards": [
                 "po_pan_cosmic_commercial_enterprise",
                 "po_celestial_differentiator"
-            ]
+            ],
+            "image_ts": "20260725083158"
         },
         {
             "name": "Permafrost",
@@ -436,7 +475,8 @@
             "rewards": [
                 "po_belobog_of_the_architects",
                 "po_inert_salsotto"
-            ]
+            ],
+            "image_ts": "20260725080526"
         },
         {
             "name": "Fruit of Evil",
@@ -451,7 +491,8 @@
             "rewards": [
                 "po_rutilant_arena",
                 "po_broken_keel"
-            ]
+            ],
+            "image_ts": "20260725075739"
         },
         {
             "name": "Pouring Blades",
@@ -466,7 +507,8 @@
             "rewards": [
                 "po_firmament_frontline_glamoth",
                 "po_penacony_land_of_the_dreams"
-            ]
+            ],
+            "image_ts": "20260725080443"
         },
         {
             "name": "To Sweet Dreams",
@@ -481,7 +523,8 @@
             "rewards": [
                 "po_sigonia_the_unclaimed_desolation",
                 "po_izumo_gensei_and_takama_divine_realm"
-            ]
+            ],
+            "image_ts": "20260725082444"
         },
         {
             "name": "Eternal Comedy",
@@ -496,7 +539,8 @@
             "rewards": [
                 "po_duran_dynasty_of_running_wolves",
                 "po_forge_of_the_kalpagni_lantern"
-            ]
+            ],
+            "image_ts": "20260725083408"
         },
         {
             "name": "Famished Worker",
@@ -511,7 +555,8 @@
             "rewards": [
                 "po_lushaka_the_sunken_seas",
                 "po_the_wondrous_bananamusement_park"
-            ]
+            ],
+            "image_ts": "20260725083316"
         },
         {
             "name": "Unceasing Strife",
@@ -526,7 +571,8 @@
             "rewards": [
                 "po_bone_collection_s_serene_demesne",
                 "po_giant_tree_of_rapt_brooding"
-            ]
+            ],
+            "image_ts": "20260725083344"
         },
         {
             "name": "Moonlit Blood",
@@ -541,7 +587,8 @@
             "rewards": [
                 "po_arcadia_of_woven_dreams",
                 "po_revelry_by_the_sea"
-            ]
+            ],
+            "image_ts": "20240910015333"
         },
         {
             "name": "Within the West Wind",
@@ -556,7 +603,8 @@
             "rewards": [
                 "po_amphoreus_the_eternal_land",
                 "po_tengoku_livestream"
-            ]
+            ],
+            "image_ts": "20260725082705"
         },
         {
             "name": "Gilded Recollection",
@@ -571,7 +619,8 @@
             "rewards": [
                 "po_punklorde_stage_zero",
                 "po_city_of_converging_stars"
-            ]
+            ],
+            "image_ts": "20260725081817"
         },
         {
             "name": "Bugs Incoming",
@@ -586,297 +635,327 @@
             "rewards": [
                 "po_fallen_star_anchorage",
                 "po_cosmic_life_sciences_institute"
-            ]
+            ],
+            "image_ts": "20260725081629"
         },
         {
             "name": "Shape of Blaze",
             "location": "Silvermane Guard Restricted Zone",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Blaze.png",
+            "image": "Icon Enemy Blaze Out of Space.png",
             "rewards": [
                 "ss_endotherm_chitin"
-            ]
+            ],
+            "image_ts": "20230610145349"
         },
         {
             "name": "Shape of Doom",
             "location": "Stargazer Navalia",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Doom.png",
+            "image": "Icon Enemy Disciples of Sanctus Medicus Shape Shifter.png",
             "rewards": [
                 "ss_shape_shifter_s_lightning_staff"
-            ]
+            ],
+            "image_ts": "20240214223111"
         },
         {
             "name": "Shape of Fulmination",
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Fulmination.png",
+            "image": "Icon Enemy Guardian Shadow.png",
             "rewards": [
                 "ss_lightning_crown_of_the_past_shadow"
-            ]
+            ],
+            "image_ts": "20240214223243"
         },
         {
             "name": "Shape of Gust",
             "location": "Rivet Town",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Gust.png",
+            "image": "Icon Enemy Stormbringer.png",
             "rewards": [
                 "ss_storm_eye"
-            ]
+            ],
+            "image_ts": "20240214223414"
         },
         {
             "name": "Shape of Icicle",
             "location": "Cloudford",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Icicle.png",
+            "image": "Icon Enemy Ice Out of Space.png",
             "rewards": [
                 "ss_gelid_chitin"
-            ]
+            ],
+            "image_ts": "20240214223256"
         },
         {
             "name": "Shape of Mirage",
             "location": "Backwater Pass",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Mirage.png",
+            "image": "Icon Enemy Decaying Shadow.png",
             "rewards": [
                 "ss_golden_crown_of_the_past_shadow"
-            ]
+            ],
+            "image_ts": "20240214223051"
         },
         {
             "name": "Shape of Quanta",
             "location": "Base Zone",
             "region": "Herta Space Station",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Quanta.png",
+            "image": "Icon Enemy Voidranger Trampler.png",
             "rewards": [
                 "ss_void_cast_iron"
-            ]
+            ],
+            "image_ts": "20240214223532"
         },
         {
             "name": "Shape of Rime",
             "location": "Corridor of Fading Echoes",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Rime.png",
+            "image": "Icon Enemy Frigid Prowler.png",
             "rewards": [
                 "ss_horn_of_snow"
-            ]
+            ],
+            "image_ts": "20240214223216"
         },
         {
             "name": "Shape of Spike",
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Spike.png",
+            "image": "Icon Enemy Automaton Direwolf.png",
             "rewards": [
                 "ss_broken_teeth_of_iron_wolf"
-            ]
+            ],
+            "image_ts": "20240214222937"
         },
         {
             "name": "Shape of Celestial",
             "location": "Alchemy Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Celestial.png",
+            "image": "Icon Enemy The Ascended.png",
             "rewards": [
                 "ss_ascendant_debris"
-            ]
+            ],
+            "image_ts": "20230719103111"
         },
         {
             "name": "Shape of Abomination",
             "location": "Scalegorge Waterscape",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Abomination.png",
+            "image": "Icon Enemy Abundance Sprite Malefic Ape.png",
             "rewards": [
                 "ss_nail_of_the_ape"
-            ]
+            ],
+            "image_ts": "20230719111957"
         },
         {
             "name": "Shape of Puppetry",
             "location": "Artisanship Commission",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Puppetry.png",
+            "image": "Icon Enemy Aurumaton Gatekeeper.png",
             "rewards": [
                 "ss_suppressing_edict"
-            ]
+            ],
+            "image_ts": "20240214222922"
         },
         {
             "name": "Shape of Scorch",
             "location": "Great Mine",
             "region": "Jarilo-VI",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Scorch.png",
+            "image": "Icon Enemy Searing Prowler.png",
             "rewards": [
                 "ss_searing_steel_blade"
-            ]
+            ],
+            "image_ts": "20240214223337"
         },
         {
             "name": "Shape of Perdition",
             "location": "Fyxestroll Garden",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Perdition.png",
+            "image": "Icon Enemy Aurumaton Spectral Envoy.png",
             "rewards": [
                 "ss_netherworld_token"
-            ]
+            ],
+            "image_ts": "20231115031419"
         },
         {
             "name": "Shape of Nectar",
             "location": "The Reverie (Dreamscape)",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Nectar.png",
+            "image": "Icon Enemy Dreamjolt Troupe's Sweet Gorilla.png",
             "rewards": [
                 "ss_dream_fridge"
-            ]
+            ],
+            "image_ts": "20240206014108"
         },
         {
             "name": "Shape of Roast",
             "location": "Dream's Edge",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Roast.png",
+            "image": "Icon Enemy Dreamjolt Troupe's Beyond Overcooked.png",
             "rewards": [
                 "ss_dream_flamer"
-            ]
+            ],
+            "image_ts": "20240206014100"
         },
         {
             "name": "Shape of Ire",
             "location": "Dewlight Pavilion",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Ire.png",
+            "image": "Icon Enemy Memory Zone Meme Shell of Faded Rage.png",
             "rewards": [
                 "ss_raging_heart"
-            ]
+            ],
+            "image_ts": "20240327020201"
         },
         {
             "name": "Shape of Duty",
             "location": "Clock Studios Theme Park",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Duty.png",
+            "image": "Icon Enemy Senior Staff Team Leader.png",
             "rewards": [
                 "ss_ipc_work_permit"
-            ]
+            ],
+            "image_ts": "20231011021533"
         },
         {
             "name": "Shape of Gloam",
             "location": "Penacony Grand Theater",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Gloam.png",
+            "image": "Icon Enemy Present Inebriated in Revelry.png",
             "rewards": [
                 "ss_a_glass_of_the_besotted_era"
-            ]
+            ],
+            "image_ts": "20260304042324"
         },
         {
             "name": "Shape of Mechwolf",
             "location": "The Shackling Prison",
             "region": "The Xianzhou Luofu",
             "type": "stagnant_shadow",
-            "image": "Stagnant Shadow - Shape of Mechwolf.png",
+            "image": "Icon Enemy Howling Casket.png",
             "rewards": [
                 "ss_nail_of_the_beast_coffin"
-            ]
+            ],
+            "image_ts": "20240731025711"
         },
         {
             "name": "Shape of Timbre",
             "location": "Penacony Grand Theater",
             "region": "Penacony",
             "type": "stagnant_shadow",
-            "image": "Item Chordal Mirage.png",
+            "image": "Icon Enemy Tomorrow in Harmonious Chords.png",
             "rewards": [
                 "ss_chordal_mirage"
-            ]
+            ],
+            "image_ts": "20260304042336"
         },
         {
             "name": "Shape of Gelidmoon",
             "location": "\"Murmuring Woods\" Grove of Epiphany",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Darkveil Moonlight.png",
+            "image": "Icon Enemy Moonlit Pegasus.png",
             "rewards": [
                 "ss_darkveil_moonlight"
-            ]
+            ],
+            "image_ts": "20250226022902"
         },
         {
             "name": "Shape of Sloggyre",
             "location": "\"Abyss of Fate\" Janusopolis",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Harbinger of Strife.png",
+            "image": "Icon Enemy Furiae Praetor.png",
             "rewards": [
                 "ss_harbinger_of_strife"
-            ]
+            ],
+            "image_ts": "20250115020958"
         },
         {
             "name": "Shape of Deepsheaf",
             "location": "\"Dragonbone City\" Styxia",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Invasive Clot.png",
+            "image": "Icon Enemy Black Tide's Corroded Daemon.png",
             "rewards": [
                 "ss_invasive_clot"
-            ]
+            ],
+            "image_ts": "20250409025524"
         },
         {
             "name": "Shape of Cinders",
             "location": "\"Fortress of Dome\" Eye of Twilight",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Charred Bud of Twilight.png",
+            "image": "Icon Enemy Dark Sun Gryphon.png",
             "rewards": [
                 "ss_charred_bud_of_twilight"
-            ]
+            ],
+            "image_ts": "20250522003525"
         },
         {
             "name": "Shape of Sirens",
             "location": "\"Warbling Shores\" Styxia",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Sea Siren's Torn Fin.png",
+            "image": "Icon Enemy Lady of Crashing Waves.png",
             "rewards": [
                 "ss_sea_siren_s_torn_fin"
-            ]
+            ],
+            "image_ts": "20250815053805"
         },
         {
             "name": "Shape of Ashes",
             "location": "\"Sanctum of Prophecy\" Janusopolis",
             "region": "Amphoreus",
             "type": "stagnant_shadow",
-            "image": "Item Radiant Prominence.png",
+            "image": "Icon Enemy Noontide Gryphon.png",
             "rewards": [
                 "ss_radiant_prominence"
-            ]
+            ],
+            "image_ts": "20250226022903"
         },
         {
             "name": "Shape of Soundburst",
             "location": "Dovebrook District",
             "region": "Planarcadia",
             "type": "stagnant_shadow",
-            "image": "Item Thunder Strum.png",
+            "image": "Icon Enemy Rocking Rebel.png",
             "rewards": [
                 "ss_thunder_strum"
-            ]
+            ],
+            "image_ts": "20260214222700"
         },
         {
             "name": "Shape of Devour",
             "location": "Inkford Hermitage",
             "region": "Planarcadia",
             "type": "stagnant_shadow",
-            "image": "Item Sneering Harlequin.png",
+            "image": "Icon Enemy God-Devourer Offspring.png",
             "rewards": [
                 "ss_sneering_harlequin"
-            ]
+            ],
+            "image_ts": "20260601110141"
         },
         {
             "name": "Destruction's Beginning",
@@ -889,7 +968,8 @@
             ],
             "rewards": [
                 "ew_destroyer_s_final_road"
-            ]
+            ],
+            "image_ts": "20241209213614"
         },
         {
             "name": "End of the Eternal Freeze",
@@ -902,7 +982,8 @@
             ],
             "rewards": [
                 "ew_guardian_s_lament"
-            ]
+            ],
+            "image_ts": "20241209213549"
         },
         {
             "name": "Divine Seed",
@@ -915,7 +996,8 @@
             ],
             "rewards": [
                 "ew_regret_of_infinite_ochema"
-            ]
+            ],
+            "image_ts": "20241209213601"
         },
         {
             "name": "Borehole Planet's Past Nightmares",
@@ -928,7 +1010,8 @@
             ],
             "rewards": [
                 "ew_past_evils_of_the_borehole_planet_disaster"
-            ]
+            ],
+            "image_ts": "20241209213628"
         },
         {
             "name": "Salutations of Ashen Dreams",
@@ -941,7 +1024,8 @@
             ],
             "rewards": [
                 "ew_lost_echo_of_the_shared_wish"
-            ]
+            ],
+            "image_ts": "20241209213535"
         },
         {
             "name": "Inner Beast's Battlefield",
@@ -954,7 +1038,8 @@
             ],
             "rewards": [
                 "ew_auspice_sliver"
-            ]
+            ],
+            "image_ts": "20241209213626"
         },
         {
             "name": "Glance of Twilight",
@@ -967,7 +1052,8 @@
             ],
             "rewards": [
                 "ew_daythunder_anamnesis"
-            ]
+            ],
+            "image_ts": "20260703215024"
         },
         {
             "name": "Rusted Crypt of the Iron Carcass",
@@ -980,7 +1066,8 @@
             ],
             "rewards": [
                 "ew_vanquished_flow_s_reticence"
-            ]
+            ],
+            "image_ts": "20260703215023"
         },
         {
             "name": "The Comedy of Doom",
@@ -993,7 +1080,8 @@
             ],
             "rewards": [
                 "ew_high_hopes_of_the_falsely_enlightened"
-            ]
+            ],
+            "image_ts": "20260715063123"
         }
     ],
     "rewards": {
@@ -1004,7 +1092,8 @@
                 "Fu Xuan",
                 "Lynx",
                 "Xueyi"
-            ]
+            ],
+            "image_ts": "20230904222208"
         },
         "ss_radiant_prominence": {
             "name": "Radiant Prominence",
@@ -1014,7 +1103,8 @@
                 "Mortenax Blade",
                 "Sparxie",
                 "The Dahlia"
-            ]
+            ],
+            "image_ts": "20251105182523"
         },
         "ss_endotherm_chitin": {
             "name": "Endotherm Chitin",
@@ -1023,7 +1113,8 @@
                 "Asta",
                 "Himeko",
                 "Hook"
-            ]
+            ],
+            "image_ts": "20230502233133"
         },
         "ss_ascendant_debris": {
             "name": "Ascendant Debris",
@@ -1032,7 +1123,8 @@
                 "Black Swan",
                 "Blade",
                 "Huohuo"
-            ]
+            ],
+            "image_ts": "20230721045551"
         },
         "ss_charred_bud_of_twilight": {
             "name": "Charred Bud of Twilight",
@@ -1040,7 +1132,8 @@
             "characters": [
                 "Cerydra",
                 "Robin • Summeretto"
-            ]
+            ],
+            "image_ts": "20250702051316"
         },
         "ss_invasive_clot": {
             "name": "Invasive Clot",
@@ -1051,7 +1144,8 @@
                 "Hysilens",
                 "Phainon",
                 "Yao Guang"
-            ]
+            ],
+            "image_ts": "20250521021254"
         },
         "ss_sneering_harlequin": {
             "name": "Sneering Harlequin",
@@ -1060,7 +1154,8 @@
                 "Aeon ★ Aha",
                 "Aventurine • Waveflair",
                 "Rin Tohsaka"
-            ]
+            ],
+            "image_ts": "20260601110034"
         },
         "ss_shape_shifter_s_lightning_staff": {
             "name": "Shape Shifter's Lightning Staff",
@@ -1069,7 +1164,8 @@
                 "Acheron",
                 "Jing Yuan",
                 "Kafka"
-            ]
+            ],
+            "image_ts": "20230430005614"
         },
         "ss_ipc_work_permit": {
             "name": "IPC Work Permit",
@@ -1078,7 +1174,8 @@
                 "Boothill",
                 "Robin",
                 "Yunli"
-            ]
+            ],
+            "image_ts": "20240508195511"
         },
         "ss_lightning_crown_of_the_past_shadow": {
             "name": "Lightning Crown of the Past Shadow",
@@ -1088,7 +1185,8 @@
                 "Bailu",
                 "Serval",
                 "Tingyun"
-            ]
+            ],
+            "image_ts": "20230502233830"
         },
         "ss_darkveil_moonlight": {
             "name": "Darkveil Moonlight",
@@ -1098,7 +1196,8 @@
                 "Castorice",
                 "Cipher",
                 "Tribbie"
-            ]
+            ],
+            "image_ts": "20250226030407"
         },
         "ss_a_glass_of_the_besotted_era": {
             "name": "A Glass of the Besotted Era",
@@ -1108,7 +1207,8 @@
                 "Feixiao",
                 "Hyacine",
                 "Saber"
-            ]
+            ],
+            "image_ts": "20240910020840"
         },
         "ss_storm_eye": {
             "name": "Storm Eye",
@@ -1117,7 +1217,8 @@
                 "Bronya",
                 "Dan Heng",
                 "Sampo"
-            ]
+            ],
+            "image_ts": "20230502234126"
         },
         "ss_gelid_chitin": {
             "name": "Gelid Chitin",
@@ -1126,7 +1227,8 @@
                 "Jingliu",
                 "Ruan Mei",
                 "Yanqing"
-            ]
+            ],
+            "image_ts": "20230505233011"
         },
         "ss_raging_heart": {
             "name": "Raging Heart",
@@ -1136,7 +1238,8 @@
                 "Gallagher",
                 "Jiaoqiu",
                 "Lingsha"
-            ]
+            ],
+            "image_ts": "20240327024957"
         },
         "ss_nail_of_the_beast_coffin": {
             "name": "Nail of the Beast Coffin",
@@ -1144,7 +1247,8 @@
             "characters": [
                 "Aglaea",
                 "Moze"
-            ]
+            ],
+            "image_ts": "20240910020855"
         },
         "ss_golden_crown_of_the_past_shadow": {
             "name": "Golden Crown of the Past Shadow",
@@ -1153,7 +1257,8 @@
                 "Luocha",
                 "Welt",
                 "Yukong"
-            ]
+            ],
+            "image_ts": "20230502234630"
         },
         "ss_dream_fridge": {
             "name": "Dream Fridge",
@@ -1161,7 +1266,8 @@
             "characters": [
                 "Misha",
                 "The Herta"
-            ]
+            ],
+            "image_ts": "20240206060036"
         },
         "ss_netherworld_token": {
             "name": "Netherworld Token",
@@ -1169,7 +1275,8 @@
             "characters": [
                 "Argenti",
                 "Hanya"
-            ]
+            ],
+            "image_ts": "20231123094511"
         },
         "ss_suppressing_edict": {
             "name": "Suppressing Edict",
@@ -1178,7 +1285,8 @@
                 "Aventurine",
                 "Dan Heng • Imbibitor Lunae",
                 "Dr. Ratio"
-            ]
+            ],
+            "image_ts": "20230830025427"
         },
         "ss_void_cast_iron": {
             "name": "Void Cast Iron",
@@ -1187,7 +1295,8 @@
                 "Qingque",
                 "Seele",
                 "Silver Wolf"
-            ]
+            ],
+            "image_ts": "20230502234410"
         },
         "ss_horn_of_snow": {
             "name": "Horn of Snow",
@@ -1198,7 +1307,8 @@
                 "March 7th (Hunt)",
                 "March 7th (Preservation)",
                 "Pela"
-            ]
+            ],
+            "image_ts": "20230502233537"
         },
         "ss_dream_flamer": {
             "name": "Dream Flamer",
@@ -1206,7 +1316,8 @@
             "characters": [
                 "Jade",
                 "Sparkle"
-            ]
+            ],
+            "image_ts": "20240211202136"
         },
         "ss_searing_steel_blade": {
             "name": "Searing Steel Blade",
@@ -1215,7 +1326,8 @@
                 "Fugue",
                 "Guinaifen",
                 "Topaz & Numby"
-            ]
+            ],
+            "image_ts": "20231023052008"
         },
         "ss_sea_siren_s_torn_fin": {
             "name": "Sea Siren's Torn Fin",
@@ -1224,7 +1336,8 @@
                 "Cyrene",
                 "Evernight",
                 "Pearl"
-            ]
+            ],
+            "image_ts": "20250813021046"
         },
         "ss_harbinger_of_strife": {
             "name": "Harbinger of Strife",
@@ -1232,7 +1345,8 @@
             "characters": [
                 "Mydei",
                 "Silver Wolf LV.999"
-            ]
+            ],
+            "image_ts": "20250226030417"
         },
         "ss_thunder_strum": {
             "name": "Thunder Strum",
@@ -1240,7 +1354,8 @@
             "characters": [
                 "Ashveil",
                 "Gilgamesh"
-            ]
+            ],
+            "image_ts": "20260213133333"
         },
         "ss_broken_teeth_of_iron_wolf": {
             "name": "Broken Teeth of Iron Wolf",
@@ -1250,7 +1365,8 @@
                 "Luka",
                 "Natasha",
                 "Sushang"
-            ]
+            ],
+            "image_ts": "20230502023615"
         },
         "ss_chordal_mirage": {
             "name": "Chordal Mirage",
@@ -1258,7 +1374,8 @@
             "characters": [
                 "Rappa",
                 "Sunday"
-            ]
+            ],
+            "image_ts": "20241023022230"
         },
         "cr_flower_of_eternity": {
             "name": "Flower of Eternity",
@@ -1269,7 +1386,8 @@
                 "Luocha",
                 "Lynx",
                 "Natasha"
-            ]
+            ],
+            "image_ts": "20230501222635"
         },
         "cr_myriad_fruit": {
             "name": "Myriad Fruit",
@@ -1277,14 +1395,16 @@
             "characters": [
                 "Gallagher",
                 "Lingsha"
-            ]
+            ],
+            "image_ts": "20240327041938"
         },
         "cr_omnicolor_fool_s_own": {
             "name": "Omnicolor, Fool's Own",
             "type": "calyx_crimson",
             "characters": [
                 "Gilgamesh"
-            ]
+            ],
+            "image_ts": "20260601110030"
         },
         "cr_moon_rage_fang": {
             "name": "Moon Rage Fang",
@@ -1296,7 +1416,8 @@
                 "Phainon",
                 "Saber",
                 "Yunli"
-            ]
+            ],
+            "image_ts": "20240206053823"
         },
         "cr_worldbreaker_blade": {
             "name": "Worldbreaker Blade",
@@ -1310,7 +1431,8 @@
                 "Jingliu",
                 "Trailblazer (Destruction)",
                 "Xueyi"
-            ]
+            ],
+            "image_ts": "20230501021024"
         },
         "cr_the_fluffy_collector_s_edition": {
             "name": "The Fluffy Collector's Edition",
@@ -1324,7 +1446,8 @@
                 "Sparxie",
                 "Trailblazer (Elation)",
                 "Yao Guang"
-            ]
+            ],
+            "image_ts": "20260213133327"
         },
         "cr_exquisite_colored_draft": {
             "name": "Exquisite Colored Draft",
@@ -1334,7 +1457,8 @@
                 "Jade",
                 "Rappa",
                 "The Herta"
-            ]
+            ],
+            "image_ts": "20240607171505"
         },
         "cr_key_of_wisdom": {
             "name": "Key of Wisdom",
@@ -1346,7 +1470,8 @@
                 "Jing Yuan",
                 "Qingque",
                 "Serval"
-            ]
+            ],
+            "image_ts": "20230501020059"
         },
         "cr_cosmic_sandpit": {
             "name": "Cosmic Sandpit",
@@ -1354,7 +1479,8 @@
             "characters": [
                 "Himeko • Nova",
                 "Rin Tohsaka"
-            ]
+            ],
+            "image_ts": "20260601110022"
         },
         "cr_stellaris_symphony": {
             "name": "Stellaris Symphony",
@@ -1366,7 +1492,8 @@
                 "Ruan Mei",
                 "Tingyun",
                 "Yukong"
-            ]
+            ],
+            "image_ts": "20230501213421"
         },
         "cr_heavenly_melody": {
             "name": "Heavenly Melody",
@@ -1378,14 +1505,16 @@
                 "Sunday",
                 "Trailblazer (Harmony)",
                 "Tribbie"
-            ]
+            ],
+            "image_ts": "20240209012503"
         },
         "cr_heart_of_phagousa": {
             "name": "Heart of Phagousa",
             "type": "calyx_crimson",
             "characters": [
                 "Mortenax Blade"
-            ]
+            ],
+            "image_ts": "20260422040251"
         },
         "cr_heaven_incinerator": {
             "name": "Heaven Incinerator",
@@ -1398,7 +1527,8 @@
                 "Hysilens",
                 "Jiaoqiu",
                 "The Dahlia"
-            ]
+            ],
+            "image_ts": "20240206054643"
         },
         "cr_obsidian_of_obsession": {
             "name": "Obsidian of Obsession",
@@ -1411,7 +1541,8 @@
                 "Sampo",
                 "Silver Wolf",
                 "Welt"
-            ]
+            ],
+            "image_ts": "20230501221744"
         },
         "cr_divine_amber": {
             "name": "Divine Amber",
@@ -1419,7 +1550,8 @@
             "characters": [
                 "Aventurine",
                 "Dan Heng • Permansor Terrae"
-            ]
+            ],
+            "image_ts": "20240327041835"
         },
         "cr_safeguard_of_amber": {
             "name": "Safeguard of Amber",
@@ -1429,7 +1561,8 @@
                 "Gepard",
                 "March 7th (Preservation)",
                 "Trailblazer (Preservation)"
-            ]
+            ],
+            "image_ts": "20230501221253"
         },
         "cr_flower_of_laya": {
             "name": "Flower of Ālaya",
@@ -1442,14 +1575,16 @@
                 "Hyacine",
                 "Robin • Summeretto",
                 "Trailblazer (Remembrance)"
-            ]
+            ],
+            "image_ts": "20250117061300"
         },
         "cr_lance_of_retribution": {
             "name": "Lance of Retribution",
             "type": "calyx_crimson",
             "characters": [
                 "Ashveil"
-            ]
+            ],
+            "image_ts": "20260213133315"
         },
         "cr_arrow_of_the_starchaser": {
             "name": "Arrow of the Starchaser",
@@ -1461,7 +1596,8 @@
                 "Sushang",
                 "Topaz & Numby",
                 "Yanqing"
-            ]
+            ],
+            "image_ts": "20230501220533"
         },
         "cr_countertemporal_shot": {
             "name": "Countertemporal Shot",
@@ -1472,199 +1608,232 @@
                 "Feixiao",
                 "March 7th (Hunt)",
                 "Moze"
-            ]
+            ],
+            "image_ts": "20240508195535"
         },
         "cc_hero_of_triumphant_song": {
             "name": "Hero of Triumphant Song",
             "type": "cavern_of_corrosion",
             "effect": "Increases ATK by 12%.",
-            "effect_4pc": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s)."
+            "effect_4pc": "While the wearer's memosprite is on the field, increases the wearer's SPD by 6%. When the wearer's memosprite attacks, increases the wearer's and memosprite's CRIT DMG by 30%, lasting for 2 turn(s).",
+            "image_ts": "20250115231931"
         },
         "cc_poet_of_mourning_collapse": {
             "name": "Poet of Mourning Collapse",
             "type": "cavern_of_corrosion",
             "effect": "Increases Quantum DMG by 10%.",
-            "effect_4pc": "Decreases the wearer's SPD by 8%. Before entering battle, if the wearer's SPD is lower than 110/95, increases the wearer's CRIT Rate by 20%/32%. This effect applies to the wearer's memosprite at the same time."
+            "effect_4pc": "Decreases the wearer's SPD by 8%. Before entering battle, if the wearer's SPD is lower than 110/95, increases the wearer's CRIT Rate by 20%/32%. This effect applies to the wearer's memosprite at the same time.",
+            "image_ts": "20250115231118"
         },
         "cc_iron_cavalry_against_the_scourge": {
             "name": "Iron Cavalry Against the Scourge",
             "type": "cavern_of_corrosion",
             "effect": "Increases Break Effect by 16%.",
-            "effect_4pc": "If the wearer's Break Effect is 150% or higher, the Break DMG dealt to the enemy target ignores 10% of their DEF. If the wearer's Break Effect is 250% or higher, the Super Break DMG dealt to the enemy target additionally ignores 15% of their DEF."
+            "effect_4pc": "If the wearer's Break Effect is 150% or higher, the Break DMG dealt to the enemy target ignores 10% of their DEF. If the wearer's Break Effect is 250% or higher, the Super Break DMG dealt to the enemy target additionally ignores 15% of their DEF.",
+            "image_ts": "20240621174923"
         },
         "cc_the_wind_soaring_valorous": {
             "name": "The Wind-Soaring Valorous",
             "type": "cavern_of_corrosion",
             "effect": "Increases ATK by 12%.",
-            "effect_4pc": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s)."
+            "effect_4pc": "Increases the wearer's CRIT Rate by 6%. When the wearer uses a follow-up attack, increases the DMG dealt by Ultimate by 36%, lasting for 1 turn(s).",
+            "image_ts": "20240621174651"
         },
         "cc_firesmith_of_lava_forging": {
             "name": "Firesmith of Lava-Forging",
             "type": "cavern_of_corrosion",
             "effect": "Increases Fire DMG by 10%.",
-            "effect_4pc": "Increases the wearer's Skill DMG by 12%. After unleashing Ultimate, increases the wearer's Fire DMG by 12% for the next attack."
+            "effect_4pc": "Increases the wearer's Skill DMG by 12%. After unleashing Ultimate, increases the wearer's Fire DMG by 12% for the next attack.",
+            "image_ts": "20230810043039"
         },
         "cc_wastelander_of_banditry_desert": {
             "name": "Wastelander of Banditry Desert",
             "type": "cavern_of_corrosion",
             "effect": "Increases Imaginary DMG by 10%.",
-            "effect_4pc": "When attacking debuffed enemies, the wearer's CRIT Rate increases by 10%, and their CRIT DMG increases by 20% against Imprisoned enemies."
+            "effect_4pc": "When attacking debuffed enemies, the wearer's CRIT Rate increases by 10%, and their CRIT DMG increases by 20% against Imprisoned enemies.",
+            "image_ts": "20230810044507"
         },
         "cc_the_ashblazing_grand_duke": {
             "name": "The Ashblazing Grand Duke",
             "type": "cavern_of_corrosion",
             "effect": "Increases the DMG dealt by follow-up attacks by 20%.",
-            "effect_4pc": "When the wearer uses follow-up attacks, increases the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a follow-up attack."
+            "effect_4pc": "When the wearer uses follow-up attacks, increases the wearer's ATK by 6% for every time the follow-up attack deals DMG. This effect can stack up to 8 time(s) and lasts for 3 turn(s). This effect is removed the next time the wearer uses a follow-up attack.",
+            "image_ts": "20231115045301"
         },
         "cc_prisoner_in_deep_confinement": {
             "name": "Prisoner in Deep Confinement",
             "type": "cavern_of_corrosion",
             "effect": "ATK increases by 12%.",
-            "effect_4pc": "For every DoT the target enemy is afflicted with, the wearer will ignore 6% of its DEF when dealing DMG to it. This effect is valid for a max of 3 DoTs."
+            "effect_4pc": "For every DoT the target enemy is afflicted with, the wearer will ignore 6% of its DEF when dealing DMG to it. This effect is valid for a max of 3 DoTs.",
+            "image_ts": "20231115045305"
         },
         "cc_pioneer_diver_of_dead_waters": {
             "name": "Pioneer Diver of Dead Waters",
             "type": "cavern_of_corrosion",
             "effect": "Increases DMG dealt to enemies with debuffs by 12%.",
-            "effect_4pc": "Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn(s)."
+            "effect_4pc": "Increases CRIT Rate by 4%. The wearer deals 8%/12% increased CRIT DMG to enemies with at least 2/3 debuffs. After the wearer inflicts a debuff on enemy targets, the aforementioned effects increase by 100%, lasting for 1 turn(s).",
+            "image_ts": "20250315152702"
         },
         "cc_watchmaker_master_of_dream_machinations": {
             "name": "Watchmaker, Master of Dream Machinations",
             "type": "cavern_of_corrosion",
             "effect": "Increases Break Effect by 16%.",
-            "effect_4pc": "When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked."
+            "effect_4pc": "When the wearer uses their Ultimate on an ally, all allies' Break Effect increases by 30% for 2 turn(s). This effect cannot be stacked.",
+            "image_ts": "20250315153022"
         },
         "cc_passerby_of_wandering_cloud": {
             "name": "Passerby of Wandering Cloud",
             "type": "cavern_of_corrosion",
             "effect": "Increases Outgoing Healing by 10%.",
-            "effect_4pc": "At the start of the battle, immediately regenerates 1 Skill Point."
+            "effect_4pc": "At the start of the battle, immediately regenerates 1 Skill Point.",
+            "image_ts": "20230810043949"
         },
         "cc_musketeer_of_wild_wheat": {
             "name": "Musketeer of Wild Wheat",
             "type": "cavern_of_corrosion",
             "effect": "ATK increases by 12%.",
-            "effect_4pc": "The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%."
+            "effect_4pc": "The wearer's SPD increases by 6% and Basic ATK DMG increases by 10%.",
+            "image_ts": "20230810043900"
         },
         "cc_longevous_disciple": {
             "name": "Longevous Disciple",
             "type": "cavern_of_corrosion",
             "effect": "Increases Max HP by 12%.",
-            "effect_4pc": "When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks."
+            "effect_4pc": "When the wearer is hit or has their HP consumed by an ally or themselves, their CRIT Rate increases by 8% for 2 turn(s) and up to 2 stacks.",
+            "image_ts": "20230810043643"
         },
         "cc_messenger_traversing_hackerspace": {
             "name": "Messenger Traversing Hackerspace",
             "type": "cavern_of_corrosion",
             "effect": "Increases SPD by 6%.",
-            "effect_4pc": "When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked."
+            "effect_4pc": "When the wearer uses their Ultimate on an ally, SPD for all allies increases by 12% for 1 turn(s). This effect cannot be stacked.",
+            "image_ts": "20230810043745"
         },
         "cc_hunter_of_glacial_forest": {
             "name": "Hunter of Glacial Forest",
             "type": "cavern_of_corrosion",
             "effect": "Increases Ice DMG by 10%.",
-            "effect_4pc": "After the wearer uses their Ultimate, their CRIT DMG increases by 25% for 2 turn(s)."
+            "effect_4pc": "After the wearer uses their Ultimate, their CRIT DMG increases by 25% for 2 turn(s).",
+            "image_ts": "20230810043422"
         },
         "cc_eagle_of_twilight_line": {
             "name": "Eagle of Twilight Line",
             "type": "cavern_of_corrosion",
             "effect": "Increases Wind DMG by 10%.",
-            "effect_4pc": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%."
+            "effect_4pc": "After the wearer uses their Ultimate, their action is Advanced Forward by 25%.",
+            "image_ts": "20230810042903"
         },
         "cc_world_remaking_deliverer": {
             "name": "World-Remaking Deliverer",
             "type": "cavern_of_corrosion",
             "effect": "Increases CRIT Rate by 8%.",
-            "effect_4pc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by 24%, and increases all allies' DMG by 15% until the wearer's next Basic ATK or Skill."
+            "effect_4pc": "After the wearer uses Basic ATK or Skill, if the wearer's memosprite is on the field, increases Max HP of the wearer and their memosprite by 24%, and increases all allies' DMG by 15% until the wearer's next Basic ATK or Skill.",
+            "image_ts": "20250924034540"
         },
         "cc_self_enshrouded_recluse": {
             "name": "Self-Enshrouded Recluse",
             "type": "cavern_of_corrosion",
             "effect": "Increases Shield Effect by 10%.",
-            "effect_4pc": "Increases Shield Effect provided by the wearer by 12%. When an ally target has a Shield provided by the wearer, the ally target's CRIT DMG increases by 15%."
+            "effect_4pc": "Increases Shield Effect provided by the wearer by 12%. When an ally target has a Shield provided by the wearer, the ally target's CRIT DMG increases by 15%.",
+            "image_ts": "20250924034538"
         },
         "cc_knight_of_purity_palace": {
             "name": "Knight of Purity Palace",
             "type": "cavern_of_corrosion",
             "effect": "Increases DEF by 15%.",
-            "effect_4pc": "Increases the max DMG that can be absorbed by the Shield created by the wearer by 20%."
+            "effect_4pc": "Increases the max DMG that can be absorbed by the Shield created by the wearer by 20%.",
+            "image_ts": "20230810043606"
         },
         "cc_band_of_sizzling_thunder": {
             "name": "Band of Sizzling Thunder",
             "type": "cavern_of_corrosion",
             "effect": "Increases Lightning DMG by 10%.",
-            "effect_4pc": "When the wearer uses their Skill, increases the wearer's ATK by 20% for 1 turn(s)."
+            "effect_4pc": "When the wearer uses their Skill, increases the wearer's ATK by 20% for 1 turn(s).",
+            "image_ts": "20230810042246"
         },
         "cc_as_navigator_isee_sees_it": {
             "name": "As Navigator Isee Sees It",
             "type": "cavern_of_corrosion",
             "effect": "Increases ATK by 12%.",
-            "effect_4pc": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effect."
+            "effect_4pc": "When the wearer enters combat or uses Skill, the DMG dealt by their Skill and Ultimate increases by 18%, stacking up to 3 times. At the start of the wearer's turn or after using Ultimate, removes 1 stack of this effect.",
+            "image_ts": "20260601030807"
         },
         "cc_divine_querying_master_smith": {
             "name": "Divine-Querying Master Smith",
             "type": "cavern_of_corrosion",
             "effect": "Increases Max HP by 12%.",
-            "effect_4pc": "Increases the wearer's CRIT DMG dealt to enemy targets in the DEF reduction state by 28%. After the wearer inflicts the DEF reduction state on an enemy target, all allies gain \"Comburent\" for 2 turns. This effect cannot be stacked. DMG dealt by ally targets with \"Comburent\" increases by 15%. This effect can be triggered again after the wearer uses an attack."
+            "effect_4pc": "Increases the wearer's CRIT DMG dealt to enemy targets in the DEF reduction state by 28%. After the wearer inflicts the DEF reduction state on an enemy target, all allies gain \"Comburent\" for 2 turns. This effect cannot be stacked. DMG dealt by ally targets with \"Comburent\" increases by 15%. This effect can be triggered again after the wearer uses an attack.",
+            "image_ts": "20260601030809"
         },
         "cc_champion_of_streetwise_boxing": {
             "name": "Champion of Streetwise Boxing",
             "type": "cavern_of_corrosion",
             "effect": "Increases Physical DMG by 10%.",
-            "effect_4pc": "After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s)."
+            "effect_4pc": "After the wearer attacks or is hit, their ATK increases by 5% for the rest of the battle. This effect can stack up to 5 time(s).",
+            "image_ts": "20230810042737"
         },
         "cc_thief_of_shooting_meteor": {
             "name": "Thief of Shooting Meteor",
             "type": "cavern_of_corrosion",
             "effect": "Increases Break Effect by 16%.",
-            "effect_4pc": "Increases the wearer's Break Effect by 16%. After the wearer inflicts Weakness Break on an enemy, regenerates 3 Energy."
+            "effect_4pc": "Increases the wearer's Break Effect by 16%. After the wearer inflicts Weakness Break on an enemy, regenerates 3 Energy.",
+            "image_ts": "20230810044423"
         },
         "cc_ever_glorious_magical_girl": {
             "name": "Ever-Glorious Magical Girl",
             "type": "cavern_of_corrosion",
             "effect": "Increases CRIT DMG by 16%.",
-            "effect_4pc": "The Elation DMG dealt by the wearer and their memosprites ignores 10% of targets' DEF. For every 5 accumulated Punchline allies gain, the Elation DMG dealt additionally ignores 1% of targets' DEF, stacking up to 10 time(s)."
+            "effect_4pc": "The Elation DMG dealt by the wearer and their memosprites ignores 10% of targets' DEF. For every 5 accumulated Punchline allies gain, the Elation DMG dealt additionally ignores 1% of targets' DEF, stacking up to 10 time(s).",
+            "image_ts": "20260213032506"
         },
         "cc_diviner_of_distant_reach": {
             "name": "Diviner of Distant Reach",
             "type": "cavern_of_corrosion",
             "effect": "Increases SPD by 6%.",
-            "effect_4pc": "Before entering combat, if the wearer's SPD is greater than or equal to 120/160, increases the wearer's CRIT Rate by 10%/18%. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by 10%. This effect cannot stack."
+            "effect_4pc": "Before entering combat, if the wearer's SPD is greater than or equal to 120/160, increases the wearer's CRIT Rate by 10%/18%. When the wearer uses Elation Skill for the first time in each battle, enhances all allies' Elation by 10%. This effect cannot stack.",
+            "image_ts": "20260213032458"
         },
         "cc_guard_of_wuthering_snow": {
             "name": "Guard of Wuthering Snow",
             "type": "cavern_of_corrosion",
             "effect": "Reduces DMG taken by 8%.",
-            "effect_4pc": "At the beginning of the turn, if the wearer's HP is equal to or less than 50%, restores HP equal to 8% of their Max HP and regenerates 5 Energy."
+            "effect_4pc": "At the beginning of the turn, if the wearer's HP is equal to or less than 50%, restores HP equal to 8% of their Max HP and regenerates 5 Energy.",
+            "image_ts": "20230810043335"
         },
         "cc_genius_of_brilliant_stars": {
             "name": "Genius of Brilliant Stars",
             "type": "cavern_of_corrosion",
             "effect": "Increases Quantum DMG by 10%.",
-            "effect_4pc": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF."
+            "effect_4pc": "When the wearer deals DMG to the target enemy, ignores 10% DEF. If the target enemy has Quantum Weakness, the wearer additionally ignores 10% DEF.",
+            "image_ts": "20230810043309"
         },
         "cc_warrior_goddess_of_sun_and_thunder": {
             "name": "Warrior Goddess of Sun and Thunder",
             "type": "cavern_of_corrosion",
             "effect": "Increases SPD by 6%.",
-            "effect_4pc": "When the wearer or their memosprite provides healing to ally targets other than themselves, the wearer gains \"Gentle Rain,\" which lasts for 2 turn(s) and can only trigger once per turn. While the wearer has \"Gentle Rain,\" SPD increases by 6% and all allies' CRIT DMG increases by 15%. This effect cannot stack."
+            "effect_4pc": "When the wearer or their memosprite provides healing to ally targets other than themselves, the wearer gains \"Gentle Rain,\" which lasts for 2 turn(s) and can only trigger once per turn. While the wearer has \"Gentle Rain,\" SPD increases by 6% and all allies' CRIT DMG increases by 15%. This effect cannot stack.",
+            "image_ts": "20250521021300"
         },
         "cc_wavestrider_captain": {
             "name": "Wavestrider Captain",
             "type": "cavern_of_corrosion",
             "effect": "Increases CRIT DMG by 16%.",
-            "effect_4pc": "When the wearer becomes the target of another ally target's ability, gains 1 stack of \"Help,\" stacking up to 2 time(s). If there are 2 stack(s) of \"Help\" when the wearer uses their Ultimate, consumes all \"Help\" to increase the wearer's ATK by 48% for 1 turn(s)."
+            "effect_4pc": "When the wearer becomes the target of another ally target's ability, gains 1 stack of \"Help,\" stacking up to 2 time(s). If there are 2 stack(s) of \"Help\" when the wearer uses their Ultimate, consumes all \"Help\" to increase the wearer's ATK by 48% for 1 turn(s).",
+            "image_ts": "20250521021301"
         },
         "cc_scholar_lost_in_erudition": {
             "name": "Scholar Lost in Erudition",
             "type": "cavern_of_corrosion",
             "effect": "Increases CRIT Rate by 8%.",
-            "effect_4pc": "Increases DMG dealt by Skill and Ultimate by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%."
+            "effect_4pc": "Increases DMG dealt by Skill and Ultimate by 20%. After using Ultimate, additionally increases the DMG dealt by the next Skill by 25%.",
+            "image_ts": "20241104210439"
         },
         "cc_sacerdos_relived_ordeal": {
             "name": "Sacerdos' Relived Ordeal",
             "type": "cavern_of_corrosion",
             "effect": "Increases SPD by 6%.",
-            "effect_4pc": "When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turn(s). This effect can stack up to 2 time(s)."
+            "effect_4pc": "When using Skill or Ultimate on one ally target, increases the ability target's CRIT DMG by 18%, lasting for 2 turn(s). This effect can stack up to 2 time(s).",
+            "image_ts": "20241104210421"
         },
         "ew_past_evils_of_the_borehole_planet_disaster": {
             "name": "Past Evils of the Borehole Planet Disaster",
@@ -1681,7 +1850,8 @@
                 "Sparkle",
                 "Trailblazer (Harmony)",
                 "Xueyi"
-            ]
+            ],
+            "image_ts": "20231227055903"
         },
         "ew_destroyer_s_final_road": {
             "name": "Destroyer's Final Road",
@@ -1703,7 +1873,8 @@
                 "Trailblazer (Preservation)",
                 "Welt",
                 "Yukong"
-            ]
+            ],
+            "image_ts": "20230502235133"
         },
         "ew_regret_of_infinite_ochema": {
             "name": "Regret of Infinite Ochema",
@@ -1725,7 +1896,8 @@
                 "Lynx",
                 "Topaz & Numby",
                 "Yunli"
-            ]
+            ],
+            "image_ts": "20230721045538"
         },
         "ew_guardian_s_lament": {
             "name": "Guardian's Lament",
@@ -1747,7 +1919,8 @@
                 "Serval",
                 "Sushang",
                 "Yanqing"
-            ]
+            ],
+            "image_ts": "20230502235603"
         },
         "ew_daythunder_anamnesis": {
             "name": "Daythunder Anamnesis",
@@ -1760,7 +1933,8 @@
                 "Evernight",
                 "Hysilens",
                 "Phainon"
-            ]
+            ],
+            "image_ts": "20250521021214"
         },
         "ew_auspice_sliver": {
             "name": "Auspice Sliver",
@@ -1773,7 +1947,8 @@
                 "Mydei",
                 "The Herta",
                 "Trailblazer (Remembrance)"
-            ]
+            ],
+            "image_ts": "20240910020851"
         },
         "ew_vanquished_flow_s_reticence": {
             "name": "Vanquished Flow's Reticence",
@@ -1788,7 +1963,8 @@
                 "The Dahlia",
                 "Trailblazer (Elation)",
                 "Yao Guang"
-            ]
+            ],
+            "image_ts": "20251105182525"
         },
         "ew_lost_echo_of_the_shared_wish": {
             "name": "Lost Echo of the Shared Wish",
@@ -1802,7 +1978,8 @@
                 "Rappa",
                 "Sunday",
                 "Tribbie"
-            ]
+            ],
+            "image_ts": "20240508195556"
         },
         "ew_high_hopes_of_the_falsely_enlightened": {
             "name": "High Hopes of the Falsely Enlightened",
@@ -1812,149 +1989,178 @@
                 "Aventurine • Waveflair",
                 "Pearl",
                 "Robin • Summeretto"
-            ]
+            ],
+            "image_ts": "20260715063721"
         },
         "po_amphoreus_the_eternal_land": {
             "name": "Amphoreus, The Eternal Land",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked."
+            "effect": "Increases the wearer's CRIT Rate by 8%. While the wearer's memosprite is on the field, increases all allies' SPD by 8%. This effect cannot be stacked.",
+            "image_ts": "20251105040209"
         },
         "po_arcadia_of_woven_dreams": {
             "name": "Arcadia of Woven Dreams",
             "type": "planar_ornament",
-            "effect": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by 9%/12%, up to a maximum of 4/3 stacks."
+            "effect": "When there are currently more or less than 4 ally targets in battle, each additional/missing ally target increases the wearer and their memosprite's DMG by 9%/12%, up to a maximum of 4/3 stacks.",
+            "image_ts": "20250702042310"
         },
         "po_belobog_of_the_architects": {
             "name": "Belobog of the Architects",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF."
+            "effect": "Increases the wearer's DEF by 15%. When the wearer's Effect Hit Rate is 50% or higher, the wearer gains an extra 15% DEF.",
+            "image_ts": "20230810042411"
         },
         "po_bone_collection_s_serene_demesne": {
             "name": "Bone Collection's Serene Demesne",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%."
+            "effect": "Increases the wearer's Max HP by 12%. When the wearer's Max HP is 5000 or higher, increases the wearer's and their memosprite's CRIT DMG by 28%.",
+            "image_ts": "20250226072613"
         },
         "po_broken_keel": {
             "name": "Broken Keel",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%."
+            "effect": "Increases the wearer's Effect RES by 10%. When the wearer's Effect RES is at 30% or higher, all allies' CRIT DMG increases by 10%.",
+            "image_ts": "20230810042610"
         },
         "po_celestial_differentiator": {
             "name": "Celestial Differentiator",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack."
+            "effect": "Increases the wearer's CRIT DMG by 16%. When the wearer's current CRIT DMG reaches 120% or higher, after entering battle, the wearer's CRIT Rate increases by 60% until the end of their first attack.",
+            "image_ts": "20230810042706"
         },
         "po_city_of_converging_stars": {
             "name": "City of Converging Stars",
             "type": "planar_ornament",
-            "effect": "When the wearer uses a Follow-Up ATK, increases their ATK by 24% for 2 turns. When an enemy target is defeated, increases CRIT DMG for all allies by 12% for the rest of the current battle. This effect cannot stack"
+            "effect": "When the wearer uses a Follow-Up ATK, increases their ATK by 24% for 2 turns. When an enemy target is defeated, increases CRIT DMG for all allies by 12% for the rest of the current battle. This effect cannot stack",
+            "image_ts": "20260325054840"
         },
         "po_cosmic_life_sciences_institute": {
             "name": "Cosmic Life Sciences Institute",
             "type": "planar_ornament",
-            "effect": "When entering combat, if the wearer's Max Energy is greater than or equal to 200, for every 1 excess point, increases the wearer's DMG dealt by 0.2%, up to a max increase of 32%."
+            "effect": "When entering combat, if the wearer's Max Energy is greater than or equal to 200, for every 1 excess point, increases the wearer's DMG dealt by 0.2%, up to a max increase of 32%.",
+            "image_ts": "20260715024345"
         },
         "po_duran_dynasty_of_running_wolves": {
             "name": "Duran, Dynasty of Running Wolves",
             "type": "planar_ornament",
-            "effect": "When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%."
+            "effect": "When an ally uses follow-up attacks, the wearer gains 1 stack of Merit, stacking up to 5 time(s). Each stack of Merit increases the DMG dealt by the wearer's follow-up attacks by 5%. When there are 5 stacks, additionally increases the wearer's CRIT DMG by 25%.",
+            "image_ts": "20240621175207"
         },
         "po_fallen_star_anchorage": {
             "name": "Fallen Star Anchorage",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT Rate by 8%. When entering combat, if the wearer and another teammate are both Trailblaze Companions characters, increases the wearer's CRIT DMG by 32%."
+            "effect": "Increases the wearer's CRIT Rate by 8%. When entering combat, if the wearer and another teammate are both Trailblaze Companions characters, increases the wearer's CRIT DMG by 32%.",
+            "image_ts": "20260715024353"
         },
         "po_firmament_frontline_glamoth": {
             "name": "Firmament Frontline: Glamoth",
             "type": "planar_ornament",
             "effect": "Increases the wearer's ATK by 12%. When the wearer's SPD is equal to or higher than 135/160, the wearer deals 12%/18% more DMG.",
-            "image": "Item Firmament Frontline Glamoth.png"
+            "image": "Item Firmament Frontline Glamoth.png",
+            "image_ts": "20231115045308"
         },
         "po_fleet_of_the_ageless": {
             "name": "Fleet of the Ageless",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%."
+            "effect": "Increases the wearer's Max HP by 12%. When the wearer's SPD reaches 120 or higher, all allies' ATK increases by 8%.",
+            "image_ts": "20230810043104"
         },
         "po_forge_of_the_kalpagni_lantern": {
             "name": "Forge of the Kalpagni Lantern",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s)."
+            "effect": "Increases the wearer's SPD by 6%. When the wearer hits an enemy target that has Fire Weakness, the wearer's Break Effect increases by 40%, lasting for 1 turn(s).",
+            "image_ts": "20240621030153"
         },
         "po_giant_tree_of_rapt_brooding": {
             "name": "Giant Tree of Rapt Brooding",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's SPD by 6%. When the wearer's Speed is 135/180 or higher, increases the wearer and their memosprite's Outgoing Healing by 12%/20%."
+            "effect": "Increases the wearer's SPD by 6%. When the wearer's Speed is 135/180 or higher, increases the wearer and their memosprite's Outgoing Healing by 12%/20%.",
+            "image_ts": "20250226072651"
         },
         "po_inert_salsotto": {
             "name": "Inert Salsotto",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%."
+            "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 50% or higher, the wearer's Ultimate and follow-up attack DMG increases by 15%.",
+            "image_ts": "20230810043523"
         },
         "po_izumo_gensei_and_takama_divine_realm": {
             "name": "Izumo Gensei and Takama Divine Realm",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's ATK by 12%. When entering battle, if at least one other ally follows the same Path as the wearer, then the wearer's CRIT Rate increases by 12%."
+            "effect": "Increases the wearer's ATK by 12%. When entering battle, if at least one other ally follows the same Path as the wearer, then the wearer's CRIT Rate increases by 12%.",
+            "image_ts": "20250315152543"
         },
         "po_lushaka_the_sunken_seas": {
             "name": "Lushaka, the Sunken Seas",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%."
+            "effect": "Increases the wearer's Energy Regeneration Rate by 5%. If the wearer is not the first character in the team lineup, then increases the ATK of the first character in the team lineup by 12%.",
+            "image_ts": "20240911203817"
         },
         "po_pan_cosmic_commercial_enterprise": {
             "name": "Pan-Cosmic Commercial Enterprise",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Effect Hit Rate by 10%. Meanwhile, the wearer's ATK increases by an amount that is equal to 25% of the current Effect Hit Rate, up to a maximum of 25%."
+            "effect": "Increases the wearer's Effect Hit Rate by 10%. Meanwhile, the wearer's ATK increases by an amount that is equal to 25% of the current Effect Hit Rate, up to a maximum of 25%.",
+            "image_ts": "20230810043926"
         },
         "po_penacony_land_of_the_dreams": {
             "name": "Penacony, Land of the Dreams",
             "type": "planar_ornament",
-            "effect": "Increases wearer's Energy Regeneration Rate by 5%. Increases DMG by 10% for all other allies that are of the same Type as the wearer."
+            "effect": "Increases wearer's Energy Regeneration Rate by 5%. Increases DMG by 10% for all other allies that are of the same Type as the wearer.",
+            "image_ts": "20231115045258"
         },
         "po_punklorde_stage_zero": {
             "name": "Punklorde Stage Zero",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Elation by 8%. When Elation reaches 40%/80% for the first time in battle, increases the wearer's CRIT DMG by 20%/32%."
+            "effect": "Increases the wearer's Elation by 8%. When Elation reaches 40%/80% for the first time in battle, increases the wearer's CRIT DMG by 20%/32%.",
+            "image_ts": "20260325054842"
         },
         "po_revelry_by_the_sea": {
             "name": "Revelry by the Sea",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's ATK by 12%. When the wearer's ATK is higher than or equal to 2,400/3,600, increases the DoT DMG dealt by 12%/24%."
+            "effect": "Increases the wearer's ATK by 12%. When the wearer's ATK is higher than or equal to 2,400/3,600, increases the DoT DMG dealt by 12%/24%.",
+            "image_ts": "20250702042312"
         },
         "po_rutilant_arena": {
             "name": "Rutilant Arena",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%."
+            "effect": "Increases the wearer's CRIT Rate by 8%. When the wearer's current CRIT Rate reaches 70% or higher, the wearer's Basic ATK and Skill DMG increase by 20%.",
+            "image_ts": "20230810044056"
         },
         "po_sigonia_the_unclaimed_desolation": {
             "name": "Sigonia, the Unclaimed Desolation",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT Rate by 4%. When an enemy target gets defeated, the wearer's CRIT DMG increases by 4%, stacking up to 10 time(s)."
+            "effect": "Increases the wearer's CRIT Rate by 4%. When an enemy target gets defeated, the wearer's CRIT DMG increases by 4%, stacking up to 10 time(s).",
+            "image_ts": "20250315152722"
         },
         "po_space_sealing_station": {
             "name": "Space Sealing Station",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's ATK by 12%. When the wearer's SPD reaches 120 or higher, the wearer's ATK increases by an extra 12%."
+            "effect": "Increases the wearer's ATK by 12%. When the wearer's SPD reaches 120 or higher, the wearer's ATK increases by an extra 12%.",
+            "image_ts": "20230810044159"
         },
         "po_sprightly_vonwacq": {
             "name": "Sprightly Vonwacq",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle."
+            "effect": "Increases the wearer's Energy Regeneration Rate by 5%. When the wearer's SPD reaches 120 or higher, the wearer's action is Advanced Forward by 40% immediately upon entering battle.",
+            "image_ts": "20230810044232"
         },
         "po_talia_kingdom_of_banditry": {
             "name": "Talia: Kingdom of Banditry",
             "type": "planar_ornament",
             "effect": "Increases the wearer's Break Effect by 16%. When the wearer's SPD reaches 145 or higher, the wearer's Break Effect increases by an extra 20%.",
-            "image": "Item Talia Kingdom of Banditry.png"
+            "image": "Item Talia Kingdom of Banditry.png",
+            "image_ts": "20230810044336"
         },
         "po_tengoku_livestream": {
             "name": "Tengoku Livestream",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT DMG by 16%, If 3 or more Skill Points are consumed in the same turn, additionally increases the wearer's CRIT DMG by 32% for 3 turns."
+            "effect": "Increases the wearer's CRIT DMG by 16%, If 3 or more Skill Points are consumed in the same turn, additionally increases the wearer's CRIT DMG by 32% for 3 turns.",
+            "image_ts": "20251105040208"
         },
         "po_the_wondrous_bananamusement_park": {
             "name": "The Wondrous BananAmusement Park",
             "type": "planar_ornament",
-            "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%."
+            "effect": "Increases the wearer's CRIT DMG by 16%. When a target summoned by the wearer is on the field, CRIT DMG additionally increases by 32%.",
+            "image_ts": "20240911204116"
         }
     },
     "common_enemy_drops": {
@@ -1971,7 +2177,8 @@
                 "Natasha",
                 "Sampo",
                 "Silver Wolf"
-            ]
+            ],
+            "image_ts": "20230429213629"
         },
         "c_artifex": {
             "name": "Artifex's Gyreheart",
@@ -1989,7 +2196,8 @@
                 "Sushang",
                 "Yukong",
                 "Yunli"
-            ]
+            ],
+            "image_ts": "20230501235323"
         },
         "c_antimatter": {
             "name": "Conqueror's Will",
@@ -2012,7 +2220,8 @@
                 "Trailblazer (Preservation)",
                 "Trailblazer (Remembrance)",
                 "Yanqing"
-            ]
+            ],
+            "image_ts": "20230429213514"
         },
         "c_core": {
             "name": "Squirming Core",
@@ -2034,7 +2243,8 @@
                 "Pela",
                 "The Herta",
                 "Xueyi"
-            ]
+            ],
+            "image_ts": "20230429213816"
         },
         "c_immortal": {
             "name": "Immortal Lumintwig",
@@ -2053,7 +2263,8 @@
                 "Lingsha",
                 "Ruan Mei",
                 "Tingyun"
-            ]
+            ],
+            "image_ts": "20230429213947"
         },
         "c_silvermane": {
             "name": "Silvermane Medal",
@@ -2071,7 +2282,8 @@
                 "Serval",
                 "Topaz & Numby",
                 "Welt"
-            ]
+            ],
+            "image_ts": "20230501233558"
         },
         "c_dream": {
             "name": "Dream Making Engine",
@@ -2087,7 +2299,8 @@
                 "Rappa",
                 "Robin",
                 "Robin • Summeretto"
-            ]
+            ],
+            "image_ts": "20240206233111"
         },
         "c_desires": {
             "name": "Shards of Desires",
@@ -2103,7 +2316,8 @@
                 "Sparkle",
                 "Sunday",
                 "The Dahlia"
-            ]
+            ],
+            "image_ts": "20240206233134"
         },
         "c_titankin": {
             "name": "Glory-Aspersed Torso",
@@ -2120,7 +2334,8 @@
                 "Hysilens",
                 "Mydei",
                 "Tribbie"
-            ]
+            ],
+            "image_ts": "20250117061100"
         },
         "c_black_tide": {
             "name": "Eternal Lament",
@@ -2135,7 +2350,8 @@
                 "Cipher",
                 "Evernight",
                 "Phainon"
-            ]
+            ],
+            "image_ts": "20250226030542"
         },
         "c_imagenated": {
             "name": "Lucid Awl",
@@ -2153,7 +2369,8 @@
                 "Silver Wolf LV.999",
                 "Sparxie",
                 "Yao Guang"
-            ]
+            ],
+            "image_ts": "20260213133320"
         }
     },
     "other_materials": {
@@ -2162,7 +2379,8 @@
             "type": "other_materials",
             "characters": [
                 "Trailblazer"
-            ]
+            ],
+            "image_ts": "20230502022954"
         }
     }
 }

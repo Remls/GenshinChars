@@ -1,6 +1,6 @@
 {
-    "version": "11ccd5e",
-    "last_updated": "2026-11-06T05:44:36.062008Z",
+    "version": "86c863c",
+    "last_updated": "2026-11-06T07:05:24.293810Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -34,7 +34,8 @@
             },
             "image": "Domain_Cecilia_Garden.png",
             "link": "Cecilia Garden",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031347"
         },
         {
             "name": "Hidden Palace of Lianshan Formula",
@@ -68,7 +69,8 @@
             },
             "image": "Domain_Hidden_Palace_of_Lianshan_Formula.png",
             "link": "Hidden Palace of Lianshan Formula",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031402"
         },
         {
             "name": "Court of Flowing Sand",
@@ -102,7 +104,8 @@
             },
             "image": "Domain_Court_of_Flowing_Sand.png",
             "link": "Court of Flowing Sand",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210723015914"
         },
         {
             "name": "Tower of Abject Pride",
@@ -136,7 +139,8 @@
             },
             "image": "Domain_Tower_of_Abject_Pride.png",
             "link": "Tower of Abject Pride",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220825231437"
         },
         {
             "name": "Echoes of the Deep Tides",
@@ -170,7 +174,8 @@
             },
             "image": "Domain_Echoes_of_the_Deep_Tides.png",
             "link": "Echoes of the Deep Tides",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230818153455"
         },
         {
             "name": "Ancient Watchtower",
@@ -204,7 +209,8 @@
             },
             "image": "Domain_Ancient_Watchtower.png",
             "link": "Ancient Watchtower",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240902022118"
         },
         {
             "name": "Lost Mooncourt",
@@ -238,7 +244,8 @@
             },
             "image": "Domain_Lost_Mooncourt.png",
             "link": "Lost Mooncourt",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250911183708"
         },
         {
             "name": "Scars of Cursed Obsession",
@@ -272,7 +279,8 @@
             },
             "image": "Domain_Scars_of_Cursed_Obsession.png",
             "link": "Scars of Cursed Obsession",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260815102645"
         },
         {
             "name": "Forsaken Rift",
@@ -306,7 +314,8 @@
             },
             "image": "Domain_Forsaken_Rift.png",
             "link": "Forsaken Rift",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031430"
         },
         {
             "name": "Taishan Mansion",
@@ -340,7 +349,8 @@
             },
             "image": "Domain_Taishan_Mansion.png",
             "link": "Taishan Mansion",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031419"
         },
         {
             "name": "Violet Court",
@@ -374,7 +384,8 @@
             },
             "image": "Domain_Violet_Court.png",
             "link": "Violet Court",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210723015926"
         },
         {
             "name": "Steeple of Ignorance",
@@ -408,7 +419,8 @@
             },
             "image": "Domain_Steeple_of_Ignorance.png",
             "link": "Steeple of Ignorance",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220825231411"
         },
         {
             "name": "Pale Forgotten Glory",
@@ -442,7 +454,8 @@
             },
             "image": "Domain_Pale_Forgotten_Glory.png",
             "link": "Pale Forgotten Glory",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230818154554"
         },
         {
             "name": "Blazing Ruins",
@@ -476,7 +489,8 @@
             },
             "image": "Domain_Blazing_Ruins.png",
             "link": "Blazing Ruins",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240902022319"
         },
         {
             "name": "Lightless Capital",
@@ -510,7 +524,8 @@
             },
             "image": "Domain_Lightless_Capital.png",
             "link": "Lightless Capital",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250911183747"
         },
         {
             "name": "Relics of the Fallen Grace",
@@ -544,7 +559,8 @@
             },
             "image": "Domain_Relics_of_the_Fallen_Grace.png",
             "link": "Relics of the Fallen Grace",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260812081430"
         },
         {
             "name": "Midsummer Courtyard",
@@ -557,7 +573,8 @@
             ],
             "image": "Domain_Midsummer_Courtyard.png",
             "link": "Midsummer Courtyard",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031727"
         },
         {
             "name": "Valley of Remembrance",
@@ -570,7 +587,8 @@
             ],
             "image": "Domain_Valley_of_Remembrance.png",
             "link": "Valley of Remembrance",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031212"
         },
         {
             "name": "Peak of Vindagnyr",
@@ -583,7 +601,8 @@
             ],
             "image": "Peak_of_Vindagnyr.png",
             "link": "Peak of Vindagnyr",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220408051137"
         },
         {
             "name": "Domain of Guyun",
@@ -596,7 +615,8 @@
             ],
             "image": "Domain_of_Guyun.png",
             "link": "Domain of Guyun",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031030"
         },
         {
             "name": "Hidden Palace of Zhou Formula",
@@ -609,7 +629,8 @@
             ],
             "image": "Domain_Hidden_Palace_of_Zhou_Formula.png",
             "link": "Hidden Palace of Zhou Formula",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031231"
         },
         {
             "name": "Clear Pool and Mountain Cavern",
@@ -622,7 +643,8 @@
             ],
             "image": "Domain_Clear_Pool_and_Mountain_Cavern.png",
             "link": "Clear Pool and Mountain Cavern",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201221031314"
         },
         {
             "name": "Ridge Watch",
@@ -635,7 +657,8 @@
             ],
             "image": "Domain_Ridge_Watch.png",
             "link": "Ridge Watch",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210428062805"
         },
         {
             "name": "The Lost Valley",
@@ -648,7 +671,8 @@
             ],
             "image": "Domain_The_Lost_Valley.png",
             "link": "The Lost Valley",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220330202530"
         },
         {
             "name": "Momiji-Dyed Court",
@@ -661,7 +685,8 @@
             ],
             "image": "Domain_Momiji-Dyed_Court.png",
             "link": "Momiji-Dyed Court",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210723015927"
         },
         {
             "name": "Slumbering Court",
@@ -674,7 +699,8 @@
             ],
             "image": "Domain_Momiji-Dyed_Court.png",
             "link": "Slumbering Court",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210723015927"
         },
         {
             "name": "Spire of Solitary Enlightenment",
@@ -687,7 +713,8 @@
             ],
             "image": "Domain_Spire_of_Solitary_Enlightenment.png",
             "link": "Spire of Solitary Enlightenment",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220825231229"
         },
         {
             "name": "City of Gold",
@@ -700,7 +727,8 @@
             ],
             "image": "Domain_City_of_Gold.png",
             "link": "City of Gold",
-            "boss": null
+            "boss": null,
+            "image_ts": "20221228013103"
         },
         {
             "name": "Molten Iron Fortress",
@@ -713,7 +741,8 @@
             ],
             "image": "Domain_City_of_Gold.png",
             "link": "Molten Iron Fortress",
-            "boss": null
+            "boss": null,
+            "image_ts": "20221228013103"
         },
         {
             "name": "Denouement of Sin",
@@ -726,7 +755,8 @@
             ],
             "image": "Domain_Denouement_of_Sin.png",
             "link": "Denouement of Sin",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230818155721"
         },
         {
             "name": "Waterfall Wen",
@@ -739,7 +769,8 @@
             ],
             "image": "Domain_Denouement_of_Sin.png",
             "link": "Waterfall Wen",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230818155721"
         },
         {
             "name": "Faded Theater",
@@ -752,7 +783,8 @@
             ],
             "image": "Domain_Denouement_of_Sin.png",
             "link": "Faded Theater",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230818155721"
         },
         {
             "name": "Sanctum of Rainbow Spirits",
@@ -765,7 +797,8 @@
             ],
             "image": "Domain_Sanctum_of_Rainbow_Spirits.png",
             "link": "Sanctum of Rainbow Spirits",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240829192517"
         },
         {
             "name": "Derelict Masonry Dock",
@@ -778,7 +811,8 @@
             ],
             "image": "Domain_Blazing_Ruins.png",
             "link": "Derelict Masonry Dock",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240902022319"
         },
         {
             "name": "Frostladen Machinery",
@@ -791,7 +825,8 @@
             ],
             "image": "Domain_Frostladen_Machinery.png",
             "link": "Frostladen Machinery",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250911183824"
         },
         {
             "name": "Moonchild's Treasures",
@@ -804,7 +839,8 @@
             ],
             "image": "Domain_Lost_Mooncourt.png",
             "link": "Moonchild's Treasures",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250911183708"
         },
         {
             "name": "Thorny Crown of the Mountain Wind",
@@ -817,7 +853,8 @@
             ],
             "image": "Domain_Thorny_Crown_of_the_Mountain_Wind.png",
             "link": "Thorny Crown of the Mountain Wind",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260520051831"
         },
         {
             "name": "Inverted Glacier",
@@ -830,7 +867,8 @@
             ],
             "image": "Domain_Inverted_Glacier.png",
             "link": "Inverted Glacier",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260812055630"
         },
         {
             "name": "???",
@@ -852,7 +890,8 @@
             ],
             "image": "Anemo_Hypostasis_Icon.png",
             "link": "Anemo Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201122050141"
         },
         {
             "name": "Cryo Hypostasis",
@@ -864,7 +903,8 @@
             ],
             "image": "Cryo_Hypostasis_Icon.png",
             "link": "Cryo Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210503233308"
         },
         {
             "name": "Cryo Regisvine",
@@ -876,7 +916,8 @@
             ],
             "image": "Cryo_Regisvine_Icon.png",
             "link": "Cryo Regisvine",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201120070151"
         },
         {
             "name": "Electro Hypostasis",
@@ -888,7 +929,8 @@
             ],
             "image": "Electro_Hypostasis_Icon.png",
             "link": "Electro Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201122050132"
         },
         {
             "name": "Geo Hypostasis",
@@ -900,7 +942,8 @@
             ],
             "image": "Geo_Hypostasis_Icon.png",
             "link": "Geo Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201122050106"
         },
         {
             "name": "Primo Geovishap",
@@ -912,7 +955,8 @@
             ],
             "image": "Primo_Geovishap_Icon.png",
             "link": "Primo Geovishap",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210503220458"
         },
         {
             "name": "Pyro Regisvine",
@@ -924,7 +968,8 @@
             ],
             "image": "Pyro_Regisvine_Icon.png",
             "link": "Pyro Regisvine",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230412030523"
         },
         {
             "name": "Rhodeia of Loch",
@@ -936,7 +981,8 @@
             ],
             "image": "Oceanid_Icon.png",
             "link": "Rhodeia of Loch",
-            "boss": null
+            "boss": null,
+            "image_ts": "20201120070220"
         },
         {
             "name": "Ruin Serpent",
@@ -948,7 +994,8 @@
             ],
             "image": "Ruin_Serpent_Icon.png",
             "link": "Ruin Serpent",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220330115700"
         },
         {
             "name": "Coral Defenders",
@@ -960,7 +1007,8 @@
             ],
             "image": "Bathysmal_Vishap_Herd_Icon.png",
             "link": "Coral Defenders",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220105071633"
         },
         {
             "name": "Golden Wolflord",
@@ -972,7 +1020,8 @@
             ],
             "image": "Golden_Wolflord_Icon.png",
             "link": "Golden Wolflord",
-            "boss": null
+            "boss": null,
+            "image_ts": "20211125062713"
         },
         {
             "name": "Hydro Hypostasis",
@@ -984,7 +1033,8 @@
             ],
             "image": "Hydro_Hypostasis_Icon.png",
             "link": "Hydro Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210901044825"
         },
         {
             "name": "Maguu Kenki",
@@ -996,7 +1046,8 @@
             ],
             "image": "Maguu_Kenki_Icon.png",
             "link": "Maguu Kenki",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210614030505"
         },
         {
             "name": "Perpetual Mechanical Array",
@@ -1008,7 +1059,8 @@
             ],
             "image": "Perpetual_Mechanical_Array_Icon.png",
             "link": "Perpetual Mechanical Array",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210721055430"
         },
         {
             "name": "Pyro Hypostasis",
@@ -1020,7 +1072,8 @@
             ],
             "image": "Pyro_Hypostasis_Icon.png",
             "link": "Pyro Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210721055437"
         },
         {
             "name": "Thunder Manifestation",
@@ -1032,7 +1085,8 @@
             ],
             "image": "Thunder_Manifestation_Icon.png",
             "link": "Thunder Manifestation",
-            "boss": null
+            "boss": null,
+            "image_ts": "20210901042652"
         },
         {
             "name": "Jadeplume Terrorshroom",
@@ -1044,7 +1098,8 @@
             ],
             "image": "Jadeplume_Terrorshroom_Icon.png",
             "link": "Jadeplume Terrorshroom",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220824024707"
         },
         {
             "name": "Electro Regisvine",
@@ -1056,7 +1111,8 @@
             ],
             "image": "Electro_Regisvine_Icon.png",
             "link": "Electro Regisvine",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220824024648"
         },
         {
             "name": "Algorithm of Semi-Intransient Matrix of Overseer Network",
@@ -1068,7 +1124,8 @@
             ],
             "image": "Algorithm_of_Semi-Intransient_Matrix_of_Overseer_Network_Icon.png",
             "link": "Algorithm of Semi-Intransient Matrix of Overseer Network",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220928021458"
         },
         {
             "name": "Aeonblight Drake",
@@ -1080,7 +1137,8 @@
             ],
             "image": "Aeonblight_Drake_Icon.png",
             "link": "Aeonblight Drake",
-            "boss": null
+            "boss": null,
+            "image_ts": "20220928021456"
         },
         {
             "name": "Dendro Hypostasis",
@@ -1092,7 +1150,8 @@
             ],
             "image": "Dendro_Hypostasis_Icon.png",
             "link": "Dendro Hypostasis",
-            "boss": null
+            "boss": null,
+            "image_ts": "20221102024609"
         },
         {
             "name": "Setekh Wenut",
@@ -1104,7 +1163,8 @@
             ],
             "image": "Setekh_Wenut_Icon.png",
             "link": "Setekh Wenut",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230118020552"
         },
         {
             "name": "Iniquitous Baptist",
@@ -1116,7 +1176,8 @@
             ],
             "image": "Iniquitous_Baptist_Icon.png",
             "link": "Iniquitous Baptist",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230412020927"
         },
         {
             "name": "Emperor of Fire and Iron",
@@ -1128,7 +1189,8 @@
             ],
             "image": "Emperor_of_Fire_and_Iron_Icon.png",
             "link": "Emperor of Fire and Iron",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230816022743"
         },
         {
             "name": "Icewind Suite",
@@ -1141,7 +1203,8 @@
             ],
             "image": "Icewind_Suite_Icon.png",
             "link": "Icewind Suite",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230816022754"
         },
         {
             "name": "Prototype Cal. Breguet",
@@ -1153,7 +1216,8 @@
             ],
             "image": "Prototype_Cal._Breguet_Icon.png",
             "link": "Prototype Cal. Breguet",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230927021140"
         },
         {
             "name": "Millennial Pearl Seahorse",
@@ -1165,7 +1229,8 @@
             ],
             "image": "Millennial_Pearl_Seahorse_Icon.png",
             "link": "Millennial Pearl Seahorse",
-            "boss": null
+            "boss": null,
+            "image_ts": "20230927021138"
         },
         {
             "name": "Hydro Tulpa",
@@ -1177,7 +1242,8 @@
             ],
             "image": "Hydro_Tulpa_Icon.png",
             "link": "Hydro Tulpa",
-            "boss": null
+            "boss": null,
+            "image_ts": "20231108024359"
         },
         {
             "name": "Solitary Suanni",
@@ -1189,7 +1255,8 @@
             ],
             "image": "Solitary_Suanni_Icon.png",
             "link": "Solitary Suanni",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240131020652"
         },
         {
             "name": "\"Statue of Marble and Brass\"",
@@ -1201,7 +1268,8 @@
             ],
             "image": "Statue_of_Marble_and_Brass_Icon.png",
             "link": "\"Statue of Marble and Brass\"",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240424020346"
         },
         {
             "name": "Holawaqa Ngoubou",
@@ -1213,7 +1281,8 @@
             ],
             "image": "Holawaqa_Ngoubou_Icon.png",
             "link": "Holawaqa Ngoubou",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240828020111"
         },
         {
             "name": "Kongamato",
@@ -1225,7 +1294,8 @@
             ],
             "image": "Kongamato_Icon.png",
             "link": "Kongamato",
-            "boss": null
+            "boss": null,
+            "image_ts": "20240828020122"
         },
         {
             "name": "Secret Source Automaton: Configuration Device",
@@ -1237,7 +1307,8 @@
             ],
             "image": "Secret_Source_Automaton_Configuration_Device_Icon.png",
             "link": "Secret Source Automaton: Configuration Device",
-            "boss": null
+            "boss": null,
+            "image_ts": "20241009013840"
         },
         {
             "name": "Tenebrous Papilla",
@@ -1249,7 +1320,8 @@
             ],
             "image": "Tenebrous_Papilla_Icon.png",
             "link": "Tenebrous Papilla",
-            "boss": null
+            "boss": null,
+            "image_ts": "20241120023210"
         },
         {
             "name": "Wayward Hermetic Spiritspeaker",
@@ -1261,7 +1333,8 @@
             ],
             "image": "Wayward_Hermetic_Spiritspeaker_Icon.png",
             "link": "Wayward Hermetic Spiritspeaker",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250101020419"
         },
         {
             "name": "Lava Dragon Statue",
@@ -1273,7 +1346,8 @@
             ],
             "image": "Lava_Dragon_Statue_Icon.png",
             "link": "Lava Dragon Statue",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250326014644"
         },
         {
             "name": "Secret Source Automaton: Overseer Device",
@@ -1285,7 +1359,8 @@
             ],
             "image": "Secret_Source_Automaton_Overseer_Device_Icon.png",
             "link": "Secret Source Automaton: Overseer Device",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250507034833"
         },
         {
             "name": "Radiant Moonfly",
@@ -1297,7 +1372,8 @@
             ],
             "image": "Radiant_Moonfly_Icon.png",
             "link": "Radiant Moonfly",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250910024517"
         },
         {
             "name": "Knuckle Duckle",
@@ -1309,7 +1385,8 @@
             ],
             "image": "Knuckle_Duckle_Icon.png",
             "link": "Knuckle Duckle",
-            "boss": null
+            "boss": null,
+            "image_ts": "20250910024502"
         },
         {
             "name": "Frostnight Herra",
@@ -1321,7 +1398,8 @@
             ],
             "image": "Frostnight_Herra_Icon.png",
             "link": "Frostnight Herra",
-            "boss": null
+            "boss": null,
+            "image_ts": "20251022053217"
         },
         {
             "name": "Super-Heavy Landrover: Mechanized Fortress",
@@ -1333,7 +1411,8 @@
             ],
             "image": "Super-Heavy_Landrover_Mechanized_Fortress_Icon.png",
             "link": "Super-Heavy Landrover: Mechanized Fortress",
-            "boss": null
+            "boss": null,
+            "image_ts": "20251203041232"
         },
         {
             "name": "Lord of the Hidden Depths: Whisperer of Nightmares",
@@ -1345,7 +1424,8 @@
             ],
             "image": "Lord_of_the_Hidden_Depths_Whisperer_of_Nightmares_Icon.png",
             "link": "Lord of the Hidden Depths: Whisperer of Nightmares",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260114092748"
         },
         {
             "name": "Radiant Moongecko",
@@ -1357,7 +1437,8 @@
             ],
             "image": "Radiant_Moongecko_Icon.png",
             "link": "Radiant Moongecko",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260225052747"
         },
         {
             "name": "The Open-Eyed",
@@ -1369,7 +1450,8 @@
             ],
             "image": "The_Open-Eyed_Icon.png",
             "link": "The Open-Eyed",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260408043917"
         },
         {
             "name": "Immortal Construct",
@@ -1381,7 +1463,8 @@
             ],
             "image": "Immortal_Construct_Icon.png",
             "link": "Immortal Construct",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260812174315"
         },
         {
             "name": "Chimeric Winged Lion",
@@ -1393,7 +1476,8 @@
             ],
             "image": "Chimeric_Winged_Lion_Icon.png",
             "link": "Chimeric Winged Lion",
-            "boss": null
+            "boss": null,
+            "image_ts": "20260810043855"
         },
         {
             "name": "Guardian Blade of Drifting Snow",
@@ -1405,7 +1489,8 @@
             ],
             "image": "Guardian_Blade_of_Drifting_Snow_Icon.png",
             "link": "Guardian Blade of Drifting Snow",
-            "boss": null
+            "boss": null,
+            "image_ts": "20261014144513"
         },
         {
             "name": "Wavebinder",
@@ -1417,7 +1502,8 @@
             ],
             "image": "Wavebinder_Icon.png",
             "link": "Wavebinder",
-            "boss": null
+            "boss": null,
+            "image_ts": "20261104063219"
         },
         {
             "name": "???",
@@ -1443,7 +1529,8 @@
             "boss": {
                 "name": "Stormterror Dvalin",
                 "has_page": true
-            }
+            },
+            "image_ts": "20200724104101"
         },
         {
             "name": "Wolf of the North Challenge (Andrius)",
@@ -1460,7 +1547,8 @@
             "boss": {
                 "name": "Andrius",
                 "has_page": true
-            }
+            },
+            "image_ts": "20200724104034"
         },
         {
             "name": "Enter the Golden House (Childe)",
@@ -1477,7 +1565,8 @@
             "boss": {
                 "name": "Childe",
                 "has_page": true
-            }
+            },
+            "image_ts": "20210316220750"
         },
         {
             "name": "Beneath the Dragon-Queller (Azhdaha)",
@@ -1494,7 +1583,8 @@
             "boss": {
                 "name": "Azhdaha",
                 "has_page": true
-            }
+            },
+            "image_ts": "20210428062041"
         },
         {
             "name": "Narukami Island: Tenshukaku (La Signora)",
@@ -1511,7 +1601,8 @@
             "boss": {
                 "name": "La Signora",
                 "has_page": true
-            }
+            },
+            "image_ts": "20210901042647"
         },
         {
             "name": "End of the Oneiric Euthymia (Magatsu Mitake Narukami no Mikoto)",
@@ -1528,7 +1619,8 @@
             "boss": {
                 "name": "Magatsu Mitake Narukami no Mikoto",
                 "has_page": true
-            }
+            },
+            "image_ts": "20220216065534"
         },
         {
             "name": "Joururi Workshop (Everlasting Lord of Arcane Wisdom)",
@@ -1545,7 +1637,8 @@
             "boss": {
                 "name": "Everlasting Lord of Arcane Wisdom",
                 "has_page": true
-            }
+            },
+            "image_ts": "20221102024607"
         },
         {
             "name": "The Realm of Beginnings (Guardian of Apep's Oasis)",
@@ -1562,7 +1655,8 @@
             "boss": {
                 "name": "Guardian of Apep's Oasis",
                 "has_page": true
-            }
+            },
+            "image_ts": "20230412020920"
         },
         {
             "name": "Shadow of Another World (All-Devouring Narwhal)",
@@ -1579,7 +1673,8 @@
             "boss": {
                 "name": "All-Devouring Narwhal",
                 "has_page": true
-            }
+            },
+            "image_ts": "20231108024357"
         },
         {
             "name": "Scattered Ruins (The Knave)",
@@ -1596,7 +1691,8 @@
             "boss": {
                 "name": "The Knave",
                 "has_page": true
-            }
+            },
+            "image_ts": "20240424020348"
         },
         {
             "name": "Stone Stele Records (Lord of Eroded Primal Fire)",
@@ -1613,7 +1709,8 @@
             "boss": {
                 "name": "Lord of Eroded Primal Fire",
                 "has_page": true
-            }
+            },
+            "image_ts": "20250101020418"
         },
         {
             "name": "Unresolved Chess Game (The Game Before the Gate)",
@@ -1630,7 +1727,8 @@
             "boss": {
                 "name": "The Game Before the Gate",
                 "has_page": true
-            }
+            },
+            "image_ts": "20250507021624"
         },
         {
             "name": "False Moon Institute (Heretic of the False Moon)",
@@ -1647,7 +1745,8 @@
             "boss": {
                 "name": "Heretic of the False Moon",
                 "has_page": true
-            }
+            },
+            "image_ts": "20260114075458"
         },
         {
             "name": "Binding Field of Universal Nirvana (Exalted Master of the Heretical Path)",
@@ -1664,7 +1763,8 @@
             "boss": {
                 "name": "Exalted Master of the Heretical Path",
                 "has_page": true
-            }
+            },
+            "image_ts": "20260520070840"
         },
         {
             "name": "??? (Metatron)",
@@ -1682,122 +1782,146 @@
         "w_tile": {
             "name": "Scattered Piece of Decarabian's Dream",
             "type": "weapon_ascension_mats",
-            "image": "Item_Scattered_Piece_of_Decarabian's_Dream.png"
+            "image": "Item_Scattered_Piece_of_Decarabian's_Dream.png",
+            "image_ts": "20210109220111"
         },
         "w_tooth": {
             "name": "Boreal Wolf's Nostalgia",
             "type": "weapon_ascension_mats",
-            "image": "Item_Boreal_Wolf's_Nostalgia.png"
+            "image": "Item_Boreal_Wolf's_Nostalgia.png",
+            "image_ts": "20210109220049"
         },
         "w_shackle": {
             "name": "Dream of the Dandelion Gladiator",
             "type": "weapon_ascension_mats",
-            "image": "Item_Dream_of_the_Dandelion_Gladiator.png"
+            "image": "Item_Dream_of_the_Dandelion_Gladiator.png",
+            "image_ts": "20210109215951"
         },
         "w_guyun": {
             "name": "Divine Body from Guyun",
             "type": "weapon_ascension_mats",
-            "image": "Item_Divine_Body_from_Guyun.png"
+            "image": "Item_Divine_Body_from_Guyun.png",
+            "image_ts": "20210109215920"
         },
         "w_pearl": {
             "name": "Mist Veiled Primo Elixir",
             "type": "weapon_ascension_mats",
-            "image": "Item_Mist_Veiled_Primo_Elixir.png"
+            "image": "Item_Mist_Veiled_Primo_Elixir.png",
+            "image_ts": "20210109215849"
         },
         "w_aerosiderite": {
             "name": "Chunk of Aerosiderite",
             "type": "weapon_ascension_mats",
-            "image": "Item_Chunk_of_Aerosiderite.png"
+            "image": "Item_Chunk_of_Aerosiderite.png",
+            "image_ts": "20210109215819"
         },
         "w_branch": {
             "name": "Golden Branch of a Distant Sea",
             "type": "weapon_ascension_mats",
-            "image": "Item_Golden_Branch_of_a_Distant_Sea.png"
+            "image": "Item_Golden_Branch_of_a_Distant_Sea.png",
+            "image_ts": "20210721030103"
         },
         "w_comma": {
             "name": "Narukami's Valor",
             "type": "weapon_ascension_mats",
-            "image": "Item_Narukami's_Valor.png"
+            "image": "Item_Narukami's_Valor.png",
+            "image_ts": "20210721030147"
         },
         "w_mask": {
             "name": "Mask of the Kijin",
             "type": "weapon_ascension_mats",
-            "image": "Item_Mask_of_the_Kijin.png"
+            "image": "Item_Mask_of_the_Kijin.png",
+            "image_ts": "20210721030128"
         },
         "w_forest_dew": {
             "name": "Golden Talisman of the Forest Dew",
             "type": "weapon_ascension_mats",
-            "image": "Item_Golden_Talisman_of_the_Forest_Dew.png"
+            "image": "Item_Golden_Talisman_of_the_Forest_Dew.png",
+            "image_ts": "20220824041607"
         },
         "w_oasis_garden": {
             "name": "Oasis Garden's Truth",
             "type": "weapon_ascension_mats",
-            "image": "Item_Oasis_Garden's_Truth.png"
+            "image": "Item_Oasis_Garden's_Truth.png",
+            "image_ts": "20220824041623"
         },
         "w_scorching_might": {
             "name": "Olden Days of Scorching Might",
             "type": "weapon_ascension_mats",
-            "image": "Item_Olden_Days_of_Scorching_Might.png"
+            "image": "Item_Olden_Days_of_Scorching_Might.png",
+            "image_ts": "20220824041625"
         },
         "w_ancient_chord": {
             "name": "Echo of an Ancient Chord",
             "type": "weapon_ascension_mats",
-            "image": "Item_Echo_of_an_Ancient_Chord.png"
+            "image": "Item_Echo_of_an_Ancient_Chord.png",
+            "image_ts": "20230818082403"
         },
         "w_pure_sacred_dewdrop": {
             "name": "Essence of Pure Sacred Dewdrop",
             "type": "weapon_ascension_mats",
-            "image": "Item_Essence_of_Pure_Sacred_Dewdrop.png"
+            "image": "Item_Essence_of_Pure_Sacred_Dewdrop.png",
+            "image_ts": "20230818090529"
         },
         "w_pristine_sea": {
             "name": "Golden Goblet of the Pristine Sea",
             "type": "weapon_ascension_mats",
-            "image": "Item_Golden_Goblet_of_the_Pristine_Sea.png"
+            "image": "Item_Golden_Goblet_of_the_Pristine_Sea.png",
+            "image_ts": "20230818090947"
         },
         "w_blazing_sacrificial_heart": {
             "name": "Blazing Sacrificial Heart's Splendor",
             "type": "weapon_ascension_mats",
-            "image": "Item_Blazing_Sacrificial_Heart's_Splendor.png"
+            "image": "Item_Blazing_Sacrificial_Heart's_Splendor.png",
+            "image_ts": "20240828173811"
         },
         "w_sacred_lord": {
             "name": "Delirious Divinity of the Sacred Lord",
             "type": "weapon_ascension_mats",
-            "image": "Item_Delirious_Divinity_of_the_Sacred_Lord.png"
+            "image": "Item_Delirious_Divinity_of_the_Sacred_Lord.png",
+            "image_ts": "20240828174820"
         },
         "w_night_wind": {
             "name": "Night-Wind's Mystic Revelation",
             "type": "weapon_ascension_mats",
-            "image": "Item_Night-Wind's_Mystic_Revelation.png"
+            "image": "Item_Night-Wind's_Mystic_Revelation.png",
+            "image_ts": "20240828175339"
         },
         "w_artful_device": {
             "name": "Artful Device Wish",
             "type": "weapon_ascension_mats",
-            "image": "Item_Artful_Device_Wish.png"
+            "image": "Item_Artful_Device_Wish.png",
+            "image_ts": "20250910060216"
         },
         "w_long_night_flint": {
             "name": "Blaze of Long Night Flint",
             "type": "weapon_ascension_mats",
-            "image": "Item_Blaze_of_Long_Night_Flint.png"
+            "image": "Item_Blaze_of_Long_Night_Flint.png",
+            "image_ts": "20250910060312"
         },
         "w_far_north_scions": {
             "name": "Aureate Radiance of the Far-North Scions",
             "type": "weapon_ascension_mats",
-            "image": "Item_Aureate_Radiance_of_the_Far-North_Scions.png"
+            "image": "Item_Aureate_Radiance_of_the_Far-North_Scions.png",
+            "image_ts": "20250910055540"
         },
         "w_pale_star_army": {
             "name": "Triumph of the Pale Star Army",
             "type": "weapon_ascension_mats",
-            "image": "Item_Triumph_of_the_Pale_Star_Army.png"
+            "image": "Item_Triumph_of_the_Pale_Star_Army.png",
+            "image_ts": "20260812041928"
         },
         "w_spiritual_nectar": {
             "name": "Revelry of the Cellared Spiritual Nectar",
             "type": "weapon_ascension_mats",
-            "image": "Item_Revelry_of_the_Cellared_Spiritual_Nectar.png"
+            "image": "Item_Revelry_of_the_Cellared_Spiritual_Nectar.png",
+            "image_ts": "20260812041937"
         },
         "w_frost_emperor": {
             "name": "The Frost Emperor's Farewell",
             "type": "weapon_ascension_mats",
-            "image": "Item_The_Frost_Emperor's_Farewell.png"
+            "image": "Item_The_Frost_Emperor's_Farewell.png",
+            "image_ts": "20260812041949"
         },
         "t_freedom": {
             "name": "Freedom",
@@ -1814,7 +1938,8 @@
                 "Traveler (Geo)",
                 "Varka"
             ],
-            "image": "Item_Philosophies_of_Freedom.png"
+            "image": "Item_Philosophies_of_Freedom.png",
+            "image_ts": "20210106071940"
         },
         "t_resistance": {
             "name": "Resistance",
@@ -1832,7 +1957,8 @@
                 "Traveler (Anemo)",
                 "Traveler (Geo)"
             ],
-            "image": "Item_Philosophies_of_Resistance.png"
+            "image": "Item_Philosophies_of_Resistance.png",
+            "image_ts": "20210106072058"
         },
         "t_ballad": {
             "name": "Ballad",
@@ -1850,7 +1976,8 @@
                 "Traveler (Geo)",
                 "Venti"
             ],
-            "image": "Item_Philosophies_of_Ballad.png"
+            "image": "Item_Philosophies_of_Ballad.png",
+            "image_ts": "20210106065347"
         },
         "t_prosperity": {
             "name": "Prosperity",
@@ -1865,7 +1992,8 @@
                 "Xiao",
                 "Yelan"
             ],
-            "image": "Item_Philosophies_of_Prosperity.png"
+            "image": "Item_Philosophies_of_Prosperity.png",
+            "image_ts": "20210106072155"
         },
         "t_diligence": {
             "name": "Diligence",
@@ -1881,7 +2009,8 @@
                 "Yaoyao",
                 "Yun Jin"
             ],
-            "image": "Item_Philosophies_of_Diligence.png"
+            "image": "Item_Philosophies_of_Diligence.png",
+            "image_ts": "20210106072255"
         },
         "t_gold": {
             "name": "Gold",
@@ -1897,7 +2026,8 @@
                 "Zhongli",
                 "Zibai"
             ],
-            "image": "Item_Philosophies_of_Gold.png"
+            "image": "Item_Philosophies_of_Gold.png",
+            "image_ts": "20210106064435"
         },
         "t_transience": {
             "name": "Transience",
@@ -1911,7 +2041,8 @@
                 "Yoimiya",
                 "Yumemizuki Mizuki"
             ],
-            "image": "Item_Philosophies_of_Transience.png"
+            "image": "Item_Philosophies_of_Transience.png",
+            "image_ts": "20210721030201"
         },
         "t_elegance": {
             "name": "Elegance",
@@ -1924,7 +2055,8 @@
                 "Kuki Shinobu",
                 "Traveler (Electro)"
             ],
-            "image": "Item_Philosophies_of_Elegance.png"
+            "image": "Item_Philosophies_of_Elegance.png",
+            "image_ts": "20210721030157"
         },
         "t_light": {
             "name": "Light",
@@ -1937,7 +2069,8 @@
                 "Traveler (Electro)",
                 "Yae Miko"
             ],
-            "image": "Item_Philosophies_of_Light.png"
+            "image": "Item_Philosophies_of_Light.png",
+            "image_ts": "20210721030159"
         },
         "t_admonition": {
             "name": "Admonition",
@@ -1949,7 +2082,8 @@
                 "Tighnari",
                 "Traveler (Dendro)"
             ],
-            "image": "Item_Philosophies_of_Admonition.png"
+            "image": "Item_Philosophies_of_Admonition.png",
+            "image_ts": "20220824031035"
         },
         "t_ingenuity": {
             "name": "Ingenuity",
@@ -1962,7 +2096,8 @@
                 "Nahida",
                 "Traveler (Dendro)"
             ],
-            "image": "Item_Philosophies_of_Ingenuity.png"
+            "image": "Item_Philosophies_of_Ingenuity.png",
+            "image_ts": "20220824031036"
         },
         "t_praxis": {
             "name": "Praxis",
@@ -1975,7 +2110,8 @@
                 "Traveler (Dendro)",
                 "Wanderer"
             ],
-            "image": "Item_Philosophies_of_Praxis.png"
+            "image": "Item_Philosophies_of_Praxis.png",
+            "image_ts": "20220824031038"
         },
         "t_equity": {
             "name": "Equity",
@@ -1987,7 +2123,8 @@
                 "Sigewinne",
                 "Traveler (Hydro)"
             ],
-            "image": "Item_Philosophies_of_Equity.png"
+            "image": "Item_Philosophies_of_Equity.png",
+            "image_ts": "20230816064621"
         },
         "t_justice": {
             "name": "Justice",
@@ -2000,7 +2137,8 @@
                 "Furina",
                 "Traveler (Hydro)"
             ],
-            "image": "Item_Philosophies_of_Justice.png"
+            "image": "Item_Philosophies_of_Justice.png",
+            "image_ts": "20230816064630"
         },
         "t_order": {
             "name": "Order",
@@ -2013,7 +2151,8 @@
                 "Traveler (Hydro)",
                 "Wriothesley"
             ],
-            "image": "Item_Philosophies_of_Order.png"
+            "image": "Item_Philosophies_of_Order.png",
+            "image_ts": "20230816064625"
         },
         "t_contention": {
             "name": "Contention",
@@ -2025,7 +2164,8 @@
                 "Skirk",
                 "Traveler (Pyro)"
             ],
-            "image": "Item_Philosophies_of_Contention.png"
+            "image": "Item_Philosophies_of_Contention.png",
+            "image_ts": "20240828062638"
         },
         "t_kindling": {
             "name": "Kindling",
@@ -2037,7 +2177,8 @@
                 "Traveler (Pyro)",
                 "Xilonen"
             ],
-            "image": "Item_Philosophies_of_Kindling.png"
+            "image": "Item_Philosophies_of_Kindling.png",
+            "image_ts": "20240828062718"
         },
         "t_conflict": {
             "name": "Conflict",
@@ -2050,7 +2191,8 @@
                 "Traveler (Pyro)",
                 "Varesa"
             ],
-            "image": "Item_Philosophies_of_Conflict.png"
+            "image": "Item_Philosophies_of_Conflict.png",
+            "image_ts": "20240828062608"
         },
         "t_moonlight": {
             "name": "Moonlight",
@@ -2059,7 +2201,8 @@
                 "Columbina",
                 "Lauma"
             ],
-            "image": "Item_Philosophies_of_Moonlight.png"
+            "image": "Item_Philosophies_of_Moonlight.png",
+            "image_ts": "20250910054555"
         },
         "t_elysium": {
             "name": "Elysium",
@@ -2070,7 +2213,8 @@
                 "Nefer",
                 "Nicole"
             ],
-            "image": "Item_Philosophies_of_Elysium.png"
+            "image": "Item_Philosophies_of_Elysium.png",
+            "image_ts": "20250910054759"
         },
         "t_vagrancy": {
             "name": "Vagrancy",
@@ -2081,7 +2225,8 @@
                 "Linnea",
                 "Sandrone"
             ],
-            "image": "Item_Philosophies_of_Vagrancy.png"
+            "image": "Item_Philosophies_of_Vagrancy.png",
+            "image_ts": "20250911143323"
         },
         "t_charity": {
             "name": "Charity",
@@ -2092,7 +2237,8 @@
                 "Odette",
                 "Traveler (Cryo)"
             ],
-            "image": "Item_Philosophies_of_Charity.png"
+            "image": "Item_Philosophies_of_Charity.png",
+            "image_ts": "20260812041955"
         },
         "t_fortitude": {
             "name": "Fortitude",
@@ -2102,7 +2248,8 @@
                 "Traveler (Cryo)",
                 "Vodyanitsa"
             ],
-            "image": "Item_Philosophies_of_Fortitude.png"
+            "image": "Item_Philosophies_of_Fortitude.png",
+            "image_ts": "20260812042001"
         },
         "t_glory": {
             "name": "Glory",
@@ -2113,399 +2260,456 @@
                 "Valeriy",
                 "Vesna"
             ],
-            "image": "Item_Philosophies_of_Glory.png"
+            "image": "Item_Philosophies_of_Glory.png",
+            "image_ts": "20260812042008"
         },
         "a_adventurer": {
             "name": "Adventurer",
             "type": "artifacts",
             "effect": "Max HP increased by 1000.",
             "effect_4pc": "Opening a chest regenerates 30% Max HP over 5s.",
-            "image": "Item_Adventurer's_Flower.png"
+            "image": "Item_Adventurer's_Flower.png",
+            "image_ts": "20201120051635"
         },
         "a_sojourner": {
             "name": "Resolution of Sojourner",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "Increases Charged Attack CRIT Rate by 30%.",
-            "image": "Item_Heart_of_Comradeship.png"
+            "image": "Item_Heart_of_Comradeship.png",
+            "image_ts": "20201120055604"
         },
         "a_thundering_fury": {
             "name": "Thundering Fury",
             "type": "artifacts",
             "effect": "Electro DMG Bonus +15%",
             "effect_4pc": "Increases the DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, the DMG Bonus conferred by Aggravate by 20%, and the DMG caused by Lunar-Charged and Stellar-Conduct by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s.",
-            "image": "Item_Thunderbird's_Mercy.png"
+            "image": "Item_Thunderbird's_Mercy.png",
+            "image_ts": "20201120064634"
         },
         "a_thundersoother": {
             "name": "Thundersoother",
             "type": "artifacts",
             "effect": "Electro RES increased by 40%.",
             "effect_4pc": "Increases DMG against opponents affected by Electro by 35%.",
-            "image": "Item_Thundersoother's_Heart.png"
+            "image": "Item_Thundersoother's_Heart.png",
+            "image_ts": "20201120065517"
         },
         "a_miracle": {
             "name": "Tiny Miracle",
             "type": "artifacts",
             "effect": "All Elemental RES increased by 20%.",
             "effect_4pc": "Incoming Elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
-            "image": "Item_Tiny_Miracle's_Flower.png"
+            "image": "Item_Tiny_Miracle's_Flower.png",
+            "image_ts": "20201120060259"
         },
         "a_traveling_doctor": {
             "name": "Traveling Doctor",
             "type": "artifacts",
             "effect": "Increases incoming healing by 20%.",
             "effect_4pc": "Using Elemental Burst restores 20% HP.",
-            "image": "Item_Traveling_Doctor's_Silver_Lotus.png"
+            "image": "Item_Traveling_Doctor's_Silver_Lotus.png",
+            "image_ts": "20201120052230"
         },
         "a_venerer": {
             "name": "Viridescent Venerer",
             "type": "artifacts",
             "effect": "Anemo DMG Bonus +15%",
             "effect_4pc": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
-            "image": "Item_In_Remembrance_of_Viridescent_Fields.png"
+            "image": "Item_In_Remembrance_of_Viridescent_Fields.png",
+            "image_ts": "20201120064508"
         },
         "a_maiden": {
             "name": "Maiden Beloved",
             "type": "artifacts",
             "effect": "Character Healing Effectiveness +15%",
             "effect_4pc": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s.",
-            "image": "Item_Maiden's_Distant_Love.png"
+            "image": "Item_Maiden's_Distant_Love.png",
+            "image_ts": "20201120063428"
         },
         "a_brave_heart": {
             "name": "Brave Heart",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "Increases DMG by 30% against opponents with more than 50% HP.",
-            "image": "Item_Medal_of_the_Brave.png"
+            "image": "Item_Medal_of_the_Brave.png",
+            "image_ts": "20201120062546"
         },
         "a_lucky_dog": {
             "name": "Lucky Dog",
             "type": "artifacts",
             "effect": "DEF increased by 100.",
             "effect_4pc": "Picking up Mora restores 300 HP.",
-            "image": "Item_Lucky_Dog's_Clover.png"
+            "image": "Item_Lucky_Dog's_Clover.png",
+            "image_ts": "20201120052434"
         },
         "a_petra": {
             "name": "Archaic Petra",
             "type": "artifacts",
             "effect": "Geo DMG Bonus +15%.",
             "effect_4pc": "Upon obtaining an Elemental Shard created through Crystallize or triggering a Lunar-Crystallize reaction, all party members gain 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time.",
-            "image": "Item_Flower_of_Creviced_Cliff.png"
+            "image": "Item_Flower_of_Creviced_Cliff.png",
+            "image_ts": "20201120064841"
         },
         "a_bolide": {
             "name": "Retracing Bolide",
             "type": "artifacts",
             "effect": "Increases Shield Strength by 35%.",
             "effect_4pc": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG.",
-            "image": "Item_Summer_Night's_Bloom.png"
+            "image": "Item_Summer_Night's_Bloom.png",
+            "image_ts": "20201120064133"
         },
         "a_defenders_will": {
             "name": "Defender's Will",
             "type": "artifacts",
             "effect": "DEF +30%",
             "effect_4pc": "For each different element present in your own party, the wearer's Elemental RES to that corresponding element is increased by 30%.",
-            "image": "Item_Guardian's_Flower.png"
+            "image": "Item_Guardian's_Flower.png",
+            "image_ts": "20201120055924"
         },
         "a_martial_artist": {
             "name": "Martial Artist",
             "type": "artifacts",
             "effect": "Normal and Charged Attack DMG +15%",
             "effect_4pc": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s.",
-            "image": "Item_Martial_Artist's_Red_Flower.png"
+            "image": "Item_Martial_Artist's_Red_Flower.png",
+            "image_ts": "20201120055759"
         },
         "a_crimson_witch": {
             "name": "Crimson Witch of Flames",
             "type": "artifacts",
             "effect": "Pyro DMG Bonus +15%",
             "effect_4pc": "Increases Overloaded and Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.",
-            "image": "Item_Witch's_Flower_of_Blaze.png"
+            "image": "Item_Witch's_Flower_of_Blaze.png",
+            "image_ts": "20201120065356"
         },
         "a_lavawalker": {
             "name": "Lavawalker",
             "type": "artifacts",
             "effect": "Pyro RES increased by 40%.",
             "effect_4pc": "Increases DMG against opponents affected by Pyro by 35%.",
-            "image": "Item_Lavawalker's_Resolution.png"
+            "image": "Item_Lavawalker's_Resolution.png",
+            "image_ts": "20201120065116"
         },
         "a_gambler": {
             "name": "Gambler",
             "type": "artifacts",
             "effect": "Increases Elemental Skill DMG by 20%.",
             "effect_4pc": "Defeating an opponent has a 100% chance to remove Elemental Skill CD. Can only occur once every 15s.",
-            "image": "Item_Gambler's_Brooch.png"
+            "image": "Item_Gambler's_Brooch.png",
+            "image_ts": "20201120062914"
         },
         "a_scholar": {
             "name": "Scholar",
             "type": "artifacts",
             "effect": "Energy Recharge +20%",
             "effect_4pc": "Gaining Elemental Particles or Orbs gives 3 Energy to all party members who have a bow or a catalyst equipped. Can only occur once every 3s.",
-            "image": "Item_Scholar's_Bookmark.png"
+            "image": "Item_Scholar's_Bookmark.png",
+            "image_ts": "20201120063103"
         },
         "a_chivalry": {
             "name": "Bloodstained Chivalry",
             "type": "artifacts",
             "effect": "Physical DMG Bonus +25%",
             "effect_4pc": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s.",
-            "image": "Item_Bloodstained_Flower_of_Iron.png"
+            "image": "Item_Bloodstained_Flower_of_Iron.png",
+            "image_ts": "20201120063726"
         },
         "a_noblesse": {
             "name": "Noblesse Oblige",
             "type": "artifacts",
             "effect": "Elemental Burst DMG +20%",
             "effect_4pc": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack.",
-            "image": "Item_Royal_Flora.png"
+            "image": "Item_Royal_Flora.png",
+            "image_ts": "20201120063610"
         },
         "a_depth": {
             "name": "Heart of Depth",
             "type": "artifacts",
             "effect": "Hydro DMG Bonus +15%",
             "effect_4pc": "After using an Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s.",
-            "image": "Item_Gilded_Corsage.png"
+            "image": "Item_Gilded_Corsage.png",
+            "image_ts": "20201225230417"
         },
         "a_blizzard": {
             "name": "Blizzard Strayer",
             "type": "artifacts",
             "effect": "Cryo DMG Bonus +15%",
             "effect_4pc": "When a character attacks an opponent affected by Cryo, their CRIT Rate is increased by 20%. If the opponent is Frozen, CRIT Rate is increased by an additional 20%.",
-            "image": "Item_Snowswept_Memory.png"
+            "image": "Item_Snowswept_Memory.png",
+            "image_ts": "20201225230245"
         },
         "a_millelith": {
             "name": "Tenacity of the Millelith",
             "type": "artifacts",
             "effect": "HP +20%",
             "effect_4pc": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
-            "image": "Item_Flower_of_Accolades.png"
+            "image": "Item_Flower_of_Accolades.png",
+            "image_ts": "20210416205617"
         },
         "a_pale_flame": {
             "name": "Pale Flame",
             "type": "artifacts",
             "effect": "link=1 +25%.",
             "effect_4pc": "When an Elemental Skill hits an opponent, ATK is increased by 9% for 7s. This effect stacks up to 2 times and can be triggered once every 0.3s. Once 2 stacks are reached, the 2-set effect is increased by 100%.",
-            "image": "Item_Stainless_Bloom.png"
+            "image": "Item_Stainless_Bloom.png",
+            "image_ts": "20210416205644"
         },
         "a_shimenawa": {
             "name": "Shimenawa's Reminiscence",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "When casting an Elemental Skill, if the character has 15 or more Energy, they lose 15 Energy and Normal/Charged/Plunging Attack DMG is increased by 50% for 10s. This effect will not trigger again during that duration.",
-            "image": "Item_Entangling_Bloom.png"
+            "image": "Item_Entangling_Bloom.png",
+            "image_ts": "20210721030058"
         },
         "a_severed_fate": {
             "name": "Emblem of Severed Fate",
             "type": "artifacts",
             "effect": "Energy Recharge +20%",
             "effect_4pc": "Increases Elemental Burst DMG by 25% of Energy Recharge. A maximum of 75% bonus DMG can be obtained in this way.",
-            "image": "Item_Magnificent_Tsuba.png"
+            "image": "Item_Magnificent_Tsuba.png",
+            "image_ts": "20210721030125"
         },
         "a_clam": {
             "name": "Ocean-Hued Clam",
             "type": "artifacts",
             "effect": "Healing Bonus +15%.",
             "effect_4pc": "When the character equipping this artifact set heals a character in the party, a Sea-Dyed Foam will appear for 3 seconds, accumulating the amount of HP recovered from healing (including overflow healing). At the end of the duration, the Sea-Dyed Foam will explode, dealing DMG to nearby opponents based on 90% of the accumulated healing. (This DMG is calculated similarly to Reactions such as Electro-Charged, and Superconduct, but it is not affected by Elemental Mastery, Character Levels, or Reaction DMG Bonuses). Only one Sea-Dyed Foam can be produced every 3.5 seconds. Each Sea-Dyed Foam can accumulate up to 30,000 HP (including overflow healing). There can be no more than one Sea-Dyed Foam active at any given time. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
-            "image": "Item_Sea-Dyed_Blossom.png"
+            "image": "Item_Sea-Dyed_Blossom.png",
+            "image_ts": "20211124071311"
         },
         "a_husk": {
             "name": "Husk of Opulent Dreams",
             "type": "artifacts",
             "effect": "DEF +30%",
             "effect_4pc": "A character equipped with this Artifact set will obtain the Curiosity effect in the following conditions: When on the field, the character gains 1 stack after hitting an opponent with a Geo attack, triggering a maximum of once every 0.3s. When off the field, the character gains 1 stack every 3s. Curiosity can stack up to 4 times, each providing 6% DEF and a 6% Geo DMG Bonus. When 6 seconds pass without gaining a Curiosity stack, 1 stack is lost.",
-            "image": "Item_Bloom_Times.png"
+            "image": "Item_Bloom_Times.png",
+            "image_ts": "20211124024926"
         },
         "a_vermillion": {
             "name": "Vermillion Hereafter",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "After using an Elemental Burst, this character will gain the Nascent Light effect, increasing their ATK by 8% for 16s. When the character's HP decreases, their ATK will further increase by 10%. This increase can occur this way maximum of 4 times. This effect can be triggered once every 0.8s. Nascent Light will be dispelled when the character leaves the field. If an Elemental Burst is used again during the duration of Nascent Light, the original Nascent Light will be dispelled.",
-            "image": "Item_Flowering_Life.png"
+            "image": "Item_Flowering_Life.png",
+            "image_ts": "20220330033017"
         },
         "a_echoes": {
             "name": "Echoes of an Offering",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK. This effect will be dispelled 0.05s after a Normal Attack deals DMG. If a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%. This trigger can occur once every 0.2s.",
-            "image": "Item_Soulscent_Bloom.png"
+            "image": "Item_Soulscent_Bloom.png",
+            "image_ts": "20220330042626"
         },
         "a_deepwood": {
             "name": "Deepwood Memories",
             "type": "artifacts",
             "effect": "Dendro DMG Bonus +15%.",
             "effect_4pc": "After Elemental Skills or Bursts hit opponents, the targets' Dendro RES will be decreased by 30% for 8s. This effect can be triggered even if the equipping character is not on the field.",
-            "image": "Item_Labyrinth_Wayfarer.png"
+            "image": "Item_Labyrinth_Wayfarer.png",
+            "image_ts": "20220826125326"
         },
         "a_gilded_dreams": {
             "name": "Gilded Dreams",
             "type": "artifacts",
             "effect": "Increases Elemental Mastery by 80.",
             "effect_4pc": "Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members. ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.",
-            "image": "Item_Dreaming_Steelbloom.png"
+            "image": "Item_Dreaming_Steelbloom.png",
+            "image_ts": "20220826125336"
         },
         "a_desert_pavilion": {
             "name": "Desert Pavilion Chronicle",
             "type": "artifacts",
             "effect": "Anemo DMG Bonus +15%.",
             "effect_4pc": "When Charged Attacks hit opponents, the equipping character's Normal Attack SPD will increase by 10% while Normal, Charged, and Plunging Attack DMG will increase by 40% for 15s.",
-            "image": "Item_The_First_Days_of_the_City_of_Kings.png"
+            "image": "Item_The_First_Days_of_the_City_of_Kings.png",
+            "image_ts": "20221207030405"
         },
         "a_flower_of_paradise_lost": {
             "name": "Flower of Paradise Lost",
             "type": "artifacts",
             "effect": "Increases Elemental Mastery by 80.",
             "effect_4pc": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%, and their Lunar-Bloom reaction DMG is increased by 10%. Additionally, after the equipping character triggers Bloom, Hyperbloom, Lunar-Bloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
-            "image": "Item_Ay-Khanoum's_Myriad.png"
+            "image": "Item_Ay-Khanoum's_Myriad.png",
+            "image_ts": "20221207030350"
         },
         "a_nymphs_dream": {
             "name": "Nymph's Dream",
             "type": "artifacts",
             "effect": "Hydro DMG Bonus +15%",
             "effect_4pc": "After Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts hit opponents, 1 stack of Mirrored Nymph will be triggered, lasting 8s. When under the effect of 1, 2, or 3 or more Mirrored Nymph stacks, ATK will be increased by 7%/16%/25%, and Hydro DMG will be increased by 4%/9%/15%. Mirrored Nymph created by Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts exist independently.",
-            "image": "Item_Odyssean_Flower.png"
+            "image": "Item_Odyssean_Flower.png",
+            "image_ts": "20230412041718"
         },
         "a_vourukashas_glow": {
             "name": "Vourukasha's Glow",
             "type": "artifacts",
             "effect": "HP +20%",
             "effect_4pc": "Elemental Skill and Elemental Burst DMG will be increased by 10%. After the equipping character takes DMG, the aforementioned DMG Bonus is increased by 80% for 5s. This effect increase can have 5 stacks. The duration of each stack is counted independently. These effects can be triggered even when the equipping character is not on the field.",
-            "image": "Item_Stamen_of_Khvarena's_Origin.png"
+            "image": "Item_Stamen_of_Khvarena's_Origin.png",
+            "image_ts": "20230412042053"
         },
         "a_marechaussee": {
             "name": "Marechaussee Hunter",
             "type": "artifacts",
             "effect": "Normal and Charged Attack DMG +15%.",
             "effect_4pc": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks.",
-            "image": "Item_Hunter's_Brooch.png"
+            "image": "Item_Hunter's_Brooch.png",
+            "image_ts": "20230817133842"
         },
         "a_golden_troupe": {
             "name": "Golden Troupe",
             "type": "artifacts",
             "effect": "Increases Elemental Skill DMG by 20%.",
             "effect_4pc": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field.",
-            "image": "Item_Golden_Song's_Variation.png"
+            "image": "Item_Golden_Song's_Variation.png",
+            "image_ts": "20230817133851"
         },
         "a_song_of_days_past": {
             "name": "Song of Days Past",
             "type": "artifacts",
             "effect": "Healing Bonus +15%.",
             "effect_4pc": "When the equipping character heals a party member, the Yearning effect will be created for 6s, which records the total amount of healing provided (including overflow healing). When the duration expires, the Yearning effect will be transformed into the \"Waves of Days Past\" effect: When your active party member hits an opponent with a Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst, the DMG dealt will be increased by 8% of the total healing amount recorded by the Yearning effect. The \"Waves of Days Past\" effect is removed after it has taken effect 5 times or after 10s. A single instance of the Yearning effect can record up to 15,000 healing, and only a single instance can exist at once, but it can record the healing from multiple equipping characters. Equipping characters on standby can still trigger this effect.",
-            "image": "Item_Forgotten_Oath_of_Days_Past.png"
+            "image": "Item_Forgotten_Oath_of_Days_Past.png",
+            "image_ts": "20231220022350"
         },
         "a_nighttime_whispers": {
             "name": "Nighttime Whispers in the Echoing Woods",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. When under a shield granted by the Crystallize reaction, or when Moondrifts formed by Lunar-Crystallize reactions are nearby, the above effect will be increased by 150%. When these conditions are no longer met, this additional increase disappears after 1s.",
-            "image": "Item_Selfless_Floral_Accessory.png"
+            "image": "Item_Selfless_Floral_Accessory.png",
+            "image_ts": "20231220022107"
         },
         "a_fragment_of_harmonic_whimsy": {
             "name": "Fragment of Harmonic Whimsy",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks.",
-            "image": "Item_Harmonious_Symphony_Prelude.png"
+            "image": "Item_Harmonious_Symphony_Prelude.png",
+            "image_ts": "20240424065845"
         },
         "a_unfinished_reverie": {
             "name": "Unfinished Reverie",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "After leaving combat for 3s, DMG dealt increased by 50%. In combat, if no Burning opponents are nearby for more than 6s, this DMG Bonus will decrease by 10% per second until it reaches 0%. When a Burning opponent exists, it will increase by 10% instead until it reaches 50%. This effect still triggers if the equipping character is off-field.",
-            "image": "Item_Dark_Fruit_of_Bright_Flowers.png"
+            "image": "Item_Dark_Fruit_of_Bright_Flowers.png",
+            "image_ts": "20240424184916"
         },
         "a_obsidian_codex": {
             "name": "Obsidian Codex",
             "type": "artifacts",
             "effect": "While the equipping character is in Nightsoul's Blessing and is on the field, their DMG dealt is increased by 15%.",
             "effect_4pc": "After the equipping character consumes 1 Nightsoul point while on the field, CRIT Rate increases by 40% for 6s. This effect can trigger once every second.",
-            "image": "Item_Reckoning_of_the_Xenogenic.png"
+            "image": "Item_Reckoning_of_the_Xenogenic.png",
+            "image_ts": "20240829191730"
         },
         "a_scroll_of_hero_of_cinder_city": {
             "name": "Scroll of the Hero of Cinder City",
             "type": "artifacts",
             "effect": "When a nearby party member triggers a Nightsoul Burst, the equipping character regenerates 6 Elemental Energy.",
             "effect_4pc": "After the equipping character triggers a reaction related to their Elemental Type, all nearby party members gain a 12% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 15s. If the equipping character is in the Nightsoul's Blessing state when triggering this effect, all nearby party members gain an additional 28% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 20s. The equipping character can trigger this effect while off-field, and the DMG bonus from Artifact Sets with the same name do not stack.",
-            "image": "Item_Beast_Tamer's_Talisman.png"
+            "image": "Item_Beast_Tamer's_Talisman.png",
+            "image_ts": "20240829191055"
         },
         "a_finale_of_deep_galleries": {
             "name": "Finale of the Deep Galleries",
             "type": "artifacts",
             "effect": "Cryo DMG Bonus +15%",
             "effect_4pc": "When the equipping character has 0 Elemental Energy, Normal Attack DMG is increased by 60% and Elemental Burst DMG is increased by 60%. After the equipping character deals Normal Attack DMG, the aforementioned Elemental Burst effect will stop applying for 6s. After the equipping character deals Elemental Burst DMG, the aforementioned Normal Attack effect will stop applying for 6s. This effect can trigger even if the equipping character is off the field.",
-            "image": "Item_Deep_Gallery's_Echoing_Song.png"
+            "image": "Item_Deep_Gallery's_Echoing_Song.png",
+            "image_ts": "20250327084038"
         },
         "a_long_nights_oath": {
             "name": "Long Night's Oath",
             "type": "artifacts",
             "effect": "Plunging Attack DMG increased by 25%.",
             "effect_4pc": "After the equipping character's Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of \"Radiance Everlasting.\" Plunging Attacks, Charged Attacks or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15% increased DMG for 6s. Max 5 stacks. Each stack's duration is counted independently.",
-            "image": "Item_Lightkeeper's_Pledge.png"
+            "image": "Item_Lightkeeper's_Pledge.png",
+            "image_ts": "20250327083847"
         },
         "a_night_sky_unveiling": {
             "name": "Night of the Sky's Unveiling",
             "type": "artifacts",
             "effect": "Increases Elemental Mastery by 80.",
             "effect_4pc": "When nearby party members trigger Lunar Reactions, if the equipping character is on the field, gain the Gleaming Moon: Intent effect for 4s: Increases CRIT Rate by 15%/30% when the party's Moonsign is Nascent Gleam/Ascendant Gleam. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
-            "image": "Item_Bloom_of_the_Mind's_Desire.png"
+            "image": "Item_Bloom_of_the_Mind's_Desire.png",
+            "image_ts": "20250910051538"
         },
         "a_silken_moon": {
             "name": "Silken Moon's Serenade",
             "type": "artifacts",
             "effect": "Energy Recharge +20%.",
             "effect_4pc": "When dealing Elemental DMG, gain the Gleaming Moon: Devotion effect for 8s: Increases all party members' Elemental Mastery by 60/120 when the party's Moonsign is Nascent Gleam/Ascendant Gleam. The equipping character can trigger this effect while off-field. All party members' Lunar Reaction DMG is increased by 10% for each different Gleaming Moon effect that party members have. Effects from Gleaming Moon cannot stack.",
-            "image": "Item_Crystal_Tear_of_the_Wanderer.png"
+            "image": "Item_Crystal_Tear_of_the_Wanderer.png",
+            "image_ts": "20250910051556"
         },
         "a_aubade_of_morning": {
             "name": "Aubade of Morningstar and Moon",
             "type": "artifacts",
             "effect": "Increases Elemental Mastery by 80.",
             "effect_4pc": "When the equipping character is off-field, Lunar Reaction DMG is increased by 20%. When the party's Moonsign Level is at least Ascendant Gleam, Lunar Reaction DMG will be further increased by 40%. This effect will disappear after the equipping character is active for 3s.",
-            "image": "Item_Moonlit_Offering's_Opulent_Dream.png"
+            "image": "Item_Moonlit_Offering's_Opulent_Dream.png",
+            "image_ts": "20260114113454"
         },
         "a_rising_winds": {
             "name": "A Day Carved From Rising Winds",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "After a Normal Attack, Charged Attack, Elemental Skill or Elemental Burst hits an opponent, gain the Blessing of Pastoral Winds effect for 6s: ATK is increased by 25%. If the equipping character has completed Witch's Homework, Blessing of Pastoral Winds will be upgraded to Resolve of Pastoral Winds, which also increases the CRIT Rate of the equipping character by an additional 20%. This effect can be triggered even when the character is off-field.",
-            "image": "Item_Windborne_Flower's_Spruchdichtung.png"
+            "image": "Item_Windborne_Flower's_Spruchdichtung.png",
+            "image_ts": "20260114113433"
         },
         "a_celestial_gift": {
             "name": "Celestial Gift",
             "type": "artifacts",
             "effect": "Energy Recharge + 20%.",
             "effect_4pc": "If the equipping character has completed Witch's Homework, after they use an Elemental Skill, they also gain \"Light's Guidance\" for 20s: All nearby party members gain a 20% Elemental DMG Bonus corresponding to the equipping character's Elemental Type. The equipping character can trigger this effect while off-field. DMG Bonuses provided by Artifact Sets with the same name do not stack. When your party has the Hexerei: Secret Rite effect, Light's Guidance is upgraded to \"Mortal Hymn\": All nearby party members gain a 40% Elemental DMG Bonus corresponding to both the equipping character and the current active party member's Elemental Type instead. If both characters have the same Elemental Type, these bonuses will not stack.",
-            "image": "Item_Heavensent_Fragrance.png"
+            "image": "Item_Heavensent_Fragrance.png",
+            "image_ts": "20260520060105"
         },
         "a_deep_shadow": {
             "name": "Disenchantment in Deep Shadow",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%.",
-            "image": "Item_Iridescence_That_Ceased_Amidst_Glory.png"
+            "image": "Item_Iridescence_That_Ceased_Amidst_Glory.png",
+            "image_ts": "20260520064202"
         },
         "a_scarlet_proof": {
             "name": "Scarlet Proof",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG by 40%, for 10s after they trigger a Stellar Swirl reaction.",
-            "image": "Item_Honor_to_Your_Devotion.png"
+            "image": "Item_Honor_to_Your_Devotion.png",
+            "image_ts": "20260812063143"
         },
         "a_heart_furnace": {
             "name": "Heart of the Furnace",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack.",
-            "image": "Item_Foundryman's_Conjecture.png"
+            "image": "Item_Foundryman's_Conjecture.png",
+            "image_ts": "20260812052633"
         },
         "a_snezhnaya_1": {
             "name": "???",
             "type": "artifacts",
             "effect": "ATK +18%.",
             "effect_4pc": "The equipping character gains 1 Starspark when they use an Elemental Skill, Elemental Burst, or perform a Normal Attack. Up to 2 Starsparks can be held at once. The equipping character gains Undying Radiance while holding at least 1 Starspark. This effect increases the CRIT Rate of their Cryo DMG by 20%, with an additional 20% CRIT Rate if that DMG is Stellar Glimmer reaction DMG. This effect remains active even when the equipping character is off-field. The equipping character loses 1 Starspark every 3s while on the field. Undying Radiance ends when all Starsparks are extinguished.",
-            "image": null
+            "image": null,
+            "image_ts": null
         },
         "a_snezhnaya_2": {
             "name": "???",
             "type": "artifacts",
             "effect": "Energy Recharge +20%.",
             "effect_4pc": "Increases the equipping character's Elemental Skill and Elemental Burst DMG by 25%. ???",
-            "image": null
+            "image": null,
+            "image_ts": null
         },
         "nb_hurricane_seed": {
             "name": "Hurricane Seed",
@@ -2515,7 +2719,8 @@
                 "Sucrose",
                 "Venti"
             ],
-            "image": "Item_Hurricane_Seed.png"
+            "image": "Item_Hurricane_Seed.png",
+            "image_ts": "20210106075440"
         },
         "nb_crystalline_bloom": {
             "name": "Crystalline Bloom",
@@ -2524,7 +2729,8 @@
                 "Aloy",
                 "Eula"
             ],
-            "image": "Item_Crystalline_Bloom.png"
+            "image": "Item_Crystalline_Bloom.png",
+            "image_ts": "20210428022327"
         },
         "nb_hoarfrost_core": {
             "name": "Hoarfrost Core",
@@ -2537,7 +2743,8 @@
                 "Qiqi",
                 "Rosaria"
             ],
-            "image": "Item_Hoarfrost_Core.png"
+            "image": "Item_Hoarfrost_Core.png",
+            "image_ts": "20210106071540"
         },
         "nb_lightning_prism": {
             "name": "Lightning Prism",
@@ -2549,7 +2756,8 @@
                 "Lisa",
                 "Razor"
             ],
-            "image": "Item_Lightning_Prism.png"
+            "image": "Item_Lightning_Prism.png",
+            "image_ts": "20201210053008"
         },
         "nb_basalt_pillar": {
             "name": "Basalt Pillar",
@@ -2560,7 +2768,8 @@
                 "Noelle",
                 "Zhongli"
             ],
-            "image": "Item_Basalt_Pillar.png"
+            "image": "Item_Basalt_Pillar.png",
+            "image_ts": "20210106071417"
         },
         "nb_juvenile_jade": {
             "name": "Juvenile Jade",
@@ -2570,7 +2779,8 @@
                 "Xiao",
                 "Yanfei"
             ],
-            "image": "Item_Juvenile_Jade.png"
+            "image": "Item_Juvenile_Jade.png",
+            "image_ts": "20210208142600"
         },
         "nb_everflame_seed": {
             "name": "Everflame Seed",
@@ -2583,7 +2793,8 @@
                 "Xiangling",
                 "Xinyan"
             ],
-            "image": "Item_Everflame_Seed.png"
+            "image": "Item_Everflame_Seed.png",
+            "image_ts": "20210106071447"
         },
         "nb_cleansing_heart": {
             "name": "Cleansing Heart",
@@ -2594,7 +2805,8 @@
                 "Tartaglia",
                 "Xingqiu"
             ],
-            "image": "Item_Cleansing_Heart.png"
+            "image": "Item_Cleansing_Heart.png",
+            "image_ts": "20210106071434"
         },
         "nb_runic_fang": {
             "name": "Runic Fang",
@@ -2604,7 +2816,8 @@
                 "Shikanoin Heizou",
                 "Yelan"
             ],
-            "image": "Item_Runic_Fang.png"
+            "image": "Item_Runic_Fang.png",
+            "image_ts": "20220330024352"
         },
         "nb_dragonheir": {
             "name": "Dragonheir's False Fin",
@@ -2613,7 +2826,8 @@
                 "Shenhe",
                 "Yae Miko"
             ],
-            "image": "Item_Dragonheir's_False_Fin.png"
+            "image": "Item_Dragonheir's_False_Fin.png",
+            "image_ts": "20220105055334"
         },
         "nb_riftborn_regalia": {
             "name": "Riftborn Regalia",
@@ -2622,7 +2836,8 @@
                 "Arataki Itto",
                 "Yun Jin"
             ],
-            "image": "Item_Riftborn_Regalia.png"
+            "image": "Item_Riftborn_Regalia.png",
+            "image_ts": "20211124035805"
         },
         "nb_dew_of_repudiation": {
             "name": "Dew of Repudiation",
@@ -2631,7 +2846,8 @@
                 "Kamisato Ayato",
                 "Sangonomiya Kokomi"
             ],
-            "image": "Item_Dew_of_Repudiation.png"
+            "image": "Item_Dew_of_Repudiation.png",
+            "image_ts": "20210901025337"
         },
         "nb_marionette_core": {
             "name": "Marionette Core",
@@ -2640,7 +2856,8 @@
                 "Kaedehara Kazuha",
                 "Sayu"
             ],
-            "image": "Item_Marionette_Core.png"
+            "image": "Item_Marionette_Core.png",
+            "image_ts": "20210614024202"
         },
         "nb_perpetual_heart": {
             "name": "Perpetual Heart",
@@ -2649,7 +2866,8 @@
                 "Gorou",
                 "Kamisato Ayaka"
             ],
-            "image": "Item_Perpetual_Heart.png"
+            "image": "Item_Perpetual_Heart.png",
+            "image_ts": "20210721030155"
         },
         "nb_smoldering_pearl": {
             "name": "Smoldering Pearl",
@@ -2658,7 +2876,8 @@
                 "Thoma",
                 "Yoimiya"
             ],
-            "image": "Item_Smoldering_Pearl.png"
+            "image": "Item_Smoldering_Pearl.png",
+            "image_ts": "20210721030219"
         },
         "nb_storm_beads": {
             "name": "Storm Beads",
@@ -2667,7 +2886,8 @@
                 "Kujou Sara",
                 "Raiden Shogun"
             ],
-            "image": "Item_Storm_Beads.png"
+            "image": "Item_Storm_Beads.png",
+            "image_ts": "20210901025328"
         },
         "nb_hooked_beak": {
             "name": "Majestic Hooked Beak",
@@ -2676,7 +2896,8 @@
                 "Collei",
                 "Tighnari"
             ],
-            "image": "Item_Majestic_Hooked_Beak.png"
+            "image": "Item_Majestic_Hooked_Beak.png",
+            "image_ts": "20220824030658"
         },
         "nb_thunderclap_fruitcore": {
             "name": "Thunderclap Fruitcore",
@@ -2685,7 +2906,8 @@
                 "Cyno",
                 "Dori"
             ],
-            "image": "Item_Thunderclap_Fruitcore.png"
+            "image": "Item_Thunderclap_Fruitcore.png",
+            "image_ts": "20220824030700"
         },
         "nb_tetrahedron": {
             "name": "Light Guiding Tetrahedron",
@@ -2695,7 +2917,8 @@
                 "Dehya",
                 "Faruzan"
             ],
-            "image": "Item_Light_Guiding_Tetrahedron.png"
+            "image": "Item_Light_Guiding_Tetrahedron.png",
+            "image_ts": "20220928042602"
         },
         "nb_perpetual_caliber": {
             "name": "Perpetual Caliber",
@@ -2705,7 +2928,8 @@
                 "Nilou",
                 "Wanderer"
             ],
-            "image": "Item_Perpetual_Caliber.png"
+            "image": "Item_Perpetual_Caliber.png",
+            "image_ts": "20220929203254"
         },
         "nb_quelled_creeper": {
             "name": "Quelled Creeper",
@@ -2715,7 +2939,8 @@
                 "Nahida",
                 "Yaoyao"
             ],
-            "image": "Item_Quelled_Creeper.png"
+            "image": "Item_Quelled_Creeper.png",
+            "image_ts": "20221102024618"
         },
         "nb_pseudo_stamens": {
             "name": "Pseudo-Stamens",
@@ -2724,7 +2949,8 @@
                 "Alhaitham",
                 "Mika"
             ],
-            "image": "Item_Pseudo-Stamens.png"
+            "image": "Item_Pseudo-Stamens.png",
+            "image_ts": "20230118054438"
         },
         "nb_evergloom_ring": {
             "name": "Evergloom Ring",
@@ -2733,7 +2959,8 @@
                 "Baizhu",
                 "Kirara"
             ],
-            "image": "Item_Evergloom_Ring.png"
+            "image": "Item_Evergloom_Ring.png",
+            "image_ts": "20230412043139"
         },
         "nb_emperors_resolution": {
             "name": "Emperor's Resolution",
@@ -2742,7 +2969,8 @@
                 "Gaming",
                 "Lyney"
             ],
-            "image": "Item_Emperor's_Resolution.png"
+            "image": "Item_Emperor's_Resolution.png",
+            "image_ts": "20230816064635"
         },
         "nb_coppelius": {
             "name": "Artificed Spare Clockwork Component — Coppelius",
@@ -2751,7 +2979,8 @@
                 "Freminet",
                 "Navia"
             ],
-            "image": "Item_Artificed_Spare_Clockwork_Component_—_Coppelius.png"
+            "image": "Item_Artificed_Spare_Clockwork_Component_—_Coppelius.png",
+            "image_ts": "20230816064633"
         },
         "nb_coppelia": {
             "name": "Artificed Spare Clockwork Component — Coppelia",
@@ -2760,7 +2989,8 @@
                 "Chiori",
                 "Lynette"
             ],
-            "image": "Item_Artificed_Spare_Clockwork_Component_—_Coppelia.png"
+            "image": "Item_Artificed_Spare_Clockwork_Component_—_Coppelia.png",
+            "image_ts": "20230816064632"
         },
         "nb_tourbillon_device": {
             "name": "\"Tourbillon Device\"",
@@ -2769,7 +2999,8 @@
                 "Charlotte",
                 "Wriothesley"
             ],
-            "image": "Item_\"Tourbillon_Device\".png"
+            "image": "Item_\"Tourbillon_Device\".png",
+            "image_ts": "20230927093315"
         },
         "nb_fontemer_unihorn": {
             "name": "Fontemer Unihorn",
@@ -2779,7 +3010,8 @@
                 "Clorinde",
                 "Neuvillette"
             ],
-            "image": "Item_Fontemer_Unihorn.png"
+            "image": "Item_Fontemer_Unihorn.png",
+            "image_ts": "20230927092640"
         },
         "nb_failed_water": {
             "name": "Water That Failed To Transcend",
@@ -2788,7 +3020,8 @@
                 "Furina",
                 "Sigewinne"
             ],
-            "image": "Item_Water_That_Failed_To_Transcend.png"
+            "image": "Item_Water_That_Failed_To_Transcend.png",
+            "image_ts": "20231108112451"
         },
         "nb_cloudseam_scale": {
             "name": "Cloudseam Scale",
@@ -2797,7 +3030,8 @@
                 "Sethos",
                 "Xianyun"
             ],
-            "image": "Item_Cloudseam_Scale.png"
+            "image": "Item_Cloudseam_Scale.png",
+            "image_ts": "20240131153507"
         },
         "nb_golden_melody": {
             "name": "Fragment of a Golden Melody",
@@ -2806,7 +3040,8 @@
                 "Arlecchino",
                 "Emilie"
             ],
-            "image": "Item_Fragment_of_a_Golden_Melody.png"
+            "image": "Item_Fragment_of_a_Golden_Melody.png",
+            "image_ts": "20240424042009"
         },
         "nb_mark_of_binding_blessing": {
             "name": "Mark of the Binding Blessing",
@@ -2815,7 +3050,8 @@
                 "Mualani",
                 "Ororon"
             ],
-            "image": "Item_Mark_of_the_Binding_Blessing.png"
+            "image": "Item_Mark_of_the_Binding_Blessing.png",
+            "image_ts": "20240826125051"
         },
         "nb_overripe_flamegranate": {
             "name": "Overripe Flamegranate",
@@ -2824,7 +3060,8 @@
                 "Kachina",
                 "Kinich"
             ],
-            "image": "Item_Overripe_Flamegranate.png"
+            "image": "Item_Overripe_Flamegranate.png",
+            "image_ts": "20240826125040"
         },
         "nb_secret_source_core": {
             "name": "Gold-Inscribed Secret Source Core",
@@ -2834,7 +3071,8 @@
                 "Mavuika",
                 "Xilonen"
             ],
-            "image": "Item_Gold-Inscribed_Secret_Source_Core.png"
+            "image": "Item_Gold-Inscribed_Secret_Source_Core.png",
+            "image_ts": "20241009022606"
         },
         "nb_ensnaring_gaze": {
             "name": "Ensnaring Gaze",
@@ -2844,7 +3082,8 @@
                 "Iansan",
                 "Skirk"
             ],
-            "image": "Item_Ensnaring_Gaze.png"
+            "image": "Item_Ensnaring_Gaze.png",
+            "image_ts": "20241118063116"
         },
         "nb_talisman": {
             "name": "Talisman of the Enigmatic Land",
@@ -2853,7 +3092,8 @@
                 "Citlali",
                 "Yumemizuki Mizuki"
             ],
-            "image": "Item_Talisman_of_the_Enigmatic_Land.png"
+            "image": "Item_Talisman_of_the_Enigmatic_Land.png",
+            "image_ts": "20241230093813"
         },
         "nb_sparkless_statue_core": {
             "name": "Sparkless Statue Core",
@@ -2862,7 +3102,8 @@
                 "Ifa",
                 "Varesa"
             ],
-            "image": "Item_Sparkless_Statue_Core.png"
+            "image": "Item_Sparkless_Statue_Core.png",
+            "image_ts": "20250324130253"
         },
         "nb_secret_source_airflow_accumulator": {
             "name": "Secret Source Airflow Accumulator",
@@ -2872,7 +3113,8 @@
                 "Escoffier",
                 "Ineffa"
             ],
-            "image": "Item_Secret_Source_Airflow_Accumulator.png"
+            "image": "Item_Secret_Source_Airflow_Accumulator.png",
+            "image_ts": "20250507020838"
         },
         "nb_lightbearing_scale_feather": {
             "name": "Lightbearing Scale-Feather",
@@ -2881,7 +3123,8 @@
                 "Jahoda",
                 "Lauma"
             ],
-            "image": "Item_Lightbearing_Scale-Feather.png"
+            "image": "Item_Lightbearing_Scale-Feather.png",
+            "image_ts": "20250908130703"
         },
         "nb_stamping_die": {
             "name": "Precision Kuuvahki Stamping Die",
@@ -2890,7 +3133,8 @@
                 "Aino",
                 "Flins"
             ],
-            "image": "Item_Precision_Kuuvahki_Stamping_Die.png"
+            "image": "Item_Precision_Kuuvahki_Stamping_Die.png",
+            "image_ts": "20250908130723"
         },
         "nb_radiant_antler": {
             "name": "Radiant Antler",
@@ -2900,7 +3144,8 @@
                 "Nefer",
                 "Prune"
             ],
-            "image": "Item_Radiant_Antler.png"
+            "image": "Item_Radiant_Antler.png",
+            "image_ts": "20251020125207"
         },
         "nb_kuuvahki_core": {
             "name": "Cyclic Military Kuuvahki Core",
@@ -2909,7 +3154,8 @@
                 "Durin",
                 "Illuga"
             ],
-            "image": "Item_Cyclic_Military_Kuuvahki_Core.png"
+            "image": "Item_Cyclic_Military_Kuuvahki_Core.png",
+            "image_ts": "20251201134534"
         },
         "nb_dreadwing_remnant": {
             "name": "Remnant of the Dreadwing",
@@ -2918,7 +3164,8 @@
                 "Nicole",
                 "Zibai"
             ],
-            "image": "Item_Remnant_of_the_Dreadwing.png"
+            "image": "Item_Remnant_of_the_Dreadwing.png",
+            "image_ts": "20260116144307"
         },
         "nb_severed_tail": {
             "name": "Prismatic Severed Tail",
@@ -2927,7 +3174,8 @@
                 "Lohen",
                 "Varka"
             ],
-            "image": "Item_Prismatic_Severed_Tail.png"
+            "image": "Item_Prismatic_Severed_Tail.png",
+            "image_ts": "20260224031041"
         },
         "nb_plume_watcher": {
             "name": "Plume of the Fallen Watcher",
@@ -2936,7 +3184,8 @@
                 "Linnea",
                 "Sandrone"
             ],
-            "image": "Item_Plume_of_the_Fallen_Watcher.png"
+            "image": "Item_Plume_of_the_Fallen_Watcher.png",
+            "image_ts": "20260406055456"
         },
         "nb_unscorched_blossom_branch": {
             "name": "Unscorched Blossom Branch",
@@ -2945,7 +3194,8 @@
                 "Odette",
                 "Vodyanitsa"
             ],
-            "image": "Item_Unscorched_Blossom_Branch.png"
+            "image": "Item_Unscorched_Blossom_Branch.png",
+            "image_ts": "20260812042033"
         },
         "nb_sky_roamer": {
             "name": "Severed Tail of the Sky-Roamer",
@@ -2954,7 +3204,8 @@
                 "Alyosha",
                 "Valeriy"
             ],
-            "image": "Item_Severed_Tail_of_the_Sky-Roamer.png"
+            "image": "Item_Severed_Tail_of_the_Sky-Roamer.png",
+            "image_ts": "20260812042040"
         },
         "nb_vagabonds_cracked_armor": {
             "name": "Vagabond's Cracked Armor",
@@ -2962,7 +3213,8 @@
             "characters": [
                 "Vesna"
             ],
-            "image": "Item_Vagabond's_Cracked_Armor.png"
+            "image": "Item_Vagabond's_Cracked_Armor.png",
+            "image_ts": "20260921051535"
         },
         "nb_stability_anchor": {
             "name": "Shattered Stability Anchor",
@@ -2971,7 +3223,8 @@
                 "Anastasya",
                 "Mitya"
             ],
-            "image": "Item_Shattered_Stability_Anchor.png"
+            "image": "Item_Shattered_Stability_Anchor.png",
+            "image_ts": "20261104034830"
         },
         "nb_damaged_flint": {
             "name": "Damaged Flint",
@@ -2979,7 +3232,8 @@
             "characters": [
                 "Danica"
             ],
-            "image": null
+            "image": null,
+            "image_ts": null
         },
         "wb_dvalin_plume": {
             "name": "Dvalin's Plume",
@@ -2989,7 +3243,8 @@
                 "Diluc",
                 "Jean"
             ],
-            "image": "Item_Dvalin's_Plume.png"
+            "image": "Item_Dvalin's_Plume.png",
+            "image_ts": "20210106070312"
         },
         "wb_dvalin_claw": {
             "name": "Dvalin's Claw",
@@ -3000,7 +3255,8 @@
                 "Razor",
                 "Xiangling"
             ],
-            "image": "Item_Dvalin's_Claw.png"
+            "image": "Item_Dvalin's_Claw.png",
+            "image_ts": "20210106070324"
         },
         "wb_dvalin_sigh": {
             "name": "Dvalin's Sigh",
@@ -3012,7 +3268,8 @@
                 "Traveler (Anemo)",
                 "Traveler (Geo)"
             ],
-            "image": "Item_Dvalin's_Sigh.png"
+            "image": "Item_Dvalin's_Sigh.png",
+            "image_ts": "20210106070339"
         },
         "wb_boreas_tail": {
             "name": "Tail of Boreas",
@@ -3023,7 +3280,8 @@
                 "Venti",
                 "Xingqiu"
             ],
-            "image": "Item_Tail_of_Boreas.png"
+            "image": "Item_Tail_of_Boreas.png",
+            "image_ts": "20210106070608"
         },
         "wb_boreas_ring": {
             "name": "Ring of Boreas",
@@ -3034,7 +3292,8 @@
                 "Klee",
                 "Mona"
             ],
-            "image": "Item_Ring_of_Boreas.png"
+            "image": "Item_Ring_of_Boreas.png",
+            "image_ts": "20210106070626"
         },
         "wb_boreas_locket": {
             "name": "Spirit Locket of Boreas",
@@ -3045,7 +3304,8 @@
                 "Ningguang",
                 "Sucrose"
             ],
-            "image": "Item_Spirit_Locket_of_Boreas.png"
+            "image": "Item_Spirit_Locket_of_Boreas.png",
+            "image_ts": "20210106070646"
         },
         "wb_tusk_of_monoceros_caeli": {
             "name": "Tusk of Monoceros Caeli",
@@ -3055,7 +3315,8 @@
                 "Xinyan",
                 "Zhongli"
             ],
-            "image": "Item_Tusk_of_Monoceros_Caeli.png"
+            "image": "Item_Tusk_of_Monoceros_Caeli.png",
+            "image_ts": "20210106065134"
         },
         "wb_shard_of_foul_legacy": {
             "name": "Shard of a Foul Legacy",
@@ -3065,7 +3326,8 @@
                 "Hu Tao",
                 "Tartaglia"
             ],
-            "image": "Item_Shard_of_a_Foul_Legacy.png"
+            "image": "Item_Shard_of_a_Foul_Legacy.png",
+            "image_ts": "20210106065904"
         },
         "wb_shadow_of_warrior": {
             "name": "Shadow of the Warrior",
@@ -3075,7 +3337,8 @@
                 "Rosaria",
                 "Xiao"
             ],
-            "image": "Item_Shadow_of_the_Warrior.png"
+            "image": "Item_Shadow_of_the_Warrior.png",
+            "image_ts": "20210106065852"
         },
         "wb_dragon_lord_crown": {
             "name": "Dragon Lord's Crown",
@@ -3085,7 +3348,8 @@
                 "Traveler (Electro)",
                 "Yoimiya"
             ],
-            "image": "Item_Dragon_Lord's_Crown.png"
+            "image": "Item_Dragon_Lord's_Crown.png",
+            "image_ts": "20210428025402"
         },
         "wb_bloodjade_branch": {
             "name": "Bloodjade Branch",
@@ -3095,7 +3359,8 @@
                 "Kamisato Ayaka",
                 "Yanfei"
             ],
-            "image": "Item_Bloodjade_Branch.png"
+            "image": "Item_Bloodjade_Branch.png",
+            "image_ts": "20210428025400"
         },
         "wb_gilded_scale": {
             "name": "Gilded Scale",
@@ -3105,7 +3370,8 @@
                 "Sayu",
                 "Yelan"
             ],
-            "image": "Item_Gilded_Scale.png"
+            "image": "Item_Gilded_Scale.png",
+            "image_ts": "20210428025411"
         },
         "wb_molten_moment": {
             "name": "Molten Moment",
@@ -3115,7 +3381,8 @@
                 "Gorou",
                 "Raiden Shogun"
             ],
-            "image": "Item_Molten_Moment.png"
+            "image": "Item_Molten_Moment.png",
+            "image_ts": "20210901124429"
         },
         "wb_hellfire_butterfly": {
             "name": "Hellfire Butterfly",
@@ -3125,7 +3392,8 @@
                 "Shenhe",
                 "Thoma"
             ],
-            "image": "Item_Hellfire_Butterfly.png"
+            "image": "Item_Hellfire_Butterfly.png",
+            "image_ts": "20210901025358"
         },
         "wb_ashen_heart": {
             "name": "Ashen Heart",
@@ -3135,7 +3403,8 @@
                 "Kujou Sara",
                 "Yun Jin"
             ],
-            "image": "Item_Ashen_Heart.png"
+            "image": "Item_Ashen_Heart.png",
+            "image_ts": "20210901124352"
         },
         "wb_meaning_of_aeons": {
             "name": "The Meaning of Aeons",
@@ -3145,7 +3414,8 @@
                 "Tighnari",
                 "Yae Miko"
             ],
-            "image": "Item_The_Meaning_of_Aeons.png"
+            "image": "Item_The_Meaning_of_Aeons.png",
+            "image_ts": "20220216042358"
         },
         "wb_mudra_of_malefic_general": {
             "name": "Mudra of the Malefic General",
@@ -3155,7 +3425,8 @@
                 "Kamisato Ayato",
                 "Traveler (Dendro)"
             ],
-            "image": "Item_Mudra_of_the_Malefic_General.png"
+            "image": "Item_Mudra_of_the_Malefic_General.png",
+            "image_ts": "20220216042355"
         },
         "wb_tears_of_calamitous_god": {
             "name": "Tears of the Calamitous God",
@@ -3166,7 +3437,8 @@
                 "Kuki Shinobu",
                 "Nilou"
             ],
-            "image": "Item_Tears_of_the_Calamitous_God.png"
+            "image": "Item_Tears_of_the_Calamitous_God.png",
+            "image_ts": "20220216042400"
         },
         "wb_puppet_strings": {
             "name": "Puppet Strings",
@@ -3176,7 +3448,8 @@
                 "Faruzan",
                 "Nahida"
             ],
-            "image": "Item_Puppet_Strings.png"
+            "image": "Item_Puppet_Strings.png",
+            "image_ts": "20221102024633"
         },
         "wb_dakas_bell": {
             "name": "Daka's Bell",
@@ -3186,7 +3459,8 @@
                 "Sethos",
                 "Yaoyao"
             ],
-            "image": "Item_Daka's_Bell.png"
+            "image": "Item_Daka's_Bell.png",
+            "image_ts": "20221102024629"
         },
         "wb_mirror_of_mushin": {
             "name": "Mirror of Mushin",
@@ -3197,7 +3471,8 @@
                 "Wanderer",
                 "Xilonen"
             ],
-            "image": "Item_Mirror_of_Mushin.png"
+            "image": "Item_Mirror_of_Mushin.png",
+            "image_ts": "20221102024631"
         },
         "wb_worldspan_fern": {
             "name": "Worldspan Fern",
@@ -3207,7 +3482,8 @@
                 "Freminet",
                 "Traveler (Hydro)"
             ],
-            "image": "Item_Worldspan_Fern.png"
+            "image": "Item_Worldspan_Fern.png",
+            "image_ts": "20230412040501"
         },
         "wb_primordial_greenbloom": {
             "name": "Primordial Greenbloom",
@@ -3217,7 +3493,8 @@
                 "Lyney",
                 "Wriothesley"
             ],
-            "image": "Item_Primordial_Greenbloom.png"
+            "image": "Item_Primordial_Greenbloom.png",
+            "image_ts": "20230412040503"
         },
         "wb_everamber": {
             "name": "Everamber",
@@ -3228,7 +3505,8 @@
                 "Lynette",
                 "Neuvillette"
             ],
-            "image": "Item_Everamber.png"
+            "image": "Item_Everamber.png",
+            "image_ts": "20230412040505"
         },
         "wb_ptahur_string": {
             "name": "Lightless Silk String",
@@ -3239,7 +3517,8 @@
                 "Navia",
                 "Ororon"
             ],
-            "image": "Item_Lightless_Silk_String.png"
+            "image": "Item_Lightless_Silk_String.png",
+            "image_ts": "20231108111228"
         },
         "wb_ptahur_eye": {
             "name": "Lightless Eye of the Maelstrom",
@@ -3249,7 +3528,8 @@
                 "Sigewinne",
                 "Xianyun"
             ],
-            "image": "Item_Lightless_Eye_of_the_Maelstrom.png"
+            "image": "Item_Lightless_Eye_of_the_Maelstrom.png",
+            "image_ts": "20231108111335"
         },
         "wb_ptahur_mass": {
             "name": "Lightless Mass",
@@ -3259,7 +3539,8 @@
                 "Gaming",
                 "Mualani"
             ],
-            "image": "Item_Lightless_Mass.png"
+            "image": "Item_Lightless_Mass.png",
+            "image_ts": "20231108111408"
         },
         "wb_fading_candle": {
             "name": "Fading Candle",
@@ -3269,7 +3550,8 @@
                 "Kachina",
                 "Yumemizuki Mizuki"
             ],
-            "image": "Item_Fading_Candle.png"
+            "image": "Item_Fading_Candle.png",
+            "image_ts": "20240424065933"
         },
         "wb_silken_feather": {
             "name": "Silken Feather",
@@ -3279,7 +3561,8 @@
                 "Chasca",
                 "Emilie"
             ],
-            "image": "Item_Silken_Feather.png"
+            "image": "Item_Silken_Feather.png",
+            "image_ts": "20240424065947"
         },
         "wb_denial_and_judgment": {
             "name": "Denial and Judgment",
@@ -3289,7 +3572,8 @@
                 "Iansan",
                 "Kinich"
             ],
-            "image": "Item_Denial_and_Judgment.png"
+            "image": "Item_Denial_and_Judgment.png",
+            "image_ts": "20240424065958"
         },
         "wb_eroded_horn": {
             "name": "Eroded Horn",
@@ -3299,7 +3583,8 @@
                 "Illuga",
                 "Mavuika"
             ],
-            "image": "Item_Eroded_Horn.png"
+            "image": "Item_Eroded_Horn.png",
+            "image_ts": "20241230093811"
         },
         "wb_eroded_sunfire": {
             "name": "Eroded Sunfire",
@@ -3309,7 +3594,8 @@
                 "Ineffa",
                 "Lan Yan"
             ],
-            "image": "Item_Eroded_Sunfire.png"
+            "image": "Item_Eroded_Sunfire.png",
+            "image_ts": "20250101062958"
         },
         "wb_eroded_scalefeather": {
             "name": "Eroded Scale-Feather",
@@ -3319,7 +3605,8 @@
                 "Lauma",
                 "Varesa"
             ],
-            "image": "Item_Eroded_Scale-Feather.png"
+            "image": "Item_Eroded_Scale-Feather.png",
+            "image_ts": "20250101063055"
         },
         "wb_chess_knight": {
             "name": "Ascended Sample: Knight",
@@ -3329,7 +3616,8 @@
                 "Lohen",
                 "Skirk"
             ],
-            "image": "Item_Ascended_Sample_Knight.png"
+            "image": "Item_Ascended_Sample_Knight.png",
+            "image_ts": "20250507020840"
         },
         "wb_chess_rook": {
             "name": "Ascended Sample: Rook",
@@ -3339,7 +3627,8 @@
                 "Nefer",
                 "Varka"
             ],
-            "image": "Item_Ascended_Sample_Rook.png"
+            "image": "Item_Ascended_Sample_Rook.png",
+            "image_ts": "20250507020842"
         },
         "wb_chess_queen": {
             "name": "Ascended Sample: Queen",
@@ -3349,7 +3638,8 @@
                 "Traveler (Cryo)",
                 "Zibai"
             ],
-            "image": "Item_Ascended_Sample_Queen.png"
+            "image": "Item_Ascended_Sample_Queen.png",
+            "image_ts": "20250507020844"
         },
         "wb_doctor_mask": {
             "name": "Mask of the Virtuous Doctor",
@@ -3359,7 +3649,8 @@
                 "Mitya",
                 "Prune"
             ],
-            "image": "Item_Mask_of_the_Virtuous_Doctor.png"
+            "image": "Item_Mask_of_the_Virtuous_Doctor.png",
+            "image_ts": "20260114111517"
         },
         "wb_doctor_belt": {
             "name": "Madman's Restraint",
@@ -3368,7 +3659,8 @@
                 "Sandrone",
                 "Vodyanitsa"
             ],
-            "image": "Item_Madman's_Restraint.png"
+            "image": "Item_Madman's_Restraint.png",
+            "image_ts": "20260114111510"
         },
         "wb_doctor_buttplug": {
             "name": "Elixir of the Heretic",
@@ -3377,7 +3669,8 @@
                 "Alyosha",
                 "Linnea"
             ],
-            "image": "Item_Elixir_of_the_Heretic.png"
+            "image": "Item_Elixir_of_the_Heretic.png",
+            "image_ts": "20260114111450"
         },
         "wb_doctor_2_egg": {
             "name": "Counterfeit Resin",
@@ -3386,7 +3679,8 @@
                 "Nicole",
                 "Valeriy"
             ],
-            "image": "Item_Counterfeit_Resin.png"
+            "image": "Item_Counterfeit_Resin.png",
+            "image_ts": "20260518230247"
         },
         "wb_doctor_2_sprout": {
             "name": "Profaned Sprout",
@@ -3394,7 +3688,8 @@
             "characters": [
                 "Vesna"
             ],
-            "image": "Item_Profaned_Sprout.png"
+            "image": "Item_Profaned_Sprout.png",
+            "image_ts": "20260520082158"
         },
         "wb_doctor_2_branch": {
             "name": "Twisted Withered Branch",
@@ -3403,13 +3698,15 @@
                 "Danica",
                 "Odette"
             ],
-            "image": "Item_Twisted_Withered_Branch.png"
+            "image": "Item_Twisted_Withered_Branch.png",
+            "image_ts": "20260520082135"
         },
         "wb_metatron_1": {
             "name": "???",
             "type": "weekly_bosses",
             "characters": [],
-            "image": null
+            "image": null,
+            "image_ts": null
         },
         "wb_metatron_2": {
             "name": "???",
@@ -3417,13 +3714,15 @@
             "characters": [
                 "Anastasya"
             ],
-            "image": null
+            "image": null,
+            "image_ts": null
         },
         "wb_metatron_3": {
             "name": "???",
             "type": "weekly_bosses",
             "characters": [],
-            "image": null
+            "image": null,
+            "image_ts": null
         }
     },
     "common_enemy_drops": {
@@ -3444,7 +3743,8 @@
                 "Shenhe",
                 "Sucrose"
             ],
-            "image": "Item_Energy_Nectar.png"
+            "image": "Item_Energy_Nectar.png",
+            "image_ts": "20210112155010"
         },
         "c_scroll": {
             "name": "Forbidden Curse Scroll",
@@ -3464,7 +3764,8 @@
                 "Xianyun",
                 "Yoimiya"
             ],
-            "image": "Item_Forbidden_Curse_Scroll.png"
+            "image": "Item_Forbidden_Curse_Scroll.png",
+            "image_ts": "20210106065540"
         },
         "c_raven_insignia": {
             "name": "Golden Raven Insignia",
@@ -3483,7 +3784,8 @@
                 "Xinyan",
                 "Yanfei"
             ],
-            "image": "Item_Golden_Raven_Insignia.png"
+            "image": "Item_Golden_Raven_Insignia.png",
+            "image_ts": "20210109220636"
         },
         "c_fatui_insignia": {
             "name": "Lieutenant's Insignia",
@@ -3503,7 +3805,8 @@
                 "Tartaglia",
                 "Yelan"
             ],
-            "image": "Item_Lieutenant's_Insignia.png"
+            "image": "Item_Lieutenant's_Insignia.png",
+            "image_ts": "20210109220723"
         },
         "c_mask": {
             "name": "Ominous Mask",
@@ -3522,7 +3825,8 @@
                 "Xingqiu",
                 "Yun Jin"
             ],
-            "image": "Item_Ominous_Mask.png"
+            "image": "Item_Ominous_Mask.png",
+            "image_ts": "20210110031519"
         },
         "c_slime": {
             "name": "Slime Concentrate",
@@ -3541,7 +3845,8 @@
                 "Yaoyao",
                 "Zhongli"
             ],
-            "image": "Item_Slime_Concentrate.png"
+            "image": "Item_Slime_Concentrate.png",
+            "image_ts": "20210109220909"
         },
         "c_arrowhead": {
             "name": "Weathered Arrowhead",
@@ -3558,7 +3863,8 @@
                 "Lohen",
                 "Traveler (Geo)"
             ],
-            "image": "Item_Weathered_Arrowhead.png"
+            "image": "Item_Weathered_Arrowhead.png",
+            "image_ts": "20201210053107"
         },
         "c_handguard": {
             "name": "Famed Handguard",
@@ -3576,7 +3882,8 @@
                 "Yae Miko",
                 "Yumemizuki Mizuki"
             ],
-            "image": "Item_Famed_Handguard.png"
+            "image": "Item_Famed_Handguard.png",
+            "image_ts": "20210721030100"
         },
         "c_spectral": {
             "name": "Spectral Nucleus",
@@ -3592,7 +3899,8 @@
                 "Kuki Shinobu",
                 "Sangonomiya Kokomi"
             ],
-            "image": "Item_Spectral_Nucleus.png"
+            "image": "Item_Spectral_Nucleus.png",
+            "image_ts": "20210901025329"
         },
         "c_fungus": {
             "name": "Crystalline Cyst Dust",
@@ -3608,7 +3916,8 @@
                 "Tighnari",
                 "Traveler (Dendro)"
             ],
-            "image": "Item_Crystalline_Cyst_Dust.png"
+            "image": "Item_Crystalline_Cyst_Dust.png",
+            "image_ts": "20220330025520"
         },
         "c_brocade": {
             "name": "Rich Red Brocade",
@@ -3624,7 +3933,8 @@
                 "Faruzan",
                 "Sethos"
             ],
-            "image": "Item_Rich_Red_Brocade.png"
+            "image": "Item_Rich_Red_Brocade.png",
+            "image_ts": "20220824030640"
         },
         "c_gear": {
             "name": "Artificed Dynamic Gear",
@@ -3641,7 +3951,8 @@
                 "Skirk",
                 "Wriothesley"
             ],
-            "image": "Item_Artificed_Dynamic_Gear.png"
+            "image": "Item_Artificed_Dynamic_Gear.png",
+            "image_ts": "20230816064908"
         },
         "c_xenochromatic": {
             "name": "Xenochromatic Crystal",
@@ -3657,7 +3968,8 @@
                 "Sigewinne",
                 "Traveler (Hydro)"
             ],
-            "image": "Item_Xenochromatic_Crystal.png"
+            "image": "Item_Xenochromatic_Crystal.png",
+            "image_ts": "20230816173214"
         },
         "c_whistle": {
             "name": "Saurian-Crowned Warrior's Golden Whistle",
@@ -3674,7 +3986,8 @@
                 "Traveler (Pyro)",
                 "Xilonen"
             ],
-            "image": "Item_Saurian-Crowned_Warrior's_Golden_Whistle.png"
+            "image": "Item_Saurian-Crowned_Warrior's_Golden_Whistle.png",
+            "image_ts": "20240828075330"
         },
         "c_fang": {
             "name": "Tyrant's Fang",
@@ -3690,7 +4003,8 @@
                 "Ororon",
                 "Varesa"
             ],
-            "image": "Item_Tyrant's_Fang.png"
+            "image": "Item_Tyrant's_Fang.png",
+            "image_ts": "20240828080048"
         },
         "c_warrant": {
             "name": "Frost-Etched Warrant",
@@ -3706,7 +4020,8 @@
                 "Nicole",
                 "Zibai"
             ],
-            "image": "Item_Frost-Etched_Warrant.png"
+            "image": "Item_Frost-Etched_Warrant.png",
+            "image_ts": "20250910051731"
         },
         "c_drive_shaft": {
             "name": "Precision Drive Shaft",
@@ -3722,7 +4037,8 @@
                 "Sandrone",
                 "Varka"
             ],
-            "image": "Item_Precision_Drive_Shaft.png"
+            "image": "Item_Precision_Drive_Shaft.png",
+            "image_ts": "20250910053126"
         },
         "c_ethereal": {
             "name": "Ethereal Crystalscale Stone",
@@ -3736,7 +4052,8 @@
                 "Valeriy",
                 "Vesna"
             ],
-            "image": "Item_Ethereal_Crystalscale_Stone.png"
+            "image": "Item_Ethereal_Crystalscale_Stone.png",
+            "image_ts": "20260812041903"
         },
         "c_chimeric": {
             "name": "Prime Chimeric Nexus",
@@ -3751,7 +4068,8 @@
                 "Traveler (Cryo)",
                 "Vodyanitsa"
             ],
-            "image": "Item_Prime_Chimeric_Nexus.png"
+            "image": "Item_Prime_Chimeric_Nexus.png",
+            "image_ts": "20260812041910"
         }
     },
     "specialties": {
@@ -3763,7 +4081,8 @@
                 "Diona",
                 "Kaeya"
             ],
-            "image": "Item_Calla_Lily.png"
+            "image": "Item_Calla_Lily.png",
+            "image_ts": "20210109070804"
         },
         "s_wolfhook": {
             "name": "Wolfhook",
@@ -3773,7 +4092,8 @@
                 "Razor",
                 "Varka"
             ],
-            "image": "Item_Wolfhook.png"
+            "image": "Item_Wolfhook.png",
+            "image_ts": "20201217082557"
         },
         "s_valberry": {
             "name": "Valberry",
@@ -3783,7 +4103,8 @@
                 "Noelle",
                 "Rosaria"
             ],
-            "image": "Item_Valberry.png"
+            "image": "Item_Valberry.png",
+            "image_ts": "20210109223310"
         },
         "s_cecilia": {
             "name": "Cecilia",
@@ -3792,7 +4113,8 @@
                 "Albedo",
                 "Venti"
             ],
-            "image": "Item_Cecilia.png"
+            "image": "Item_Cecilia.png",
+            "image_ts": "20210109070744"
         },
         "s_windwheel_aster": {
             "name": "Windwheel Aster",
@@ -3802,7 +4124,8 @@
                 "Sucrose",
                 "Traveler"
             ],
-            "image": "Item_Windwheel_Aster.png"
+            "image": "Item_Windwheel_Aster.png",
+            "image_ts": "20201202043659"
         },
         "s_philanemo_mushroom": {
             "name": "Philanemo Mushroom",
@@ -3812,7 +4135,8 @@
                 "Klee",
                 "Mona"
             ],
-            "image": "Item_Philanemo_Mushroom.png"
+            "image": "Item_Philanemo_Mushroom.png",
+            "image_ts": "20201202043419"
         },
         "s_small_lamp_grass": {
             "name": "Small Lamp Grass",
@@ -3822,7 +4146,8 @@
                 "Diluc",
                 "Fischl"
             ],
-            "image": "Item_Small_Lamp_Grass.png"
+            "image": "Item_Small_Lamp_Grass.png",
+            "image_ts": "20220615200026"
         },
         "s_dandelion_seed": {
             "name": "Dandelion Seed",
@@ -3831,7 +4156,8 @@
                 "Eula",
                 "Jean"
             ],
-            "image": "Item_Dandelion_Seed.png"
+            "image": "Item_Dandelion_Seed.png",
+            "image_ts": "20201116214716"
         },
         "s_etherwing_moth": {
             "name": "Etherwing Moth",
@@ -3840,7 +4166,8 @@
                 "Linnea",
                 "Lohen"
             ],
-            "image": "Item_Etherwing_Moth.png"
+            "image": "Item_Etherwing_Moth.png",
+            "image_ts": "20260406055501"
         },
         "s_jueyun_chili": {
             "name": "Jueyun Chili",
@@ -3849,7 +4176,8 @@
                 "Xiangling",
                 "Yaoyao"
             ],
-            "image": "Item_Jueyun_Chili.png"
+            "image": "Item_Jueyun_Chili.png",
+            "image_ts": "20210106075539"
         },
         "s_noctilucous_jade": {
             "name": "Noctilucous Jade",
@@ -3858,7 +4186,8 @@
                 "Beidou",
                 "Yanfei"
             ],
-            "image": "Item_Noctilucous_Jade.png"
+            "image": "Item_Noctilucous_Jade.png",
+            "image_ts": "20210109215455"
         },
         "s_silk_flower": {
             "name": "Silk Flower",
@@ -3867,7 +4196,8 @@
                 "Hu Tao",
                 "Xingqiu"
             ],
-            "image": "Item_Silk_Flower.png"
+            "image": "Item_Silk_Flower.png",
+            "image_ts": "20201116223811"
         },
         "s_glaze_lily": {
             "name": "Glaze Lily",
@@ -3877,7 +4207,8 @@
                 "Yun Jin",
                 "Zibai"
             ],
-            "image": "Item_Glaze_Lily.png"
+            "image": "Item_Glaze_Lily.png",
+            "image_ts": "20201117074109"
         },
         "s_qingxin": {
             "name": "Qingxin",
@@ -3887,7 +4218,8 @@
                 "Shenhe",
                 "Xiao"
             ],
-            "image": "Item_Qingxin.png"
+            "image": "Item_Qingxin.png",
+            "image_ts": "20201125222236"
         },
         "s_starconch": {
             "name": "Starconch",
@@ -3897,7 +4229,8 @@
                 "Tartaglia",
                 "Yelan"
             ],
-            "image": "Item_Starconch.png"
+            "image": "Item_Starconch.png",
+            "image_ts": "20210109222738"
         },
         "s_violetgrass": {
             "name": "Violetgrass",
@@ -3907,7 +4240,8 @@
                 "Qiqi",
                 "Xinyan"
             ],
-            "image": "Item_Violetgrass.png"
+            "image": "Item_Violetgrass.png",
+            "image_ts": "20210109070539"
         },
         "s_cor_lapis": {
             "name": "Cor Lapis",
@@ -3917,7 +4251,8 @@
                 "Keqing",
                 "Zhongli"
             ],
-            "image": "Item_Cor_Lapis.png"
+            "image": "Item_Cor_Lapis.png",
+            "image_ts": "20201202043432"
         },
         "s_clearwater_jade": {
             "name": "Clearwater Jade",
@@ -3926,7 +4261,8 @@
                 "Lan Yan",
                 "Xianyun"
             ],
-            "image": "Item_Clearwater_Jade.png"
+            "image": "Item_Clearwater_Jade.png",
+            "image_ts": "20240131042352"
         },
         "s_onikabuto": {
             "name": "Onikabuto",
@@ -3935,7 +4271,8 @@
                 "Arataki Itto",
                 "Shikanoin Heizou"
             ],
-            "image": "Item_Onikabuto.png"
+            "image": "Item_Onikabuto.png",
+            "image_ts": "20201202212354"
         },
         "s_sakura_bloom": {
             "name": "Sakura Bloom",
@@ -3944,7 +4281,8 @@
                 "Kamisato Ayaka",
                 "Kamisato Ayato"
             ],
-            "image": "Item_Sakura_Bloom.png"
+            "image": "Item_Sakura_Bloom.png",
+            "image_ts": "20210721030842"
         },
         "s_crystal_marrow": {
             "name": "Crystal Marrow",
@@ -3953,7 +4291,8 @@
                 "Aloy",
                 "Sayu"
             ],
-            "image": "Item_Crystal_Marrow.png"
+            "image": "Item_Crystal_Marrow.png",
+            "image_ts": "20210721030827"
         },
         "s_dendrobium": {
             "name": "Dendrobium",
@@ -3962,7 +4301,8 @@
                 "Chiori",
                 "Kujou Sara"
             ],
-            "image": "Item_Dendrobium.png"
+            "image": "Item_Dendrobium.png",
+            "image_ts": "20210721030829"
         },
         "s_naku_weed": {
             "name": "Naku Weed",
@@ -3971,7 +4311,8 @@
                 "Kuki Shinobu",
                 "Yoimiya"
             ],
-            "image": "Item_Naku_Weed.png"
+            "image": "Item_Naku_Weed.png",
+            "image_ts": "20210721030833"
         },
         "s_sea_ganoderma": {
             "name": "Sea Ganoderma",
@@ -3981,7 +4322,8 @@
                 "Yae Miko",
                 "Yumemizuki Mizuki"
             ],
-            "image": "Item_Sea_Ganoderma.png"
+            "image": "Item_Sea_Ganoderma.png",
+            "image_ts": "20210610205502"
         },
         "s_sango_pearl": {
             "name": "Sango Pearl",
@@ -3990,7 +4332,8 @@
                 "Gorou",
                 "Sangonomiya Kokomi"
             ],
-            "image": "Item_Sango_Pearl.png"
+            "image": "Item_Sango_Pearl.png",
+            "image_ts": "20210901044949"
         },
         "s_amakumo_fruit": {
             "name": "Amakumo Fruit",
@@ -3999,7 +4342,8 @@
                 "Kirara",
                 "Raiden Shogun"
             ],
-            "image": "Item_Amakumo_Fruit.png"
+            "image": "Item_Amakumo_Fruit.png",
+            "image_ts": "20210901044920"
         },
         "s_fluorescent_fungus": {
             "name": "Fluorescent Fungus",
@@ -4007,7 +4351,8 @@
             "characters": [
                 "Thoma"
             ],
-            "image": "Item_Fluorescent_Fungus.png"
+            "image": "Item_Fluorescent_Fungus.png",
+            "image_ts": "20211013022216"
         },
         "s_rukkhashava_mushrooms": {
             "name": "Rukkhashava Mushrooms",
@@ -4016,7 +4361,8 @@
                 "Collei",
                 "Wanderer"
             ],
-            "image": "Item_Rukkhashava_Mushrooms.png"
+            "image": "Item_Rukkhashava_Mushrooms.png",
+            "image_ts": "20220824030650"
         },
         "s_padisarah": {
             "name": "Padisarah",
@@ -4024,7 +4370,8 @@
             "characters": [
                 "Nilou"
             ],
-            "image": "Item_Padisarah.png"
+            "image": "Item_Padisarah.png",
+            "image_ts": "20220825002319"
         },
         "s_nilotpala_lotus": {
             "name": "Nilotpala Lotus",
@@ -4033,7 +4380,8 @@
                 "Layla",
                 "Tighnari"
             ],
-            "image": "Item_Nilotpala_Lotus.png"
+            "image": "Item_Nilotpala_Lotus.png",
+            "image_ts": "20220824030643"
         },
         "s_kalpalata_lotus": {
             "name": "Kalpalata Lotus",
@@ -4042,7 +4390,8 @@
                 "Dori",
                 "Nahida"
             ],
-            "image": "Item_Kalpalata_Lotus.png"
+            "image": "Item_Kalpalata_Lotus.png",
+            "image_ts": "20220825002232"
         },
         "s_henna_berry": {
             "name": "Henna Berry",
@@ -4051,7 +4400,8 @@
                 "Candace",
                 "Faruzan"
             ],
-            "image": "Item_Henna_Berry.png"
+            "image": "Item_Henna_Berry.png",
+            "image_ts": "20220928040633"
         },
         "s_scarab": {
             "name": "Scarab",
@@ -4059,7 +4409,8 @@
             "characters": [
                 "Cyno"
             ],
-            "image": "Item_Scarab.png"
+            "image": "Item_Scarab.png",
+            "image_ts": "20220922042756"
         },
         "s_sand_grease_pupa": {
             "name": "Sand Grease Pupa",
@@ -4068,7 +4419,8 @@
                 "Alhaitham",
                 "Dehya"
             ],
-            "image": "Item_Sand_Grease_Pupa.png"
+            "image": "Item_Sand_Grease_Pupa.png",
+            "image_ts": "20230112042304"
         },
         "s_trishiraite": {
             "name": "Trishiraite",
@@ -4076,7 +4428,8 @@
             "characters": [
                 "Sethos"
             ],
-            "image": "Item_Trishiraite.png"
+            "image": "Item_Trishiraite.png",
+            "image_ts": "20230412090134"
         },
         "s_mourning_flower": {
             "name": "Mourning Flower",
@@ -4084,7 +4437,8 @@
             "characters": [
                 "Kaveh"
             ],
-            "image": "Item_Mourning_Flower.png"
+            "image": "Item_Mourning_Flower.png",
+            "image_ts": "20230412085653"
         },
         "s_beryl_conch": {
             "name": "Beryl Conch",
@@ -4093,7 +4447,8 @@
                 "Charlotte",
                 "Escoffier"
             ],
-            "image": "Item_Beryl_Conch.png"
+            "image": "Item_Beryl_Conch.png",
+            "image_ts": "20230816112157"
         },
         "s_romaritime_flower": {
             "name": "Romaritime Flower",
@@ -4102,7 +4457,8 @@
                 "Freminet",
                 "Sigewinne"
             ],
-            "image": "Item_Romaritime_Flower.png"
+            "image": "Item_Romaritime_Flower.png",
+            "image_ts": "20230816111945"
         },
         "s_lumidouce_bell": {
             "name": "Lumidouce Bell",
@@ -4111,7 +4467,8 @@
                 "Chevreuse",
                 "Lynette"
             ],
-            "image": "Item_Lumidouce_Bell.png"
+            "image": "Item_Lumidouce_Bell.png",
+            "image_ts": "20230816111936"
         },
         "s_rainbow_rose": {
             "name": "Rainbow Rose",
@@ -4120,7 +4477,8 @@
                 "Arlecchino",
                 "Lyney"
             ],
-            "image": "Item_Rainbow_Rose.png"
+            "image": "Item_Rainbow_Rose.png",
+            "image_ts": "20230814070419"
         },
         "s_lumitoile": {
             "name": "Lumitoile",
@@ -4129,7 +4487,8 @@
                 "Clorinde",
                 "Neuvillette"
             ],
-            "image": "Item_Lumitoile.png"
+            "image": "Item_Lumitoile.png",
+            "image_ts": "20230927093628"
         },
         "s_subdetection_unit": {
             "name": "Subdetection Unit",
@@ -4138,7 +4497,8 @@
                 "Sandrone",
                 "Wriothesley"
             ],
-            "image": "Item_Subdetection_Unit.png"
+            "image": "Item_Subdetection_Unit.png",
+            "image_ts": "20231001214501"
         },
         "s_lakelight_lily": {
             "name": "Lakelight Lily",
@@ -4147,7 +4507,8 @@
                 "Emilie",
                 "Furina"
             ],
-            "image": "Item_Lakelight_Lily.png"
+            "image": "Item_Lakelight_Lily.png",
+            "image_ts": "20231108113349"
         },
         "s_spring_of_the_first_dewdrop": {
             "name": "Spring of the First Dewdrop",
@@ -4155,7 +4516,8 @@
             "characters": [
                 "Navia"
             ],
-            "image": "Item_Spring_of_the_First_Dewdrop.png"
+            "image": "Item_Spring_of_the_First_Dewdrop.png",
+            "image_ts": "20231108200433"
         },
         "s_brilliant_chrysanthemum": {
             "name": "Brilliant Chrysanthemum",
@@ -4163,7 +4525,8 @@
             "characters": [
                 "Xilonen"
             ],
-            "image": "Item_Brilliant_Chrysanthemum.png"
+            "image": "Item_Brilliant_Chrysanthemum.png",
+            "image_ts": "20240828130138"
         },
         "s_quenepa_berry": {
             "name": "Quenepa Berry",
@@ -4172,7 +4535,8 @@
                 "Citlali",
                 "Kachina"
             ],
-            "image": "Item_Quenepa_Berry.png"
+            "image": "Item_Quenepa_Berry.png",
+            "image_ts": "20240826125020"
         },
         "s_saurian_claw_succulent": {
             "name": "Saurian Claw Succulent",
@@ -4181,7 +4545,8 @@
                 "Ifa",
                 "Kinich"
             ],
-            "image": "Item_Saurian_Claw_Succulent.png"
+            "image": "Item_Saurian_Claw_Succulent.png",
+            "image_ts": "20240828130259"
         },
         "s_sprayfeather_gill": {
             "name": "Sprayfeather Gill",
@@ -4189,7 +4554,8 @@
             "characters": [
                 "Mualani"
             ],
-            "image": "Item_Sprayfeather_Gill.png"
+            "image": "Item_Sprayfeather_Gill.png",
+            "image_ts": "20240828151213"
         },
         "s_withering_purpurbloom": {
             "name": "Withering Purpurbloom",
@@ -4198,7 +4564,8 @@
                 "Chasca",
                 "Mavuika"
             ],
-            "image": "Item_Withering_Purpurbloom.png"
+            "image": "Item_Withering_Purpurbloom.png",
+            "image_ts": "20241118063118"
         },
         "s_glowing_hornshroom": {
             "name": "Glowing Hornshroom",
@@ -4207,7 +4574,8 @@
                 "Ineffa",
                 "Ororon"
             ],
-            "image": "Item_Glowing_Hornshroom.png"
+            "image": "Item_Glowing_Hornshroom.png",
+            "image_ts": "20241118063120"
         },
         "s_skysplit_gembloom": {
             "name": "Skysplit Gembloom",
@@ -4216,7 +4584,8 @@
                 "Skirk",
                 "Varesa"
             ],
-            "image": "Item_Skysplit_Gembloom.png"
+            "image": "Item_Skysplit_Gembloom.png",
+            "image_ts": "20250324130248"
         },
         "s_dracolite": {
             "name": "Dracolite",
@@ -4224,7 +4593,8 @@
             "characters": [
                 "Iansan"
             ],
-            "image": "Item_Dracolite.png"
+            "image": "Item_Dracolite.png",
+            "image_ts": "20250324130255"
         },
         "s_frostlamp_flower": {
             "name": "Frostlamp Flower",
@@ -4233,7 +4603,8 @@
                 "Durin",
                 "Flins"
             ],
-            "image": "Item_Frostlamp_Flower.png"
+            "image": "Item_Frostlamp_Flower.png",
+            "image_ts": "20250910051913"
         },
         "s_moonfall_silver": {
             "name": "Moonfall Silver",
@@ -4242,7 +4613,8 @@
                 "Lauma",
                 "Nefer"
             ],
-            "image": "Item_Moonfall_Silver.png"
+            "image": "Item_Moonfall_Silver.png",
+            "image_ts": "20250910044732"
         },
         "s_portable_bearing": {
             "name": "Portable Bearing",
@@ -4251,7 +4623,8 @@
                 "Aino",
                 "Jahoda"
             ],
-            "image": "Item_Portable_Bearing.png"
+            "image": "Item_Portable_Bearing.png",
+            "image_ts": "20250908130714"
         },
         "s_winter_icelea": {
             "name": "Winter Icelea",
@@ -4260,7 +4633,8 @@
                 "Columbina",
                 "Prune"
             ],
-            "image": "Item_Winter_Icelea.png"
+            "image": "Item_Winter_Icelea.png",
+            "image_ts": "20260114025749"
         },
         "s_pine_amber": {
             "name": "Pine Amber",
@@ -4269,13 +4643,15 @@
                 "Illuga",
                 "Nicole"
             ],
-            "image": "Item_Pine_Amber.png"
+            "image": "Item_Pine_Amber.png",
+            "image_ts": "20260114200229"
         },
         "s_teardrop_of_the_moon": {
             "name": "Teardrop of the Moon",
             "region": "Nod-Krai",
             "characters": [],
-            "image": "Item_Teardrop_of_the_Moon.png"
+            "image": "Item_Teardrop_of_the_Moon.png",
+            "image_ts": "20260701210046"
         },
         "s_frostfairy_flower": {
             "name": "Frostfairy Flower",
@@ -4284,7 +4660,8 @@
                 "Odette",
                 "Vodyanitsa"
             ],
-            "image": "Item_Frostfairy_Flower.png"
+            "image": "Item_Frostfairy_Flower.png",
+            "image_ts": "20260810044803"
         },
         "s_flockingweed": {
             "name": "Flockingweed",
@@ -4293,7 +4670,8 @@
                 "Alyosha",
                 "Danica"
             ],
-            "image": "Item_Flockingweed.png"
+            "image": "Item_Flockingweed.png",
+            "image_ts": "20260810044810"
         },
         "s_golden_fern": {
             "name": "Golden Fern",
@@ -4301,7 +4679,8 @@
             "characters": [
                 "Vesna"
             ],
-            "image": "Item_Golden_Fern.png"
+            "image": "Item_Golden_Fern.png",
+            "image_ts": "20260813210024"
         },
         "s_fairy_wormwood": {
             "name": "Fairy Wormwood",
@@ -4310,7 +4689,8 @@
                 "Anastasya",
                 "Valeriy"
             ],
-            "image": "Item_Fairy_Wormwood.png"
+            "image": "Item_Fairy_Wormwood.png",
+            "image_ts": "20261104035008"
         },
         "s_kristallfold": {
             "name": "Kristallfold",
@@ -4318,7 +4698,8 @@
             "characters": [
                 "Mitya"
             ],
-            "image": "Item_Kristallfold.png"
+            "image": "Item_Kristallfold.png",
+            "image_ts": "20261104034753"
         }
     },
     "other_materials": {
@@ -4328,7 +4709,8 @@
             "characters": [
                 "Traveler (Pyro)"
             ],
-            "image": "Item_The_Cornerstone_of_Stars_and_Flames.png"
+            "image": "Item_The_Cornerstone_of_Stars_and_Flames.png",
+            "image_ts": "20240828084332"
         }
     }
 }

@@ -1,6 +1,6 @@
 {
-    "version": "7e97c2b",
-    "last_updated": "2026-11-06T06:00:43.393209Z",
+    "version": "86c863c",
+    "last_updated": "2026-11-06T07:05:17.437828Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -23,21 +23,25 @@
                     "release_version": null,
                     "release_date": null,
                     "photo": {
-                        "wiki": "Pulcinella Icon.png"
+                        "wiki": "Pulcinella Icon.png",
+                        "ts": "20260812053107"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Pulcinella Game.png"
+                            "wiki": "Character Pulcinella Game.png",
+                            "ts": "20260618124755"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Pulcinella Icon.png"
+                "wiki": "Pulcinella Icon.png",
+                "ts": "20260812053107"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Pulcinella Game.png"
+                    "wiki": "Character Pulcinella Game.png",
+                    "ts": "20260618124755"
                 }
             ],
             "is_released": false,
@@ -67,7 +71,8 @@
                     "release_version": null,
                     "release_date": null,
                     "photo": {
-                        "wiki": "Pantalone Icon.png"
+                        "wiki": "Pantalone Icon.png",
+                        "ts": "20260812053202"
                     },
                     "full_photo": [
                         {
@@ -77,7 +82,8 @@
                 }
             ],
             "photo": {
-                "wiki": "Pantalone Icon.png"
+                "wiki": "Pantalone Icon.png",
+                "ts": "20260812053202"
             },
             "full_photo": [
                 {
@@ -111,21 +117,25 @@
                     "release_version": null,
                     "release_date": null,
                     "photo": {
-                        "wiki": "Dainsleif Icon.png"
+                        "wiki": "Dainsleif Icon.png",
+                        "ts": "20240918215856"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Dainsleif Card.png"
+                            "wiki": "Dainsleif Card.png",
+                            "ts": "20260725020702"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Dainsleif Icon.png"
+                "wiki": "Dainsleif Icon.png",
+                "ts": "20240918215856"
             },
             "full_photo": [
                 {
-                    "wiki": "Dainsleif Card.png"
+                    "wiki": "Dainsleif Card.png",
+                    "ts": "20260725020702"
                 }
             ],
             "is_released": false,
@@ -157,7 +167,8 @@
                     "release_version": "7.5",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Noy Icon.png"
+                        "wiki": "Noy Icon.png",
+                        "ts": "20260814233047"
                     },
                     "full_photo": [
                         {
@@ -167,7 +178,8 @@
                 }
             ],
             "photo": {
-                "wiki": "Noy Icon.png"
+                "wiki": "Noy Icon.png",
+                "ts": "20260814233047"
             },
             "full_photo": [
                 {
@@ -199,7 +211,8 @@
                     "release_version": "7.3",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Danica Icon.png"
+                        "wiki": "Danica Icon.png",
+                        "ts": "20260923060858"
                     },
                     "full_photo": [
                         {
@@ -209,7 +222,8 @@
                 }
             ],
             "photo": {
-                "wiki": "Danica Icon.png"
+                "wiki": "Danica Icon.png",
+                "ts": "20260923060858"
             },
             "full_photo": [
                 {
@@ -241,7 +255,8 @@
                     "release_version": "7.3",
                     "release_date": null,
                     "photo": {
-                        "wiki": "Anastasya Icon.png"
+                        "wiki": "Anastasya Icon.png",
+                        "ts": "20260923062337"
                     },
                     "full_photo": [
                         {
@@ -251,7 +266,8 @@
                 }
             ],
             "photo": {
-                "wiki": "Anastasya Icon.png"
+                "wiki": "Anastasya Icon.png",
+                "ts": "20260923062337"
             },
             "full_photo": [
                 {
@@ -283,21 +299,25 @@
                     "release_version": "7.2",
                     "release_date": "2026-11-04",
                     "photo": {
-                        "wiki": "Valeriy Icon.png"
+                        "wiki": "Valeriy Icon.png",
+                        "ts": "20260812125818"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Valeriy Full Wish.png"
+                            "wiki": "Character Valeriy Full Wish.png",
+                            "ts": "20261104022919"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Valeriy Icon.png"
+                "wiki": "Valeriy Icon.png",
+                "ts": "20260812125818"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Valeriy Full Wish.png"
+                    "wiki": "Character Valeriy Full Wish.png",
+                    "ts": "20261104022919"
                 }
             ],
             "is_released": true,
@@ -325,21 +345,25 @@
                     "release_version": "7.2",
                     "release_date": "2026-11-04",
                     "photo": {
-                        "wiki": "Mitya Icon.png"
+                        "wiki": "Mitya Icon.png",
+                        "ts": "20260812125544"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mitya Full Wish.png"
+                            "wiki": "Character Mitya Full Wish.png",
+                            "ts": "20261104022843"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Mitya Icon.png"
+                "wiki": "Mitya Icon.png",
+                "ts": "20260812125544"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mitya Full Wish.png"
+                    "wiki": "Character Mitya Full Wish.png",
+                    "ts": "20261104022843"
                 }
             ],
             "is_released": true,
@@ -367,21 +391,25 @@
                     "release_version": "7.1",
                     "release_date": "2026-09-23",
                     "photo": {
-                        "wiki": "Vodyanitsa Icon.png"
+                        "wiki": "Vodyanitsa Icon.png",
+                        "ts": "20260813052739"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Vodyanitsa Full Wish.png"
+                            "wiki": "Character Vodyanitsa Full Wish.png",
+                            "ts": "20260923150212"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Vodyanitsa Icon.png"
+                "wiki": "Vodyanitsa Icon.png",
+                "ts": "20260813052739"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Vodyanitsa Full Wish.png"
+                    "wiki": "Character Vodyanitsa Full Wish.png",
+                    "ts": "20260923150212"
                 }
             ],
             "is_released": true,
@@ -409,21 +437,25 @@
                     "release_version": "7.1",
                     "release_date": "2026-09-23",
                     "photo": {
-                        "wiki": "Vesna Icon.png"
+                        "wiki": "Vesna Icon.png",
+                        "ts": "20260923061138"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Vesna Full Wish.png"
+                            "wiki": "Character Vesna Full Wish.png",
+                            "ts": "20260923150229"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Vesna Icon.png"
+                "wiki": "Vesna Icon.png",
+                "ts": "20260923061138"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Vesna Full Wish.png"
+                    "wiki": "Character Vesna Full Wish.png",
+                    "ts": "20260923150229"
                 }
             ],
             "is_released": true,
@@ -451,21 +483,25 @@
                     "release_version": "7.0",
                     "release_date": "2026-08-12",
                     "photo": {
-                        "wiki": "Odette Icon.png"
+                        "wiki": "Odette Icon.png",
+                        "ts": "20260812035719"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Odette Full Wish.png"
+                            "wiki": "Character Odette Full Wish.png",
+                            "ts": "20260812023535"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Odette Icon.png"
+                "wiki": "Odette Icon.png",
+                "ts": "20260812035719"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Odette Full Wish.png"
+                    "wiki": "Character Odette Full Wish.png",
+                    "ts": "20260812023535"
                 }
             ],
             "is_released": true,
@@ -493,21 +529,25 @@
                     "release_version": "7.0",
                     "release_date": "2026-08-12",
                     "photo": {
-                        "wiki": "Alyosha Icon.png"
+                        "wiki": "Alyosha Icon.png",
+                        "ts": "20260812035756"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Alyosha Full Wish.png"
+                            "wiki": "Character Alyosha Full Wish.png",
+                            "ts": "20260812023450"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Alyosha Icon.png"
+                "wiki": "Alyosha Icon.png",
+                "ts": "20260812035756"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Alyosha Full Wish.png"
+                    "wiki": "Character Alyosha Full Wish.png",
+                    "ts": "20260812023450"
                 }
             ],
             "is_released": true,
@@ -535,21 +575,25 @@
                     "release_version": "6.7",
                     "release_date": "2026-07-01",
                     "photo": {
-                        "wiki": "Sandrone Icon.png"
+                        "wiki": "Sandrone Icon.png",
+                        "ts": "20260701024112"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sandrone Full Wish.png"
+                            "wiki": "Character Sandrone Full Wish.png",
+                            "ts": "20260701022547"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sandrone Icon.png"
+                "wiki": "Sandrone Icon.png",
+                "ts": "20260701024112"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sandrone Full Wish.png"
+                    "wiki": "Character Sandrone Full Wish.png",
+                    "ts": "20260701022547"
                 }
             ],
             "is_released": true,
@@ -579,21 +623,25 @@
                     "release_version": "6.6",
                     "release_date": "2026-06-09",
                     "photo": {
-                        "wiki": "Lohen Icon.png"
+                        "wiki": "Lohen Icon.png",
+                        "ts": "20260521150129"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lohen Full Wish.png"
+                            "wiki": "Character Lohen Full Wish.png",
+                            "ts": "20260609190058"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lohen Icon.png"
+                "wiki": "Lohen Icon.png",
+                "ts": "20260521150129"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lohen Full Wish.png"
+                    "wiki": "Character Lohen Full Wish.png",
+                    "ts": "20260609190058"
                 }
             ],
             "is_released": true,
@@ -621,21 +669,25 @@
                     "release_version": "6.6",
                     "release_date": "2026-05-20",
                     "photo": {
-                        "wiki": "Prune Icon.png"
+                        "wiki": "Prune Icon.png",
+                        "ts": "20260520083549"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Prune Full Wish.png"
+                            "wiki": "Character Prune Full Wish.png",
+                            "ts": "20260520033209"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Prune Icon.png"
+                "wiki": "Prune Icon.png",
+                "ts": "20260520083549"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Prune Full Wish.png"
+                    "wiki": "Character Prune Full Wish.png",
+                    "ts": "20260520033209"
                 }
             ],
             "is_released": true,
@@ -663,21 +715,25 @@
                     "release_version": "6.6",
                     "release_date": "2026-05-20",
                     "photo": {
-                        "wiki": "Nicole Icon.png"
+                        "wiki": "Nicole Icon.png",
+                        "ts": "20260120013342"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Nicole Full Wish.png"
+                            "wiki": "Character Nicole Full Wish.png",
+                            "ts": "20260520033047"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Nicole Icon.png"
+                "wiki": "Nicole Icon.png",
+                "ts": "20260120013342"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Nicole Full Wish.png"
+                    "wiki": "Character Nicole Full Wish.png",
+                    "ts": "20260520033047"
                 }
             ],
             "is_released": true,
@@ -707,21 +763,25 @@
                     "release_version": "6.5",
                     "release_date": "2026-04-08",
                     "photo": {
-                        "wiki": "Linnea Icon.png"
+                        "wiki": "Linnea Icon.png",
+                        "ts": "20260408075838"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Linnea Full Wish.png"
+                            "wiki": "Character Linnea Full Wish.png",
+                            "ts": "20260408022449"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Linnea Icon.png"
+                "wiki": "Linnea Icon.png",
+                "ts": "20260408075838"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Linnea Full Wish.png"
+                    "wiki": "Character Linnea Full Wish.png",
+                    "ts": "20260408022449"
                 }
             ],
             "is_released": true,
@@ -749,21 +809,25 @@
                     "release_version": "6.4",
                     "release_date": "2026-02-25",
                     "photo": {
-                        "wiki": "Varka Icon.png"
+                        "wiki": "Varka Icon.png",
+                        "ts": "20260119061922"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Varka Full Wish.png"
+                            "wiki": "Character Varka Full Wish.png",
+                            "ts": "20260923150148"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Varka Icon.png"
+                "wiki": "Varka Icon.png",
+                "ts": "20260119061922"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Varka Full Wish.png"
+                    "wiki": "Character Varka Full Wish.png",
+                    "ts": "20260923150148"
                 }
             ],
             "is_released": true,
@@ -791,21 +855,25 @@
                     "release_version": "6.3",
                     "release_date": "2026-02-03",
                     "photo": {
-                        "wiki": "Zibai Icon.png"
+                        "wiki": "Zibai Icon.png",
+                        "ts": "20260203100351"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Zibai Full Wish.png"
+                            "wiki": "Character Zibai Full Wish.png",
+                            "ts": "20260204054047"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Zibai Icon.png"
+                "wiki": "Zibai Icon.png",
+                "ts": "20260203100351"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Zibai Full Wish.png"
+                    "wiki": "Character Zibai Full Wish.png",
+                    "ts": "20260204054047"
                 }
             ],
             "is_released": true,
@@ -833,21 +901,25 @@
                     "release_version": "6.3",
                     "release_date": "2026-02-03",
                     "photo": {
-                        "wiki": "Illuga Icon.png"
+                        "wiki": "Illuga Icon.png",
+                        "ts": "20260114054020"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Illuga Full Wish.png"
+                            "wiki": "Character Illuga Full Wish.png",
+                            "ts": "20260204150913"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Illuga Icon.png"
+                "wiki": "Illuga Icon.png",
+                "ts": "20260114054020"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Illuga Full Wish.png"
+                    "wiki": "Character Illuga Full Wish.png",
+                    "ts": "20260204150913"
                 }
             ],
             "is_released": true,
@@ -875,21 +947,25 @@
                     "release_version": "6.3",
                     "release_date": "2026-01-14",
                     "photo": {
-                        "wiki": "Columbina Icon.png"
+                        "wiki": "Columbina Icon.png",
+                        "ts": "20260114031143"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Columbina Full Wish.png"
+                            "wiki": "Character Columbina Full Wish.png",
+                            "ts": "20260114032707"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Columbina Icon.png"
+                "wiki": "Columbina Icon.png",
+                "ts": "20260114031143"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Columbina Full Wish.png"
+                    "wiki": "Character Columbina Full Wish.png",
+                    "ts": "20260114032707"
                 }
             ],
             "is_released": true,
@@ -920,21 +996,25 @@
                     "release_version": "6.2",
                     "release_date": "2025-12-03",
                     "photo": {
-                        "wiki": "Jahoda Icon.png"
+                        "wiki": "Jahoda Icon.png",
+                        "ts": "20250911004842"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jahoda Full Wish.png"
+                            "wiki": "Character Jahoda Full Wish.png",
+                            "ts": "20251203075728"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Jahoda Icon.png"
+                "wiki": "Jahoda Icon.png",
+                "ts": "20250911004842"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jahoda Full Wish.png"
+                    "wiki": "Character Jahoda Full Wish.png",
+                    "ts": "20251203075728"
                 }
             ],
             "is_released": true,
@@ -962,21 +1042,25 @@
                     "release_version": "6.2",
                     "release_date": "2025-12-03",
                     "photo": {
-                        "wiki": "Durin Icon.png"
+                        "wiki": "Durin Icon.png",
+                        "ts": "20251203043105"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Durin Full Wish.png"
+                            "wiki": "Character Durin Full Wish.png",
+                            "ts": "20251203075652"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Durin Icon.png"
+                "wiki": "Durin Icon.png",
+                "ts": "20251203043105"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Durin Full Wish.png"
+                    "wiki": "Character Durin Full Wish.png",
+                    "ts": "20251203075652"
                 }
             ],
             "is_released": true,
@@ -1004,21 +1088,25 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Nefer Icon.png"
+                        "wiki": "Nefer Icon.png",
+                        "ts": "20250911005040"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Nefer Full Wish.png"
+                            "wiki": "Character Nefer Full Wish.png",
+                            "ts": "20251022055546"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Nefer Icon.png"
+                "wiki": "Nefer Icon.png",
+                "ts": "20250911005040"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Nefer Full Wish.png"
+                    "wiki": "Character Nefer Full Wish.png",
+                    "ts": "20251022055546"
                 }
             ],
             "is_released": true,
@@ -1046,11 +1134,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1062,11 +1152,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1078,11 +1170,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1094,11 +1188,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1110,11 +1206,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1126,11 +1224,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 },
@@ -1142,21 +1242,25 @@
                     "release_version": "7.0",
                     "release_date": "2026-08-12",
                     "photo": {
-                        "wiki": "Manekina Icon.png"
+                        "wiki": "Manekina Icon.png",
+                        "ts": "20251022054637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekina Game.png"
+                            "wiki": "Character Manekina Game.png",
+                            "ts": "20260417031536"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Manekina Icon.png"
+                "wiki": "Manekina Icon.png",
+                "ts": "20251022054637"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Manekina Game.png"
+                    "wiki": "Character Manekina Game.png",
+                    "ts": "20260417031536"
                 }
             ],
             "is_released": true,
@@ -1184,11 +1288,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1200,11 +1306,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1216,11 +1324,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1232,11 +1342,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1248,11 +1360,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1264,11 +1378,13 @@
                     "release_version": "6.1",
                     "release_date": "2025-10-22",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 },
@@ -1280,21 +1396,25 @@
                     "release_version": "7.0",
                     "release_date": "2026-08-12",
                     "photo": {
-                        "wiki": "Manekin Icon.png"
+                        "wiki": "Manekin Icon.png",
+                        "ts": "20251022054536"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Manekin Game.png"
+                            "wiki": "Character Manekin Game.png",
+                            "ts": "20260417031449"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Manekin Icon.png"
+                "wiki": "Manekin Icon.png",
+                "ts": "20251022054536"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Manekin Game.png"
+                    "wiki": "Character Manekin Game.png",
+                    "ts": "20260417031449"
                 }
             ],
             "is_released": true,
@@ -1322,21 +1442,25 @@
                     "release_version": "6.0",
                     "release_date": "2025-09-30",
                     "photo": {
-                        "wiki": "Flins Icon.png"
+                        "wiki": "Flins Icon.png",
+                        "ts": "20250910175819"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Flins Full Wish.png"
+                            "wiki": "Character Flins Full Wish.png",
+                            "ts": "20251001053654"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Flins Icon.png"
+                "wiki": "Flins Icon.png",
+                "ts": "20250910175819"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Flins Full Wish.png"
+                    "wiki": "Character Flins Full Wish.png",
+                    "ts": "20251001053654"
                 }
             ],
             "is_released": true,
@@ -1364,21 +1488,25 @@
                     "release_version": "6.0",
                     "release_date": "2025-09-10",
                     "photo": {
-                        "wiki": "Lauma Icon.png"
+                        "wiki": "Lauma Icon.png",
+                        "ts": "20250910024154"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lauma Full Wish.png"
+                            "wiki": "Character Lauma Full Wish.png",
+                            "ts": "20250910053149"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lauma Icon.png"
+                "wiki": "Lauma Icon.png",
+                "ts": "20250910024154"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lauma Full Wish.png"
+                    "wiki": "Character Lauma Full Wish.png",
+                    "ts": "20250910053149"
                 }
             ],
             "is_released": true,
@@ -1406,21 +1534,25 @@
                     "release_version": "6.0",
                     "release_date": "2025-09-10",
                     "photo": {
-                        "wiki": "Aino Icon.png"
+                        "wiki": "Aino Icon.png",
+                        "ts": "20250910025341"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aino Full Wish.png"
+                            "wiki": "Character Aino Full Wish.png",
+                            "ts": "20250910053020"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Aino Icon.png"
+                "wiki": "Aino Icon.png",
+                "ts": "20250910025341"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aino Full Wish.png"
+                    "wiki": "Character Aino Full Wish.png",
+                    "ts": "20250910053020"
                 }
             ],
             "is_released": true,
@@ -1448,21 +1580,25 @@
                     "release_version": "5.8",
                     "release_date": "2025-07-30",
                     "photo": {
-                        "wiki": "Ineffa Icon.png"
+                        "wiki": "Ineffa Icon.png",
+                        "ts": "20250730030204"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ineffa Full Wish.png"
+                            "wiki": "Character Ineffa Full Wish.png",
+                            "ts": "20250806215250"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Ineffa Icon.png"
+                "wiki": "Ineffa Icon.png",
+                "ts": "20250730030204"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ineffa Full Wish.png"
+                    "wiki": "Character Ineffa Full Wish.png",
+                    "ts": "20250806215250"
                 }
             ],
             "is_released": true,
@@ -1490,21 +1626,25 @@
                     "release_version": "5.7",
                     "release_date": "2025-06-18",
                     "photo": {
-                        "wiki": "Skirk Icon.png"
+                        "wiki": "Skirk Icon.png",
+                        "ts": "20250618025127"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Skirk Full Wish.png"
+                            "wiki": "Character Skirk Full Wish.png",
+                            "ts": "20250618071851"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Skirk Icon.png"
+                "wiki": "Skirk Icon.png",
+                "ts": "20250618025127"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Skirk Full Wish.png"
+                    "wiki": "Character Skirk Full Wish.png",
+                    "ts": "20250618071851"
                 }
             ],
             "is_released": true,
@@ -1532,21 +1672,25 @@
                     "release_version": "5.7",
                     "release_date": "2025-06-18",
                     "photo": {
-                        "wiki": "Dahlia Icon.png"
+                        "wiki": "Dahlia Icon.png",
+                        "ts": "20250618025425"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dahlia Full Wish.png"
+                            "wiki": "Character Dahlia Full Wish.png",
+                            "ts": "20250618072914"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Dahlia Icon.png"
+                "wiki": "Dahlia Icon.png",
+                "ts": "20250618025425"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dahlia Full Wish.png"
+                    "wiki": "Character Dahlia Full Wish.png",
+                    "ts": "20250618072914"
                 }
             ],
             "is_released": true,
@@ -1574,21 +1718,25 @@
                     "release_version": "5.6",
                     "release_date": "2025-05-07",
                     "photo": {
-                        "wiki": "Ifa Icon.png"
+                        "wiki": "Ifa Icon.png",
+                        "ts": "20250507052606"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ifa Full Wish.png"
+                            "wiki": "Character Ifa Full Wish.png",
+                            "ts": "20250618071939"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Ifa Icon.png"
+                "wiki": "Ifa Icon.png",
+                "ts": "20250507052606"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ifa Full Wish.png"
+                    "wiki": "Character Ifa Full Wish.png",
+                    "ts": "20250618071939"
                 }
             ],
             "is_released": true,
@@ -1616,21 +1764,25 @@
                     "release_version": "5.6",
                     "release_date": "2025-05-07",
                     "photo": {
-                        "wiki": "Escoffier Icon.png"
+                        "wiki": "Escoffier Icon.png",
+                        "ts": "20250507052556"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Escoffier Full Wish.png"
+                            "wiki": "Character Escoffier Full Wish.png",
+                            "ts": "20250618065804"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Escoffier Icon.png"
+                "wiki": "Escoffier Icon.png",
+                "ts": "20250507052556"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Escoffier Full Wish.png"
+                    "wiki": "Character Escoffier Full Wish.png",
+                    "ts": "20250618065804"
                 }
             ],
             "is_released": true,
@@ -1658,21 +1810,25 @@
                     "release_version": "5.5",
                     "release_date": "2025-03-26",
                     "photo": {
-                        "wiki": "Varesa Icon.png"
+                        "wiki": "Varesa Icon.png",
+                        "ts": "20250326014831"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Varesa Full Wish.png"
+                            "wiki": "Character Varesa Full Wish.png",
+                            "ts": "20250327042849"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Varesa Icon.png"
+                "wiki": "Varesa Icon.png",
+                "ts": "20250326014831"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Varesa Full Wish.png"
+                    "wiki": "Character Varesa Full Wish.png",
+                    "ts": "20250327042849"
                 }
             ],
             "is_released": true,
@@ -1700,21 +1856,25 @@
                     "release_version": "5.5",
                     "release_date": "2025-03-26",
                     "photo": {
-                        "wiki": "Iansan Icon.png"
+                        "wiki": "Iansan Icon.png",
+                        "ts": "20250326014900"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Iansan Full Wish.png"
+                            "wiki": "Character Iansan Full Wish.png",
+                            "ts": "20250618070312"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Iansan Icon.png"
+                "wiki": "Iansan Icon.png",
+                "ts": "20250326014900"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Iansan Full Wish.png"
+                    "wiki": "Character Iansan Full Wish.png",
+                    "ts": "20250618070312"
                 }
             ],
             "is_released": true,
@@ -1742,21 +1902,25 @@
                     "release_version": "5.4",
                     "release_date": "2025-02-12",
                     "photo": {
-                        "wiki": "Yumemizuki Mizuki Icon.png"
+                        "wiki": "Yumemizuki Mizuki Icon.png",
+                        "ts": "20250212014631"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yumemizuki Mizuki Full Wish.png"
+                            "wiki": "Character Yumemizuki Mizuki Full Wish.png",
+                            "ts": "20250618072732"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yumemizuki Mizuki Icon.png"
+                "wiki": "Yumemizuki Mizuki Icon.png",
+                "ts": "20250212014631"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yumemizuki Mizuki Full Wish.png"
+                    "wiki": "Character Yumemizuki Mizuki Full Wish.png",
+                    "ts": "20250618072732"
                 }
             ],
             "is_released": true,
@@ -1784,21 +1948,25 @@
                     "release_version": "5.3",
                     "release_date": "2025-01-21",
                     "photo": {
-                        "wiki": "Lan Yan Icon.png"
+                        "wiki": "Lan Yan Icon.png",
+                        "ts": "20250128195304"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lan Yan Full Wish.png"
+                            "wiki": "Character Lan Yan Full Wish.png",
+                            "ts": "20250618071617"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lan Yan Icon.png"
+                "wiki": "Lan Yan Icon.png",
+                "ts": "20250128195304"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lan Yan Full Wish.png"
+                    "wiki": "Character Lan Yan Full Wish.png",
+                    "ts": "20250618071617"
                 }
             ],
             "is_released": true,
@@ -1826,21 +1994,25 @@
                     "release_version": "5.3",
                     "release_date": "2025-01-01",
                     "photo": {
-                        "wiki": "Mavuika Icon.png"
+                        "wiki": "Mavuika Icon.png",
+                        "ts": "20250101070636"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mavuika Full Wish.png"
+                            "wiki": "Character Mavuika Full Wish.png",
+                            "ts": "20250101151439"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Mavuika Icon.png"
+                "wiki": "Mavuika Icon.png",
+                "ts": "20250101070636"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mavuika Full Wish.png"
+                    "wiki": "Character Mavuika Full Wish.png",
+                    "ts": "20250101151439"
                 }
             ],
             "is_released": true,
@@ -1870,21 +2042,25 @@
                     "release_version": "5.3",
                     "release_date": "2025-01-01",
                     "photo": {
-                        "wiki": "Citlali Icon.png"
+                        "wiki": "Citlali Icon.png",
+                        "ts": "20241130080542"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Citlali Full Wish.png"
+                            "wiki": "Character Citlali Full Wish.png",
+                            "ts": "20261031125221"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Citlali Icon.png"
+                "wiki": "Citlali Icon.png",
+                "ts": "20241130080542"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Citlali Full Wish.png"
+                    "wiki": "Character Citlali Full Wish.png",
+                    "ts": "20261031125221"
                 }
             ],
             "is_released": true,
@@ -1912,21 +2088,25 @@
                     "release_version": "5.2",
                     "release_date": "2024-11-20",
                     "photo": {
-                        "wiki": "Ororon Icon.png"
+                        "wiki": "Ororon Icon.png",
+                        "ts": "20241014100711"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ororon Full Wish.png"
+                            "wiki": "Character Ororon Full Wish.png",
+                            "ts": "20250618071418"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Ororon Icon.png"
+                "wiki": "Ororon Icon.png",
+                "ts": "20241014100711"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ororon Full Wish.png"
+                    "wiki": "Character Ororon Full Wish.png",
+                    "ts": "20250618071418"
                 }
             ],
             "is_released": true,
@@ -1954,21 +2134,25 @@
                     "release_version": "5.2",
                     "release_date": "2024-11-20",
                     "photo": {
-                        "wiki": "Chasca Icon.png"
+                        "wiki": "Chasca Icon.png",
+                        "ts": "20241120025626"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Chasca Full Wish.png"
+                            "wiki": "Character Chasca Full Wish.png",
+                            "ts": "20241127071129"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Chasca Icon.png"
+                "wiki": "Chasca Icon.png",
+                "ts": "20241120025626"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Chasca Full Wish.png"
+                    "wiki": "Character Chasca Full Wish.png",
+                    "ts": "20241127071129"
                 }
             ],
             "is_released": true,
@@ -1996,21 +2180,25 @@
                     "release_version": "5.1",
                     "release_date": "2024-10-09",
                     "photo": {
-                        "wiki": "Xilonen Icon.png"
+                        "wiki": "Xilonen Icon.png",
+                        "ts": "20241009015637"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xilonen Full Wish.png"
+                            "wiki": "Character Xilonen Full Wish.png",
+                            "ts": "20261031125304"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xilonen Icon.png"
+                "wiki": "Xilonen Icon.png",
+                "ts": "20241009015637"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xilonen Full Wish.png"
+                    "wiki": "Character Xilonen Full Wish.png",
+                    "ts": "20261031125304"
                 }
             ],
             "is_released": true,
@@ -2038,21 +2226,25 @@
                     "release_version": "5.0",
                     "release_date": "2024-09-17",
                     "photo": {
-                        "wiki": "Kinich Icon.png"
+                        "wiki": "Kinich Icon.png",
+                        "ts": "20240917123836"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kinich Full Wish.png"
+                            "wiki": "Character Kinich Full Wish.png",
+                            "ts": "20240919141401"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kinich Icon.png"
+                "wiki": "Kinich Icon.png",
+                "ts": "20240917123836"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kinich Full Wish.png"
+                    "wiki": "Character Kinich Full Wish.png",
+                    "ts": "20240919141401"
                 }
             ],
             "is_released": true,
@@ -2080,21 +2272,25 @@
                     "release_version": "5.0",
                     "release_date": "2024-08-28",
                     "photo": {
-                        "wiki": "Mualani Icon.png"
+                        "wiki": "Mualani Icon.png",
+                        "ts": "20240828030235"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mualani Full Wish.png"
+                            "wiki": "Character Mualani Full Wish.png",
+                            "ts": "20240913071517"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Mualani Icon.png"
+                "wiki": "Mualani Icon.png",
+                "ts": "20240828030235"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mualani Full Wish.png"
+                    "wiki": "Character Mualani Full Wish.png",
+                    "ts": "20240913071517"
                 }
             ],
             "is_released": true,
@@ -2122,21 +2318,25 @@
                     "release_version": "5.0",
                     "release_date": "2024-08-28",
                     "photo": {
-                        "wiki": "Kachina Icon.png"
+                        "wiki": "Kachina Icon.png",
+                        "ts": "20240828030247"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kachina Full Wish.png"
+                            "wiki": "Character Kachina Full Wish.png",
+                            "ts": "20240913071342"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kachina Icon.png"
+                "wiki": "Kachina Icon.png",
+                "ts": "20240828030247"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kachina Full Wish.png"
+                    "wiki": "Character Kachina Full Wish.png",
+                    "ts": "20240913071342"
                 }
             ],
             "is_released": true,
@@ -2164,21 +2364,25 @@
                     "release_version": "4.8",
                     "release_date": "2024-08-06",
                     "photo": {
-                        "wiki": "Emilie Icon.png"
+                        "wiki": "Emilie Icon.png",
+                        "ts": "20240806102359"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Emilie Full Wish.png"
+                            "wiki": "Character Emilie Full Wish.png",
+                            "ts": "20240808025602"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Emilie Icon.png"
+                "wiki": "Emilie Icon.png",
+                "ts": "20240806102359"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Emilie Full Wish.png"
+                    "wiki": "Character Emilie Full Wish.png",
+                    "ts": "20240808025602"
                 }
             ],
             "is_released": true,
@@ -2206,21 +2410,25 @@
                     "release_version": "4.7",
                     "release_date": "2024-06-25",
                     "photo": {
-                        "wiki": "Sigewinne Icon.png"
+                        "wiki": "Sigewinne Icon.png",
+                        "ts": "20240625101835"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sigewinne Full Wish.png"
+                            "wiki": "Character Sigewinne Full Wish.png",
+                            "ts": "20250618071510"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sigewinne Icon.png"
+                "wiki": "Sigewinne Icon.png",
+                "ts": "20240625101835"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sigewinne Full Wish.png"
+                    "wiki": "Character Sigewinne Full Wish.png",
+                    "ts": "20250618071510"
                 }
             ],
             "is_released": true,
@@ -2248,21 +2456,25 @@
                     "release_version": "4.7",
                     "release_date": "2024-06-05",
                     "photo": {
-                        "wiki": "Sethos Icon.png"
+                        "wiki": "Sethos Icon.png",
+                        "ts": "20240605020859"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sethos Full Wish.png"
+                            "wiki": "Character Sethos Full Wish.png",
+                            "ts": "20250618073154"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sethos Icon.png"
+                "wiki": "Sethos Icon.png",
+                "ts": "20240605020859"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sethos Full Wish.png"
+                    "wiki": "Character Sethos Full Wish.png",
+                    "ts": "20250618073154"
                 }
             ],
             "is_released": true,
@@ -2290,21 +2502,25 @@
                     "release_version": "4.7",
                     "release_date": "2024-06-05",
                     "photo": {
-                        "wiki": "Clorinde Icon.png"
+                        "wiki": "Clorinde Icon.png",
+                        "ts": "20240605020849"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Clorinde Full Wish.png"
+                            "wiki": "Character Clorinde Full Wish.png",
+                            "ts": "20261024083915"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Clorinde Icon.png"
+                "wiki": "Clorinde Icon.png",
+                "ts": "20240605020849"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Clorinde Full Wish.png"
+                    "wiki": "Character Clorinde Full Wish.png",
+                    "ts": "20261024083915"
                 }
             ],
             "is_released": true,
@@ -2332,21 +2548,25 @@
                     "release_version": "4.6",
                     "release_date": "2024-04-24",
                     "photo": {
-                        "wiki": "Arlecchino Icon.png"
+                        "wiki": "Arlecchino Icon.png",
+                        "ts": "20240424041749"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Arlecchino Full Wish.png"
+                            "wiki": "Character Arlecchino Full Wish.png",
+                            "ts": "20240424142733"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Arlecchino Icon.png"
+                "wiki": "Arlecchino Icon.png",
+                "ts": "20240424041749"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Arlecchino Full Wish.png"
+                    "wiki": "Character Arlecchino Full Wish.png",
+                    "ts": "20240424142733"
                 }
             ],
             "is_released": true,
@@ -2376,21 +2596,25 @@
                     "release_version": "4.5",
                     "release_date": "2024-03-13",
                     "photo": {
-                        "wiki": "Chiori Icon.png"
+                        "wiki": "Chiori Icon.png",
+                        "ts": "20240313015540"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Chiori Full Wish.png"
+                            "wiki": "Character Chiori Full Wish.png",
+                            "ts": "20240313033020"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Chiori Icon.png"
+                "wiki": "Chiori Icon.png",
+                "ts": "20240313015540"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Chiori Full Wish.png"
+                    "wiki": "Character Chiori Full Wish.png",
+                    "ts": "20240313033020"
                 }
             ],
             "is_released": true,
@@ -2418,21 +2642,25 @@
                     "release_version": "4.4",
                     "release_date": "2024-01-31",
                     "photo": {
-                        "wiki": "Xianyun Icon.png"
+                        "wiki": "Xianyun Icon.png",
+                        "ts": "20240131020302"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xianyun Full Wish.png"
+                            "wiki": "Character Xianyun Full Wish.png",
+                            "ts": "20240202103809"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xianyun Icon.png"
+                "wiki": "Xianyun Icon.png",
+                "ts": "20240131020302"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xianyun Full Wish.png"
+                    "wiki": "Character Xianyun Full Wish.png",
+                    "ts": "20240202103809"
                 }
             ],
             "is_released": true,
@@ -2460,21 +2688,25 @@
                     "release_version": "4.4",
                     "release_date": "2024-01-31",
                     "photo": {
-                        "wiki": "Gaming Icon.png"
+                        "wiki": "Gaming Icon.png",
+                        "ts": "20240131020313"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Gaming Full Wish.png"
+                            "wiki": "Character Gaming Full Wish.png",
+                            "ts": "20261031125034"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Gaming Icon.png"
+                "wiki": "Gaming Icon.png",
+                "ts": "20240131020313"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Gaming Full Wish.png"
+                    "wiki": "Character Gaming Full Wish.png",
+                    "ts": "20261031125034"
                 }
             ],
             "is_released": true,
@@ -2502,21 +2734,25 @@
                     "release_version": "4.3",
                     "release_date": "2024-01-09",
                     "photo": {
-                        "wiki": "Chevreuse Icon.png"
+                        "wiki": "Chevreuse Icon.png",
+                        "ts": "20231225195348"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Chevreuse Full Wish.png"
+                            "wiki": "Character Chevreuse Full Wish.png",
+                            "ts": "20250618072041"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Chevreuse Icon.png"
+                "wiki": "Chevreuse Icon.png",
+                "ts": "20231225195348"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Chevreuse Full Wish.png"
+                    "wiki": "Character Chevreuse Full Wish.png",
+                    "ts": "20250618072041"
                 }
             ],
             "is_released": true,
@@ -2544,21 +2780,25 @@
                     "release_version": "4.3",
                     "release_date": "2023-12-20",
                     "photo": {
-                        "wiki": "Navia Icon.png"
+                        "wiki": "Navia Icon.png",
+                        "ts": "20231220022117"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Navia Full Wish.png"
+                            "wiki": "Character Navia Full Wish.png",
+                            "ts": "20231222025727"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Navia Icon.png"
+                "wiki": "Navia Icon.png",
+                "ts": "20231220022117"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Navia Full Wish.png"
+                    "wiki": "Character Navia Full Wish.png",
+                    "ts": "20231222025727"
                 }
             ],
             "is_released": true,
@@ -2586,21 +2826,25 @@
                     "release_version": "4.2",
                     "release_date": "2023-11-08",
                     "photo": {
-                        "wiki": "Furina Icon.png"
+                        "wiki": "Furina Icon.png",
+                        "ts": "20231108030656"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Furina Full Wish.png"
+                            "wiki": "Character Furina Full Wish.png",
+                            "ts": "20231108064320"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Furina Icon.png"
+                "wiki": "Furina Icon.png",
+                "ts": "20231108030656"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Furina Full Wish.png"
+                    "wiki": "Character Furina Full Wish.png",
+                    "ts": "20231108064320"
                 }
             ],
             "is_released": true,
@@ -2630,21 +2874,25 @@
                     "release_version": "4.2",
                     "release_date": "2023-11-08",
                     "photo": {
-                        "wiki": "Charlotte Icon.png"
+                        "wiki": "Charlotte Icon.png",
+                        "ts": "20231108030544"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Charlotte Full Wish.png"
+                            "wiki": "Character Charlotte Full Wish.png",
+                            "ts": "20250618071301"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Charlotte Icon.png"
+                "wiki": "Charlotte Icon.png",
+                "ts": "20231108030544"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Charlotte Full Wish.png"
+                    "wiki": "Character Charlotte Full Wish.png",
+                    "ts": "20250618071301"
                 }
             ],
             "is_released": true,
@@ -2672,21 +2920,25 @@
                     "release_version": "4.1",
                     "release_date": "2023-10-17",
                     "photo": {
-                        "wiki": "Wriothesley Icon.png"
+                        "wiki": "Wriothesley Icon.png",
+                        "ts": "20231017103145"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Wriothesley Full Wish.png"
+                            "wiki": "Character Wriothesley Full Wish.png",
+                            "ts": "20231018144847"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Wriothesley Icon.png"
+                "wiki": "Wriothesley Icon.png",
+                "ts": "20231017103145"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Wriothesley Full Wish.png"
+                    "wiki": "Character Wriothesley Full Wish.png",
+                    "ts": "20231018144847"
                 }
             ],
             "is_released": true,
@@ -2714,21 +2966,25 @@
                     "release_version": "4.1",
                     "release_date": "2023-09-27",
                     "photo": {
-                        "wiki": "Neuvillette Icon.png"
+                        "wiki": "Neuvillette Icon.png",
+                        "ts": "20240711205454"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Neuvillette Full Wish.png"
+                            "wiki": "Character Neuvillette Full Wish.png",
+                            "ts": "20240119144458"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Neuvillette Icon.png"
+                "wiki": "Neuvillette Icon.png",
+                "ts": "20240711205454"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Neuvillette Full Wish.png"
+                    "wiki": "Character Neuvillette Full Wish.png",
+                    "ts": "20240119144458"
                 }
             ],
             "is_released": true,
@@ -2758,21 +3014,25 @@
                     "release_version": "4.0",
                     "release_date": "2023-09-05",
                     "photo": {
-                        "wiki": "Freminet Icon.png"
+                        "wiki": "Freminet Icon.png",
+                        "ts": "20231215093001"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Freminet Full Wish.png"
+                            "wiki": "Character Freminet Full Wish.png",
+                            "ts": "20230908020238"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Freminet Icon.png"
+                "wiki": "Freminet Icon.png",
+                "ts": "20231215093001"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Freminet Full Wish.png"
+                    "wiki": "Character Freminet Full Wish.png",
+                    "ts": "20230908020238"
                 }
             ],
             "is_released": true,
@@ -2800,21 +3060,25 @@
                     "release_version": "4.0",
                     "release_date": "2023-08-16",
                     "photo": {
-                        "wiki": "Lyney Icon.png"
+                        "wiki": "Lyney Icon.png",
+                        "ts": "20230816045203"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lyney Full Wish.png"
+                            "wiki": "Character Lyney Full Wish.png",
+                            "ts": "20250618105519"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lyney Icon.png"
+                "wiki": "Lyney Icon.png",
+                "ts": "20230816045203"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lyney Full Wish.png"
+                    "wiki": "Character Lyney Full Wish.png",
+                    "ts": "20250618105519"
                 }
             ],
             "is_released": true,
@@ -2842,21 +3106,25 @@
                     "release_version": "4.0",
                     "release_date": "2023-08-16",
                     "photo": {
-                        "wiki": "Lynette Icon.png"
+                        "wiki": "Lynette Icon.png",
+                        "ts": "20230816051019"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lynette Full Wish.png"
+                            "wiki": "Character Lynette Full Wish.png",
+                            "ts": "20240220013816"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lynette Icon.png"
+                "wiki": "Lynette Icon.png",
+                "ts": "20230816051019"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lynette Full Wish.png"
+                    "wiki": "Character Lynette Full Wish.png",
+                    "ts": "20240220013816"
                 }
             ],
             "is_released": true,
@@ -2884,21 +3152,25 @@
                     "release_version": "3.7",
                     "release_date": "2023-05-24",
                     "photo": {
-                        "wiki": "Kirara Icon.png"
+                        "wiki": "Kirara Icon.png",
+                        "ts": "20230718042457"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kirara Full Wish.png"
+                            "wiki": "Character Kirara Full Wish.png",
+                            "ts": "20230524063826"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kirara Icon.png"
+                "wiki": "Kirara Icon.png",
+                "ts": "20230718042457"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kirara Full Wish.png"
+                    "wiki": "Character Kirara Full Wish.png",
+                    "ts": "20230524063826"
                 }
             ],
             "is_released": true,
@@ -2926,21 +3198,25 @@
                     "release_version": "3.6",
                     "release_date": "2023-05-02",
                     "photo": {
-                        "wiki": "Kaveh Icon.png"
+                        "wiki": "Kaveh Icon.png",
+                        "ts": "20230502113258"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kaveh Full Wish.png"
+                            "wiki": "Character Kaveh Full Wish.png",
+                            "ts": "20230504153531"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kaveh Icon.png"
+                "wiki": "Kaveh Icon.png",
+                "ts": "20230502113258"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kaveh Full Wish.png"
+                    "wiki": "Character Kaveh Full Wish.png",
+                    "ts": "20230504153531"
                 }
             ],
             "is_released": true,
@@ -2968,21 +3244,25 @@
                     "release_version": "3.6",
                     "release_date": "2023-05-02",
                     "photo": {
-                        "wiki": "Baizhu Icon.png"
+                        "wiki": "Baizhu Icon.png",
+                        "ts": "20231215091730"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Baizhu Full Wish.png"
+                            "wiki": "Character Baizhu Full Wish.png",
+                            "ts": "20230504174055"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Baizhu Icon.png"
+                "wiki": "Baizhu Icon.png",
+                "ts": "20231215091730"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Baizhu Full Wish.png"
+                    "wiki": "Character Baizhu Full Wish.png",
+                    "ts": "20230504174055"
                 }
             ],
             "is_released": true,
@@ -3010,21 +3290,25 @@
                     "release_version": "3.5",
                     "release_date": "2023-03-21",
                     "photo": {
-                        "wiki": "Mika Icon.png"
+                        "wiki": "Mika Icon.png",
+                        "ts": "20230321101835"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mika Full Wish.png"
+                            "wiki": "Character Mika Full Wish.png",
+                            "ts": "20230321232745"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Mika Icon.png"
+                "wiki": "Mika Icon.png",
+                "ts": "20230321101835"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mika Full Wish.png"
+                    "wiki": "Character Mika Full Wish.png",
+                    "ts": "20230321232745"
                 }
             ],
             "is_released": true,
@@ -3052,21 +3336,25 @@
                     "release_version": "3.5",
                     "release_date": "2023-03-01",
                     "photo": {
-                        "wiki": "Dehya Icon.png"
+                        "wiki": "Dehya Icon.png",
+                        "ts": "20231215092328"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dehya Full Wish.png"
+                            "wiki": "Character Dehya Full Wish.png",
+                            "ts": "20230301062353"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Dehya Icon.png"
+                "wiki": "Dehya Icon.png",
+                "ts": "20231215092328"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dehya Full Wish.png"
+                    "wiki": "Character Dehya Full Wish.png",
+                    "ts": "20230301062353"
                 }
             ],
             "is_released": true,
@@ -3094,21 +3382,25 @@
                     "release_version": "3.4",
                     "release_date": "2023-01-18",
                     "photo": {
-                        "wiki": "Yaoyao Icon.png"
+                        "wiki": "Yaoyao Icon.png",
+                        "ts": "20230123150446"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yaoyao Full Wish.png"
+                            "wiki": "Character Yaoyao Full Wish.png",
+                            "ts": "20230118030129"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yaoyao Icon.png"
+                "wiki": "Yaoyao Icon.png",
+                "ts": "20230123150446"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yaoyao Full Wish.png"
+                    "wiki": "Character Yaoyao Full Wish.png",
+                    "ts": "20230118030129"
                 }
             ],
             "is_released": true,
@@ -3136,21 +3428,25 @@
                     "release_version": "3.4",
                     "release_date": "2023-01-18",
                     "photo": {
-                        "wiki": "Alhaitham Icon.png"
+                        "wiki": "Alhaitham Icon.png",
+                        "ts": "20231215091456"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Alhaitham Full Wish.png"
+                            "wiki": "Character Alhaitham Full Wish.png",
+                            "ts": "20230118030435"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Alhaitham Icon.png"
+                "wiki": "Alhaitham Icon.png",
+                "ts": "20231215091456"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Alhaitham Full Wish.png"
+                    "wiki": "Character Alhaitham Full Wish.png",
+                    "ts": "20230118030435"
                 }
             ],
             "is_released": true,
@@ -3178,21 +3474,25 @@
                     "release_version": "3.3",
                     "release_date": "2022-12-07",
                     "photo": {
-                        "wiki": "Wanderer Icon.png"
+                        "wiki": "Wanderer Icon.png",
+                        "ts": "20221207034209"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Wanderer Full Wish.png"
+                            "wiki": "Character Wanderer Full Wish.png",
+                            "ts": "20221209194443"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Wanderer Icon.png"
+                "wiki": "Wanderer Icon.png",
+                "ts": "20221207034209"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Wanderer Full Wish.png"
+                    "wiki": "Character Wanderer Full Wish.png",
+                    "ts": "20221209194443"
                 }
             ],
             "is_released": true,
@@ -3222,21 +3522,25 @@
                     "release_version": "3.3",
                     "release_date": "2022-12-07",
                     "photo": {
-                        "wiki": "Faruzan Icon.png"
+                        "wiki": "Faruzan Icon.png",
+                        "ts": "20231215092917"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Faruzan Full Wish.png"
+                            "wiki": "Character Faruzan Full Wish.png",
+                            "ts": "20221207033630"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Faruzan Icon.png"
+                "wiki": "Faruzan Icon.png",
+                "ts": "20231215092917"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Faruzan Full Wish.png"
+                    "wiki": "Character Faruzan Full Wish.png",
+                    "ts": "20221207033630"
                 }
             ],
             "is_released": true,
@@ -3264,21 +3568,25 @@
                     "release_version": "3.2",
                     "release_date": "2022-11-18",
                     "photo": {
-                        "wiki": "Layla Icon.png"
+                        "wiki": "Layla Icon.png",
+                        "ts": "20221118140544"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Layla Full Wish.png"
+                            "wiki": "Character Layla Full Wish.png",
+                            "ts": "20221118140902"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Layla Icon.png"
+                "wiki": "Layla Icon.png",
+                "ts": "20221118140544"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Layla Full Wish.png"
+                    "wiki": "Character Layla Full Wish.png",
+                    "ts": "20221118140902"
                 }
             ],
             "is_released": true,
@@ -3306,21 +3614,25 @@
                     "release_version": "3.2",
                     "release_date": "2022-11-02",
                     "photo": {
-                        "wiki": "Nahida Icon.png"
+                        "wiki": "Nahida Icon.png",
+                        "ts": "20221102030809"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Nahida Full Wish.png"
+                            "wiki": "Character Nahida Full Wish.png",
+                            "ts": "20221102032214"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Nahida Icon.png"
+                "wiki": "Nahida Icon.png",
+                "ts": "20221102030809"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Nahida Full Wish.png"
+                    "wiki": "Character Nahida Full Wish.png",
+                    "ts": "20221102032214"
                 }
             ],
             "is_released": true,
@@ -3350,21 +3662,25 @@
                     "release_version": "3.1",
                     "release_date": "2022-10-14",
                     "photo": {
-                        "wiki": "Nilou Icon.png"
+                        "wiki": "Nilou Icon.png",
+                        "ts": "20221014102540"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Nilou Full Wish.png"
+                            "wiki": "Character Nilou Full Wish.png",
+                            "ts": "20221014130045"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Nilou Icon.png"
+                "wiki": "Nilou Icon.png",
+                "ts": "20221014102540"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Nilou Full Wish.png"
+                    "wiki": "Character Nilou Full Wish.png",
+                    "ts": "20221014130045"
                 }
             ],
             "is_released": true,
@@ -3392,21 +3708,25 @@
                     "release_version": "3.1",
                     "release_date": "2022-09-28",
                     "photo": {
-                        "wiki": "Cyno Icon.png"
+                        "wiki": "Cyno Icon.png",
+                        "ts": "20231215092240"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Cyno Full Wish.png"
+                            "wiki": "Character Cyno Full Wish.png",
+                            "ts": "20221007135437"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Cyno Icon.png"
+                "wiki": "Cyno Icon.png",
+                "ts": "20231215092240"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Cyno Full Wish.png"
+                    "wiki": "Character Cyno Full Wish.png",
+                    "ts": "20221007135437"
                 }
             ],
             "is_released": true,
@@ -3434,21 +3754,25 @@
                     "release_version": "3.1",
                     "release_date": "2022-09-28",
                     "photo": {
-                        "wiki": "Candace Icon.png"
+                        "wiki": "Candace Icon.png",
+                        "ts": "20231215092140"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Candace Full Wish.png"
+                            "wiki": "Character Candace Full Wish.png",
+                            "ts": "20221007135324"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Candace Icon.png"
+                "wiki": "Candace Icon.png",
+                "ts": "20231215092140"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Candace Full Wish.png"
+                    "wiki": "Character Candace Full Wish.png",
+                    "ts": "20221007135324"
                 }
             ],
             "is_released": true,
@@ -3476,21 +3800,25 @@
                     "release_version": "3.0",
                     "release_date": "2022-09-09",
                     "photo": {
-                        "wiki": "Dori Icon.png"
+                        "wiki": "Dori Icon.png",
+                        "ts": "20231215092725"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Dori Full Wish.png"
+                            "wiki": "Character Dori Full Wish.png",
+                            "ts": "20220909114351"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Dori Icon.png"
+                "wiki": "Dori Icon.png",
+                "ts": "20231215092725"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Dori Full Wish.png"
+                    "wiki": "Character Dori Full Wish.png",
+                    "ts": "20220909114351"
                 }
             ],
             "is_released": true,
@@ -3518,21 +3846,25 @@
                     "release_version": "3.0",
                     "release_date": "2022-08-24",
                     "photo": {
-                        "wiki": "Tighnari Icon.png"
+                        "wiki": "Tighnari Icon.png",
+                        "ts": "20220824024817"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Tighnari Full Wish.png"
+                            "wiki": "Character Tighnari Full Wish.png",
+                            "ts": "20220824042927"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Tighnari Icon.png"
+                "wiki": "Tighnari Icon.png",
+                "ts": "20220824024817"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Tighnari Full Wish.png"
+                    "wiki": "Character Tighnari Full Wish.png",
+                    "ts": "20220824042927"
                 }
             ],
             "is_released": true,
@@ -3560,21 +3892,25 @@
                     "release_version": "3.0",
                     "release_date": "2022-08-24",
                     "photo": {
-                        "wiki": "Collei Icon.png"
+                        "wiki": "Collei Icon.png",
+                        "ts": "20231215092218"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Collei Full Wish.png"
+                            "wiki": "Character Collei Full Wish.png",
+                            "ts": "20220824043515"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Collei Icon.png"
+                "wiki": "Collei Icon.png",
+                "ts": "20231215092218"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Collei Full Wish.png"
+                    "wiki": "Character Collei Full Wish.png",
+                    "ts": "20220824043515"
                 }
             ],
             "is_released": true,
@@ -3602,21 +3938,25 @@
                     "release_version": "2.8",
                     "release_date": "2022-07-13",
                     "photo": {
-                        "wiki": "Shikanoin Heizou Icon.png"
+                        "wiki": "Shikanoin Heizou Icon.png",
+                        "ts": "20240711205453"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Shikanoin Heizou Full Wish.png"
+                            "wiki": "Character Shikanoin Heizou Full Wish.png",
+                            "ts": "20220713042711"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Shikanoin Heizou Icon.png"
+                "wiki": "Shikanoin Heizou Icon.png",
+                "ts": "20240711205453"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Shikanoin Heizou Full Wish.png"
+                    "wiki": "Character Shikanoin Heizou Full Wish.png",
+                    "ts": "20220713042711"
                 }
             ],
             "is_released": true,
@@ -3644,21 +3984,25 @@
                     "release_version": "2.7",
                     "release_date": "2022-06-21",
                     "photo": {
-                        "wiki": "Kuki Shinobu Icon.png"
+                        "wiki": "Kuki Shinobu Icon.png",
+                        "ts": "20220605061801"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kuki Shinobu Full Wish.png"
+                            "wiki": "Character Kuki Shinobu Full Wish.png",
+                            "ts": "20220621105256"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kuki Shinobu Icon.png"
+                "wiki": "Kuki Shinobu Icon.png",
+                "ts": "20220605061801"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kuki Shinobu Full Wish.png"
+                    "wiki": "Character Kuki Shinobu Full Wish.png",
+                    "ts": "20220621105256"
                 }
             ],
             "is_released": true,
@@ -3686,21 +4030,25 @@
                     "release_version": "2.7",
                     "release_date": "2022-05-31",
                     "photo": {
-                        "wiki": "Yelan Icon.png"
+                        "wiki": "Yelan Icon.png",
+                        "ts": "20240711205454"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yelan Full Wish.png"
+                            "wiki": "Character Yelan Full Wish.png",
+                            "ts": "20220531085912"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yelan Icon.png"
+                "wiki": "Yelan Icon.png",
+                "ts": "20240711205454"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yelan Full Wish.png"
+                    "wiki": "Character Yelan Full Wish.png",
+                    "ts": "20220531085912"
                 }
             ],
             "is_released": true,
@@ -3728,21 +4076,25 @@
                     "release_version": "2.6",
                     "release_date": "2022-03-30",
                     "photo": {
-                        "wiki": "Kamisato Ayato Icon.png"
+                        "wiki": "Kamisato Ayato Icon.png",
+                        "ts": "20220601033710"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kamisato Ayato Full Wish.png"
+                            "wiki": "Character Kamisato Ayato Full Wish.png",
+                            "ts": "20221014023913"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kamisato Ayato Icon.png"
+                "wiki": "Kamisato Ayato Icon.png",
+                "ts": "20220601033710"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kamisato Ayato Full Wish.png"
+                    "wiki": "Character Kamisato Ayato Full Wish.png",
+                    "ts": "20221014023913"
                 }
             ],
             "is_released": true,
@@ -3770,21 +4122,25 @@
                     "release_version": "2.5",
                     "release_date": "2022-02-16",
                     "photo": {
-                        "wiki": "Yae Miko Icon.png"
+                        "wiki": "Yae Miko Icon.png",
+                        "ts": "20220216025931"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yae Miko Full Wish.png"
+                            "wiki": "Character Yae Miko Full Wish.png",
+                            "ts": "20240525000642"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yae Miko Icon.png"
+                "wiki": "Yae Miko Icon.png",
+                "ts": "20220216025931"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yae Miko Full Wish.png"
+                    "wiki": "Character Yae Miko Full Wish.png",
+                    "ts": "20240525000642"
                 }
             ],
             "is_released": true,
@@ -3812,21 +4168,25 @@
                     "release_version": "2.4",
                     "release_date": "2022-01-05",
                     "photo": {
-                        "wiki": "Yun Jin Icon.png"
+                        "wiki": "Yun Jin Icon.png",
+                        "ts": "20220316025919"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yun Jin Full Wish.png"
+                            "wiki": "Character Yun Jin Full Wish.png",
+                            "ts": "20220507110218"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yun Jin Icon.png"
+                "wiki": "Yun Jin Icon.png",
+                "ts": "20220316025919"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yun Jin Full Wish.png"
+                    "wiki": "Character Yun Jin Full Wish.png",
+                    "ts": "20220507110218"
                 }
             ],
             "is_released": true,
@@ -3854,21 +4214,25 @@
                     "release_version": "2.4",
                     "release_date": "2022-01-05",
                     "photo": {
-                        "wiki": "Shenhe Icon.png"
+                        "wiki": "Shenhe Icon.png",
+                        "ts": "20220210034241"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Shenhe Full Wish.png"
+                            "wiki": "Character Shenhe Full Wish.png",
+                            "ts": "20221011032401"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Shenhe Icon.png"
+                "wiki": "Shenhe Icon.png",
+                "ts": "20220210034241"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Shenhe Full Wish.png"
+                    "wiki": "Character Shenhe Full Wish.png",
+                    "ts": "20221011032401"
                 }
             ],
             "is_released": true,
@@ -3896,21 +4260,25 @@
                     "release_version": "2.3",
                     "release_date": "2021-12-14",
                     "photo": {
-                        "wiki": "Gorou Icon.png"
+                        "wiki": "Gorou Icon.png",
+                        "ts": "20211126224331"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Gorou Full Wish.png"
+                            "wiki": "Character Gorou Full Wish.png",
+                            "ts": "20220507110256"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Gorou Icon.png"
+                "wiki": "Gorou Icon.png",
+                "ts": "20211126224331"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Gorou Full Wish.png"
+                    "wiki": "Character Gorou Full Wish.png",
+                    "ts": "20220507110256"
                 }
             ],
             "is_released": true,
@@ -3938,21 +4306,25 @@
                     "release_version": "2.3",
                     "release_date": "2021-12-14",
                     "photo": {
-                        "wiki": "Arataki Itto Icon.png"
+                        "wiki": "Arataki Itto Icon.png",
+                        "ts": "20231215091612"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Arataki Itto Full Wish.png"
+                            "wiki": "Character Arataki Itto Full Wish.png",
+                            "ts": "20220507160209"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Arataki Itto Icon.png"
+                "wiki": "Arataki Itto Icon.png",
+                "ts": "20231215091612"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Arataki Itto Full Wish.png"
+                    "wiki": "Character Arataki Itto Full Wish.png",
+                    "ts": "20220507160209"
                 }
             ],
             "is_released": true,
@@ -3980,21 +4352,25 @@
                     "release_version": "2.2",
                     "release_date": "2021-11-02",
                     "photo": {
-                        "wiki": "Thoma Icon.png"
+                        "wiki": "Thoma Icon.png",
+                        "ts": "20211014011046"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Thoma Full Wish.png"
+                            "wiki": "Character Thoma Full Wish.png",
+                            "ts": "20220507130334"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Thoma Icon.png"
+                "wiki": "Thoma Icon.png",
+                "ts": "20211014011046"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Thoma Full Wish.png"
+                    "wiki": "Character Thoma Full Wish.png",
+                    "ts": "20220507130334"
                 }
             ],
             "is_released": true,
@@ -4022,21 +4398,25 @@
                     "release_version": "2.1",
                     "release_date": "2021-09-21",
                     "photo": {
-                        "wiki": "Sangonomiya Kokomi Icon.png"
+                        "wiki": "Sangonomiya Kokomi Icon.png",
+                        "ts": "20210921103819"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sangonomiya Kokomi Full Wish.png"
+                            "wiki": "Character Sangonomiya Kokomi Full Wish.png",
+                            "ts": "20220507131919"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sangonomiya Kokomi Icon.png"
+                "wiki": "Sangonomiya Kokomi Icon.png",
+                "ts": "20210921103819"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sangonomiya Kokomi Full Wish.png"
+                    "wiki": "Character Sangonomiya Kokomi Full Wish.png",
+                    "ts": "20220507131919"
                 }
             ],
             "is_released": true,
@@ -4064,21 +4444,25 @@
                     "release_version": "2.1",
                     "release_date": "2021-09-01",
                     "photo": {
-                        "wiki": "Raiden Shogun Icon.png"
+                        "wiki": "Raiden Shogun Icon.png",
+                        "ts": "20240717072843"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Raiden Shogun Full Wish.png"
+                            "wiki": "Character Raiden Shogun Full Wish.png",
+                            "ts": "20220507154003"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Raiden Shogun Icon.png"
+                "wiki": "Raiden Shogun Icon.png",
+                "ts": "20240717072843"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Raiden Shogun Full Wish.png"
+                    "wiki": "Character Raiden Shogun Full Wish.png",
+                    "ts": "20220507154003"
                 }
             ],
             "is_released": true,
@@ -4108,21 +4492,25 @@
                     "release_version": "2.1",
                     "release_date": "2021-09-01",
                     "photo": {
-                        "wiki": "Kujou Sara Icon.png"
+                        "wiki": "Kujou Sara Icon.png",
+                        "ts": "20220210040844"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kujou Sara Full Wish.png"
+                            "wiki": "Character Kujou Sara Full Wish.png",
+                            "ts": "20220507110137"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kujou Sara Icon.png"
+                "wiki": "Kujou Sara Icon.png",
+                "ts": "20220210040844"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kujou Sara Full Wish.png"
+                    "wiki": "Character Kujou Sara Full Wish.png",
+                    "ts": "20220507110137"
                 }
             ],
             "is_released": true,
@@ -4150,21 +4538,25 @@
                     "release_version": "2.1",
                     "release_date": "2021-09-01",
                     "photo": {
-                        "wiki": "Aloy Icon.png"
+                        "wiki": "Aloy Icon.png",
+                        "ts": "20231215091525"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Aloy Full Wish.png"
+                            "wiki": "Character Aloy Full Wish.png",
+                            "ts": "20220507130247"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Aloy Icon.png"
+                "wiki": "Aloy Icon.png",
+                "ts": "20231215091525"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Aloy Full Wish.png"
+                    "wiki": "Character Aloy Full Wish.png",
+                    "ts": "20220507130247"
                 }
             ],
             "is_released": true,
@@ -4195,21 +4587,25 @@
                     "release_version": "2.0",
                     "release_date": "2021-08-10",
                     "photo": {
-                        "wiki": "Yoimiya Icon.png"
+                        "wiki": "Yoimiya Icon.png",
+                        "ts": "20220214235604"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yoimiya Full Wish.png"
+                            "wiki": "Character Yoimiya Full Wish.png",
+                            "ts": "20220507125627"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yoimiya Icon.png"
+                "wiki": "Yoimiya Icon.png",
+                "ts": "20220214235604"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yoimiya Full Wish.png"
+                    "wiki": "Character Yoimiya Full Wish.png",
+                    "ts": "20220507125627"
                 }
             ],
             "is_released": true,
@@ -4237,21 +4633,25 @@
                     "release_version": "2.0",
                     "release_date": "2021-08-10",
                     "photo": {
-                        "wiki": "Sayu Icon.png"
+                        "wiki": "Sayu Icon.png",
+                        "ts": "20210810101044"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sayu Full Wish.png"
+                            "wiki": "Character Sayu Full Wish.png",
+                            "ts": "20220507130546"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sayu Icon.png"
+                "wiki": "Sayu Icon.png",
+                "ts": "20210810101044"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sayu Full Wish.png"
+                    "wiki": "Character Sayu Full Wish.png",
+                    "ts": "20220507130546"
                 }
             ],
             "is_released": true,
@@ -4279,21 +4679,25 @@
                     "release_version": "2.0",
                     "release_date": "2021-07-21",
                     "photo": {
-                        "wiki": "Kamisato Ayaka Icon.png"
+                        "wiki": "Kamisato Ayaka Icon.png",
+                        "ts": "20211221231648"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kamisato Ayaka Full Wish.png"
+                            "wiki": "Character Kamisato Ayaka Full Wish.png",
+                            "ts": "20221014024207"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kamisato Ayaka Icon.png"
+                "wiki": "Kamisato Ayaka Icon.png",
+                "ts": "20211221231648"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kamisato Ayaka Full Wish.png"
+                    "wiki": "Character Kamisato Ayaka Full Wish.png",
+                    "ts": "20221014024207"
                 }
             ],
             "is_released": true,
@@ -4321,21 +4725,25 @@
                     "release_version": "1.6",
                     "release_date": "2021-06-29",
                     "photo": {
-                        "wiki": "Kaedehara Kazuha Icon.png"
+                        "wiki": "Kaedehara Kazuha Icon.png",
+                        "ts": "20210623063513"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kaedehara Kazuha Full Wish.png"
+                            "wiki": "Character Kaedehara Kazuha Full Wish.png",
+                            "ts": "20220507131548"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kaedehara Kazuha Icon.png"
+                "wiki": "Kaedehara Kazuha Icon.png",
+                "ts": "20210623063513"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kaedehara Kazuha Full Wish.png"
+                    "wiki": "Character Kaedehara Kazuha Full Wish.png",
+                    "ts": "20220507131548"
                 }
             ],
             "is_released": true,
@@ -4363,21 +4771,25 @@
                     "release_version": "1.5",
                     "release_date": "2021-05-18",
                     "photo": {
-                        "wiki": "Eula Icon.png"
+                        "wiki": "Eula Icon.png",
+                        "ts": "20231215092858"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Eula Full Wish.png"
+                            "wiki": "Character Eula Full Wish.png",
+                            "ts": "20240525000817"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Eula Icon.png"
+                "wiki": "Eula Icon.png",
+                "ts": "20231215092858"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Eula Full Wish.png"
+                    "wiki": "Character Eula Full Wish.png",
+                    "ts": "20240525000817"
                 }
             ],
             "is_released": true,
@@ -4405,21 +4817,25 @@
                     "release_version": "1.5",
                     "release_date": "2021-04-28",
                     "photo": {
-                        "wiki": "Yanfei Icon.png"
+                        "wiki": "Yanfei Icon.png",
+                        "ts": "20260304041151"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Yanfei Full Wish.png"
+                            "wiki": "Character Yanfei Full Wish.png",
+                            "ts": "20220507131829"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Yanfei Icon.png"
+                "wiki": "Yanfei Icon.png",
+                "ts": "20260304041151"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Yanfei Full Wish.png"
+                    "wiki": "Character Yanfei Full Wish.png",
+                    "ts": "20220507131829"
                 }
             ],
             "is_released": true,
@@ -4447,21 +4863,25 @@
                     "release_version": "1.4",
                     "release_date": "2021-04-06",
                     "photo": {
-                        "wiki": "Rosaria Icon.png"
+                        "wiki": "Rosaria Icon.png",
+                        "ts": "20220601032845"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Rosaria Full Wish.png"
+                            "wiki": "Character Rosaria Full Wish.png",
+                            "ts": "20220507132654"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Rosaria Icon.png"
+                "wiki": "Rosaria Icon.png",
+                "ts": "20220601032845"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Rosaria Full Wish.png"
+                    "wiki": "Character Rosaria Full Wish.png",
+                    "ts": "20220507132654"
                 }
             ],
             "is_released": true,
@@ -4489,21 +4909,25 @@
                     "release_version": "1.3",
                     "release_date": "2021-03-02",
                     "photo": {
-                        "wiki": "Hu Tao Icon.png"
+                        "wiki": "Hu Tao Icon.png",
+                        "ts": "20260304040745"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Hu Tao Full Wish.png"
+                            "wiki": "Character Hu Tao Full Wish.png",
+                            "ts": "20220507160922"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Hu Tao Icon.png"
+                "wiki": "Hu Tao Icon.png",
+                "ts": "20260304040745"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Hu Tao Full Wish.png"
+                    "wiki": "Character Hu Tao Full Wish.png",
+                    "ts": "20220507160922"
                 }
             ],
             "is_released": true,
@@ -4531,21 +4955,25 @@
                     "release_version": "1.3",
                     "release_date": "2021-02-03",
                     "photo": {
-                        "wiki": "Xiao Icon.png"
+                        "wiki": "Xiao Icon.png",
+                        "ts": "20210214012045"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xiao Full Wish.png"
+                            "wiki": "Character Xiao Full Wish.png",
+                            "ts": "20220507154523"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xiao Icon.png"
+                "wiki": "Xiao Icon.png",
+                "ts": "20210214012045"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xiao Full Wish.png"
+                    "wiki": "Character Xiao Full Wish.png",
+                    "ts": "20220507154523"
                 }
             ],
             "is_released": true,
@@ -4573,21 +5001,25 @@
                     "release_version": "1.2",
                     "release_date": "2021-01-12",
                     "photo": {
-                        "wiki": "Ganyu Icon.png"
+                        "wiki": "Ganyu Icon.png",
+                        "ts": "20230519012425"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ganyu Full Wish.png"
+                            "wiki": "Character Ganyu Full Wish.png",
+                            "ts": "20220713045854"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Ganyu Icon.png"
+                "wiki": "Ganyu Icon.png",
+                "ts": "20230519012425"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ganyu Full Wish.png"
+                    "wiki": "Character Ganyu Full Wish.png",
+                    "ts": "20220713045854"
                 }
             ],
             "is_released": true,
@@ -4615,21 +5047,25 @@
                     "release_version": "1.2",
                     "release_date": "2020-12-23",
                     "photo": {
-                        "wiki": "Albedo Icon.png"
+                        "wiki": "Albedo Icon.png",
+                        "ts": "20260304040635"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Albedo Full Wish.png"
+                            "wiki": "Character Albedo Full Wish.png",
+                            "ts": "20220507161942"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Albedo Icon.png"
+                "wiki": "Albedo Icon.png",
+                "ts": "20260304040635"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Albedo Full Wish.png"
+                    "wiki": "Character Albedo Full Wish.png",
+                    "ts": "20220507161942"
                 }
             ],
             "is_released": true,
@@ -4657,21 +5093,25 @@
                     "release_version": "1.1",
                     "release_date": "2020-12-01",
                     "photo": {
-                        "wiki": "Zhongli Icon.png"
+                        "wiki": "Zhongli Icon.png",
+                        "ts": "20240711205450"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Zhongli Full Wish.png"
+                            "wiki": "Character Zhongli Full Wish.png",
+                            "ts": "20220507161902"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Zhongli Icon.png"
+                "wiki": "Zhongli Icon.png",
+                "ts": "20240711205450"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Zhongli Full Wish.png"
+                    "wiki": "Character Zhongli Full Wish.png",
+                    "ts": "20220507161902"
                 }
             ],
             "is_released": true,
@@ -4701,21 +5141,25 @@
                     "release_version": "1.1",
                     "release_date": "2020-12-01",
                     "photo": {
-                        "wiki": "Xinyan Icon.png"
+                        "wiki": "Xinyan Icon.png",
+                        "ts": "20260304041110"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xinyan Full Wish.png"
+                            "wiki": "Character Xinyan Full Wish.png",
+                            "ts": "20220507161424"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xinyan Icon.png"
+                "wiki": "Xinyan Icon.png",
+                "ts": "20260304041110"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xinyan Full Wish.png"
+                    "wiki": "Character Xinyan Full Wish.png",
+                    "ts": "20220507161424"
                 }
             ],
             "is_released": true,
@@ -4743,21 +5187,25 @@
                     "release_version": "1.1",
                     "release_date": "2020-11-11",
                     "photo": {
-                        "wiki": "Childe P3 Icon.png"
+                        "wiki": "Childe P3 Icon.png",
+                        "ts": "20210316220750"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Tartaglia Full Wish.png"
+                            "wiki": "Character Tartaglia Full Wish.png",
+                            "ts": "20220507161504"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Childe P3 Icon.png"
+                "wiki": "Childe P3 Icon.png",
+                "ts": "20210316220750"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Tartaglia Full Wish.png"
+                    "wiki": "Character Tartaglia Full Wish.png",
+                    "ts": "20220507161504"
                 }
             ],
             "is_released": true,
@@ -4787,21 +5235,25 @@
                     "release_version": "1.1",
                     "release_date": "2020-11-11",
                     "photo": {
-                        "wiki": "Diona Icon.png"
+                        "wiki": "Diona Icon.png",
+                        "ts": "20260304040712"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Diona Full Wish.png"
+                            "wiki": "Character Diona Full Wish.png",
+                            "ts": "20261004061453"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Diona Icon.png"
+                "wiki": "Diona Icon.png",
+                "ts": "20260304040712"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Diona Full Wish.png"
+                    "wiki": "Character Diona Full Wish.png",
+                    "ts": "20261004061453"
                 }
             ],
             "is_released": true,
@@ -4829,21 +5281,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-10-20",
                     "photo": {
-                        "wiki": "Klee Icon.png"
+                        "wiki": "Klee Icon.png",
+                        "ts": "20210214011911"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Klee Full Wish.png"
+                            "wiki": "Character Klee Full Wish.png",
+                            "ts": "20220507125530"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Klee Icon.png"
+                "wiki": "Klee Icon.png",
+                "ts": "20210214011911"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Klee Full Wish.png"
+                    "wiki": "Character Klee Full Wish.png",
+                    "ts": "20220507125530"
                 }
             ],
             "is_released": true,
@@ -4871,21 +5327,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Xingqiu Icon.png"
+                        "wiki": "Xingqiu Icon.png",
+                        "ts": "20260304041029"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xingqiu Full Wish.png"
+                            "wiki": "Character Xingqiu Full Wish.png",
+                            "ts": "20220507161206"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xingqiu Icon.png"
+                "wiki": "Xingqiu Icon.png",
+                "ts": "20260304041029"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xingqiu Full Wish.png"
+                    "wiki": "Character Xingqiu Full Wish.png",
+                    "ts": "20220507161206"
                 }
             ],
             "is_released": true,
@@ -4913,21 +5373,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Xiangling Icon.png"
+                        "wiki": "Xiangling Icon.png",
+                        "ts": "20210214011301"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Xiangling Full Wish.png"
+                            "wiki": "Character Xiangling Full Wish.png",
+                            "ts": "20220507154040"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Xiangling Icon.png"
+                "wiki": "Xiangling Icon.png",
+                "ts": "20210214011301"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Xiangling Full Wish.png"
+                    "wiki": "Character Xiangling Full Wish.png",
+                    "ts": "20220507154040"
                 }
             ],
             "is_released": true,
@@ -4955,21 +5419,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Venti Icon.png"
+                        "wiki": "Venti Icon.png",
+                        "ts": "20210214011949"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Venti Full Wish.png"
+                            "wiki": "Character Venti Full Wish.png",
+                            "ts": "20220507131746"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Venti Icon.png"
+                "wiki": "Venti Icon.png",
+                "ts": "20210214011949"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Venti Full Wish.png"
+                    "wiki": "Character Venti Full Wish.png",
+                    "ts": "20220507131746"
                 }
             ],
             "is_released": true,
@@ -4999,14 +5467,17 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Anemo.png"
+                            "wiki": "Character Lumine Game Anemo.png",
+                            "ts": "20241217204948"
                         },
                         {
-                            "wiki": "Character Aether Game Anemo.png"
+                            "wiki": "Character Aether Game Anemo.png",
+                            "ts": "20241217204906"
                         }
                     ]
                 },
@@ -5018,14 +5489,17 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Geo.png"
+                            "wiki": "Character Lumine Game Geo.png",
+                            "ts": "20241217204957"
                         },
                         {
-                            "wiki": "Character Aether Game Geo.png"
+                            "wiki": "Character Aether Game Geo.png",
+                            "ts": "20241217204919"
                         }
                     ]
                 },
@@ -5037,14 +5511,17 @@
                     "release_version": "2.0",
                     "release_date": "2021-07-21",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Electro.png"
+                            "wiki": "Character Lumine Game Electro.png",
+                            "ts": "20241217205003"
                         },
                         {
-                            "wiki": "Character Aether Game Electro.png"
+                            "wiki": "Character Aether Game Electro.png",
+                            "ts": "20241217204923"
                         }
                     ]
                 },
@@ -5056,14 +5533,17 @@
                     "release_version": "3.0",
                     "release_date": "2022-08-24",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Dendro.png"
+                            "wiki": "Character Lumine Game Dendro.png",
+                            "ts": "20250311202600"
                         },
                         {
-                            "wiki": "Character Aether Game Dendro.png"
+                            "wiki": "Character Aether Game Dendro.png",
+                            "ts": "20241217204927"
                         }
                     ]
                 },
@@ -5075,14 +5555,17 @@
                     "release_version": "4.0",
                     "release_date": "2023-08-16",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Hydro.png"
+                            "wiki": "Character Lumine Game Hydro.png",
+                            "ts": "20241217205020"
                         },
                         {
-                            "wiki": "Character Aether Game Hydro.png"
+                            "wiki": "Character Aether Game Hydro.png",
+                            "ts": "20241217204939"
                         }
                     ]
                 },
@@ -5094,14 +5577,17 @@
                     "release_version": "5.3",
                     "release_date": "2025-01-01",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lumine Game Pyro.png"
+                            "wiki": "Character Lumine Game Pyro.png",
+                            "ts": "20250311202955"
                         },
                         {
-                            "wiki": "Character Aether Game Pyro.png"
+                            "wiki": "Character Aether Game Pyro.png",
+                            "ts": "20250311202939"
                         }
                     ]
                 },
@@ -5113,13 +5599,15 @@
                     "release_version": "7.0",
                     "release_date": "2026-08-12",
                     "photo": {
-                        "wiki": "Traveler Icon.png"
+                        "wiki": "Traveler Icon.png",
+                        "ts": "20211220013610"
                     },
                     "full_photo": []
                 }
             ],
             "photo": {
-                "wiki": "Traveler Icon.png"
+                "wiki": "Traveler Icon.png",
+                "ts": "20211220013610"
             },
             "full_photo": null,
             "is_released": true,
@@ -5147,21 +5635,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Sucrose Icon.png"
+                        "wiki": "Sucrose Icon.png",
+                        "ts": "20210213163209"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Sucrose Full Wish.png"
+                            "wiki": "Character Sucrose Full Wish.png",
+                            "ts": "20220507132952"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Sucrose Icon.png"
+                "wiki": "Sucrose Icon.png",
+                "ts": "20210213163209"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Sucrose Full Wish.png"
+                    "wiki": "Character Sucrose Full Wish.png",
+                    "ts": "20220507132952"
                 }
             ],
             "is_released": true,
@@ -5189,21 +5681,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Razor Icon.png"
+                        "wiki": "Razor Icon.png",
+                        "ts": "20210214011936"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Razor Full Wish.png"
+                            "wiki": "Character Razor Full Wish.png",
+                            "ts": "20220507162020"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Razor Icon.png"
+                "wiki": "Razor Icon.png",
+                "ts": "20210214011936"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Razor Full Wish.png"
+                    "wiki": "Character Razor Full Wish.png",
+                    "ts": "20220507162020"
                 }
             ],
             "is_released": true,
@@ -5231,21 +5727,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Qiqi Icon.png"
+                        "wiki": "Qiqi Icon.png",
+                        "ts": "20220316020612"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Qiqi Full Wish.png"
+                            "wiki": "Character Qiqi Full Wish.png",
+                            "ts": "20220507110008"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Qiqi Icon.png"
+                "wiki": "Qiqi Icon.png",
+                "ts": "20220316020612"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Qiqi Full Wish.png"
+                    "wiki": "Character Qiqi Full Wish.png",
+                    "ts": "20220507110008"
                 }
             ],
             "is_released": true,
@@ -5273,21 +5773,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Noelle Icon.png"
+                        "wiki": "Noelle Icon.png",
+                        "ts": "20210214011929"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Noelle Full Wish.png"
+                            "wiki": "Character Noelle Full Wish.png",
+                            "ts": "20220507161129"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Noelle Icon.png"
+                "wiki": "Noelle Icon.png",
+                "ts": "20210214011929"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Noelle Full Wish.png"
+                    "wiki": "Character Noelle Full Wish.png",
+                    "ts": "20220507161129"
                 }
             ],
             "is_released": true,
@@ -5315,21 +5819,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Ningguang Icon.png"
+                        "wiki": "Ningguang Icon.png",
+                        "ts": "20260304040948"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Ningguang Full Wish.png"
+                            "wiki": "Character Ningguang Full Wish.png",
+                            "ts": "20220507113052"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Ningguang Icon.png"
+                "wiki": "Ningguang Icon.png",
+                "ts": "20260304040948"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Ningguang Full Wish.png"
+                    "wiki": "Character Ningguang Full Wish.png",
+                    "ts": "20220507113052"
                 }
             ],
             "is_released": true,
@@ -5357,21 +5865,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Mona Icon.png"
+                        "wiki": "Mona Icon.png",
+                        "ts": "20260304040909"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Mona Full Wish.png"
+                            "wiki": "Character Mona Full Wish.png",
+                            "ts": "20230928133923"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Mona Icon.png"
+                "wiki": "Mona Icon.png",
+                "ts": "20260304040909"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Mona Full Wish.png"
+                    "wiki": "Character Mona Full Wish.png",
+                    "ts": "20230928133923"
                 }
             ],
             "is_released": true,
@@ -5399,21 +5911,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Lisa Icon.png"
+                        "wiki": "Lisa Icon.png",
+                        "ts": "20240711205456"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Lisa Full Wish.png"
+                            "wiki": "Character Lisa Full Wish.png",
+                            "ts": "20220507110102"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Lisa Icon.png"
+                "wiki": "Lisa Icon.png",
+                "ts": "20240711205456"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Lisa Full Wish.png"
+                    "wiki": "Character Lisa Full Wish.png",
+                    "ts": "20220507110102"
                 }
             ],
             "is_released": true,
@@ -5441,21 +5957,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Keqing Icon.png"
+                        "wiki": "Keqing Icon.png",
+                        "ts": "20210213162751"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Keqing Full Wish.png"
+                            "wiki": "Character Keqing Full Wish.png",
+                            "ts": "20240525000647"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Keqing Icon.png"
+                "wiki": "Keqing Icon.png",
+                "ts": "20210213162751"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Keqing Full Wish.png"
+                    "wiki": "Character Keqing Full Wish.png",
+                    "ts": "20240525000647"
                 }
             ],
             "is_released": true,
@@ -5483,21 +6003,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Kaeya Icon.png"
+                        "wiki": "Kaeya Icon.png",
+                        "ts": "20260304040842"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Kaeya Full Wish.png"
+                            "wiki": "Character Kaeya Full Wish.png",
+                            "ts": "20220507113154"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Kaeya Icon.png"
+                "wiki": "Kaeya Icon.png",
+                "ts": "20260304040842"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Kaeya Full Wish.png"
+                    "wiki": "Character Kaeya Full Wish.png",
+                    "ts": "20220507113154"
                 }
             ],
             "is_released": true,
@@ -5525,21 +6049,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Jean Icon.png"
+                        "wiki": "Jean Icon.png",
+                        "ts": "20260304040810"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Jean Full Wish.png"
+                            "wiki": "Character Jean Full Wish.png",
+                            "ts": "20221014022733"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Jean Icon.png"
+                "wiki": "Jean Icon.png",
+                "ts": "20260304040810"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Jean Full Wish.png"
+                    "wiki": "Character Jean Full Wish.png",
+                    "ts": "20221014022733"
                 }
             ],
             "is_released": true,
@@ -5567,21 +6095,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Fischl Icon.png"
+                        "wiki": "Fischl Icon.png",
+                        "ts": "20231215092945"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Fischl Full Wish.png"
+                            "wiki": "Character Fischl Full Wish.png",
+                            "ts": "20220507161249"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Fischl Icon.png"
+                "wiki": "Fischl Icon.png",
+                "ts": "20231215092945"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Fischl Full Wish.png"
+                    "wiki": "Character Fischl Full Wish.png",
+                    "ts": "20220507161249"
                 }
             ],
             "is_released": true,
@@ -5609,21 +6141,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Diluc Icon.png"
+                        "wiki": "Diluc Icon.png",
+                        "ts": "20231215092341"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Diluc Full Wish.png"
+                            "wiki": "Character Diluc Full Wish.png",
+                            "ts": "20220507161658"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Diluc Icon.png"
+                "wiki": "Diluc Icon.png",
+                "ts": "20231215092341"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Diluc Full Wish.png"
+                    "wiki": "Character Diluc Full Wish.png",
+                    "ts": "20220507161658"
                 }
             ],
             "is_released": true,
@@ -5651,21 +6187,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Chongyun Icon.png"
+                        "wiki": "Chongyun Icon.png",
+                        "ts": "20231215092204"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Chongyun Full Wish.png"
+                            "wiki": "Character Chongyun Full Wish.png",
+                            "ts": "20250618073927"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Chongyun Icon.png"
+                "wiki": "Chongyun Icon.png",
+                "ts": "20231215092204"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Chongyun Full Wish.png"
+                    "wiki": "Character Chongyun Full Wish.png",
+                    "ts": "20250618073927"
                 }
             ],
             "is_released": true,
@@ -5693,21 +6233,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Bennett Icon.png"
+                        "wiki": "Bennett Icon.png",
+                        "ts": "20231215091856"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Bennett Full Wish.png"
+                            "wiki": "Character Bennett Full Wish.png",
+                            "ts": "20220507132108"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Bennett Icon.png"
+                "wiki": "Bennett Icon.png",
+                "ts": "20231215091856"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Bennett Full Wish.png"
+                    "wiki": "Character Bennett Full Wish.png",
+                    "ts": "20220507132108"
                 }
             ],
             "is_released": true,
@@ -5735,21 +6279,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Beidou Icon.png"
+                        "wiki": "Beidou Icon.png",
+                        "ts": "20231215091828"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Beidou Full Wish.png"
+                            "wiki": "Character Beidou Full Wish.png",
+                            "ts": "20221015114224"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Beidou Icon.png"
+                "wiki": "Beidou Icon.png",
+                "ts": "20231215091828"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Beidou Full Wish.png"
+                    "wiki": "Character Beidou Full Wish.png",
+                    "ts": "20221015114224"
                 }
             ],
             "is_released": true,
@@ -5777,21 +6325,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Barbara Icon.png"
+                        "wiki": "Barbara Icon.png",
+                        "ts": "20231215091800"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Barbara Full Wish.png"
+                            "wiki": "Character Barbara Full Wish.png",
+                            "ts": "20220507160248"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Barbara Icon.png"
+                "wiki": "Barbara Icon.png",
+                "ts": "20231215091800"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Barbara Full Wish.png"
+                    "wiki": "Character Barbara Full Wish.png",
+                    "ts": "20220507160248"
                 }
             ],
             "is_released": true,
@@ -5819,21 +6371,25 @@
                     "release_version": "1.0",
                     "release_date": "2020-09-28",
                     "photo": {
-                        "wiki": "Amber Icon.png"
+                        "wiki": "Amber Icon.png",
+                        "ts": "20210213161233"
                     },
                     "full_photo": [
                         {
-                            "wiki": "Character Amber Full Wish.png"
+                            "wiki": "Character Amber Full Wish.png",
+                            "ts": "20230330114407"
                         }
                     ]
                 }
             ],
             "photo": {
-                "wiki": "Amber Icon.png"
+                "wiki": "Amber Icon.png",
+                "ts": "20210213161233"
             },
             "full_photo": [
                 {
-                    "wiki": "Character Amber Full Wish.png"
+                    "wiki": "Character Amber Full Wish.png",
+                    "ts": "20230330114407"
                 }
             ],
             "is_released": true,
