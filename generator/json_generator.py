@@ -71,7 +71,7 @@ def genshin_images(characters: list) -> dict:
                 candidates, resolved, "docs/assets/images/characters", slug
             ))
             form_art.append([
-                {"wiki": resolved[c]}
+                resolved[c]
                 for c in genshin_form_art(name, form) if c in resolved
             ])
         images[name] = {
@@ -143,7 +143,7 @@ def hsr_images(rows: list, forms_by_name: dict, genders: dict) -> dict:
                 "docs/hsr/assets/images/characters", slug,
             ))
             form_art.append([
-                {"wiki": resolved[c]}
+                resolved[c]
                 for c in hsr_form_art(name, form, genders.get(name), len(forms) > 1)
                 if c in resolved
             ])
@@ -300,6 +300,14 @@ def generate_hsr_characters_file():
 def generate_hsr_domains_file():
     with open('data/hsr/domains.json') as f:
         domains_data = json.load(f)
+    # An item without a stored image uses the file named after it
+    files = [(domain, domain.get("image")) for domain in domains_data["domains"]]
+    for group in ("rewards", "common_enemy_drops", "other_materials"):
+        for entry in domains_data.get(group, {}).values():
+            file = entry.get("image") or (
+                None if entry["name"].startswith("???") else f"Item {entry['name']}.png")
+            files.append((entry, file))
+    add_image_timestamps(wiki_images.HSR_API, files)
     data = {
         "version": get_version(),
         "last_updated": get_current_timestamp(),
@@ -307,6 +315,15 @@ def generate_hsr_domains_file():
     }
     with open("docs/hsr/assets/domains.json", "w") as f:
         f.write(json.dumps(data, indent=4, ensure_ascii=False))
+
+
+def add_image_timestamps(api: str, files: list):
+    """Set image_ts on each entry of (entry, filename) pairs: the upload time of
+    the file's current version, or None when there is no file."""
+    resolved = wiki_images.resolve(api, sorted({file for _, file in files if file}))
+    for entry, file in files:
+        found = resolved.get(file) if file else None
+        entry["image_ts"] = found["ts"] if found else None
 
 
 def generate_domains_file():
@@ -328,6 +345,11 @@ def generate_domains_file():
         for entry in domains_data["domains"]:
             if entry["name"] == domain:
                 entry.update(resolved)
+    entries = ([entry for group in groups for entry in group.values()]
+               + domains_data["domains"])
+    add_image_timestamps(wiki_images.GENSHIN_API, [
+        (entry, entry["image"]) for entry in entries if "image" in entry
+    ])
 
     data = {
         "version": get_version(),

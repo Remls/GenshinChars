@@ -66,17 +66,21 @@ def _query_batch(api: str, batch: list, params: dict) -> dict:
 
 
 def resolve(api: str, filenames: list) -> dict:
-    """Map each requested filename to the filename it really lives under.
+    """Map each requested filename to a wiki image entry: the filename it really
+    lives under, and the upload time of its current version as digits.
 
     Missing files are absent from the result.
     """
     titles = [f"File:{name}" for name in filenames]
-    pages = query(api, titles, {"prop": "imageinfo", "iiprop": "url"})
+    pages = query(api, titles, {"prop": "imageinfo", "iiprop": "timestamp"})
     resolved = {}
     for name in filenames:
         page = pages.get(f"File:{name}")
         if page and "imageinfo" in page:
-            resolved[name] = page["title"][len("File:"):]
+            resolved[name] = {
+                "wiki": page["title"][len("File:"):],
+                "ts": re.sub(r"\D", "", page["imageinfo"][0]["timestamp"]),
+            }
     return resolved
 
 
@@ -86,7 +90,7 @@ def pick(candidates: list, resolved: dict, local_dir: str, slug: str):
         return {"local": f"{slug}.png"}
     for name in candidates:
         if name in resolved:
-            return {"wiki": resolved[name]}
+            return resolved[name]
     return None
 
 
