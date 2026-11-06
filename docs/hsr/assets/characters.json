@@ -1,6 +1,6 @@
 {
-    "version": "7ebb26f",
-    "last_updated": "2026-10-31T10:26:14.988834Z",
+    "version": "63a23f0",
+    "last_updated": "2026-11-06T05:46:44.412626Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -255,7 +255,7 @@
                     "path": "Elation",
                     "combat_type": "Quantum",
                     "release_version": "4.7",
-                    "release_date": null,
+                    "release_date": "2026-11-11",
                     "photo": {
                         "wiki": "Character Aeon ★ Aha Icon.png"
                     },
@@ -269,7 +269,7 @@
             "gender": "Female",
             "world": "Planarcadia",
             "release_version": "4.7",
-            "release_date": null,
+            "release_date": "2026-11-11",
             "is_released": false,
             "photo": {
                 "wiki": "Character Aeon ★ Aha Icon.png"
