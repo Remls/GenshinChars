@@ -253,7 +253,7 @@ Filename conventions (after redirect resolution):
 - HSR: character icons `Character {name} Icon.png`; paths `Path {label}.png`
   (full `The Hunt`; no Finality icon exists, local fallback); combat types
   `Type {name}.png`; items and relic sets `Item {name}.png`; worlds
-  `Icon {World}.png`; weekly boss thumbs `Icon Echo of War {name}.png`; DivU
+  `Icon {World}.png`; weekly boss thumbs `Echo of War - {name}.png`; DivU
   stage boss thumbs come from each enemy page's infobox `image` param.
 
 Both games ship filenames in the data, but by different routes. Genshin resolves

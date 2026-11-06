@@ -357,7 +357,8 @@ const BOSS_SOURCE_TYPES = {
         }),
         echo_of_war: domain => ({
             name: (domain.boss || [])[0],
-            image: `Icon Echo of War ${domain.name}.png`,
+            image: domain.image,
+            image_ts: domain.image_ts,
         }),
     },
 }

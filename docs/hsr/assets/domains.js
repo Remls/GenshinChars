@@ -306,20 +306,14 @@ document.addEventListener('alpine:init', () => {
             return `${prefix}: ${domain.name}`
         },
 
-        domainThumbFile(domain) {
-            if (domain.type === 'echo_of_war') return `Icon Echo of War ${domain.name}.png`
-            return domain.image
-        },
-
         // "Item" and "Icon" files are icons and read fine at 20px. Enemy portraits
         // and cavern art are illustrations, so the main table gives them a larger
         // square box, while search results and drop lists keep everything small
         domainLabelHtml(domain, suffix = '', large = false) {
-            const file = this.domainThumbFile(domain)
+            const file = domain.image
             const illustration = file.startsWith('Enemy') || file.startsWith('Cavern of Corrosion')
             const big = illustration && large
-            const thumb = this.thumbHtml(file, big ? 'domain-art' : 'item-thumb',
-                file === domain.image ? domain.image_ts : null)
+            const thumb = this.thumbHtml(file, big ? 'domain-art' : 'item-thumb', domain.image_ts)
             const wrap = html => big
                 ? `<span class="domain-art-row">${thumb}<span>${html}</span></span>`
                 : `${thumb} ${html}`
