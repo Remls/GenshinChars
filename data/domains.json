@@ -395,6 +395,13 @@
             "rewards": ["a_scarlet_proof", "a_heart_furnace"]
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "artifacts",
+            "rewards": ["a_snezhnaya_1", "a_snezhnaya_2"]
+        },
+        {
             "name": "Anemo Hypostasis",
             "location": "Stormbearer Mountains, Starfell Valley",
             "region": "Mondstadt",
@@ -731,6 +738,13 @@
             "rewards": ["nb_stability_anchor"]
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": ["nb_damaged_flint"]
+        },
+        {
             "name": "Confront Stormterror (Stormterror Dvalin)",
             "location": "Stormterror's Lair, Brightcrown Mountains",
             "region": "Mondstadt",
@@ -827,6 +841,13 @@
             "region": "Sumeru",
             "type": "weekly_bosses",
             "rewards": ["wb_doctor_2_egg", "wb_doctor_2_sprout", "wb_doctor_2_branch"]
+        },
+        {
+            "name": "??? (Metatron)",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "weekly_bosses",
+            "rewards": ["wb_metatron_1", "wb_metatron_2", "wb_metatron_3"]
         }
     ],
     "rewards": {
@@ -918,13 +939,13 @@
             "Flins", "Jahoda", "Linnea", "Sandrone"
         ]},
         "t_charity": {"name": "Charity", "type": "talent_upgrade_mats", "characters": [
-            "Mitya", "Odette", "Traveler (Cryo)"
+            "Anastasya", "Mitya", "Odette", "Traveler (Cryo)"
         ]},
         "t_fortitude": {"name": "Fortitude", "type": "talent_upgrade_mats", "characters": [
             "Alyosha", "Traveler (Cryo)", "Vodyanitsa"
         ]},
         "t_glory": {"name": "Glory", "type": "talent_upgrade_mats", "characters": [
-            "Traveler (Cryo)", "Valeriy", "Vesna"
+            "Danica", "Traveler (Cryo)", "Valeriy", "Vesna"
         ]},
         "a_adventurer": {"name": "Adventurer", "type": "artifacts", "effect": "Max HP increased by 1000.", "effect_4pc": "Opening a chest regenerates 30% Max HP over 5s."},
         "a_sojourner": {"name": "Resolution of Sojourner", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases Charged Attack CRIT Rate by 30%."},
@@ -980,6 +1001,8 @@
         "a_deep_shadow": {"name": "Disenchantment in Deep Shadow", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."},
         "a_scarlet_proof": {"name": "Scarlet Proof", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG by 40%, for 10s after they trigger a Stellar Swirl reaction."},
         "a_heart_furnace": {"name": "Heart of the Furnace", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."},
+        "a_snezhnaya_1": {"name": "???", "type": "artifacts", "effect": "ATK +18%.", "effect_4pc": "The equipping character gains 1 Starspark when they use an Elemental Skill, Elemental Burst, or perform a Normal Attack. Up to 2 Starsparks can be held at once. The equipping character gains Undying Radiance while holding at least 1 Starspark. This effect increases the CRIT Rate of their Cryo DMG by 20%, with an additional 20% CRIT Rate if that DMG is Stellar Glimmer reaction DMG. This effect remains active even when the equipping character is off-field. The equipping character loses 1 Starspark every 3s while on the field. Undying Radiance ends when all Starsparks are extinguished."},
+        "a_snezhnaya_2": {"name": "???", "type": "artifacts", "effect": "Energy Recharge +20%.", "effect_4pc": "Increases the equipping character's Elemental Skill and Elemental Burst DMG by 25%. ???"},
         "nb_hurricane_seed": {"name": "Hurricane Seed", "type": "normal_bosses", "characters": [
             "Jean", "Sucrose", "Venti"
         ]},
@@ -1125,7 +1148,10 @@
             "Vesna"
         ]},
         "nb_stability_anchor": {"name": "Shattered Stability Anchor", "type": "normal_bosses", "characters": [
-            "Mitya"
+            "Anastasya", "Mitya"
+        ]},
+        "nb_damaged_flint": {"name": "Damaged Flint", "type": "normal_bosses", "characters": [
+            "Danica"
         ]},
         "wb_dvalin_plume": {"name": "Dvalin's Plume", "type": "weekly_bosses", "characters": [
             "Bennett", "Diluc", "Jean"
@@ -1251,8 +1277,13 @@
             "Vesna"
         ]},
         "wb_doctor_2_branch": {"name": "Twisted Withered Branch", "type": "weekly_bosses", "characters": [
-            "Odette"
-        ]}
+            "Danica", "Odette"
+        ]},
+        "wb_metatron_1": {"name": "???", "type": "weekly_bosses", "characters": []},
+        "wb_metatron_2": {"name": "???", "type": "weekly_bosses", "characters": [
+            "Anastasya"
+        ]},
+        "wb_metatron_3": {"name": "???", "type": "weekly_bosses", "characters": []}
     },
     "common_enemy_drops": {
         "c_nectar": {"name": "Energy Nectar", "type": "common_enemy_drops", "enemies": ["Whopperflowers"], "characters": [
@@ -1307,10 +1338,10 @@
             "Aino", "Flins", "Illuga", "Jahoda", "Sandrone", "Varka"
         ]},
         "c_ethereal": {"name": "Ethereal Crystalscale Stone", "type": "common_enemy_drops", "enemies": ["Snowland Fae"], "characters": [
-            "Odette", "Valeriy", "Vesna"
+            "Danica", "Odette", "Valeriy", "Vesna"
         ]},
         "c_chimeric": {"name": "Prime Chimeric Nexus", "type": "common_enemy_drops", "enemies": ["Aberrant Chimeric Monsters"], "characters": [
-            "Alyosha", "Mitya", "Traveler (Cryo)", "Vodyanitsa"
+            "Alyosha", "Anastasya", "Mitya", "Traveler (Cryo)", "Vodyanitsa"
         ]}
     },
     "specialties": {
@@ -1492,13 +1523,13 @@
             "Odette", "Vodyanitsa"
         ]},
         "s_flockingweed": {"name": "Flockingweed", "region": "Snezhnaya", "characters": [
-            "Alyosha"
+            "Alyosha", "Danica"
         ]},
         "s_golden_fern": {"name": "Golden Fern", "region": "Snezhnaya", "characters": [
             "Vesna"
         ]},
         "s_fairy_wormwood": {"name": "Fairy Wormwood", "region": "Snezhnaya", "characters": [
-            "Valeriy"
+            "Anastasya", "Valeriy"
         ]},
         "s_kristallfold": {"name": "Kristallfold", "region": "Snezhnaya", "characters": [
             "Mitya"
