@@ -1,6 +1,6 @@
 {
-    "version": "a5d442b",
-    "last_updated": "2026-09-25T16:39:02.283288Z",
+    "version": "11ccd5e",
+    "last_updated": "2026-11-06T05:44:36.062008Z",
     "domains": [
         {
             "name": "Cecilia Garden",
@@ -833,6 +833,16 @@
             "boss": null
         },
         {
+            "name": "???",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "artifacts",
+            "rewards": [
+                "a_snezhnaya_1",
+                "a_snezhnaya_2"
+            ]
+        },
+        {
             "name": "Anemo Hypostasis",
             "location": "Stormbearer Mountains, Starfell Valley",
             "region": "Mondstadt",
@@ -1387,7 +1397,7 @@
         },
         {
             "name": "Guardian Blade of Drifting Snow",
-            "location": "???",
+            "location": "Fellfrost Peak",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": [
@@ -1398,12 +1408,24 @@
             "boss": null
         },
         {
+            "name": "Wavebinder",
+            "location": "Novokitezhgrad",
+            "region": "Snezhnaya",
+            "type": "normal_bosses",
+            "rewards": [
+                "nb_stability_anchor"
+            ],
+            "image": "Wavebinder_Icon.png",
+            "link": "Wavebinder",
+            "boss": null
+        },
+        {
             "name": "???",
             "location": "???",
             "region": "Snezhnaya",
             "type": "normal_bosses",
             "rewards": [
-                "nb_stabilizing_anchor"
+                "nb_damaged_flint"
             ]
         },
         {
@@ -1643,6 +1665,17 @@
                 "name": "Exalted Master of the Heretical Path",
                 "has_page": true
             }
+        },
+        {
+            "name": "??? (Metatron)",
+            "location": "???",
+            "region": "Snezhnaya",
+            "type": "weekly_bosses",
+            "rewards": [
+                "wb_metatron_1",
+                "wb_metatron_2",
+                "wb_metatron_3"
+            ]
         }
     ],
     "rewards": {
@@ -2054,6 +2087,7 @@
             "name": "Charity",
             "type": "talent_upgrade_mats",
             "characters": [
+                "Anastasya",
                 "Mitya",
                 "Odette",
                 "Traveler (Cryo)"
@@ -2074,6 +2108,7 @@
             "name": "Glory",
             "type": "talent_upgrade_mats",
             "characters": [
+                "Danica",
                 "Traveler (Cryo)",
                 "Valeriy",
                 "Vesna"
@@ -2457,6 +2492,20 @@
             "effect": "ATK +18%.",
             "effect_4pc": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack.",
             "image": "Item_Foundryman's_Conjecture.png"
+        },
+        "a_snezhnaya_1": {
+            "name": "???",
+            "type": "artifacts",
+            "effect": "ATK +18%.",
+            "effect_4pc": "The equipping character gains 1 Starspark when they use an Elemental Skill, Elemental Burst, or perform a Normal Attack. Up to 2 Starsparks can be held at once. The equipping character gains Undying Radiance while holding at least 1 Starspark. This effect increases the CRIT Rate of their Cryo DMG by 20%, with an additional 20% CRIT Rate if that DMG is Stellar Glimmer reaction DMG. This effect remains active even when the equipping character is off-field. The equipping character loses 1 Starspark every 3s while on the field. Undying Radiance ends when all Starsparks are extinguished.",
+            "image": null
+        },
+        "a_snezhnaya_2": {
+            "name": "???",
+            "type": "artifacts",
+            "effect": "Energy Recharge +20%.",
+            "effect_4pc": "Increases the equipping character's Elemental Skill and Elemental Burst DMG by 25%. ???",
+            "image": null
         },
         "nb_hurricane_seed": {
             "name": "Hurricane Seed",
@@ -2915,11 +2964,20 @@
             ],
             "image": "Item_Vagabond's_Cracked_Armor.png"
         },
-        "nb_stabilizing_anchor": {
-            "name": "Shattered Stabilizing Anchor",
+        "nb_stability_anchor": {
+            "name": "Shattered Stability Anchor",
             "type": "normal_bosses",
             "characters": [
+                "Anastasya",
                 "Mitya"
+            ],
+            "image": "Item_Shattered_Stability_Anchor.png"
+        },
+        "nb_damaged_flint": {
+            "name": "Damaged Flint",
+            "type": "normal_bosses",
+            "characters": [
+                "Danica"
             ],
             "image": null
         },
@@ -3342,9 +3400,30 @@
             "name": "Twisted Withered Branch",
             "type": "weekly_bosses",
             "characters": [
+                "Danica",
                 "Odette"
             ],
             "image": "Item_Twisted_Withered_Branch.png"
+        },
+        "wb_metatron_1": {
+            "name": "???",
+            "type": "weekly_bosses",
+            "characters": [],
+            "image": null
+        },
+        "wb_metatron_2": {
+            "name": "???",
+            "type": "weekly_bosses",
+            "characters": [
+                "Anastasya"
+            ],
+            "image": null
+        },
+        "wb_metatron_3": {
+            "name": "???",
+            "type": "weekly_bosses",
+            "characters": [],
+            "image": null
         }
     },
     "common_enemy_drops": {
@@ -3652,6 +3731,7 @@
                 "Snowland Fae"
             ],
             "characters": [
+                "Danica",
                 "Odette",
                 "Valeriy",
                 "Vesna"
@@ -3666,6 +3746,7 @@
             ],
             "characters": [
                 "Alyosha",
+                "Anastasya",
                 "Mitya",
                 "Traveler (Cryo)",
                 "Vodyanitsa"
@@ -4209,7 +4290,8 @@
             "name": "Flockingweed",
             "region": "Snezhnaya",
             "characters": [
-                "Alyosha"
+                "Alyosha",
+                "Danica"
             ],
             "image": "Item_Flockingweed.png"
         },
@@ -4225,17 +4307,18 @@
             "name": "Fairy Wormwood",
             "region": "Snezhnaya",
             "characters": [
+                "Anastasya",
                 "Valeriy"
             ],
-            "image": null
+            "image": "Item_Fairy_Wormwood.png"
         },
-        "s_crystalfold": {
-            "name": "Crystalfold",
+        "s_kristallfold": {
+            "name": "Kristallfold",
             "region": "Snezhnaya",
             "characters": [
                 "Mitya"
             ],
-            "image": null
+            "image": "Item_Kristallfold.png"
         }
     },
     "other_materials": {

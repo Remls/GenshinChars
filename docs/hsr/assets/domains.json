@@ -1,6 +1,6 @@
 {
-    "version": "254a1be",
-    "last_updated": "2026-10-28T08:26:51.458866Z",
+    "version": "11ccd5e",
+    "last_updated": "2026-11-06T05:44:39.843324Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1057,6 +1057,7 @@
             "name": "Sneering Harlequin",
             "type": "stagnant_shadow",
             "characters": [
+                "Aeon ★ Aha",
                 "Aventurine • Waveflair",
                 "Rin Tohsaka"
             ]
@@ -1315,6 +1316,7 @@
             "name": "The Fluffy Collector's Edition",
             "type": "calyx_crimson",
             "characters": [
+                "Aeon ★ Aha",
                 "Aventurine • Waveflair",
                 "Evanescia",
                 "Pearl",
@@ -1781,7 +1783,6 @@
                 "Evanescia",
                 "Himeko • Nova",
                 "Mortenax Blade",
-                "Pearl",
                 "Silver Wolf LV.999",
                 "Sparxie",
                 "The Dahlia",
@@ -1807,6 +1808,7 @@
             "name": "High Hopes of the Falsely Enlightened",
             "type": "echo_of_war",
             "characters": [
+                "Aeon ★ Aha",
                 "Aventurine • Waveflair",
                 "Pearl",
                 "Robin • Summeretto"
@@ -2142,6 +2144,7 @@
                 "Imagenated Creature"
             ],
             "characters": [
+                "Aeon ★ Aha",
                 "Ashveil",
                 "Evanescia",
                 "Himeko • Nova",
