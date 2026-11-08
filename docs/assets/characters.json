@@ -1,6 +1,6 @@
 {
-    "version": "86c863c",
-    "last_updated": "2026-11-06T07:05:17.437828Z",
+    "version": "5debfb0",
+    "last_updated": "2026-11-08T05:00:00.534498Z",
     "characters": {
         "Pulcinella": {
             "name": "Pulcinella",
@@ -2972,7 +2972,7 @@
                     "full_photo": [
                         {
                             "wiki": "Character Neuvillette Full Wish.png",
-                            "ts": "20240119144458"
+                            "ts": "20261107145211"
                         }
                     ]
                 }
@@ -2984,7 +2984,7 @@
             "full_photo": [
                 {
                     "wiki": "Character Neuvillette Full Wish.png",
-                    "ts": "20240119144458"
+                    "ts": "20261107145211"
                 }
             ],
             "is_released": true,
