@@ -1,6 +1,6 @@
 {
-    "version": "86c863c",
-    "last_updated": "2026-11-06T07:05:27.510244Z",
+    "version": "70a0e25",
+    "last_updated": "2026-11-14T11:34:27.132399Z",
     "characters": {
         "Xuanquan": {
             "name": "Xuanquan",
@@ -271,7 +271,7 @@
                     "full_photo": [
                         {
                             "wiki": "Character Aeon ★ Aha Splash Art.png",
-                            "ts": "20261030150139"
+                            "ts": "20261111040557"
                         }
                     ]
                 }
@@ -280,7 +280,7 @@
             "world": "Planarcadia",
             "release_version": "4.7",
             "release_date": "2026-11-11",
-            "is_released": false,
+            "is_released": true,
             "photo": {
                 "wiki": "Character Aeon ★ Aha Icon.png",
                 "ts": "20261030121742"
@@ -288,7 +288,7 @@
             "full_photo": [
                 {
                     "wiki": "Character Aeon ★ Aha Splash Art.png",
-                    "ts": "20261030150139"
+                    "ts": "20261111040557"
                 }
             ]
         },
