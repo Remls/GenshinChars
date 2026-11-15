@@ -1,6 +1,6 @@
 {
-    "version": "86c863c",
-    "last_updated": "2026-11-06T07:05:28.755201Z",
+    "version": "6a6c4ef",
+    "last_updated": "2026-11-15T05:56:08.165363Z",
     "domains": [
         {
             "name": "Bud of Abundance",
@@ -1152,6 +1152,7 @@
             "type": "stagnant_shadow",
             "characters": [
                 "Aeon ★ Aha",
+                "Astra Yao",
                 "Aventurine • Waveflair",
                 "Rin Tohsaka"
             ],
@@ -1334,6 +1335,7 @@
             "type": "stagnant_shadow",
             "characters": [
                 "Cyrene",
+                "Ellen",
                 "Evernight",
                 "Pearl"
             ],
@@ -1427,6 +1429,7 @@
                 "Blade",
                 "Clara",
                 "Dan Heng • Imbibitor Lunae",
+                "Ellen",
                 "Hook",
                 "Jingliu",
                 "Trailblazer (Destruction)",
@@ -1487,6 +1490,7 @@
             "type": "calyx_crimson",
             "characters": [
                 "Asta",
+                "Astra Yao",
                 "Bronya",
                 "Hanya",
                 "Ruan Mei",
@@ -1860,6 +1864,7 @@
                 "Arlan",
                 "Asta",
                 "Dan Heng",
+                "Ellen",
                 "Herta",
                 "Himeko",
                 "Jing Yuan",
@@ -1904,6 +1909,7 @@
             "type": "echo_of_war",
             "characters": [
                 "Archer",
+                "Astra Yao",
                 "Bailu",
                 "Bronya",
                 "Clara",
@@ -2207,6 +2213,7 @@
             ],
             "characters": [
                 "Dr. Ratio",
+                "Ellen",
                 "Kafka",
                 "March 7th (Hunt)",
                 "March 7th (Preservation)",
@@ -2233,6 +2240,7 @@
                 "Archer",
                 "Argenti",
                 "Arlan",
+                "Astra Yao",
                 "Bailu",
                 "Black Swan",
                 "Dan Heng",
